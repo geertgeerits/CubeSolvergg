@@ -5,7 +5,7 @@
  * Version .....: 2.0.35
  * Date ........: 2025-02-04 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
- * Description .: Solving the Rubik's Cube
+ * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
  * Dependencies : None
  * Thanks to ...: Gerald Versluis for his video's on YouTube about .NET MAUI */

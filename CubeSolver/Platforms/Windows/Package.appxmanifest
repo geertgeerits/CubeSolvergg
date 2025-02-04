@@ -17,7 +17,7 @@
   </Properties>-->
 
 	<Properties>
-		<DisplayName>Rubik's Cube gg</DisplayName>
+		<DisplayName>Cube Solver gg</DisplayName>
 		<PublisherDisplayName>Geert Geerits</PublisherDisplayName>
 		<Logo>$placeholder$.png</Logo>
 	</Properties>
