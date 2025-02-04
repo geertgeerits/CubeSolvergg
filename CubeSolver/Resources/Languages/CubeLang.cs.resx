@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>Souhlasit</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Nepovoleno:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Povolené znaky:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Zavřít</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Resetovat</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Řešit</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Zavřete aplikaci.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Kontakt:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Pokračovat</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Autorská práva</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Zadní obličej</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Dolů obličej</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Barvy kostek:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Přední strana</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Pohled dovnitř</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Levá tvář</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Pohled zvenčí</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Pravá tvář</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Horní část obličeje</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>Výchozí</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Zahrajte si nebo vyřešte kostku.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Nesouhlasit</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>E-mailem:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Vysvětleno řečí:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Vysvětleno textem:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Otočte strany kostky „ve směru hodinových ručiček“ a „proti směru hodinových ručiček“:
+Pokud je dán příkaz k otočení přední části ve směru hodinových ručiček, je to ve směru otáčení rukou. 'Proti směru hodinových ručiček' se otáčí opačným směrem.
+U ostatních stran si vždy musíte „představit“, že jste přímo před stranou, která má být otočena. Takže pokud je napsáno otočte zadní stranu „ve směru hodinových ručiček“, představte si, že jste na druhé straně krychle, a pak otočte zadní stranu „ve směru hodinových ručiček“. Neotáčejte samotnou kostkou.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Otevřete uloženou kostku.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Uložte aktuální krychli.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Přeneste barvy z neuspořádané kostky na tuto kostku. Vyberte barvu z pruhu barev v horní části a poté klepnutím na kousky kostky je změňte. Dalším stisknutím tohoto tlačítka opustíte tuto sekci a stiskněte tlačítko 'Solve'.</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Hexadecimální barevné kódy:
+
+Postavy 1-2: Červená
+Postavy 3-4: Zelená
+Postavy 5-6: Modrá</value>
+  </data>
+  <data name="InfoExplanation_Text" xml:space="preserve">
+    <value>Převod textu na řeč: Nejsou podporovány všechny jazyky uvedené v nastavení aplikace.
+Tato možnost se liší zařízení od zařízení a nainstalované jazyky. Je možné, že u některých jazyků je překlad do az řeči prováděn prostřednictvím internetu příslušnými službami.
+
+K překladu textu byl použit Google Translate. To nezaručuje, že všechny překlady jsou správné.
+Podporované jazyky jsou: čeština, dánština, holandština, angličtina, finština, francouzština, němčina, maďarština, italština, norština, polština, portugalština, rumunština, španělština a švédština.
+
+Pro případné opravy mě můžete vždy kontaktovat.</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Informace</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Jazyková řeč:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Jazyk:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Software je poskytován „tak, jak je“, bez záruky jakéhokoli druhu, výslovné nebo předpokládané, včetně, ale bez omezení na záruky prodejnosti, vhodnosti pro konkrétní účel a neporušení práv. V žádném případě nenese autor a/nebo vydavatel odpovědnost za jakýkoli nárok, škody nebo jinou odpovědnost, ať už v případě smluvního jednání, deliktu nebo jinak, vyplývající z, z nebo v souvislosti se softwarem nebo používáním či jinými jednáními v software.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Licence</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Tuto aplikaci lze volně používat pro nekomerční účely.
+Používejte tento program zcela na vlastní nebezpečí.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Barva centrálního čtverce se může objevit pouze jednou.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Barvy rohové kostky musí být různé.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Barvy hranové krychle musí být různé.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Gratulujeme, kostka je vyřešena.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Kostka není vyřešena.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Z každé dostupné barvy musí být devět stejné barvy.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Cube Solver</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Ne</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Zásady ochrany osobních údajů:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Žádné osobní a jiné údaje nejsou ukládány ani předávány mně a ostatním.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Aplikace bude restartována.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Resetovat</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Některá změněná nastavení musí být uložena, aby je bylo možné použít.
+Po uložení se aplikace restartuje a kostka se resetuje.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Uložit</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Nastavení</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Řešit</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Text obsahuje jeden nebo více znaků, které nejsou povoleny.
+
+Nepovoleno:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Převod textu na řeč není na tomto zařízení podporován.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Tmavá</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Světlo</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>Systém</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Téma:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Vraťte se</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Jdi dopředu</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Pomoc</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Otevřete kostku</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Uložte kostku</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Přepínací tlačítko: Nastavte barvy na krychli</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Otočte zadní stranu o půl otáčky.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Otočte zadní stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Otočte zadní stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Otočte spodní stranu o půl otáčky.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Otočte spodní stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Otočte spodní stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby přední strana šla dolů, pravá strana zůstala vpravo.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby přední strana šla na levou stranu, horní strana zůstala nahoře.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby přední strana šla na pravou stranu, horní strana zůstala nahoře.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby přední část šla nahoru, pravá strana zůstala vpravo.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby vršek šel na levou stranu, přední strana zůstala vpředu.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby vršek šel na pravou stranu, přední strana zůstala vepředu.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Otočte přední střední vrstvu o čtvrt otáčky na pravou stranu (-).</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Otočte přední prostřední vrstvu o čtvrt otáčky k horní straně (+).</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Otočte přední stranu o půl otáčky.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Otočte přední stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Otočte přední stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Otočte levou stranu o půl otáčky.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Otočte levou stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Otočte levou stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Otočte střední vrstvu o půl otáčky.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Otočte pravou prostřední vrstvu o čtvrt otáčky na přední stranu (+).</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Otočte pravou prostřední vrstvu o čtvrt otáčky k horní straně (-).</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Otočte pravou stranu o půl otáčky.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Otočte pravou stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Otočte pravou stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Otočte horní střední vrstvu o čtvrt otáčky na přední stranu (-).</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Otočte horní střední vrstvu o čtvrt otáčky doprava (+).</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Otočte horní stranu o půl otáčky.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Otočte horní stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Otočte horní stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Verze:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Webová stránka</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Ano</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Kostku nelze vyřešit.
+
+Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby přední strana šla dozadu, pravá strana zůstane vpravo.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby přední strana šla dozadu, horní strana zůstala nahoře.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Otočte celou kostku tak, aby vršek šel dolů, přední strana zůstala vepředu.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Čas v milisekundách:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Počet otáček:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Možnosti řešení krychle:
+1. Na domovské obrazovce pomocí kláves se šipkami promíchejte kostku a vyřešte kostku pomocí kláves se šipkami.
+2. Stejné jako první možnost, ale vyřešte kostku tlačítkem 'Solve'. Kostka se pak řeší v opačném pořadí.
+3. Pomocí tlačítka s kostkou ve spodní části obrazovky přeneste barvy své kostky na tuto kostku (viz vysvětlení tohoto tlačítka). Kostku vyřeší aplikace. Poté přeneste navržené tahy do skutečné krychle. To není záruka, že všechny kostky lze vyřešit.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Kostka je zpět ve svém předchozím stavu.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Barvy středových dílů jsou špatné.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>Z každé dostupné barvy musí být na hranové krychli čtyři stejné barvy.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>Z každé dostupné barvy musí být na rohové kostce čtyři stejné barvy.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Otočte zadní a střední vrstvu dohromady o půl otáčky.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Otočte zadní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Otočte zadní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Otočte spodní a střední vrstvu dohromady o půl otáčky.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Otočte spodní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Otočte spodní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Otočte přední a střední vrstvu dohromady o půl otáčky.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Otočte přední a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Otočte přední a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Otočte levou a střední vrstvu dohromady o půl otáčky.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Otočte levou a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Otočte levou a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Otočte pravou a střední vrstvu dohromady o půl otáčky.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Otočte pravou a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Otočte pravou a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Otočte horní a střední vrstvu dohromady o půl otáčky.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Otočte horní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Otočte horní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Pošlete e-mail autorovi této aplikace</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Otevřete webovou stránku této aplikace</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Testovaná řešení:</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Průměrný počet otočení k vyřešení kostky:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Rozdrťte kostku</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Resetujte kostku</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Resetujte kostku.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Rozdrťte kostku.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Vyřešte kostku</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Vraťte se o jednu otáčku zpět</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Jděte o jednu otáčku vpřed</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Vraťte se o jednu otáčku zpět.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Jděte o jednu otáčku vpřed.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Vyřešte kostku bez zásahu</value>
+  </data>
+  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Vyřešte kostku bez zásahu.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Vyřešte kostku zásahem</value>
+  </data>
+  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Vyřešte kostku zásahem.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+    <value>Přepínací tlačítko: Vyřešte kostku s nebo bez zásahu</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Vyřešte kostku.</value>
+  </data>
+</root>

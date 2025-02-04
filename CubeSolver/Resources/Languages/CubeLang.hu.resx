@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>Egyetért</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Nem megengedett:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Engedélyezett karakterek:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Zárja be</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Visszaállítás</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Oldja meg</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Kérjük, zárja be az alkalmazást.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Kontakt:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Folytatni</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Szerzői jog</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Hátsó arc</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Lefelé arccal</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Kocka színei:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Elülső arc</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Belső nézet</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Bal arc</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Külső kilátás</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Jobb arc</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Felső arc</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>Alapértelmezett</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Játssz vagy oldd meg a kockát.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Nem ért egyet</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Hiba</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Beszéddel magyarázva:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Szöveggel magyarázva:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Forgassa el a kocka oldalát az óramutató járásával megegyezően és az óramutató járásával ellentétes irányban:
+Ha azt a parancsot adják, hogy fordítsa el az elülső részt az óramutató járásával megegyező irányba, akkor ez abba az irányba mutat, amerre a mutatók forognak. Az 'óramutató járásával ellentétes' a másik irányba forog.
+A másik oldalon mindig „el kell képzelnie”, hogy közvetlenül a megfordítandó oldal előtt áll. Tehát ha azt írja ki, hogy fordítsa el a hátlapot az óramutató járásával megegyező irányba, képzelje el, hogy a kocka másik oldalán áll, majd fordítsa el a hátát az óramutató járásával megegyező irányba. Magát a kockát ne forgassa el.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Nyissa meg a mentett kockát.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Az aktuális kocka mentése.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Vigye át a színeket az összekevert kockából ebbe a kockába. Válasszon egy színt a felső színsávból, majd érintse meg a kocka darabjait a módosításhoz. Nyomja meg újra ezt a gombot, hogy kilépjen ebből a szakaszból, és nyomja meg a „Megoldás” gombot.</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Hexadecimális színkódok:
+
+1-2. karakter: Piros
+3-4. karakter: Zöld
+5-6. karakter: Kék</value>
+  </data>
+  <data name="InfoExplanation_Text" xml:space="preserve">
+    <value>Szövegfelolvasó: Nem minden nyelv támogatott, amely az alkalmazás beállításaiban található.
+Ez az opció készülékenként és a telepített nyelvektől függően változik. Lehetséges, hogy egyes nyelvek esetében a beszédre és beszédről történő fordítást az interneten keresztül végzik az érintett szolgálatok.
+
+A szöveg fordításához a Google Fordítót használtuk. Ez nem garancia arra, hogy minden fordítás helyes.
+A támogatott nyelvek: cseh, dán, holland, angol, finn, francia, német, magyar, olasz, norvég, lengyel, portugál, román, spanyol és svéd.
+
+Bármilyen javításért bármikor fordulhat hozzám.</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Információ</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Nyelvi beszéd:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Nyelv:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>A szoftvert „adott állapotában” biztosítjuk, bármilyen kifejezett vagy hallgatólagos garancia nélkül, beleértve, de nem kizárólagosan az eladhatóságra, az adott célra való alkalmasságra és a jogsértésekre vonatkozó garanciákat. A szerző és/vagy a kiadó semmilyen esetben sem felelős semmilyen követelésért, kárért vagy egyéb felelősségért, akár szerződéses, károkozási vagy más jellegű, a szoftverből, a szoftver használatából vagy egyéb kereskedéséből eredő, abból származó vagy azzal kapcsolatos. a szoftver.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Engedély</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Ez az alkalmazás szabadon felhasználható nem kereskedelmi célokra.
+Ezt a programot kizárólag saját felelősségére használja.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>A központi tér színe csak egyszer fordulhat elő.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>A sarokkocka színének eltérőnek kell lennie.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Egy élkocka színének eltérőnek kell lennie.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Gratulálok, a kocka megoldva.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>A kocka nincs megoldva.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Minden elérhető színből kilencnek kell lennie egyforma színűnek.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Cube Solver</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Nem</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Adatvédelmi irányelvek:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Személyes és egyéb adatokat nem tárolunk, illetve nem adunk át magamnak és másoknak.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Az alkalmazás újraindul.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Visszaállítás</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Néhány módosított beállítást el kell menteni az alkalmazásukhoz.
+Mentés után az alkalmazás újraindul, és a kocka alaphelyzetbe áll.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Megment</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Oldja meg</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Állj meg</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>A szöveg egy vagy több nem megengedett karaktert tartalmaz.
+
+Nem megengedett:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Ez az eszköz nem támogatja a szövegfelolvasást.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Sötét</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Világos</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>Rendszer</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Téma:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Menjen vissza</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Menj előre</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Segítség</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Nyissa ki a kockát</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Mentse el a kockát</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Váltógomb: Állítsa be a kocka színeit</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Fordítsa el a hátsó oldalt fél fordulattal.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Fordítsa el a hátsó oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Fordítsa el a hátsó oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Fordítsa el az alsó oldalt fél fordulattal.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Forgassa el az alsó oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Forgassa el az alsó oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Forgassa el az egész kockát úgy, hogy az eleje lefelé menjen, a jobb oldal jobbra maradjon.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Forgassa el az egész kockát úgy, hogy az eleje a bal oldalra kerüljön, a felső oldal maradjon felül.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Forgassa el az egész kockát úgy, hogy az eleje a jobb oldalra kerüljön, a felső oldal maradjon felül.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Forgassa el az egész kockát úgy, hogy az eleje felfelé menjen, a jobb oldal jobbra maradjon.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Forgassa el az egész kockát úgy, hogy a teteje a bal oldalra kerüljön, az elülső oldal maradjon elöl.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Forgassa el az egész kockát úgy, hogy a teteje a jobb oldalra kerüljön, az elülső oldal maradjon elöl.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Fordítsa el az elülső-középső réteget negyed fordulattal jobbra (-).</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Fordítsa el az elülső-középső réteget negyed fordulattal a felső oldalra (+).</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Fordítsa el az elülső oldalt fél fordulattal.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Forgassa el az elülső oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Forgassa el az elülső oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Fordítsa el a bal oldalt fél fordulattal.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Forgassa el a bal oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Forgassa el a bal oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Fordítsa el a középső réteget fél fordulattal.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Fordítsa el a jobb-középső réteget negyed fordulattal az elülső oldalra (+).</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Fordítsa el a jobb-középső réteget negyed fordulattal a felső oldalra (-).</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Fordítsa el a jobb oldalt fél fordulattal.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Forgassa el a jobb oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Forgassa el a jobb oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Fordítsa el a felső-középső réteget negyed fordulattal az elülső oldalra (-).</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Fordítsa el a felső-középső réteget negyed fordulattal jobbra (+).</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Fordítsa el a felső oldalt fél fordulattal.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Forgassa el a felső oldalt negyed fordulattal „az óramutató járásával ellentétes irányba” (-).</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Forgassa el a felső oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Változat:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Weboldal</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Igen</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>A kocka nem oldható meg.
+
+Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Forgassa el az egész kockát úgy, hogy az eleje hátra menjen, a jobb oldal jobbra maradjon.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Fordítsuk meg az egész kockát úgy, hogy az eleje hátra menjen, a felső oldal maradjon felül.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Forgassa el az egész kockát úgy, hogy a teteje az aljára kerüljön, az elülső oldal maradjon elöl.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Idő ezredmásodpercben:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>A fordulatok száma:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>A kocka megoldásának lehetőségei:
+1. A kezdőképernyőn a nyílbillentyűkkel keverje össze a kockát, és oldja meg a kockát a nyílbillentyűkkel.
+2. Ugyanaz, mint az első opció, de oldja meg a kockát a „Megoldás” gombbal. Ezután a kockát fordított sorrendben oldjuk meg.
+3. Használja a képernyő alján található kockával ellátott gombot, hogy a kocka színeit ebbe a kockába vigye át (lásd a gomb magyarázatát). A kockát az alkalmazás fogja megoldani. Ezután vigye át a javasolt mozdulatokat a valódi kockába. Ez nem garancia arra, hogy minden kocka megoldható.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>A kocka visszakerült korábbi állapotába.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>A középső részek színei hibásak.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>Minden elérhető színből négy azonos színűnek kell lennie egy élkockán.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>Minden elérhető színből négy azonos színűnek kell lennie egy sarokkockán.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Fordítsa össze a hátsó és a középső réteget fél fordulattal.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Forgassa el a hátsó és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Forgassa el a hátsó és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Az alsó és a középső réteget fél fordulattal összeforgatjuk.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Forgassa el az alsó és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Forgassa el az alsó és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Fordítsa össze fél fordulattal az elülső és a középső réteget.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Forgassa össze az elülső és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba” (-).</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Forgassa el az elülső és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Forgassa el a bal és a középső réteget fél fordulattal együtt.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Forgassa el a bal és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Forgassa el a bal és a középső réteget negyed fordulattal „óramutató járásával megegyezően” (+).</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Fordítsa össze a jobb és a középső réteget fél fordulattal.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Forgassa össze a jobb és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba” (-).</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Forgassa össze a jobb és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>A felső és a középső réteget fél fordulattal összeforgatjuk.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Forgassa el a felső és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba” (-).</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Forgassa össze a felső és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Küldjön e-mailt az alkalmazás szerzőjének</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Nyissa meg az alkalmazás webhelyét</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Tesztelt megoldások:</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Átlagos fordulatok száma a kocka megoldásához:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Rántsd össze a kockát</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Állítsa vissza a kockát</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Állítsa vissza a kockát.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Rántsd össze a kockát.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Oldja meg a kockát</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Menj vissza egy fordulatot</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Menj egy fordulatot előre</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Menj vissza egy fordulatot.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Menj egy fordulatot előre.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Oldja meg a kockát beavatkozás nélkül</value>
+  </data>
+  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Oldja meg a kockát beavatkozás nélkül.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Oldja meg a kockát beavatkozással</value>
+  </data>
+  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Oldja meg a kockát beavatkozással.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+    <value>Váltógomb: A kocka megoldása beavatkozással vagy anélkül</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Oldja meg a kockát.</value>
+  </data>
+</root>

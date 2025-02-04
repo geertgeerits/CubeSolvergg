@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>Zgadzać się</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Niedozwolony:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Dozwolone znaki:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Zamknąć</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Resetowanie</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Rozwiązywać</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Proszę zamknąć aplikację.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Kontakt:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Kontynuować</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Prawo autorskie</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Tylna strona</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Opuszczona twarz</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Kolory kostek:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Przód twarzy</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Widok wewnątrz</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Lewa twarz</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Zewnętrzny widok</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Prawa twarz</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Górna twarz</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Zagraj lub ułóż kostkę.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Nie zgadzać się</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Wyjaśnione mową:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Wyjaśnione tekstem:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Obróć boki sześcianu „zgodnie z ruchem wskazówek zegara” i „przeciwnie do ruchu wskazówek zegara”:
+Jeśli wydane zostanie polecenie obrócenia przodu w kierunku zgodnym z ruchem wskazówek zegara, będzie to robione w kierunku, w którym obracają się wskazówki. „W lewo” oznacza obrót w przeciwnym kierunku.
+W przypadku pozostałych stron zawsze musisz „wyobrazić sobie”, że znajdujesz się bezpośrednio przed stroną, którą chcesz skręcić. Jeśli więc jest napisane, obróć się w kierunku zgodnym z ruchem wskazówek zegara, wyobraź sobie, że jesteś po drugiej stronie sześcianu, a następnie obróć go w kierunku zgodnym z ruchem wskazówek zegara. Nie obracaj samej kostki.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Otwórz zapisaną kostkę.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Zapisz bieżącą kostkę.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Przenieś kolory z pomieszanej kostki do tej kostki. Wybierz kolor z paska kolorów u góry, a następnie dotknij elementów sześcianu, aby je zmienić. Naciśnij ten przycisk ponownie, aby opuścić tę sekcję i naciśnij przycisk „Rozwiąż”.</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Szesnastkowe kody kolorów:
+
+Postacie 1-2: Czerwony
+Postacie 3-4: Zielony
+Postacie 5-6: Niebieski</value>
+  </data>
+  <data name="InfoExplanation_Text" xml:space="preserve">
+    <value>Tekst na mowę: nie wszystkie języki dostępne w ustawieniach aplikacji są obsługiwane.
+Ta opcja różni się w zależności od urządzenia i zainstalowanych języków. Możliwe jest, że w przypadku niektórych języków tłumaczenie na mowę i z mowy jest wykonywane przez Internet przez odpowiednie służby.
+
+Do tłumaczenia tekstu użyto Tłumacza Google. Nie gwarantuje to, że wszystkie tłumaczenia są poprawne.
+Obsługiwane języki to: czeski, duński, holenderski, angielski, fiński, francuski, niemiecki, węgierski, włoski, norweski, polski, portugalski, rumuński, hiszpański i szwedzki.
+
+Zawsze możesz się ze mną skontaktować w celu wprowadzenia ewentualnych poprawek.</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Informacje</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Mowa językowa:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Język:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Oprogramowanie jest dostarczane „tak jak jest”, bez jakiejkolwiek gwarancji, wyraźnej lub dorozumianej, w tym między innymi gwarancji przydatności handlowej, przydatności do określonego celu i nienaruszalności. W żadnym wypadku autor i/lub wydawca nie będzie ponosić odpowiedzialności za jakiekolwiek roszczenia, szkody lub inną odpowiedzialność wynikającą z umowy, czynu niedozwolonego lub w inny sposób, wynikającą z lub w związku z oprogramowaniem lub użytkowaniem lub innymi działaniami w oprogramowanie.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Licencja</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Z tej aplikacji można swobodnie korzystać w celach niekomercyjnych.
+Korzystaj z tego programu całkowicie na własne ryzyko.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Kolor centralnego kwadratu może wystąpić tylko raz.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Kolory sześcianu narożnego muszą być różne.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Kolory krawędzi sześcianu muszą być różne.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Gratulacje, kostka została ułożona.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Sześcian nie jest ułożony.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Z każdego dostępnego koloru musi być dziewięć tego samego koloru.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Cube Solver</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Nei</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Polityka prywatności:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Żadne dane osobowe i inne nie są przechowywane ani przekazywane mnie i innym osobom.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Aplikacja zostanie ponownie uruchomiona.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Resetowanie</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Aby zastosować niektóre zmienione ustawienia, należy je zapisać.
+Po zapisaniu aplikacja zostanie uruchomiona ponownie, a kostka zostanie zresetowana.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Ratować</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Rozwiązywać</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Zatrzymywać się</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Tekst zawiera jeden lub więcej niedozwolonych znaków.
+
+Niedozwolony:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Funkcja zamiany tekstu na mowę nie jest obsługiwana na tym urządzeniu.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Ciemny</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Jasny</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Temat:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Wróć</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Idź naprzód</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Pomoc</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Otwórz kostkę</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Zapisz kostkę</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Przycisk przełączania: Ustaw kolory kostki</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Obróć tylną stronę o pół obrotu.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Obróć tylną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Obróć tylną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Obróć dolną część o pół obrotu.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Obróć dolną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Obróć dolną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby przód znalazł się na dole, prawa strona pozostała po prawej stronie.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby przód znalazł się na lewej stronie, górna strona pozostała na górze.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby przód znalazł się na prawej stronie, górna strona pozostała na górze.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby przód skierował się do góry, prawa strona pozostała po prawej stronie.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby góra znalazła się na lewą stronę, przód pozostał z przodu.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby góra znalazła się na prawej stronie, przód pozostał z przodu.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Obróć przednią warstwę środkową o ćwierć obrotu w prawą stronę (-).</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Obróć przednią środkową warstwę o ćwierć obrotu w górę (+).</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Obróć przednią stronę o pół obrotu.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Obróć przednią stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Obróć przednią stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Obróć lewą stronę o pół obrotu.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Obróć lewą stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Obróć lewą stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Obróć środkową warstwę o pół obrotu.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Obróć prawą środkową warstwę o ćwierć obrotu do przodu (+).</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Obróć prawą środkową warstwę o ćwierć obrotu w górę (-).</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Obróć prawą stronę o pół obrotu.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Obróć prawą stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Obróć prawą stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Obróć górną środkową warstwę o ćwierć obrotu do przodu (-).</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Obróć górną środkową warstwę o ćwierć obrotu w prawą stronę (+).</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Obróć górną stronę o pół obrotu.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Obróć górną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Obróć górną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Wersja:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Strona internetowa</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Tak</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Sześcianu nie można ułożyć.
+
+Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby przód przeszedł do tyłu, prawa strona pozostała po prawej stronie.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby przód znalazł się z tyłu, górna strona pozostała na górze.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Obróć całą kostkę tak, aby góra znalazła się na dole, przód pozostał z przodu.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Czas w milisekundach:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Liczba tur:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Opcje rozwiązania kostki:
+1. Na ekranie głównym użyj klawiszy strzałek, aby wymieszać kostkę i rozwiązać kostkę za pomocą klawiszy strzałek.
+2. Tak samo jak w pierwszej opcji, ale rozwiąż kostkę za pomocą przycisku „Rozwiąż”. Następnie kostka jest rozwiązywana w odwrotnej kolejności.
+3. Użyj przycisku z kostką na dole ekranu, aby przenieść kolory swojej kostki do tej kostki (zobacz wyjaśnienie tego przycisku). Kostka zostanie rozwiązana przez aplikację. Następnie przenieś proponowane ruchy do prawdziwej kostki. Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Kostka wróciła do poprzedniego stanu.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Kolory środkowych elementów są nieprawidłowe.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>Z każdego dostępnego koloru na krawędzi kostki muszą znajdować się cztery tego samego koloru.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>Z każdego dostępnego koloru na narożnej kostce muszą znajdować się cztery tego samego koloru.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Obróć tylną i środkową warstwę razem o pół obrotu.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Obróć warstwę tylną i środkową o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Obróć warstwę tylną i środkową o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Obróć dolną i środkową warstwę razem o pół obrotu.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Obróć dolną i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Obróć dolną i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Obróć przednią i środkową warstwę razem o pół obrotu.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Obróć przednią i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Obróć przednią i środkową warstwę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Obróć lewą i środkową warstwę razem o pół obrotu.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Obróć lewą i środkową warstwę razem o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Obróć lewą i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Obróć prawą i środkową warstwę razem o pół obrotu.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Obróć prawą i środkową warstwę razem o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Obróć prawą i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Obróć górną i środkową warstwę razem o pół obrotu.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Obróć górną i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Obróć górną i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Wyślij e-mail do autora tej aplikacji</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Otwórz stronę internetową tej aplikacji</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Przetestowane rozwiązania:</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Średnia liczba tur potrzebnych do ułożenia kostki:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Pomieszaj kostkę</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Zresetuj kostkę</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Zresetuj kostkę.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Wymieszaj kostkę.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Rozwiąż kostkę</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Wróć o jeden obrót</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Przejdź o jeden obrót do przodu</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Wróć o jeden obrót.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Przejdź o jeden obrót do przodu.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Rozwiąż kostkę bez interwencji</value>
+  </data>
+  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Rozwiąż kostkę bez interwencji.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Rozwiąż kostkę z interwencją</value>
+  </data>
+  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Rozwiąż kostkę z interwencją.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+    <value>Przycisk przełączania: Rozwiąż kostkę z interwencją lub bez niej</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Rozwiąż kostkę.</value>
+  </data>
+</root>

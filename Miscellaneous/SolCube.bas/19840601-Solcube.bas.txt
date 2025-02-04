@@ -1,0 +1,1415 @@
+REM This program was scanned from a printed version with a dot matrix printer on 1984-06-01.
+REM Then converted from image to text with OCR software.
+REM The text was subsequently checked for errors. This is no guarantee that all errors have been corrected.
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					PAGE 1
+
+REM *** SOLCUBE V-1.2 - (C) 1981-1984 - Geert Geerits - E-mail: ggeerits@hotmail.com
+REM *** Taal : BASIC-80  V-5.2  MICROSOFT * Date : 09-11/1981, 04/1984
+
+   5 REM *** DECLARE VARIABLE TYPES
+  10 DEFINT A-Z
+
+  19 REM *** VALUES ARRAYS
+  20 DIM C(53), D(53), H(53), V(53), A$(217), F$(53)
+
+  30 REM *** VALUES VARIABLES
+  40 E = 53
+     C$ = CHR$(12):
+     M1$ = "'RETURN'":
+     D$ = STRING$(19,95):
+     D0$ = "!_____!_____!_____!":
+     D1$ = "!_____!_____!_____!"
+  45 D2$ = "/_____/_____/_____/":
+     D3$ = "/     /     /     /"
+
+  50 REM *** FILL ARRAYS
+  60 FOR I = 0 TO E:
+        READ H(I):
+     NEXT I:
+     FOR I = 0 TO E:
+        READ V(I):
+     NEXT I
+  70 FOR I = 0 TO E:
+        READ F$(I):
+     NEXT I:
+     FOR I = 0 TO E:
+        READ D(I):
+     NEXT I
+  80 FOR I = 0 TO 217:
+        READ A$(I):
+     NEXT I
+
+ 100 REM *** INSTRUCTIONS
+ 110 GOSUB 8010:
+     Z$ = "INSTRUCTIES":
+     GOSUB 9630:
+     IF X$ = "N" THEN 310 ELSE FLD$ = "M"
+ 120 QH = O:
+     QV = 6:
+     GOSUB 9710:
+     PRINT "Dit programma maakt het mogelijk een verwarde";:
+     GOSUB 9820:
+     PRINT "RUBIK's kubus";:
+     GOSUB 9810:
+     PRINT "in zijn oorspronke-"
+ 125 PRINT "lijke of logische vorm te herstellen."
+ 130 PRINT:
+     PRINT "Na het ingeven van de kleur per vakje worden onderaan het scherm de instructies"
+ 135 PRINT "afgebeeld die men dient uit te voeren."
+ 140 PRINT:
+     PRINT "Hieronder de verklaring van enkele instructies :"
+ 145 PRINT:
+     GOSUB 9820:
+     PRINT "  V";:
+     GOSUB 9810:
+     PRINT " =  het voorvlak EEN kwartslag naar RECHTS draaien (met de klok meedraaien)"
+ 150 GOSUB 9820:
+     PRINT " -V";:
+     GOSUB 9810:
+     PRINT " =  het voorvlak EEN kwartslag naar LINKS draaien (tegen de klok in draaien)"
+ 160 PRINT:
+     PRINT "Het 'met de klok meedraaien' en 'tegen de klok in draaien' gebeurt steeds in"
+ 165 PRINT "de veronderstelling dat het te draaien vlak zie VOOR u bevindt niettegen-"
+ 170 PRINT "staande dat in werkelijkheid enkel het voorvlak naar u gericht is."
+ 190 Z$ = M1$:
+     GOSUB 9610
+ 210 GOSUB 8010:
+     GOSUB 8110:
+     GOSUB 8510
+ 290 Z$ = "DE KUBUS IN ZIJN LOGISCHE VORM":
+     GOSUB 9620
+
+ 300 REM *** INPUT COLORS IN ASCII CODES (Yellow=89 - Orange=79 - White=87 - Red=82 - Blue=66 - Green=71)
+ 310 GOSUB 8010:
+     GOSUB 8110
+ 320 QH = 0:
+     QV = 23:
+     GOSUB 9710:
+     FLD$ = "H":
+     GOSUB 9820:
+     PRINT "TIK DE KLEUREN IN (Y-O-W-R-B-G);:
+     GOSUB 9810
+ 330 A1 = 0:
+     A2 = 0:
+     A3 = 0:
+     A4 = 0:
+     A5 = 0:
+     A6 = 0
+ 340 FOR I = 0 TO E:
+        QH = H(I):
+        QV = V(I):
+        GOSUB 9710
+ 350    X$ = INPUT$(1):
+        A = ASC(X$)
+ 360    IF A = 66 THEN A1 = A1 + 1:
+        IF A1 > 9 THEN 350 ELSE 440
+ 370    IF A = 71 THEN A2 = A2 + 1:
+        IF A2 > 9 THEN 350 ELSE 440
+ 380    IF A = 79 THEN A3 = A3 + 1:
+        IF A3 > 9 THEN 350 ELSE 440
+ 390    IF A = 82 THEN A4 = A4 + 1:
+        IF A4 > 9 THEN 350 ELSE 440
+ 410    IF A = 87 THEN A5 = A5 + 1:
+        IF A5 > 9 THEN 350 ELSE 440
+ 420    IF A = 89 THEN A6 = A6 + 1:
+        IF A6 > 9 THEN 350 ELSE 440
+ 430    GOTO 350
+ 440    FLD$ = F$(I):
+        GOSUB 9820:
+        PRINT X$;:
+        GOSUB 9810
+ 450    C(I) = A:
+        D(I) = A:
+     NEXT I
+ 490 QV = 23:
+     GOSUB 9680:
+     Z$ = "KORREKT":
+     GOSUB 9630:
+     IF X$ = "N" THEN 320
+
+ 500 REM *** BOVEN ETAGE - Top layer
+ 505 REM ** RANDEN BOVEN ETAGE - Edges top layer
+ 510 B = D(40):
+     V = 0:
+     X = 0:
+     Y = 0:
+     Z = 0:
+     IF B = D(43) AND D(0) = D(1) THEN V = 1
+ 520 IF B = D(41) AND D(9) = D(10) THEN X = 1
+ 530 IF B = D(37) AND D(18) = D(19) THEN Y = 1
+ 540 IF B = D(39) AND D(27) = D(28) THEN Z = 1
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					PAGE 2
+
+ 550 IF V = 1 AND X = 1 AND Y = 1 AND Z = 1 THEN 710	'Hoeken boven etage
+ 560 O = 0:
+     P = 0:
+     Q = 0:
+     IF B = D(5) OR B = D(10) OR B = D(12) OR B = D(14) THEN O = 1
+ 570 IF B = D(21) OR B = D(16) OR B = D(50) THEN P = 1
+ 580 IF B = D(41) AND X <> D(10) THEN Q = 1
+ 590 IF O = 1 OR P = 1 OR Q = 1 THEN 610
+ 600 GOSUB 3010:					'Kubus 1/4 draai naar rechts B M -O
+     GOTO 510						'Randen boven etage
+ 610 IF V = 1 AND Y = 1 AND Z = 1 THEN 650
+ 620 IF Y = 1 AND Z = 1 THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 650
+ 630 IF Y = 1 THEN M = 32:
+     N = 33:
+     GOSUB 3510:					'Draaien kubus B B
+     GOTO 650
+ 640 M = 6:
+     N = M:
+     GOSUB 3510						'Draaien kubus B
+ 650 X = D(9):
+     IF B = D(10) AND X = D(41) THEN M = 162:
+     N = 170:
+     GOSUB 3510:					'Draaien kubus -R -B O A -B L -B O -V
+     GOTO 510						'Randen boven etage
+ 655 IF B = D(5) AND X = D(12) THEN M = 171:
+     N = 175:
+     GOSUB 3510:					'Draaien kubus -B -A B -O R
+     GOTO 510						'Randen boven etage
+ 660 IF B = D(12) AND X = D(5) THEN M = 176:
+     N = 181:
+     GOSUB 3510:					'Draaien kubus -B -B L -B O -V
+     GOTO 510						'Randen boven etage
+ 665 IF B = D(50) AND X = D(16) THEN M = 182:
+     N = 192:
+     GOSUB 3510:					'Draaien kubus -R -B -B O O L -B V -B O -R
+     GUT0 510						'Randen boven etage
+ 670 IF B = D(16) AND X = D(50) THEN M = 193:
+     N = 196:
+     GOSUB 3510:					'Draaien kubus -R -B O A
+     GOTO 510						'Randen boven etage
+ 675 IF B = D(21) AND X = D(14) THEN M = 197:
+     N = 201:
+     GOSUB 3510:					'Draaien kubus B V -B -O -R
+     GOTO 510						'Randen boven etage
+ 680 IF B = D(14) AND X = D(21) THEN M = 202:
+     N = 207:
+     GOSUB 3510:					'Draaien kubus -B -B -L B -O A
+     GOTO 510						'Randen boven etage
+ 685 IF B = D(41) AND X <> D(10) THEN M = 208:
+     N = 211:
+     GOSUB 3510:					'Draaien kubus -R -B O A
+     GOTO 510						'Randen boven etage
+ 690 IF B = D(10) AND X <> D(41) THEN M = 208:
+     N=211:
+     GOSUB 3510						'Draaien kubus -R -B O A
+ 695 GOTO 510						'Randen boven etage
+
+ 700 REM ** HOEKEN BOVEN ETAGE - Corners top layer
+ 710 B = D(40):
+     O = 0:
+     P = 0:
+     Q = 0:
+     R = 0
+ 715 IF B = D(36) AND B = D(38) AND B = D(42) AND B = D(44) THEN O = 1
+ 720 IF D(0) = D(2) THEN P = 1
+ 725 IF D(9) = D(11) THEN Q = 1
+ 730 IF D(18) = D(20) THEN R = 1
+ 735 IF O = 1 AND P = 1 AND Q = 1 AND R = 1 THEN 1010
+ 740 O = 0:
+     IF B = D(38) AND B = D(42) AND B = D(44) THEN O = 1
+ 745 IF O = 1 AND P = 1 AND Q = 1 THEN M = 32:
+     N = 33:
+     GOSUB 3510:					'Draaien kubus B B
+     GOTO 800
+ 750 O = 0:
+     IF B = D(38) AND B = D(44) THEN O = 1
+ 755 IF O = 1 AND Q = 1 THEN M = 32:
+     N = 33:
+     GOSUB 3510:					'Draaien kubus B B
+     GOTO 800
+ 760 O = 0:
+     IF B = D(42) AND B = D(44) THEN O = 1
+ 765 IF O = 1 AND P = 1 THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 800
+ 770 O = 0:
+     IF B = D(36) AND B = D(38) THEN O = 1
+ 775 IF O = 1 AND R = 1 THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 800
+ 780 IF B <> D(44) THEN 800
+ 785 IF B <> D(38) THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 800
+ 790 IF B <> D(42) THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 800
+ 795 IF B <> D(36) THEN M = 32:
+     N = 33:
+     GOSUB 3510						'Draaien kubus B B
+ 800 IF B = D(8) OR B = D(15) OR B = D(47) THEN 880
+ 805 IF B = D(17) OR B = D(24) OR B = D(53) THEN M = 8:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -O
+     GOTO 880
+ 810 IF B = D(6) OR B = D(35) OR B = D(45) THEN M = 69:
+     N = M:
+     GOSUB 3510:					'Draaien kubus O
+     GOTO 880
+ 815 IF B = D(26) OR B = D(33) OR B = D(51) THEN M = 116:
+     N = 117:
+     GOSUB 3510:					'Draaien kubus O O
+     GOT0 880
+ 870 M = 65:
+     N = 66:
+     GOSUB 3510:					'Draaien kubus R R
+     GOTO 710						'Hoeken boven etage
+ 880 IF B = D(8) THEN M = 145:
+     N = 147:
+     GOSUB 3510:					'Draaien kubus V O -V
+     GOTO 710						'Hoeken boven etage
+ 885 IF B = D(15) THEN M = 148:
+     N = 150:
+     GOSUB 3510:					'Draaien kubus -R -O R
+     GOTO 710						'Hoeken boven etage
+ 890 IF B = D(47) THEN M = 151:
+     N = 158:
+     GOSUB 3510						'Draaien kubus -R O R O O -R -O R
+ 895 GOTO 710						'Hoeken boven etage
+
+1000 REM *** MIDDEN ETAGE - Middle layer
+1010 V = D(4):
+     X = D(13):
+     Y = D(22):
+     Z = D(31):
+     O = 0:
+     P = 0:
+     Q = 0:
+     R = 0:
+     S = 0
+1015 IF V = D(1) AND X = D(10) AND Y = D(19) THEN O = 1
+1020 IF V = D(3) AND V = D(5) THEN P = 1
+1025 IF X = D(12) AND X = D(14) THEN Q = 1
+1030 IF Y = D(21) AND Y = D(23) THEN R = 1
+1035 IF Z = D(30) AND Z = D(32) THEN S = 1
+1040 IF O = 1 AND P = 1 AND Q = 1 AND R = 1 AND S = 1 THEN 1510
+1050 IF V = D(10) THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 1010						'Midden etage
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					PAGE 3
+
+1060 IF V = D(28) THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 1010						'Midden etage
+1070 IF V = D(19) THEN M = 32:
+     N = 33:
+     GOSUB 3510:					'Draaien kubus B B
+     GOTO 1010						'Midden etage
+1080 IF P = 1 AND X = D(12) AND Z = D(32) THEN 1460
+1100 O = D(7):
+     P = D(16):
+     Q = D(25):
+     R = D(34)
+1110 IF V = O AND X = D(46) THEN 1410
+1120 IF V = O AND Z = D(46) THEN 1420
+1130 IF V = P AND X = D(50) THEN M = 8:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -O
+     GOTO 1410
+1140 IF V = P AND Z = D(50) THEN M = 8:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -O
+     GOTO 1420
+1150 IF V = Q AND X = D(52) THEN M = 116:
+     N = 117:
+     GOSUB 3510:					'Draaien kubus O O
+     GOTO 1410
+1160 IF V = Q AND Z = D(52) THEN M = 116:
+     N = 117:
+     GOSUB 3510:					'Draaien kubus O O
+     GOTO 1420
+1170 IF V = R AND X = D(48) THEN M = 69:
+     N = M:
+     GOSUB 3510:					'Draaien kubus O
+     GOTO 1410
+1180 IF V = R AND Z = D(48) THEN M = 69:
+     N = M:
+     GOSUB 3510:					'Draaien kubus O
+     GOTO 1420
+1210 IF X = O AND V = D(46) THEN 1460
+1215 IF X = O AND Y = D(46) THEN 1460
+1220 IF X = P AND V = D(50) THEN 1460
+1225 IF X = P AND Y = D(50) THEN 1460
+1230 IF X = Q AND V = D(52) THEN 1460
+1235 IF X = Q AND Y = D(52) THEN 1460
+1240 IF X = R AND V = D(48) THEN 1460
+1245 IF X = R AND Y = D(48) THEN 1460
+1250 IF Z = O AND V = D(46) THEN 1470
+1255 IF Z = O AND Y = D(46) THEN 1470
+1260 IF Z = P AND V = D(50) THEN 1470
+1265 IF Z = P AND Y = D(50) THEN 1470
+1270 IF Z = Q AND V = D(52) THEN 1470
+1275 If Z = Q AND Y = D(52) THEN 1470
+1280 IF Z = R AND V = D(48) THEN 1470
+1285 IF Z = R AND Y = D(48) THEN 1470
+1290 IF Y = O AND X = D(46) THEN 1480
+1295 IF Y = O AND Z = D(46) THEN 1480
+1300 IF Y = P AND X = D(50) THEN 1480
+1305 IF Y = P AND Z = D(50) THEN 1480
+1310 IF Y = Q AND X = D(52) THEN 1480
+1315 IF Y = Q AND Z = D(52) THEN 1480
+1320 IF Y = R AND X = D(48) THEN 1480
+1325 IF Y = R AND Z = D(48) THEN 1480
+1360 IF V <> D(5) THEN 1410
+1370 IF V <> D(3) THEN 1420
+1380 GOSUB 3010						'Kubus 1/4 draai naar rechts B M -O
+1410 M = 129:
+     N = 136:
+     GOSUB 3510:					'Draaien kubus -O -R O R O V -O -V
+     GOTO 1010						'Midden etage
+1420 M = 137:
+     N = 144:
+     GOSUB 3510:					'Draaien kubus O L -O -L -O -V O V
+     GOTO 1010						'Midden etage
+1460 GOSUB 3010:					'Kubus 1/4 draai naar rechts B M -O
+     GOTO 1010						'Midden etage
+1470 GOSUB 3110:					'Kubus 1/4 draai naar links -B -M O
+     GOTO 1010						'Midden etage
+1480 GOSUB 3210:					'Kubus 1/2 draai B B M M -O -O
+     GOTO 1010						'Midden etage
+
+1500 REM *** BENEDEN ETAGE - Bottom layer
+1505 REM ** HOEKEN OP JUISTE PLAATS - Corners on the right place
+1510 Z$ = "KUBUS OMDRAAIEN - VOORVLAK BLIJFT VOORAAN "
+1512 M = 0:
+     N = 5:
+     GOSUB 3520						'Draaien kubus V V A A M2 M2
+1515 V = D(4):
+     X = D(13):
+     Y = D(22):
+     Z = D(31)
+1520 O = 0:
+     P = 0:
+     Q = 0:
+     R = 0:
+     IF V = D(2) OR V = D(9) OR V = D(44) THEN O = 1
+1525 IF X = D(2) OR X = D(9) OR X = D(44) THEN P = 1
+1530 IF X = D(11) OR X = D(18) OR X = D(38) THEN Q = 1
+1535 IF V = D(0) OR V = D(29) OR V = D(42) THEN R = 1
+1540 IF O = 1 AND P = 1 AND Q = 1 AND R = 1 THEN 1610	'Randen op juiste plaats
+1545 IF O = 1 AND P = 1 THEN 1560
+1550 O = 0:
+     IF V = D(11) OR V = D(18) OR V = D(38) THEN O = 1
+1552 IF O = 1 AND Q = 1 THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B 
+     GOTO 1515
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					PAGE 4
+
+1554 O = 0:
+     IF X = D(0) OR X = D(29) OR X = D(42) THEN O = 1
+1556 IF O = 1 AND R = 1 THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 1515
+1558 M = 32:
+     N = 33:
+     GOSUB 3510:					'Draaien kubus B B
+     GOTO 1515
+1560 O = 0:
+     P = 0:
+     IF V = D(11) OR V = D(18) OR V = D(38) THEN O = 1
+1565 IF X = D(20) OR X = D(27) OR X = D(36) THEN P = 1
+1570 IF O = 1 AND P = 1 THEN M = 9:
+     N = 16:
+     GOSUB 3510:					'Draaien kubus -L B R -B L B -R -B
+     GOTO 1515
+1575 O = 0:
+     P = 0:
+     IF V = D(20) OR V = D(27) OR V = D(36) THEN O = 1
+1580 IF X = D(0) OR X = D(29) OR X = D(42) THEN P = 1
+1582 IF O = 1 AND P = 1 THEN M = 17:
+     N = 24:
+     GOSUB 3510:					'Draaien kubus B R -B -L B -R -B L
+     GOTO 1515
+1584 O = 0:
+     P = 0:
+     IF X = D(20) OR X = D(27) OR X = D(36) THEN O = 1
+1586 IF Z = D(11) OR Z = D(18) OR Z = D(38) THEN P = 1
+1588 IF O = 1 AND P = 1 THEN M = 25:
+     N = 33:
+     GOSUB 3510:					'Draaien kubus V -B -A B -V -B A B B
+     GOTO 1515
+1590 O = 0:
+     P = 0:
+     IF V = D(11) OR V = D(18) OR V = D(38) THEN O = 1
+1592 IF X = D(0) OR X = D(29) OR X = D(42) THEN P = 1
+1594 IF O = 1 AND P = 1 THEN M = 34:
+     N = 40:
+     GOSUB 3510:					'Draaien kubus B V B R -B -R -V
+     GOTO 1515
+1596 GOSUB 3010:					'Kubus 1/4 draai naar rechts B M -O
+     GOTO 1515
+
+1600 REM ** RANDEN OP JUISTE PLAATS - Edges on the right place
+1610 V = D(4):
+     X = D(13):
+     Y = D(22):
+     Z = D(31)
+1615 O = 0:
+     P = 0:
+     Q = 0:
+     R = 0:
+     IF V = D(1) OR V = D(43) THEN O = 1
+1620 IF X = D(10) OR X = D(41) THEN P = 1
+1625 IF Y = D(19) OR Y = D(37) THEN Q = 1
+1630 IF Z = D(28) OR Z = D(39) THEN R = 1
+1635 IF O = 1 AND P = 1 AND Q = 1 AND R = 1 THEN 1710	'Buitelen hoeken
+1640 O = 0:
+     P = 0:
+     IF V = D(19) OR V = D(37) THEN O = 1
+1645 IF Y = D(28) OR Y = D(39) THEN P = 1
+1650 IF O = 1 AND P = 1 THEN M = 41:
+     N = 52:
+     GOSUB 3510:					'Draaien kubus L L B -V A L L V -A B L L
+     GOTO 1610						'Randen op je juiste plaats
+1655 O = 0:
+     P = 0:
+     IF V = D(28) OR V = D(39) THEN O = 1
+1660 IF Y = D(1) OR Y = D(43) THEN P = 1
+1665 IF O = 1 AND P = 1 THEN M = 53:
+     N = 64:
+     GOSUB 3510:					'Draaien kubus L L -B -V A L L V -A -B L L
+     GOTO 1610						'Randen op je juiste plaats
+1670 O = 0:
+     P = 0:
+     IF V = D(19) OR V = D(37) THEN O = 1
+1675 IF Y = D(1) OR Y = D(43) THEN P = 1
+1680 IF O = 1 AND P = 1 THEN M = 65:
+     N = 84:
+     GOSUB 3510:					'Draaien kubus R R L L O R R L L B B R R L L O R R L L
+     GOTO 1610						'Randen op je juiste plaats
+1685 O = 0:
+     P = 0:
+     IF V = D(28) OR V = D(39) THEN O = 1
+1690 IF X = D(19) 0R X = D(37) THEN P = 1
+1692 IF O = 1 AND P = 1 THEN M = 85:
+     N = 96:
+     GOSUB 3510						'Draaien kubus R A B -A -B R R -V -B V B R
+1694 GOSUB 3010:					'Kubus 1/4 draai naar rechts B M -O
+     GOTO 1610						'Randen op je juiste plaats
+
+1700 REM ** BUITELEN HOEKEN - Tumbling corners
+1710 B = D(40):
+     IF B = D(36) AND B = D(38) AND B = D(42) AND B = D(44) THEN 1810
+1715 IF B = D(2) THEN 1735
+1720 IF B = D(11) THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 1735
+1725 IF B = D(29) THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 1735
+1730 IF B = D(20) THEN M = 32:
+     N = 33:
+     GOSUB 3510						'Draaien kubus B B
+1735 M = 97:
+     N = 102:
+     GOSUB 3510						'Draaien kubus -R O R V O -V
+1740 IF B = D(9) THEN 1760
+1745 IF B = D(18) THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 1760
+1750 IF B = D(0) THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 1760
+1755 M = 32;
+     N = 33:
+     GOSUB 3510						'Draaien kubus B B
+1760 M = 103:
+     N = 108:
+     GOSUB 3510						'Draaien kubus V -O -V -R -O R
+1765 IF B = D(36) AND B = D(38) AND B = D(42) AND B = D(44) THEN 1810
+1770 M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 1710						'Buitelen hoeken
+
+1800 REM ** DRAAIEN RANDEN - Turn edges
+1810 B = D(40):
+     V = D(4):
+     X = D(13):
+     Y = D(22):
+     O = 0:
+     P = 0
+1815 IF B = D(37) AND B = D(39) AND B = D(41) AND B = D(43) THEN O = 1
+1820 IF V = D(1) AND X = D(10) AND Y = D(19) THEN P = 1
+1825 IF O = 1 AND P = 1 THEN 2010
+1830 IF O = 0 THEN 1850
+1835 IF V = D(10) THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 1810						'Draaien randen
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					PAGE 5
+
+1840 IF V = D (28) THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 1810						'Draaien randen
+1845 IF V = D (19) THEN M = 32:
+     N = 33:
+     GOSUB 3510:					'Draaien kubus B B
+     GOTO 1810						'Draaien randen
+1850 IF B <> D(43) THEN 1890
+1860 IF B <> D(41) THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 1890
+1870 IF B <> D(39) THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 1890
+1880 IF B <> D(37) THEN M = 32:
+     N = 33:
+     GOSUB 3510						'Draaien kubus B B
+1890 M = 109:
+     N = 118:
+     GOSUB 3510						'Draaien kubus V B -O L L B B O O R
+1910 IF B <> D(41) THEN 1950
+1920 IF B <> D(37) THEN M = 6:
+     N = M:
+     GOSUB 3510:					'Draaien kubus B
+     GOTO 1950
+1930 IF B <> D(43) THEN M = 12:
+     N = M:
+     GOSUB 3510:					'Draaien kubus -B
+     GOTO 1950
+1940 IF B <> D(39) THEN M = 32:
+     N = 33:
+     GOSUB 3510						'Draaien kubus B B
+1950 M = 119:
+     N = 128:
+     GOSUB 3510:					'Draaien kubus -R O O B B L L O -B -V
+     GOTO 1810						'Draaien randen
+
+2000 REM *** TEST KUBUS IN LOGISCHE VORM - Test cube in logical form
+2005 REM ** TEST V, R, A & L-VLAKKEN - Test V, R, A & L-sides
+2010 M = 6:
+     N = 8:
+     FOR I = 0 TO 3:
+        IF > 0 THEN H = 1:
+        GOSUB 3530:
+        H = 0
+2020    A = D(0):
+        IF A <> D(2) OR A <> D(4) OR A <> D(6) OR A <> D(8) THEN 510	'Randen boven etage
+2030    IF A <> D(1) OR A <> D(3) OR A <> D(5) OR A <> D(7) THEN 510	'Randen boven etage
+2040 NEXT I
+
+2100 REM ** TEST B-VLAK - Test top side
+2110 A = D(42):
+     IF A <> D(44) OR A <> D(40) OR A <> D(36) OR A <> D(38) THEN 510
+2120 IF A <> D(43) OR A <> D(39) UR A <> D(41) OR A <> D(37) THEN 510
+2310 ZS = "LOGISCHE VORM BEREIKT !":
+     GOSUB 9620
+2320 Z$ = "NOG":
+     GOSUB 9630:
+     IF X$ = "N" THEN 9910 ELSE 310
+
+3000 REM *** Subroutine 1/4 DRAAI NAAR RECHTS - 1/4 turn to the right, top layer stays up
+3010 Z$ = "KUBUS 1/4 DRAAI RECHTS - BOVENVLAK BLIJFT BOVEN "
+3020 M = 6:
+     N = 8:
+     GOSUB 3520:
+     RETURN
+
+3100 REM *** Subroutine 1/4 DRAAI NAAR LINKS - 1/4 turn to the left, top layer stays up
+3110 Z$ = "KUBUS 1/4 DRAAI LINKS - BOVENVLAK BLIJFT BOVEN "
+3120 M = 159:
+     N = 161:
+     GOSUB 3520:
+     RETURN
+
+3200 REM *** Subroutine 1/2 DRAAI - 1/2 turn, top layer stays up
+3210 Z$ = "KUBUS HALVE DRAAI - BOVENVLAK BLIJFT BOVEN "
+3220 M = 212:
+     N = 217:
+     GOSUB 3520:
+     RETURN
+
+3500 REM *** Subroutine DRAAIEN KUBUS - Turning the cube
+3510 Z$ = "":
+     FOR J = M TO N:
+        Z$ = Z$ + A$(J) + CHR$(32):
+     NEXT J
+3520 GOSUB 8410
+3530 FOR J = M TO N
+3610    IF A$(J) = "B" THEN 4010
+3620    IF A$(J) = "-B" THEN 4060
+3630    IF A$(J) ="O" THEN 4110
+3640    IF A$(J) = "-O" THEN 4160
+3650    IF A$(J) = "R" THEN 4210
+3660    IF A#(J) = "-R" THEN 4260
+3670    IF A$(J) = "L" THEN 4310
+3680    IF A$(J) = "-L" THEN 4360
+3690    IF A$(J) = "V" THEN 4410
+3710    IF A$(J) = "-V" THEN 4460
+3720    IF A#(J) = "A" THEN 4510
+3730    IF A$(J) = "-A" THEN 4560
+3740    IF A$(J) = "M" THEN 4610
+3750    IF A$(J) = "-M" THEN 4660
+3760    IF A$(J) = "M1" THEN 4710
+3770    IF A$(J) = "-M1" THEN 4760
+3780    IF A$(J) = "M2" THEN 4810
+3790    IF A$(J) = "-M2" THEN 4860
+3810    RETURN
+
+4000    REM ** RICHTING 1 = B - Direction 1 = B (top)
+4010    D(0) = C(9):
+        D(1) = C(10):
+        D(2) = C(11):
+        D(9) = C(18):
+        D(10) = C(19):
+        D(11) = C(20)
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					PAGE 6
+
+4020    D(18) = C(27):
+        D(19) = C(28):
+        D(20) = C(29):
+        D(27) = C(0):
+        D(28) = C(1):
+        D(29) = C(2)
+4030    D(42) = C(44):
+        D(43) = C(41):
+        D(44) = C(38):
+        D(41) = C(37):
+        D(38) = C(36)
+4040    D(37) = C(39):
+        D(36) = C(42):
+        D(39) = C(43):
+        GOTO 4910
+
+4050    REM ** RICHTING 2 = -B - Direction 2 = B (top)
+4060    D(0) = C(27):
+        D(1) = C(28):
+        D(2) = C(29):
+        D(9) = C(0):
+        D(10) = C(1):
+        D(11) = C(2)
+4070    D(18) = C(9):
+        D(19) = C(10):
+        D(20) = C(11):
+        D(27) = C(18):
+        D(28) = C(19):
+        D(29) = C(20)
+4080    D(42) = C(36):
+        D(43) = C(39):
+        D(44) = C(42):
+        D(41) = C(43):
+        D(38) = C(44):
+        D(37) = C(41)
+4090    D(36) = C(38):
+        D(39) = C(37):
+        GOTO 4910
+
+4100    REM ** RICHTING 3 = O - Direction 3 = O (bottom)
+4110    D(6) = C(33):
+        D(7) = C(34):
+        D(8) = C(35):
+        D(15) = C(6):
+        D(16) = C(7):
+        D(17) = C(8)
+4120    D(24) = C(15):
+        D(25) = C(16):
+        D(26) = C(17):
+        D(33) = C(24):
+        D(34) = C(25):
+        D(35) = C(26)
+4130    D(45) = C(51):
+        D(46) = C(48):
+        D(47) = C(45):
+        D(50) = C(46):
+        D(53) = C(47):
+        D(52) = C(50)
+4140    D(51) = C(53):
+        D(48) = C(52):
+        GOTO 4910
+
+4150    REM ** RICHTING 4 = -O - Direction 4 = -O (bottom)
+4160    D(6) = C(15):
+        D(7) = C(16):
+        D(8) = C(17):
+        D(15) = C(24):
+        D(16) = C(25):
+        D(17) = C(26)
+4170    D(24) = C(33):
+        D(25) = C(34):
+        D(26) = C(35):
+        D(33) = C(6):
+        D(34) = C(7):
+        D(35) = C(8)
+4180    D(45) = C(47):
+        D(46) = C(50):
+        D(47) = C(53):
+        D(50) = C(52):
+        D(53) = C(51):
+        D(52) = C(48)
+4190    D(51) = C(45):
+        D(48) = C(46):
+        GOTO 4910
+
+4200    REM ** RICHTING 5 = R - Direction 5 = R (right)
+4210    D(2) = C(47):
+        D(5) = C(50):
+        D(8) = C(53):
+        D(47) = C(24):
+        D(50) = C(21):
+        D(53) = C(18)
+4220    D(24) = C(38):
+        D(21) = C(41):
+        D(18) = C(44):
+        D(38) = C(2):
+        D(41) = C(5):
+        D(44) = C(8)
+4230    D(9) = C(15):
+        D(12) = C(16):
+        D(15) = C(17):
+        D(16) = C(14):
+        D(17) = C(11):
+        D(14) = C(10)
+4240    D(11) = C(9):
+        D(10) = C(12):
+        GOTO 4910
+
+4250    REM ** RICHTING 6 = -R - Direction 6 = -R (right)
+4260    D(2) = C(38):
+        D(5) = C(41):
+        D(8) = C(44):
+        D(47) = C(2):
+        D(50) = C(5):
+        D(53) = C(8)
+4270    D(24) = C(47):
+        D(21) = C(50):
+        D(18) = C(53):
+        D(38) = C(24):
+        D(41) = C(21):
+        D(44) = C(18)
+4280    D(9) = C(11):
+        D(12) = C(10):
+        D(15) = C(9):
+        D(16) = C(12):
+        D(17) = C(15):
+        D(14) = C(16)
+4290    D(11) = C(17):
+        D(10) = C(14)/
+        GOTO 4910
+
+4300    REM ** RICHTING 7 = L - Direction 7 = L (left)
+4310    D(0) = C(36):
+        D(3) = C(39):
+        D(6) = C(42):
+        D(45) = C(0):
+        D(48) = C(3):
+        D(51) = C(6)
+4320    D(26) = C(45):
+        D(23) = C(48):
+        D(20) = C(51):
+        D(36) = C(26):
+        D(39) = C(23):
+        D(42) = C(20)
+4330    D(29) = C(27):
+        D(32) = C(28):
+        D(35) = C(29):
+        D(34) = C(32):
+        D(33) = C(35):
+        D(30) = C(34)
+4340    D(27) = C(33):
+        D(28) = C(30):
+        GOTO 4910
+
+4350    REM ** RICHTING 8 = -L - Direction 8 = -L (left)
+4360    D(0) = C(45):
+        D(3) = C(48):
+        D(6) = C(51):
+        D(45) = C(26):
+        D(48) = C(23):
+        D(51) = C(20)
+4370    D(26) = C(36):
+        D(23) = C(39):
+        D(20) = C(42):
+        D(36) = C(0):
+        D(39) = C(3):
+        D(42) = C(6)
+4380    D(29) = C(35):
+        D(32) = C(34):
+        D(35) = C(33):
+        D(34) = C(30):
+        D(33) = C(27):
+        D(30) = C(28)
+4390    D(27) = C(29):
+        D(28) = C(32):
+        GOTO 4910
+
+4400    REM ** RICHTING 9 = V - Direction 9 = V (front)
+4410    D(9) = C(42):
+        D(12) = C(43):
+        D(15) = C(44):
+        D(47) = C(9):
+        D(46) = C(12):
+        D(45) = C(15)
+4420    D(35) = C(47):
+        D(32) = C(46):
+        D(29) = C(45):
+        D(42) = C(35):
+        D(43) = C(32):
+        D(44) = C(29)
+4430    D(0) = C(6):
+        D(3) = C(7):
+        D(6) = C(8):
+        D(7) = C(5):
+        D(8) = C(2):
+        D(5) = C(1)
+4440    D(2) = C(0):
+        D(1) = C(3):
+        GOTO 4910
+
+4450    REM ** RICHTING 10 = -V - Direction 10 = -V (front)
+4460    D(9) = C(47):
+        D(12) = C(46):
+        D(15) = C(45):
+        D(47) = C(35):
+        D(46) = C(32):
+        D(45) = C(29)
+4470    D(35) = C(42):
+        D(32) = C(43):
+        D(29) = C(44):
+        D(42) = C(9):
+        D(43) = C(12):
+        D(44) = C(15)
+4480    D(2) = C(8):
+        D(5) = C(7):
+        D(8) = C(6):
+        D(7) = C(3):
+        D(6) = C(0):
+        D(3) = C(1)
+4490    D(0) = C(2):
+        D(1) = C(5):
+        GOTO 4910
+
+4500    REM ** RICHTING 11 = A - Direction 11 = A (back)
+4510    D(11) = C(53):
+        D(14) = C(52):
+        D(17) = C(51):
+        D(53) = C(33):
+        D(52) = C(30):
+        D(51) = C(27)
+4520    D(33) = C(36):
+        D(30) = C(37):
+        D(27) = C(38):
+        D(36) = C(11):
+        D(37) = C(14):
+        D(38) = C(17)
+4530    D(18) = C(24):
+        D(21) = C(25):
+        D(24) = C(26):
+        D(25) = C(23):
+        D(26) = C(20):
+        D(23) = C(19)
+4540    D(20) = C(18):
+        D(19) = C(21):
+        GOTO 4910
+
+4550    REM ** RICHTING 12 = -A - Direction 12 = -A (back)
+4560    D(11) = C(36):
+        D(14) = C(37):
+        D(17) = C(38):
+        D(53) = C(11):
+        D(52) = C(14):
+        D(51) = C(17)
+4570    D(33) = C(53):
+        D(30) = C(52):
+        D(27) = C(51):
+        D(36) = C(33):
+        D(37) = C(30):
+        D(38) = C(27)
+4580    D(20) = C(26):
+        D(23) = C(25):
+        D(26) = C(24):
+        D(25) = C(21):
+        D(24) = C(18):
+        D(21) = C(19)
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					PAGE 7
+
+4590    D(18) = C(20):
+        D(19) = C(23):
+        GOTO 4910
+
+4600    REM ** RICHTING 13 = M - Direction 13 = M (middle)
+4610    D(3) = C(12):
+        D(4) = C(13):
+        D(5) = C(14):
+        D(12) = C(21):
+        D(13) = C(22)
+4620    D(14) = C(23):
+        D(21) = C(30):
+        D(22) = C(31):
+        D(23) = C(32):
+        D(30) = C(3)
+4630    D(31) = C(4):
+        D(32) = C(5):
+        GOTO 4910
+
+4650    REM ** RICHTING 14 = -M - Direction 14 = -M (middle)
+4660    D(3) = C(30):
+        D(4) = C(31):
+        D(5) = C(32):
+        D(12) = C(3):
+        D(13) = C(4)
+4670    D(14) = C(5):
+        D(21) = C(12):
+        D(22) = C(13):
+        D(23) = C(14):
+        D(30) = C(21)
+4680    D(31) = C(22):
+        D(32) = C(23):
+        GOTO 4910
+
+4700    REM ** RICHTING 15 = M1 - Direction 15 = M1 (middle)
+4710    D(1) = C(46):
+        D(4) = C(49):
+        D(7) = C(52):
+        D(46) = C(25):
+        D(49) = C(22)
+4720    D(52) = C(19):
+        D(25) = C(37):
+        D(22) = C(40):
+        D(19) = C(43):
+        D(37) = C(1)
+4730    D(40) = C(4):
+        D(43) = C(7):
+        GOTO 4910
+
+4750    REM ** RICHTING 16 = -M1 - Direction 16 = -M1 (middle)
+4760    D(1) = C(37):
+        D(4) = C(40):
+        D(7) = C(43):
+        D(46) = C(1):
+        D(49) = C(4)
+4770    D(52) = C(7):
+        D(25) = C(46):
+        D(22) = C(49):
+        D(19) = C(52):
+        D(37) = C(25)
+4780    D(40) = C(22):
+        D(43) = C(19):
+        GOTO 4910
+
+4800    REM ** RICHTING 17 = M2 - Direction 17 = M2 (middle)
+4810    D(10) = C(39):
+        D(13) = C(40):
+        D(16) = C(41):
+        D(50) = C(10):
+        D(49) = C(13)
+4820    D(48) = C(16):
+        D(34) = C(50):
+        D(31) = C(49):
+        D(28) = C(48):
+        D(39) = C(34)
+4830    D(40) = C(31):
+        D(41) = C(28):
+        GOTO 4910
+
+4850    REM ** RICHTING 18 = -M2 - Direction 18 = -M2 (middle)
+4860    D(10) = C(50):
+        D(13) = C(49):
+        D(16) = C(48):
+        D(50) = C(34):
+        D(49) = C(31)
+4870    D(48) = C(28):
+        D(34) = C(39):
+        D(31) = C(40):
+        D(28) = C(41):
+        D(39) = C(10)
+4880    D(40) = C(13):
+        D(41) = C(16)
+
+4900    REM ** DISPLAY KLEUREN
+4910    FOR I = 0 TO E:
+           C(I) = D(I)
+        NEXT I
+     NEXT J
+4920 IF H = 0 THEN GOSUB 8510:
+     GOSUB 8460
+4930 RETURN
+
+6000 REM *** DATA ARRAY H(53) - KOLOMNUMMER - Column number
+6010 DATA 2, 8, 14, 2, 8, 14, 2, 8, 14, 19, 22, 25, 19, 22, 25, 19, 22, 25
+6020 DATA 74, 68, 62, 74, 68, 62, 74, 68, 62, 58, 55, 52, 58, 55, 52, 58, 55, 52
+6030 DATA 9, 15, 21, 6, 12, 18, 3, 9, 15, 54, 60, 66, 57, 63, 69, 60, 66, 72
+
+6050 REM *** DATA ARRAY V(53) - LIJNNUMMER - Line number
+6060 DATA 11, 11, 11, 15, 15, 15, 19, 19, 19, 10, 7, 4, 14, 11, 8, 18, 15, 12
+6070 DATA 2, 2, 2, 6, 6, 6, 10, 10, 10, 4, 7, 10, 8, 11, 14, 12, 15, 18
+6080 DATA 2, 2, 2, 5, 5, 5, 8, 8, 8, 20, 20, 20, 17, 17, 17, 14, 14, 14
+
+6100 REM *** DATA ARRAY F$(53) FIELD
+6110 DATA H, R, H, R, H, R, H, R, H, H, R, H, R, H, R, H, R, H
+6120 DATA H, R, H, R, H, R, H, R, H, H, R, H, R, H, R, H, R, H
+6130 DATA H, R, H, R, H, R, H, R, H, H, R, H, R, H, R, H, R, H
+
+6150 REM *** DATA ARRAY D(53) - KUBUS IN LOGISCHE VORM - Cube in logical form
+6160 DATA 89, 89, 89, 89, 89, 89, 89, 89, 89, 79, 79, 79, 79, 79, 79, 79, 79, 79
+6170 DATA 87, 87, 87, 87, 87, 87, 87, 87, 87, 82, 82, 82, 82, 82, 82, 82, 82, 82
+6180 DATA 66, 66, 66, 66, 66, 66, 66, 66, 66, 71, 71, 71, 71, 71, 71, 71, 71, 71
+
+6200 REM *** DATA ARRAY A$(217) BEWEGINGEN - Movements
+6205 REM ** DATA OMDRAAIEN - VOORVLAK BLIJFT VOORAAN
+6210 DATA V, V, A, A, M2, M2:
+     REM 0-5
+
+6250 REM ** DATA 1/4 DRAAI RECHTS - BOVENVLAK BLIJFT BOVEN
+6260 DATA B, M, -O:
+     REM 6-8
+
+6300 REM ** DATA BENEDEN ETAGE
+6310 DATA -L, B, R, -B, L, B, -R, -B:
+     REM 9-16
+6320 DATA B, R, -B, -L, B, -R, -B, L:
+     REM 17-24
+6330 DATA V, -B, -A, B, -V, -B, A, B, B:
+     REM 25-33
+6340 DATA B, V, B, R, -B, -R, -V:
+     REM 34-40
+6350 DATA L, L, B, -V, A, L, L, V, -A, B, L, L:
+     REM 41-52
+6360 DATA L, L, -B, -V, A, L, L, V, -A, -B, L, L:
+     REM 53-64
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					PAGE 8
+
+6370 DATA R, R, L, L, O, R, R, L, L, B, B, R, R, L, L, O, R, R, L, L:
+     REM 65-84
+6380 DATA R, A, B, -A, -B, R, R, -V, -B, V, B, R:
+     REM 85-96
+6390 DATA -R, O, R, V, O, -V:
+     REM 97-102
+6410 DATA V, -O, -V, -R, -O, R:
+     REM 103-108
+6420 DATA V, B, -O, L, L, B, B, O, O, R:
+     REM 109-118
+6430 DATA -R, O, O, B, B, L, L, O, -B, -V:
+     REM 119-128
+
+6450 REM ** DATA MIDDEN ETAGE - Middle layer
+6460 DATA -O, -R, O, R, O, V, -O, -V:
+     REM 129-136
+6470 DATA O, L, -O, -L, -O, -V, O, V:
+     REM 137-144
+
+6500 REM ** DATA BOVEN ETAGE HOEKEN - Upper layer corners
+6510 DATA V, O, -V:
+     REM 145-147
+6520 DATA -R, -O, R:
+     REM 148-150
+6530 DATA -R, O, R, O, O, -R, -O, R:
+     REM 151-158
+
+6550 REM ** DATA 1/4 DRAAI LINKS, BOVENVLAK BLIJFT BOVEN - 1/4 turn to left, upper layer stys up
+6560 DATA -B, -M, O:
+     REM 159-161
+
+6600 REM ** DATA BOVEN ETAGE RANDEN
+6610 DATA -R, -B, O, A, -B, L, -B, O, -V:
+     REM 162-170
+6620 DATA -B, -A, B, -O, R:
+     REM 171-175
+6630 DATA -B, -B, L, -B, O, -V:
+     REM 176-181
+6640 DATA -R, -B, -B, O, O, L, -B, V, -B, O, -R:
+     REM 182-192
+6650 DATA -R, -B, O, A:
+     REM 193-196
+6660 DATA B, V, -B, -O, -R:
+     REM 197-201
+6670 DATA -B, -B, -L, B, -O, A:
+     REM 202-207
+6680 DATA -R, -B, O, A:
+     REM 208-211
+
+6700 REM ** DATA 1/2 DRAAI - BOVENVLAK BLIJFT BOVEN
+6710 DATA B, B, M, M, -O, -O:
+     REM 212-217
+
+8000 REM *** Subroutine HOOFDING - Heading
+8010 PRINT C$:
+     QH = 33:
+     QV = 0:
+     GOSUB 9710:
+     FLD$ = "HR":
+     GOSUB 9820:
+     PRINT " S O L C U B E ";:
+     GOSUB 9810:
+     RETURN
+
+8100 REM *** Subroutine DISPLAY THE CUBE
+8110 QH = 9:
+     QV = 0:
+     GOSUB 9710:
+     PRINT D$:
+     QH = 60:
+     GOSUB 9710:
+     PRINT D$
+8120 PRINT TAB(9); D3$; "!"; SPC(31); "/"; D1$
+8130 PRINT TAB(8); D3$; " !"; SPC(30); "/"; D1$
+8140 PRINT TAB(7); D2$; "  !"; SPC(29); "/  "; D1$
+8150 PRINT TAB(6); D3$; "!  !  B = BOVENVLAK"; SPC(13); "/!  "; D0$
+8160 PRINT TAB(5); D3$; " ! /!  R = ZIJVLAK RECHTS       / ! /"; D1$
+8170 PRINT TAB(4); D2$; "  !/ !  V = VOORVLAK"; SPC(12); "/   !/ "; D1$
+8180 PRINT "  "; D3$; "!  !  !"; SPC(25); "/!  !  "; D1$
+8190 PRINT " "; D3$; " ! /!  !"; SPC(7); "ACHTERVLAK = A   / ! /!  "; D0$
+8210 PRINT D2$; "  !/ ! /!    ZIJVLAK LINKS = L  /  !/ ! /"; D1$
+8220 PRINT D1$; "  !  !/ !        ONVERVLAK = O  !  !  !/ "; D1$
+8230 PRINT D1$; " /!  !  !"; SPC(23); "! /!  !  "; D1$
+8240 PRINT D1$; "/ ! /!  !"; SPC(23); "!/ ! /!  "; D0$
+8250 PRINT D0$; "  !/ ! /   B = BLAUW"; SPC(12); "!  !/ ! "; D3$
+8260 PRINT D1$; "  !  !/    O = ORANJE"; SPC(11); "!  !  !"; D3$
+8270 PRINT D1$; " /!  /     Y = GEEL"; SPC(13); "! /!  "; D2$
+8280 PRINT D1$; "/ ! /"; SPC(27); "!/ ! "; D3$
+8290 PRINT D0$; "  !/"; SPC(19); "WIT = W  !  !"; D3$
+8310 PRINT D1$; "  /"; SPC(19); "ROOD = R  !  "; D2$
+8320 PRINT D1$; " /"; SPC(19); "GROEN = G  ! "; D3$
+8330 PRINT D1$; "/"; SPC (31); "!"; D3$
+8340 PRINT LEFT$(D0$, 18); "/"; SPC(32); "!"; RIGHT$(D2$, 18)
+8390 RETURN
+
+8400 REM *** Subroutine DISPLAY INTRUCTIONS
+8410 QH = 0:
+     QV = 23:
+     GOSUB 9710:
+     FLD$ = "H":
+     GOSUB 9820:
+     PRINT Z$;:
+     RETURN
+8460 QH = LEN(Z$):
+     QV = 23:
+     GOSUB 9710:
+     PRINT " --> ";:
+     GOTO 9625
+
+8500 REM *** Subroutine DISPLAY COLORS
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01					page 9
+
+8510 FOR I = 0 TO E:
+        QH = H(I):
+        QV = V(I):
+        GOSUB 9710
+8520    FLD$ = F$(I):
+        GOSUB 9820:
+        PRINT CHR$(D(I));:
+        GOSUB 9810:
+     NEXT I:
+     RETURN
+
+9600 REM *** Subroutine INPUT
+9610 QV = 23:
+     QH = 0:
+     GOSUB 9710:
+     FLD$ = "HB":
+     GOSUB 9820:
+     PRINT Z$;:
+     GOSUB 9810:
+     X$ = INPUT$(1):
+     GOTO 9680
+9620 QV = 23:
+     QH = 0:
+     GOSUB 9710:
+     FLD$ = "H":
+     GOSUB 9820:
+     PRINT Z$; " --> ";
+9625 FLD$ = "HB":
+     GOSUB 9820:
+     PRINT M1$;:
+     GOSUB 9810:
+     X$-INPUT$(1):
+     GOTO 9680
+9630 QV = 23:
+     QH = 0:
+     GOSUB 9710:
+     FLD$ = "H":
+     GOSUB 9820:
+     PRINT Z$;:
+     FLD$ = "HB":
+     GOSUB 9820:
+     PRINT (Y/N) ? ";:
+     GOSUB 9810
+9635 X$ = INPUT$(1):
+     IF X$ = "Y" OR X$ = "N" THEN 9680 ELSE 9635
+9680 QH = 0:
+     GOSUB 9710:
+     PRINT SPACE$(79);:
+     RETURN
+
+9700 REM *** Subroutine LOCATE
+9710 OUT &H41, &H80:
+     OUT &H40, 0:
+     OUT &H40, 0:
+     POKE &HE7A1, 0:
+     PRINT
+9720 OUT &H40, QH:
+     OUT &H40, QV:
+     QD = QV * 80 + QH
+9730 QVV = FIX(QD / 256):
+     QHH = QD - (QVV * 256):
+     POKE &HE7A2, QHH:
+     POKE &HE7A3, &HE0 + QVV:
+     RETURN
+
+9800 REM *** Subroutine FLD$
+9810 QE = &H80:
+     GOTO 9880
+9820 QE = &H80:
+     FOR QI = 1 TO LEN(FLD$):
+        QX$ = MID$(FLD$, QI, 1)
+9830    IF QX$ = CHR$(72) THEN QE = QE + 1:
+        GOTO 9870
+9840    IF QX$ = CHR$(66) THEN QE = QE + 2:
+        GOTO 9870
+9850    IF QX$ = CHR$(82) THEN QE = QE + 16
+9870 NEXT QI
+9880 QJ! = PEEK(&HE7A3):
+     QK! = PEEK(&HE7A2):
+     QJ! = QJ! * 256 + QK!:
+     POKE QJ!, QL:
+     QJ! = QJ! + 1
+9890 QK! = FIX(QJ! / 256):
+     QJ! = QJ! - (QK! * 256):
+     POKE &HE7A2, QJ!:
+     POKE &HE7A3, QK!:
+     RETURN
+9900 REM *** EINDE PROGR.
+9910 PRINT C$:
+     END
+
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01			               PAGE 10
+
+REM ** SOLCUBE ** ARRAY 'A$(217)' - INSTRUCTIONS
+
+  0	V		 54	L		108	R		163	-B
+  1	V		 55	-B		109	V		164	O
+  2	A		 56	-V		110	B		165	A
+  3	A		 57	A		111	-O		166	-B
+  4	M2		 58	L		112	L		167	L
+  5	M2		 59	L		113	L		168	-B
+  6	B		 60	V		114	B		169	O
+  7	M		 61	-A		115	B		170	-V
+  8	-O		 62	-B		116	O		171	-B
+  9	-L		 63	L		117	O		172	-A
+ 10	B		 64	L		118	R		173	B
+ 11	R		 65	R		119	-R		174	-O
+ 12	-B		 66	R		120	O		175	R
+ 13	L		 67	L		121	O		176	-B
+ 14	B		 68	L		122	B		177	-B
+ 15	-R		 69	O		123	B		178	L
+ 16	-B		 70	R		124	L		179	-B
+ 17	B		 71	R		125	L		180	O
+ 18	R		 72	L		126	O		181	-V
+ 19	-B		 73	L		127	-B		182	-R
+ 20	-L		 74	B		128	-V		183	-B
+ 21	B		 75	B		129	-O		184	-B
+ 22	-R		 76	R		130	-R		185	O
+ 23	-B		 77	R		131	O		186	O
+ 24	L		 78	L		132	R		187	L
+ 25	V		 79	L		133	O		188	-B
+ 26	-B		 80	O		134	V		189	V
+ 27	-A		 81	R		135	-O		190	-B
+ 28	B		 82	R		136	-V		191	O
+ 29	-V		 83	L		137	O		192	-R
+ 30	-B		 84	L		138	L		193	-R
+ 31	A		 85	R		139	-O		194	-B
+ 32	B		 86	A		140	-L		195	O
+ 33	B		 87	B		141	-O		196	A
+ 34	B		 88	-A		142	-V		197	B
+ 35	V		 89	-B		143	O		198	V
+ 36	B		 90	R		144	V		199	-B
+ 37	R		 91	R		145	V		200	-O
+ 38	-B		 92	-V		146	O		201	-R
+ 39	-R		 93	-B		147	-V		202	-B
+ 40	-V		 94	V		148	-R		203	-B
+ 41	L		 95	B		149	-O		204	-L
+ 42	L		 96	R		150	R		205	B
+ 43	B		 97	-R		151	-R		206	-O
+ 44	-V		 98	O		152	O		207	A
+ 45	A		 99	R		153	R		208	-R
+ 46	L		100	V		154	O		209	-B
+ 47	L		101	O		155	O		210	O
+ 48	V		102	-V		156	-R		211	A
+ 49	-A		103	V		157	-O		212	B
+ 50	B		104	-O		158	R		213	B
+ 51	L		105	-V		159	-B		214	M
+ 52	L		106	-R		160	-M		215	M
+ 53	L		107	-O		161	O		216	-O
+						162	-R		217	-O
+REM __________________________________________________________________________________________________
+
+REM ==< SOLCUBE.BAS >== *** PROGRAM LIST *** DATE 1984-06-01				       PAGE 11
+
+    Outside view             Top              Inside view              Back
+                     ______ ______ ______                      ______ ______ ______
+                   /      /      /      /|                   /|      !      !      |
+                 /  36  /  37  /  38  /  |                 /  |  20  !  19  !  18  |
+               /______/______/______/ 11 |               / 27 |______!______!______|
+             /      /      /      / !    /       Left  / !    |      !      !      |
+           /  39  /  40  /  41  /   !  / |           /   !  / |  23  !  22  !  21  |
+         /______/______/______/  10 !/ 14|         /  28 !/   |______!______!______|
+       /      /      /      / !    /!    /       /  !   /! 30 |      !      !      |
+     /  42  /  43  /  44  /   !  /  !  / |     /    ! /  !  / |  26  !  25  !  24  |
+   /______/______/______/  9  !/ 13 !/17 |    | 29  ! 31 !/   |______!______!______|
+   |      !      !      |    /!    /!    /    |   / !   /!33 /      /      /      /
+   |  0   !  1   !  2   |  /  !  /  !  /      | /   ! /  !  /  51  /  52 /  53  /
+   |______!______!______|/ 12 !/ 16 !/        | 32  ! 34 !/______/______/______/
+   |      !      !      |    /!    /          |   / !   /      /      /      /
+   |  3   !  4   !  5   |  /  !  /            | /   ! / 48   / 49   /  50  /
+   |______!______!______|/ 15 !/ Right        | 35  !______/______/______/
+   |      !      !      |    /                |   /      /      /      /
+   |  6   !  7   !  8   |  /                  | /  45  /  46  / 47   /
+   |______!______!______|/                    |______/______/______/
+           Front                                      Bottom
+
+	B = Bovenvlak - Top			A = Achtervlak - Back
+	R = Zijvlak Rechts - Right		L = Zijvlak Links - Left
+	V = Voorvlak - Front			O = Onvervlak - Bottom
+
+	B = Blauw - Blue			W = Wit - White
+	O = Oranje - Orange			R = Rood - Red
+	Y = Geel - Yellow			G = Groen - Green
+REM __________________________________________________________________________________________________

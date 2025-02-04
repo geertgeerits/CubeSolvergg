@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resx="clr-namespace:CubeSolver.Resources.Languages"
+             x:Class="CubeSolver.PageAbout">
+
+    <Shell.TitleView>
+        <Label
+            x:Name="lblTitlePage"
+            Style="{StaticResource labelStyleTitleView}"
+            Text="{x:Static resx:CubeLang.Info_Text}">
+        </Label>
+    </Shell.TitleView>
+
+    <ScrollView>
+        <StackLayout>
+            <Grid
+                Style="{StaticResource gridStyleInfo}"
+                RowDefinitions="Auto">
+
+                <VerticalStackLayout>
+                    <Label
+                        Style="{StaticResource labelStyleInfo}"
+                        Text="{x:Static resx:CubeLang.CubeSolver_Text}"
+                        FontSize="16">
+                    </Label>
+
+                    <Label
+                        Style="{StaticResource labelStyleInfo}"
+                        Text="{x:Static resx:CubeLang.Description_Text}">
+                    </Label>
+
+                    <Label
+                        x:Name="lblVersion"
+                        Style="{StaticResource labelStyleInfo}">
+                    </Label>
+
+                    <Label
+                        x:Name="lblCopyright"
+                        Style="{StaticResource labelStyleInfo}">
+                    </Label>
+
+                    <HorizontalStackLayout>
+                        <Label
+                            x:Name="lblEmail"
+                            Style="{StaticResource labelStyleInfo}">
+                        </Label>
+
+                        <ImageButton
+                            Source="envelope_48x24p.png"                         
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            HeightRequest="24"
+                            WidthRequest="48"
+                            SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipAppEmail_Text}"
+                            ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipAppEmail_Text}"
+                            Clicked="OnBtnEmailLinkClicked">
+                        </ImageButton>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label
+                            x:Name="lblWebsite"
+                            Style="{StaticResource labelStyleInfo}">
+                        </Label>
+
+                        <ImageButton
+                            Source="internet_48x24p.png"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            HeightRequest="24"
+                            WidthRequest="48"
+                            SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipAppWebsite_Text}"
+                            ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipAppWebsite_Text}"
+                            Clicked="OnBtnWebsiteLinkClicked">
+                        </ImageButton>
+                    </HorizontalStackLayout>
+
+                    <VerticalStackLayout>
+                        <Label
+                            x:Name="lblPrivacyPolicy"
+                            Style="{StaticResource labelStyleInfo}">
+                        </Label>
+
+                        <Label
+                            x:Name="lblLicense"
+                            Style="{StaticResource labelStyleInfo}">
+                        </Label>
+
+                        <Label
+                            Style="{StaticResource labelStyleInfo}"
+                            Text="{x:Static resx:CubeLang.LicenseMit2_Text}">
+                        </Label>
+
+                        <Label
+                            x:Name="lblHelpOptionsSolveCube"
+                            Style="{StaticResource labelStyleInfo}">
+                        </Label>
+
+                        <Grid
+                            RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                            ColumnDefinitions="50, 250*"
+                            RowSpacing="5"
+                            ColumnSpacing="10"
+                            Padding="0,15,0,0">
+
+                            <HorizontalStackLayout
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2">
+
+                                <Button
+                                    Style="{StaticResource buttonStyleMenu}"
+                                    BorderColor="{AppThemeBinding Light={StaticResource DarkGray}, Dark={StaticResource LightGray}}"
+                                    HorizontalOptions="Start"
+                                    WidthRequest="100"
+                                    Margin="5,0,0,0"
+                                    Text="{x:Static resx:CubeLang.ButtonSolve_Text}"
+                                    SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipSolveCube_Text}"
+                                    ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipSolveCube_Text}">
+                                </Button>
+
+                                <Label
+                                    Style="{StaticResource labelStyleInfo}"
+                                    Margin="15,0,0,0"
+                                    Text="{x:Static resx:CubeLang.HelpSolveCube_Text}">
+                                </Label>
+                            </HorizontalStackLayout>
+
+                            <ImageButton
+                                Style="{StaticResource imageButtonMenu}"
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Source="cubesolver_mixedcolors_48p.png"
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipSetColorsCube_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipSetColorsCube_Text}">
+                            </ImageButton>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Text="{x:Static resx:CubeLang.HelpSetColorsCube_Text}">
+                            </Label>
+
+                            <ImageButton
+                                Style="{StaticResource imageButtonMenu}"
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                Source="ic_action_arrow_top.png"
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipOpenCube_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipOpenCube_Text}">
+                                
+                            </ImageButton>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                Text="{x:Static resx:CubeLang.HelpOpenCube_Text}">
+                            </Label>
+
+                            <ImageButton
+                                Style="{StaticResource imageButtonMenu}"
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                Source="ic_action_arrow_bottom.png"
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipSaveCube_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipSaveCube_Text}">
+                            </ImageButton>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                Text="{x:Static resx:CubeLang.HelpSaveCube_Text}">
+                            </Label>
+
+                            <ImageButton
+                                Style="{StaticResource imageButtonMenu}"
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                Source="ic_action_playback_schuffle.png"
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipScrambleCube_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipScrambleCube_Text}">
+                            </ImageButton>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                Text="{x:Static resx:CubeLang.HelpScrambleCube_Text}">
+                            </Label>
+
+                            <ImageButton
+                                Style="{StaticResource imageButtonMenu}"
+                                Grid.Row="5"
+                                Grid.Column="0"
+                                Source="ic_action_reload.png"
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipResetCube_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipResetCube_Text}">
+                            </ImageButton>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="5"
+                                Grid.Column="1"
+                                Text="{x:Static resx:CubeLang.HelpResetCube_Text}">
+                            </Label>
+
+                            <ImageButton
+                                Style="{StaticResource imageButtonMenu}"
+                                Grid.Row="6"
+                                Grid.Column="0"
+                                Source="ic_action_undo.png"
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipGoOneTurnBackward_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipGoOneTurnBackward_Text}">
+                            </ImageButton>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="6"
+                                Grid.Column="1"
+                                Text="{x:Static resx:CubeLang.HelpGoOneTurnBackward_Text}">
+                            </Label>
+
+                            <HorizontalStackLayout
+                                Grid.Row="7"
+                                Grid.Column="0"
+                                Grid.ColumnSpan="2">
+
+                                <Button
+                                    Style="{StaticResource buttonStyleMenu}"
+                                    BorderColor="{AppThemeBinding Light={StaticResource DarkGray}, Dark={StaticResource LightGray}}"
+                                    HorizontalOptions="Start"
+                                    WidthRequest="100"
+                                    Margin="5,0,0,0"
+                                    Padding="0"
+                                    FontSize="20"
+                                    Text="U'"
+                                    SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipGoOneTurnForward_Text}"
+                                    ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipGoOneTurnForward_Text}">
+                                </Button>
+
+                                <Label
+                                    Style="{StaticResource labelStyleInfo}"
+                                    Margin="15,0,0,0"
+                                    Text="{x:Static resx:CubeLang.HelpGoOneTurnForward_Text}">
+                                </Label>
+                            </HorizontalStackLayout>
+
+                            <ImageButton
+                                Style="{StaticResource imageButtonMenu}"
+                                Grid.Row="8"
+                                Grid.Column="0"
+                                Source="ic_action_playback_play.png"
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipTurnNoButtonPressPlay_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipTurnNoButtonPressPlay_Text}">
+                            </ImageButton>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="8"
+                                Grid.Column="1"
+                                Text="{x:Static resx:CubeLang.HelpTurnNoButtonPressPlay_Text}">
+                            </Label>
+
+                            <ImageButton
+                                Style="{StaticResource imageButtonMenu}"
+                                Grid.Row="9"
+                                Grid.Column="0"
+                                Source="ic_action_playback_stop.png"
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipTurnNoButtonPressStop_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipTurnNoButtonPressStop_Text}">
+                            </ImageButton>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="9"
+                                Grid.Column="1"
+                                Text="{x:Static resx:CubeLang.HelpTurnNoButtonPressStop_Text}">
+                            </Label>
+                        </Grid>
+                    
+                        <Label
+                            x:Name="lblHelp"
+                            Style="{StaticResource labelStyleInfo}">
+                        </Label>
+
+                        <Label
+                            x:Name="lblExplanation"
+                            Style="{StaticResource labelStyleInfo}">
+                        </Label>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

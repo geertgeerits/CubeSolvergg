@@ -1,0 +1,1159 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CubeSolver"
+             x:Class="CubeSolver.MainPage"
+             Loaded="OnPageLoad"
+             Appearing="OnPageAppearing">
+
+    <Shell.TitleView>
+        <Grid
+            x:Name="grdTitleView"
+            RowDefinitions="Auto"
+            ColumnDefinitions="60, 140*, 50, 60"
+            Margin="4">
+
+            <ImageButton
+                x:Name="imgbtnAbout"
+                Grid.Column="0"
+                Source="info_32p.png"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                HeightRequest="32"
+                WidthRequest="32"
+                SemanticProperties.Description="local:Translate Info_Text}"
+                ToolTipProperties.Text="{local:Translate Info_Text}"
+                Clicked="OnPageAboutClicked">
+            </ImageButton>
+
+            <Label
+                x:Name="lblTitlePage"
+                Style="{StaticResource labelStyleTitleView}"
+                Grid.Column="1"
+                Text="{local:Translate NameProgram_Text}">
+            </Label>
+
+            <Button
+                x:Name="btnSolveNewSolutionsTest"
+                Grid.Column="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                HeightRequest="40"
+                WidthRequest="40"
+                BackgroundColor="Transparent"
+                BorderColor="Black"
+                TextColor="Black"
+                FontSize="14"
+                Padding="0"
+                Text="-"
+                IsVisible="False"
+                Clicked="OnBtnSolveNewSolutionsTestClicked">
+            </Button>
+
+            <ImageButton
+                x:Name="imgbtnSettings"
+                Grid.Column="3"
+                Source="settings_32p.png"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                HeightRequest="32"
+                WidthRequest="32"
+                SemanticProperties.Description="local:Translate Settings_Text}"
+                ToolTipProperties.Text="{local:Translate Settings_Text}"
+                Clicked="OnPageSettingsClicked">
+            </ImageButton>
+        </Grid>
+    </Shell.TitleView>
+
+    <Grid
+        RowDefinitions="Auto, *, Auto"
+        ColumnDefinitions="100*, 150, 100*"
+        HorizontalOptions="Center"
+        Margin="2">
+
+        <Grid
+            x:Name="grdCubeColorSelect"
+            RowDefinitions="Auto"
+            ColumnDefinitions="*, 50, 50, 50, 50, 50, 50, 50, *"
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="3">
+
+            <Polygon
+                x:Name="plgCubeColorSelect"
+                Style="{StaticResource polygonStyleColor}"
+                Grid.Row="0"
+                Grid.Column="1"
+                Points="0,0 20,0 20,30 0,30"
+                IsVisible="False">
+            </Polygon>
+
+            <Polygon
+                x:Name="plgCubeColor1"
+                Style="{StaticResource polygonStyleColor}"
+                Grid.Row="0"
+                Grid.Column="2"                
+                Fill="Red"
+                IsVisible="False">
+                <Polygon.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGetColorTapped" />
+                </Polygon.GestureRecognizers>
+            </Polygon>
+
+            <Polygon
+                x:Name="plgCubeColor2"
+                Style="{StaticResource polygonStyleColor}"
+                Grid.Row="0"
+                Grid.Column="3"                
+                Fill="Blue"
+                IsVisible="False">
+                <Polygon.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGetColorTapped" />
+                </Polygon.GestureRecognizers>
+            </Polygon>
+
+            <Polygon
+                x:Name="plgCubeColor3"
+                Style="{StaticResource polygonStyleColor}"
+                Grid.Row="0"
+                Grid.Column="4"                
+                Fill="Orange"
+                IsVisible="False">
+                <Polygon.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGetColorTapped" />
+                </Polygon.GestureRecognizers>
+            </Polygon>
+
+            <Polygon
+                x:Name="plgCubeColor4"
+                Style="{StaticResource polygonStyleColor}"
+                Grid.Row="0"
+                Grid.Column="5"                
+                Fill="Green"
+                IsVisible="False">
+                <Polygon.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGetColorTapped" />
+                </Polygon.GestureRecognizers>
+            </Polygon>
+
+            <Polygon
+                x:Name="plgCubeColor5"
+                Style="{StaticResource polygonStyleColor}"
+                Grid.Row="0"
+                Grid.Column="6"                
+                Fill="White"
+                IsVisible="False">
+                <Polygon.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGetColorTapped" />
+                </Polygon.GestureRecognizers>
+            </Polygon>
+
+            <Polygon
+                x:Name="plgCubeColor6"
+                Style="{StaticResource polygonStyleColor}"
+                Grid.Row="0"
+                Grid.Column="7"                
+                Fill="Yellow"
+                IsVisible="False">
+                <Polygon.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGetColorTapped" />
+                </Polygon.GestureRecognizers>
+            </Polygon>
+        </Grid>
+
+        <ScrollView
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="3"
+            Orientation="Vertical">
+
+            <Grid
+                RowDefinitions="Auto, Auto, Auto, 260, Auto, Auto, Auto, Auto, 262, Auto"
+                ColumnDefinitions="26, 294, 26"
+                ColumnSpacing="4"
+                HorizontalOptions="Center">
+
+                <Border
+                    Style="{StaticResource borderStyleExplainTurnCube}"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3">
+                </Border>
+
+                <Label
+                    x:Name="lblCubeOutsideView"
+                    Style="{StaticResource labelStyleExplanation}"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    MinimumHeightRequest="48"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Transparent"
+                    Text="{local:Translate CubeOutsideView_Text}">
+                </Label>
+
+                <Label
+                    x:Name="lblExplainTurnCube"
+                    Style="{StaticResource labelStyleExplanation}"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    MinimumHeightRequest="80"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Transparent"
+                    IsVisible="False">
+                </Label>
+
+                <Label
+                    x:Name="lblNumberTurns"
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Margin="8,0,0,0"
+                    HorizontalOptions="Start">
+                </Label>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalOptions="End"
+                    Text="{local:Translate CubeUpFace_Text}">
+                </Label>
+
+                <AbsoluteLayout
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3">
+
+                    <ImageButton
+                        x:Name="imgbtnTurnFrontFaceToRight"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="9,0"
+                        Source="arrow_down_right_32p.png"
+                        Clicked="OnTurnFrontFaceToRightClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnUpHorMiddleToRightFace"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="60,0"
+                        Source="arrow_down_right_32p.png"
+                        Clicked="OnTurnUpHorMiddleToRightFaceClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnBackFaceToLeft"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="110,0"
+                        Source="arrow_down_right_32p.png"
+                        Clicked="OnTurnBackFaceToLeftClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnLeftFaceToRight"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="174,0"
+                        Source="arrow_down_left_32p.png"
+                        Clicked="OnTurnLeftFaceToRightClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnUpVerMiddleToFrontFace"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="230,0"
+                        Source="arrow_down_left_32p.png"
+                        Clicked="OnTurnUpVerMiddleToFrontFaceClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnRightFaceToLeft"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="286,0"
+                        Source="arrow_down_left_32p.png"
+                        Clicked="OnTurnRightFaceToLeftClicked">
+                    </ImageButton>
+                </AbsoluteLayout>
+
+                <AbsoluteLayout
+                    Grid.Row="3"
+                    Grid.Column="0">
+
+                    <ImageButton
+                        x:Name="imgbtnTurnUpFaceToLeft"
+                        Style="{StaticResource imageButtonArrowHorizontal}"
+                        AbsoluteLayout.LayoutBounds="1,80"
+                        Source="arrow_right_32p.png"
+                        Clicked="OnTurnUpFaceToLeftClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnFrontHorMiddleToRightFace"
+                        Style="{StaticResource imageButtonArrowHorizontal}"
+                        AbsoluteLayout.LayoutBounds="1,132"
+                        Source="arrow_right_32p.png"
+                        Clicked="OnTurnFrontHorMiddleToRightFaceClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnDownFaceToRight"
+                        Style="{StaticResource imageButtonArrowHorizontal}"
+                        AbsoluteLayout.LayoutBounds="1,183"
+                        Source="arrow_right_32p.png"
+                        Clicked="OnTurnDownFaceToRightClicked">
+                    </ImageButton>
+                </AbsoluteLayout>
+
+                <AbsoluteLayout
+                    Grid.Row="3"
+                    Grid.Column="2">
+
+                    <ImageButton
+                        x:Name="imgbtnTurnUpFaceToRight"
+                        Style="{StaticResource imageButtonArrowHorizontal}"
+                        AbsoluteLayout.LayoutBounds="0,44"
+                        Source="arrow_left_32p.png"
+                        Clicked="OnTurnUpFaceToRightClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnFrontHorMiddleToLeftFace"
+                        Style="{StaticResource imageButtonArrowHorizontal}"
+                        AbsoluteLayout.LayoutBounds="0,96"
+                        Source="arrow_left_32p.png"
+                        Clicked="OnTurnFrontHorMiddleToLeftFaceClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnDownFaceToLeft"
+                        Style="{StaticResource imageButtonArrowHorizontal}"
+                        AbsoluteLayout.LayoutBounds="0,148"
+                        Source="arrow_left_32p.png"
+                        Clicked="OnTurnDownFaceToLeftClicked">
+                    </ImageButton>
+                </AbsoluteLayout>
+
+                <AbsoluteLayout
+                    Grid.Row="3"
+                    Grid.Column="1">
+
+                    <Polygon
+                        x:Name="plgPiece36"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="88,0">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece37"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="142,11">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece38"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="197,22">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece39"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="45,22">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece40"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="99,33">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece41"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="153,44">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece42"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="2,45">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece43"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="56,56">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece44"
+                        Style="{StaticResource polygonStyleCubeUp}"
+                        AbsoluteLayout.LayoutBounds="110,66">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece0"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                        AbsoluteLayout.LayoutBounds="0,69">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece1"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                        AbsoluteLayout.LayoutBounds="53,79">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece2"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                        AbsoluteLayout.LayoutBounds="106,89">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece3"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                         AbsoluteLayout.LayoutBounds="0,122">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece4"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                        AbsoluteLayout.LayoutBounds="53,132">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece5"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                        AbsoluteLayout.LayoutBounds="106,142">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece6"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                        AbsoluteLayout.LayoutBounds="0,175">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece7"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                        AbsoluteLayout.LayoutBounds="53,185">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece8"
+                        Style="{StaticResource polygonStyleCubeFront}"
+                        AbsoluteLayout.LayoutBounds="106,195">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece9"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="160,69">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece10"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="204,47">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece11"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="248,25">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece12"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="160,122">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece13"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="204,100">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece14"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="248,78">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece15"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="160,175">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece16"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="204,153">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece17"
+                        Style="{StaticResource polygonStyleCubeRight}"
+                        AbsoluteLayout.LayoutBounds="248,131">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+                </AbsoluteLayout>
+
+                <AbsoluteLayout
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3">
+
+                    <ImageButton
+                        x:Name="imgbtnTurnLeftFaceToLeft"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="28,0"
+                        Source="arrow_up_right_32p.png"
+                        Clicked="OnTurnLeftFaceToLeftClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnUpVerMiddleToBackFace"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="83,0"
+                        Source="arrow_up_right_32p.png"
+                        Clicked="OnTurnUpVerMiddleToBackFaceClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnRightFaceToRight"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="138,0"
+                        Source="arrow_up_right_32p.png"
+                        Clicked="OnTurnRightFaceToRightClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnFrontFaceToLeft"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="209,0"
+                        Source="arrow_up_left_32p.png"
+                        Clicked="OnTurnFrontFaceToLeftClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnUpHorMiddleToLeftFace"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="260,0"
+                        Source="arrow_up_left_32p.png"
+                        Clicked="OnTurnUpHorMiddleToLeftFaceClicked">
+                    </ImageButton>
+
+                    <ImageButton
+                        x:Name="imgbtnTurnBackFaceToRight"
+                        Style="{StaticResource imageButtonArrowVertical}"
+                        AbsoluteLayout.LayoutBounds="310,0"
+                        Source="arrow_up_left_32p.png"
+                        Clicked="OnTurnBackFaceToRightClicked">
+                    </ImageButton>
+                </AbsoluteLayout>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    VerticalTextAlignment="Start"
+                    Text="{local:Translate CubeFrontFace_Text}">
+                </Label>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    HorizontalOptions="End"
+                    VerticalTextAlignment="Start"
+                    Text="{local:Translate CubeRightFace_Text}">
+                </Label>
+
+                <Border
+                    Style="{StaticResource borderStyleExplainTurnCube}"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3">
+                </Border>
+
+                <Label
+                    x:Name="lblCubeInsideView"
+                    Style="{StaticResource labelStyleExplanation}"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    MinimumHeightRequest="48"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Transparent"
+                    Text="{local:Translate CubeInsideView_Text}">
+                </Label>
+
+                <ActivityIndicator
+                    x:Name="activityIndicator"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    HeightRequest="46"
+                    WidthRequest="46"
+                    Margin="2"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Color="{AppThemeBinding Light='Gold', Dark='RoyalBlue'}"
+                    IsRunning="False">
+                </ActivityIndicator>
+
+                <!--!!!BUG!!! in Android .NET9.0: The border of the Imagebutton is not displayed-->
+                <!--<ImageButton
+                    x:Name="imgbtnGoOneTurnBackward"
+                    Style="{StaticResource imageButtonMenu}"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    Padding="0"
+                    HorizontalOptions="Start"
+                    BorderColor="{AppThemeBinding Light={StaticResource LightGray}, Dark={StaticResource DarkGray}}"
+                    Source="ic_action_undo.png"
+                    SemanticProperties.Description="local:Translate ToolTipGoOneTurnBackward_Text}"
+                    ToolTipProperties.Text="{local:Translate ToolTipGoOneTurnBackward_Text}"
+                    IsVisible="False"
+                    Clicked="OnButtonGoOneTurnBackwardClicked">
+                </ImageButton>-->
+
+                <Button
+                    x:Name="imgbtnGoOneTurnBackward"
+                    Style="{StaticResource ButtonMakeTurns}"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    HorizontalOptions="Start"
+                    ImageSource="ic_action_undo.png"
+                    SemanticProperties.Description="local:Translate ToolTipGoOneTurnBackward_Text}"
+                    ToolTipProperties.Text="{local:Translate ToolTipGoOneTurnBackward_Text}"
+                    IsVisible="False"
+                    Clicked="OnButtonGoOneTurnBackwardClicked">
+                </Button>
+
+                <!--!!!BUG!!! in iOS .NET9.0: CharacterSpacing of the Button is not working-->
+                <Button
+                    x:Name="btnGoOneTurnForward"
+                    Style="{StaticResource buttonStyleMenu}"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    Margin="0,5,0,5"
+                    Padding="0"
+                    FontFamily="PublicSansBold"
+                    FontSize="22"
+                    CharacterSpacing="2"
+                    SemanticProperties.Description="{local:Translate ToolTipGoOneTurnForward_Text}"
+                    ToolTipProperties.Text="{local:Translate ToolTipGoOneTurnForward_Text}"
+                    IsVisible="False"
+                    Clicked="OnButtonGoOneTurnForwardClicked">
+                </Button>
+
+                <!--!!!BUG!!! in Android .NET9.0: The border of the Imagebutton is not displayed-->
+                <!--<ImageButton
+                    x:Name="imgbtnTurnNoButtonPress"
+                    Style="{StaticResource imageButtonMenu}"
+                    Grid.Row="6"
+                    Grid.Column="2"
+                    Margin="0,0,5,0"
+                    Padding="0"
+                    HorizontalOptions="End"
+                    BorderColor="{AppThemeBinding Light={StaticResource LightGray}, Dark={StaticResource DarkGray}}"
+                    Source="ic_action_playback_play.png"
+                    SemanticProperties.Description="local:Translate ToolTipTurnNoButtonPress_Text}"
+                    ToolTipProperties.Text="{local:Translate ToolTipTurnNoButtonPress_Text}"
+                    IsVisible="False"
+                    Clicked="OnButtonTurnNoButtonPressClicked">
+                </ImageButton>-->
+
+                <Button
+                    x:Name="imgbtnTurnNoButtonPress"
+                    Style="{StaticResource ButtonMakeTurns}"
+                    Grid.Row="6"
+                    Grid.Column="2"
+                    Margin="0,0,5,0"
+                    HorizontalOptions="End"
+                    ImageSource="ic_action_playback_play.png"
+                    SemanticProperties.Description="local:Translate ToolTipTurnNoButtonPress_Text}"
+                    ToolTipProperties.Text="{local:Translate ToolTipTurnNoButtonPress_Text}"
+                    IsVisible="False"
+                    Clicked="OnButtonTurnNoButtonPressClicked">
+                </Button>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    VerticalTextAlignment="End"
+                    Text="{local:Translate CubeLeftFace_Text}">
+                </Label>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    HorizontalOptions="End"
+                    VerticalTextAlignment="End"
+                    Text="{local:Translate CubeBackFace_Text}">
+                </Label>
+
+                <AbsoluteLayout
+                    Grid.Row="8"
+                    Grid.Column="1">
+
+                    <Polygon
+                        x:Name="plgPiece27"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="88,0">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece28"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="44,22">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece29"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="0,44">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece30"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="88,54">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece31"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="44,76">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece32"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="0,98">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece33"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="88,108">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece34"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="44,130">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece35"
+                        Style="{StaticResource polygonStyleCubeLeft}"
+                        AbsoluteLayout.LayoutBounds="0,152">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece18"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="240,22">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece19"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="186,11">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece20"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="132,0">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece21"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="240,76">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece22"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="186,65">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece23"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="132,54">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece24"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="240,129">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece25"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="186,118">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece26"
+                        Style="{StaticResource polygonStyleCubeBack}"
+                        AbsoluteLayout.LayoutBounds="132,107">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece45"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="2,206">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece46"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="57,218">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece47"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="114,229">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece48"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="46,184">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece49"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="102,195">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece50"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="158,206">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece51"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="91,161">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece52"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="146,172">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgPiece53"
+                        Style="{StaticResource polygonStyleCubeDown}"
+                        AbsoluteLayout.LayoutBounds="201,183">
+                        <Polygon.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnSetColorTapped" />
+                        </Polygon.GestureRecognizers>
+                    </Polygon>
+
+                    <Line X1="130" Y1="0" X2="130" Y2="162"
+                        Style="{StaticResource lineStyleCubeInsideViewDashLine}">
+                    </Line>
+
+                    <Line X1="130" Y1="159" X2="0" Y2="224"
+                        Style="{StaticResource lineStyleCubeInsideViewDashLine}">
+                    </Line>
+
+                    <Line X1="130" Y1="160" X2="293" Y2="194"
+                        Style="{StaticResource lineStyleCubeInsideViewDashLine}">
+                    </Line>
+
+                    <Line X1="0" Y1="61" X2="0" Y2="227"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+
+                    <Line X1="0" Y1="62" X2="130" Y2="0"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+
+                    <Line X1="130" Y1="0" X2="292" Y2="30"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+
+                    <Line X1="292" Y1="30" X2="292" Y2="194"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+
+                    <Line X1="0" Y1="228" X2="166" Y2="262"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+
+                    <Line X1="168" Y1="264" X2="293" Y2="195"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+
+                    <Line X1="167" Y1="98" X2="167" Y2="264"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+
+                    <Line X1="0" Y1="62" X2="165" Y2="94"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+
+                    <Line X1="165" Y1="98" X2="293" Y2="31"
+                        Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
+                    </Line>
+                </AbsoluteLayout>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="9"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    VerticalTextAlignment="Start"
+                    Text="{local:Translate CubeDownFace_Text}">
+                </Label>
+            </Grid>
+        </ScrollView>
+
+        <Button
+            x:Name="btnSolveCube"
+            Style="{StaticResource buttonStyleMenu}"
+            HeightRequest="38"
+            BorderColor="{AppThemeBinding Light={StaticResource DarkGray}, Dark={StaticResource LightGray}}"
+            Grid.Row="3"
+            Grid.Column="0"
+            Text="{local:Translate ButtonSolve_Text}"
+            SemanticProperties.Description="local:Translate ToolTipSolveCube_Text}"
+            ToolTipProperties.Text="{local:Translate ToolTipSolveCube_Text}"
+            Clicked="OnBtnSolveCubeClicked">
+        </Button>
+
+        <HorizontalStackLayout
+            Grid.Row="3"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Center"
+            Spacing="10">
+            
+            <ImageButton
+                x:Name="imgbtnSetColorsCube"
+                Style="{StaticResource imageButtonMenu}"
+                Source="cubesolver_mixedcolors_48p.png"
+                SemanticProperties.Description="local:Translate ToolTipSetColorsCube_Text}"
+                ToolTipProperties.Text="{local:Translate ToolTipSetColorsCube_Text}"
+                Clicked="OnButtonSetColorsCubeClicked">
+            </ImageButton>
+
+            <ImageButton
+                x:Name="imgbtnOpenCube"
+                Style="{StaticResource imageButtonMenu}"
+                Source="ic_action_arrow_top.png"
+                SemanticProperties.Description="local:Translate ToolTipOpenCube_Text}"
+                ToolTipProperties.Text="{local:Translate ToolTipOpenCube_Text}"
+                Clicked="OnButtonOpenCubeClicked">
+            </ImageButton>
+
+            <ImageButton
+                x:Name="imgbtnSaveCube"
+                Style="{StaticResource imageButtonMenu}"
+                Source="ic_action_arrow_bottom.png"
+                SemanticProperties.Description="local:Translate ToolTipSaveCube_Text}"
+                ToolTipProperties.Text="{local:Translate ToolTipSaveCube_Text}"
+                Clicked="OnButtonSaveCubeClicked">
+            </ImageButton>
+
+            <ImageButton
+                x:Name="imgbtnScrambleCube"
+                Style="{StaticResource imageButtonMenu}"
+                Source="ic_action_playback_schuffle.png"
+                SemanticProperties.Description="local:Translate ToolTipScrambleCube_Text}"
+                ToolTipProperties.Text="{local:Translate ToolTipScrambleCube_Text}"
+                Clicked="OnButtonScrambleCubeClicked">
+            </ImageButton>
+
+            <ImageButton
+                x:Name="imgbtnResetCube"
+                Style="{StaticResource imageButtonMenu}"
+                Source="ic_action_reload.png"
+                SemanticProperties.Description="local:Translate ToolTipResetCube_Text}"
+                ToolTipProperties.Text="{local:Translate ToolTipResetCube_Text}"
+                Clicked="OnButtonResetClicked">
+            </ImageButton>
+        </HorizontalStackLayout>
+
+    </Grid>
+</ContentPage>

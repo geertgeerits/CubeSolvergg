@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>De acord</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Nepermis:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Caractere permise:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Închide</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Resetați</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Rezolva</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Vă rugăm să închideți aplicația.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Contact:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Continua</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Drepturi de autor</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Fața din spate</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Fața în jos</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Culorile cubului:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Fața din față</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Vedere din interior</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Fața stângă</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Vedere din exterior</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Fața dreaptă</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Fața superioară</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Joacă sau rezolvă cubul.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Dezacord</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Eroare</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Explicat prin discurs:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Explicat prin text:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Rotiți laturile cubului „în sensul acelor de ceasornic” și „în sensul invers acelor de ceasornic”:
+Dacă este dată comanda de a roti partea din față „în sensul acelor de ceasornic”, aceasta este în direcția în care se rotesc mâinile. „În sensul invers acelor de ceasornic” se rotește în cealaltă direcție.
+Pentru celelalte părți trebuie să vă „imaginați” întotdeauna că vă aflați direct în fața părții care trebuie întors. Așa că, dacă scrie rotiți spatele „în sensul acelor de ceasornic”, imaginați-vă că sunteți de cealaltă parte a cubului și apoi întoarceți spatele „în sensul acelor de ceasornic”. Nu rotiți cubul în sine.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Deschideți cubul salvat.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Salvați cubul curent.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Transferați culorile din cubul amestecat în acest cub. Selectați o culoare din bara de culori din partea de sus și apoi atingeți bucățile cubului pentru a le schimba. Apăsați din nou acest buton pentru a părăsi această secțiune și apăsați butonul „Rezolvare”.</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Coduri de culoare hexazecimale:
+
+Personajele 1-2: Roșu
+Personajele 3-4: Verde
+Personajele 5-6: Albastru</value>
+  </data>
+  <data name="InfoExplanation_Text" xml:space="preserve">
+    <value>Text în vorbire: nu sunt acceptate toate limbile care sunt furnizate în setările aplicației.
+Această opțiune variază de la dispozitiv la dispozitiv și de la limbile instalate. Este posibil ca, pentru unele limbi, traducerea către și din vorbire să se facă prin internet de către serviciile respective.
+
+Google Translate a fost folosit pentru traducerea textului. Aceasta nu este o garanție că toate traducerile sunt corecte.
+Limbile suportate sunt: cehă, daneză, olandeză, engleză, finlandeză, franceză, germană, maghiară, italiană, norvegiană, poloneză, portugheză, română, spaniolă și suedeză.
+
+Mă puteți contacta oricând pentru orice corecturi.</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Informație</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Vorbirea limbajului:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Limba:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Software-ul este furnizat „ca atare”, fără garanții de niciun fel, exprese sau implicite, incluzând, dar fără a se limita la garanțiile de vandabilitate, adecvare pentru un anumit scop și neîncălcare. În niciun caz, autorul și/sau editorul nu vor fi răspunzători pentru orice pretenție, daune sau altă răspundere, indiferent dacă este vorba despre o acțiune contractuală, delictuală sau de altă natură, care decurg din, din sau în legătură cu software-ul sau utilizarea sau alte tranzacții în software-ul.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Licență</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Această aplicație poate fi folosită gratuit în scopuri necomerciale.
+Utilizați acest program în întregime pe propriul risc.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Culoarea pătratului central poate apărea o singură dată.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Culorile unui cub de colț trebuie să fie diferite.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Culorile unui cub de margine trebuie să fie diferite.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Felicitări, cubul a fost rezolvat.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Cubul nu este rezolvat.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Din fiecare culoare disponibilă, trebuie să existe nouă de aceeași culoare.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Cube Solver</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Nu</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Politica de confidențialitate:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Nicio dată cu caracter personal sau de altă natură nu este stocată sau transmisă mie și altora.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Aplicația va fi repornită.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Resetați</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Unele setări modificate trebuie salvate pentru a le aplica.
+După salvare, aplicația este repornită și cubul este resetat.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Salvați</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Setări</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Rezolva</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Textul conține unul sau mai multe caractere care nu sunt permise.
+
+Nepermis:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Textul în vorbire nu este acceptat pe acest dispozitiv.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Întunecat</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Ușoară</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>Sistem</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Temă:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Întoarce-te</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Mergi inainte</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Ajutor</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Deschide cubul</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Salvați cubul</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Butonul de comutare: setați culorile pe cub</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Întoarceți partea din spate o jumătate de tură.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Rotiți partea din spate un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Rotiți partea din spate un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Rotiți partea de jos o jumătate de tură.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Rotiți partea de jos un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Rotiți partea de jos un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea din față să meargă în jos, partea dreaptă să rămână la dreapta.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea din față să meargă în partea stângă, partea de sus să rămână în partea de sus.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea din față să meargă în partea dreaptă, partea de sus să rămână în partea de sus.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea din față să meargă în sus, partea dreaptă să rămână la dreapta.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea de sus să meargă în partea stângă, partea din față să rămână în față.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea de sus să meargă în partea dreaptă, partea din față să rămână în față.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Rotiți stratul din față-mijloc un sfert de tură spre partea dreaptă (-).</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Rotiți stratul din față-mijloc un sfert de tură spre partea de sus (+).</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Rotiți partea din față o jumătate de tură.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Rotiți partea din față un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Rotiți partea din față un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Rotiți partea stângă o jumătate de tură.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Rotiți partea stângă un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Rotiți partea stângă un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Întoarceți stratul din mijloc o jumătate de tură.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Rotiți stratul din dreapta-mijloc un sfert de tură spre partea din față (+).</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Întoarceți stratul din mijloc dreapta un sfert de tură spre partea de sus (-).</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Rotiți partea dreaptă o jumătate de tură.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Rotiți partea dreaptă un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Rotiți partea dreaptă un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Întoarceți stratul de sus-mijloc un sfert de tură spre partea din față (-).</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Rotiți stratul de sus-mijloc un sfert de tură spre partea dreaptă (+).</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Rotiți partea de sus o jumătate de tură.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Rotiți partea superioară un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Rotiți partea superioară un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Versiune:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Site-ul web</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Da</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Cubul nu poate fi rezolvat.
+
+Cauza posibilă este transferul incorect de culori în acest cub.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea din față să meargă în spate, partea dreaptă să rămână la dreapta.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea din față să meargă în spate, partea de sus să rămână în partea de sus.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Întoarceți întregul cub astfel încât partea de sus să meargă în jos, partea din față să rămână în față.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Timp în milisecunde:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Numărul de ture:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Opțiuni de rezolvare a cubului:
+1. Pe ecranul de start, utilizați tastele săgeți pentru a amesteca cubul și pentru a rezolva cubul cu tastele săgeți.
+2. La fel ca prima opțiune, dar rezolvați cubul cu butonul „Rezolvare”. Cubul este apoi rezolvat în ordine inversă.
+3. Folosește butonul cu cubul din partea de jos a ecranului pentru a transfera culorile cubului tău în acest cub (vezi explicația acelui buton). Cubul va fi rezolvat de aplicație. Apoi transferați mișcările propuse în cubul real. Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Cubul este din nou în starea anterioară.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Culorile pieselor centrale sunt greșite.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>Din fiecare culoare disponibilă, trebuie să existe patru de aceeași culoare pe un cub de margine.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>Din fiecare culoare disponibilă, trebuie să existe patru de aceeași culoare pe un cub de colț.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Întoarceți stratul din spate și din mijloc împreună o jumătate de tură.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul din spate și din mijloc împreună un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul din spate și din mijloc împreună un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Întoarceți stratul inferior și mijlociu împreună o jumătate de tură.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul inferior și mijlociu împreună un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul inferior și mijlociu împreună un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Întoarceți stratul din față și din mijloc împreună o jumătate de tură.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul din față și din mijloc împreună un sfert de tură „în sens invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul din față și din mijloc împreună un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Întoarceți stratul din stânga și din mijloc împreună o jumătate de tură.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Rotiți împreună stratul din stânga și din mijloc un sfert de tură „în sens invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Rotiți împreună stratul din stânga și din mijloc un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Întoarceți stratul din dreapta și din mijloc împreună o jumătate de tură.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul din dreapta și din mijloc împreună un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul din dreapta și din mijloc împreună un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Întoarceți stratul superior și mijlociu împreună o jumătate de tură.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul superior și mijlociu împreună un sfert de tură „în sensul invers acelor de ceasornic” (-).</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Întoarceți stratul superior și mijlociu împreună un sfert de tură „în sensul acelor de ceasornic” (+).</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Trimiteți un e-mail autorului acestei aplicații</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Deschide site-ul acestei aplicații</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Solutii testate:</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Numărul mediu de ture pentru a rezolva cubul:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Amestecă cubul</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Resetați cubul</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Resetați cubul.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Amestecă cubul.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Rezolvați cubul</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Întoarce-te cu o tură</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Du-te cu o tură înainte</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Întoarce-te cu o tură.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Du-te cu o tură înainte.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Rezolvați cubul fără intervenție</value>
+  </data>
+  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Rezolvați cubul fără intervenție.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Rezolvați cubul cu intervenție</value>
+  </data>
+  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Rezolvați cubul cu intervenție.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+    <value>Butonul de comutare: Rezolvați cubul cu sau fără intervenție</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Rezolvați cubul.</value>
+  </data>
+</root>

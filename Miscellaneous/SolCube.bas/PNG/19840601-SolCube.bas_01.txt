@@ -1,0 +1,38 @@
+==( SOLCUBE. BAS &gt;== *** PROGRAM LIST *** DATE 01/06/84
+PAGE 1
+1 Z$=&quot;*** SOLCUBE * V-1.2 * (C) 1984 * Owned by GEERITS GEERT B-8903 IEPER ***&quot;:Z
+&quot;1
+2 REM *** Wijtschaatsestraat 23, 8-8903 IEPER, Tel. (057) 20.44.79
+3 REM *** Taal: BASIC-80 V-5.2 MICROSOFT * Date: 09-11/81, 04/84 10 DEFINT A-Z REM *** DECLARE VARIABLE TYPES
+20 DIM C(53), D(53), H(53), V(53), A$ (217), F$ (53) REM *** VALUES ARRAYS 30 REM *** VALUES VARIABLES
+40 E=53:C$=CHRS (12) M1$=&quot;&quot; RETURN&#039; &quot;:D$=STRINGS (19, 95) 100s&quot;!
+D19
+/&quot; :D3$=&quot;/
+50 REM *** FILL ARRAY
+60 FOR I=0 TO E READ H(I) NEXT FOR I=0 TO E READ V(I) INEXT 70 FOR I=Q TO E=READ F# (I) NEXT:FOR I=0 TO E READ D(1) NEXT 80 FOR I=0 TO 217 READ A$(I) NEXT
+100 REM *** INSTRUKTIES
+110 GUSUB 8010:ZS=&quot;INTRUKTIES&quot; :GOSUB 9630:IF XS=&quot;N&quot; THEN 310 ELSE FLDS=&quot;M&quot; 120 QH=0:QV-6:GUSUB 9710 PRINT &quot;Dit programma maakt het mogelijk een verwarde&quot;; 1GC 9820 PRINT &quot;RUBIK&#039;S Kubus&quot;; 1GUSUB 98101PRINT &quot;in zijn oorspronke-&quot;
+125 PRINT &quot;kelijke of logische vorm te herstellen. &quot;
+130 PRINT PRINT &quot;Na het ingeven van de kleur per vakje worden onderaan het scherm instrukties&quot;
+135 PRINT &quot;afgebeeld die men dient uit te voeren.&quot;
+140 PRINT PRINT &quot;Hieronder de verklaring van enkele instrukties :&quot;
+145 PRINT:GOSUB 9820: PRINT &quot; V&quot;;:GOSUB 98101PRINT &quot;= het voorvlak EEN kwartslag Y RECHTS draaien (met de klok meedraaien) &quot;
+150 GOSUB 9820: PRINT &quot; -V&quot;; GOSUB 98101PRINT &quot;= het voorvlak EEN kwartslag naar LI draaien (tegen de klok in draaien)
+160 PRINT PRINT &quot;Het met de klok meedraaien&#039; en &#039;tegen de klok in draaien&#039; gebeur teeds in&quot;
+165 PRINT &quot;de veronderstelling dat net te draaien vlak zich VOOR u bevindt nietteg
+170 PRINT &quot;staande dat in werkelijkheid enkel het voorvlax naar u gericht is.&quot; 190 2$ M1:GOSUB 9610
+210 GOSUB 8010:GOSUB 8110:GOSUB 8510
+290 29=&quot;DE KUBUS IN ZIJN LOGISCHE VORM&quot;:GOSUB 9620
+300 REM *** INPUT KLEUREN
+310 GOSUB 8010:GOSUB 8110
+320 QH=01QV=23:GOSUB 9710:FLDS=&quot;H&quot;:GOSUB 9820: PRINT &quot;TIK DE KLEUREN IN (Y-0-w-R-B- ::GOSUB 9810
+330 A1-01A2=01A3=0:A4=0:A5=0:A6=0
+340 FOR I=0 TO EQH=H (I) =QV=V (I):GOSUB 9710
+350 X$=INPUT$ (1) A=ASC (X$)
+360 IF A-66 THEN A1-A1+1:1F A1)9 THEN 350 ELSE 440 370 IF A=71 THEN A2-A2+1:IF A2)9 THEN 350 ELSE 440 380 IF A=79 THEN A3-A3+1: IF A3) 9 THEN 350 ELSE 440 390 IF A=82 THEN A4-A4+1: IF A4)9 THEN 350 ELSE 440 410 IF A=87 THEN AS=A5+1: IF AS)9 THEN 350 ELSE 440 420 IF A=89 THEN A6-A6+1:IF A6)9 THEN 350 ELSE 440 430 GOTO 350
+440 FLDS-F#(1):GOSUB 98201PRINT X$;:GOSUB 9810
+450 C(I)-AID (I)=A:NEXT
+490 QV=23:GOSUB_9680:Z$=&quot;KORREKT&quot;:GOSUB 9630:IF XS=&quot;N&quot; THEN 320 500 REM ** RANDEN BOVEN ETAGE
+510 B-D (40) V=01X=0 Y=0:2=0:IF B=D (43) AND D(0)=D (1) THEN V=1 520 IF B-D (41) AND D (9) =D (10) THEN X=1
+530 IF B-D (37) AND D(18) D (19) THEN Y=1
+540 IF B-D (39) AND D(27) =D (28) THEN 2=1

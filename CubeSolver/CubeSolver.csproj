@@ -1,0 +1,176 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net9.0-android;net9.0-ios;net9.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net9.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net9.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>CubeSolver</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>Cube Solver gg</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.rubikscube</ApplicationId>
+		<ApplicationIdGuid>be8353b4-1c5d-4ba1-b563-077ed70cd644</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
+		<!--<WindowsPackageType>None</WindowsPackageType>-->
+		
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">12.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<DefaultLanguage>en</DefaultLanguage>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.png" ForegroundFile="Resources\AppIcon\appiconfg.png" Color="Gold" />
+		<!--<MauiIcon Include="Resources\AppIcon\appicon.png" />-->
+		<!--<MauiIcon Include="Resources\AppIcon\cubesolver_gold_128p.png" BaseSize="128,128" />-->
+		<!--<MauiIcon Include="Resources\AppIcon\appicon.png" BaseSize="128,128"/>-->
+
+		<!-- Splash Screen -->
+		<!--<MauiSplashScreen Include="Resources\Splash\splash.png" Color="Gold" />-->
+		<MauiSplashScreen Include="Resources\Splash\cubesolver_gold_128p.png" Color="Gold" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="ClassProgramLogging.cs" />
+	  <Compile Remove="ClassSolveCubeCFOPSpan.cs" />
+	  <Compile Remove="ClassSolveCubeCFOP_NotUsed.cs" />
+	  <Compile Remove="ClassSolveCubeCFOP_Old.cs" />
+	  <Compile Remove="ClassTestCubeTurns.cs" />
+	  <Compile Remove="PageWebsite.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="PageWebsite.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="CubeNumbering.txt" />
+	  <None Remove="README.md" />
+	  <None Remove="Resources\AppIcon\appicon.png" />
+	  <None Remove="Resources\Images\arrow_left.png" />
+	  <None Remove="Resources\Images\arrow_right.png" />
+	  <None Remove="Resources\Images\circled_envelope_24p.png" />
+	  <None Remove="Resources\Images\cube_mixedcolors_48p.png" />
+	  <None Remove="Resources\Images\ic_action_arrow_bottom.png" />
+	  <None Remove="Resources\Images\ic_action_arrow_top.png" />
+	  <None Remove="Resources\Images\ic_action_playback_schuffle.png" />
+	  <None Remove="Resources\Images\ic_action_reload.png" />
+	  <None Remove="Resources\Images\info_32p.png" />
+	  <None Remove="Resources\Images\internet_24p.png" />
+	  <None Remove="Resources\Images\settings_32p.png" />
+	  <None Remove="Resources\Splash\cube_splash_128p.png" />
+	  <None Remove="Store.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.30" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="PageAbout.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PageSettings.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Resources\Languages\CubeLang - Copy.Designer.cs">
+	    <DependentUpon>CubeLang - Copy.resx</DependentUpon>
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	  </Compile>
+	  <Compile Update="Resources\Languages\CubeLang.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>CubeLang.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\Languages\CubeLang - Copy.resx">
+	    <SubType>Designer</SubType>
+	    <LastGenOutput>CubeLang - Copy.Designer.cs</LastGenOutput>
+	    <Generator>ResXFileCodeGenerator</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Languages\CubeLang.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>CubeLang.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Explanation\" />
+	</ItemGroup>
+
+	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">
+		<BundleResource Include="Platforms\iOS\PrivacyInfo.xcprivacy" LogicalName="PrivacyInfo.xcprivacy" />
+	</ItemGroup>
+
+	<PropertyGroup Condition="$(TargetFramework.Contains('-android')) and '$(Configuration)' == 'Release'">
+		<AndroidKeyStore>True</AndroidKeyStore>
+		<AndroidSigningKeyStore>..\myapp.keystore</AndroidSigningKeyStore>
+		<AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
+		<AndroidSigningKeyPass></AndroidSigningKeyPass>
+		<AndroidSigningStorePass></AndroidSigningStorePass>
+		<ApplicationDisplayVersion>2.0.35</ApplicationDisplayVersion>
+		<ApplicationVersion>35</ApplicationVersion>
+		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework)'=='net9.0-ios'">
+		<ProvisioningType>automatic</ProvisioningType>
+		<CodesignKey>Apple Development: Created via API (KL96X68Q72)</CodesignKey>
+		<CodesignProvision>VS: com.geertgeerits.rubikscube Development</CodesignProvision>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="$(TargetFramework.Contains('-ios')) and '$(Configuration)' == 'Release'">
+		<RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+		<!-- Only needed when you have a need for entitlements -->
+		<!-- <CodesignEntitlement>Entitlements.plist</CodesignEntitlement> -->
+		<CodesignKey>Apple Distribution: Geert Geerits (S6CWMSSJ54)</CodesignKey>
+		<CodesignProvision>provisioningprofile01iOSRubiksCube</CodesignProvision>
+		<ArchiveOnBuild>true</ArchiveOnBuild>
+		<TcpPort>58181</TcpPort>
+
+		<ApplicationDisplayVersion>2.0.35</ApplicationDisplayVersion>
+		<ApplicationVersion>35</ApplicationVersion>
+		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
+	</PropertyGroup>
+
+	<!--From .NET 9 on the following is needed due an error in the build process:
+	Samsung Galaxy A3 (2017) SM-A320FL Android 8.0.0 -> Error ADB0020: Mono.AndroidTools.IncompatibleCpuAbiException:
+	The package does not support the CPU architecture of this device.-->
+	<PropertyGroup>
+		<RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+</Project>

@@ -1,0 +1,12 @@
+https://geertgeerits.wixsite.com/geertgeerits/
+
+
+Rubik's Cube
+Solve your Rubik's Cube
+
+There are three options to solve the cube:
+1. On the home screen, use the arrow keys to mix up the colors and solve the cube itself with the arrow keys.
+2. Same as the first option, but solve the cube with the 'Solve' button. The cube is then solved in reverse order.
+3. Use the button at the bottom with the cube (see explanation of that button on the info page). The cube is solved by the application. Then transfer the proposed movements to the real cube.
+
+Languages: Czech, Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Norwegian, Polish, Portuguese, Romanian, Spanish and Swedish.

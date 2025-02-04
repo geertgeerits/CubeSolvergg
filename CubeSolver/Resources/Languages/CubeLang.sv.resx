@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>Hålla med</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Inte tillåtet:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Tillåtna tecken:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Stänga</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Återställa</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Lösa</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Stäng applikationen.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Kontakt:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Fortsätta</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Upphovsrätt</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Baksida</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Nedåt ansiktet</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Kubfärger:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Framsida</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Inifrån</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Vänster ansikte</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Utifrån utsikt</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Höger ansikte</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Övre ansiktet</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Spela eller lös kuben.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Instämmer inte alls</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>E-post:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Fel</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Förklarat med tal:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Förklarat med text:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Rotera kubsidorna "medurs" och "moturs":
+Om kommandot ges att vrida fronten "medurs" är detta i den riktning som visarna vrider. 'Motsols' svänger åt andra hållet.
+För de andra sidorna måste du alltid 'föreställa dig' att du är direkt framför den sida som ska vändas. Så om det står vrid baksidan "medurs" tänk dig att du är på andra sidan av kuben och vrid sedan baksidan "medurs". Rotera inte själva kuben.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Öppna den sparade kuben.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Spara den aktuella kuben.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Överför färgerna från den blandade kuben till den här kuben. Välj en färg från färgfältet högst upp och tryck sedan på bitarna i kuben för att ändra dem. Tryck på den här knappen igen för att lämna det här avsnittet och tryck på 'Lös'-knappen.</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Hexadecimala färgkoder:
+
+Karaktärer 1-2: Röd
+Karaktärer 3-4: Grön
+Karaktärer 5-6: Blå</value>
+  </data>
+  <data name="InfoExplanation_Text" xml:space="preserve">
+    <value>Text till tal: Alla språk som finns i programinställningarna stöds inte.
+Det här alternativet varierar från enhet till enhet och de installerade språken. Det är möjligt att för vissa språk görs översättningen till och från tal över internet av de berörda tjänsterna.
+
+Google Translate användes för översättningen av texten. Detta är inte en garanti för att alla översättningar är korrekta.
+Stödspråken är: tjeckiska, danska, holländska, engelska, finska, franska, tyska, ungerska, italienska, norska, polska, portugisiska, rumänska, spanska och svenska.
+
+Du kan alltid kontakta mig för eventuella korrigeringar.</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Språktal:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Språk:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Programvaran tillhandahålls "i befintligt skick", utan garantier av något slag, uttryckliga eller underförstådda, inklusive men inte begränsat till garantier om säljbarhet, lämplighet för ett visst ändamål och icke-intrång. Under inga omständigheter ska författaren och/eller utgivaren hållas ansvariga för något anspråk, skadestånd eller annat ansvar, vare sig i en åtgärd av kontrakt, skadestånd eller på annat sätt, som härrör från, ur eller i samband med programvaran eller användningen eller annan handel med mjukvaran.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Licens</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Denna applikation får användas fritt för icke-kommersiella ändamål.
+Använd detta program helt på egen risk.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Färgen på den centrala fyrkanten kan bara förekomma en gång.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Färgerna på en hörnkub måste vara olika.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Färgerna på en kantkub måste vara olika.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Grattis, kuben är löst.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Kuben är inte löst.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Av varje tillgänglig färg måste det finnas nio av samma färg.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Cube Solver</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Nej</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Integritetspolicy:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Inga personliga och andra uppgifter lagras eller vidarebefordras till mig själv och andra.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Applikationen kommer att startas om.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Återställa</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Vissa ändrade inställningar måste sparas för att de ska kunna tillämpas.
+Efter sparandet startas programmet om och kuben återställs.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Spara</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Inställningar</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Lösa</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Sluta</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Texten innehåller ett eller flera tecken som inte är tillåtna.
+
+Inte tillåtet:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Text till tal stöds inte på den här enheten.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Mörk</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Ljus</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>Systemet</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Tema:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Gå tillbaka</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Gå framåt</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Hjälp</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Öppna kuben</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Spara kuben</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Växlingsknapp: Ställ in färgerna på kuben</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Vänd baksidan ett halvt varv.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Vrid baksidan ett kvarts varv "moturs" (-).</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Vrid baksidan ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Vänd undersidan ett halvt varv.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Vrid undersidan ett kvarts varv 'moturs' (-).</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Vrid undersidan ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att framsidan går till botten, höger sida förblir till höger.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att framsidan går till vänster sida, översidan förblir överst.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att framsidan går åt höger sida, översidan blir kvar på toppen.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att fronten går till toppen, höger sida förblir till höger.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att toppen går till vänster sida, framsidan blir kvar längst fram.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att toppen går åt höger sida, framsidan blir kvar längst fram.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Vrid det främre och mittersta lagret ett kvarts varv till höger sida (-).</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Vrid det främre-mellanlagret ett kvarts varv till översidan (+).</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Vrid framsidan ett halvt varv.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Vrid framsidan ett kvarts varv 'moturs' (-).</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Vrid framsidan ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Vrid vänster sida ett halvt varv.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Vrid vänster sida ett kvarts varv "moturs" (-).</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Vrid vänster sida ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Vänd mellanlagret ett halvt varv.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Vrid det högra mittenskiktet ett kvarts varv till framsidan (+).</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Vrid det högra mittenskiktet ett kvarts varv till översidan (-).</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Vrid höger ett halvt varv.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Vrid höger sida ett kvarts varv "moturs" (-).</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Vrid höger sida ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Vrid det övre och mittersta lagret ett kvarts varv till framsidan (-).</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Vrid det övre och mittersta lagret ett kvarts varv till höger sida (+).</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Vänd ovansidan ett halvt varv.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Vrid ovansidan ett kvarts varv "moturs" (-).</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Vrid ovansidan ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Version:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Hemsida</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Kuben går inte att lösa.
+
+Möjlig orsak är felaktig överföring av färger till denna kub.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att framsidan går bakåt, höger sida förblir till höger.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att framsidan går bakåt, översidan förblir upptill.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Vänd hela kuben så att toppen går till botten, framsidan blir kvar längst fram.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Tid i millisekunder:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Antal omgångar:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Alternativ för att lösa kuben:
+1. På hemskärmen använder du piltangenterna för att blanda ihop kuben och löser kuben med piltangenterna.
+2. Samma som det första alternativet, men lös kuben med 'Solve'-knappen. Kuben löses sedan i omvänd ordning.
+3. Använd knappen med kuben längst ner på skärmen för att överföra färgerna på din kub till denna kub (se förklaringen till den knappen). Kuben kommer att lösas av applikationen. Överför sedan de föreslagna dragen till den riktiga kuben. Detta är inte en garanti för att alla kuber kan lösas.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Kuben är tillbaka i sitt tidigare tillstånd.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Färgerna på mittstyckena är fel.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>Av varje tillgänglig färg måste det finnas fyra av samma färg på en kantkub.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>Av varje tillgänglig färg måste det finnas fyra av samma färg på en hörnkub.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Vänd ihop bak- och mellanlagret ett halvt varv.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Vrid ihop bak- och mittskiktet ett kvarts varv 'moturs' (-).</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Vrid ihop bak- och mittskiktet ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Vänd ihop botten och mellanlagret ett halvt varv.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Vrid ihop det nedre och mittersta lagret ett kvarts varv 'moturs' (-).</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Vrid ihop det nedre och mittersta lagret ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Vänd ihop det främre och mittersta lagret ett halvt varv.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Vrid det främre och mittersta lagret tillsammans ett kvarts varv 'moturs' (-).</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Vrid ihop det främre och mittersta lagret ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Vrid ihop vänster och mellanlag ett halvt varv.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Vrid det vänstra och mellersta lagret tillsammans ett kvarts varv "moturs" (-).</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Vrid det vänstra och mellersta lagret tillsammans ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Vänd ihop höger och mellanlag ett halvt varv.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Vrid det högra och mittersta lagret tillsammans ett kvarts varv 'moturs' (-).</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Vrid det högra och mittersta lagret tillsammans ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Vänd ihop översta och mellanlagret ett halvt varv.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Vrid ihop det övre och mittersta lagret ett kvarts varv "moturs" (-).</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Vrid ihop det övre och mittersta lagret ett kvarts varv 'medurs' (+).</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Skicka ett e-postmeddelande till författaren av den här applikationen</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Öppna webbplatsen för denna applikation</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Testade lösningar:</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Genomsnittligt antal varv för att lösa kuben:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Skruva ihop kuben</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Återställ kuben</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Återställ kuben.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Skruva ihop kuben.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Lös kuben</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Gå tillbaka ett varv</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Gå ett varv framåt</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Gå tillbaka ett varv.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Gå ett varv framåt.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Lös kuben utan ingripande</value>
+  </data>
+  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Lös kuben utan ingripande.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Lös kuben med intervention</value>
+  </data>
+  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Lös kuben med intervention.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+    <value>Växlingsknapp: Lös kuben med eller utan ingripande</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Lös kuben.</value>
+  </data>
+</root>

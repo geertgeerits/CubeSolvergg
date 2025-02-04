@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>Zustimmen</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Nicht erlaubt:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Erlaubte Zeichen:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Schließen</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Zurücksetzen</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Lösen</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Bitte schließen Sie die Anwendung.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Kontakt:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Weitermachen</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Urheberrechte</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Rückseite</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Unterseite</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Würfelfarben:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Vorderseite</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Innenansicht</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Linke Seite</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Aussenansicht</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Rechte Seite</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Oberseite</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Spiele oder löse den Würfel.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Nicht zustimmen</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Redeweise erklärt:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Textlich erklärt:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Drehen Sie die Würfelseiten im Uhrzeigersinn und im Gegenuhrzeigersinn:
+Wenn der Befehl gegeben wird, die Vorderseite 'im Uhrzeigersinn' zu drehen, dann in die Richtung, in die sich die Zeiger drehen. 'Gegen den Uhrzeigersinn' dreht sich in die andere Richtung.
+Für die anderen Seiten muss man sich immer 'vorstellen', dass man direkt vor der zu wendenden Seite steht. Wenn es also heißt, drehen Sie die Rückseite im Uhrzeigersinn, stellen Sie sich vor, Sie befinden sich auf der anderen Seite des Würfels und drehen Sie dann die Rückseite im Uhrzeigersinn. Drehen Sie nicht den Würfel selbst.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Öffnen Sie den gespeicherten Cube.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Speichern Sie den aktuellen Cube.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Übertragen Sie die Farben vom durcheinandergebrachten Würfel auf diesen Würfel. Wählen Sie oben in der Farbleiste eine Farbe aus und tippen Sie dann auf die Würfelteile, um sie zu ändern. Drücken Sie diese Schaltfläche erneut, um diesen Abschnitt zu verlassen, und klicken Sie auf die Schaltfläche 'Lösen'.</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Hexadezimale Farbcodes:
+
+Zeichen 1-2: Rot
+Zeichen 3-4: Grün
+Zeichen 5-6: Blau</value>
+  </data>
+  <data name="InfoExplanation_Text" xml:space="preserve">
+    <value>Text-zu-Sprache: Es werden nicht alle Sprachen unterstützt, die in den Anwendungseinstellungen bereitgestellt werden.
+Diese Option variiert von Gerät zu Gerät und den installierten Sprachen. Es ist möglich, dass für einige Sprachen die Übersetzung in und aus der Sprache von den betreffenden Diensten über das Internet durchgeführt wird.
+
+Für die Übersetzung des Textes wurde Google Translate verwendet. Dies ist keine Garantie dafür, dass alle Übersetzungen korrekt sind.
+Die unterstützten Sprachen sind: Tschechisch, Dänisch, Niederländisch, Englisch, Finnisch, Französisch, Deutsch, Ungarisch, Italienisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Spanisch und Schwedisch.
+
+Sie können mich jederzeit für Korrekturen kontaktieren.</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Sprache Rede:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Sprache:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Die Software wird „wie besehen“ bereitgestellt, ohne Gewährleistung jeglicher Art, weder ausdrücklich noch stillschweigend, einschließlich, aber nicht beschränkt auf die Gewährleistung der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung. In keinem Fall haften der Autor und/oder Herausgeber für Ansprüche, Schäden oder andere Haftungen, sei es aus einem Vertrag, aus unerlaubter Handlung oder auf andere Weise, die sich aus, aus oder im Zusammenhang mit der Software oder der Verwendung oder sonstigen Handlungen ergeben die Software.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Lizenz</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Diese Anwendung darf für nichtkommerzielle Zwecke frei verwendet werden.
+Verwenden Sie dieses Programm ausschließlich auf eigene Gefahr.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Die Farbe des zentralen Quadrats darf nur einmal vorkommen.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Die Farben eines Eckwürfels müssen unterschiedlich sein.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Die Farben eines Kantenwürfels müssen unterschiedlich sein.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Herzlichen Glückwunsch, der Würfel ist gelöst.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Der Würfel ist nicht gelöst.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Von jeder verfügbaren Farbe müssen es neun in derselben Farbe sein.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Cube Solver</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Datenschutz-Bestimmungen:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Es werden keine personenbezogenen und sonstigen Daten gespeichert oder an mich und andere weitergegeben.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Die Anwendung wird neu gestartet.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Zurücksetzen</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Einige geänderte Einstellungen müssen gespeichert werden, um sie zu übernehmen.
+Nach dem Speichern wird die Anwendung neu gestartet und der Cube zurückgesetzt.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Lösen</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Stoppen</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Der Text enthält ein oder mehrere unzulässige Zeichen.
+
+Nicht erlaubt:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Text-to-Speech wird auf diesem Gerät nicht unterstützt.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Dunkel</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Hell</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Thema:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Geh zurück</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Vorwärts gehen</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Öffne den Würfel</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Speichern Sie den Würfel</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Umschalttaste: Legen Sie die Farben für den Würfel fest</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Drehen Sie die Rückseite um eine halbe Umdrehung.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Drehen Sie die Rückseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Drehen Sie die Rückseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Drehen Sie die Unterseite um eine halbe Umdrehung.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Drehen Sie die Unterseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Drehen Sie die Unterseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach unten zeigt, die rechte Seite bleibt rechts.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach links zeigt, die Oberseite bleibt oben.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach rechts zeigt, die Oberseite oben bleibt.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach oben zeigt, die rechte Seite bleibt rechts.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Oberseite nach links geht, die Vorderseite bleibt vorne.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Oberseite auf die rechte Seite geht, die Vorderseite bleibt vorne.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Drehen Sie die vordere mittlere Schicht um eine Vierteldrehung auf die rechte Seite (-).</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Drehen Sie die vordere mittlere Schicht um eine Vierteldrehung nach oben (+).</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Drehen Sie die Vorderseite um eine halbe Umdrehung.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Drehen Sie die Vorderseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Drehen Sie die Vorderseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Drehen Sie die linke Seite eine halbe Umdrehung.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Drehen Sie die linke Seite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Drehen Sie die linke Seite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Drehen Sie die mittlere Schicht eine halbe Umdrehung.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Drehen Sie die rechte mittlere Schicht um eine Vierteldrehung auf die Vorderseite (+).</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Drehen Sie die rechte mittlere Schicht um eine Vierteldrehung nach oben (-).</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Drehen Sie die rechte Seite eine halbe Umdrehung.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Drehen Sie die rechte Seite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Drehen Sie die rechte Seite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Drehen Sie die obere mittlere Schicht um eine Vierteldrehung auf die Vorderseite (-).</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Drehen Sie die obere mittlere Schicht um eine Vierteldrehung auf die rechte Seite (+).</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Drehen Sie die Oberseite um eine halbe Umdrehung.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Drehen Sie die Oberseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Drehen Sie die Oberseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Ausführung:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Webseite</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Der Würfel kann nicht gelöst werden.
+
+Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach hinten geht, die rechte Seite bleibt rechts.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach hinten geht, die Oberseite oben bleibt.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Drehen Sie den gesamten Würfel so, dass die Oberseite nach unten geht, die Vorderseite vorne bleibt.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Zeit in Millisekunden:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Anzahl der Züge:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Möglichkeiten zum Lösen des Würfels:
+1. Auf dem Startbildschirm mit den Pfeiltasten den Würfel durchmischen und mit den Pfeiltasten den Würfel lösen.
+2. Wie bei der ersten Möglichkeit, aber den Würfel mit der Schaltfläche „Lösen“ lösen. Der Würfel wird dann in umgekehrter Reihenfolge gelöst.
+3. Mit der Schaltfläche mit dem Würfel am unteren Bildschirmrand können Sie die Farben Ihres Würfels auf diesen Würfel übertragen (siehe Erklärung dieser Schaltfläche). Der Würfel wird von der Anwendung gelöst. Übertragen Sie dann die vorgeschlagenen Züge auf den echten Würfel. Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Der Würfel befindet sich wieder in seinem vorherigen Zustand.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Die Farben der Mittelstücke sind falsch.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>Von jeder verfügbaren Farbe müssen vier gleiche Farben auf einem Kantenwürfel vorhanden sein.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>Von jeder verfügbaren Farbe müssen vier gleiche Farben auf einem Eckwürfel vorhanden sein.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Drehen Sie die hintere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Drehen Sie die hintere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Drehen Sie die hintere und mittlere Schicht zusammen eine Vierteldrehung im Uhrzeigersinn (+).</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Drehen Sie die untere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Drehen Sie die untere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Drehen Sie die untere und mittlere Schicht gemeinsam um eine Vierteldrehung im Uhrzeigersinn (+).</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Drehen Sie die vordere und mittlere Schicht eine halbe Umdrehung zusammen.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Drehen Sie die vordere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Drehen Sie die vordere und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Drehen Sie die linke und die mittlere Schicht zusammen eine halbe Umdrehung.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Drehen Sie die linke und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Drehen Sie die linke und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Drehen Sie die rechte und mittlere Schicht zusammen eine halbe Umdrehung.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Drehen Sie die rechte und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Drehen Sie die rechte und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Drehen Sie die obere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Drehen Sie die obere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Drehen Sie die obere und mittlere Schicht gemeinsam um eine Vierteldrehung im Uhrzeigersinn (+).</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Senden Sie eine E-Mail an den Autor dieser Anwendung</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Öffnen Sie die Website dieser Anwendung</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Getestete Lösungen:</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Durchschnittliche Anzahl der Runden zum Lösen des Würfels:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Verwirre den Würfel</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Den Würfel zurücksetzen</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Setze den Würfel zurück.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Bringe den Würfel durcheinander.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Löse den Würfel</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Gehe eine Runde zurück</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Gehe eine Runde vorwärts</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Gehe eine Runde zurück.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Gehe eine Runde vorwärts.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Löse den Würfel ohne Eingriff</value>
+  </data>
+  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+    <value>Löse den Würfel ohne Eingriff.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Löse den Würfel mit Eingriff</value>
+  </data>
+  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+    <value>Löse den Würfel mit Eingriff.</value>
+  </data>
+  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+    <value>Umschaltfläche: Löse den Würfel mit oder ohne Eingriff</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Löse den Würfel.</value>
+  </data>
+</root>
