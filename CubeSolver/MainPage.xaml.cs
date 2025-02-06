@@ -599,8 +599,149 @@ namespace CubeSolver
             // Forward turn
             if (!bTurnIsBackwards)
             {
-                await ClassCubeTurns.TurnCubeLayersAsync(cTurn);
+                if (cTurn[^1] == '2')
+                {
+                    await SplitHalfTurnInTwoQuarterTurnsAsync(cTurn);
+                }
+                else
+                {
+                    await ClassCubeTurns.TurnCubeLayersAsync(cTurn);
+                }
                 GetCubeColorsFromArrays();
+            }
+        }
+
+        /// <summary>
+        /// Split a half turn in two quarter turns
+        /// </summary>
+        /// <param name="cTurn"></param>
+        private async Task SplitHalfTurnInTwoQuarterTurnsAsync(string cTurn)
+        {
+            const int nMilliseconds = 250;
+
+            switch (cTurn)
+            {
+                // Face rotations
+                case Globals.turnFront2:                                        // F2
+                    await ClassCubeTurns.TurnCubeLayersAsync("F");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("F");
+                    break;
+                case Globals.turnRight2:                                        // R2
+                    await ClassCubeTurns.TurnCubeLayersAsync("R");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("R");
+                    break;
+                case Globals.turnBack2:                                         // B2
+                    await ClassCubeTurns.TurnCubeLayersAsync("B");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("B");
+                    break;
+                case Globals.turnLeft2:                                         // L2
+                    await ClassCubeTurns.TurnCubeLayersAsync("L");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("L");
+                    break;
+                case Globals.turnUp2:                                           // U2
+                    await ClassCubeTurns.TurnCubeLayersAsync("U");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("U");
+                    break;
+                case Globals.turnDown2:                                         // D2
+                    await ClassCubeTurns.TurnCubeLayersAsync("D");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("D");
+                    break;
+
+                // Middle layer rotations
+                case Globals.turnUpHorMiddle2:                                  // S2
+                    await ClassCubeTurns.TurnCubeLayersAsync("S");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("S");
+                    break;
+                case Globals.turnUpVerMiddle2:                                  // M2
+                    await ClassCubeTurns.TurnCubeLayersAsync("M");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("M");
+                    break;
+                case Globals.turnFrontHorMiddle2:                               // E2
+                    await ClassCubeTurns.TurnCubeLayersAsync("E");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("E");
+                    break;
+
+                // Two layers at the same time
+                case Globals.turn2LayersFront2:                                 // f2
+                    await ClassCubeTurns.TurnCubeLayersAsync("f");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("f");
+                    break;
+                case Globals.turn2LayersRight2:                                 // r2
+                    await ClassCubeTurns.TurnCubeLayersAsync("r");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("r");
+                    break;
+                case Globals.turn2LayersBack2:                                  // b2
+                    await ClassCubeTurns.TurnCubeLayersAsync("b");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("b");
+                    break;
+                case Globals.turn2LayersLeft2:                                  // l2
+                    await ClassCubeTurns.TurnCubeLayersAsync("l");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("l");
+                    break;
+                case Globals.turn2LayersUp2:                                    // u2
+                    await ClassCubeTurns.TurnCubeLayersAsync("u");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("u");
+                    break;
+                case Globals.turn2LayersDown2:                                  // d2
+                    await ClassCubeTurns.TurnCubeLayersAsync("d");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("d");
+                    break;
+
+                // Cube rotations
+                case Globals.turnCubeFrontToLeft2:                              // y2
+                    await ClassCubeTurns.TurnCubeLayersAsync("y");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("y");
+                    break;
+                case Globals.turnCubeFrontToUp2:                                // x2
+                    await ClassCubeTurns.TurnCubeLayersAsync("x");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("x");
+                    break;
+                case Globals.turnCubeUpToRight2:                                // z2
+                    await ClassCubeTurns.TurnCubeLayersAsync("z");
+                    GetCubeColorsFromArrays();
+                    await Task.Delay(nMilliseconds);
+                    await ClassCubeTurns.TurnCubeLayersAsync("z");
+                    break;
+
+                default:
+#if DEBUG
+                    await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, $"SplitHalfTurnInTwoQuarterTurnsAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
+#endif
+                    break;
             }
         }
 
