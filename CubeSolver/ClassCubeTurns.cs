@@ -14,156 +14,156 @@ namespace CubeSolver
             switch (cTurn)
             {
                 // Face rotations
-                case turnFrontCW:
+                case turnFrontCW:               // F
                     TurnFrontFaceTo("CW");
                     break;
-                case turnFrontCCW:
+                case turnFrontCCW:              // F'
                     TurnFrontFaceTo("CCW");
                     break;
-                case turnFront2:
+                case turnFront2:                // F2
                     TurnFrontFaceTo("CW");
                     TurnFrontFaceTo("CW");
                     break;
-                case turnRightCW:
+                case turnRightCW:               // R
                     TurnRightFaceTo("CW");
                     break;
-                case turnRightCCW:
+                case turnRightCCW:              // R'
                     TurnRightFaceTo("CCW");
                     break;
-                case turnRight2:
+                case turnRight2:                // R2
                     TurnRightFaceTo("CW");
                     TurnRightFaceTo("CW");
                     break;
-                case turnBackCW:
+                case turnBackCW:                // B
                     TurnBackFaceTo("CW");
                     break;
-                case turnBackCCW:
+                case turnBackCCW:               // B'
                     TurnBackFaceTo("CCW");
                     break;
-                case turnBack2:
+                case turnBack2:                 // B2
                     TurnBackFaceTo("CW");
                     TurnBackFaceTo("CW");
                     break;
-                case turnLeftCW:
+                case turnLeftCW:                // L
                     TurnLeftFaceTo("CW");
                     break;
-                case turnLeftCCW:
+                case turnLeftCCW:               // L'
                     TurnLeftFaceTo("CCW");
                     break;
-                case turnLeft2:
+                case turnLeft2:                 // L2
                     TurnLeftFaceTo("CW");
                     TurnLeftFaceTo("CW");
                     break;
-                case turnUpCW:
+                case turnUpCW:                  // U
                     TurnUpFaceTo("CW");
                     break;
-                case turnUpCCW:
+                case turnUpCCW:                 // U'
                     TurnUpFaceTo("CCW");
                     break;
-                case turnUp2:
+                case turnUp2:                   // U2
                     TurnUpFaceTo("CW");
                     TurnUpFaceTo("CW");
                     break;
-                case turnDownCW:
+                case turnDownCW:                // D
                     TurnDownFaceTo("CW");
                     break;
-                case turnDownCCW:
+                case turnDownCCW:               // D'
                     TurnDownFaceTo("CCW");
                     break;
-                case turnDown2:
+                case turnDown2:                 // D2
                     TurnDownFaceTo("CW");
                     TurnDownFaceTo("CW");
                     break;
 
                 // Middle layer rotations
-                case turnUpHorMiddleRight:
+                case turnUpHorMiddleRight:          // S
                     TurnUpHorMiddleTo("CW");
                     break;
-                case turnUpHorMiddleLeft:
+                case turnUpHorMiddleLeft:           // S'
                     TurnUpHorMiddleTo("CCW");
                     break;
-                case turnUpHorMiddle2:
+                case turnUpHorMiddle2:              // S2
                     TurnUpHorMiddleTo("CW");
                     TurnUpHorMiddleTo("CW");
                     break;
 
-                case turnUpVerMiddleBack:
+                case turnUpVerMiddleBack:           // M'
                     TurnUpVerMiddleTo("CW");
                     break;
-                case turnUpVerMiddleFront:
+                case turnUpVerMiddleFront:          // M
                     TurnUpVerMiddleTo("CCW");
                     break;
-                case turnUpVerMiddle2:
+                case turnUpVerMiddle2:              // M2
                     TurnUpVerMiddleTo("CW");
                     TurnUpVerMiddleTo("CW");
                     break;
 
-                case turnFrontHorMiddleLeft:
+                case turnFrontHorMiddleLeft:        // E'
                     TurnFrontHorMiddleTo("CW");
                     break;
-                case turnFrontHorMiddleRight:
+                case turnFrontHorMiddleRight:       // E
                     TurnFrontHorMiddleTo("CCW");
                     break;
-                case turnFrontHorMiddle2:
+                case turnFrontHorMiddle2:           // E2
                     TurnFrontHorMiddleTo("CW");
                     TurnFrontHorMiddleTo("CW");
                     break;
 
                 // Two layers at the same time
-                case turn2LayersFrontCW:
+                case turn2LayersFrontCW:            // f
                     TurnFrontFaceTo("CW");
                     TurnUpHorMiddleTo("CW");
                     break;
-                case turn2LayersFrontCCW:
+                case turn2LayersFrontCCW:           // f'
                     TurnFrontFaceTo("CCW");
                     TurnUpHorMiddleTo("CCW");
                     break;
-                case turn2LayersFront2:
+                case turn2LayersFront2:             // f2
                     TurnFrontFaceTo("CW");
                     TurnUpHorMiddleTo("CW");
                     TurnFrontFaceTo("CW");
                     TurnUpHorMiddleTo("CW");
                     break;
 
-                case turn2LayersRightCW:
+                case turn2LayersRightCW:            // r
                     TurnRightFaceTo("CW");
                     TurnUpVerMiddleTo("CW");
                     break;
-                case turn2LayersRightCCW:
+                case turn2LayersRightCCW:           // r'
                     TurnRightFaceTo("CCW");
                     TurnUpVerMiddleTo("CCW");
                     break;
-                case turn2LayersRight2:
+                case turn2LayersRight2:             // r2
                     TurnRightFaceTo("CW");
                     TurnUpVerMiddleTo("CW");
                     TurnRightFaceTo("CW");
                     TurnUpVerMiddleTo("CW");
                     break;
 
-                case turn2LayersBackCW:
+                case turn2LayersBackCW:             // b
                     TurnBackFaceTo("CW");
                     TurnUpHorMiddleTo("CCW");
                     break;
-                case turn2LayersBackCCW:
+                case turn2LayersBackCCW:            // b'
                     TurnBackFaceTo("CCW");
                     TurnUpHorMiddleTo("CW");
                     break;
-                case turn2LayersBack2:
+                case turn2LayersBack2:              // b2
                     TurnBackFaceTo("CW");
                     TurnUpHorMiddleTo("CCW");
                     TurnBackFaceTo("CW");
                     TurnUpHorMiddleTo("CCW");
                     break;
 
-                case turn2LayersLeftCW:
+                case turn2LayersLeftCW:             // l
                     TurnLeftFaceTo("CW");
                     TurnUpVerMiddleTo("CCW");
                     break;
-                case turn2LayersLeftCCW:
+                case turn2LayersLeftCCW:            // l'
                     TurnLeftFaceTo("CCW");
                     TurnUpVerMiddleTo("CW");
                     break;
-                case turn2LayersLeft2:
+                case turn2LayersLeft2:              // l2
                     TurnLeftFaceTo("CW");
                     TurnUpVerMiddleTo("CCW");
                     TurnLeftFaceTo("CW");
@@ -171,29 +171,29 @@ namespace CubeSolver
                     break;
 
                 case turn2LayersUpCW:
-                    TurnUpFaceTo("CW");
+                    TurnUpFaceTo("CW");             // u
                     TurnFrontHorMiddleTo("CW");
                     break;
-                case turn2LayersUpCCW:
+                case turn2LayersUpCCW:              // u'
                     TurnUpFaceTo("CCW");
                     TurnFrontHorMiddleTo("CCW");
                     break;
-                case turn2LayersUp2:
+                case turn2LayersUp2:                // u2
                     TurnUpFaceTo("CW");
                     TurnFrontHorMiddleTo("CW");
                     TurnUpFaceTo("CW");
                     TurnFrontHorMiddleTo("CW");
                     break;
 
-                case turn2LayersDownCW:
+                case turn2LayersDownCW:             // d
                     TurnDownFaceTo("CW");
                     TurnFrontHorMiddleTo("CCW");
                     break;
-                case turn2LayersDownCCW:
+                case turn2LayersDownCCW:            // d'
                     TurnDownFaceTo("CCW");
                     TurnFrontHorMiddleTo("CW");
                     break;
-                case turn2LayersDown2:
+                case turn2LayersDown2:              // d2
                     TurnDownFaceTo("CW");
                     TurnFrontHorMiddleTo("CCW");
                     TurnDownFaceTo("CW");
@@ -201,34 +201,34 @@ namespace CubeSolver
                     break;
 
                 // Cube rotations
-                case turnCubeFrontToRight:
+                case turnCubeFrontToRight:              // y'
                     TurnCubeFrontFaceToRightFace();
                     break;
-                case turnCubeFrontToLeft:
+                case turnCubeFrontToLeft:               // y
                     TurnCubeFrontFaceToLeftFace();
                     break;
-                case turnCubeFrontToLeft2:
+                case turnCubeFrontToLeft2:              // y2
                     TurnCubeFrontFaceToLeftFace();
                     TurnCubeFrontFaceToLeftFace();
                     break;
-                case turnCubeFrontToUp:
+                case turnCubeFrontToUp:                 // x
                     TurnCubeFrontFaceToUpFace();
                     break;
-                case turnCubeFrontToUp2:
+                case turnCubeFrontToUp2:                // x2
                     TurnCubeFrontFaceToUpFace();
                     TurnCubeFrontFaceToUpFace();
                     break;
-                case turnCubeFrontToDown:
+                case turnCubeFrontToDown:               // x'
                     TurnCubeFrontFaceToDownFace();
                     break;
-                case turnCubeUpToRight:
+                case turnCubeUpToRight:                 // z
                     TurnCubeUpFaceToRightFace();
                     break;
-                case turnCubeUpToRight2:
+                case turnCubeUpToRight2:                // z2
                     TurnCubeUpFaceToRightFace();
                     TurnCubeUpFaceToRightFace();
                     break;
-                case turnCubeUpToLeft:
+                case turnCubeUpToLeft:                  // z'
                     TurnCubeUpFaceToLeftFace();
                     break;
 
