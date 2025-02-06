@@ -30,6 +30,7 @@ namespace CubeSolver
         private bool bTestSolveCube;
         private bool bTurnIsBackwards;
         private bool bTurnNoButtonPress;
+        private bool bSplitHalfTurnInTwoQuarterTurns = true;
 
         //// Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
@@ -599,7 +600,7 @@ namespace CubeSolver
             // Forward turn
             if (!bTurnIsBackwards)
             {
-                if (cTurn[^1] == '2')
+                if (cTurn[^1] == '2' && bSplitHalfTurnInTwoQuarterTurns)
                 {
                     await SplitHalfTurnInTwoQuarterTurnsAsync(cTurn);
                 }
@@ -617,7 +618,7 @@ namespace CubeSolver
         /// <param name="cTurn"></param>
         private async Task SplitHalfTurnInTwoQuarterTurnsAsync(string cTurn)
         {
-            const int nMilliseconds = 250;
+            const int nMilliseconds = 50;
 
             switch (cTurn)
             {
@@ -738,6 +739,7 @@ namespace CubeSolver
                     break;
 
                 default:
+                    await ClassCubeTurns.TurnCubeLayersAsync(cTurn);
 #if DEBUG
                     await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, $"SplitHalfTurnInTwoQuarterTurnsAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
 #endif
