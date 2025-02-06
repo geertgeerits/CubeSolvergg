@@ -618,7 +618,7 @@ namespace CubeSolver
         /// <param name="cTurn"></param>
         private async Task SplitHalfTurnInTwoQuarterTurnsAsync(string cTurn)
         {
-            const int nMilliseconds = 50;
+            const int nMilliseconds = 40;
 
             switch (cTurn)
             {
