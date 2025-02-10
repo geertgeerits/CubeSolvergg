@@ -494,22 +494,22 @@ namespace CubeSolver.Resources.Languages
         /// <summary>
         ///   Looks up a localized string similar to Solve the cube without intervention..
         /// </summary>
-        internal static string HelpTurnNoButtonPressPlay_Text
+        internal static string HelpTurnContinuouslyPlay_Text
         {
             get
             {
-                return ResourceManager.GetString("HelpTurnNoButtonPressPlay_Text", resourceCulture);
+                return ResourceManager.GetString("HelpTurnContinuouslyPlay_Text", resourceCulture);
             }
         }
 
         /// <summary>
         ///   Looks up a localized string similar to Solve the cube with intervention..
         /// </summary>
-        internal static string HelpTurnNoButtonPressStop_Text
+        internal static string HelpTurnContinuouslyStop_Text
         {
             get
             {
-                return ResourceManager.GetString("HelpTurnNoButtonPressStop_Text", resourceCulture);
+                return ResourceManager.GetString("HelpTurnContinuouslyStop_Text", resourceCulture);
             }
         }
 
@@ -1102,33 +1102,33 @@ namespace CubeSolver.Resources.Languages
         /// <summary>
         ///   Looks up a localized string similar to Toggle button: Solve the cube with or without intervention.
         /// </summary>
-        internal static string ToolTipTurnNoButtonPress_Text
+        internal static string ToolTipTurnContinuously_Text
         {
             get
             {
-                return ResourceManager.GetString("ToolTipTurnNoButtonPress_Text", resourceCulture);
+                return ResourceManager.GetString("ToolTipTurnContinuously_Text", resourceCulture);
             }
         }
 
         /// <summary>
         ///   Looks up a localized string similar to Solve the cube without intervention.
         /// </summary>
-        internal static string ToolTipTurnNoButtonPressPlay_Text
+        internal static string ToolTipTurnContinuouslyPlay_Text
         {
             get
             {
-                return ResourceManager.GetString("ToolTipTurnNoButtonPressPlay_Text", resourceCulture);
+                return ResourceManager.GetString("ToolTipTurnContinuouslyPlay_Text", resourceCulture);
             }
         }
 
         /// <summary>
         ///   Looks up a localized string similar to Solve the cube with intervention.
         /// </summary>
-        internal static string ToolTipTurnNoButtonPressStop_Text
+        internal static string ToolTipTurnContinuouslyStop_Text
         {
             get
             {
-                return ResourceManager.GetString("ToolTipTurnNoButtonPressStop_Text", resourceCulture);
+                return ResourceManager.GetString("ToolTipTurnContinuouslyStop_Text", resourceCulture);
             }
         }
 

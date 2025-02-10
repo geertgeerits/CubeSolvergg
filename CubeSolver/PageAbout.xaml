@@ -254,15 +254,15 @@
                                 Grid.Row="8"
                                 Grid.Column="0"
                                 Source="ic_action_playback_play.png"
-                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipTurnNoButtonPressPlay_Text}"
-                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipTurnNoButtonPressPlay_Text}">
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipTurnContinuouslyPlay_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipTurnContinuouslyPlay_Text}">
                             </ImageButton>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="8"
                                 Grid.Column="1"
-                                Text="{x:Static resx:CubeLang.HelpTurnNoButtonPressPlay_Text}">
+                                Text="{x:Static resx:CubeLang.HelpTurnContinuouslyPlay_Text}">
                             </Label>
 
                             <ImageButton
@@ -270,15 +270,15 @@
                                 Grid.Row="9"
                                 Grid.Column="0"
                                 Source="ic_action_playback_stop.png"
-                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipTurnNoButtonPressStop_Text}"
-                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipTurnNoButtonPressStop_Text}">
+                                SemanticProperties.Description="{x:Static resx:CubeLang.ToolTipTurnContinuouslyStop_Text}"
+                                ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipTurnContinuouslyStop_Text}">
                             </ImageButton>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="9"
                                 Grid.Column="1"
-                                Text="{x:Static resx:CubeLang.HelpTurnNoButtonPressStop_Text}">
+                                Text="{x:Static resx:CubeLang.HelpTurnContinuouslyStop_Text}">
                             </Label>
                         </Grid>
                     

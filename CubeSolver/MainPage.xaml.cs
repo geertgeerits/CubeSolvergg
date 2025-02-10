@@ -780,7 +780,7 @@ namespace CubeSolver
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void OnButtonTurnNoButtonPressClicked(object sender, EventArgs e)
+        private void OnButtonTurnContinuouslyClicked(object sender, EventArgs e)
         {
             bTurnContinuously = !bTurnContinuously;
             bTurnIsBackwards = false;

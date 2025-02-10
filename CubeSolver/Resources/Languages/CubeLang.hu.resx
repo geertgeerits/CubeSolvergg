@@ -570,19 +570,19 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Menj egy fordulatot előre.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Oldja meg a kockát beavatkozás nélkül</value>
   </data>
-  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Oldja meg a kockát beavatkozás nélkül.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Oldja meg a kockát beavatkozással</value>
   </data>
-  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Oldja meg a kockát beavatkozással.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
     <value>Váltógomb: A kocka megoldása beavatkozással vagy anélkül</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">

@@ -570,19 +570,19 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Avanza una vuelta.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Resuelve el cubo sin intervención</value>
   </data>
-  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Resuelve el cubo sin intervención.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Resuelve el cubo con intervención</value>
   </data>
-  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Resuelve el cubo con intervención.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
     <value>Botón de alternancia: Resuelve el cubo con o sin intervención</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">

@@ -570,19 +570,19 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Ga één draai vooruit.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Los de kubus op zonder tussenkomst</value>
   </data>
-  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Los de kubus op zonder tussenkomst.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Los de kubus op met tussenkomst</value>
   </data>
-  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Los de kubus op met tussenkomst.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
     <value>Wissel-knop: Los de kubus op met of zonder tussenkomst</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">

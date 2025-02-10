@@ -570,19 +570,19 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Gehe eine Runde vorwärts.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Löse den Würfel ohne Eingriff</value>
   </data>
-  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Löse den Würfel ohne Eingriff.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Löse den Würfel mit Eingriff</value>
   </data>
-  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Löse den Würfel mit Eingriff.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
     <value>Umschaltfläche: Löse den Würfel mit oder ohne Eingriff</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">

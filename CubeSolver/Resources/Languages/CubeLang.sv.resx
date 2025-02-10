@@ -570,19 +570,19 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Gå ett varv framåt.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Lös kuben utan ingripande</value>
   </data>
-  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Lös kuben utan ingripande.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Lös kuben med intervention</value>
   </data>
-  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Lös kuben med intervention.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
     <value>Växlingsknapp: Lös kuben med eller utan ingripande</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">

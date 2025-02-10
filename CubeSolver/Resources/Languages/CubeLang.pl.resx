@@ -570,19 +570,19 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Przejdź o jeden obrót do przodu.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Rozwiąż kostkę bez interwencji</value>
   </data>
-  <data name="HelpTurnNoButtonPressPlay_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Rozwiąż kostkę bez interwencji.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Rozwiąż kostkę z interwencją</value>
   </data>
-  <data name="HelpTurnNoButtonPressStop_Text" xml:space="preserve">
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Rozwiąż kostkę z interwencją.</value>
   </data>
-  <data name="ToolTipTurnNoButtonPress_Text" xml:space="preserve">
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
     <value>Przycisk przełączania: Rozwiąż kostkę z interwencją lub bez niej</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">
