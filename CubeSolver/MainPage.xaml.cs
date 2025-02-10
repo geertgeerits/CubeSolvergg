@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.36
- * Date ........: 2025-02-09 (YYYY-MM-DD)
+ * Date ........: 2025-02-10 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -29,7 +29,7 @@ namespace CubeSolver
         private bool bSolved;
         private bool bTestSolveCube;
         private bool bTurnIsBackwards;
-        private bool bTurnNoButtonPress;
+        private bool bTurnContinuously;
 
         //// Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
@@ -293,9 +293,9 @@ namespace CubeSolver
             imgbtnSaveCube.IsEnabled = false;
             imgbtnScrambleCube.IsEnabled = false;
             imgbtnResetCube.IsEnabled = false;
-            imgbtnGoOneTurnBackward.IsEnabled = false;
+            btnGoOneTurnBackward.IsEnabled = false;
             btnGoOneTurnForward.IsEnabled = false;
-            imgbtnTurnNoButtonPress.IsEnabled = false;
+            btnTurnContinuously.IsEnabled = false;
             lblCubeInsideView.IsVisible = false;
 
             // Settings
@@ -382,11 +382,11 @@ namespace CubeSolver
                 // Control settings
                 lblCubeOutsideView.IsVisible = false;
                 lblExplainTurnCube.IsVisible = true;
-                imgbtnGoOneTurnBackward.IsVisible = true;
+                btnGoOneTurnBackward.IsVisible = true;
                 btnGoOneTurnForward.IsVisible = true;
-                imgbtnTurnNoButtonPress.IsVisible = true;
+                btnTurnContinuously.IsVisible = true;
                 btnGoOneTurnForward.IsEnabled = true;
-                imgbtnTurnNoButtonPress.IsEnabled = true;
+                btnTurnContinuously.IsEnabled = true;
                 imgbtnResetCube.IsEnabled = true;
 
                 // Variables for the turns of the cube
@@ -424,9 +424,9 @@ namespace CubeSolver
                     }
 
                     // Enable or disable the button to go one turn backward
-                    if (!bTurnNoButtonPress)
+                    if (!bTurnContinuously)
                     {
-                        imgbtnGoOneTurnBackward.IsEnabled = nTurnIndex >= 1 && nTurnIndex <= nNumberOfTurns - 1;
+                        btnGoOneTurnBackward.IsEnabled = nTurnIndex >= 1 && nTurnIndex <= nNumberOfTurns - 1;
                     }
 
                     // Enable or disable the save cube button
@@ -512,15 +512,15 @@ namespace CubeSolver
             _buttonPressed = new TaskCompletionSource<bool>();
 
             // Control settings
-            bTurnNoButtonPress = false;
-            imgbtnTurnNoButtonPress.ImageSource = "ic_action_playback_play.png";
+            bTurnContinuously = false;
+            btnTurnContinuously.ImageSource = "ic_action_playback_play.png";
             lblNumberTurns.Text = "";
             lblExplainTurnCube.Text = "";
             lblExplainTurnCube.IsVisible = false;
             lblCubeOutsideView.IsVisible = true;
-            imgbtnGoOneTurnBackward.IsVisible = false;
+            btnGoOneTurnBackward.IsVisible = false;
             btnGoOneTurnForward.IsVisible = false;
-            imgbtnTurnNoButtonPress.IsVisible = false;
+            btnTurnContinuously.IsVisible = false;
             lblCubeInsideView.IsVisible = true;
 
             // Settings
@@ -563,12 +563,12 @@ namespace CubeSolver
             lblExplainTurnCube.Text = cTurnCubeText;
 
             // Convert or cancel text to speech
-            if (!bTurnNoButtonPress)
+            if (!bTurnContinuously)
             {
                 // Convert text to speech
                 ExplainTurnCubeSpeech(cTurnCubeText);
             }
-            else if (bTurnNoButtonPress && Globals.bTextToSpeechIsBusy)
+            else if (bTurnContinuously && Globals.bTextToSpeechIsBusy)
             {
                 // Cancel text to speech
                 ClassSpeech.CancelTextToSpeech();
@@ -579,7 +579,7 @@ namespace CubeSolver
             await Task.Delay(300);
 
             // Wait or not wait for the button to be pressed before continuing
-            if (!bTurnNoButtonPress)
+            if (!bTurnContinuously)
             {
                 // Wait for the button to be pressed before continuing
                 _ = await _buttonPressed.Task;
@@ -587,7 +587,7 @@ namespace CubeSolver
                 // Reset for the next iteration
                 _buttonPressed = new TaskCompletionSource<bool>();
             }
-            else if (bTurnNoButtonPress)
+            else if (bTurnContinuously)
             {
                 // Wait for 400 milliseconds between two turns
                 await Task.Delay(400);
@@ -599,7 +599,7 @@ namespace CubeSolver
             // Forward turn
             if (!bTurnIsBackwards)
             {
-                if (cTurn[^1] == '2')
+                if (cTurn[^1] == '2' && !bTurnContinuously)
                 {
                     await SplitHalfTurnInTwoQuarterTurnsAsync(cTurn);
                 }
@@ -617,7 +617,7 @@ namespace CubeSolver
         /// <param name="cTurn"></param>
         private async Task SplitHalfTurnInTwoQuarterTurnsAsync(string cTurn)
         {
-            const int nMilliseconds = 80;
+            const int nMilliseconds = 100;
 
             switch (cTurn)
             {
@@ -782,19 +782,19 @@ namespace CubeSolver
         /// <param name="e"></param>
         private void OnButtonTurnNoButtonPressClicked(object sender, EventArgs e)
         {
-            bTurnNoButtonPress = !bTurnNoButtonPress;
+            bTurnContinuously = !bTurnContinuously;
             bTurnIsBackwards = false;
 
-            if (bTurnNoButtonPress)
+            if (bTurnContinuously)
             {
-                imgbtnTurnNoButtonPress.ImageSource = "ic_action_playback_stop.png";
-                imgbtnGoOneTurnBackward.IsEnabled = false;
+                btnTurnContinuously.ImageSource = "ic_action_playback_stop.png";
+                btnGoOneTurnBackward.IsEnabled = false;
                 btnGoOneTurnForward.IsEnabled = false;
             }
-            else if (!bTurnNoButtonPress)
+            else if (!bTurnContinuously)
             {
-                imgbtnTurnNoButtonPress.ImageSource = "ic_action_playback_play.png";
-                imgbtnGoOneTurnBackward.IsEnabled = true;
+                btnTurnContinuously.ImageSource = "ic_action_playback_play.png";
+                btnGoOneTurnBackward.IsEnabled = true;
                 btnGoOneTurnForward.IsEnabled = true;
             }
 
