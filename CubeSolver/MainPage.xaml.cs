@@ -389,6 +389,8 @@ namespace CubeSolver
                 btnTurnContinuously.IsEnabled = true;
                 imgbtnResetCube.IsEnabled = true;
 
+                await Task.Delay(100);                  // btnGoOneTurnForward.IsEnabled is not always updated without this delay
+
                 // Variables for the turns of the cube
                 bSolvingCubeStop = false;
                 bTurnIsBackwards = false;
