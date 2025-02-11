@@ -445,7 +445,7 @@ namespace CubeSolver
                     // Set the turn of the cube
                     btnGoOneTurnForward.Text = cTurn;
 #if IOS
-                    // Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the Button is not updaded
+                    // Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the button is not updaded
                     if (btnGoOneTurnForward.Handler?.PlatformView is UIKit.UIButton platformButton)
                     {
                         var titleLabel = platformButton.TitleLabel;
@@ -478,8 +478,14 @@ namespace CubeSolver
                 {
                     // Set the last turn number of the cube
                     lblNumberTurns.Text = $"{nTurnIndex + 1}/{nNumberOfTurns}";
-                    btnGoOneTurnForward.Text = " ";  // Needs a space to erase the text for iOS (!!!BUG!!!) string.Empty or "" does not work
 
+                    // Control settings
+                    btnGoOneTurnForward.Text = " ";             // Needs a space to erase the text for iOS (!!!BUG!!!) string.Empty or "" does not work
+                    btnGoOneTurnBackward.IsEnabled = false;
+                    btnGoOneTurnForward.IsEnabled = false;
+                    btnTurnContinuously.IsEnabled = false;
+
+                    // Wait for 500 milliseconds
                     await Task.Delay(500);
 
                     // Check if the cube is solved and display a message

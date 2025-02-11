@@ -123,7 +123,6 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="0"
                                 Grid.Column="2"
-                                Grid.ColumnSpan="2"
                                 Text="{x:Static resx:CubeLang.HelpSolveCube_Text}">
                             </Label>
 
@@ -250,7 +249,6 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="7"
                                 Grid.Column="2"
-                                Grid.ColumnSpan="2"
                                 Text="{x:Static resx:CubeLang.HelpGoOneTurnForward_Text}">
                             </Label>
 
