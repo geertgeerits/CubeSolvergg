@@ -481,7 +481,7 @@ namespace CubeSolver
 
                     // Control settings
                     // !!!BUG!!! in iOS. btnGoOneTurnForward.Text needs a space to erase the text, string.Empty or "" does not work
-                    // Even the space is not working anymore with Microsoft.Maui.Controls Version 9.0.40
+                    // Even the space is not working anymore with Microsoft.Maui.Controls Version 9.0.30 ? and higher
                     // Had to replace the IsEnabled with IsVisible to hide the text of the btnGoOneTurnForward control
                     btnGoOneTurnForward.Text = " ";
                     btnGoOneTurnBackward.IsVisible = false;
