@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.36
- * Date ........: 2025-02-11 (YYYY-MM-DD)
+ * Date ........: 2025-02-12 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -389,8 +389,6 @@ namespace CubeSolver
                 btnTurnContinuously.IsEnabled = true;
                 imgbtnResetCube.IsEnabled = true;
 
-                await Task.Delay(100);                  // btnGoOneTurnForward.IsEnabled is not always updated without this delay
-
                 // Variables for the turns of the cube
                 bSolvingCubeStop = false;
                 bTurnIsBackwards = false;
@@ -482,10 +480,13 @@ namespace CubeSolver
                     lblNumberTurns.Text = $"{nTurnIndex + 1}/{nNumberOfTurns}";
 
                     // Control settings
-                    btnGoOneTurnForward.Text = " ";             // Needs a space to erase the text for iOS (!!!BUG!!!) string.Empty or "" does not work
-                    btnGoOneTurnBackward.IsEnabled = false;
-                    btnGoOneTurnForward.IsEnabled = false;
-                    btnTurnContinuously.IsEnabled = false;
+                    // !!!BUG!!! in iOS. btnGoOneTurnForward.Text needs a space to erase the text, string.Empty or "" does not work
+                    // Even the space is not working anymore with Microsoft.Maui.Controls Version 9.0.40
+                    // Had to replace the IsEnabled with IsVisible to hide the text of the btnGoOneTurnForward control
+                    btnGoOneTurnForward.Text = " ";
+                    btnGoOneTurnBackward.IsVisible = false;
+                    btnGoOneTurnForward.IsVisible = false;
+                    btnTurnContinuously.IsVisible = false;
 
                     // Wait for 500 milliseconds
                     await Task.Delay(500);
