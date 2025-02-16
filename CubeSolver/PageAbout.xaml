@@ -294,25 +294,23 @@
 
                         <Grid
                             RowDefinitions="15, Auto, Auto, Auto, Auto, Auto, Auto, Auto, 10, Auto, Auto, Auto, Auto, 10, Auto, Auto, Auto, Auto, 10, Auto, Auto, Auto"
-                            ColumnDefinitions="30, 100, 200*"
-                            RowSpacing="0"
-                            ColumnSpacing="0"
-                            Padding="0,0,0,0">
+                            ColumnDefinitions="80, 200*"
+                            ColumnSpacing="15">
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="1"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="3"
+                                Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="Clockwise face rotation in 90 degrees (quarter turn)">
+                                Text="Face rotation, a quarter turn clockwise">
                             </Label>
                             
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="2"
                                 Grid.Column="0"
-                                Text="U">
+                                Text="U    (Up)">
                             </Label>
 
                             <Label
@@ -326,7 +324,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="3"
                                 Grid.Column="0"
-                                Text="D">
+                                Text="D    (Down)">
                             </Label>
 
                             <Label
@@ -340,7 +338,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="4"
                                 Grid.Column="0"
-                                Text="F">
+                                Text="F    (Front)">
                             </Label>
 
                             <Label
@@ -354,7 +352,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="5"
                                 Grid.Column="0"
-                                Text="B">
+                                Text="B    (Back)">
                             </Label>
 
                             <Label
@@ -368,7 +366,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="6"
                                 Grid.Column="0"
-                                Text="L">
+                                Text="L    (Left)">
                             </Label>
 
                             <Label
@@ -382,7 +380,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="7"
                                 Grid.Column="0"
-                                Text="R">
+                                Text="R    (Right)">
                             </Label>
 
                             <Label
@@ -396,9 +394,9 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="9"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="3"
+                                Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="Slice moves, turn only the middle layer">
+                                Text="Slice moves, the middle layer a quarter turn clockwise">
                             </Label>
 
                             <Label
@@ -447,9 +445,9 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="14"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="3"
+                                Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="Cube rotations">
+                                Text="Cube rotations, a quarter turn clockwise">
                             </Label>
 
                             <Label
@@ -498,27 +496,27 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="19"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="3"
+                                Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="Wide moves turn 2 layers at once, they are written in lower case: u, d, f, b, l, r">
+                                Text="Wide moves, turn 2 layers a quarter turn clockwise at once, they are in lower case: u, d, f, b, l, r">
                             </Label>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="20"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="3"
+                                Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="A letter followed by an apostrophe, turn that face counter clockwise 90 degrees (quarter turn)">
+                                Text="A letter followed by an apostrophe, turn counter clockwise a quarter turn">
                             </Label>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="21"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="3"
+                                Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="A letter with the number 2 after it, marks a 180 degrees turn (half turn)">
+                                Text="A letter with the number 2 after it, marks a half turn">
                             </Label>
                         </Grid>
                         
