@@ -588,4 +588,58 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>Löse den Würfel.</value>
   </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>Flächenrotation, drehen Sie die Fläche eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Obere Seite</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Untere Seite</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Vorderseite</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Rückseite</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Linke Seite</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Rechte Seite</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>Scheibenbewegungen, drehen Sie die mittlere Schicht eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>Folgt der L-Richtung</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>Folgt der D-Richtung</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>Folgt der F-Richtung</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>Würfelrotationen, drehen Sie den Würfel eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>Folgt der R-Richtung</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>Folgt der U-Richtung</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>Folgt der F-Richtung</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>Weite Bewegungen, drehen Sie 2 Schichten gleichzeitig eine Vierteldrehung im Uhrzeigersinn (90 Grad), Sie werden in Kleinbuchstaben geschrieben: u, d, f, b, l, r</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>Ein Apostroph (z. B. U') zeigt eine Vierteldrehung gegen den Uhrzeigersinn (90 Grad) an</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>Die Zahl 2 (z. B. U2) bedeutet eine halbe Drehung (180 Grad)</value>
+  </data>
 </root>

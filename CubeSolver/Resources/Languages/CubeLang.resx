@@ -588,4 +588,58 @@ Possible cause is incorrect transfer of colors to this cube.</value>
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>Solve the cube.</value>
   </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>Face rotation, turn the face a quarter turn clockwise (90 degrees)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Upper face</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Down face</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Front face</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Back face</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Left face</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Right face</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>Slice moves, turn the middle layer a quarter turn clockwise (90 degrees)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>Follows the L direction</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>Follows the D direction</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>Follows the F direction</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>Cube rotations, turn the cube a quarter turn clockwise (90 degrees)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>Follows the R direction</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>Follows the U direction</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>Follows the F direction</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>Wide moves, turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>An apostrophe (e.g., U') indicates a counter-clockwise quarter turn (90 degrees)</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>The number 2 (e.g., U2) means to turn a half turn (180 degrees)</value>
+  </data>
 </root>

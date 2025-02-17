@@ -303,7 +303,7 @@
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="Face rotation, a quarter turn clockwise">
+                                Text="{x:Static resx:CubeLang.NotationTurn_Face_Text}">
                             </Label>
                             
                             <Label
@@ -317,7 +317,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="2"
                                 Grid.Column="1"
-                                Text="Upper face">
+                                Text="{x:Static resx:CubeLang.NotationTurn_U_Text}">
                             </Label>
 
                             <Label
@@ -331,7 +331,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="3"
                                 Grid.Column="1"
-                                Text="Down face">
+                                Text="{x:Static resx:CubeLang.NotationTurn_D_Text}">
                             </Label>
 
                             <Label
@@ -345,7 +345,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="4"
                                 Grid.Column="1"
-                                Text="Front face">
+                                Text="{x:Static resx:CubeLang.NotationTurn_F_Text}">
                             </Label>
 
                             <Label
@@ -359,7 +359,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="5"
                                 Grid.Column="1"
-                                Text="Back face">
+                                Text="{x:Static resx:CubeLang.NotationTurn_B_Text}">
                             </Label>
 
                             <Label
@@ -373,7 +373,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="6"
                                 Grid.Column="1"
-                                Text="Left face">
+                                Text="{x:Static resx:CubeLang.NotationTurn_L_Text}">
                             </Label>
 
                             <Label
@@ -387,7 +387,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="7"
                                 Grid.Column="1"
-                                Text="Right face">
+                                Text="{x:Static resx:CubeLang.NotationTurn_R_Text}">
                             </Label>
 
                             <Label
@@ -396,7 +396,7 @@
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="Slice moves, the middle layer a quarter turn clockwise">
+                                Text="{x:Static resx:CubeLang.NotationTurn_Slice_Text}">
                             </Label>
 
                             <Label
@@ -410,7 +410,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="10"
                                 Grid.Column="1"
-                                Text="Follows the L direction">
+                                Text="{x:Static resx:CubeLang.NotationTurn_M_Text}">
                             </Label>
 
                             <Label
@@ -424,7 +424,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="11"
                                 Grid.Column="1"
-                                Text="Follows the D direction">
+                                Text="{x:Static resx:CubeLang.NotationTurn_E_Text}">
                             </Label>
 
                             <Label
@@ -438,7 +438,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="12"
                                 Grid.Column="1"
-                                Text="Follows the F direction">
+                                Text="{x:Static resx:CubeLang.NotationTurn_S_Text}">
                             </Label>
 
                             <Label
@@ -447,7 +447,7 @@
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="Cube rotations, a quarter turn clockwise">
+                                Text="{x:Static resx:CubeLang.NotationTurn_Cube_Text}">
                             </Label>
 
                             <Label
@@ -461,7 +461,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="15"
                                 Grid.Column="1"
-                                Text="Follows the R direction">
+                                Text="{x:Static resx:CubeLang.NotationTurn_x_Text}">
                             </Label>
 
                             <Label
@@ -475,7 +475,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="16"
                                 Grid.Column="1"
-                                Text="Follows the U direction">
+                                Text="{x:Static resx:CubeLang.NotationTurn_y_Text}">
                             </Label>
 
                             <Label
@@ -489,7 +489,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="17"
                                 Grid.Column="1"
-                                Text="Follows the F direction">
+                                Text="{x:Static resx:CubeLang.NotationTurn_z_Text}">
                             </Label>
 
                             <Label
@@ -498,7 +498,7 @@
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="Wide moves, turn 2 layers a quarter turn clockwise at once, they are in lower case: u, d, f, b, l, r">
+                                Text="{x:Static resx:CubeLang.NotationTurn_Wide_Text}">
                             </Label>
 
                             <Label
@@ -507,7 +507,7 @@
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="A letter followed by an apostrophe, turn counter clockwise a quarter turn">
+                                Text="{x:Static resx:CubeLang.NotationTurn_Apostrophe_Text}">
                             </Label>
 
                             <Label
@@ -516,7 +516,7 @@
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
                                 TextDecorations="Underline"
-                                Text="A letter with the number 2 after it, marks a half turn">
+                                Text="{x:Static resx:CubeLang.NotationTurn_Number_Text}">
                             </Label>
                         </Grid>
                         

@@ -588,4 +588,58 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>Vyřešte kostku.</value>
   </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>Rotace obličeje, otočte obličej o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Horní část obličeje</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Dolů obličej</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Přední čelo</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Zadní obličej</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Levá tvář</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Pravá tvář</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>Řez se pohybuje, otočte střední vrstvu o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>Sleduje směr L</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>Sleduje směr D</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>Sleduje směr F</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>Otočení kostky, otočte kostkou o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>Sleduje směr R</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>Sleduje směr U</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>Sleduje směr F</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>Široké pohyby, otočte 2 vrstvy najednou o čtvrt otáčky ve směru hodinových ručiček (90 stupňů), jsou malá písmena: u, d, f, b, l, r</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>Apostrof (např. U') označuje čtvrt otáčky proti směru hodinových ručiček (90 stupňů)</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>Číslo 2 (např. U2) znamená otočení o půl otáčky (180 stupňů)</value>
+  </data>
 </root>

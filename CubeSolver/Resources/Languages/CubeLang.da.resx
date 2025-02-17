@@ -588,4 +588,58 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>Løs terningen.</value>
   </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>Ansigtsrotation, drej ansigtet en kvart omgang med uret (90 grader)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Overansigt</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Ned i ansigtet</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Forside</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Bagside</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Venstre ansigt</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Højre ansigt</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>Skiven bevæger sig, drej det midterste lag en kvart omgang med uret (90 grader)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>Følger L-retningen</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>Følger D-retningen</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>Følger F-retningen</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>Terningrotationer, drej terningen en kvart omgang med uret (90 grader)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>Følger R-retningen</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>Følger U-retningen</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>Følger F-retningen</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>Brede bevægelser, drej 2 lag på én gang en kvart omgang med uret (90 grader), de er med små bogstaver: u, d, f, b, l, r</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>En apostrof (f.eks. U') angiver en kvart omgang mod uret (90 grader)</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>Tallet 2 (f.eks. U2) betyder at dreje en halv omgang (180 grader)</value>
+  </data>
 </root>

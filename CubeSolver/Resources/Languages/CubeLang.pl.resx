@@ -588,4 +588,58 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>Rozwiąż kostkę.</value>
   </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>
