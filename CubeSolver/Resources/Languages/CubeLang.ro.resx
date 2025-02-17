@@ -589,7 +589,7 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
     <value>Rezolvați cubul.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Rotirea feței, rotiți fața un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
+    <value>Rotacie e mujesqe, rotiți fața un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Fața superioară</value>

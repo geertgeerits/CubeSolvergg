@@ -589,7 +589,7 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
     <value>Løs kuben.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Ansiktsrotasjon, vri ansiktet en kvart omdreining med klokken (90 grader)</value>
+    <value>Ansiktsrotasjoner, vri ansiktet en kvart omdreining med klokken (90 grader)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Øvre ansikt</value>

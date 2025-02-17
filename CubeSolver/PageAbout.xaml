@@ -497,7 +497,6 @@
                                 Grid.Row="19"
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
-                                TextDecorations="Underline"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Wide_Text}">
                             </Label>
 
@@ -506,7 +505,6 @@
                                 Grid.Row="20"
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
-                                TextDecorations="Underline"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Apostrophe_Text}">
                             </Label>
 
@@ -515,7 +513,6 @@
                                 Grid.Row="21"
                                 Grid.Column="0"
                                 Grid.ColumnSpan="2"
-                                TextDecorations="Underline"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Number_Text}">
                             </Label>
                         </Grid>

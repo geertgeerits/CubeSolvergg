@@ -589,7 +589,7 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
     <value>Los de kubus op.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Vlakrotatie, draai het vlak een kwartslag met de klok mee (90 graden)</value>
+    <value>Vlakrotaties, draai het vlak een kwartslag met de klok mee (90 graden)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Bovenkant</value>

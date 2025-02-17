@@ -589,7 +589,7 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
     <value>Resuelve el cubo.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Rotación de la cara, gira la cara un cuarto de vuelta en sentido horario (90 grados)</value>
+    <value>Rotaciones de las caras, gira la cara un cuarto de vuelta en sentido horario (90 grados)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Cara superior</value>

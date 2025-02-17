@@ -589,7 +589,7 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
     <value>Løs terningen.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Ansigtsrotation, drej ansigtet en kvart omgang med uret (90 grader)</value>
+    <value>Ansigtsrotationer, drej ansigtet en kvart omgang med uret (90 grader)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Overansigt</value>

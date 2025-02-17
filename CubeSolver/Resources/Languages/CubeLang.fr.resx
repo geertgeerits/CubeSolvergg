@@ -589,7 +589,7 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
     <value>Résoudre le cube.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Rotation de la face, faites tourner la face d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
+    <value>Rotations des faces, faites tourner la face d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Face supérieure</value>

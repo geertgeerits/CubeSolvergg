@@ -589,7 +589,7 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
     <value>Rozwiąż kostkę.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Obrót ściany, obróć ścianę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
+    <value>Obroty ścian, obróć ścianę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Górna ściana</value>

@@ -589,7 +589,7 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
     <value>Löse den Würfel.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Flächenrotation, drehen Sie die Fläche eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+    <value>Flächenrotationen, drehen Sie die Fläche eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Obere Seite</value>

@@ -589,7 +589,7 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
     <value>Ratkaise kuutio.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Kasvojen kierto, käännä kasvoja neljänneskierros myötäpäivään (90 astetta)</value>
+    <value>Kasvojen kierrokset, käännä kasvoja neljänneskierros myötäpäivään (90 astetta)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Yläkasvot</value>

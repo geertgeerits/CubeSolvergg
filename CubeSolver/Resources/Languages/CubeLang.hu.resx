@@ -589,7 +589,7 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
     <value>Oldja meg a kockát.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Az arc elforgatása, forgassa el az arcot negyed fordulattal az óramutató járásával megegyező irányba (90 fok)</value>
+    <value>Arcforgatások, forgassa el az arcot negyed fordulattal az óramutató járásával megegyező irányba (90 fok)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Felső arc</value>
