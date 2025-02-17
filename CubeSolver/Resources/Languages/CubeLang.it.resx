@@ -589,57 +589,57 @@ La possibile causa è un trasferimento errato dei colori su questo cubo.</value>
     <value>Risolvi il cubo.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value />
+    <value>Rotazione della faccia, ruota la faccia di un quarto di giro in senso orario (90 gradi)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value />
+    <value>Faccia superiore</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value />
+    <value>Faccia in basso</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value />
+    <value>Faccia anteriore</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value />
+    <value>Faccia posteriore</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value />
+    <value>Faccia sinistra</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value />
+    <value>Faccia destra</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value />
+    <value>Spostamenti di fetta, ruota lo strato intermedio di un quarto di giro in senso orario (90 gradi)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
-    <value />
+    <value>Segue la direzione L</value>
   </data>
   <data name="NotationTurn_E_Text" xml:space="preserve">
-    <value />
+    <value>Segue la direzione D</value>
   </data>
   <data name="NotationTurn_S_Text" xml:space="preserve">
-    <value />
+    <value>Segue la direzione F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value />
+    <value>Rotazioni del cubo, ruota il cubo di un quarto di giro in senso orario (90 gradi)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
-    <value />
+    <value>Segue la direzione R</value>
   </data>
   <data name="NotationTurn_y_Text" xml:space="preserve">
-    <value />
+    <value>Segue la direzione U</value>
   </data>
   <data name="NotationTurn_z_Text" xml:space="preserve">
-    <value />
+    <value>Segue la direzione F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value />
+    <value>Spostamenti ampi, ruota 2 strati contemporaneamente di un quarto di giro in senso orario (90 gradi), sono in minuscolo: u, d, f, b, l, r</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value />
+    <value>Un apostrofo (ad esempio, U') indica un quarto di giro in senso antiorario (90 gradi)</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value />
+    <value>Il numero 2 (ad esempio, U2) significa ruotare di mezzo giro (180 gradi)</value>
   </data>
 </root>

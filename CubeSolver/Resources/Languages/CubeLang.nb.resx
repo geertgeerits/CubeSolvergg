@@ -589,57 +589,57 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
     <value>Løs kuben.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value />
+    <value>Ansiktsrotasjon, vri ansiktet en kvart omdreining med klokken (90 grader)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value />
+    <value>Øvre ansikt</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value />
+    <value>Ned ansikt</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value />
+    <value>Forside</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value />
+    <value>Bakside</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value />
+    <value>Venstre ansikt</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value />
+    <value>Høyre ansikt</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value />
+    <value>Skiven beveger seg, vri det midterste laget en kvart omdreining med klokken (90 grader)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
-    <value />
+    <value>Følger L-retningen</value>
   </data>
   <data name="NotationTurn_E_Text" xml:space="preserve">
-    <value />
+    <value>Følger D-retningen</value>
   </data>
   <data name="NotationTurn_S_Text" xml:space="preserve">
-    <value />
+    <value>Følger F-retningen</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value />
+    <value>Kuberotasjoner, drei kuben en kvart omdreining med klokken (90 grader)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
-    <value />
+    <value>Følger R-retningen</value>
   </data>
   <data name="NotationTurn_y_Text" xml:space="preserve">
-    <value />
+    <value>Følger U-retningen</value>
   </data>
   <data name="NotationTurn_z_Text" xml:space="preserve">
-    <value />
+    <value>Følger F-retningen</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value />
+    <value>Brede bevegelser, snu 2 lag samtidig en kvart omdreining med klokken (90 grader), de er med små bokstaver: u, d, f, b, l, r</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value />
+    <value>En apostrof (f.eks. U') indikerer en kvart omdreining mot klokken (90 grader)</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value />
+    <value>Tallet 2 (f.eks. U2) betyr å snu en halv omdreining (180 grader)</value>
   </data>
 </root>

@@ -589,57 +589,57 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
     <value>Ratkaise kuutio.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value />
+    <value>Kasvojen kierto, käännä kasvoja neljänneskierros myötäpäivään (90 astetta)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value />
+    <value>Yläkasvot</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value />
+    <value>Kasvot alaspäin</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value />
+    <value>Etupuoli</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value />
+    <value>Takakasvot</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value />
+    <value>Vasen kasvo</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value />
+    <value>Oikeat kasvot</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value />
+    <value>Viipale liikkuu, käännä keskikerrosta neljänneskierros myötäpäivään (90 astetta)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
-    <value />
+    <value>Seuraa L-suuntaa</value>
   </data>
   <data name="NotationTurn_E_Text" xml:space="preserve">
-    <value />
+    <value>Seuraa D-suuntaa</value>
   </data>
   <data name="NotationTurn_S_Text" xml:space="preserve">
-    <value />
+    <value>Seuraa F-suuntaa</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value />
+    <value>Kuution kierto, käännä kuutiota neljänneskierros myötäpäivään (90 astetta)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
-    <value />
+    <value>Seuraa R-suuntaa</value>
   </data>
   <data name="NotationTurn_y_Text" xml:space="preserve">
-    <value />
+    <value>Seuraa U-suuntaa</value>
   </data>
   <data name="NotationTurn_z_Text" xml:space="preserve">
-    <value />
+    <value>Seuraa F-suuntaa</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value />
+    <value>Leveät liikkeet, käännä 2 kerrosta kerralla neljänneskierros myötäpäivään (90 astetta), ne ovat pienillä kirjaimilla: u, d, f, b, l, r</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value />
+    <value>Heittomerkki (esim. U') osoittaa vastapäivään neljänneskierroksen (90 astetta)</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value />
+    <value>Numero 2 (esim. U2) tarkoittaa puolikierrosta (180 astetta)</value>
   </data>
 </root>

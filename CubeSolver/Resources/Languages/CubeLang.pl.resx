@@ -589,57 +589,57 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
     <value>Rozwiąż kostkę.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value />
+    <value>Obrót ściany, obróć ścianę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value />
+    <value>Górna ściana</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value />
+    <value>Dół ściany</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value />
+    <value>Przednia ściana</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value />
+    <value>Tylna ściana</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value />
+    <value>Lewa ściana</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value />
+    <value>Prawa ściana</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value />
+    <value>Przesuwanie się plasterków, obróć środkową warstwę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
-    <value />
+    <value>Podąża w kierunku L</value>
   </data>
   <data name="NotationTurn_E_Text" xml:space="preserve">
-    <value />
+    <value>Podąża w kierunku D</value>
   </data>
   <data name="NotationTurn_S_Text" xml:space="preserve">
-    <value />
+    <value>Podąża w kierunku F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value />
+    <value>Obrót sześcianu, obróć sześcian o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
-    <value />
+    <value>Podąża w kierunku R</value>
   </data>
   <data name="NotationTurn_y_Text" xml:space="preserve">
-    <value />
+    <value>Podąża w kierunku U</value>
   </data>
   <data name="NotationTurn_z_Text" xml:space="preserve">
-    <value />
+    <value>Podąża w kierunku F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value />
+    <value>Szerokie ruchy, obróć 2 warstwy na raz o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni), są pisane małymi literami: u, d, f, b, l, r</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value />
+    <value>Apostrof (np. U') oznacza obrót o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (90 stopni)</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value />
+    <value>Liczba 2 (np. U2) oznacza obrót o pół obrotu (180 stopni)</value>
   </data>
 </root>

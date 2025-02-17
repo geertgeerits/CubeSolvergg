@@ -589,57 +589,57 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
     <value>Oldja meg a kockát.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value />
+    <value>Az arc elforgatása, forgassa el az arcot negyed fordulattal az óramutató járásával megegyező irányba (90 fok)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value />
+    <value>Felső arc</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value />
+    <value>Lefelé arccal</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value />
+    <value>Elülső arc</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value />
+    <value>Hátsó arc</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value />
+    <value>Bal arc</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value />
+    <value>Jobb arc</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value />
+    <value>A szelet mozog, a középső réteget az óramutató járásával megegyezően negyed fordulattal (90 fokkal) elforgatjuk</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
-    <value />
+    <value>Követi az L irányt</value>
   </data>
   <data name="NotationTurn_E_Text" xml:space="preserve">
-    <value />
+    <value>Követi az D irányt</value>
   </data>
   <data name="NotationTurn_S_Text" xml:space="preserve">
-    <value />
+    <value>Követi az F irányt</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value />
+    <value>Kocka forgatása, forgassa el a kockát negyed fordulattal az óramutató járásával megegyezően (90 fokkal)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
-    <value />
+    <value>Követi az R irányt</value>
   </data>
   <data name="NotationTurn_y_Text" xml:space="preserve">
-    <value />
+    <value>Követi az U irányt</value>
   </data>
   <data name="NotationTurn_z_Text" xml:space="preserve">
-    <value />
+    <value>Követi az F irányt</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value />
+    <value>Széles mozgások, negyed fordulattal az óramutató járásával megegyezően (90 fok) egyszerre 2 réteget forgassunk, kisbetűvel írják: u, d, f, b, l, r</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value />
+    <value>Az aposztróf (pl. U') az óramutató járásával ellentétes negyedfordulatot (90 fok) jelöl</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value />
+    <value>A 2-es szám (pl. U2) azt jelenti, hogy fél fordulatot kell elfordítani (180 fokkal)</value>
   </data>
 </root>

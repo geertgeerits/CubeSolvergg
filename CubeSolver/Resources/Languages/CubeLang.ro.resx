@@ -589,57 +589,57 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
     <value>Rezolvați cubul.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value />
+    <value>Rotirea feței, rotiți fața un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value />
+    <value>Fața superioară</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value />
+    <value>Fața în jos</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value />
+    <value>Fața din față</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value />
+    <value>Fața din spate</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value />
+    <value>Fața stângă</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value />
+    <value>Fața dreaptă</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value />
+    <value>Se mișcă felia, rotiți stratul din mijloc un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
-    <value />
+    <value>Urmează direcția L</value>
   </data>
   <data name="NotationTurn_E_Text" xml:space="preserve">
-    <value />
+    <value>Urmează direcția D</value>
   </data>
   <data name="NotationTurn_S_Text" xml:space="preserve">
-    <value />
+    <value>Urmează direcția F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value />
+    <value>Rotații cubului, rotiți cubul un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
-    <value />
+    <value>Urmează direcția R</value>
   </data>
   <data name="NotationTurn_y_Text" xml:space="preserve">
-    <value />
+    <value>Urmează direcția U</value>
   </data>
   <data name="NotationTurn_z_Text" xml:space="preserve">
-    <value />
+    <value>Urmează direcția F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value />
+    <value>Mișcări largi, rotiți 2 straturi deodată un sfert de tură în sensul acelor de ceasornic (90 de grade), sunt cu litere mici: u, d, f, b, l, r</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value />
+    <value>Un apostrof (de exemplu, U') indică un sfert de rotație în sens invers acelor de ceasornic (90 de grade)</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value />
+    <value>Cifra 2 (de exemplu, U2) înseamnă a întoarce o jumătate de tură (180 de grade)</value>
   </data>
 </root>

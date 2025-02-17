@@ -589,57 +589,57 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
     <value>Résoudre le cube.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value />
+    <value>Rotation de la face, faites tourner la face d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value />
+    <value>Face supérieure</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value />
+    <value>Face inférieure</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value />
+    <value>Face avant</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value />
+    <value>Face arrière</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value />
+    <value>Face gauche</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value />
+    <value>Face droite</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value />
+    <value>Déplacements en tranches, faites tourner la couche intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
-    <value />
+    <value>Suite la direction L</value>
   </data>
   <data name="NotationTurn_E_Text" xml:space="preserve">
-    <value />
+    <value>Suite la direction D</value>
   </data>
   <data name="NotationTurn_S_Text" xml:space="preserve">
-    <value />
+    <value>Suite la direction F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value />
+    <value>Rotations du cube, faites tourner le cube d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
-    <value />
+    <value>Suite la direction R</value>
   </data>
   <data name="NotationTurn_y_Text" xml:space="preserve">
-    <value />
+    <value>Suite la direction U</value>
   </data>
   <data name="NotationTurn_z_Text" xml:space="preserve">
-    <value />
+    <value>Suite la direction F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value />
+    <value>Déplacements larges, faites tourner 2 couches à la fois d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés), elles sont en minuscules : u, d, f, b, l, r</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value />
+    <value>Une apostrophe (par exemple, U') indique un quart de tour dans le sens inverse des aiguilles d'une montre (90 degrés)</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value />
+    <value>Le chiffre 2 (par exemple, U2) signifie faire un demi-tour (180 degrés)</value>
   </data>
 </root>
