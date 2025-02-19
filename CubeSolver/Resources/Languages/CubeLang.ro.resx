@@ -634,12 +634,12 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
     <value>Urmează direcția F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Mișcări largi, rotiți 2 straturi deodată un sfert de tură în sensul acelor de ceasornic (90 de grade), sunt cu litere mici: u, d, f, b, l, r</value>
+    <value>Mișcări largi, rotiți 2 straturi deodată un sfert de tură în sensul acelor de ceasornic (90 de grade), sunt cu litere mici: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value>Un apostrof (de exemplu, U') indică un sfert de rotație în sens invers acelor de ceasornic (90 de grade)</value>
+    <value>Un apostrof (de exemplu, U') indică un sfert de rotație în sens invers acelor de ceasornic (90 de grade).</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value>Cifra 2 (de exemplu, U2) înseamnă a întoarce o jumătate de tură (180 de grade)</value>
+    <value>Cifra 2 (de exemplu, U2) înseamnă a întoarce o jumătate de tură (180 de grade).</value>
   </data>
 </root>

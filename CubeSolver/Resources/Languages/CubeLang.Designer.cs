@@ -626,7 +626,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An apostrophe (e.g., U&apos;) indicates a counter-clockwise quarter turn (90 degrees).
+        ///   Looks up a localized string similar to An apostrophe (e.g., U&apos;) indicates a counter-clockwise quarter turn (90 degrees)..
         /// </summary>
         internal static string NotationTurn_Apostrophe_Text {
             get {
@@ -707,7 +707,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The number 2 (e.g., U2) means to turn a half turn (180 degrees).
+        ///   Looks up a localized string similar to The number 2 (e.g., U2) means to turn a half turn (180 degrees)..
         /// </summary>
         internal static string NotationTurn_Number_Text {
             get {
@@ -752,7 +752,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wide moves, turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r.
+        ///   Looks up a localized string similar to Wide moves, turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r..
         /// </summary>
         internal static string NotationTurn_Wide_Text {
             get {

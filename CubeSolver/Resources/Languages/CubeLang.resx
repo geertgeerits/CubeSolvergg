@@ -634,12 +634,12 @@ Possible cause is incorrect transfer of colors to this cube.</value>
     <value>Follows the F direction</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Wide moves, turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r</value>
+    <value>Wide moves, turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value>An apostrophe (e.g., U') indicates a counter-clockwise quarter turn (90 degrees)</value>
+    <value>An apostrophe (e.g., U') indicates a counter-clockwise quarter turn (90 degrees).</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value>The number 2 (e.g., U2) means to turn a half turn (180 degrees)</value>
+    <value>The number 2 (e.g., U2) means to turn a half turn (180 degrees).</value>
   </data>
 </root>

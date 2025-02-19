@@ -634,12 +634,12 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
     <value>Folgt der F-Richtung</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Weite Bewegungen, drehen Sie 2 Schichten gleichzeitig eine Vierteldrehung im Uhrzeigersinn (90 Grad), Sie werden in Kleinbuchstaben geschrieben: u, d, f, b, l, r</value>
+    <value>Weite Bewegungen, drehen Sie 2 Schichten gleichzeitig eine Vierteldrehung im Uhrzeigersinn (90 Grad), Sie werden in Kleinbuchstaben geschrieben: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value>Ein Apostroph (z. B. U') zeigt eine Vierteldrehung gegen den Uhrzeigersinn (90 Grad) an</value>
+    <value>Ein Apostroph (z. B. U') zeigt eine Vierteldrehung gegen den Uhrzeigersinn (90 Grad) an.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value>Die Zahl 2 (z. B. U2) bedeutet eine halbe Drehung (180 Grad)</value>
+    <value>Die Zahl 2 (z. B. U2) bedeutet eine halbe Drehung (180 Grad).</value>
   </data>
 </root>

@@ -634,12 +634,12 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
     <value>Följer F-riktningen</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Breda rörelser, vrid 2 lager på en gång ett kvarts varv medurs (90 grader), de är med gemener: u, d, f, b, l, r</value>
+    <value>Breda rörelser, vrid 2 lager på en gång ett kvarts varv medurs (90 grader), de är med gemener: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value>En apostrof (t.ex. U') indikerar ett kvartsvarv moturs (90 grader)</value>
+    <value>En apostrof (t.ex. U') indikerar ett kvartsvarv moturs (90 grader).</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value>Siffran 2 (t.ex. U2) betyder att vända ett halvt varv (180 grader)</value>
+    <value>Siffran 2 (t.ex. U2) betyder att vända ett halvt varv (180 grader).</value>
   </data>
 </root>

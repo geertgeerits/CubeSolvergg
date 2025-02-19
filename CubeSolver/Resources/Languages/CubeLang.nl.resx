@@ -634,12 +634,12 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
     <value>Volgt de F-richting</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Brede bewegingen, draai 2 lagen tegelijk een kwartslag met de klok mee (90 graden), ze zijn in kleine letters: u, d, f, b, l, r</value>
+    <value>Brede bewegingen, draai 2 lagen tegelijk een kwartslag met de klok mee (90 graden), ze zijn in kleine letters: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value>Een apostrof (bijv. U') geeft een kwartslag tegen de klok in aan (90 graden)</value>
+    <value>Een apostrof (bijv. U') geeft een kwartslag tegen de klok in aan (90 graden).</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value>Het getal 2 (bijv. U2) betekent een halve slag draaien (180 graden)</value>
+    <value>Het getal 2 (bijv. U2) betekent een halve slag draaien (180 graden).</value>
   </data>
 </root>

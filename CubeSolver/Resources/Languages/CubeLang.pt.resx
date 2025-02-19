@@ -634,12 +634,12 @@ A possível causa é a transferência incorreta de cores para este cubo.</value>
     <value>Segue a direção F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Movimentos largos, gire 2 camadas de uma vez um quarto de volta no sentido horário (90 graus), elas estão em minúsculas: u, d, f, b, l, r</value>
+    <value>Movimentos largos, gire 2 camadas de uma vez um quarto de volta no sentido horário (90 graus), elas estão em minúsculas: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value>Um apóstrofo (por exemplo, U') indica um quarto de volta no sentido anti-horário (90 graus)</value>
+    <value>Um apóstrofo (por exemplo, U') indica um quarto de volta no sentido anti-horário (90 graus).</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value>O número 2 (por exemplo, U2) significa girar meia volta (180 graus)</value>
+    <value>O número 2 (por exemplo, U2) significa girar meia volta (180 graus).</value>
   </data>
 </root>

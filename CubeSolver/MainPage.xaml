@@ -1057,7 +1057,6 @@
         <Button
             x:Name="btnSolveCube"
             Style="{StaticResource buttonStyleMenu}"
-            MinimumHeightRequest="38"
             BorderColor="{AppThemeBinding Light={StaticResource DarkGray}, Dark={StaticResource LightGray}}"
             Grid.Row="3"
             Grid.Column="0"
