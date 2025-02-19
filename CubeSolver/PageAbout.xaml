@@ -294,14 +294,14 @@
 
                         <Grid
                             RowDefinitions="15, Auto, Auto, Auto, Auto, Auto, Auto, Auto, 10, Auto, Auto, Auto, Auto, 10, Auto, Auto, Auto, Auto, 10, Auto, Auto, Auto"
-                            ColumnDefinitions="80, 200*"
+                            ColumnDefinitions="Auto, Auto, 200*"
                             ColumnSpacing="15">
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="1"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="2"
+                                Grid.ColumnSpan="3"
                                 TextDecorations="Underline"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Face_Text}">
                             </Label>
@@ -310,13 +310,20 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="2"
                                 Grid.Column="0"
-                                Text="U    (Up)">
+                                Text="U">
                             </Label>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="2"
                                 Grid.Column="1"
+                                Text="(Up)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="2"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_U_Text}">
                             </Label>
 
@@ -324,13 +331,20 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="3"
                                 Grid.Column="0"
-                                Text="D    (Down)">
+                                Text="D">
                             </Label>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="3"
                                 Grid.Column="1"
+                                Text="(Down)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="3"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_D_Text}">
                             </Label>
 
@@ -338,13 +352,20 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="4"
                                 Grid.Column="0"
-                                Text="F    (Front)">
+                                Text="F">
                             </Label>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="4"
                                 Grid.Column="1"
+                                Text="(Front)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="4"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_F_Text}">
                             </Label>
 
@@ -352,13 +373,20 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="5"
                                 Grid.Column="0"
-                                Text="B    (Back)">
+                                Text="B">
                             </Label>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="5"
                                 Grid.Column="1"
+                                Text="(Back)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="5"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_B_Text}">
                             </Label>
 
@@ -366,13 +394,20 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="6"
                                 Grid.Column="0"
-                                Text="L    (Left)">
+                                Text="L">
                             </Label>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="6"
                                 Grid.Column="1"
+                                Text="(Left)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="6"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_L_Text}">
                             </Label>
 
@@ -380,13 +415,20 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="7"
                                 Grid.Column="0"
-                                Text="R    (Right)">
+                                Text="R">
                             </Label>
 
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="7"
                                 Grid.Column="1"
+                                Text="(Right)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="7"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_R_Text}">
                             </Label>
 
@@ -394,7 +436,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="9"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="2"
+                                Grid.ColumnSpan="3"
                                 TextDecorations="Underline"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Slice_Text}">
                             </Label>
@@ -410,6 +452,13 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="10"
                                 Grid.Column="1"
+                                Text="(Middle)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="10"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_M_Text}">
                             </Label>
 
@@ -424,6 +473,13 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="11"
                                 Grid.Column="1"
+                                Text="(Equator)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="11"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_E_Text}">
                             </Label>
 
@@ -438,6 +494,13 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="12"
                                 Grid.Column="1"
+                                Text="(Side)">
+                            </Label>
+
+                            <Label
+                                Style="{StaticResource labelStyleInfo}"
+                                Grid.Row="12"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_S_Text}">
                             </Label>
 
@@ -445,7 +508,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="14"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="2"
+                                Grid.ColumnSpan="3"
                                 TextDecorations="Underline"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Cube_Text}">
                             </Label>
@@ -460,7 +523,7 @@
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="15"
-                                Grid.Column="1"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_x_Text}">
                             </Label>
 
@@ -474,7 +537,7 @@
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="16"
-                                Grid.Column="1"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_y_Text}">
                             </Label>
 
@@ -488,7 +551,7 @@
                             <Label
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="17"
-                                Grid.Column="1"
+                                Grid.Column="2"
                                 Text="{x:Static resx:CubeLang.NotationTurn_z_Text}">
                             </Label>
 
@@ -496,7 +559,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="19"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="2"
+                                Grid.ColumnSpan="3"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Wide_Text}">
                             </Label>
 
@@ -504,7 +567,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="20"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="2"
+                                Grid.ColumnSpan="3"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Apostrophe_Text}">
                             </Label>
 
@@ -512,7 +575,7 @@
                                 Style="{StaticResource labelStyleInfo}"
                                 Grid.Row="21"
                                 Grid.Column="0"
-                                Grid.ColumnSpan="2"
+                                Grid.ColumnSpan="3"
                                 Text="{x:Static resx:CubeLang.NotationTurn_Number_Text}">
                             </Label>
                         </Grid>
