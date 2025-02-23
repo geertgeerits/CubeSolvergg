@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.36
- * Date ........: 2025-02-19 (YYYY-MM-DD)
+ * Date ........: 2025-02-23 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -202,7 +202,7 @@ namespace CubeSolver
         /// <param name="args"></param>
         private void OnSetColorTapped(object sender, TappedEventArgs args)
         {
-            if (plgCubeColorSelect.Fill != null && bColorDrop && sender is Polygon polygon)
+            if (plgCubeColorSelect.Fill is not null && bColorDrop && sender is Polygon polygon)
             {
                 polygon.Fill = plgCubeColorSelect.Fill;
                 SetCubeColorsInArrays();
@@ -222,7 +222,7 @@ namespace CubeSolver
             {
                 btnSolveCube.IsEnabled = false;
                 grdCubeColorSelect.BackgroundColor = Color.FromArgb("#969696");
-                plgCubeColorSelect.Fill = new SolidColorBrush(Colors.Transparent);
+                plgCubeColorSelect.Fill = plgCubeColor6.Fill;
                 IsVisibleCubeColors(true);
                 IsEnabledArrows(false);
 

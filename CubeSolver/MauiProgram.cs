@@ -36,7 +36,7 @@ namespace CubeSolver
 
                     static bool ProcessEvent(string eventName, string? type = null)
                     {
-                        //System.Diagnostics.Debug.WriteLine($"Lifecycle event: {eventName}{(type == null ? string.Empty : $" ({type})")}");
+                        //System.Diagnostics.Debug.WriteLine($"Lifecycle event: {eventName}{(type is null ? string.Empty : $" ({type})")}");
 
                         // Cancel speech
                         ClassSpeech.CancelTextToSpeech();
