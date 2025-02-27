@@ -338,8 +338,15 @@ namespace CubeSolver
                 //string solution = Search.solution(searchString, out info);
                 Debug.WriteLine("Search.solution: " + solution);
 
-                ClassCubeKociemba.SplitStringToTurns(solution);
-                bSolved = !string.IsNullOrEmpty(searchString);
+                if (solution.Contains("Error") || string.IsNullOrEmpty(solution))
+                {
+                    bSolved = false;
+                }
+                else
+                {
+                    bSolved = true;
+                    ClassCubeKociemba.SplitStringToTurns(solution);
+                }
 
                 // CFOP and beginners solutions
                 if (!bSolved)
