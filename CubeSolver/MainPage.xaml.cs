@@ -3,15 +3,18 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.36
- * Date ........: 2025-02-23 (YYYY-MM-DD)
+ * Date ........: 2025-02-27 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
  * Dependencies : None
- * Thanks to ...: Gerald Versluis for his video's on YouTube about .NET MAUI */
+ * Thanks to ...: Gerald Versluis - https://www.youtube.com/@jfversluis
+ *                Herbert Kociemba - https://kociemba.org/cube.htm
+ *                Matt Colbourne Megalomatt - https://github.com/Megalomatt/Kociemba */
 
 using System.Diagnostics;
 using Microsoft.Maui.Controls.Shapes;
+using Kociemba;
 
 // Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the Button is not updaded
 #if IOS
@@ -327,7 +330,20 @@ namespace CubeSolver
                 Array.Copy(Globals.aPieces, Globals.aStartPieces, 54);
 
                 // Solve the cube
-                bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
+                // Herbert Kociemba solution
+                string searchString = ClassCubeKociemba.ConvertCubeToKociembaCube();
+                Debug.WriteLine("searchString:" + searchString);
+                string info = "";
+                string solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+                Debug.WriteLine("Search.solution: " + solution);
+                ClassCubeKociemba.SplitStringToTurns(solution);
+                bSolved = !string.IsNullOrEmpty(searchString);
+
+                // CFOP and beginners solutions
+                if (!bSolved)
+                {
+                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
+                }
 
                 if (!bSolved)
                 {
@@ -344,8 +360,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");
                 }
 
-                // For testing comment out the lines 278-279 and 322-338 (and change the line 365 to bTestSolveCube = true)
-                // and uncomment one of the lines 345-349/350 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 288-289 and 334-361 (and change the line 388 to bTestSolveCube = true)
+                // and uncomment one of the lines 368-372/373 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -2129,6 +2145,50 @@ namespace CubeSolver
                 SetArrowTooltips(true);
             }
         }
+
+        /// <summary>
+        /// SearchRunTime - The slow one
+        /// </summary>
+        /// <param name="facelets"></param>
+        /// <param name="info"></param>
+        /// <param name="maxDepth"></param>
+        /// <param name="timeOut"></param>
+        /// <param name="useSeparator"></param>
+        /// <param name="buildTables"></param>
+        /// <returns></returns>
+        //public static string Solution(
+        //    string facelets,
+        //    out string info,
+        //    int maxDepth = 22,
+        //    long timeOut = 6000,
+        //    bool useSeparator = false,
+        //    bool buildTables = false)
+        //{
+        //    // Implement the method body here
+        //    info = "Solution not implemented yet.";
+        //    return string.Empty;
+        //}
+
+        /// <summary>
+        /// Search - The fast one
+        /// </summary>
+        /// <param name="facelets"></param>
+        /// <param name="info"></param>
+        /// <param name="maxDepth"></param>
+        /// <param name="timeOut"></param>
+        /// <param name="useSeparator"></param>
+        /// <returns></returns>
+        //public static string Solution(
+        //    string facelets,
+        //    out string info,
+        //    int maxDepth = 22,
+        //    long timeOut = 6000,
+        //    bool useSeparator = false)
+        //{
+        //    // Implement the method body here
+        //    info = "Solution not implemented yet.";
+        //    return string.Empty;
+        //}
     }
 }
 
@@ -2188,6 +2248,79 @@ ________________________|_______|_______|_______|_______________________________
                         |   6   |   7   |   8   |
                         |_______|_______|_______|
                                   Front
+
+                                   Up
+                        _________________________
+                        |       |       |       |
+                        |  36   |  37   |  38   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  39   |  40   |  41   |
+                        |_______|_______|_______|
+                        |       |       |       |
+           Left         |  42   |  43   |  44   |         Right                   Back
+________________________|_______|_______|_______|________________________________________________
+|       |       |       |       |       |       |       |       |       |       |       |       |
+|  27   |  28   |  29   |   0   |   1   |   2   |   9   |  10   |  11   |  18   |  19   |  20   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+|       |       |       |       | Front |       |       |       |       |       |       |       |
+|  30   |  31   |  32   |   3   |   4   |   5   |  12   |  13   |  14   |  21   |  22   |  23   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+|       |       |       |       |       |       |       |       |       |       |       |       |
+|  33   |  34   |  35   |   6   |   7   |   8   |  15   |  16   |  17   |  24   |  25   |  26   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+                        |       |       |       |
+                        |  45   |  46   |  47   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  48   |  49   |  50   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  51   |  52   |  53   |
+                        |_______|_______|_______|
+                                  Down
+*/
+
+/*
+Diagam of cube map from Kociemba's original documention:
+
+                 |************|
+                 |*U1**U2**U3*|
+                 |************|
+                 |*U4**U5**U6*|
+                 |************|
+                 |*U7**U8**U9*|
+    |************|************|************|************|
+    |*L1**L2**L3*|*F1**F2**F3*|*R1**R2**F3*|*B1**B2**B3*|
+    |************|************|************|************|
+    |*L4**L5**L6*|*F4**F5**F6*|*R4**R5**R6*|*B4**B5**B6*|
+    |************|************|************|************|
+    |*L7**L8**L9*|*F7**F8**F9*|*R7**R8**R9*|*B7**B8**B9*|
+    |************|************|************|************|
+                 |*D1**D2**D3*|
+                 |************|
+                 |*D4**D5**D6*|
+                 |************|
+                 |*D7**D8**D9*|
+                 |************|
+
+The searchString need to be ordered by sides Up Right Front Down Left Back with the order of the characters in the string, matching the order as outlined in the diagram.
+For example, a solved searchString would be:
+
+    string searchString= "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB";
+
+This searchString has had 90 degree clockwise rotation of the front face applied to it:
+
+    string searchString= "UUUUUULLLURRURRURRFFFFFFFFFRRRDDDDDDLLDLLDLLDBBBBBBBBB";
+
+Converting piece numbering from CFOP to Kociemba:
+U1 = 36, U2 = 37, U3 = 38, U4 = 39, U5 = 40, U6 = 41, U7 = 42, U8 = 43, U9 = 44
+R1 = 9, R2 = 10, R3 = 11, R4 = 12, R5 = 13, R6 = 14, R7 = 15, R8 = 16, R9 = 17
+F1 = 0, F2 = 1, F3 = 2, F4 = 3, F5 = 4, F6 = 5, F7 = 6, F8 = 7, F9 = 8
+D1 = 45, D2 = 46, D3 = 47, D4 = 48, D5 = 49, D6 = 50, D7 = 51, D8 = 52, D9 = 53
+L1 = 27, L2 = 28, L3 = 29, L4 = 30, L5 = 31, L6 = 32, L7 = 33, L8 = 34, L9 = 35
+B1 = 18, B2 = 19, B3 = 20, B4 = 21, B5 = 22, B6 = 23, B7 = 24, B8 = 25, B9 = 26
+
 */
 
 /*
