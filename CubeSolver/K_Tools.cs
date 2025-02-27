@@ -8,8 +8,6 @@ namespace Kociemba
 {
     public class Tools
     {
-        public static string cTablePath = FileSystem.Current.AppDataDirectory + "\\";
-
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Check if the cube string s represents a solvable cube.
         // 0: Cube is solvable
@@ -80,9 +78,8 @@ namespace Kociemba
 
         //public static void SerializeTable(string filename, short[,] array)
         //{
-        //    //EnsureFolder("Assets\\Kociemba\\Tables\\");
-        //    EnsureFolder(cTablePath + "Assets\\Kociemba\\Tables\\");
-        //    using (Stream s = File.Open(cTablePath + "Assets\\Kociemba\\Tables\\" + filename, FileMode.Create))
+        //    EnsureFolder(Globals.cTablePath);
+        //    using (Stream s = File.Open(Globals.cTablePath" + filename, FileMode.Create))
         //    {
         //        JsonSerializer.Serialize(s, array);
         //    }
@@ -90,8 +87,8 @@ namespace Kociemba
 
         public static void SerializeTable(string filename, short[,] array)
         {
-            EnsureFolder(cTablePath + "Assets\\Kociemba\\Tables\\");
-            using (Stream s = File.Open(cTablePath + "Assets\\Kociemba\\Tables\\" + filename, FileMode.Create))
+            EnsureFolder(Globals.cTablePath);
+            using (Stream s = File.Open(Globals.cTablePath + filename, FileMode.Create))
             {
                 var jaggedArray = new short[array.GetLength(0)][];
                 for (int i = 0; i < array.GetLength(0); i++)
@@ -109,8 +106,8 @@ namespace Kociemba
 
         public static short[,] DeserializeTable(string filename)
         {
-            EnsureFolder(cTablePath + "Assets\\Kociemba\\Tables\\");
-            using (Stream s = File.Open(cTablePath + "Assets\\Kociemba\\Tables\\" + filename, FileMode.Open))
+            EnsureFolder(Globals.cTablePath);
+            using (Stream s = File.Open(Globals.cTablePath + filename, FileMode.Open))
             {
                 return JsonSerializer.Deserialize<short[,]>(s);
             }
@@ -118,8 +115,8 @@ namespace Kociemba
 
         public static void SerializeSbyteArray(string filename, sbyte[] array)
         {
-            EnsureFolder(cTablePath + "Assets\\Kociemba\\Tables\\");
-            using (Stream s = File.Open(cTablePath + "Assets\\Kociemba\\Tables\\" + filename, FileMode.Create))
+            EnsureFolder(Globals.cTablePath);
+            using (Stream s = File.Open(Globals.cTablePath + filename, FileMode.Create))
             {
                 JsonSerializer.Serialize(s, array);
             }
@@ -127,8 +124,8 @@ namespace Kociemba
 
         public static sbyte[] DeserializeSbyteArray(string filename)
         {
-            EnsureFolder(cTablePath + "Assets\\Kociemba\\Tables\\");
-            using (Stream s = File.Open(cTablePath + "Assets\\Kociemba\\Tables\\" + filename, FileMode.Open))
+            EnsureFolder(Globals.cTablePath);
+            using (Stream s = File.Open(Globals.cTablePath + filename, FileMode.Open))
             {
                 return JsonSerializer.Deserialize<sbyte[]>(s);
             }

@@ -334,8 +334,10 @@ namespace CubeSolver
                 string searchString = ClassCubeKociemba.ConvertCubeToKociembaCube();
                 Debug.WriteLine("searchString:" + searchString);
                 string info = "";
-                string solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+                string solution = SearchRunTime.solution(searchString, out info, buildTables: !ClassCubeKociemba.CheckIfTableExists());
+                //string solution = Search.solution(searchString, out info);
                 Debug.WriteLine("Search.solution: " + solution);
+
                 ClassCubeKociemba.SplitStringToTurns(solution);
                 bSolved = !string.IsNullOrEmpty(searchString);
 

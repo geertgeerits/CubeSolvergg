@@ -104,6 +104,75 @@
         }
 
         /// <summary>
+        /// Check if the table exists
+        /// </summary>
+        /// <returns></returns>
+        public static bool CheckIfTableExists()
+        {
+            if (!File.Exists(Globals.cTablePath + "twist"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "flip"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "FRtoBR"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "URFtoDLF"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "URtoDF"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "URtoUL"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "UBtoDF"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "MergeURtoULandUBtoDF"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "Slice_URFtoDLF_Parity_Prun"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "Slice_URtoDF_Parity_Prun"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "Slice_Twist_Prun"))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Globals.cTablePath + "Slice_Flip_Prun"))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
         /// Make a turn (with 1 letter [plus ' or 2]) of the cube/face/side
         /// </summary>
         /// <param name="cTurn"></param>
