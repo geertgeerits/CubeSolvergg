@@ -334,7 +334,18 @@ namespace CubeSolver
                 string searchString = ClassCubeKociemba.ConvertCubeToKociembaCube();
                 Debug.WriteLine("searchString:" + searchString);
                 string info = "";
-                string solution = SearchRunTime.solution(searchString, out info, buildTables: !ClassCubeKociemba.CheckIfTableExists());
+                string solution = "";
+
+                //if (ClassCubeKociemba.CheckIfTableExists())
+                //{
+                //    solution = Search.solution(searchString, out info);
+                //}
+                //else
+                //{
+                //    solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+                //}
+                solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+
                 //string solution = Search.solution(searchString, out info);
                 Debug.WriteLine("Search.solution: " + solution);
 

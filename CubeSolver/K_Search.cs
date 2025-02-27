@@ -152,7 +152,6 @@ namespace Kociemba
             DateTime startTime = DateTime.Now;
             info = "";
       
-                     
             int s;
             // +++++++++++++++++++++check for wrong input +++++++++++++++++++++++++++++
             int[] count = new int[6];
@@ -420,8 +419,6 @@ namespace Kociemba
             return depthPhase1 + depthPhase2;
         }
     }
-
-
 
 
 //---------------------------------------------------------------------------------------------------------

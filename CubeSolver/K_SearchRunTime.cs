@@ -144,13 +144,13 @@ namespace Kociemba
          */
         public static string solution(string facelets, out string info, int maxDepth= 22, long timeOut = 6000, bool useSeparator = false, bool buildTables = false )
         {
-
             info = "Warning, this solution builds tables at run time which is very slow. This will find a solution, however it is reccomended to use the K_SearchRunTime class only to create a local copy of the tables, then use the K_Search class to search for solutions instead.";
             
             if (facelets == "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB")
             {
                 return "";
             }
+            
             int s;
             // +++++++++++++++++++++check for wrong input +++++++++++++++++++++++++++++
             int[] count = new int[6];
