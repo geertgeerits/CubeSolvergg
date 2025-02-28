@@ -22,12 +22,12 @@ namespace Kociemba
         /// Check if the cube definition string s represents a solvable cube.
         /// </summary>
         /// <param name="s"> is the cube definition string , see <seealso cref="Facelet"/> </param>
-        /// <returns> 0: Cube is solvable<br>
-        ///         -1: There is not exactly one facelet of each colour<br>
-        ///         -2: Not all 12 edges exist exactly once<br>
-        ///         -3: Flip error: One edge has to be flipped<br>
-        ///         -4: Not all 8 corners exist exactly once<br>
-        ///         -5: Twist error: One corner has to be twisted<br>
+        /// <returns> 0: Cube is solvable
+        ///         -1: There is not exactly one facelet of each colour
+        ///         -2: Not all 12 edges exist exactly once
+        ///         -3: Flip error: One edge has to be flipped
+        ///         -4: Not all 8 corners exist exactly once
+        ///         -5: Twist error: One corner has to be twisted
         ///         -6: Parity error: Two corners or two edges have to be exchanged </returns>
         public static int verify(string s)
         {

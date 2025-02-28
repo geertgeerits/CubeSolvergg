@@ -226,12 +226,12 @@ namespace Kociemba
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        // Multiply this CubieCube with another cubiecube b, restricted to the corners.<br>
+        // Multiply this CubieCube with another cubiecube b, restricted to the corners.
         // Because we also describe reflections of the whole cube by permutations, we get a complication with the corners. The
         // orientations of mirrored corners are described by the numbers 3, 4 and 5. The composition of the orientations
         // cannot
         // be computed by addition modulo three in the cyclic group C3 any more. Instead the rules below give an addition in
-        // the dihedral group D3 with 6 elements.<br>
+        // the dihedral group D3 with 6 elements.
         //	 
         // NOTE: Because we do not use symmetry reductions and hence no mirrored cubes in this simple implementation of the
         // Two-Phase-Algorithm, some code is not necessary here.

@@ -141,6 +141,15 @@ namespace CubeSolver
             // For testing the logging of the executed line in the class 'ClassProgramLogging.cs'
             //ClassProgramLogging.LogExecutedLineTest();
 #endif
+            // Herbert Kociemba solution (for testing)
+            //string searchString = "UUUUUULLLURRURRURRFFFFFFFFFRRRDDDDDDLLDLLDLLDBBBBBBBBB";
+            //string searchString = ClassCubeKociemba.ConvertCubeToKociembaCube();
+            //Debug.WriteLine("searchString: " + searchString);
+            //string info = "";
+            //string solution = "";
+            //solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+            ////string solution = Search.solution(searchString, out info);
+            //Debug.WriteLine("Search.solution: " + solution);
         }
 
         //// TitleView buttons clicked events
@@ -332,7 +341,7 @@ namespace CubeSolver
                 // Solve the cube
                 // Herbert Kociemba solution
                 string searchString = ClassCubeKociemba.ConvertCubeToKociembaCube();
-                Debug.WriteLine("searchString:" + searchString);
+                Debug.WriteLine("searchString: " + searchString);
                 string info = "";
                 string solution = "";
 
@@ -380,8 +389,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");
                 }
 
-                // For testing comment out the lines 288-289 and 334-361 (and change the line 388 to bTestSolveCube = true)
-                // and uncomment one of the lines 368-372/373 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 297-298 and 342-390 (and change the line 417 to bTestSolveCube = true)
+                // and uncomment one of the lines 397-401/402 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -2331,7 +2340,6 @@ ________________________|_______|_______|_______|_______________________________
                         |  33   |  34   |  35   |
                         |_______|_______|_______|
                                   Down 
-
 */
 
 /*
@@ -2367,13 +2375,12 @@ This searchString has had 90 degree clockwise rotation of the front face applied
     string searchString= "UUUUUULLLURRURRURRFFFFFFFFFRRRDDDDDDLLDLLDLLDBBBBBBBBB";
 
 Converting piece numbering from CFOP to Kociemba:
-U1 = 36, U2 = 37, U3 = 38, U4 = 39, U5 = 40, U6 = 41, U7 = 42, U8 = 43, U9 = 44
-R1 = 11, R2 = 14, R3 = 17, R4 = 10, R5 = 13, R6 = 16, R7 = 9, R8 = 12, R9 = 15
-F1 = 0, F2 = 1, F3 = 2, F4 = 3, F5 = 4, F6 = 5, F7 = 6, F8 = 7, F9 = 8
-D1 = 53, D2 = 52, D3 = 51, D4 = 50, D5 = 49, D6 = 48, D7 = 47, D8 = 46, D9 = 45
-L1 = 33, L2 = 30, L3 = 27, L4 = 34, L5 = 31, L6 = 28, L7 = 35, L8 = 32, L9 = 29
-B1 = 26, B2 = 25, B3 = 24, B4 = 23, B5 = 22, B6 = 21, B7 = 20, B8 = 19, B9 = 18
-
+    U1 = 36, U2 = 37, U3 = 38, U4 = 39, U5 = 40, U6 = 41, U7 = 42, U8 = 43, U9 = 44
+    R1 = 9, R2 = 10, R3 = 11, R4 = 12, R5 = 13, R6 = 14, R7 = 15, R8 = 16, R9 = 17
+    F1 = 0, F2 = 1, F3 = 2, F4 = 3, F5 = 4, F6 = 5, F7 = 6, F8 = 7, F9 = 8
+    D1 = 45, D2 = 46, D3 = 47, D4 = 48, D5 = 49, D6 = 50, D7 = 51, D8 = 52, D9 = 53
+    L1 = 27, L2 = 28, L3 = 29, L4 = 30, L5 = 31, L6 = 32, L7 = 33, L8 = 34, L9 = 35
+    B1 = 18, B2 = 19, B3 = 20, B4 = 21, B5 = 22, B6 = 23, B7 = 24, B8 = 25, B9 = 26
 */
 
 /*

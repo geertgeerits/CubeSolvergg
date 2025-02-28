@@ -131,15 +131,15 @@ namespace Kociemba
          * 
          * @param useSeparator
          *          determines if a " . " separates the phase1 and phase2 parts of the solver string like in F' R B R L2 F .
-         *          U2 U D for example.<br>
-         * @return The solution string or an error code:<br>
-         *         Error 1: There is not exactly one facelet of each colour<br>
-         *         Error 2: Not all 12 edges exist exactly once<br>
-         *         Error 3: Flip error: One edge has to be flipped<br>
-         *         Error 4: Not all corners exist exactly once<br>
-         *         Error 5: Twist error: One corner has to be twisted<br>
-         *         Error 6: Parity error: Two corners or two edges have to be exchanged<br>
-         *         Error 7: No solution exists for the given maxDepth<br>
+         *          U2 U D for example.
+         * @return The solution string or an error code:
+         *         Error 1: There is not exactly one facelet of each colour
+         *         Error 2: Not all 12 edges exist exactly once
+         *         Error 3: Flip error: One edge has to be flipped
+         *         Error 4: Not all corners exist exactly once
+         *         Error 5: Twist error: One corner has to be twisted
+         *         Error 6: Parity error: Two corners or two edges have to be exchanged
+         *         Error 7: No solution exists for the given maxDepth
          *         Error 8: Timeout, no solution within given time
          */
         public static string solution(string facelets, out string info, int maxDepth = 22, long timeOut = 6000, bool useSeparator = false )

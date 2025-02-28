@@ -11,7 +11,7 @@ namespace Kociemba
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Map the corner positions to facelet positions. cornerFacelet[URF.ordinal()][0] e.g. gives the position of the
-        // facelet in the URF corner position, which defines the orientation.<br>
+        // facelet in the URF corner position, which defines the orientation.
         // cornerFacelet[URF.ordinal()][1] and cornerFacelet[URF.ordinal()][2] give the position of the other two facelets
         // of the URF corner (clockwise).
         public static Facelet[][] cornerFacelet = new Facelet[][] {
@@ -27,7 +27,7 @@ namespace Kociemba
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Map the edge positions to facelet positions. edgeFacelet[UR.ordinal()][0] e.g. gives the position of the facelet in
-        // the UR edge position, which defines the orientation.<br>
+        // the UR edge position, which defines the orientation.
         // edgeFacelet[UR.ordinal()][1] gives the position of the other facelet
         public static Facelet[][] edgeFacelet = new Facelet[][]{
             new Facelet[] { Facelet.U6, Facelet.R2 },
