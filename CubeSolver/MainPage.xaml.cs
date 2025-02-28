@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.36
- * Date ........: 2025-02-27 (YYYY-MM-DD)
+ * Date ........: 2025-02-28 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -336,15 +336,15 @@ namespace CubeSolver
                 string info = "";
                 string solution = "";
 
-                //if (ClassCubeKociemba.CheckIfTableExists())
-                //{
-                //    solution = Search.solution(searchString, out info);
-                //}
-                //else
-                //{
-                //    solution = SearchRunTime.solution(searchString, out info, buildTables: true);
-                //}
-                solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+                if (ClassCubeKociemba.CheckIfTableExists())
+                {
+                    //solution = Search.solution(searchString, out info);
+                    solution = SearchRunTime.solution(searchString, out info, buildTables: false);
+                }
+                else
+                {
+                    solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+                }
 
                 //string solution = Search.solution(searchString, out info);
                 Debug.WriteLine("Search.solution: " + solution);
@@ -2299,6 +2299,39 @@ ________________________|_______|_______|_______|_______________________________
                         |  51   |  52   |  53   |
                         |_______|_______|_______|
                                   Down
+
+ 
+                                   Up
+                        _________________________
+                        |       |       |       |
+                        |   0   |   1   |  2    |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |   3   |   4   |  5    |
+                        |_______|_______|_______|
+                        |       |       |       |
+           Left         |   6   |   7   |  8    |         Right                   Back
+________________________|_______|_______|_______|________________________________________________
+|       |       |       |       |       |       |       |       |       |       |       |       |
+|  36   |  37   |  38   |  18   |  19   |  20   |   9   |  10   |  11   |  45   |  46   |  47   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+|       |       |       |       | Front |       |       |       |       |       |       |       |
+|  39   |  40   |  41   |  21   |  22   |  23   |  12   |  13   |  14   |  48   |  49   |  50   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+|       |       |       |       |       |       |       |       |       |       |       |       |
+|  42   |  43   |  44   |  24   |  25   |  26   |  15   |  16   |  17   |  51   |  52   |  53   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+                        |       |       |       |
+                        |  27   |  28   |  29   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  30   |  31   |  32   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  33   |  34   |  35   |
+                        |_______|_______|_______|
+                                  Down 
+
 */
 
 /*
@@ -2335,11 +2368,11 @@ This searchString has had 90 degree clockwise rotation of the front face applied
 
 Converting piece numbering from CFOP to Kociemba:
 U1 = 36, U2 = 37, U3 = 38, U4 = 39, U5 = 40, U6 = 41, U7 = 42, U8 = 43, U9 = 44
-R1 = 9, R2 = 10, R3 = 11, R4 = 12, R5 = 13, R6 = 14, R7 = 15, R8 = 16, R9 = 17
+R1 = 11, R2 = 14, R3 = 17, R4 = 10, R5 = 13, R6 = 16, R7 = 9, R8 = 12, R9 = 15
 F1 = 0, F2 = 1, F3 = 2, F4 = 3, F5 = 4, F6 = 5, F7 = 6, F8 = 7, F9 = 8
-D1 = 45, D2 = 46, D3 = 47, D4 = 48, D5 = 49, D6 = 50, D7 = 51, D8 = 52, D9 = 53
-L1 = 27, L2 = 28, L3 = 29, L4 = 30, L5 = 31, L6 = 32, L7 = 33, L8 = 34, L9 = 35
-B1 = 18, B2 = 19, B3 = 20, B4 = 21, B5 = 22, B6 = 23, B7 = 24, B8 = 25, B9 = 26
+D1 = 53, D2 = 52, D3 = 51, D4 = 50, D5 = 49, D6 = 48, D7 = 47, D8 = 46, D9 = 45
+L1 = 33, L2 = 30, L3 = 27, L4 = 34, L5 = 31, L6 = 28, L7 = 35, L8 = 32, L9 = 29
+B1 = 26, B2 = 25, B3 = 24, B4 = 23, B5 = 22, B6 = 21, B7 = 20, B8 = 19, B9 = 18
 
 */
 
