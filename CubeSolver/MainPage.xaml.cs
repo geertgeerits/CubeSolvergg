@@ -340,6 +340,43 @@ namespace CubeSolver
 
                 // Solve the cube
                 // Herbert Kociemba solution
+                // Turn the cube so that the white center piece is on the up face
+                string cTurnWhite = string.Empty;
+
+                //if (Globals.aPieces[40] != Globals.aFaceColors[5])
+                //{
+                //    if (Globals.aPieces[13] == Globals.aFaceColors[5])          // White is at the right face
+                //    {
+                //        //TurnCubeUpFaceToLeftFace();
+                //        cTurnWhite = Globals.turnCubeUpToLeft;
+                //    }
+                //    else if (Globals.aPieces[49] == Globals.aFaceColors[5])     // White is at the down face
+                //    {
+                //        //TurnCubeUpFaceToRightFace();
+                //        //TurnCubeUpFaceToRightFace();
+                //        cTurnWhite = Globals.turnCubeUpToRight2;
+                //    }
+                //    else if (Globals.aPieces[31] == Globals.aFaceColors[5])     // White is at the left face
+                //    {
+                //        //TurnCubeUpFaceToRightFace();
+                //        cTurnWhite = Globals.turnCubeUpToRight;
+                //    }
+                //    else if (Globals.aPieces[22] == Globals.aFaceColors[5])     // White is at the back face
+                //    {
+                //        //TurnCubeFrontFaceToDownFace();
+                //        cTurnWhite = Globals.turnCubeFrontToDown;
+                //    }
+                //    else if (Globals.aPieces[4] == Globals.aFaceColors[5])      // White is at the front face
+                //    {
+                //        //TurnCubeFrontFaceToUpFace();
+                //        cTurnWhite = Globals.turnCubeFrontToUp;
+                //    }
+
+                //    //SetCubeColorsInArrays();
+                //    //Array.Copy(Globals.aPieces, Globals.aStartPieces, 54);
+                //    await MakeExplainTurnAsync(cTurnWhite);
+                //}
+
                 string searchString = ClassCubeKociemba.ConvertCubeToKociembaCube();
                 Debug.WriteLine("searchString: " + searchString);
                 string info = "";
