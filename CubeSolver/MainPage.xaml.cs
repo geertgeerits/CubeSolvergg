@@ -343,39 +343,32 @@ namespace CubeSolver
                 // Turn the cube so that the white center piece is on the up face
                 string cTurnWhite = string.Empty;
 
-                //if (Globals.aPieces[40] != Globals.aFaceColors[5])
-                //{
-                //    if (Globals.aPieces[13] == Globals.aFaceColors[5])          // White is at the right face
-                //    {
-                //        //TurnCubeUpFaceToLeftFace();
-                //        cTurnWhite = Globals.turnCubeUpToLeft;
-                //    }
-                //    else if (Globals.aPieces[49] == Globals.aFaceColors[5])     // White is at the down face
-                //    {
-                //        //TurnCubeUpFaceToRightFace();
-                //        //TurnCubeUpFaceToRightFace();
-                //        cTurnWhite = Globals.turnCubeUpToRight2;
-                //    }
-                //    else if (Globals.aPieces[31] == Globals.aFaceColors[5])     // White is at the left face
-                //    {
-                //        //TurnCubeUpFaceToRightFace();
-                //        cTurnWhite = Globals.turnCubeUpToRight;
-                //    }
-                //    else if (Globals.aPieces[22] == Globals.aFaceColors[5])     // White is at the back face
-                //    {
-                //        //TurnCubeFrontFaceToDownFace();
-                //        cTurnWhite = Globals.turnCubeFrontToDown;
-                //    }
-                //    else if (Globals.aPieces[4] == Globals.aFaceColors[5])      // White is at the front face
-                //    {
-                //        //TurnCubeFrontFaceToUpFace();
-                //        cTurnWhite = Globals.turnCubeFrontToUp;
-                //    }
+                if (Globals.aPieces[40] != Globals.aFaceColors[5])
+                {
+                    if (Globals.aPieces[13] == Globals.aFaceColors[5])          // White is at the right face
+                    {
+                        cTurnWhite = "z'";
+                    }
+                    else if (Globals.aPieces[49] == Globals.aFaceColors[5])     // White is at the down face
+                    {
+                        cTurnWhite = "z2";
+                    }
+                    else if (Globals.aPieces[31] == Globals.aFaceColors[5])     // White is at the left face
+                    {
+                        cTurnWhite = "z";
+                    }
+                    else if (Globals.aPieces[22] == Globals.aFaceColors[5])     // White is at the back face
+                    {
+                        cTurnWhite = "x'";
+                    }
+                    else if (Globals.aPieces[4] == Globals.aFaceColors[5])      // White is at the front face
+                    {
+                        cTurnWhite = "x";
+                    }
 
-                //    //SetCubeColorsInArrays();
-                //    //Array.Copy(Globals.aPieces, Globals.aStartPieces, 54);
-                //    await MakeExplainTurnAsync(cTurnWhite);
-                //}
+                    SetCubeColorsInArrays();
+                    await ClassCubeTurns.TurnCubeLayersAsync(cTurnWhite);
+                }
 
                 string searchString = ClassCubeKociemba.ConvertCubeToKociembaCube();
                 Debug.WriteLine("searchString: " + searchString);
@@ -391,10 +384,15 @@ namespace CubeSolver
                 {
                     solution = SearchRunTime.solution(searchString, out info, buildTables: true);
                 }
-
-                //string solution = Search.solution(searchString, out info);
                 Debug.WriteLine("Search.solution: " + solution);
 
+                // Turn the cube so that the white center piece is back to its original face
+                if (!string.IsNullOrEmpty(cTurnWhite))
+                {
+                    await ClassCubeTurns.TurnCubeLayersReversedAsync(cTurnWhite);
+                }
+
+                // Error checking
                 if (solution.Contains("Error") || string.IsNullOrEmpty(solution))
                 {
                     bSolved = false;
@@ -402,7 +400,15 @@ namespace CubeSolver
                 else
                 {
                     bSolved = true;
+
+                    if (!string.IsNullOrEmpty(cTurnWhite))
+                    {
+                        Globals.lCubeTurns.Add(cTurnWhite);
+                    }
+
                     ClassCubeKociemba.SplitStringToTurns(solution);
+                    SetCubeColorsInArrays();
+                    GetCubeColorsFromArrays();
                 }
 
                 // CFOP and beginners solutions
