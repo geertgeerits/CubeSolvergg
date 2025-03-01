@@ -540,7 +540,7 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Testede løsninger:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Gjennomsnittlig antall omdreininger for å løse kuben:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Tallet 2 (f.eks. U2) betyr å snu en halv omdreining (180 grader).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

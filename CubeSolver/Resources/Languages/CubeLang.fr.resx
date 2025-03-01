@@ -540,7 +540,7 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Solutions testées:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Nombre moyen de tours pour résoudre le cube:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Le chiffre 2 (par exemple, U2) signifie faire un demi-tour (180 degrés).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

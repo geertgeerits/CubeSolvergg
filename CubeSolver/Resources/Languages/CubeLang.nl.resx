@@ -540,7 +540,7 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Geteste oplossingen:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Gemiddeld aantal draaibewegingen om de kubus op te lossen:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Het getal 2 (bijv. U2) betekent een halve slag draaien (180 graden).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

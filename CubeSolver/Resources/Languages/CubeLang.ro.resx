@@ -540,7 +540,7 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Solutii testate:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Numărul mediu de ture pentru a rezolva cubul:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Cifra 2 (de exemplu, U2) înseamnă a întoarce o jumătate de tură (180 de grade).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

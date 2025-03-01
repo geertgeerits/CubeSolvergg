@@ -540,7 +540,7 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Testede løsninger:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Gennemsnitligt antal omgange for at løse terningen:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Tallet 2 (f.eks. U2) betyder at dreje en halv omgang (180 grader).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

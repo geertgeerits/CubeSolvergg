@@ -88,11 +88,20 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Average number of turns to solve the cube:.
+        ///   Looks up a localized string similar to Average number of turns to solve the cube using the Fridrich (CFOP) method:.
         /// </summary>
-        internal static string AverageTurns_Text {
+        internal static string AverageTurnsFridrich_Text {
             get {
-                return ResourceManager.GetString("AverageTurns_Text", resourceCulture);
+                return ResourceManager.GetString("AverageTurnsFridrich_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Average number of turns to solve the cube using the Kociemba method:.
+        /// </summary>
+        internal static string AverageTurnsKociemba_Text {
+            get {
+                return ResourceManager.GetString("AverageTurnsKociemba_Text", resourceCulture);
             }
         }
         

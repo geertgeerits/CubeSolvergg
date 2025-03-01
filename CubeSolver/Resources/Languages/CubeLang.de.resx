@@ -540,7 +540,7 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Getestete Lösungen:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Durchschnittliche Anzahl der Runden zum Lösen des Würfels:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Die Zahl 2 (z. B. U2) bedeutet eine halbe Drehung (180 Grad).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

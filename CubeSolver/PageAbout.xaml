@@ -93,7 +93,17 @@
                         </Label>
 
                         <Label
-                            x:Name="lblHelpOptionsSolveCube"
+                            Style="{StaticResource labelStyleInfo}"
+                            Text="{x:Static resx:CubeLang.HelpSolveCube_Text}">
+                        </Label>
+
+                        <Label
+                            x:Name="lblHelpOptionsSolveCubeKociemba"
+                            Style="{StaticResource labelStyleInfo}">
+                        </Label>
+
+                        <Label
+                            x:Name="lblHelpOptionsSolveCubeFridrich"
                             Style="{StaticResource labelStyleInfo}">
                         </Label>
 

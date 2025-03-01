@@ -540,7 +540,7 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Przetestowane rozwiązania:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Średnia liczba tur potrzebnych do ułożenia kostki:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Liczba 2 (np. U2) oznacza obrót o pół obrotu (180 stopni).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

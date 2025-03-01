@@ -540,7 +540,7 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Soluciones probadas:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Número medio de vueltas para resolver el cubo:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>El número 2 (p. ej., U2) significa girar media vuelta (180 grados).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

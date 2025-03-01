@@ -540,7 +540,7 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Testade lösningar:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Genomsnittligt antal varv för att lösa kuben:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Siffran 2 (t.ex. U2) betyder att vända ett halvt varv (180 grader).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>

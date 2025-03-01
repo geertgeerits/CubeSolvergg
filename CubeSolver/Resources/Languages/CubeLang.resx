@@ -540,8 +540,8 @@ Possible cause is incorrect transfer of colors to this cube.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Tested solutions:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Average number of turns to solve the cube:</value>
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
+    <value>Average number of turns to solve the cube using the Kociemba method:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Scramble the cube</value>
@@ -641,5 +641,8 @@ Possible cause is incorrect transfer of colors to this cube.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>The number 2 (e.g., U2) means to turn a half turn (180 degrees).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value>Average number of turns to solve the cube using the Fridrich (CFOP) method:</value>
   </data>
 </root>

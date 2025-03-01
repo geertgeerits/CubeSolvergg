@@ -540,7 +540,7 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Testatut ratkaisut:</value>
   </data>
-  <data name="AverageTurns_Text" xml:space="preserve">
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>Keskimääräinen kierrosten lukumäärä kuution ratkaisemiseksi:</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
@@ -641,5 +641,8 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Numero 2 (esim. U2) tarkoittaa puolikierrosta (180 astetta).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value />
   </data>
 </root>
