@@ -133,9 +133,9 @@ namespace Kociemba
 
         static void EnsureFolder(string path)
         {
-            string directoryName = Path.GetDirectoryName(path);
-            // If path is a file name only, directory name will be an empty string
-            if (directoryName.Length > 0)
+            string? directoryName = Path.GetDirectoryName(path);
+            // If path is a file name only, directory name will be null
+            if (!string.IsNullOrEmpty(directoryName))
             {
                 // Create all directories on the path that don't already exist
                 Directory.CreateDirectory(directoryName);

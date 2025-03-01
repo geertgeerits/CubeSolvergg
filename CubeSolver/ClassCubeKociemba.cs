@@ -1,9 +1,38 @@
 ﻿using System.Diagnostics;
+using Kociemba;
 
 namespace CubeSolver
 {
     internal sealed class ClassCubeKociemba
     {
+        /// <summary>
+        /// Solve the cube using Kociemba's algorithm
+        /// </summary>
+        /// <returns></returns>
+        public static string SolveCubeKociemba()
+        {
+            // Convert the cube numbering and colors from CFOP to Kociemba numbering and colors
+            string searchString = ConvertCubeToKociembaCube();
+            Debug.WriteLine("searchString: " + searchString);
+
+            // Search for the solution to solve the cube
+            string info = "";
+            string solution = "";
+
+            if (CheckIfTableExists())
+            {
+                //solution = Search.solution(searchString, out info);  // Gives an error
+                solution = SearchRunTime.solution(searchString, out info, buildTables: false);
+            }
+            else
+            {
+                solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+            }
+            Debug.WriteLine("Search.solution: " + solution);
+
+            return solution;
+        }
+
         /// <summary>
         /// Convert the cube numbering and colors from CFOP to Kociemba numbering and colors
         /// </summary>
@@ -136,10 +165,10 @@ namespace CubeSolver
                 }
 
                 cResult = cResult + Globals.aPieces[nRow];
-                //Debug.WriteLine("cResult: " + cResult);
             }
+            Debug.WriteLine("cResult: " + cResult);
 
-            // Restore the start colors of the cube to array aPieces[]
+            // Restore the tempory array of the cube to array aPieces[]
             Array.Copy(Globals.aPiecesTemp, Globals.aPieces, 54);
 
             return cResult;

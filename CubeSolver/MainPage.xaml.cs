@@ -340,54 +340,22 @@ namespace CubeSolver
 
                 // Solve the cube
                 // Herbert Kociemba solution
-                // Turn the cube so that the white center piece is on the up face
+                // Turn the cube so that the white center piece is on the up face (if not the cube can not be solved)
                 string cTurnWhite = ClassCubeKociemba.TurnWhiteCenterPiece();
                 if (!string.IsNullOrEmpty(cTurnWhite))
                 {
-                    SetCubeColorsInArrays();
                     await ClassCubeTurns.TurnCubeLayersAsync(cTurnWhite);
                 }
 
-                // Turn the cube so that the red center piece is on the front face
+                // Turn the cube so that the red center piece is on the front face (if not the cube can not be solved)
                 string cTurnRed = ClassCubeKociemba.TurnRedCenterPiece();
                 if (!string.IsNullOrEmpty(cTurnRed))
                 {
-                    SetCubeColorsInArrays();
                     await ClassCubeTurns.TurnCubeLayersAsync(cTurnRed);
                 }
 
-                // Convert the cube numbering and colors from CFOP to Kociemba numbering and colors
-                string searchString = ClassCubeKociemba.ConvertCubeToKociembaCube();
-                Debug.WriteLine("searchString: " + searchString);
-
                 // Search for the solution to solve the cube
-                string info = "";
-                string solution = "";
-
-                if (ClassCubeKociemba.CheckIfTableExists())
-                {
-                    //solution = Search.solution(searchString, out info);
-                    solution = SearchRunTime.solution(searchString, out info, buildTables: false);
-                }
-                else
-                {
-                    solution = SearchRunTime.solution(searchString, out info, buildTables: true);
-                }
-                Debug.WriteLine("Search.solution: " + solution);
-
-                // Turn the cube so that the red center piece is back to its original face
-                if (!string.IsNullOrEmpty(cTurnRed))
-                {
-                    SetCubeColorsInArrays();
-                    await ClassCubeTurns.TurnCubeLayersReversedAsync(cTurnRed);
-                }
-
-                // Turn the cube so that the white center piece is back to its original face
-                if (!string.IsNullOrEmpty(cTurnWhite))
-                {
-                    SetCubeColorsInArrays();
-                    await ClassCubeTurns.TurnCubeLayersReversedAsync(cTurnWhite);
-                }
+                string solution = ClassCubeKociemba.SolveCubeKociemba();
 
                 // Error checking
                 if (solution.Contains("Error") || string.IsNullOrEmpty(solution))
@@ -398,6 +366,13 @@ namespace CubeSolver
                 {
                     bSolved = true;
 
+                    // Restore the cube in it's original position
+                    if (!string.IsNullOrEmpty(cTurnWhite) || !string.IsNullOrEmpty(cTurnRed))
+                    {
+                        Array.Copy(Globals.aStartPieces, Globals.aPieces, 54);
+                    }
+
+                    // Add the white and red turns to the list with the cube turns
                     if (!string.IsNullOrEmpty(cTurnWhite))
                     {
                         Globals.lCubeTurns.Add(cTurnWhite);
@@ -408,7 +383,12 @@ namespace CubeSolver
                         Globals.lCubeTurns.Add(cTurnRed);
                     }
 
+                    // Split the solution into separate turns and add them to the list with the cube turns
                     ClassCubeKociemba.SplitStringToTurns(solution);
+
+                    // Clean the list with the cube turns by replacing or removing turns (is not nessesary ?)
+                    //ClassCleanCubeTurns.CleanListCubeTurns(Globals.lCubeTurns, true);
+
                     SetCubeColorsInArrays();
                     GetCubeColorsFromArrays();
                 }
@@ -434,8 +414,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");
                 }
 
-                // For testing comment out the lines 297-298 and 342-390 (and change the line 417 to bTestSolveCube = true)
-                // and uncomment one of the lines 397-401/402 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 297-298 and 342-415 (and change the line 442 to bTestSolveCube = true)
+                // and uncomment one of the lines 422-426/427 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -2219,50 +2199,6 @@ namespace CubeSolver
                 SetArrowTooltips(true);
             }
         }
-
-        /// <summary>
-        /// SearchRunTime - The slow one
-        /// </summary>
-        /// <param name="facelets"></param>
-        /// <param name="info"></param>
-        /// <param name="maxDepth"></param>
-        /// <param name="timeOut"></param>
-        /// <param name="useSeparator"></param>
-        /// <param name="buildTables"></param>
-        /// <returns></returns>
-        //public static string Solution(
-        //    string facelets,
-        //    out string info,
-        //    int maxDepth = 22,
-        //    long timeOut = 6000,
-        //    bool useSeparator = false,
-        //    bool buildTables = false)
-        //{
-        //    // Implement the method body here
-        //    info = "Solution not implemented yet.";
-        //    return string.Empty;
-        //}
-
-        /// <summary>
-        /// Search - The fast one
-        /// </summary>
-        /// <param name="facelets"></param>
-        /// <param name="info"></param>
-        /// <param name="maxDepth"></param>
-        /// <param name="timeOut"></param>
-        /// <param name="useSeparator"></param>
-        /// <returns></returns>
-        //public static string Solution(
-        //    string facelets,
-        //    out string info,
-        //    int maxDepth = 22,
-        //    long timeOut = 6000,
-        //    bool useSeparator = false)
-        //{
-        //    // Implement the method body here
-        //    info = "Solution not implemented yet.";
-        //    return string.Empty;
-        //}
     }
 }
 
