@@ -9,22 +9,6 @@ namespace CubeSolver
         /// </summary>
         public static string ConvertCubeToKociembaCube()
         {
-            /* The searchString need to be ordered by sides Up Right Front Down Left Back with the order of the characters in the string, matching the order as outlined in the diagram.
-                For example, a solved searchString would be:
-                string searchString= "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB";
-
-               This searchString has had 90 degree clockwise rotation of the front face applied to it:
-                string searchString= "UUUUUULLLURRURRURRFFFFFFFFFRRRDDDDDDLLDLLDLLDBBBBBBBBB";
-
-            Converting piece numbering from CFOP to Kociemba:
-                U1 = 36, U2 = 37, U3 = 38, U4 = 39, U5 = 40, U6 = 41, U7 = 42, U8 = 43, U9 = 44
-                R1 = 9, R2 = 10, R3 = 11, R4 = 12, R5 = 13, R6 = 14, R7 = 15, R8 = 16, R9 = 17
-                F1 = 0, F2 = 1, F3 = 2, F4 = 3, F5 = 4, F6 = 5, F7 = 6, F8 = 7, F9 = 8
-                D1 = 45, D2 = 46, D3 = 47, D4 = 48, D5 = 49, D6 = 50, D7 = 51, D8 = 52, D9 = 53
-                L1 = 27, L2 = 28, L3 = 29, L4 = 30, L5 = 31, L6 = 32, L7 = 33, L8 = 34, L9 = 35
-                B1 = 18, B2 = 19, B3 = 20, B4 = 21, B5 = 22, B6 = 23, B7 = 24, B8 = 25, B9 = 26
-             */
-
             // Variables
             int nRow;
             string cResult = string.Empty;
@@ -159,24 +143,10 @@ namespace CubeSolver
             Array.Copy(Globals.aPiecesTemp, Globals.aPieces, 54);
 
             return cResult;
-
-
-            // searchString:
-           
-            // F D L U U D R F L F L F R R F D R D U U B U F B B B F R U U R D L L L D B F R F L R R L B L B U D B D D B U
-
-            // U:  9
-            // R:  9
-            // F:  9
-            // D:  9
-            // L:  9
-            // B:  9
-
-            // T: 54
         }
 
         /// <summary>
-        /// Check if the table exists
+        /// Check if the tables exists
         /// </summary>
         /// <returns></returns>
         public static bool CheckIfTableExists()
@@ -245,6 +215,68 @@ namespace CubeSolver
         }
 
         /// <summary>
+        /// Turn the cube so that the white center piece is on the up face
+        /// </summary>
+        /// <returns></returns>
+        public static string TurnWhiteCenterPiece()
+        {
+            string cTurnWhite = string.Empty;
+
+            if (Globals.aPieces[40] != Globals.aFaceColors[5])
+            {
+                if (Globals.aPieces[13] == Globals.aFaceColors[5])          // White is at the right face
+                {
+                    cTurnWhite = "z'";
+                }
+                else if (Globals.aPieces[49] == Globals.aFaceColors[5])     // White is at the down face
+                {
+                    cTurnWhite = "z2";
+                }
+                else if (Globals.aPieces[31] == Globals.aFaceColors[5])     // White is at the left face
+                {
+                    cTurnWhite = "z";
+                }
+                else if (Globals.aPieces[22] == Globals.aFaceColors[5])     // White is at the back face
+                {
+                    cTurnWhite = "x'";
+                }
+                else if (Globals.aPieces[4] == Globals.aFaceColors[5])      // White is at the front face
+                {
+                    cTurnWhite = "x";
+                }
+            }
+            
+            return cTurnWhite;
+        }
+
+        /// <summary>
+        /// Turn the cube so that the red center piece is on the front face
+        /// </summary>
+        /// <returns></returns>
+        public static string TurnRedCenterPiece()
+        {
+            string cTurnRed = string.Empty;
+
+            if (Globals.aPieces[4] != Globals.aFaceColors[1])
+            {
+                if (Globals.aPieces[13] == Globals.aFaceColors[1])          // Red is at the right face
+                {
+                    cTurnRed = "y";
+                }
+                else if (Globals.aPieces[31] == Globals.aFaceColors[1])     // Red is at the left face
+                {
+                    cTurnRed = "y'";
+                }
+                else if (Globals.aPieces[22] == Globals.aFaceColors[1])     // Red is at the back face
+                {
+                    cTurnRed = "y2";
+                }
+            }
+
+            return cTurnRed;
+        }
+
+        /// <summary>
         /// Make a turn (with 1 letter [plus ' or 2]) of the cube/face/side
         /// </summary>
         /// <param name="cTurn"></param>
@@ -263,3 +295,110 @@ namespace CubeSolver
         }
     }
 }
+
+/*
+Numbering of cube surfaces for solution: Kociemba numbering
+-----------------------------------------------------------
+                                   Up
+                        _________________________
+                        |       |       |       |
+                        |  36   |  37   |  38   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  39   |  40   |  41   |
+                        |_______|_______|_______|
+                        |       |       |       |
+           Left         |  42   |  43   |  44   |         Right                   Back
+________________________|_______|_______|_______|________________________________________________
+|       |       |       |       |       |       |       |       |       |       |       |       |
+|  27   |  28   |  29   |   0   |   1   |   2   |   9   |  10   |  11   |  18   |  19   |  20   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+|       |       |       |       | Front |       |       |       |       |       |       |       |
+|  30   |  31   |  32   |   3   |   4   |   5   |  12   |  13   |  14   |  21   |  22   |  23   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+|       |       |       |       |       |       |       |       |       |       |       |       |
+|  33   |  34   |  35   |   6   |   7   |   8   |  15   |  16   |  17   |  24   |  25   |  26   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+                        |       |       |       |
+                        |  45   |  46   |  47   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  48   |  49   |  50   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  51   |  52   |  53   |
+                        |_______|_______|_______|
+                                  Down
+
+ 
+                                   Up
+                        _________________________
+                        |       |       |       |
+                        |   0   |   1   |  2    |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |   3   |   4   |  5    |
+                        |_______|_______|_______|
+                        |       |       |       |
+           Left         |   6   |   7   |  8    |         Right                   Back
+________________________|_______|_______|_______|________________________________________________
+|       |       |       |       |       |       |       |       |       |       |       |       |
+|  36   |  37   |  38   |  18   |  19   |  20   |   9   |  10   |  11   |  45   |  46   |  47   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+|       |       |       |       | Front |       |       |       |       |       |       |       |
+|  39   |  40   |  41   |  21   |  22   |  23   |  12   |  13   |  14   |  48   |  49   |  50   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+|       |       |       |       |       |       |       |       |       |       |       |       |
+|  42   |  43   |  44   |  24   |  25   |  26   |  15   |  16   |  17   |  51   |  52   |  53   |
+|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|_______|
+                        |       |       |       |
+                        |  27   |  28   |  29   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  30   |  31   |  32   |
+                        |_______|_______|_______|
+                        |       |       |       |
+                        |  33   |  34   |  35   |
+                        |_______|_______|_______|
+                                  Down 
+*/
+/*
+Diagam of cube map from Kociemba's original documention:
+
+                 |************|
+                 |*U1**U2**U3*|
+                 |************|
+                 |*U4**U5**U6*|
+                 |************|
+                 |*U7**U8**U9*|
+    |************|************|************|************|
+    |*L1**L2**L3*|*F1**F2**F3*|*R1**R2**F3*|*B1**B2**B3*|
+    |************|************|************|************|
+    |*L4**L5**L6*|*F4**F5**F6*|*R4**R5**R6*|*B4**B5**B6*|
+    |************|************|************|************|
+    |*L7**L8**L9*|*F7**F8**F9*|*R7**R8**R9*|*B7**B8**B9*|
+    |************|************|************|************|
+                 |*D1**D2**D3*|
+                 |************|
+                 |*D4**D5**D6*|
+                 |************|
+                 |*D7**D8**D9*|
+                 |************|
+
+The searchString need to be ordered by sides Up Right Front Down Left Back with the order of the characters in the string, matching the order as outlined in the diagram.
+For example, a solved searchString would be:
+
+    string searchString= "UUUUUUUUURRRRRRRRRFFFFFFFFFDDDDDDDDDLLLLLLLLLBBBBBBBBB";
+
+This searchString has had 90 degree clockwise rotation of the front face applied to it:
+
+    string searchString= "UUUUUULLLURRURRURRFFFFFFFFFRRRDDDDDDLLDLLDLLDBBBBBBBBB";
+
+Converting piece numbering from CFOP to Kociemba:
+    U1 = 36, U2 = 37, U3 = 38, U4 = 39, U5 = 40, U6 = 41, U7 = 42, U8 = 43, U9 = 44
+    R1 = 9, R2 = 10, R3 = 11, R4 = 12, R5 = 13, R6 = 14, R7 = 15, R8 = 16, R9 = 17
+    F1 = 0, F2 = 1, F3 = 2, F4 = 3, F5 = 4, F6 = 5, F7 = 6, F8 = 7, F9 = 8
+    D1 = 45, D2 = 46, D3 = 47, D4 = 48, D5 = 49, D6 = 50, D7 = 51, D8 = 52, D9 = 53
+    L1 = 27, L2 = 28, L3 = 29, L4 = 30, L5 = 31, L6 = 32, L7 = 33, L8 = 34, L9 = 35
+    B1 = 18, B2 = 19, B3 = 20, B4 = 21, B5 = 22, B6 = 23, B7 = 24, B8 = 25, B9 = 26
+*/
