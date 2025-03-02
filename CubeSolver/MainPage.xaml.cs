@@ -339,6 +339,12 @@ namespace CubeSolver
 
                 // Solve the cube
                 bSolved = await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();                     // Kociemba solution
+
+                if (bSolved)
+                {
+                    Globals.nTestedSolutions = 1;
+                }
+
                 //bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Kociemba");   // Kociemba solution (takes a long time +10 minutes)
 
                 if (!bSolved)
@@ -361,8 +367,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");    // Beginners solution
                 }
 
-                // For testing comment out the lines 296-297 and 341-362 (and change the line 389 to bTestSolveCube = true)
-                // and uncomment one of the lines 369-373/374 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 296-297 and 341-368 (and change the line 395 to bTestSolveCube = true)
+                // and uncomment one of the lines 375-379/380 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
