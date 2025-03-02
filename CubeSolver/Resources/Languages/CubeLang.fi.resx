@@ -541,7 +541,7 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
     <value>Testatut ratkaisut:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Keskimääräinen kierrosten lukumäärä kuution ratkaisemiseksi:</value>
+    <value>Keskimääräinen kierrosten lukumäärä kuution ratkaisemiseksi Kociemba-menetelmällä on</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Sekoita kuutio</value>
@@ -643,9 +643,9 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
     <value>Numero 2 (esim. U2) tarkoittaa puolikierrosta (180 astetta).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>Fridrich-menetelmää (CFOP) käyttäen</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Tekijät: Tämä sovellus käyttää avoimen lähdekoodin 'Herbert Kociemba' (Kociemba Two-Phase Algorithmin kirjoittaja) ja 'Matt Colbourne'. Heidän panoksensa ovat merkittävästi parantaneet kuution ratkaisun tehokkuutta. Erityiset kiitokset heidän työstään.</value>
   </data>
 </root>

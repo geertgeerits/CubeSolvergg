@@ -541,7 +541,7 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
     <value>Testede løsninger:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Gjennomsnittlig antall omdreininger for å løse kuben:</value>
+    <value>Gjennomsnittlig antall omdreininger for å løse kuben ved hjelp av 'Kociemba'-metoden er</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Bland kuben</value>
@@ -643,9 +643,9 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
     <value>Tallet 2 (f.eks. U2) betyr å snu en halv omdreining (180 grader).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>ved å bruke 'Fridrich' (CFOP)-metoden er</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Kreditt: Denne appen bruker åpen kildekode fra 'Herbert Kociemba' (forfatter av Kociemba Two-Phase Algorithm) og 'Matt Colbourne'). Deres bidrag har forbedret kubeløsningseffektiviteten betydelig. Spesiell takk for deres arbeid.</value>
   </data>
 </root>

@@ -541,7 +541,7 @@ La possibile causa è un trasferimento errato dei colori su questo cubo.</value>
     <value>Soluzioni testate:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Numero medio di giri per risolvere il cubo:</value>
+    <value>Il numero medio di turni per risolvere il cubo utilizzando il metodo 'Kociemba' è</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Mescola il cubo</value>
@@ -643,9 +643,9 @@ La possibile causa è un trasferimento errato dei colori su questo cubo.</value>
     <value>Il numero 2 (ad esempio, U2) significa ruotare di mezzo giro (180 gradi).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>utilizzando il metodo 'Fridrich' (CFOP) è</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Crediti: questa app utilizza codice open source di 'Herbert Kociemba' (autore dell'algoritmo a due fasi di Kociemba) e 'Matt Colbourne'). I loro contributi hanno migliorato significativamente l'efficienza nella risoluzione del cubo. Un ringraziamento speciale per il loro lavoro.</value>
   </data>
 </root>

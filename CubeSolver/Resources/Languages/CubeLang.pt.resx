@@ -541,7 +541,7 @@ A possível causa é a transferência incorreta de cores para este cubo.</value>
     <value>Soluções testadas:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Número médio de voltas para resolver o cubo:</value>
+    <value>Número médio de voltas para resolver o cubo usando o método 'Kociemba' é</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Embaralhe o cubo</value>
@@ -643,9 +643,9 @@ A possível causa é a transferência incorreta de cores para este cubo.</value>
     <value>O número 2 (por exemplo, U2) significa girar meia volta (180 graus).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>usando o método 'Fridrich' (CFOP) é</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Créditos: Este aplicativo usa código de fonte aberta de 'Herbert Kociemba' (autor do Algoritmo de Duas Fases de Kociemba) e 'Matt Colbourne'). Suas contribuições melhoraram significativamente a eficiência da resolução de cubos. Agradecimentos especiais por seu trabalho.</value>
   </data>
 </root>

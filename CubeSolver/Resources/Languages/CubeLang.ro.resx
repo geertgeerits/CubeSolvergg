@@ -541,7 +541,7 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
     <value>Solutii testate:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Numărul mediu de ture pentru a rezolva cubul:</value>
+    <value>Numărul mediu de ture pentru a rezolva cubul folosind metoda „Kociemba” este</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Amestecă cubul</value>
@@ -643,9 +643,9 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
     <value>Cifra 2 (de exemplu, U2) înseamnă a întoarce o jumătate de tură (180 de grade).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>folosind metoda „Fridrich” (CFOP) este</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Credite: Această aplicație folosește cod open-source de la „Herbert Kociemba” (autorul algoritmului în două faze Kociemba) și „Matt Colbourne”). Contribuțiile lor au îmbunătățit semnificativ eficiența rezolvării cuburilor. Mulțumiri speciale pentru munca lor.</value>
   </data>
 </root>

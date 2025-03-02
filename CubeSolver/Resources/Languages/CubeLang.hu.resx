@@ -541,7 +541,7 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
     <value>Tesztelt megoldások:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Átlagos fordulatok száma a kocka megoldásához:</value>
+    <value>Az átlagos fordulatok száma a kocka 'Kociemba' módszerrel történő megoldásához</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Rántsd össze a kockát</value>
@@ -643,9 +643,9 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
     <value>A 2-es szám (pl. U2) azt jelenti, hogy fél fordulatot kell elfordítani (180 fokkal).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>a „Fridrich” (CFOP) módszert használva</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Köszönetnyilvánítás: Ez az alkalmazás „Herbert Kociemba” (a Kociemba kétfázisú algoritmus szerzője) és „Matt Colbourne” nyílt forráskódját használja. Hozzájárulásuk jelentősen javította a kockamegoldás hatékonyságát. Külön köszönet a munkájukért.</value>
   </data>
 </root>

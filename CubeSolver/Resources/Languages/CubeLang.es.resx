@@ -541,7 +541,7 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
     <value>Soluciones probadas:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Número medio de vueltas para resolver el cubo:</value>
+    <value>El número promedio de vueltas para resolver el cubo usando el método 'Kociemba' es</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Revuelve el cubo</value>
@@ -643,9 +643,9 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
     <value>El número 2 (p. ej., U2) significa girar media vuelta (180 grados).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>El método 'Fridrich' (CFOP) es</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Créditos: Esta aplicación usa código fuente abierto de 'Herbert Kociemba' (autor del algoritmo de dos fases de Kociemba) y 'Matt Colbourne'). Sus contribuciones han mejorado significativamente la eficiencia de resolución de cubos. Agradecimientos especiales por su trabajo.</value>
   </data>
 </root>

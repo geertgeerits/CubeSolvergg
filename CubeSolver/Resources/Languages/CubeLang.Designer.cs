@@ -88,7 +88,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to using the Fridrich (CFOP) method is.
+        ///   Looks up a localized string similar to using the &apos;Fridrich&apos; (CFOP) method is.
         /// </summary>
         internal static string AverageTurnsFridrich_Text {
             get {
@@ -97,7 +97,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Average number of turns to solve the cube using the Kociemba method is.
+        ///   Looks up a localized string similar to Average number of turns to solve the cube using the &apos;Kociemba&apos; method is.
         /// </summary>
         internal static string AverageTurnsKociemba_Text {
             get {
@@ -457,7 +457,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Credits: This app uses open-source code from Herbert Kociemba (author of the Kociemba Two-Phase Algorithm) and Matt Colbourne (Megalomatt). Their contributions have significantly improved cube-solving efficiency. Special thanks for their work..
+        ///   Looks up a localized string similar to Credits: This app uses open-source code from &apos;Herbert Kociemba&apos; (author of the Kociemba Two-Phase Algorithm) and &apos;Matt Colbourne&apos;). Their contributions have significantly improved cube-solving efficiency. Special thanks for their work..
         /// </summary>
         internal static string InfoCredits_Text {
             get {

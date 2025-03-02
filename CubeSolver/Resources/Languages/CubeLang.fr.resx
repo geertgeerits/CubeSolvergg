@@ -541,7 +541,7 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
     <value>Solutions testées:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Nombre moyen de tours pour résoudre le cube:</value>
+    <value>Le nombre moyen de tours pour résoudre le cube en utilisant la méthode « Kociemba » est</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Brouiller le cube</value>
@@ -643,9 +643,9 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
     <value>Le chiffre 2 (par exemple, U2) signifie faire un demi-tour (180 degrés).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>en utilisant la méthode « Fridrich » (CFOP) est</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Crédits : Cette application utilise le code open source de « Herbert Kociemba » (auteur de l'algorithme à deux phases de Kociemba) et « Matt Colbourne »). Leurs contributions ont considérablement amélioré l'efficacité de la résolution du cube. Un merci spécial pour leur travail.</value>
   </data>
 </root>

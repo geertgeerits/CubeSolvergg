@@ -541,7 +541,7 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
     <value>Przetestowane rozwiązania:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Średnia liczba tur potrzebnych do ułożenia kostki:</value>
+    <value>Średnia liczba tur do rozwiązania kostki używając metody „Kociemba” to</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Pomieszaj kostkę</value>
@@ -643,9 +643,9 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
     <value>Liczba 2 (np. U2) oznacza obrót o pół obrotu (180 stopni).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>używając metody „Fridrich” (CFOP) to</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Źródła: Ta aplikacja używa kodu open-source od „Herberta Kociemba” (autora algorytmu dwufazowego Kociemba) i „Matta Colbourne'a”). Ich wkład znacząco poprawił wydajność rozwiązywania kostki. Szczególne podziękowania za ich pracę.</value>
   </data>
 </root>

@@ -541,7 +541,7 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
     <value>Geteste oplossingen:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Gemiddeld aantal draaibewegingen om de kubus op te lossen:</value>
+    <value>Gemiddeld aantal beurten om de kubus op te lossen met behulp van de 'Kociemba' methode is</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Gooi de kubus door elkaar</value>
@@ -643,9 +643,9 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
     <value>Het getal 2 (bijv. U2) betekent een halve slag draaien (180 graden).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>met behulp van de Fridrich (CFOP) methode is</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Credits: Deze app gebruikt open-source code van 'Herbert Kociemba' (auteur van het Kociemba Two-Phase Algorithm) en 'Matt Colbourne'). Hun bijdragen hebben de efficiëntie van het oplossen van kubussen aanzienlijk verbeterd. Speciale dank voor hun werk.</value>
   </data>
 </root>

@@ -541,7 +541,7 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
     <value>Testovaná řešení:</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Průměrný počet otočení k vyřešení kostky:</value>
+    <value>Průměrný počet otáček k vyřešení kostky metodou 'Kociemba' je</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Rozdrťte kostku</value>
@@ -643,9 +643,9 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
     <value>Číslo 2 (např. U2) znamená otočení o půl otáčky (180 stupňů).</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value />
+    <value>pomocí metody 'Fridrich' (CFOP)</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value />
+    <value>Kredity: Tato aplikace používá otevřený zdrojový kód od 'Herbert Kociemba' (autor Kociemba dvoufázového algoritmu) a 'Matt Colbourne'). Jejich příspěvky výrazně zlepšily účinnost řešení krychlí. Zvláštní poděkování za jejich práci.</value>
   </data>
 </root>
