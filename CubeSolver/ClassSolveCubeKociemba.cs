@@ -225,62 +225,61 @@ namespace CubeSolver
         /// <returns></returns>
         private static bool CheckIfTableExists()
         {
-            if (!File.Exists(Globals.cTablePath + "twist"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "twist")))
+            {
+                return false;
+            }
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "flip")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "flip"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "FRtoBR")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "FRtoBR"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "URFtoDLF")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "URFtoDLF"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "URtoDF")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "URtoDF"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "URtoUL")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "URtoUL"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "UBtoDF")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "UBtoDF"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "MergeURtoULandUBtoDF")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "MergeURtoULandUBtoDF"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "Slice_URFtoDLF_Parity_Prun")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "Slice_URFtoDLF_Parity_Prun"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "Slice_URtoDF_Parity_Prun")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "Slice_URtoDF_Parity_Prun"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "Slice_Twist_Prun")))
             {
                 return false;
             }
 
-            if (!File.Exists(Globals.cTablePath + "Slice_Twist_Prun"))
-            {
-                return false;
-            }
-
-            if (!File.Exists(Globals.cTablePath + "Slice_Flip_Prun"))
+            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "Slice_Flip_Prun")))
             {
                 return false;
             }
