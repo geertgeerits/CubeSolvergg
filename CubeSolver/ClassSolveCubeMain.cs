@@ -536,6 +536,12 @@ namespace CubeSolver
             }
 
             // Try to solve the cube
+            // Solve the cube (Kociemba solution) (takes a long time +10 minutes)
+            //if (cSolution == "Kociemba")
+            //{
+            //    return await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();
+            //}
+
             // Solve the cube (CFOP solution)
             if (cSolution == "CFOP")
             {

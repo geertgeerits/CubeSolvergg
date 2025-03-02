@@ -10,7 +10,7 @@
  * Dependencies : None
  * Thanks to ...: Gerald Versluis - https://www.youtube.com/@jfversluis
  *                Herbert Kociemba - https://kociemba.org/cube.htm
- *                Matt Colbourne Megalomatt - https://github.com/Megalomatt/Kociemba */
+ *                Matt Colbourne - https://github.com/Megalomatt/Kociemba */
 
 using System.Diagnostics;
 using Microsoft.Maui.Controls.Shapes;
@@ -338,83 +338,31 @@ namespace CubeSolver
                 Array.Copy(Globals.aPieces, Globals.aStartPieces, 54);
 
                 // Solve the cube
-                // Herbert Kociemba solution
-                // Turn the cube so that the white center piece is on the up face (if not the cube can not be solved)
-                string cTurnWhite = ClassCubeKociemba.TurnWhiteCenterPiece();
-                if (!string.IsNullOrEmpty(cTurnWhite))
-                {
-                    await ClassCubeTurns.TurnCubeLayersAsync(cTurnWhite);
-                }
+                bSolved = await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();                     // Kociemba solution
+                //bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Kociemba");   // Kociemba solution (takes a long time +10 minutes)
 
-                // Turn the cube so that the red center piece is on the front face (if not the cube can not be solved)
-                string cTurnRed = ClassCubeKociemba.TurnRedCenterPiece();
-                if (!string.IsNullOrEmpty(cTurnRed))
-                {
-                    await ClassCubeTurns.TurnCubeLayersAsync(cTurnRed);
-                }
-
-                // Search for the solution to solve the cube
-                string solution = ClassCubeKociemba.SolveCubeKociemba();
-
-                // Error checking
-                if (solution.Contains("Error") || string.IsNullOrEmpty(solution))
-                {
-                    bSolved = false;
-                }
-                else
-                {
-                    bSolved = true;
-
-                    // Restore the cube in it's original position
-                    if (!string.IsNullOrEmpty(cTurnWhite) || !string.IsNullOrEmpty(cTurnRed))
-                    {
-                        Array.Copy(Globals.aStartPieces, Globals.aPieces, 54);
-                    }
-
-                    // Add the white and red turns to the list with the cube turns
-                    if (!string.IsNullOrEmpty(cTurnWhite))
-                    {
-                        Globals.lCubeTurns.Add(cTurnWhite);
-                    }
-
-                    if (!string.IsNullOrEmpty(cTurnRed))
-                    {
-                        Globals.lCubeTurns.Add(cTurnRed);
-                    }
-
-                    // Split the solution into separate turns and add them to the list with the cube turns
-                    ClassCubeKociemba.SplitStringToTurns(solution);
-
-                    // Clean the list with the cube turns by replacing or removing turns (is not nessesary ?)
-                    //ClassCleanCubeTurns.CleanListCubeTurns(Globals.lCubeTurns, true);
-
-                    SetCubeColorsInArrays();
-                    GetCubeColorsFromArrays();
-                }
-
-                // CFOP and beginners solutions
                 if (!bSolved)
                 {
-                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
+                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");     // CFOP solution
                 }
 
                 if (!bSolved)
                 {
-                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Basic");
+                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Basic");    // Beginners solution
                 }
 
                 if (!bSolved)
                 {
-                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Daisy");
+                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Daisy");    // Beginners solution
                 }
 
                 if (!bSolved)
                 {
-                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");
+                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");    // Beginners solution
                 }
 
-                // For testing comment out the lines 297-298 and 342-415 (and change the line 442 to bTestSolveCube = true)
-                // and uncomment one of the lines 422-426/427 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 296-297 and 341-362 (and change the line 389 to bTestSolveCube = true)
+                // and uncomment one of the lines 369-373/374 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -423,7 +371,7 @@ namespace CubeSolver
                 //bSolved = await ClassSolveCubeBasic.SolveTheCubeBasicAsync();     // For testing Basic solution
                 //bSolved = await ClassSolveCubeDaisy.SolveTheCubeDaisyAsync();     // For testing Daisy solution
                 //bSolved = await ClassSolveCubeCross.SolveTheCubeCrossAsync();     // For testing Cross solution
-                //ClassCleanCubeTurns.CleanListCubeTurns(Globals.lCubeTurns, true);   // For testing the clean list cube turns
+                //ClassCleanCubeTurns.CleanListCubeTurns(Globals.lCubeTurns, true); // For testing the clean list cube turns
 
                 // Restore the start colors of the cube from array aStartPieces[]
                 Array.Copy(Globals.aStartPieces, Globals.aPieces, 54);

@@ -22,7 +22,7 @@ namespace CubeSolver
         public static bool bLicense;
         public static int nTestedSolutions;
         public static bool bSolveSolution2;
-        public static string cTablePath = FileSystem.Current.AppDataDirectory + "\\Assets\\Kociemba\\Tables\\";
+        public static string cTablePath = FileSystem.Current.AppDataDirectory + "\\KociembaTables\\";
 
         public static string[] aFaceColors = new string[7];
         public static string[] aPieces = new string[54];

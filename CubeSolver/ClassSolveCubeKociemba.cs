@@ -3,14 +3,28 @@ using Kociemba;
 
 namespace CubeSolver
 {
-    internal sealed class ClassCubeKociemba
+    internal sealed class ClassSolveCubeKociemba
     {
         /// <summary>
         /// Solve the cube using Kociemba's algorithm
         /// </summary>
         /// <returns></returns>
-        public static string SolveCubeKociemba()
+        public static async Task<bool> SolveTheCubeKociembaAsync()
         {
+            // Turn the cube so that the white center piece is on the up face (if not the cube can not be solved)
+            string cTurnWhite = TurnWhiteCenterPiece();
+            if (!string.IsNullOrEmpty(cTurnWhite))
+            {
+                await ClassCubeTurns.TurnCubeLayersAsync(cTurnWhite);
+            }
+
+            // Turn the cube so that the red center piece is on the front face (if not the cube can not be solved)
+            string cTurnRed = TurnRedCenterPiece();
+            if (!string.IsNullOrEmpty(cTurnRed))
+            {
+                await ClassCubeTurns.TurnCubeLayersAsync(cTurnRed);
+            }
+
             // Convert the cube numbering and colors from CFOP to Kociemba numbering and colors
             string searchString = ConvertCubeToKociembaCube();
             Debug.WriteLine("searchString: " + searchString);
@@ -30,13 +44,45 @@ namespace CubeSolver
             }
             Debug.WriteLine("Search.solution: " + solution);
 
-            return solution;
+
+            // Error checking
+            if (solution.Contains("Error") || string.IsNullOrEmpty(solution))
+            {
+                return false;
+            }
+            else
+            {
+                // Restore the cube in it's original position
+                if (!string.IsNullOrEmpty(cTurnWhite) || !string.IsNullOrEmpty(cTurnRed))
+                {
+                    Array.Copy(Globals.aStartPieces, Globals.aPieces, 54);
+                }
+
+                // Add the white and red turns to the list with the cube turns
+                if (!string.IsNullOrEmpty(cTurnWhite))
+                {
+                    Globals.lCubeTurns.Add(cTurnWhite);
+                }
+
+                if (!string.IsNullOrEmpty(cTurnRed))
+                {
+                    Globals.lCubeTurns.Add(cTurnRed);
+                }
+
+                // Split the solution into separate turns and add them to the list with the cube turns
+                SplitStringToTurns(solution);
+
+                // Clean the list with the cube turns by replacing or removing turns (is not nessesary ?)
+                //ClassCleanCubeTurns.CleanListCubeTurns(Globals.lCubeTurns, true);
+            }
+
+            return true;
         }
 
         /// <summary>
         /// Convert the cube numbering and colors from CFOP to Kociemba numbering and colors
         /// </summary>
-        public static string ConvertCubeToKociembaCube()
+        private static string ConvertCubeToKociembaCube()
         {
             // Variables
             int nRow;
@@ -166,7 +212,6 @@ namespace CubeSolver
 
                 cResult = cResult + Globals.aPieces[nRow];
             }
-            Debug.WriteLine("cResult: " + cResult);
 
             // Restore the tempory array of the cube to array aPieces[]
             Array.Copy(Globals.aPiecesTemp, Globals.aPieces, 54);
@@ -178,7 +223,7 @@ namespace CubeSolver
         /// Check if the tables exists
         /// </summary>
         /// <returns></returns>
-        public static bool CheckIfTableExists()
+        private static bool CheckIfTableExists()
         {
             if (!File.Exists(Globals.cTablePath + "twist"))
             {
@@ -247,7 +292,7 @@ namespace CubeSolver
         /// Turn the cube so that the white center piece is on the up face
         /// </summary>
         /// <returns></returns>
-        public static string TurnWhiteCenterPiece()
+        private static string TurnWhiteCenterPiece()
         {
             string cTurnWhite = string.Empty;
 
@@ -282,7 +327,7 @@ namespace CubeSolver
         /// Turn the cube so that the red center piece is on the front face
         /// </summary>
         /// <returns></returns>
-        public static string TurnRedCenterPiece()
+        private static string TurnRedCenterPiece()
         {
             string cTurnRed = string.Empty;
 
@@ -310,7 +355,7 @@ namespace CubeSolver
         /// </summary>
         /// <param name="cTurn"></param>
         /// <returns></returns>
-        public static void SplitStringToTurns(string cTurn)
+        private static void SplitStringToTurns(string cTurn)
         {
             // Remove leading and trailing whitespace
             cTurn = cTurn.Trim();
