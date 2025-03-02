@@ -32,6 +32,8 @@ namespace CubeSolver
         private bool bTestSolveCube;
         private bool bTurnIsBackwards;
         private bool bTurnContinuously;
+        private bool bKociembaSolution = true;
+        private bool bKociembaFirstSolution = true;
 
         //// Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
@@ -309,6 +311,12 @@ namespace CubeSolver
             btnTurnContinuously.IsEnabled = false;
             lblCubeInsideView.IsVisible = false;
 
+            if (bKociembaSolution && bKociembaFirstSolution)
+            {
+                lblCubeOutsideView.Text = CubeLang.WaitFirstGameLaunch_Text;
+                bKociembaFirstSolution = false;
+            }
+
             // Settings
             bColorDrop = false;
             bSolvingCube = true;
@@ -367,8 +375,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");    // Beginners solution
                 }
 
-                // For testing comment out the lines 296-297 and 341-368 (and change the line 395 to bTestSolveCube = true)
-                // and uncomment one of the lines 375-379/380 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 298-299 and 349-376 (and change the line 403 to bTestSolveCube = true)
+                // and uncomment one of the lines 383-387/388 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -549,6 +557,7 @@ namespace CubeSolver
             lblNumberTurns.Text = "";
             lblExplainTurnCube.Text = "";
             lblExplainTurnCube.IsVisible = false;
+            lblCubeOutsideView.Text = CubeLang.CubeOutsideView_Text;
             lblCubeOutsideView.IsVisible = true;
             btnGoOneTurnBackward.IsVisible = false;
             btnGoOneTurnForward.IsVisible = false;

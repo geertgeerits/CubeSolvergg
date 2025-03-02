@@ -648,4 +648,7 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Źródła: Ta aplikacja używa kodu open-source od „Herbert Kociemba” (autora algorytmu dwufazowego Kociemba) i „Matt Colbourne”. Ich wkład znacząco poprawił wydajność rozwiązywania kostki. Szczególne podziękowania za ich pracę.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Pierwsze uruchomienie gry może potrwać do minuty.</value>
+  </data>
 </root>

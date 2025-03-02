@@ -648,4 +648,7 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Tack: Denna app använder öppen källkod från 'Herbert Kociemba' (författare till Kociemba Two-Phase Algorithm) och 'Matt Colbourne'. Deras bidrag har avsevärt förbättrat kublösningseffektiviteten. Särskilt tack för deras arbete.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Första spelstarten kan ta upp till en minut.</value>
+  </data>
 </root>

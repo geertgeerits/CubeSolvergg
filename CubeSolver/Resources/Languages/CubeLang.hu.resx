@@ -648,4 +648,7 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Köszönetnyilvánítás: Ez az alkalmazás „Herbert Kociemba” (a Kociemba kétfázisú algoritmus szerzője) és „Matt Colbourne” nyílt forráskódját használja. Hozzájárulásuk jelentősen javította a kockamegoldás hatékonyságát. Külön köszönet a munkájukért.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>A játék első indítása akár egy percig is eltarthat.</value>
+  </data>
 </root>

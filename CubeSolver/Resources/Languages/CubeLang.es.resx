@@ -648,4 +648,7 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Créditos: Esta aplicación usa código fuente abierto de 'Herbert Kociemba' (autor del algoritmo de dos fases de Kociemba) y 'Matt Colbourne'. Sus contribuciones han mejorado significativamente la eficiencia de resolución de cubos. Agradecimientos especiales por su trabajo.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>El primer lanzamiento del juego puede tardar hasta un minuto.</value>
+  </data>
 </root>

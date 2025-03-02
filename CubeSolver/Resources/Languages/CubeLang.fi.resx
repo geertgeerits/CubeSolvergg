@@ -648,4 +648,7 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Tekijät: Tämä sovellus käyttää avoimen lähdekoodin 'Herbert Kociemba' (Kociemba Two-Phase Algorithmin kirjoittaja) ja 'Matt Colbourne'. Heidän panoksensa ovat merkittävästi parantaneet kuution ratkaisun tehokkuutta. Erityiset kiitokset heidän työstään.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Pelin ensimmäinen käynnistys voi kestää jopa minuutin.</value>
+  </data>
 </root>

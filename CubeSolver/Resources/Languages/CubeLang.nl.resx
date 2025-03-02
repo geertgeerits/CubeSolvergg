@@ -648,4 +648,7 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credits: Deze app gebruikt open-source code van 'Herbert Kociemba' (auteur van het Kociemba Two-Phase Algorithm) en 'Matt Colbourne'. Hun bijdragen hebben de efficiëntie van het oplossen van kubussen aanzienlijk verbeterd. Speciale dank voor hun werk.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Het starten van de eerste game kan een minuut duren.</value>
+  </data>
 </root>

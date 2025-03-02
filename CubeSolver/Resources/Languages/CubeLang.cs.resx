@@ -648,4 +648,7 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Kredity: Tato aplikace používá otevřený zdrojový kód od 'Herbert Kociemba' (autor Kociemba dvoufázového algoritmu) a 'Matt Colbourne'. Jejich příspěvky výrazně zlepšily účinnost řešení krychlí. Zvláštní poděkování za jejich práci.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>První spuštění hry může trvat až minutu.</value>
+  </data>
 </root>

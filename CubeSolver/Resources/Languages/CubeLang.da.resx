@@ -648,4 +648,7 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credits: Denne app bruger open source-kode fra 'Herbert Kociemba' (forfatter af Kociemba Two-Phase Algorithm) og 'Matt Colbourne'. Deres bidrag har forbedret kube-løsningseffektiviteten markant. Særlig tak for deres arbejde.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Første spilstart kan tage op til et minut.</value>
+  </data>
 </root>

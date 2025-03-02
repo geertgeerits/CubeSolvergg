@@ -648,4 +648,7 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credits: Diese App verwendet Open-Source-Code von „Herbert Kociemba“ (Autor des Kociemba-Zweiphasenalgorithmus) und „Matt Colbourne“. Ihre Beiträge haben die Effizienz beim Würfellösen deutlich verbessert. Besonderer Dank für ihre Arbeit.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Der erste Spielstart kann bis zu einer Minute dauern.</value>
+  </data>
 </root>

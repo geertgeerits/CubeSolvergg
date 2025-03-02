@@ -648,4 +648,7 @@ Possible cause is incorrect transfer of colors to this cube.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credits: This app uses open-source code from 'Herbert Kociemba' (author of the Kociemba Two-Phase Algorithm) and 'Matt Colbourne'. Their contributions have significantly improved cube-solving efficiency. Special thanks for their work.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>First game launch may take up to a minute.</value>
+  </data>
 </root>

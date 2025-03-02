@@ -648,4 +648,7 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credite: Această aplicație folosește cod open-source de la „Herbert Kociemba” (autorul algoritmului în două faze Kociemba) și „Matt Colbourne”. Contribuțiile lor au îmbunătățit semnificativ eficiența rezolvării cuburilor. Mulțumiri speciale pentru munca lor.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Lansarea primului joc poate dura până la un minut.</value>
+  </data>
 </root>
