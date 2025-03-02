@@ -457,7 +457,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Credits: This app uses open-source code from &apos;Herbert Kociemba&apos; (author of the Kociemba Two-Phase Algorithm) and &apos;Matt Colbourne&apos;). Their contributions have significantly improved cube-solving efficiency. Special thanks for their work..
+        ///   Looks up a localized string similar to Credits: This app uses open-source code from &apos;Herbert Kociemba&apos; (author of the Kociemba Two-Phase Algorithm) and &apos;Matt Colbourne&apos;. Their contributions have significantly improved cube-solving efficiency. Special thanks for their work..
         /// </summary>
         internal static string InfoCredits_Text {
             get {

@@ -646,6 +646,6 @@ Possible cause is incorrect transfer of colors to this cube.</value>
     <value>using the 'Fridrich' (CFOP) method is</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value>Credits: This app uses open-source code from 'Herbert Kociemba' (author of the Kociemba Two-Phase Algorithm) and 'Matt Colbourne'). Their contributions have significantly improved cube-solving efficiency. Special thanks for their work.</value>
+    <value>Credits: This app uses open-source code from 'Herbert Kociemba' (author of the Kociemba Two-Phase Algorithm) and 'Matt Colbourne'. Their contributions have significantly improved cube-solving efficiency. Special thanks for their work.</value>
   </data>
 </root>

@@ -646,6 +646,6 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
     <value>ved å bruke 'Fridrich' (CFOP)-metoden er</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value>Kreditt: Denne appen bruker åpen kildekode fra 'Herbert Kociemba' (forfatter av Kociemba Two-Phase Algorithm) og 'Matt Colbourne'). Deres bidrag har forbedret kubeløsningseffektiviteten betydelig. Spesiell takk for deres arbeid.</value>
+    <value>Kreditt: Denne appen bruker åpen kildekode fra 'Herbert Kociemba' (forfatter av Kociemba Two-Phase Algorithm) og 'Matt Colbourne'. Deres bidrag har forbedret kubeløsningseffektiviteten betydelig. Spesiell takk for deres arbeid.</value>
   </data>
 </root>

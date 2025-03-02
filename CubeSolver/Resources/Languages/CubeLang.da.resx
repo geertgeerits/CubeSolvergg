@@ -646,6 +646,6 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
     <value>ved hjælp af 'Fridrich' (CFOP) metoden er</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value>Credits: Denne app bruger open source-kode fra 'Herbert Kociemba' (forfatter af Kociemba Two-Phase Algorithm) og 'Matt Colbourne'). Deres bidrag har forbedret kube-løsningseffektiviteten markant. Særlig tak for deres arbejde.</value>
+    <value>Credits: Denne app bruger open source-kode fra 'Herbert Kociemba' (forfatter af Kociemba Two-Phase Algorithm) og 'Matt Colbourne'. Deres bidrag har forbedret kube-løsningseffektiviteten markant. Særlig tak for deres arbejde.</value>
   </data>
 </root>

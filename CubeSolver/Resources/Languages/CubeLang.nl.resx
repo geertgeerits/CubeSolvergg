@@ -646,6 +646,6 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
     <value>met behulp van de Fridrich (CFOP) methode is</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value>Credits: Deze app gebruikt open-source code van 'Herbert Kociemba' (auteur van het Kociemba Two-Phase Algorithm) en 'Matt Colbourne'). Hun bijdragen hebben de efficiëntie van het oplossen van kubussen aanzienlijk verbeterd. Speciale dank voor hun werk.</value>
+    <value>Credits: Deze app gebruikt open-source code van 'Herbert Kociemba' (auteur van het Kociemba Two-Phase Algorithm) en 'Matt Colbourne'. Hun bijdragen hebben de efficiëntie van het oplossen van kubussen aanzienlijk verbeterd. Speciale dank voor hun werk.</value>
   </data>
 </root>

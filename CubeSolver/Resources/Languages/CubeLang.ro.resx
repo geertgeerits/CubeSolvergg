@@ -646,6 +646,6 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
     <value>folosind metoda „Fridrich” (CFOP) este</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value>Credite: Această aplicație folosește cod open-source de la „Herbert Kociemba” (autorul algoritmului în două faze Kociemba) și „Matt Colbourne”). Contribuțiile lor au îmbunătățit semnificativ eficiența rezolvării cuburilor. Mulțumiri speciale pentru munca lor.</value>
+    <value>Credite: Această aplicație folosește cod open-source de la „Herbert Kociemba” (autorul algoritmului în două faze Kociemba) și „Matt Colbourne”. Contribuțiile lor au îmbunătățit semnificativ eficiența rezolvării cuburilor. Mulțumiri speciale pentru munca lor.</value>
   </data>
 </root>
