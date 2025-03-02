@@ -360,20 +360,20 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");     // CFOP solution
                 }
 
-                if (!bSolved)
-                {
-                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Basic");    // Beginners solution
-                }
+                //if (!bSolved)
+                //{
+                //    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Basic");    // Beginners solution
+                //}
 
-                if (!bSolved)
-                {
-                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Daisy");    // Beginners solution
-                }
+                //if (!bSolved)
+                //{
+                //    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Daisy");    // Beginners solution
+                //}
 
-                if (!bSolved)
-                {
-                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");    // Beginners solution
-                }
+                //if (!bSolved)
+                //{
+                //    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");    // Beginners solution
+                //}
 
                 // For testing comment out the lines 298-299 and 349-376 (and change the line 403 to bTestSolveCube = true)
                 // and uncomment one of the lines 383-387/388 to test one of the solutions to solve the cube.

@@ -59,9 +59,12 @@
 
 	<ItemGroup>
 	  <Compile Remove="ClassProgramLogging.cs" />
+	  <Compile Remove="ClassSolveCubeBasic.cs" />
 	  <Compile Remove="ClassSolveCubeCFOPSpan.cs" />
 	  <Compile Remove="ClassSolveCubeCFOP_NotUsed.cs" />
 	  <Compile Remove="ClassSolveCubeCFOP_Old.cs" />
+	  <Compile Remove="ClassSolveCubeCross.cs" />
+	  <Compile Remove="ClassSolveCubeDaisy.cs" />
 	  <Compile Remove="ClassTestCubeTurns.cs" />
 	  <Compile Remove="PageWebsite.xaml.cs" />
 	</ItemGroup>

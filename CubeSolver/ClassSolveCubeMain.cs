@@ -548,23 +548,23 @@ namespace CubeSolver
                 return await ClassSolveCubeCFOP.SolveTheCubeCFOPAsync();
             }
 
-            // Solve the cube (Basic-80 solution)
-            if (cSolution == "Basic")
-            {
-                return await ClassSolveCubeBasic.SolveTheCubeBasicAsync();
-            }
+            //// Solve the cube (Basic-80 solution)
+            //if (cSolution == "Basic")
+            //{
+            //    return await ClassSolveCubeBasic.SolveTheCubeBasicAsync();
+            //}
 
-            // Solve the cube (Daisy solution)
-            if (cSolution == "Daisy")
-            {
-                return await ClassSolveCubeDaisy.SolveTheCubeDaisyAsync();
-            }
+            //// Solve the cube (Daisy solution)
+            //if (cSolution == "Daisy")
+            //{
+            //    return await ClassSolveCubeDaisy.SolveTheCubeDaisyAsync();
+            //}
 
-            // Solve the cube (Cross solution)
-            if (cSolution == "Cross")
-            {
-                return await ClassSolveCubeCross.SolveTheCubeCrossAsync();
-            }
+            //// Solve the cube (Cross solution)
+            //if (cSolution == "Cross")
+            //{
+            //    return await ClassSolveCubeCross.SolveTheCubeCrossAsync();
+            //}
 
             return false;
         }
