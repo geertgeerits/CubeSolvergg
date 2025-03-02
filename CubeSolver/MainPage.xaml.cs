@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.36
- * Date ........: 2025-03-01 (YYYY-MM-DD)
+ * Date ........: 2025-03-02 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -14,7 +14,6 @@
 
 using System.Diagnostics;
 using Microsoft.Maui.Controls.Shapes;
-using Kociemba;
 
 // Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the Button is not updaded
 #if IOS

@@ -645,4 +645,7 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
     <value />
   </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

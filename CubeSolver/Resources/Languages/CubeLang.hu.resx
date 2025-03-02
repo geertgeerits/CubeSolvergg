@@ -645,4 +645,7 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
     <value />
   </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

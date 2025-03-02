@@ -645,4 +645,7 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
     <value />
   </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

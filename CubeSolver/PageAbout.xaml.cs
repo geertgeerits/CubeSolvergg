@@ -24,8 +24,8 @@ namespace CubeSolver
             lblWebsite.Text = $"{CubeLang.Website_Text}: ../cube-solver";
             lblPrivacyPolicy.Text = $"\n{CubeLang.PrivacyPolicyTitle_Text} {CubeLang.PrivacyPolicy_Text}";
             lblLicense.Text = $"\n{CubeLang.LicenseTitle_Text}: {CubeLang.License_Text}";
-            lblHelpOptionsSolveCubeKociemba.Text = $"{CubeLang.AverageTurnsKociemba_Text} 22.";
-            lblHelpOptionsSolveCubeFridrich.Text = $"{CubeLang.AverageTurnsFridrich_Text} 60.";
+            lblCredits.Text = $"\n{CubeLang.InfoCredits_Text}";
+            lblHelpOptionsSolveCube.Text = $"\n{CubeLang.HelpOptionsSolveCube_Text}\n{CubeLang.AverageTurnsKociemba_Text} 22, {CubeLang.AverageTurnsFridrich_Text} 60.";
             lblHelp.Text = $"\n{CubeLang.HelpCube_Text}";
             lblExplanation.Text = $"\n{CubeLang.InfoExplanation_Text}";
         }

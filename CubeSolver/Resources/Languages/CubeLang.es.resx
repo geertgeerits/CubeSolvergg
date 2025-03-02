@@ -645,4 +645,7 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
     <value />
   </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

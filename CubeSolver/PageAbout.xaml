@@ -93,17 +93,12 @@
                         </Label>
 
                         <Label
-                            Style="{StaticResource labelStyleInfo}"
-                            Text="{x:Static resx:CubeLang.HelpSolveCube_Text}">
-                        </Label>
-
-                        <Label
-                            x:Name="lblHelpOptionsSolveCubeKociemba"
+                            x:Name="lblCredits"
                             Style="{StaticResource labelStyleInfo}">
                         </Label>
 
                         <Label
-                            x:Name="lblHelpOptionsSolveCubeFridrich"
+                            x:Name="lblHelpOptionsSolveCube"
                             Style="{StaticResource labelStyleInfo}">
                         </Label>
 
@@ -591,7 +586,7 @@
                                 Text="{x:Static resx:CubeLang.NotationTurn_Number_Text}">
                             </Label>
                         </Grid>
-                        
+
                         <Label
                             x:Name="lblExplanation"
                             Style="{StaticResource labelStyleInfo}">
