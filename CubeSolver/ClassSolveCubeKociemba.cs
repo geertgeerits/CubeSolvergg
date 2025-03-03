@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using Kociemba;
 
 namespace CubeSolver
 {
@@ -30,8 +29,8 @@ namespace CubeSolver
             Debug.WriteLine("searchString: " + searchString);
 
             // Search for the solution to solve the cube
-            string info = "";
-            string solution = "";
+            string info;
+            string solution;
 
             if (CheckIfTableExists())
             {
@@ -209,7 +208,7 @@ namespace CubeSolver
                     Globals.aPieces[nRow] = "B";
                 }
 
-                cResult = cResult + Globals.aPieces[nRow];
+                cResult += Globals.aPieces[nRow];
             }
 
             // Restore the tempory array of the cube to array aPieces[]
@@ -224,61 +223,61 @@ namespace CubeSolver
         /// <returns></returns>
         private static bool CheckIfTableExists()
         {
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "twist")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "twist")))
             {
                 return false;
             }
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "flip")))
-            {
-                return false;
-            }
-
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "FRtoBR")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "flip")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "URFtoDLF")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "FRtoBR")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "URtoDF")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "URFtoDLF")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "URtoUL")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "URtoDF")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "UBtoDF")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "URtoUL")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "MergeURtoULandUBtoDF")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "UBtoDF")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "Slice_URFtoDLF_Parity_Prun")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "MergeURtoULandUBtoDF")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "Slice_URtoDF_Parity_Prun")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URFtoDLF_Parity_Prun")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "Slice_Twist_Prun")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URtoDF_Parity_Prun")))
             {
                 return false;
             }
 
-            if (!File.Exists(Path.Combine(FileSystem.Current.CacheDirectory, "Slice_Flip_Prun")))
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Twist_Prun")))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Flip_Prun")))
             {
                 return false;
             }

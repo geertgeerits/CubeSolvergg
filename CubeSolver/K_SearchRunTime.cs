@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Kociemba
+﻿namespace CubeSolver
 {
     public class SearchRunTime
     {
@@ -158,7 +156,7 @@ namespace Kociemba
             {
                 for (int i = 0; i < 54; i++)
                 {
-                    count[(int)CubeColor.Parse(typeof(CubeColor), facelets.Substring(i, 1))]++;
+                    count[(int)Enum.Parse<CubeColor>(facelets.AsSpan(i, 1))]++;
                 }
             }
             catch (Exception)
@@ -173,14 +171,14 @@ namespace Kociemba
                 }
             }
 
-            FaceCube fc = new FaceCube(facelets);
+            FaceCube fc = new(facelets);
             CubieCube cc = fc.toCubieCube();
             if ((s = cc.verify()) != 0)
             {
                 return "Error " + Math.Abs(s);
             }
             // +++++++++++++++++++++++ initialization +++++++++++++++++++++++++++++++++
-            CoordCubeBuildTables c = new CoordCubeBuildTables(cc, buildTables);
+            CoordCubeBuildTables c = new(cc, buildTables);
             //return "lol";
 
             po[0] = 0;

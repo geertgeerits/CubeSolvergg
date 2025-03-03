@@ -351,13 +351,13 @@ namespace CubeSolver
                 if (Globals.bKociembaSolution)
                 {
                     cMethod = "Kociemba";
-
                     bSolved = await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();
+                    
+                    bKociembaFirstSolution = false;
 
                     if (bSolved)
                     {
                         Globals.nTestedSolutions = 1;
-                        bKociembaFirstSolution = false;
                     }
                 }
 

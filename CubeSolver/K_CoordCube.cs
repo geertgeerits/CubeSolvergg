@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Kociemba
+﻿namespace CubeSolver
 {
     internal class CoordCube
     {
@@ -84,11 +82,11 @@ namespace Kociemba
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Parity of the corner permutation. This is the same as the parity for the edge permutation of a valid cube.
         // parity has values 0 and 1
-        internal static short[][] parityMove = new short[][]
-        {
-        new short[] {1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1},
-        new short[] {0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0}
-        };
+        internal static short[][] parityMove =
+        [
+        [1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1],
+        [0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+        ];
 
 
         // ***********************************Phase 1 and 2 movetable********************************************************

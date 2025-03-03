@@ -1,4 +1,4 @@
-﻿namespace Kociemba
+﻿namespace CubeSolver
 {
     /**
      * <pre>

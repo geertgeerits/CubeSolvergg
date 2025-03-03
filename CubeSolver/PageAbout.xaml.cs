@@ -48,7 +48,7 @@ namespace CubeSolver
                     Subject = subject,
                     Body = body,
                     BodyFormat = EmailBodyFormat.PlainText,
-                    To = new List<string>(recipients)
+                    To = [.. recipients]
                 };
 
                 try

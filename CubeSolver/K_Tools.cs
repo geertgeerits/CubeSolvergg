@@ -1,10 +1,6 @@
-﻿using CubeSolver;
-using System;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Text.Json;
+﻿using System.Text.Json;
 
-namespace Kociemba
+namespace CubeSolver
 {
     public class Tools
     {
@@ -36,7 +32,7 @@ namespace Kociemba
             {
                 for (int i = 0; i < 54; i++)
                 {
-                    count[(int)CubeColor.Parse(typeof(CubeColor), i.ToString())]++;
+                    count[(int)Enum.Parse<CubeColor>(i.ToString())]++;
                 }
             }
             catch (Exception)
@@ -52,7 +48,7 @@ namespace Kociemba
                 }
             }
 
-            FaceCube fc = new FaceCube(s);
+            FaceCube fc = new(s);
             CubieCube cc = fc.toCubieCube();
 
             return cc.verify();
@@ -63,8 +59,8 @@ namespace Kociemba
         /// <returns> A random cube in the string representation. Each cube of the cube space has the same probability. </returns>
         public static string randomCube()
         {
-            CubieCube cc = new CubieCube();
-            Random gen = new Random();
+            CubieCube cc = new();
+            Random gen = new();
             cc.setFlip((short)gen.Next(CoordCube.N_FLIP));
             cc.setTwist((short)gen.Next(CoordCube.N_TWIST));
             do
@@ -78,8 +74,8 @@ namespace Kociemba
 
         //public static void SerializeTable(string filename, short[,] array)
         //{
-        //    EnsureFolder(FileSystem.Current.CacheDirectory);
-        //    using (Stream s = File.Open(Path.Combine(FileSystem.Current.CacheDirectory, filename), FileMode.Create))
+        //    EnsureFolder(Globals.cPathTables);
+        //    using (Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Create))
         //    {
         //        JsonSerializer.Serialize(s, array);
         //    }
@@ -87,47 +83,41 @@ namespace Kociemba
 
         public static void SerializeTable(string filename, short[,] array)
         {
-            EnsureFolder(FileSystem.Current.CacheDirectory);
-            using (Stream s = File.Open(Path.Combine(FileSystem.Current.CacheDirectory, filename), FileMode.Create))
+            EnsureFolder(Globals.cPathTables);
+            using Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Create);
+            var jaggedArray = new short[array.GetLength(0)][];
+            for (int i = 0; i < array.GetLength(0); i++)
             {
-                var jaggedArray = new short[array.GetLength(0)][];
-                for (int i = 0; i < array.GetLength(0); i++)
+                jaggedArray[i] = new short[array.GetLength(1)];
+                for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    jaggedArray[i] = new short[array.GetLength(1)];
-                    for (int j = 0; j < array.GetLength(1); j++)
-                    {
-                        jaggedArray[i][j] = array[i, j];
-                    }
+                    jaggedArray[i][j] = array[i, j];
                 }
-                JsonSerializer.Serialize(s, jaggedArray);
             }
+            JsonSerializer.Serialize(s, jaggedArray);
         }
 
         public static short[,] DeserializeTable(string filename)
         {
-            EnsureFolder(FileSystem.Current.CacheDirectory);
-            using (Stream s = File.Open(Path.Combine(FileSystem.Current.CacheDirectory, filename), FileMode.Open))
-            {
-                return JsonSerializer.Deserialize<short[,]>(s);
-            }
+            EnsureFolder(Globals.cPathTables);
+            using Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Open);
+            var result = JsonSerializer.Deserialize<short[,]>(s) ?? throw new InvalidOperationException("Deserialization returned null.");
+            return result;
         }
 
         public static void SerializeSbyteArray(string filename, sbyte[] array)
         {
-            EnsureFolder(FileSystem.Current.CacheDirectory);
-            using (Stream s = File.Open(Path.Combine(FileSystem.Current.CacheDirectory, filename), FileMode.Create))
-            {
-                JsonSerializer.Serialize(s, array);
-            }
+            EnsureFolder(Globals.cPathTables);
+            using Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Create);
+            JsonSerializer.Serialize(s, array);
         }
 
         public static sbyte[] DeserializeSbyteArray(string filename)
         {
-            EnsureFolder(FileSystem.Current.CacheDirectory);
-            using (Stream s = File.Open(Path.Combine(FileSystem.Current.CacheDirectory, filename), FileMode.Open))
-            {
-                return JsonSerializer.Deserialize<sbyte[]>(s);
-            }
+            EnsureFolder(Globals.cPathTables);
+            using Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Open);
+            var result = JsonSerializer.Deserialize<sbyte[]>(s) ?? throw new InvalidOperationException("Deserialization returned null.");
+            return result;
         }
 
         static void EnsureFolder(string path)

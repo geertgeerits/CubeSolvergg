@@ -1,6 +1,6 @@
 ﻿//This Version of CoordCube Builds The Tables
 
-namespace Kociemba
+namespace CubeSolver
 {
     internal class CoordCubeBuildTables
     {
@@ -100,11 +100,11 @@ namespace Kociemba
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Parity of the corner permutation. This is the same as the parity for the edge permutation of a valid cube.
         // parity has values 0 and 1
-        internal static short[][] parityMove = new short[][]
-        {
-        new short[] {1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1},
-        new short[] {0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0}
-        };
+        internal static short[][] parityMove =
+        [
+        [1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1],
+        [0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+        ];
 
 
         // ***********************************Phase 1 and 2 movetable********************************************************
@@ -170,7 +170,7 @@ namespace Kociemba
         static CoordCubeBuildTables()
         {
 
-            CubieCube a = new CubieCube();
+            CubieCube a = new();
             for (short i = 0; i < N_TWIST; i++)
             {
                 a.setTwist(i);

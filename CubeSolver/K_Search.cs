@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Kociemba
+﻿namespace CubeSolver
 {
     public class Search
     {
@@ -159,7 +157,7 @@ namespace Kociemba
             {
                 for (int i = 0; i < 54; i++)
                 {
-                    count[(int)CubeColor.Parse(typeof(CubeColor), facelets.Substring(i, 1))]++;
+                    count[(int)Enum.Parse<CubeColor>(facelets.AsSpan(i, 1))]++;
                 }
             }
             catch (Exception)
@@ -174,7 +172,7 @@ namespace Kociemba
                 }
             }
 
-            FaceCube fc = new FaceCube(facelets);
+            FaceCube fc = new(facelets);
             CubieCube cc = fc.toCubieCube();
             if ((s = cc.verify()) != 0)
             {
@@ -182,7 +180,7 @@ namespace Kociemba
             }
             // +++++++++++++++++++++++ initialization +++++++++++++++++++++++++++++++++
             string currentTime = "[ a: " + String.Format(@"{0:mm\:ss\.ffff}", (DateTime.Now - startTime)) + " ] ";
-            CoordCube c = new CoordCube(cc, startTime, currentTime, out info);
+            CoordCube c = new(cc, startTime, currentTime, out info);
             //return "lol";
 
             po[0] = 0;
@@ -430,7 +428,7 @@ namespace Kociemba
 //---------------------------------------------------------------------------------------------------------
 internal static class DateTimeHelper
     {
-        private static readonly System.DateTime Jan1st1970 = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+        private static readonly System.DateTime Jan1st1970 = new(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
         public static long CurrentUnixTimeMillis()
         {
             return (long)(System.DateTime.UtcNow - Jan1st1970).TotalMilliseconds;

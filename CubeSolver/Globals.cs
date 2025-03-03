@@ -23,6 +23,7 @@ namespace CubeSolver
         public static bool bLicense;
         public static int nTestedSolutions;
         public static bool bSolveSolution2;
+        public static string cPathTables = FileSystem.Current.CacheDirectory;
 
         public static string[] aFaceColors = new string[7];
         public static string[] aPieces = new string[54];

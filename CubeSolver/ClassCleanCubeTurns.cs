@@ -21,7 +21,7 @@ namespace CubeSolver
             const char c2 = '2';
 
             //// Copy the list with the cube turns to a new list to return in case of an error (IndexOutOfRangeException RRRR RRR R L R')
-            List<string> lCubeTurnsToCleanOriginal = new(lCubeTurnsToClean);
+            List<string> lCubeTurnsToCleanOriginal = [.. lCubeTurnsToClean];
 #if DEBUG
             //// Save the list with the cube turns before the cleaning to a file, for testing purposes
             if (bCubeTurnsSave)

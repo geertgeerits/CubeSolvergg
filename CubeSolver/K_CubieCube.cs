@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Kociemba
+﻿namespace CubeSolver
 {
     //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     //Cube on the cubie level
@@ -9,112 +7,124 @@ namespace Kociemba
         // initialize to Id-Cube
 
         // corner permutation
-        public Corner[] cp = { Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DFR, Corner.DLF, Corner.DBL, Corner.DRB };
+        public Corner[] cp = [Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DFR, Corner.DLF, Corner.DBL, Corner.DRB];
 
         // corner orientation
-        public byte[] co = { 0, 0, 0, 0, 0, 0, 0, 0 };
+        public byte[] co = [0, 0, 0, 0, 0, 0, 0, 0];
 
         // edge permutation
-        public Edge[] ep = { Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF, Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR };
+        public Edge[] ep = [Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF, Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR];
 
         // edge orientation
-        public byte[] eo = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        public byte[] eo = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
         // ************************************** Moves on the cubie level ***************************************************
 
-        private static Corner[] cpU = { Corner.UBR, Corner.URF, Corner.UFL, Corner.ULB, Corner.DFR, Corner.DLF, Corner.DBL, Corner.DRB };
-        private static byte[] coU = { 0, 0, 0, 0, 0, 0, 0, 0 };
-        private static Edge[] epU = { Edge.UB, Edge.UR, Edge.UF, Edge.UL, Edge.DR, Edge.DF, Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR };
-        private static byte[] eoU = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private static readonly Corner[] cpU = [Corner.UBR, Corner.URF, Corner.UFL, Corner.ULB, Corner.DFR, Corner.DLF, Corner.DBL, Corner.DRB];
+        private static readonly byte[] coU = [0, 0, 0, 0, 0, 0, 0, 0];
+        private static readonly Edge[] epU = [Edge.UB, Edge.UR, Edge.UF, Edge.UL, Edge.DR, Edge.DF, Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR];
+        private static readonly byte[] eoU = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-        private static Corner[] cpR = { Corner.DFR, Corner.UFL, Corner.ULB, Corner.URF, Corner.DRB, Corner.DLF, Corner.DBL, Corner.UBR };
-        private static byte[] coR = { 2, 0, 0, 1, 1, 0, 0, 2 };
-        private static Edge[] epR = { Edge.FR, Edge.UF, Edge.UL, Edge.UB, Edge.BR, Edge.DF, Edge.DL, Edge.DB, Edge.DR, Edge.FL, Edge.BL, Edge.UR };
-        private static byte[] eoR = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private static readonly Corner[] cpR = [Corner.DFR, Corner.UFL, Corner.ULB, Corner.URF, Corner.DRB, Corner.DLF, Corner.DBL, Corner.UBR];
+        private static readonly byte[] coR = [2, 0, 0, 1, 1, 0, 0, 2];
+        private static readonly Edge[] epR = [Edge.FR, Edge.UF, Edge.UL, Edge.UB, Edge.BR, Edge.DF, Edge.DL, Edge.DB, Edge.DR, Edge.FL, Edge.BL, Edge.UR];
+        private static readonly byte[] eoR = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-        private static Corner[] cpF = { Corner.UFL, Corner.DLF, Corner.ULB, Corner.UBR, Corner.URF, Corner.DFR, Corner.DBL, Corner.DRB };
-        private static byte[] coF = { 1, 2, 0, 0, 2, 1, 0, 0 };
-        private static Edge[] epF = { Edge.UR, Edge.FL, Edge.UL, Edge.UB, Edge.DR, Edge.FR, Edge.DL, Edge.DB, Edge.UF, Edge.DF, Edge.BL, Edge.BR };
-        private static byte[] eoF = { 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0 };
+        private static readonly Corner[] cpF = [Corner.UFL, Corner.DLF, Corner.ULB, Corner.UBR, Corner.URF, Corner.DFR, Corner.DBL, Corner.DRB];
+        private static readonly byte[] coF = [1, 2, 0, 0, 2, 1, 0, 0];
+        private static readonly Edge[] epF = [Edge.UR, Edge.FL, Edge.UL, Edge.UB, Edge.DR, Edge.FR, Edge.DL, Edge.DB, Edge.UF, Edge.DF, Edge.BL, Edge.BR];
+        private static readonly byte[] eoF = [0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0];
 
-        private static Corner[] cpD = { Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DLF, Corner.DBL, Corner.DRB, Corner.DFR };
-        private static byte[] coD = { 0, 0, 0, 0, 0, 0, 0, 0 };
-        private static Edge[] epD = { Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DF, Edge.DL, Edge.DB, Edge.DR, Edge.FR, Edge.FL, Edge.BL, Edge.BR };
-        private static byte[] eoD = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private static readonly Corner[] cpD = [Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DLF, Corner.DBL, Corner.DRB, Corner.DFR];
+        private static readonly byte[] coD = [0, 0, 0, 0, 0, 0, 0, 0];
+        private static readonly Edge[] epD = [Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DF, Edge.DL, Edge.DB, Edge.DR, Edge.FR, Edge.FL, Edge.BL, Edge.BR];
+        private static readonly byte[] eoD = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-        private static Corner[] cpL = { Corner.URF, Corner.ULB, Corner.DBL, Corner.UBR, Corner.DFR, Corner.UFL, Corner.DLF, Corner.DRB };
-        private static byte[] coL = { 0, 1, 2, 0, 0, 2, 1, 0 };
-        private static Edge[] epL = { Edge.UR, Edge.UF, Edge.BL, Edge.UB, Edge.DR, Edge.DF, Edge.FL, Edge.DB, Edge.FR, Edge.UL, Edge.DL, Edge.BR };
-        private static byte[] eoL = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        private static readonly Corner[] cpL = [Corner.URF, Corner.ULB, Corner.DBL, Corner.UBR, Corner.DFR, Corner.UFL, Corner.DLF, Corner.DRB];
+        private static readonly byte[] coL = [0, 1, 2, 0, 0, 2, 1, 0];
+        private static readonly Edge[] epL = [Edge.UR, Edge.UF, Edge.BL, Edge.UB, Edge.DR, Edge.DF, Edge.FL, Edge.DB, Edge.FR, Edge.UL, Edge.DL, Edge.BR];
+        private static readonly byte[] eoL = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-        private static Corner[] cpB = { Corner.URF, Corner.UFL, Corner.UBR, Corner.DRB, Corner.DFR, Corner.DLF, Corner.ULB, Corner.DBL };
-        private static byte[] coB = { 0, 0, 1, 2, 0, 0, 2, 1 };
-        private static Edge[] epB = { Edge.UR, Edge.UF, Edge.UL, Edge.BR, Edge.DR, Edge.DF, Edge.DL, Edge.BL, Edge.FR, Edge.FL, Edge.UB, Edge.DB };
-        private static byte[] eoB = { 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1 };
+        private static readonly Corner[] cpB = [Corner.URF, Corner.UFL, Corner.UBR, Corner.DRB, Corner.DFR, Corner.DLF, Corner.ULB, Corner.DBL];
+        private static readonly byte[] coB = [0, 0, 1, 2, 0, 0, 2, 1];
+        private static readonly Edge[] epB = [Edge.UR, Edge.UF, Edge.UL, Edge.BR, Edge.DR, Edge.DF, Edge.DL, Edge.BL, Edge.FR, Edge.FL, Edge.UB, Edge.DB];
+        private static readonly byte[] eoB = [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1];
 
         static CubieCube SetMoveU()
         {
-            CubieCube move = new CubieCube();
-            move.cp = cpU;
-            move.co = coU;
-            move.ep = epU;
-            move.eo = eoU;
+            CubieCube move = new()
+            {
+                cp = cpU,
+                co = coU,
+                ep = epU,
+                eo = eoU
+            };
             return move;
         }
 
         static CubieCube SetMoveR()
         {
-            CubieCube move = new CubieCube();
-            move.cp = cpR;
-            move.co = coR;
-            move.ep = epR;
-            move.eo = eoR;
+            CubieCube move = new()
+            {
+                cp = cpR,
+                co = coR,
+                ep = epR,
+                eo = eoR
+            };
             return move;
         }
 
         static CubieCube SetMoveF()
         {
-            CubieCube move = new CubieCube();
-            move.cp = cpF;
-            move.co = coF;
-            move.ep = epF;
-            move.eo = eoF;
+            CubieCube move = new()
+            {
+                cp = cpF,
+                co = coF,
+                ep = epF,
+                eo = eoF
+            };
             return move;
         }
 
         static CubieCube SetMoveD()
         {
-            CubieCube move = new CubieCube();
-            move.cp = cpD;
-            move.co = coD;
-            move.ep = epD;
-            move.eo = eoD;
+            CubieCube move = new()
+            {
+                cp = cpD,
+                co = coD,
+                ep = epD,
+                eo = eoD
+            };
             return move;
         }
 
         static CubieCube SetMoveL()
         {
-            CubieCube move = new CubieCube();
-            move.cp = cpL;
-            move.co = coL;
-            move.ep = epL;
-            move.eo = eoL;
+            CubieCube move = new()
+            {
+                cp = cpL,
+                co = coL,
+                ep = epL,
+                eo = eoL
+            };
             return move;
         }
 
         static CubieCube SetMoveB()
         {
-            CubieCube move = new CubieCube();
-            move.cp = cpB;
-            move.co = coB;
-            move.ep = epB;
-            move.eo = eoB;
+            CubieCube move = new()
+            {
+                cp = cpB,
+                co = coB,
+                ep = epB,
+                eo = eoB
+            };
             return move;
         }
 
 
         // this CubieCube array represents the 6 basic cube moves
-        public static CubieCube[] moveCube = new CubieCube[] { SetMoveU(), SetMoveR(), SetMoveF(), SetMoveD(), SetMoveL(), SetMoveB(), };
+        public static CubieCube[] moveCube = [SetMoveU(), SetMoveR(), SetMoveF(), SetMoveD(), SetMoveL(), SetMoveB(),];
 
 
         public CubieCube()
@@ -199,9 +209,9 @@ namespace Kociemba
         // return cube in facelet representation
         public FaceCube toFaceCube()
         {
-            FaceCube fcRet = new FaceCube();
+            FaceCube fcRet = new();
 
-            foreach (Corner c in (Corner[])Enum.GetValues(typeof(Corner)))
+            foreach (Corner c in Enum.GetValues<Corner>())
             {
                 int i = (int)c;
                 int j = (int)cp[i];// cornercubie with index j is at
@@ -211,7 +221,7 @@ namespace Kociemba
                     fcRet.f[(int)FaceCube.cornerFacelet[i][(n + ori) % 3]] = FaceCube.cornerColor[j][n];
             }
 
-            foreach (Edge e in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge e in Enum.GetValues<Edge>())
             {
                 int i = (int)e;
                 int j = (int)ep[i];// edgecubie with index j is at edgeposition
@@ -240,7 +250,7 @@ namespace Kociemba
         {
             Corner[] cPerm = new Corner[8];
             byte[] cOri = new byte[8];
-            foreach (Corner corn in (Corner[])Enum.GetValues(typeof(Corner)))
+            foreach (Corner corn in Enum.GetValues<Corner>())
                 {
                 cPerm[(int)corn] = cp[(int)b.cp[(int)corn]];
 
@@ -281,7 +291,7 @@ namespace Kociemba
                 cOri[(int)corn] = ori;
             }
  
-            foreach (Corner c in (Corner[])Enum.GetValues(typeof(Corner)))
+            foreach (Corner c in Enum.GetValues<Corner>())
             {
                 cp[(int)c] = cPerm[(int)c];
                 co[(int)c] = cOri[(int)c];
@@ -294,12 +304,12 @@ namespace Kociemba
         {
             Edge[] ePerm = new Edge[12];
             byte[] eOri = new byte[12];
-            foreach (Edge edge in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge edge in Enum.GetValues<Edge>())
             {
                 ePerm[(int)edge] = ep[(int)b.ep[(int)edge]];
                 eOri[(int)edge] = (byte)((b.eo[(int)edge] + eo[(int)b.ep[(int)edge]]) % 2);
             }
-            foreach (Edge e in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge e in Enum.GetValues<Edge>())
             {
                 ep[(int)e] = ePerm[(int)e];
                 eo[(int)e] = eOri[(int)e];
@@ -318,13 +328,13 @@ namespace Kociemba
         // Compute the inverse CubieCube
         void invCubieCube(CubieCube c)
         {
-            foreach (Edge edge in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge edge in Enum.GetValues<Edge>())
                 c.ep[(int)ep[(int)edge]] = edge;
-            foreach (Edge edge in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge edge in Enum.GetValues<Edge>())
                 c.eo[(int)edge] = eo[(int)c.ep[(int)edge]];
-            foreach (Corner corn in (Corner[])Enum.GetValues(typeof(Corner)))
+            foreach (Corner corn in Enum.GetValues<Corner>())
                 c.cp[(int)cp[(int)corn]] = corn;
-            foreach (Corner corn in (Corner[])Enum.GetValues(typeof(Corner)))
+            foreach (Corner corn in Enum.GetValues<Corner>())
             {
                 byte ori = co[(int)c.cp[(int)corn]];
                 if (ori >= 3)// Just for completeness. We do not invert mirrored
@@ -442,11 +452,11 @@ namespace Kociemba
         public void setFRtoBR(short idx)
         {
             int x;
-            Edge[] sliceEdge = { Edge.FR, Edge.FL, Edge.BL, Edge.BR };
-            Edge[] otherEdge = { Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF, Edge.DL, Edge.DB };
+            Edge[] sliceEdge = [Edge.FR, Edge.FL, Edge.BL, Edge.BR];
+            Edge[] otherEdge = [Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF, Edge.DL, Edge.DB];
             int b = idx % 24; // Permutation
             int a = idx / 24; // Combination
-            foreach (Edge e in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge e in Enum.GetValues<Edge>())
                 ep[(int)e] = Edge.DB;// Use UR to invalidate all edges
 
             for (int j = 1, k; j < 4; j++)// generate permutation from index b
@@ -504,11 +514,11 @@ namespace Kociemba
         public void setURFtoDLF(short idx)
         {
             int x;
-            Corner[] corner6 = { Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DFR, Corner.DLF };
-            Corner[] otherCorner = { Corner.DBL, Corner.DRB };
+            Corner[] corner6 = [Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DFR, Corner.DLF];
+            Corner[] otherCorner = [Corner.DBL, Corner.DRB];
             int b = idx % 720; // Permutation
             int a = idx / 720; // Combination
-            foreach (Corner c in (Corner[])Enum.GetValues(typeof(Corner)))
+            foreach (Corner c in Enum.GetValues<Corner>())
                 cp[(int)c] = Corner.DRB;// Use DRB to invalidate all corners
 
             for (int j = 1, k; j < 6; j++)// generate permutation from index b
@@ -564,11 +574,11 @@ namespace Kociemba
         public void setURtoDF(int idx)
         {
             int x;
-            Edge[] edge6 = { Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF };
-            Edge[] otherEdge = { Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR };
+            Edge[] edge6 = [Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF];
+            Edge[] otherEdge = [Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR];
             int b = idx % 720; // Permutation
             int a = idx / 720; // Combination
-            foreach (Edge e in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge e in Enum.GetValues<Edge>())
                 ep[(int)e] = Edge.BR;// Use BR to invalidate all edges
 
             for (int j = 1, k; j < 6; j++)// generate permutation from index b
@@ -595,8 +605,8 @@ namespace Kociemba
         // Permutation of the six edges UR,UF,UL,UB,DR,DF
         public static int getURtoDF(short idx1, short idx2)
         {
-            CubieCube a = new CubieCube();
-            CubieCube b = new CubieCube();
+            CubieCube a = new();
+            CubieCube b = new();
             a.setURtoUL(idx1);
             b.setUBtoDF(idx2);
             for (int i = 0; i < 8; i++)
@@ -643,10 +653,10 @@ namespace Kociemba
         public void setURtoUL(short idx)
         {
             int x;
-            Edge[] edge3 = { Edge.UR, Edge.UF, Edge.UL };
+            Edge[] edge3 = [Edge.UR, Edge.UF, Edge.UL];
             int b = idx % 6; // Permutation
             int a = idx / 6; // Combination
-            foreach (Edge e in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge e in Enum.GetValues<Edge>())
                 ep[(int)e] = Edge.BR;// Use BR to invalidate all edges
 
             for (int j = 1, k; j < 3; j++)// generate permutation from index b
@@ -698,10 +708,10 @@ namespace Kociemba
         public void setUBtoDF(short idx)
         {
             int x;
-            Edge[] edge3 = { Edge.UB, Edge.DR, Edge.DF };
+            Edge[] edge3 = [Edge.UB, Edge.DR, Edge.DF];
             int b = idx % 6; // Permutation
             int a = idx / 6; // Combination
-            foreach (Edge e in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge e in Enum.GetValues<Edge>())
                 ep[(int)e] = Edge.BR;// Use BR to invalidate all edges
 
             for (int j = 1, k; j < 3; j++)// generate permutation from index b
@@ -743,7 +753,7 @@ namespace Kociemba
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public void setURFtoDLB(int idx)
         {
-            Corner[] perm = { Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DFR, Corner.DLF, Corner.DBL, Corner.DRB };
+            Corner[] perm = [Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DFR, Corner.DLF, Corner.DBL, Corner.DRB];
             int k;
             for (int j = 1; j < 8; j++)
             {
@@ -780,7 +790,7 @@ namespace Kociemba
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         public void setURtoBR(int idx)
         {
-            Edge[] perm = { Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF, Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR };
+            Edge[] perm = [Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF, Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR];
             int k;
             for (int j = 1; j < 12; j++)
             {
@@ -806,7 +816,7 @@ namespace Kociemba
         {
             int sum = 0;
             int[] edgeCount = new int[12];
-            foreach (Edge e in (Edge[])Enum.GetValues(typeof(Edge)))
+            foreach (Edge e in Enum.GetValues<Edge>())
                 edgeCount[(int)ep[(int)e]]++;
             for (int i = 0; i < 12; i++)
                 if (edgeCount[i] != 1)
@@ -818,7 +828,7 @@ namespace Kociemba
                 return -3;
 
             int[] cornerCount = new int[8];
-            foreach (Corner c in (Corner[])Enum.GetValues(typeof(Corner)))
+            foreach (Corner c in Enum.GetValues<Corner>())
                 cornerCount[(int)cp[(int)c]]++;
             for (int i = 0; i < 8; i++)
                 if (cornerCount[i] != 1)
