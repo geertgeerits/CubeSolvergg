@@ -652,6 +652,12 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
     <value>Lansarea primului joc poate dura până la un minut.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value />
+    <value>Metoda Kociemba:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Metodă:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Ordine inversă</value>
   </data>
 </root>

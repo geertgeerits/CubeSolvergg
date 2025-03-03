@@ -652,6 +652,12 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
     <value>Första spelstarten kan ta upp till en minut.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value />
+    <value>Kociemba metod:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Metod:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Omvänd ordning</value>
   </data>
 </root>

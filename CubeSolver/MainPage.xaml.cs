@@ -314,7 +314,6 @@ namespace CubeSolver
             if (Globals.bKociembaSolution && bKociembaFirstSolution)
             {
                 lblCubeOutsideView.Text = CubeLang.WaitFirstGameLaunch_Text;
-                bKociembaFirstSolution = false;
             }
 
             // Settings
@@ -324,6 +323,7 @@ namespace CubeSolver
             SetArrowTooltips(false);
             IsEnabledArrows(false);
 
+            string cMethod = string.Empty;
             Globals.nTestedSolutions = 0;
 
             // Start the activity indicator
@@ -336,6 +336,7 @@ namespace CubeSolver
             // Solve the cube from the turns the user has made in reverse order
             if (Globals.lCubeTurns.Count > 0)
             {
+                cMethod = CubeLang.ReverseOrder_Text;
                 Globals.lCubeTurns.Reverse();
                 ClassCleanCubeTurns.CleanListCubeTurns(Globals.lCubeTurns, true);
                 bSolved = true;
@@ -349,22 +350,26 @@ namespace CubeSolver
                 // Solve the cube with the Kociemba solution (using the SolveCubeFromMultiplePositionsAsync("Kociemba") takes a long time +10 minutes)
                 if (Globals.bKociembaSolution)
                 {
+                    cMethod = "Kociemba";
+
                     bSolved = await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();
 
                     if (bSolved)
                     {
                         Globals.nTestedSolutions = 1;
+                        bKociembaFirstSolution = false;
                     }
                 }
 
                 // Solve the cube with the CFOP solution
                 if (!bSolved || !Globals.bKociembaSolution)
                 {
+                    cMethod = "CFOP";
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 298-299 and 349-364 (and change the line 388 to bTestSolveCube = true)
-                // and uncomment one of the lines 371-372/373 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 298-299 and 350-369 (and change the line 393 to bTestSolveCube = true)
+                // and uncomment one of the lines 376-377/378 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -391,7 +396,7 @@ namespace CubeSolver
             {
                 // Display the number of turns and the elapsed time in milliseconds
                 int nNumberOfTurns = Globals.lCubeTurns.Count;
-                await DisplayAlert("", $"{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultSolutions_Text} {Globals.nTestedSolutions}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
+                await DisplayAlert("", $"{CubeLang.SolvingMethod_Text} {cMethod}\n{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultSolutions_Text} {Globals.nTestedSolutions}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
 
                 await Task.Delay(500);
 

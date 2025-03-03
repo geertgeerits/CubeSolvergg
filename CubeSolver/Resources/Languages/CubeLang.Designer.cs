@@ -860,6 +860,15 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Reverse order.
+        /// </summary>
+        internal static string ReverseOrder_Text {
+            get {
+                return ResourceManager.GetString("ReverseOrder_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
         internal static string Settings_Text {
@@ -902,6 +911,15 @@ namespace CubeSolver.Resources.Languages {
         internal static string Solve_Text {
             get {
                 return ResourceManager.GetString("Solve_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Method:.
+        /// </summary>
+        internal static string SolvingMethod_Text {
+            get {
+                return ResourceManager.GetString("SolvingMethod_Text", resourceCulture);
             }
         }
         
@@ -1583,7 +1601,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Use the Kociemba solution.
+        ///   Looks up a localized string similar to Kociemba method:.
         /// </summary>
         internal static string UseKociembaSolution_Text {
             get {

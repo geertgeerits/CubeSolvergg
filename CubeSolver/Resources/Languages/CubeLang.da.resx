@@ -652,6 +652,12 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
     <value>Første spilstart kan tage op til et minut.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value />
+    <value>Kociemba metode:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Metode:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Omvendt rækkefølge</value>
   </data>
 </root>

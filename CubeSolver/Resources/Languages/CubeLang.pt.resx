@@ -652,6 +652,12 @@ A possível causa é a transferência incorreta de cores para este cubo.</value>
     <value>O primeiro lançamento do jogo pode levar até um minuto.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value />
+    <value>Método de Kociemba:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Método:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Ordem inversa</value>
   </data>
 </root>

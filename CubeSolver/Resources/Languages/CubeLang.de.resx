@@ -652,6 +652,12 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
     <value>Der erste Spielstart kann bis zu einer Minute dauern.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value />
+    <value>Kociemba-Methode:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Methode:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Umgekehrte Reihenfolge</value>
   </data>
 </root>

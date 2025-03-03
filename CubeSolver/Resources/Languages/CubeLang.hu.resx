@@ -652,6 +652,12 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
     <value>A játék első indítása akár egy percig is eltarthat.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value />
+    <value>Kociemba módszer:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Módszer:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Fordított sorrend</value>
   </data>
 </root>

@@ -652,6 +652,12 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
     <value>První spuštění hry může trvat až minutu.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value />
+    <value>Kociemba metoda:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Metoda:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Opačné pořadí</value>
   </data>
 </root>

@@ -652,6 +652,12 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
     <value>Pelin ensimmäinen käynnistys voi kestää jopa minuutin.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value />
+    <value>Kociemba menetelmä:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Menetelmä:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Käänteinen järjestys</value>
   </data>
 </root>
