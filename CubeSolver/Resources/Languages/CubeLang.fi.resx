@@ -651,4 +651,7 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
     <value>Pelin ensimmäinen käynnistys voi kestää jopa minuutin.</value>
   </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

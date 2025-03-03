@@ -651,4 +651,7 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
     <value>Der erste Spielstart kann bis zu einer Minute dauern.</value>
   </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

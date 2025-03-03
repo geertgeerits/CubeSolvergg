@@ -651,4 +651,7 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
     <value>Pierwsze uruchomienie gry może potrwać do minuty.</value>
   </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

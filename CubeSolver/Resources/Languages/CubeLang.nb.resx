@@ -651,4 +651,7 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
     <value>Første spillstart kan ta opptil ett minutt.</value>
   </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

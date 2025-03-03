@@ -651,4 +651,7 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
     <value>Første spilstart kan tage op til et minut.</value>
   </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

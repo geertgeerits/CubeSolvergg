@@ -19,6 +19,7 @@ namespace CubeSolver
         public static bool bExplainSpeech;
         public static bool bTextToSpeechIsBusy;
         public static CancellationTokenSource? cts;
+        public static bool bKociembaSolution;
         public static bool bLicense;
         public static int nTestedSolutions;
         public static bool bSolveSolution2;

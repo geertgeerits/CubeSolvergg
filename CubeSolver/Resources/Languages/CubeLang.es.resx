@@ -651,4 +651,7 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
     <value>El primer lanzamiento del juego puede tardar hasta un minuto.</value>
   </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

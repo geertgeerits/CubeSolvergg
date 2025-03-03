@@ -65,6 +65,7 @@ namespace CubeSolver
             FillPickerWithSpeechLanguages();
 
             //// Set the explaination of text and speech to false or true
+            swtUseKociembaSolution.IsToggled = Globals.bKociembaSolution;
             swtExplainText.IsToggled = Globals.bExplainText;
             swtExplainSpeech.IsToggled = Globals.bExplainSpeech;
 
@@ -244,6 +245,16 @@ namespace CubeSolver
                 // Set the theme
                 Globals.SetTheme();
             }
+        }
+
+        /// <summary>
+        /// Switch use Kociemba solution toggled
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnSwtUseKociembaSolution(object sender, ToggledEventArgs e)
+        {
+            Globals.bKociembaSolution = swtUseKociembaSolution.IsToggled;
         }
 
         /// <summary>
@@ -535,6 +546,7 @@ namespace CubeSolver
             Preferences.Default.Set("SettingCubeColor4", Globals.aFaceColors[4]);
             Preferences.Default.Set("SettingCubeColor5", Globals.aFaceColors[5]);
             Preferences.Default.Set("SettingCubeColor6", Globals.aFaceColors[6]);
+            Preferences.Default.Set("SettingKociembaSolution", Globals.bKociembaSolution);
 
             // Wait 500 milliseconds otherwise the settings are not saved in Android
             Task.Delay(500).Wait();
@@ -573,6 +585,7 @@ namespace CubeSolver
                 Preferences.Default.Remove("SettingCubeColor4");
                 Preferences.Default.Remove("SettingCubeColor5");
                 Preferences.Default.Remove("SettingCubeColor6");
+                Preferences.Default.Remove("SettingKociembaSolution");
             }
 
             // Wait 500 milliseconds otherwise the settings are not saved in Android.

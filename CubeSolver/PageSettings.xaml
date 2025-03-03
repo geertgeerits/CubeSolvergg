@@ -24,7 +24,7 @@
 
             <Grid
                 Style="{StaticResource gridStyleSettings}"
-                RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
+                RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto">
 
                 <Border
                     Style="{StaticResource borderStyleDefault}"
@@ -132,12 +132,27 @@
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="4"
                     Grid.Column="0"
+                    Text="{local:Translate UseKociembaSolution_Text}">
+                </Label>
+
+                <Switch
+                    x:Name="swtUseKociembaSolution"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Toggled="OnSwtUseKociembaSolution">
+                </Switch>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="5"
+                    Grid.Column="0"
                     Text="{local:Translate ExplainedByText_Text}">
                 </Label>
 
                 <Switch
                     x:Name="swtExplainText"
-                    Grid.Row="4"
+                    Grid.Row="5"
                     Grid.Column="1"
                     Grid.ColumnSpan="2"
                     Toggled="OnSwtExplainTextToggled">
@@ -145,14 +160,14 @@
 
                 <Label
                     Style="{StaticResource labelStyleDefault}"
-                    Grid.Row="5"
+                    Grid.Row="6"
                     Grid.Column="0"
                     Text="{local:Translate ExplainedBySpeech_Text}">
                 </Label>
 
                 <Switch
                     x:Name="swtExplainSpeech"
-                    Grid.Row="5"
+                    Grid.Row="6"
                     Grid.Column="1"
                     Grid.ColumnSpan="2"
                     Toggled="OnSwtExplainSpeechToggled">
@@ -160,13 +175,13 @@
 
                 <Label
                     Style="{StaticResource labelStyleDefault}"
-                    Grid.Row="6"
+                    Grid.Row="7"
                     Grid.Column="0"
                     Text="{local:Translate CubeColors_Text}">
                 </Label>
 
                 <HorizontalStackLayout
-                    Grid.Row="6"
+                    Grid.Row="7"
                     Grid.Column="1"
                     Spacing="10">
 
@@ -200,7 +215,7 @@
                 <Grid
                     RowDefinitions="Auto, Auto"
                     ColumnDefinitions="*, 50, 50, 50, 50, 50, 50, *"
-                    Grid.Row="8"
+                    Grid.Row="9"
                     Grid.Column="0"
                     Grid.ColumnSpan="2">
                    
@@ -324,7 +339,7 @@
 
                 <Border
                     Style="{StaticResource borderStyleGroup}"
-                    Grid.Row="9"
+                    Grid.Row="10"
                     Grid.Column="0"
                     Grid.RowSpan="3"
                     Grid.ColumnSpan="2">
@@ -333,7 +348,7 @@
                 <Slider
                     x:Name="sldColorRed"
                     Style="{StaticResource sliderStyleColor}"
-                    Grid.Row="9"
+                    Grid.Row="10"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     ThumbColor="Red"
@@ -344,7 +359,7 @@
                 <Slider
                     x:Name="sldColorGreen"
                     Style="{StaticResource sliderStyleColor}"
-                    Grid.Row="10"
+                    Grid.Row="11"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     ThumbColor="Green"
@@ -355,7 +370,7 @@
                 <Slider
                     x:Name="sldColorBlue"
                     Style="{StaticResource sliderStyleColor}"
-                    Grid.Row="11"
+                    Grid.Row="12"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     ThumbColor="Blue"
@@ -365,7 +380,7 @@
 
                 <Entry
                     x:Name="entDummy"
-                    Grid.Row="12"
+                    Grid.Row="13"
                     HeightRequest="2"
                     WidthRequest="5"
                     BackgroundColor="Transparent"

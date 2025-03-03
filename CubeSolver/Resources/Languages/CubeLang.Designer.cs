@@ -1583,6 +1583,15 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Use the Kociemba solution.
+        /// </summary>
+        internal static string UseKociembaSolution_Text {
+            get {
+                return ResourceManager.GetString("UseKociembaSolution_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Version:.
         /// </summary>
         internal static string Version_Text {

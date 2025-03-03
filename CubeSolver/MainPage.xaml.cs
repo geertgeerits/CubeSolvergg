@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.36
- * Date ........: 2025-03-02 (YYYY-MM-DD)
+ * Date ........: 2025-03-03 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -32,7 +32,6 @@ namespace CubeSolver
         private bool bTestSolveCube;
         private bool bTurnIsBackwards;
         private bool bTurnContinuously;
-        private bool bKociembaSolution = true;
         private bool bKociembaFirstSolution = true;
 
         //// Array with cube turns for the cube scramble generator
@@ -93,6 +92,7 @@ namespace CubeSolver
             Globals.aFaceColors[4] = Preferences.Default.Get("SettingCubeColor4", "#00EA00");   // Left face: Green     008000      00EA00
             Globals.aFaceColors[5] = Preferences.Default.Get("SettingCubeColor5", "#FAFAFA");   // Up face: White       FFFFFF      FAFAFA
             Globals.aFaceColors[6] = Preferences.Default.Get("SettingCubeColor6", "#FFFF40");   // Down face: Yellow    FFFF00      FFFF40
+            Globals.bKociembaSolution = Preferences.Default.Get("SettingKociembaSolution", true);
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
 
             //// Set the theme
@@ -311,7 +311,7 @@ namespace CubeSolver
             btnTurnContinuously.IsEnabled = false;
             lblCubeInsideView.IsVisible = false;
 
-            if (bKociembaSolution && bKociembaFirstSolution)
+            if (Globals.bKociembaSolution && bKociembaFirstSolution)
             {
                 lblCubeOutsideView.Text = CubeLang.WaitFirstGameLaunch_Text;
                 bKociembaFirstSolution = false;
@@ -320,6 +320,7 @@ namespace CubeSolver
             // Settings
             bColorDrop = false;
             bSolvingCube = true;
+            bSolved = true;
             SetArrowTooltips(false);
             IsEnabledArrows(false);
 
@@ -345,46 +346,30 @@ namespace CubeSolver
                 // Save the start colors of the cube to array aStartPieces[]
                 Array.Copy(Globals.aPieces, Globals.aStartPieces, 54);
 
-                // Solve the cube
-                bSolved = await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();                     // Kociemba solution
-
-                if (bSolved)
+                // Solve the cube with the Kociemba solution (using the SolveCubeFromMultiplePositionsAsync("Kociemba") takes a long time +10 minutes)
+                if (Globals.bKociembaSolution)
                 {
-                    Globals.nTestedSolutions = 1;
+                    bSolved = await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();
+
+                    if (bSolved)
+                    {
+                        Globals.nTestedSolutions = 1;
+                    }
                 }
 
-                //bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Kociemba");   // Kociemba solution (takes a long time +10 minutes)
-
-                if (!bSolved)
+                // Solve the cube with the CFOP solution
+                if (!bSolved || !Globals.bKociembaSolution)
                 {
-                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");     // CFOP solution
+                    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                //if (!bSolved)
-                //{
-                //    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Basic");    // Beginners solution
-                //}
-
-                //if (!bSolved)
-                //{
-                //    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Daisy");    // Beginners solution
-                //}
-
-                //if (!bSolved)
-                //{
-                //    bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("Cross");    // Beginners solution
-                //}
-
-                // For testing comment out the lines 298-299 and 349-376 (and change the line 403 to bTestSolveCube = true)
-                // and uncomment one of the lines 383-387/388 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 298-299 and 349-364 (and change the line 388 to bTestSolveCube = true)
+                // and uncomment one of the lines 371-372/373 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
                 //bSolved = await ClassTestCubeTurns.TestCubeTurnsAsync();          // Test the turns of the cube
                 //bSolved = await ClassSolveCubeCFOP.SolveTheCubeCFOPAsync();       // For testing CFOP solution
-                //bSolved = await ClassSolveCubeBasic.SolveTheCubeBasicAsync();     // For testing Basic solution
-                //bSolved = await ClassSolveCubeDaisy.SolveTheCubeDaisyAsync();     // For testing Daisy solution
-                //bSolved = await ClassSolveCubeCross.SolveTheCubeCrossAsync();     // For testing Cross solution
                 //ClassCleanCubeTurns.CleanListCubeTurns(Globals.lCubeTurns, true); // For testing the clean list cube turns
 
                 // Restore the start colors of the cube from array aStartPieces[]

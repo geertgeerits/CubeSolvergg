@@ -651,4 +651,7 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
     <value>Het starten van het eerste spel kan een minuut duren.</value>
   </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

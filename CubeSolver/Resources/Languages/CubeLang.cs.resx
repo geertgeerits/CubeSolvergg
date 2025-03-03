@@ -651,4 +651,7 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
     <value>První spuštění hry může trvat až minutu.</value>
   </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value />
+  </data>
 </root>

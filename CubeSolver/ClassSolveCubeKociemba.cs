@@ -44,7 +44,6 @@ namespace CubeSolver
             }
             Debug.WriteLine("Search.solution: " + solution);
 
-
             // Error checking
             if (solution.Contains("Error") || string.IsNullOrEmpty(solution))
             {
