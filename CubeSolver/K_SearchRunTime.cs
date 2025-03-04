@@ -18,6 +18,7 @@
 
         internal static int[] minDistPhase1 = new int[31]; // IDA* distance do goal estimations
         internal static int[] minDistPhase2 = new int[31];
+        
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // generate the solution string from the array data
         internal static string SolutionToString(int length)
