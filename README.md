@@ -20,7 +20,7 @@ https://www.microsoft.com/store/apps/9P6TX258JBK7
 
 ms-windows-store://pdp/?productid=9P6TX258JBK7
 
-This app leverages code from Herbert Kociemba and Matt Colbourne (Megalomatt) for Rubik’s Cube solving.
+This app leverages code from Herbert Kociemba and Matt Colbourne (Megalomatt) for cube solving.
 Kociemba’s algorithm is a cornerstone in efficient cube-solving methods.
 Megalomatt's contributions have enhanced open-source cube solvers.
 Their work is greatly appreciated!
