@@ -25,7 +25,7 @@ namespace CubeSolver
         ///         -4: Not all 8 corners exist exactly once
         ///         -5: Twist error: One corner has to be twisted
         ///         -6: Parity error: Two corners or two edges have to be exchanged </returns>
-        public static int verify(string s)
+        public static int Verify(string s)
         {
             int[] count = new int[6];
             try
@@ -49,27 +49,27 @@ namespace CubeSolver
             }
 
             FaceCube fc = new(s);
-            CubieCube cc = fc.toCubieCube();
+            CubieCube cc = fc.ToCubieCube();
 
-            return cc.verify();
+            return cc.Verify();
         }
 
         /// <summary>
         /// Generates a random cube. </summary>
         /// <returns> A random cube in the string representation. Each cube of the cube space has the same probability. </returns>
-        public static string randomCube()
+        public static string RandomCube()
         {
             CubieCube cc = new();
             Random gen = new();
-            cc.setFlip((short)gen.Next(CoordCube.N_FLIP));
-            cc.setTwist((short)gen.Next(CoordCube.N_TWIST));
+            cc.SetFlip((short)gen.Next(CoordCube.N_FLIP));
+            cc.SetTwist((short)gen.Next(CoordCube.N_TWIST));
             do
             {
-                cc.setURFtoDLB(gen.Next(CoordCube.N_URFtoDLB));
-                cc.setURtoBR(gen.Next(CoordCube.N_URtoBR));
-            } while ((cc.edgeParity() ^ cc.cornerParity()) != 0);
-            FaceCube fc = cc.toFaceCube();
-            return fc.to_fc_String();
+                cc.SetURFtoDLB(gen.Next(CoordCube.N_URFtoDLB));
+                cc.SetURtoBR(gen.Next(CoordCube.N_URtoBR));
+            } while ((cc.EdgeParity() ^ cc.CornerParity()) != 0);
+            FaceCube fc = cc.ToFaceCube();
+            return fc.To_fc_String();
         }
 
         //public static void SerializeTable(string filename, short[,] array)

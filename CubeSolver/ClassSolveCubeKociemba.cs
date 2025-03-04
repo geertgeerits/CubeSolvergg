@@ -34,12 +34,12 @@ namespace CubeSolver
 
             if (CheckIfTableExists())
             {
-                //solution = Search.solution(searchString, out info);  // Gives an error
-                solution = SearchRunTime.solution(searchString, out info, buildTables: false);
+                //solution = Search.Solution(searchString, out info);  // Gives an error
+                solution = SearchRunTime.Solution(searchString, out info, buildTables: false);
             }
             else
             {
-                solution = SearchRunTime.solution(searchString, out info, buildTables: true);
+                solution = SearchRunTime.Solution(searchString, out info, buildTables: true);
             }
             Debug.WriteLine("Search.solution: " + solution);
 

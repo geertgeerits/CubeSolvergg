@@ -35,14 +35,14 @@ namespace CubeSolver
         // Generate a CoordCube from a CubieCube
         internal CoordCubeBuildTables(CubieCube c, bool unpackTables = false)
         {
-            twist = c.getTwist();
-            flip = c.getFlip();
-            parity = c.cornerParity();
-            FRtoBR = c.getFRtoBR();
-            URFtoDLF = c.getURFtoDLF();
-            URtoUL = c.getURtoUL();
-            UBtoDF = c.getUBtoDF();
-            URtoDF = c.getURtoDF();// only needed in phase2
+            twist = c.GetTwist();
+            flip = c.GetFlip();
+            parity = c.CornerParity();
+            FRtoBR = c.GetFRtoBR();
+            URFtoDLF = c.GetURFtoDLF();
+            URtoUL = c.GetURtoUL();
+            UBtoDF = c.GetUBtoDF();
+            URtoDF = c.GetURtoDF();// only needed in phase2
 
             if (unpackTables)
             {
@@ -68,7 +68,7 @@ namespace CubeSolver
 
         // A move on the coordinate level
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        internal virtual void move(int m)
+        internal virtual void Move(int m)
         {
             twist = twistMove[twist, m];
             flip = flipMove[flip, m];
@@ -173,103 +173,103 @@ namespace CubeSolver
             CubieCube a = new();
             for (short i = 0; i < N_TWIST; i++)
             {
-                a.setTwist(i);
+                a.SetTwist(i);
                 for (int j = 0; j < 6; j++)
                 {
                     for (int k = 0; k < 3; k++)
                     {
-                        a.cornerMultiply(CubieCube.moveCube[j]);
-                        twistMove[i, 3 * j + k] = a.getTwist();
+                        a.CornerMultiply(CubieCube.moveCube[j]);
+                        twistMove[i, 3 * j + k] = a.GetTwist();
                     }
-                    a.cornerMultiply(CubieCube.moveCube[j]); // 4. faceturn restores
+                    a.CornerMultiply(CubieCube.moveCube[j]); // 4. faceturn restores
                                                              // a
                 }
             }
             a = new CubieCube();
             for (short i = 0; i < N_FLIP; i++)
             {
-                a.setFlip(i);
+                a.SetFlip(i);
                 for (int j = 0; j < 6; j++)
                 {
                     for (int k = 0; k < 3; k++)
                     {
-                        a.edgeMultiply(CubieCube.moveCube[j]);
-                        flipMove[i, 3 * j + k] = a.getFlip();
+                        a.EdgeMultiply(CubieCube.moveCube[j]);
+                        flipMove[i, 3 * j + k] = a.GetFlip();
                     }
-                    a.edgeMultiply(CubieCube.moveCube[j]);
+                    a.EdgeMultiply(CubieCube.moveCube[j]);
                     // a
                 }
             }
             a = new CubieCube();
             for (short i = 0; i < N_FRtoBR; i++)
             {
-                a.setFRtoBR(i);
+                a.SetFRtoBR(i);
                 for (int j = 0; j < 6; j++)
                 {
                     for (int k = 0; k < 3; k++)
                     {
-                        a.edgeMultiply(CubieCube.moveCube[j]);
-                        FRtoBR_Move[i, 3 * j + k] = a.getFRtoBR();
+                        a.EdgeMultiply(CubieCube.moveCube[j]);
+                        FRtoBR_Move[i, 3 * j + k] = a.GetFRtoBR();
                     }
-                    a.edgeMultiply(CubieCube.moveCube[j]);
+                    a.EdgeMultiply(CubieCube.moveCube[j]);
                 }
             }
             a = new CubieCube();
             for (short i = 0; i < N_URFtoDLF; i++)
             {
-                a.setURFtoDLF(i);
+                a.SetURFtoDLF(i);
                 for (int j = 0; j < 6; j++)
                 {
                     for (int k = 0; k < 3; k++)
                     {
-                        a.cornerMultiply(CubieCube.moveCube[j]);
-                        URFtoDLF_Move[i, 3 * j + k] = a.getURFtoDLF();
+                        a.CornerMultiply(CubieCube.moveCube[j]);
+                        URFtoDLF_Move[i, 3 * j + k] = a.GetURFtoDLF();
                     }
-                    a.cornerMultiply(CubieCube.moveCube[j]);
+                    a.CornerMultiply(CubieCube.moveCube[j]);
                 }
             }
             a = new CubieCube();
             for (short i = 0; i < N_URtoDF; i++)
             {
-                a.setURtoDF(i);
+                a.SetURtoDF(i);
                 for (int j = 0; j < 6; j++)
                 {
                     for (int k = 0; k < 3; k++)
                     {
-                        a.edgeMultiply(CubieCube.moveCube[j]);
-                        URtoDF_Move[i, 3 * j + k] = (short)a.getURtoDF();
+                        a.EdgeMultiply(CubieCube.moveCube[j]);
+                        URtoDF_Move[i, 3 * j + k] = (short)a.GetURtoDF();
                         // Table values are only valid for phase 2 moves!
                         // For phase 1 moves, casting to short is not possible.
                     }
-                    a.edgeMultiply(CubieCube.moveCube[j]);
+                    a.EdgeMultiply(CubieCube.moveCube[j]);
                 }
             }
             a = new CubieCube();
             for (short i = 0; i < N_URtoUL; i++)
             {
-                a.setURtoUL(i);
+                a.SetURtoUL(i);
                 for (int j = 0; j < 6; j++)
                 {
                     for (int k = 0; k < 3; k++)
                     {
-                        a.edgeMultiply(CubieCube.moveCube[j]);
-                        URtoUL_Move[i, 3 * j + k] = a.getURtoUL();
+                        a.EdgeMultiply(CubieCube.moveCube[j]);
+                        URtoUL_Move[i, 3 * j + k] = a.GetURtoUL();
                     }
-                    a.edgeMultiply(CubieCube.moveCube[j]);
+                    a.EdgeMultiply(CubieCube.moveCube[j]);
                 }
             }
             a = new CubieCube();
             for (short i = 0; i < N_UBtoDF; i++)
             {
-                a.setUBtoDF(i);
+                a.SetUBtoDF(i);
                 for (int j = 0; j < 6; j++)
                 {
                     for (int k = 0; k < 3; k++)
                     {
-                        a.edgeMultiply(CubieCube.moveCube[j]);
-                        UBtoDF_Move[i, 3 * j + k] = a.getUBtoDF();
+                        a.EdgeMultiply(CubieCube.moveCube[j]);
+                        UBtoDF_Move[i, 3 * j + k] = a.GetUBtoDF();
                     }
-                    a.edgeMultiply(CubieCube.moveCube[j]);
+                    a.EdgeMultiply(CubieCube.moveCube[j]);
                 }
             }
             // for i, j <336 the six edges UR,UF,UL,UB,DR,DF are not in the
@@ -278,7 +278,7 @@ namespace CubeSolver
             {
                 for (short uBtoDF = 0; uBtoDF < 336; uBtoDF++)
                 {
-                    MergeURtoULandUBtoDF[uRtoUL, uBtoDF] = (short)CubieCube.getURtoDF(uRtoUL, uBtoDF);
+                    MergeURtoULandUBtoDF[uRtoUL, uBtoDF] = (short)CubieCube.GetURtoDF(uRtoUL, uBtoDF);
                 }
             }
             for (int i = 0; i < N_SLICE2 * N_URFtoDLF * N_PARITY / 2; i++)
@@ -286,7 +286,7 @@ namespace CubeSolver
                 Slice_URFtoDLF_Parity_Prun[i] = -1;
             }
             int depth = 0;
-            setPruning(Slice_URFtoDLF_Parity_Prun, 0, (sbyte)0);
+            SetPruning(Slice_URFtoDLF_Parity_Prun, 0, (sbyte)0);
             int done = 1;
             while (done != N_SLICE2 * N_URFtoDLF * N_PARITY)
             {
@@ -295,7 +295,7 @@ namespace CubeSolver
                     int parity = i % 2;
                     int URFtoDLF = (i / 2) / N_SLICE2;
                     int slice = (i / 2) % N_SLICE2;
-                    if (getPruning(Slice_URFtoDLF_Parity_Prun, i) == depth)
+                    if (GetPruning(Slice_URFtoDLF_Parity_Prun, i) == depth)
                     {
                         for (int j = 0; j < 18; j++)
                         {
@@ -314,9 +314,9 @@ namespace CubeSolver
                                     int newSlice = FRtoBR_Move[slice, j];
                                     int newURFtoDLF = URFtoDLF_Move[URFtoDLF, j];
                                     int newParity = parityMove[parity][j];
-                                    if (getPruning(Slice_URFtoDLF_Parity_Prun, (N_SLICE2 * newURFtoDLF + newSlice) * 2 + newParity) == 0x0f)
+                                    if (GetPruning(Slice_URFtoDLF_Parity_Prun, (N_SLICE2 * newURFtoDLF + newSlice) * 2 + newParity) == 0x0f)
                                     {
-                                        setPruning(Slice_URFtoDLF_Parity_Prun, (N_SLICE2 * newURFtoDLF + newSlice) * 2 + newParity, (sbyte)(depth + 1));
+                                        SetPruning(Slice_URFtoDLF_Parity_Prun, (N_SLICE2 * newURFtoDLF + newSlice) * 2 + newParity, (sbyte)(depth + 1));
                                         done++;
                                     }
                                     break;
@@ -332,7 +332,7 @@ namespace CubeSolver
                 Slice_URtoDF_Parity_Prun[i] = -1;
             }
             depth = 0;
-            setPruning(Slice_URtoDF_Parity_Prun, 0, (sbyte)0);
+            SetPruning(Slice_URtoDF_Parity_Prun, 0, (sbyte)0);
             done = 1;
             while (done != N_SLICE2 * N_URtoDF * N_PARITY)
             {
@@ -341,7 +341,7 @@ namespace CubeSolver
                     int parity = i % 2;
                     int URtoDF = (i / 2) / N_SLICE2;
                     int slice = (i / 2) % N_SLICE2;
-                    if (getPruning(Slice_URtoDF_Parity_Prun, i) == depth)
+                    if (GetPruning(Slice_URtoDF_Parity_Prun, i) == depth)
                     {
                         for (int j = 0; j < 18; j++)
                         {
@@ -360,9 +360,9 @@ namespace CubeSolver
                                     int newSlice = FRtoBR_Move[slice, j];
                                     int newURtoDF = URtoDF_Move[URtoDF, j];
                                     int newParity = parityMove[parity][j];
-                                    if (getPruning(Slice_URtoDF_Parity_Prun, (N_SLICE2 * newURtoDF + newSlice) * 2 + newParity) == 0x0f)
+                                    if (GetPruning(Slice_URtoDF_Parity_Prun, (N_SLICE2 * newURtoDF + newSlice) * 2 + newParity) == 0x0f)
                                     {
-                                        setPruning(Slice_URtoDF_Parity_Prun, (N_SLICE2 * newURtoDF + newSlice) * 2 + newParity, (sbyte)(depth + 1));
+                                        SetPruning(Slice_URtoDF_Parity_Prun, (N_SLICE2 * newURtoDF + newSlice) * 2 + newParity, (sbyte)(depth + 1));
                                         done++;
                                     }
                                     break;
@@ -377,22 +377,22 @@ namespace CubeSolver
                 Slice_Twist_Prun[i] = -1;
             }
             depth = 0;
-            setPruning(Slice_Twist_Prun, 0, (sbyte)0);
+            SetPruning(Slice_Twist_Prun, 0, (sbyte)0);
             done = 1;
             while (done != N_SLICE1 * N_TWIST)
             {
                 for (int i = 0; i < N_SLICE1 * N_TWIST; i++)
                 {
                     int twist = i / N_SLICE1, slice = i % N_SLICE1;
-                    if (getPruning(Slice_Twist_Prun, i) == depth)
+                    if (GetPruning(Slice_Twist_Prun, i) == depth)
                     {
                         for (int j = 0; j < 18; j++)
                         {
                             int newSlice = FRtoBR_Move[slice * 24, j] / 24;
                             int newTwist = twistMove[twist, j];
-                            if (getPruning(Slice_Twist_Prun, N_SLICE1 * newTwist + newSlice) == 0x0f)
+                            if (GetPruning(Slice_Twist_Prun, N_SLICE1 * newTwist + newSlice) == 0x0f)
                             {
-                                setPruning(Slice_Twist_Prun, N_SLICE1 * newTwist + newSlice, (sbyte)(depth + 1));
+                                SetPruning(Slice_Twist_Prun, N_SLICE1 * newTwist + newSlice, (sbyte)(depth + 1));
                                 done++;
                             }
                         }
@@ -405,22 +405,22 @@ namespace CubeSolver
                 Slice_Flip_Prun[i] = -1;
             }
             depth = 0;
-            setPruning(Slice_Flip_Prun, 0, (sbyte)0);
+            SetPruning(Slice_Flip_Prun, 0, (sbyte)0);
             done = 1;
             while (done != N_SLICE1 * N_FLIP)
             {
                 for (int i = 0; i < N_SLICE1 * N_FLIP; i++)
                 {
                     int flip = i / N_SLICE1, slice = i % N_SLICE1;
-                    if (getPruning(Slice_Flip_Prun, i) == depth)
+                    if (GetPruning(Slice_Flip_Prun, i) == depth)
                     {
                         for (int j = 0; j < 18; j++)
                         {
                             int newSlice = FRtoBR_Move[slice * 24, j] / 24;
                             int newFlip = flipMove[flip, j];
-                            if (getPruning(Slice_Flip_Prun, N_SLICE1 * newFlip + newSlice) == 0x0f)
+                            if (GetPruning(Slice_Flip_Prun, N_SLICE1 * newFlip + newSlice) == 0x0f)
                             {
-                                setPruning(Slice_Flip_Prun, N_SLICE1 * newFlip + newSlice, (sbyte)(depth + 1));
+                                SetPruning(Slice_Flip_Prun, N_SLICE1 * newFlip + newSlice, (sbyte)(depth + 1));
                                 done++;
                             }
                         }
@@ -432,7 +432,7 @@ namespace CubeSolver
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Set pruning value in table. Two values are stored in one byte.
-        internal static void setPruning(sbyte[] table, int index, sbyte value)
+        internal static void SetPruning(sbyte[] table, int index, sbyte value)
         {
             if ((index & 1) == 0)
             {
@@ -446,7 +446,7 @@ namespace CubeSolver
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Extract pruning value
-        internal static sbyte getPruning(sbyte[] table, int index)
+        internal static sbyte GetPruning(sbyte[] table, int index)
         {
             if ((index & 1) == 0)
             {

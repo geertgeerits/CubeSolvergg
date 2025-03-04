@@ -34,23 +34,23 @@
         internal CoordCube(CubieCube c, DateTime startTime, string currentTime, out string info)
         {
             info = currentTime;
-            twist = c.getTwist();
+            twist = c.GetTwist();
 
-            flip = c.getFlip();
-            parity = c.cornerParity();
-            FRtoBR = c.getFRtoBR();
+            flip = c.GetFlip();
+            parity = c.CornerParity();
+            FRtoBR = c.GetFRtoBR();
 
-            URFtoDLF = c.getURFtoDLF();
-            URtoUL = c.getURtoUL();
-            UBtoDF = c.getUBtoDF();
-            URtoDF = c.getURtoDF();// only needed in phase2
+            URFtoDLF = c.GetURFtoDLF();
+            URtoUL = c.GetURtoUL();
+            UBtoDF = c.GetUBtoDF();
+            URtoDF = c.GetURtoDF();// only needed in phase2
             info += "[ Finished Initialiation: " + String.Format(@"{0:mm\:ss\.ffff}", (DateTime.Now - startTime)) + " ] ";
 
         }
 
         // A move on the coordinate level
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        internal virtual void move(int m)
+        internal virtual void Move(int m)
         {
             twist = twistMove[twist, m];
             flip = flipMove[flip, m];
@@ -153,7 +153,7 @@
 
  
         // Set pruning value in table. Two values are stored in one byte.
-        internal static void setPruning(sbyte[] table, int index, sbyte value)
+        internal static void SetPruning(sbyte[] table, int index, sbyte value)
         {
             if ((index & 1) == 0)
             {
@@ -167,7 +167,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Extract pruning value
-        internal static sbyte getPruning(sbyte[] table, int index)
+        internal static sbyte GetPruning(sbyte[] table, int index)
         {
             if ((index & 1) == 0)
             {
@@ -198,8 +198,5 @@
         public static readonly sbyte[] Slice_URtoDF_Parity_Prun = Tools.DeserializeSbyteArray("Slice_URtoDF_Parity_Prun");
         public static readonly sbyte[] Slice_Twist_Prun = Tools.DeserializeSbyteArray("Slice_Twist_Prun");
         public static readonly sbyte[] Slice_Flip_Prun = Tools.DeserializeSbyteArray("Slice_Flip_Prun");
-        
     }
-    
-
 }

@@ -20,7 +20,7 @@
         internal static int[] minDistPhase2 = new int[31];
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // generate the solution string from the array data
-        internal static string solutionToString(int length)
+        internal static string SolutionToString(int length)
         {
             string s = "";
             for (int i = 0; i < length; i++)
@@ -65,7 +65,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // generate the solution string from the array data including a separator between phase1 and phase2 moves
-        internal static string solutionToString(int length, int depthPhase1)
+        internal static string SolutionToString(int length, int depthPhase1)
         {
             string s = "";
             for (int i = 0; i < length; i++)
@@ -140,7 +140,7 @@
          *         Error 7: No solution exists for the given maxDepth
          *         Error 8: Timeout, no solution within given time
          */
-        public static string solution(string facelets, out string info, int maxDepth= 22, long timeOut = 6000, bool useSeparator = false, bool buildTables = false )
+        public static string Solution(string facelets, out string info, int maxDepth= 22, long timeOut = 6000, bool useSeparator = false, bool buildTables = false )
         {
             info = "Warning, this solution builds tables at run time which is very slow. This will find a solution, however it is reccomended to use the K_SearchRunTime class only to create a local copy of the tables, then use the K_Search class to search for solutions instead.";
             
@@ -172,8 +172,8 @@
             }
 
             FaceCube fc = new(facelets);
-            CubieCube cc = fc.toCubieCube();
-            if ((s = cc.verify()) != 0)
+            CubieCube cc = fc.ToCubieCube();
+            if ((s = cc.Verify()) != 0)
             {
                 return "Error " + Math.Abs(s);
             }
@@ -269,17 +269,17 @@
                 flip[n + 1] = CoordCubeBuildTables.flipMove[flip[n],mv];
                 twist[n + 1] = CoordCubeBuildTables.twistMove[twist[n],mv];
                 slice[n + 1] = CoordCubeBuildTables.FRtoBR_Move[slice[n] * 24,mv] / 24;
-                minDistPhase1[n + 1] = Math.Max(CoordCubeBuildTables.getPruning(CoordCubeBuildTables.Slice_Flip_Prun, CoordCubeBuildTables.N_SLICE1 * flip[n + 1] + slice[n + 1]), CoordCubeBuildTables.getPruning(CoordCubeBuildTables.Slice_Twist_Prun, CoordCubeBuildTables.N_SLICE1 * twist[n + 1] + slice[n + 1]));
+                minDistPhase1[n + 1] = Math.Max(CoordCubeBuildTables.GetPruning(CoordCubeBuildTables.Slice_Flip_Prun, CoordCubeBuildTables.N_SLICE1 * flip[n + 1] + slice[n + 1]), CoordCubeBuildTables.GetPruning(CoordCubeBuildTables.Slice_Twist_Prun, CoordCubeBuildTables.N_SLICE1 * twist[n + 1] + slice[n + 1]));
                 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
                 if (minDistPhase1[n + 1] == 0 && n >= depthPhase1 - 5)
                 {
                     minDistPhase1[n + 1] = 10; // instead of 10 any value >5 is possible
-                    if (n == depthPhase1 - 1 && (s = totalDepth(depthPhase1, maxDepth)) >= 0)
+                    if (n == depthPhase1 - 1 && (s = TotalDepth(depthPhase1, maxDepth)) >= 0)
                     {
                         if (s == depthPhase1 || (ax[depthPhase1 - 1] != ax[depthPhase1] && ax[depthPhase1 - 1] != ax[depthPhase1] + 3))
                         {
-                            return useSeparator ? solutionToString(s, depthPhase1) : solutionToString(s);
+                            return useSeparator ? SolutionToString(s, depthPhase1) : SolutionToString(s);
                         }
                     }
 
@@ -290,7 +290,7 @@
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Apply phase2 of algorithm and return the combined phase1 and phase2 depth. In phase2, only the moves
         // U,D,R2,F2,L2 and B2 are allowed.
-        internal static int totalDepth(int depthPhase1, int maxDepth)
+        internal static int TotalDepth(int depthPhase1, int maxDepth)
         {
             int mv = 0, d1 = 0, d2 = 0;
             int maxDepthPhase2 = Math.Min(10, maxDepth - depthPhase1); // Allow only max 10 moves in phase2
@@ -302,7 +302,7 @@
                 parity[i + 1] = CoordCubeBuildTables.parityMove[parity[i]][mv];
             }
 
-            if ((d1 = CoordCubeBuildTables.getPruning(CoordCubeBuildTables.Slice_URFtoDLF_Parity_Prun, (CoordCubeBuildTables.N_SLICE2 * URFtoDLF[depthPhase1] + FRtoBR[depthPhase1]) * 2 + parity[depthPhase1])) > maxDepthPhase2)
+            if ((d1 = CoordCubeBuildTables.GetPruning(CoordCubeBuildTables.Slice_URFtoDLF_Parity_Prun, (CoordCubeBuildTables.N_SLICE2 * URFtoDLF[depthPhase1] + FRtoBR[depthPhase1]) * 2 + parity[depthPhase1])) > maxDepthPhase2)
             {
                 return -1;
             }
@@ -315,7 +315,7 @@
             }
             URtoDF[depthPhase1] = CoordCubeBuildTables.MergeURtoULandUBtoDF[URtoUL[depthPhase1],UBtoDF[depthPhase1]];
 
-            if ((d2 = CoordCubeBuildTables.getPruning(CoordCubeBuildTables.Slice_URtoDF_Parity_Prun, (CoordCubeBuildTables.N_SLICE2 * URtoDF[depthPhase1] + FRtoBR[depthPhase1]) * 2 + parity[depthPhase1])) > maxDepthPhase2)
+            if ((d2 = CoordCubeBuildTables.GetPruning(CoordCubeBuildTables.Slice_URtoDF_Parity_Prun, (CoordCubeBuildTables.N_SLICE2 * URtoDF[depthPhase1] + FRtoBR[depthPhase1]) * 2 + parity[depthPhase1])) > maxDepthPhase2)
             {
                 return -1;
             }
@@ -408,7 +408,7 @@
                 parity[n + 1] = CoordCubeBuildTables.parityMove[parity[n]][mv];
                 URtoDF[n + 1] = CoordCubeBuildTables.URtoDF_Move[URtoDF[n], mv];
 
-                minDistPhase2[n + 1] = Math.Max(CoordCubeBuildTables.getPruning(CoordCubeBuildTables.Slice_URtoDF_Parity_Prun, (CoordCubeBuildTables.N_SLICE2 * URtoDF[n + 1] + FRtoBR[n + 1]) * 2 + parity[n + 1]), CoordCubeBuildTables.getPruning(CoordCubeBuildTables.Slice_URFtoDLF_Parity_Prun, (CoordCubeBuildTables.N_SLICE2 * URFtoDLF[n + 1] + FRtoBR[n + 1]) * 2 + parity[n + 1]));
+                minDistPhase2[n + 1] = Math.Max(CoordCubeBuildTables.GetPruning(CoordCubeBuildTables.Slice_URtoDF_Parity_Prun, (CoordCubeBuildTables.N_SLICE2 * URtoDF[n + 1] + FRtoBR[n + 1]) * 2 + parity[n + 1]), CoordCubeBuildTables.GetPruning(CoordCubeBuildTables.Slice_URFtoDLF_Parity_Prun, (CoordCubeBuildTables.N_SLICE2 * URFtoDLF[n + 1] + FRtoBR[n + 1]) * 2 + parity[n + 1]));
                 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
             } while (minDistPhase2[n + 1] != 0);

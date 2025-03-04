@@ -97,7 +97,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Gives string representation of a facelet cube
-        public string to_fc_String()
+        public string To_fc_String()
         {
             string s = "";
             for (int i = 0; i < 54; i++)
@@ -107,7 +107,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Gives CubieCube representation of a faceletcube
-        public CubieCube toCubieCube()
+        public CubieCube ToCubieCube()
         {
             byte ori;
             CubieCube ccRet = new();
@@ -208,5 +208,4 @@
         //    return ccRet;
         //}
     }
-
 }

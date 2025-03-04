@@ -166,7 +166,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        static void rotateLeft(Corner[] arr, int l, int r)
+        static void RotateLeft(Corner[] arr, int l, int r)
         // Left rotation of all array elements between l and r
         {
             Corner temp = arr[l];
@@ -176,7 +176,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        static void rotateRight(Corner[] arr, int l, int r)
+        static void RotateRight(Corner[] arr, int l, int r)
         // Right rotation of all array elements between l and r
         {
             Corner temp = arr[r];
@@ -186,7 +186,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        static void rotateLeft(Edge[] arr, int l, int r)
+        static void RotateLeft(Edge[] arr, int l, int r)
         // Left rotation of all array elements between l and r
         {
             Edge temp = arr[l];
@@ -196,7 +196,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        static void rotateRight(Edge[] arr, int l, int r)
+        static void RotateRight(Edge[] arr, int l, int r)
         // Right rotation of all array elements between l and r
         {
             Edge temp = arr[r];
@@ -207,7 +207,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // return cube in facelet representation
-        public FaceCube toFaceCube()
+        public FaceCube ToFaceCube()
         {
             FaceCube fcRet = new();
 
@@ -246,7 +246,7 @@
         // NOTE: Because we do not use symmetry reductions and hence no mirrored cubes in this simple implementation of the
         // Two-Phase-Algorithm, some code is not necessary here.
         //	
-        public void cornerMultiply(CubieCube b)
+        public void CornerMultiply(CubieCube b)
         {
             Corner[] cPerm = new Corner[8];
             byte[] cOri = new byte[8];
@@ -300,7 +300,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Multiply this CubieCube with another cubiecube b, restricted to the edges.
-        public void edgeMultiply(CubieCube b)
+        public void EdgeMultiply(CubieCube b)
         {
             Edge[] ePerm = new Edge[12];
             byte[] eOri = new byte[12];
@@ -318,15 +318,15 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Multiply this CubieCube with another CubieCube b.
-        void multiply(CubieCube b)
+        void Multiply(CubieCube b)
         {
-            cornerMultiply(b);
-            // edgeMultiply(b);
+            CornerMultiply(b);
+            // EdgeMultiply(b);
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Compute the inverse CubieCube
-        void invCubieCube(CubieCube c)
+        void InvCubieCube(CubieCube c)
         {
             foreach (Edge edge in Enum.GetValues<Edge>())
                 c.ep[(int)ep[(int)edge]] = edge;
@@ -353,7 +353,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // return the twist of the 8 corners. 0 <= twist < 3^7
-        public short getTwist()
+        public short GetTwist()
         {
             short ret = 0;
             for (int i = (int)Corner.URF; i < (int)Corner.DRB; i++)
@@ -362,7 +362,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setTwist(short twist)
+        public void SetTwist(short twist)
         {
             int twistParity = 0;
             for (int i = (int)Corner.DRB - 1; i >= (int)Corner.URF; i--)
@@ -375,7 +375,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // return the flip of the 12 edges. 0<= flip < 2^11
-        public short getFlip()
+        public short GetFlip()
         {
             short ret = 0;
             for (int i = (int)Edge.UR; i < (int)Edge.BR; i++)
@@ -384,7 +384,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setFlip(short flip)
+        public void SetFlip(short flip)
         {
             int flipParity = 0;
             for (int i = (int)Edge.BR - 1; i >= (int)Edge.UR; i--)
@@ -397,7 +397,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Parity of the corner permutation
-        public short cornerParity()
+        public short CornerParity()
         {
             int s = 0;
             for (int i = (int)Corner.DRB; i >= (int)Corner.URF + 1; i--)
@@ -409,7 +409,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Parity of the edges permutation. Parity of corners and edges are the same if the cube is solvable.
-        public short edgeParity()
+        public short EdgeParity()
         {
             int s = 0;
             for (int i = (int)Edge.BR; i >= (int)Edge.UR + 1; i--)
@@ -421,7 +421,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // permutation of the UD-slice edges FR,FL,BL and BR
-        public short getFRtoBR()
+        public short GetFRtoBR()
         {
             int a = 0, x = 0;
             Edge[] edge4 = new Edge[4];
@@ -440,7 +440,7 @@
                 int k = 0;
                 while ((int)edge4[j] != j + 8)
                 {
-                    rotateLeft(edge4, 0, j);
+                    RotateLeft(edge4, 0, j);
                     k++;
                 }
                 b = (j + 1) * b + k;
@@ -449,7 +449,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setFRtoBR(short idx)
+        public void SetFRtoBR(short idx)
         {
             int x;
             Edge[] sliceEdge = [Edge.FR, Edge.FL, Edge.BL, Edge.BR];
@@ -464,7 +464,7 @@
                 k = b % (j + 1);
                 b /= j + 1;
                 while (k-- > 0)
-                    rotateRight(sliceEdge, 0, j);
+                    RotateRight(sliceEdge, 0, j);
             }
 
             x = 3;// generate combination and set slice edges
@@ -483,7 +483,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Permutation of all corners except DBL and DRB
-        public short getURFtoDLF()
+        public short GetURFtoDLF()
         {
             int a = 0, x = 0;
             Corner[] corner6 = new Corner[6];
@@ -502,7 +502,7 @@
                 int k = 0;
                 while ((int)corner6[j] != j)
                 {
-                    rotateLeft(corner6, 0, j);
+                    RotateLeft(corner6, 0, j);
                     k++;
                 }
                 b = (j + 1) * b + k;
@@ -511,7 +511,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setURFtoDLF(short idx)
+        public void SetURFtoDLF(short idx)
         {
             int x;
             Corner[] corner6 = [Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DFR, Corner.DLF];
@@ -526,7 +526,7 @@
                 k = b % (j + 1);
                 b /= j + 1;
                 while (k-- > 0)
-                    rotateRight(corner6, 0, j);
+                    RotateRight(corner6, 0, j);
             }
             x = 5;// generate combination and set corners
             for (int j = (int)Corner.DRB; j >= 0; j--)
@@ -543,7 +543,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Permutation of the six edges UR,UF,UL,UB,DR,DF.
-        public int getURtoDF()
+        public int GetURtoDF()
         {
             int a = 0, x = 0;
             Edge[] edge6 = new Edge[6];
@@ -562,7 +562,7 @@
                 int k = 0;
                 while ((int)edge6[j] != j)
                 {
-                    rotateLeft(edge6, 0, j);
+                    RotateLeft(edge6, 0, j);
                     k++;
                 }
                 b = (j + 1) * b + k;
@@ -571,7 +571,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setURtoDF(int idx)
+        public void SetURtoDF(int idx)
         {
             int x;
             Edge[] edge6 = [Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF];
@@ -586,7 +586,7 @@
                 k = b % (j + 1);
                 b /= j + 1;
                 while (k-- > 0)
-                    rotateRight(edge6, 0, j);
+                    RotateRight(edge6, 0, j);
             }
             x = 5;// generate combination and set edges
             for (int j = (int)Edge.BR; j >= 0; j--)
@@ -603,12 +603,12 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Permutation of the six edges UR,UF,UL,UB,DR,DF
-        public static int getURtoDF(short idx1, short idx2)
+        public static int GetURtoDF(short idx1, short idx2)
         {
             CubieCube a = new();
             CubieCube b = new();
-            a.setURtoUL(idx1);
-            b.setUBtoDF(idx2);
+            a.SetURtoUL(idx1);
+            b.SetUBtoDF(idx2);
             for (int i = 0; i < 8; i++)
             {
                 if (a.ep[i] != Edge.BR)
@@ -617,12 +617,12 @@
                     else
                         b.ep[i] = a.ep[i];
             }
-            return b.getURtoDF();
+            return b.GetURtoDF();
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Permutation of the three edges UR,UF,UL
-        public short getURtoUL()
+        public short GetURtoUL()
         {
             int a = 0, x = 0;
             Edge[] edge3 = new Edge[3];
@@ -641,7 +641,7 @@
                 int k = 0;
                 while ((int)edge3[j] != j)
                 {
-                    rotateLeft(edge3, 0, j);
+                    RotateLeft(edge3, 0, j);
                     k++;
                 }
                 b = (j + 1) * b + k;
@@ -650,7 +650,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setURtoUL(short idx)
+        public void SetURtoUL(short idx)
         {
             int x;
             Edge[] edge3 = [Edge.UR, Edge.UF, Edge.UL];
@@ -664,7 +664,7 @@
                 k = b % (j + 1);
                 b /= j + 1;
                 while (k-- > 0)
-                    rotateRight(edge3, 0, j);
+                    RotateRight(edge3, 0, j);
             }
             x = 2;// generate combination and set edges
             for (int j = (int)Edge.BR; j >= 0; j--)
@@ -677,7 +677,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Permutation of the three edges UB,DR,DF
-        public short getUBtoDF()
+        public short GetUBtoDF()
         {
             int a = 0, x = 0;
             Edge[] edge3 = new Edge[3];
@@ -696,7 +696,7 @@
                 int k = 0;
                 while ((int)edge3[j] != (int)Edge.UB + j)
                 {
-                    rotateLeft(edge3, 0, j);
+                    RotateLeft(edge3, 0, j);
                     k++;
                 }
                 b = (j + 1) * b + k;
@@ -705,7 +705,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setUBtoDF(short idx)
+        public void SetUBtoDF(short idx)
         {
             int x;
             Edge[] edge3 = [Edge.UB, Edge.DR, Edge.DF];
@@ -719,7 +719,7 @@
                 k = b % (j + 1);
                 b /= j + 1;
                 while (k-- > 0)
-                    rotateRight(edge3, 0, j);
+                    RotateRight(edge3, 0, j);
             }
             x = 2;// generate combination and set edges
             for (int j = (int)Edge.BR; j >= 0; j--)
@@ -731,7 +731,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        int getURFtoDLB()
+        int GetURFtoDLB()
         {
             Corner[] perm = new Corner[8];
             int b = 0;
@@ -742,7 +742,7 @@
                 int k = 0;
                 while ((int)perm[j] != j)
                 {
-                    rotateLeft(perm, 0, j);
+                    RotateLeft(perm, 0, j);
                     k++;
                 }
                 b = (j + 1) * b + k;
@@ -751,7 +751,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setURFtoDLB(int idx)
+        public void SetURFtoDLB(int idx)
         {
             Corner[] perm = [Corner.URF, Corner.UFL, Corner.ULB, Corner.UBR, Corner.DFR, Corner.DLF, Corner.DBL, Corner.DRB];
             int k;
@@ -760,7 +760,7 @@
                 k = idx % (j + 1);
                 idx /= j + 1;
                 while (k-- > 0)
-                    rotateRight(perm, 0, j);
+                    RotateRight(perm, 0, j);
             }
             int x = 7;// set corners
             for (int j = 7; j >= 0; j--)
@@ -768,7 +768,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        int getURtoBR()
+        int GetURtoBR()
         {
             Edge[] perm = new Edge[12];
             int b = 0;
@@ -779,7 +779,7 @@
                 int k = 0;
                 while ((int)perm[j] != j)
                 {
-                    rotateLeft(perm, 0, j);
+                    RotateLeft(perm, 0, j);
                     k++;
                 }
                 b = (j + 1) * b + k;
@@ -788,7 +788,7 @@
         }
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        public void setURtoBR(int idx)
+        public void SetURtoBR(int idx)
         {
             Edge[] perm = [Edge.UR, Edge.UF, Edge.UL, Edge.UB, Edge.DR, Edge.DF, Edge.DL, Edge.DB, Edge.FR, Edge.FL, Edge.BL, Edge.BR];
             int k;
@@ -797,7 +797,7 @@
                 k = idx % (j + 1);
                 idx /= j + 1;
                 while (k-- > 0)
-                    rotateRight(perm, 0, j);
+                    RotateRight(perm, 0, j);
             }
             int x = 11;// set edges
             for (int j = 11; j >= 0; j--)
@@ -812,7 +812,7 @@
         // -4: Not all corners exist exactly once
         // -5: Twist error: One corner has to be twisted
         // -6: Parity error: Two corners ore two edges have to be exchanged
-        public int verify()
+        public int Verify()
         {
             int sum = 0;
             int[] edgeCount = new int[12];
@@ -840,7 +840,7 @@
             if (sum % 3 != 0)
                 return -5;// twisted corner
 
-            if ((edgeParity() ^ cornerParity()) != 0)
+            if ((EdgeParity() ^ CornerParity()) != 0)
                 return -6;// parity error
 
             return 0;// cube ok
