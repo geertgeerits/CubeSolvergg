@@ -34,7 +34,7 @@ namespace CubeSolver
 
             if (CheckIfTableExists())
             {
-                //solution = Search.Solution(searchString, out info);  // Gives an error
+                //solution = Search.Solution(searchString, out info);  // System.TypeInitializationException: The type initializer for 'CubeSolver.CoordCube' threw an exception
                 solution = SearchRunTime.Solution(searchString, out info, buildTables: false);
             }
             else
