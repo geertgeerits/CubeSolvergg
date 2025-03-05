@@ -221,10 +221,10 @@ namespace CubeSolver
             return cResult;
         }
 
-        /// <summary>
-        /// Check if the tables exists
-        /// </summary>
-        /// <returns></returns>
+        ///// <summary>
+        ///// Check if the tables exists
+        ///// </summary>
+        ///// <returns></returns>
         //private static bool CheckIfTableExists()
         //{
         //    if (!File.Exists(Path.Combine(Globals.cPathTables, "twist")))
