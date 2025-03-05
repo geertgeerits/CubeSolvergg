@@ -29,22 +29,21 @@ namespace CubeSolver
             Debug.WriteLine("searchString: " + searchString);
 
             // Search for the solution to solve the cube without creating the tables
-            string solution = SearchRunTime.Solution(searchString, out _, buildTables: false);
+            //string solution = SearchRunTime.Solution(searchString, out _, buildTables: false);
 
             // Search for the solution to solve the cube with creating the tables
-            //string info;
-            //string solution;
-            
-            //if (CheckIfTableExists())
-            //{
-            //    //solution = Search.Solution(searchString, out info);  // Error; System.TypeInitializationException: The type initializer for 'CubeSolver.CoordCube' threw an exception
-            //    solution = SearchRunTime.Solution(searchString, out info, buildTables: false);
-            //}
-            //else
-            //{
-            //    //solution = SearchRunTime.Solution(searchString, out info, buildTables: true);
-            //}
-            
+            string solution;
+
+            if (CheckIfTableExists())
+            {
+                //solution = Search.Solution(searchString, out info);  // Error; System.TypeInitializationException: The type initializer for 'CubeSolver.CoordCube' threw an exception
+                solution = SearchRunTime.Solution(searchString, out _, buildTables: false);
+            }
+            else
+            {
+                solution = SearchRunTime.Solution(searchString, out _, buildTables: true);
+            }
+
             Debug.WriteLine("Search.Solution: " + solution);
 
             // Error checking
@@ -221,73 +220,73 @@ namespace CubeSolver
             return cResult;
         }
 
-        ///// <summary>
-        ///// Check if the tables exists
-        ///// </summary>
-        ///// <returns></returns>
-        //private static bool CheckIfTableExists()
-        //{
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "twist")))
-        //    {
-        //        return false;
-        //    }
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "flip")))
-        //    {
-        //        return false;
-        //    }
+        /// <summary>
+        /// Check if the tables exists
+        /// </summary>
+        /// <returns></returns>
+        private static bool CheckIfTableExists()
+        {
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "twist")))
+            {
+                return false;
+            }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "flip")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "FRtoBR")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "FRtoBR")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "URFtoDLF")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "URFtoDLF")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "URtoDF")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "URtoDF")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "URtoUL")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "URtoUL")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "UBtoDF")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "UBtoDF")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "MergeURtoULandUBtoDF")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "MergeURtoULandUBtoDF")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URFtoDLF_Parity_Prun")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URFtoDLF_Parity_Prun")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URtoDF_Parity_Prun")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URtoDF_Parity_Prun")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Twist_Prun")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Twist_Prun")))
+            {
+                return false;
+            }
 
-        //    if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Flip_Prun")))
-        //    {
-        //        return false;
-        //    }
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Flip_Prun")))
+            {
+                return false;
+            }
 
-        //    return true;
-        //}
+            return true;
+        }
 
         /// <summary>
         /// Turn the cube so that the white center piece is on the up face
