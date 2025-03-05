@@ -72,6 +72,8 @@ namespace CubeSolver
             return fc.To_fc_String();
         }
 
+        //// Error when building tables !!!
+        //// NotSupportedException: Serialization and deserialization of 'System.Int16[,]' instances is not supported
         //public static void SerializeTable(string filename, short[,] array)
         //{
         //    EnsureFolder(Globals.cPathTables);
@@ -81,20 +83,40 @@ namespace CubeSolver
         //    }
         //}
 
+        /// <summary>
+        /// Serialize tables
+        /// </summary>
+        /// <param name="filename"></param>
+        /// <param name="array"></param>
         public static void SerializeTable(string filename, short[,] array)
         {
             EnsureFolder(Globals.cPathTables);
             using Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Create);
-            var jaggedArray = new short[array.GetLength(0)][];
-            for (int i = 0; i < array.GetLength(0); i++)
+            var jaggedArray = ConvertToJaggedArray(array);
+            JsonSerializer.Serialize(s, jaggedArray);
+        }
+
+        /// <summary>
+        /// Convert a 2D array to a jagged array.
+        /// </summary>
+        /// <param name="array"></param>
+        /// <returns></returns>
+        private static short[][] ConvertToJaggedArray(short[,] array)
+        {
+            int rows = array.GetLength(0);
+            int cols = array.GetLength(1);
+            var jaggedArray = new short[rows][];
+            
+            for (int i = 0; i < rows; i++)
             {
-                jaggedArray[i] = new short[array.GetLength(1)];
-                for (int j = 0; j < array.GetLength(1); j++)
+                jaggedArray[i] = new short[cols];
+                for (int j = 0; j < cols; j++)
                 {
                     jaggedArray[i][j] = array[i, j];
                 }
             }
-            JsonSerializer.Serialize(s, jaggedArray);
+            
+            return jaggedArray;
         }
 
         public static short[,] DeserializeTable(string filename)

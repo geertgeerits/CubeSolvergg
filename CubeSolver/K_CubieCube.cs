@@ -124,8 +124,8 @@
 
 
         // this CubieCube array represents the 6 basic cube moves
-        public static CubieCube[] moveCube = [SetMoveU(), SetMoveR(), SetMoveF(), SetMoveD(), SetMoveL(), SetMoveB(),];
-
+        //public static CubieCube[] moveCube = [SetMoveU(), SetMoveR(), SetMoveF(), SetMoveD(), SetMoveL(), SetMoveB(),];
+        public static readonly CubieCube[] moveCube = [SetMoveU(), SetMoveR(), SetMoveF(), SetMoveD(), SetMoveL(), SetMoveB(),];
 
         public CubieCube()
         {

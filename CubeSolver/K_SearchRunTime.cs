@@ -141,7 +141,7 @@
          *         Error 7: No solution exists for the given maxDepth
          *         Error 8: Timeout, no solution within given time
          */
-        public static string Solution(string facelets, out string info, int maxDepth= 22, long timeOut = 6000, bool useSeparator = false, bool buildTables = false )
+        public static string Solution(string facelets, out string info, int maxDepth = 22, long timeOut = 6000, bool useSeparator = false, bool buildTables = false)
         {
             info = "Warning, this solution builds tables at run time which is very slow. This will find a solution, however it is reccomended to use the K_SearchRunTime class only to create a local copy of the tables, then use the K_Search class to search for solutions instead.";
             
@@ -193,7 +193,7 @@
             URtoUL[0] = c.URtoUL;
             UBtoDF[0] = c.UBtoDF;
             minDistPhase1[1] = 1; // else failure for depth=1, n=0
-            int mv = 0, n = 0;
+            int mv, n = 0;
             bool busy = false;
             int depthPhase1 = 1;
             long tStart = DateTimeHelper.CurrentUnixTimeMillis();
@@ -293,7 +293,7 @@
         // U,D,R2,F2,L2 and B2 are allowed.
         internal static int TotalDepth(int depthPhase1, int maxDepth)
         {
-            int mv = 0, d1 = 0, d2 = 0;
+            int mv, d1, d2;
             int maxDepthPhase2 = Math.Min(10, maxDepth - depthPhase1); // Allow only max 10 moves in phase2
             for (int i = 0; i < depthPhase1; i++)
             {

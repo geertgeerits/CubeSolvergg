@@ -11,7 +11,7 @@
         // facelet in the URF corner position, which defines the orientation.
         // cornerFacelet[URF.ordinal()][1] and cornerFacelet[URF.ordinal()][2] give the position of the other two facelets
         // of the URF corner (clockwise).
-        public static Facelet[][] cornerFacelet = [
+        public static readonly Facelet[][] cornerFacelet = [
             [Facelet.U9, Facelet.R1, Facelet.F3],
             [Facelet.U7, Facelet.F1, Facelet.L3],
             [Facelet.U1, Facelet.L1, Facelet.B3],
@@ -26,7 +26,7 @@
         // Map the edge positions to facelet positions. edgeFacelet[UR.ordinal()][0] e.g. gives the position of the facelet in
         // the UR edge position, which defines the orientation.
         // edgeFacelet[UR.ordinal()][1] gives the position of the other facelet
-        public static Facelet[][] edgeFacelet = [
+        public static readonly Facelet[][] edgeFacelet = [
             [Facelet.U6, Facelet.R2],
             [Facelet.U8, Facelet.F2],
             [Facelet.U4, Facelet.L2],
@@ -43,7 +43,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Map the corner positions to facelet CubeColors.
-        public static CubeColor[][] cornerColor = [
+        public static readonly CubeColor[][] cornerColor = [
             [CubeColor.U, CubeColor.R, CubeColor.F],
             [CubeColor.U, CubeColor.F, CubeColor.L],
             [CubeColor.U, CubeColor.L, CubeColor.B],
@@ -56,7 +56,7 @@
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Map the edge positions to facelet CubeColors.
-        public static CubeColor[][] edgeColor = [
+        public static readonly CubeColor[][] edgeColor = [
             [CubeColor.U, CubeColor.R],
             [CubeColor.U, CubeColor.F],
             [CubeColor.U, CubeColor.L],
