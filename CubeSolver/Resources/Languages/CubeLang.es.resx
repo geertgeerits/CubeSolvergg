@@ -460,10 +460,12 @@ La posible causa es la transferencia incorrecta de colores a este cubo.</value>
     <value>Número de vueltas:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Opciones para resolver el cubo:
-1. En la pantalla de inicio, utiliza las teclas de flecha para mezclar el cubo y resolverlo con las teclas de flecha.
-2. Igual que la primera opción, pero resuelve el cubo con el botón 'Resolver'. A continuación, el cubo se resuelve en orden inverso.
-3. Utiliza el botón con el cubo en la parte inferior de la pantalla para transferir los colores de tu cubo a este cubo (consulta la explicación de ese botón). La aplicación resolverá el cubo. A continuación, transfiere los movimientos propuestos al cubo real. Esto no garantiza que se puedan resolver todos los cubos.</value>
+    <value>Métodos de solución:
+- Automático: usa el botón del cubo en la parte inferior de la pantalla para ingresar los colores de tu cubo real. Una vez hecho esto, presiona el botón nuevamente y luego toca "Resolver". El cubo se resolverá utilizando el algoritmo "Kociemba". Transfiere los movimientos propuestos a tu cubo real.
+Si desactivas el algoritmo "Kociemba" en la configuración, la aplicación utilizará el método "Friedrich" (CFOP).
+- Inverso: usa las teclas de flecha para mezclar el cubo y luego presiona "Resolver". El cubo se resolverá en orden inverso.
+- Manual: en la pantalla de inicio, usa las teclas de flecha para mezclar y resolver el cubo manualmente.
+Esto no es una garantía de que todos los cubos puedan resolverse.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>El cubo vuelve a su estado anterior.</value>

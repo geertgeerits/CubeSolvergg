@@ -460,10 +460,12 @@ Possible cause is incorrect transfer of colors to this cube.</value>
     <value>Number of turns:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Options to solve the cube:
-1. On the home screen, use the arrow keys to mix up the cube and solve the cube with the arrow keys.
-2. Same as the first option, but solve the cube with the 'Solve' button. The cube is then solved in reverse order.
-3. Use the button with the cube at the bottom of the screen to transfer the colors of your cube to this cube (see the explanation of that button). The cube will be solved by the application. Then transfer the proposed moves to the real cube. This is not a guarantee that all cubes can be solved.</value>
+    <value>Solution methods:
+- Automatic: Use the cube button at the bottom of the screen to input the colors of your real cube. Once done, press the button again, then tap 'Solve'. The cube will be solved using the 'Kociemba' algorithm. Transfer the proposed moves to your real cube.
+If you disable the 'Kociemba' algorithm in the settings, the app will use the 'Friedrich' (CFOP) method.
+- Reverse: Use the arrow keys to scramble the cube, then press 'Solve.' The cube will be solved in reverse order.
+- Manual: On the home screen, use the arrow keys to scramble and solve the cube manually.
+This is not a guarantee that all cubes can be solved.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>The cube is back in its previous state.</value>

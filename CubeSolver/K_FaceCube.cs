@@ -157,7 +157,7 @@
         }
 
 
-        //public Cube toCube()
+        //public Cube ToCube()
         //{
         //    byte ori;
         //    Cube ccRet = new Cube();

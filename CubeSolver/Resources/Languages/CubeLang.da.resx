@@ -460,10 +460,12 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
     <value>Antal omgange:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Muligheder for at løse terningen:
-1. På startskærmen skal du bruge piletasterne til at blande terningen og løse terningen med piletasterne.
-2. Samme som den første mulighed, men løs terningen med 'Løs'-knappen. Terningen løses så i omvendt rækkefølge.
-3. Brug knappen med terningen i bunden af ​​skærmen til at overføre farverne på din terning til denne terning (se forklaringen af ​​den knap). Terningen vil blive løst af applikationen. Overfør derefter de foreslåede træk til den rigtige terning. Dette er ikke en garanti for, at alle terninger kan løses.</value>
+    <value>Løsningsmetoder:
+- Automatisk: Brug terningknappen nederst på skærmen til at indtaste farverne på din rigtige terning. Når du er færdig, skal du trykke på knappen igen og derefter trykke på 'Løs'. Terningen vil blive løst ved hjælp af 'Kociemba'-algoritmen. Overfør de foreslåede træk til din rigtige terning.
+Hvis du deaktiverer 'Kociemba'-algoritmen i indstillingerne, vil appen bruge 'Friedrich' (CFOP)-metoden.
+- Omvendt: Brug piletasterne til at kryptere terningen, og tryk derefter på 'Løs'. Terningen vil blive løst i omvendt rækkefølge.
+- Manuel: På startskærmen skal du bruge piletasterne til at scramble og løse terningen manuelt.
+Dette er ikke en garanti for, at alle terninger kan løses.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>Terningen er tilbage i sin tidligere tilstand.</value>

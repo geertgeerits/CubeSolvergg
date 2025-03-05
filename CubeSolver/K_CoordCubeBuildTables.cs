@@ -63,7 +63,6 @@ namespace CubeSolver
                 Tools.SerializeSbyteArray("Slice_Twist_Prun", Slice_Twist_Prun);
                 Tools.SerializeSbyteArray("Slice_Flip_Prun", Slice_Flip_Prun);
             }
-
         }
 
         // A move on the coordinate level

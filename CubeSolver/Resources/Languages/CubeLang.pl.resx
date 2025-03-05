@@ -460,10 +460,12 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
     <value>Liczba tur:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Opcje rozwiązania kostki:
-1. Na ekranie głównym użyj klawiszy strzałek, aby wymieszać kostkę i rozwiązać kostkę za pomocą klawiszy strzałek.
-2. Tak samo jak w pierwszej opcji, ale rozwiąż kostkę za pomocą przycisku „Rozwiąż”. Następnie kostka jest rozwiązywana w odwrotnej kolejności.
-3. Użyj przycisku z kostką na dole ekranu, aby przenieść kolory swojej kostki do tej kostki (zobacz wyjaśnienie tego przycisku). Kostka zostanie rozwiązana przez aplikację. Następnie przenieś proponowane ruchy do prawdziwej kostki. Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
+    <value>Metody rozwiązania:
+- Automatyczne: użyj przycisku kostki na dole ekranu, aby wprowadzić kolory swojej prawdziwej kostki. Po wykonaniu tej czynności naciśnij przycisk ponownie, a następnie dotknij „Rozwiąż”. Kostka zostanie rozwiązana za pomocą algorytmu „Kociemba”. Przenieś proponowane ruchy do swojej prawdziwej kostki.
+Jeśli wyłączysz algorytm „Kociemba” w ustawieniach, aplikacja użyje metody „Friedrich” (CFOP).
+- Odwrotne: użyj klawiszy strzałek, aby pomieszać kostkę, a następnie naciśnij „Rozwiąż”. Kostka zostanie rozwiązana w odwrotnej kolejności.
+- Ręczne: na ekranie głównym użyj klawiszy strzałek, aby pomieszać i rozwiązać kostkę ręcznie.
+Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>Kostka wróciła do poprzedniego stanu.</value>

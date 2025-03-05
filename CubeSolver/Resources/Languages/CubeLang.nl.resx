@@ -460,10 +460,12 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
     <value>Aantal draaibewegingen:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Opties om de kubus op te lossen:
-1. Gebruik op het startscherm de pijltjestoetsen om de kubus te mixen en los de kubus op met de pijltjestoetsen.
-2. Hetzelfde als de eerste optie, maar los de kubus op met de knop 'Oplossen'. De kubus wordt dan in omgekeerde volgorde opgelost.
-3. Gebruik de knop met de kubus onder aan het scherm om de kleuren van je kubus over te brengen naar deze kubus (zie de uitleg van die knop). De kubus wordt opgelost door de applicatie. Breng vervolgens de voorgestelde zetten over naar de echte kubus. Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
+    <value>Oplossingsmethoden:
+- Automatisch: gebruik de kubusknop onderaan het scherm om de kleuren van uw echte kubus in te voeren. Druk nogmaals op de knop en tik vervolgens op 'Oplossen'. De kubus wordt opgelost met behulp van het 'Kociemba'-algoritme. Breng de voorgestelde zetten over naar uw echte kubus.
+Als u het 'Kociemba'-algoritme in de instellingen uitschakelt, gebruikt de app de 'Friedrich'-methode (CFOP).
+- Omgekeerd: gebruik de pijltjestoetsen om de kubus te husselen en druk vervolgens op 'Oplossen'. De kubus wordt in omgekeerde volgorde opgelost.
+- Handmatig: gebruik op het startscherm de pijltjestoetsen om de kubus handmatig te husselen en op te lossen.
+Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>De kubus is terug in zijn vorige staat.</value>

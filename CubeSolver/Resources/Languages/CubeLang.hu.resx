@@ -460,10 +460,12 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
     <value>A fordulatok száma:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>A kocka megoldásának lehetőségei:
-1. A kezdőképernyőn a nyílbillentyűkkel keverje össze a kockát, és oldja meg a kockát a nyílbillentyűkkel.
-2. Ugyanaz, mint az első opció, de oldja meg a kockát a „Megoldás” gombbal. Ezután a kockát fordított sorrendben oldjuk meg.
-3. Használja a képernyő alján található kockával ellátott gombot, hogy a kocka színeit ebbe a kockába vigye át (lásd a gomb magyarázatát). A kockát az alkalmazás fogja megoldani. Ezután vigye át a javasolt mozdulatokat a valódi kockába. Ez nem garancia arra, hogy minden kocka megoldható.</value>
+    <value>Megoldási módszerek:
+- Automatikus: használja a képernyő alján található kocka gombot a valódi kocka színeinek beviteléhez. Ha elkészült, nyomja meg újra a gombot, majd érintse meg a „Megoldás” gombot. A kockát a 'Kociemba' algoritmus segítségével oldjuk meg. Helyezze át a javasolt mozdulatokat a valódi kockájába.
+Ha letiltja a „Kociemba” algoritmust a beállításokban, az alkalmazás a „Friedrich” (CFOP) módszert fogja használni.
+- Fordítva: a nyílbillentyűkkel keverje össze a kockát, majd nyomja meg a "Megoldás" gombot. A kocka megoldása fordított sorrendben történik.
+- Kézi: a kezdőképernyőn használja a nyílbillentyűket a kocka kézi kódolásához és megoldásához.
+Ez nem garancia arra, hogy minden kocka megoldható.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>A kocka visszakerült korábbi állapotába.</value>

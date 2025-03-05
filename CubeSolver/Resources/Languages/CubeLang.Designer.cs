@@ -360,10 +360,11 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Options to solve the cube:
-        ///1. On the home screen, use the arrow keys to mix up the cube and solve the cube with the arrow keys.
-        ///2. Same as the first option, but solve the cube with the &apos;Solve&apos; button. The cube is then solved in reverse order.
-        ///3. Use the button with the cube at the bottom of the screen to transfer the colors of your cube to this cube (see the explanation of that button). The cube will be solved by the application. Then transfer the proposed moves to the real cube. This is not a guarantee  [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Solution methods:
+        ///- Automatic: Use the cube button at the bottom of the screen to input the colors of your real cube. Once done, press the button again, then tap &apos;Solve&apos;. The cube will be solved using the &apos;Kociemba&apos; algorithm. Transfer the proposed moves to your real cube.
+        ///If you disable the &apos;Kociemba&apos; algorithm in the settings, the app will use the &apos;Friedrich&apos; (CFOP) method.
+        ///- Reverse: Use the arrow keys to scramble the cube, then press &apos;Solve.&apos; The cube will be solved in reverse order.
+        ///- Manual: On th [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string HelpOptionsSolveCube_Text {
             get {

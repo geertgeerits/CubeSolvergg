@@ -460,10 +460,12 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
     <value>Nombre de tours:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Options pour résoudre le cube :
-1. Sur l'écran d'accueil, utilisez les touches fléchées pour mélanger le cube et résolvez le cube avec les touches fléchées.
-2. Même chose que la première option, mais résolvez le cube avec le bouton « Résoudre ». Le cube est alors résolu dans l'ordre inverse.
-3. Utilisez le bouton avec le cube en bas de l'écran pour transférer les couleurs de votre cube sur ce cube (voir l'explication de ce bouton). Le cube sera résolu par l'application. Transférez ensuite les mouvements proposés sur le cube réel. Cela ne garantit pas que tous les cubes puissent être résolus.</value>
+    <value>Méthodes de résolution :
+- Automatique : utilisez le bouton du cube en bas de l'écran pour saisir les couleurs de votre vrai cube. Une fois terminé, appuyez à nouveau sur le bouton, puis appuyez sur « Résoudre ». Le cube sera résolu à l'aide de l'algorithme « Kociemba ». Transférez les mouvements proposés sur votre vrai cube.
+Si vous désactivez l'algorithme « Kociemba » dans les paramètres, l'application utilisera la méthode « Friedrich » (CFOP).
+- Inverser : utilisez les touches fléchées pour brouiller le cube, puis appuyez sur « Résoudre ». Le cube sera résolu dans l'ordre inverse.
+- Manuel : sur l'écran d'accueil, utilisez les touches fléchées pour brouiller et résoudre le cube manuellement.
+Ceci ne garantit pas que tous les cubes peuvent être résolus.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>Le cube est revenu à son état précédent.</value>

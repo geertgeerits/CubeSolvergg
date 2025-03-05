@@ -77,10 +77,8 @@ namespace CubeSolver
         //public static void SerializeTable(string filename, short[,] array)
         //{
         //    EnsureFolder(Globals.cPathTables);
-        //    using (Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Create))
-        //    {
-        //        JsonSerializer.Serialize(s, array);
-        //    }
+        //    using Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Create);
+        //    JsonSerializer.Serialize(s, array);
         //}
 
         /// <summary>

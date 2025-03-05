@@ -460,10 +460,12 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
     <value>Numărul de ture:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Opțiuni de rezolvare a cubului:
-1. Pe ecranul de start, utilizați tastele săgeți pentru a amesteca cubul și pentru a rezolva cubul cu tastele săgeți.
-2. La fel ca prima opțiune, dar rezolvați cubul cu butonul „Rezolvare”. Cubul este apoi rezolvat în ordine inversă.
-3. Folosește butonul cu cubul din partea de jos a ecranului pentru a transfera culorile cubului tău în acest cub (vezi explicația acelui buton). Cubul va fi rezolvat de aplicație. Apoi transferați mișcările propuse în cubul real. Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
+    <value>Metode de rezolvare:
+- Automat: utilizați butonul cub din partea de jos a ecranului pentru a introduce culorile cubului real. După ce ați terminat, apăsați din nou butonul, apoi atingeți „Rezolvare”. Cubul va fi rezolvat folosind algoritmul „Kociemba”. Transferați mișcările propuse în cubul real.
+Dacă dezactivați algoritmul „Kociemba” în setări, aplicația va folosi metoda „Friedrich” (CFOP).
+- Reverse: utilizați tastele săgeți pentru a amesteca cubul, apoi apăsați „Rezolvare”. Cubul va fi rezolvat în ordine inversă.
+- Manual: pe ecranul de start, utilizați tastele săgeți pentru a amesteca și rezolva cubul manual.
+Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>Cubul este din nou în starea anterioară.</value>

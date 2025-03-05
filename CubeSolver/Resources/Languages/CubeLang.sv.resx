@@ -460,10 +460,12 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
     <value>Antal omgångar:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Alternativ för att lösa kuben:
-1. På hemskärmen använder du piltangenterna för att blanda ihop kuben och löser kuben med piltangenterna.
-2. Samma som det första alternativet, men lös kuben med 'Solve'-knappen. Kuben löses sedan i omvänd ordning.
-3. Använd knappen med kuben längst ner på skärmen för att överföra färgerna på din kub till denna kub (se förklaringen till den knappen). Kuben kommer att lösas av applikationen. Överför sedan de föreslagna dragen till den riktiga kuben. Detta är inte en garanti för att alla kuber kan lösas.</value>
+    <value>Lösningsmetoder:
+- Automatisk: använd kubknappen längst ner på skärmen för att mata in färgerna på din riktiga kub. När du är klar trycker du på knappen igen och trycker sedan på "Lös". Kuben kommer att lösas med hjälp av 'Kociemba'-algoritmen. Överför de föreslagna dragen till din riktiga kub.
+Om du inaktiverar 'Kociemba'-algoritmen i inställningarna kommer appen att använda 'Friedrich' (CFOP)-metoden.
+- Omvänd: använd piltangenterna för att förvränga kuben och tryck sedan på "Lös". Kuben kommer att lösas i omvänd ordning.
+- Manuell: på hemskärmen, använd piltangenterna för att förvränga och lösa kuben manuellt.
+Detta är inte en garanti för att alla kuber kan lösas.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>Kuben är tillbaka i sitt tidigare tillstånd.</value>

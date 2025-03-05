@@ -460,10 +460,12 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
     <value>Vuorojen määrä:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Vaihtoehdot kuution ratkaisemiseen:
-1. Käytä aloitusnäytössä nuolinäppäimiä sekoittaaksesi kuutiota ja ratkaistaksesi kuution nuolinäppäimillä.
-2. Sama kuin ensimmäinen vaihtoehto, mutta ratkaise kuutio 'Solve'-painikkeella. Kuutio ratkaistaan ​​sitten käänteisessä järjestyksessä.
-3. Käytä näytön alareunassa olevaa kuution painiketta siirtääksesi kuutiosi värit tähän kuutioon (katso painikkeen selitys). Kuutio ratkaistaan ​​sovelluksella. Siirrä sitten ehdotetut liikkeet oikeaan kuutioon. Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
+    <value>Ratkaisumenetelmät:
+- Automaattinen: käytä näytön alareunassa olevaa kuutiopainiketta syöttääksesi oikean kuutiosi värit. Kun olet valmis, paina painiketta uudelleen ja napauta sitten Ratkaise. Kuutio ratkaistaan ​​käyttämällä Kociemba-algoritmia. Siirrä ehdotetut liikkeet oikeaan kuutioosi.
+Jos poistat Kociemba-algoritmin käytöstä asetuksista, sovellus käyttää Friedrich (CFOP) -menetelmää.
+- Käänteinen: sekoita kuutio nuolinäppäimillä ja paina sitten 'Ratkaise'. Kuutio ratkaistaan ​​päinvastaisessa järjestyksessä.
+- Manuaalinen: aloitusnäytössä voit sekoittaa ja ratkaista kuution manuaalisesti nuolinäppäimillä.
+Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>Kuutio on palannut entiseen tilaan.</value>

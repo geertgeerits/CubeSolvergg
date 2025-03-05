@@ -460,10 +460,12 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
     <value>Počet otáček:</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Možnosti řešení krychle:
-1. Na domovské obrazovce pomocí kláves se šipkami promíchejte kostku a vyřešte kostku pomocí kláves se šipkami.
-2. Stejné jako první možnost, ale vyřešte kostku tlačítkem 'Solve'. Kostka se pak řeší v opačném pořadí.
-3. Pomocí tlačítka s kostkou ve spodní části obrazovky přeneste barvy své kostky na tuto kostku (viz vysvětlení tohoto tlačítka). Kostku vyřeší aplikace. Poté přeneste navržené tahy do skutečné krychle. To není záruka, že všechny kostky lze vyřešit.</value>
+    <value>Metody řešení:
+- Automaticky: pomocí tlačítka kostky ve spodní části obrazovky zadejte barvy skutečné kostky. Po dokončení znovu stiskněte tlačítko a klepněte na „Vyřešit“. Kostka bude řešena pomocí algoritmu 'Kociemba'. Přeneste navrhované tahy do své skutečné krychle.
+Pokud v nastavení zakážete algoritmus 'Kociemba', aplikace použije metodu 'Friedrich' (CFOP).
+- Obrátit: pomocí kláves se šipkami rozšiřte kostku a poté stiskněte 'Solve'. Kostka bude řešena v opačném pořadí.
+- Manuální: na domovské obrazovce použijte klávesy se šipkami k zakódování a ručnímu vyřešení kostky.
+To není zárukou, že všechny kostky lze vyřešit.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
     <value>Kostka je zpět ve svém předchozím stavu.</value>
