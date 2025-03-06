@@ -18,7 +18,7 @@ namespace CubeSolver
             lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
 #endif
             //// Put text in the chosen language in the controls and variables
-            lblVersion.Text = $"{CubeLang.Version_Text} 2.0.36";
+            lblVersion.Text = $"{CubeLang.Version_Text} 2.0.37";
             lblCopyright.Text = $"{CubeLang.Copyright_Text} © 1981-2025 Geert Geerits";
             lblEmail.Text = $"{CubeLang.Email_Text} geertgeerits@gmail.com";
             lblWebsite.Text = $"{CubeLang.Website_Text}: ../cube-solver";
