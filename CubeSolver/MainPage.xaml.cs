@@ -390,7 +390,7 @@ namespace CubeSolver
             string elapsedMilliseconds = delta.TotalMilliseconds.ToString("F0");
 
             // Save the time to solve the cube when using the Kociemba solution for the first time
-            if (Globals.bKociembaSolution && bKociembaFirstSolution)
+            if (Globals.bKociembaSolution && bKociembaFirstSolution && cMethod == "Kociemba")
             {
                 // Round up the time to solve the cube to the nearest multiple of 5 seconds
                 nTimeCubeSolve = (int)Math.Ceiling((delta.TotalSeconds + 3) / 5.0) * 5;
