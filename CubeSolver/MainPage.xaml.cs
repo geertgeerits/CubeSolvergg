@@ -314,7 +314,7 @@ namespace CubeSolver
             lblCubeInsideView.IsVisible = false;
 
             // Set the text of the label 'lblCubeOutsideView' to show the time to solve the cube when using the Kociemba solution for the first time
-            if (Globals.bKociembaSolution && bKociembaFirstSolution)
+            if (Globals.bKociembaSolution && bKociembaFirstSolution && Globals.lCubeTurns.Count == 0)
             {
                 lblCubeOutsideView.Text = $"{CubeLang.WaitFirstGameLaunch_Text} {nTimeCubeSolve} {CubeLang.WaitFirstGameLaunch2_Text}";
             }
