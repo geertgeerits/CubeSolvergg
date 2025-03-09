@@ -1620,11 +1620,20 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to First game launch may take up to a minute..
+        ///   Looks up a localized string similar to First game launch may take up to.
         /// </summary>
         internal static string WaitFirstGameLaunch_Text {
             get {
                 return ResourceManager.GetString("WaitFirstGameLaunch_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to seconds.
+        /// </summary>
+        internal static string WaitFirstGameLaunch2_Text {
+            get {
+                return ResourceManager.GetString("WaitFirstGameLaunch2_Text", resourceCulture);
             }
         }
         

@@ -651,7 +651,7 @@ Dette er ikke en garanti for at alle kuber kan løses.</value>
     <value>Kreditt: Denne appen bruker åpen kildekode fra 'Herbert Kociemba' (forfatter av Kociemba Two-Phase Algorithm) og 'Matt Colbourne'. Deres bidrag har forbedret kubeløsningseffektiviteten betydelig. Spesiell takk for deres arbeid.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Første spillstart kan ta opptil ett minutt.</value>
+    <value>Første spillstart kan ta opptil</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba metode:</value>
@@ -661,5 +661,8 @@ Dette er ikke en garanti for at alle kuber kan løses.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Omvendt rekkefølge</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>sekunder</value>
   </data>
 </root>

@@ -651,7 +651,7 @@ Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
     <value>Credits: Deze app gebruikt open-source code van 'Herbert Kociemba' (auteur van het Kociemba Two-Phase Algorithm) en 'Matt Colbourne'. Hun bijdragen hebben de efficiëntie van het oplossen van kubussen aanzienlijk verbeterd. Speciale dank voor hun werk.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Het starten van het eerste spel kan een minuut duren.</value>
+    <value>Het starten van het eerste spel kan tot</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba-methode:</value>
@@ -661,5 +661,8 @@ Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Omgekeerde volgorde</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>seconden duren.</value>
   </data>
 </root>

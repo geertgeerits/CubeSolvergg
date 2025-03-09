@@ -651,7 +651,7 @@ Isso não é uma garantia de que todos os cubos podem ser resolvidos.</value>
     <value>Créditos: Este aplicativo usa código de fonte aberta de 'Herbert Kociemba' (autor do Algoritmo de Duas Fases de Kociemba) e 'Matt Colbourne'. Suas contribuições melhoraram significativamente a eficiência da resolução de cubos. Agradecimentos especiais por seu trabalho.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>O primeiro lançamento do jogo pode levar até um minuto.</value>
+    <value>O primeiro lançamento do jogo pode levar até</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Método de Kociemba:</value>
@@ -661,5 +661,8 @@ Isso não é uma garantia de que todos os cubos podem ser resolvidos.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Ordem inversa</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>segundos</value>
   </data>
 </root>

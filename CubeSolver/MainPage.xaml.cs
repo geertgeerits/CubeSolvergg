@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.37
- * Date ........: 2025-03-06 (YYYY-MM-DD)
+ * Date ........: 2025-03-09 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -33,6 +33,7 @@ namespace CubeSolver
         private bool bTurnIsBackwards;
         private bool bTurnContinuously;
         private bool bKociembaFirstSolution = true;
+        private int nTimeCubeSolve;
 
         //// Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
@@ -94,6 +95,7 @@ namespace CubeSolver
             Globals.aFaceColors[6] = Preferences.Default.Get("SettingCubeColor6", "#FFFF40");   // Down face: Yellow    FFFF00      FFFF40
             Globals.bKociembaSolution = Preferences.Default.Get("SettingKociembaSolution", true);
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
+            nTimeCubeSolve = Preferences.Default.Get("SettingTimeCubeSolve", 60);
 
             //// Set the theme
             Globals.SetTheme();
@@ -311,9 +313,10 @@ namespace CubeSolver
             btnTurnContinuously.IsEnabled = false;
             lblCubeInsideView.IsVisible = false;
 
+            // Set the text of the label 'lblCubeOutsideView' to show the time to solve the cube when using the Kociemba solution for the first time
             if (Globals.bKociembaSolution && bKociembaFirstSolution)
             {
-                lblCubeOutsideView.Text = CubeLang.WaitFirstGameLaunch_Text;
+                lblCubeOutsideView.Text = $"{CubeLang.WaitFirstGameLaunch_Text} {nTimeCubeSolve} {CubeLang.WaitFirstGameLaunch2_Text}";
             }
 
             // Settings
@@ -352,8 +355,6 @@ namespace CubeSolver
                 {
                     cMethod = "Kociemba";
                     bSolved = await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();
-                    
-                    bKociembaFirstSolution = false;
 
                     if (bSolved)
                     {
@@ -368,8 +369,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 298-299 and 350-369 (and change the line 393 to bTestSolveCube = true)
-                // and uncomment one of the lines 376-377/378 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 300-301 and 353-370 (and change the line 406 to bTestSolveCube = true)
+                // and uncomment one of the lines 377-378/379 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -387,6 +388,18 @@ namespace CubeSolver
             // Stop the stopwatch and get the elapsed time
             TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
             string elapsedMilliseconds = delta.TotalMilliseconds.ToString("F0");
+
+            // Save the time to solve the cube when using the Kociemba solution for the first time
+            if (Globals.bKociembaSolution && bKociembaFirstSolution)
+            {
+                // Round up the time to solve the cube to the nearest multiple of 5 seconds
+                nTimeCubeSolve = (int)Math.Ceiling((delta.TotalSeconds + 3) / 5.0) * 5;
+                
+                // Save the time to solve the cube
+                Preferences.Default.Set("SettingTimeCubeSolve", nTimeCubeSolve);
+                
+                bKociembaFirstSolution = false;
+            }
 
             // Test variable to disable the 'steps one at a time' to solve te cube in the task MakeExplainTurnAsync()
             // If not testing the solution to solve the cube then set bTestSolveCube = false

@@ -651,7 +651,7 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
     <value>Kredity: Tato aplikace používá otevřený zdrojový kód od 'Herbert Kociemba' (autor Kociemba dvoufázového algoritmu) a 'Matt Colbourne'. Jejich příspěvky výrazně zlepšily účinnost řešení krychlí. Zvláštní poděkování za jejich práci.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>První spuštění hry může trvat až minutu.</value>
+    <value>První spuštění hry může trvat až</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba metoda:</value>
@@ -661,5 +661,8 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Opačné pořadí</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>sekund</value>
   </data>
 </root>

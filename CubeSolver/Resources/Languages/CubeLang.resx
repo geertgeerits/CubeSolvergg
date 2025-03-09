@@ -651,7 +651,7 @@ This is not a guarantee that all cubes can be solved.</value>
     <value>Credits: This app uses open-source code from 'Herbert Kociemba' (author of the Kociemba Two-Phase Algorithm) and 'Matt Colbourne'. Their contributions have significantly improved cube-solving efficiency. Special thanks for their work.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>First game launch may take up to a minute.</value>
+    <value>First game launch may take up to</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba method:</value>
@@ -661,5 +661,8 @@ This is not a guarantee that all cubes can be solved.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Reverse order</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>seconds</value>
   </data>
 </root>

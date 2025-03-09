@@ -651,7 +651,7 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
     <value>Credite: Această aplicație folosește cod open-source de la „Herbert Kociemba” (autorul algoritmului în două faze Kociemba) și „Matt Colbourne”. Contribuțiile lor au îmbunătățit semnificativ eficiența rezolvării cuburilor. Mulțumiri speciale pentru munca lor.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Lansarea primului joc poate dura până la un minut.</value>
+    <value>Lansarea primului joc poate dura până la</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Metoda Kociemba:</value>
@@ -661,5 +661,8 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Ordine inversă</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>de secunde</value>
   </data>
 </root>

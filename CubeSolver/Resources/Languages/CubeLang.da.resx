@@ -651,7 +651,7 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
     <value>Credits: Denne app bruger open source-kode fra 'Herbert Kociemba' (forfatter af Kociemba Two-Phase Algorithm) og 'Matt Colbourne'. Deres bidrag har forbedret kube-løsningseffektiviteten markant. Særlig tak for deres arbejde.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Første spilstart kan tage op til et minut.</value>
+    <value>Første spilstart kan tage op til</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba metode:</value>
@@ -661,5 +661,8 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Omvendt rækkefølge</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>sekunder</value>
   </data>
 </root>

@@ -651,7 +651,7 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
     <value>Tekijät: Tämä sovellus käyttää avoimen lähdekoodin 'Herbert Kociemba' (Kociemba Two-Phase Algorithmin kirjoittaja) ja 'Matt Colbourne'. Heidän panoksensa ovat merkittävästi parantaneet kuution ratkaisun tehokkuutta. Erityiset kiitokset heidän työstään.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Pelin ensimmäinen käynnistys voi kestää jopa minuutin.</value>
+    <value>Pelin ensimmäinen käynnistys voi kestää jopa</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba menetelmä:</value>
@@ -661,5 +661,8 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Käänteinen järjestys</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>sekuntia</value>
   </data>
 </root>

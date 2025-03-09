@@ -651,7 +651,7 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
     <value>Credits: Diese App verwendet Open-Source-Code von „Herbert Kociemba“ (Autor des Kociemba-Zweiphasenalgorithmus) und „Matt Colbourne“. Ihre Beiträge haben die Effizienz beim Würfellösen deutlich verbessert. Besonderer Dank für ihre Arbeit.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Der erste Spielstart kann bis zu einer Minute dauern.</value>
+    <value>Der erste Spielstart kann bis zu</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba-Methode:</value>
@@ -661,5 +661,8 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Umgekehrte Reihenfolge</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>Sekunden dauern</value>
   </data>
 </root>
