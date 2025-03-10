@@ -392,8 +392,8 @@ namespace CubeSolver
             // Save the time to solve the cube when using the Kociemba solution for the first time
             if (Globals.bKociembaSolution && bKociembaFirstSolution && cMethod == "Kociemba")
             {
-                // First add 10 seconds, then round up the time to solve the cube to the nearest multiple of 10 seconds
-                nTimeCubeSolve = (int)Math.Ceiling((delta.TotalSeconds + 10) / 10.0) * 10;
+                // First add 10 seconds, then round up the time to solve the cube to the nearest multiple of 5 seconds
+                nTimeCubeSolve = (int)Math.Ceiling((delta.TotalSeconds + 10) / 5) * 5;
                 
                 // Save the time to solve the cube
                 Preferences.Default.Set("SettingTimeCubeSolve", nTimeCubeSolve);
