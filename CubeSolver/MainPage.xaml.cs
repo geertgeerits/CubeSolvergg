@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.37
- * Date ........: 2025-03-09 (YYYY-MM-DD)
+ * Date ........: 2025-03-10 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -392,8 +392,8 @@ namespace CubeSolver
             // Save the time to solve the cube when using the Kociemba solution for the first time
             if (Globals.bKociembaSolution && bKociembaFirstSolution && cMethod == "Kociemba")
             {
-                // Round up the time to solve the cube to the nearest multiple of 5 seconds
-                nTimeCubeSolve = (int)Math.Ceiling((delta.TotalSeconds + 3) / 5.0) * 5;
+                // First add 10 seconds, then round up the time to solve the cube to the nearest multiple of 10 seconds
+                nTimeCubeSolve = (int)Math.Ceiling((delta.TotalSeconds + 10) / 10.0) * 10;
                 
                 // Save the time to solve the cube
                 Preferences.Default.Set("SettingTimeCubeSolve", nTimeCubeSolve);
