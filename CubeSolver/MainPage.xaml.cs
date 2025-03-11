@@ -32,7 +32,7 @@ namespace CubeSolver
         private bool bTestSolveCube;
         private bool bTurnIsBackwards;
         private bool bTurnContinuously;
-        private bool bKociembaFirstSolution;
+        private bool bKociembaTablesExist;
         private int nTimeCubeSolve = 60;
 
         //// Array with cube turns for the cube scramble generator
@@ -97,9 +97,9 @@ namespace CubeSolver
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
 
             //// Check if the tables exist for the Kociemba solution
-            if (!ClassSolveCubeKociemba.CheckIfTableExists())
+            if (ClassSolveCubeKociemba.CheckIfTableExists())
             {
-                bKociembaFirstSolution = true;
+                bKociembaTablesExist = true;
             }
 
             //// Set the theme
@@ -319,7 +319,7 @@ namespace CubeSolver
             lblCubeInsideView.IsVisible = false;
 
             // Set the text of the label 'lblCubeOutsideView' to show the time to solve the cube when using the Kociemba solution for the first time
-            if (Globals.bKociembaSolution && bKociembaFirstSolution && Globals.lCubeTurns.Count == 0)
+            if (Globals.bKociembaSolution && !bKociembaTablesExist && Globals.lCubeTurns.Count == 0)
             {
                 lblCubeOutsideView.Text = $"{CubeLang.WaitFirstGameLaunch_Text} {nTimeCubeSolve} {CubeLang.WaitFirstGameLaunch2_Text}";
             }
@@ -361,6 +361,12 @@ namespace CubeSolver
                     cMethod = "Kociemba";
                     bSolved = await ClassSolveCubeKociemba.SolveTheCubeKociembaAsync();
 
+                    // Set bKociembaTablesExist to true after using the Kociemba solution for the first time
+                    if (!bKociembaTablesExist)
+                    {
+                        bKociembaTablesExist = true;
+                    }
+
                     if (bSolved)
                     {
                         Globals.nTestedSolutions = 1;
@@ -374,8 +380,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 305-306 and 358-375 (and change the line 405 to bTestSolveCube = true)
-                // and uncomment one of the lines 382-383/384 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 305-306 and 358-381 (and change the line 405 to bTestSolveCube = true)
+                // and uncomment one of the lines 388-390 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -393,12 +399,6 @@ namespace CubeSolver
             // Stop the stopwatch and get the elapsed time
             TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
             string elapsedMilliseconds = delta.TotalMilliseconds.ToString("F0");
-
-            // Set bKociembaFirstSolution to false after using the Kociemba solution for the first time
-            if (Globals.bKociembaSolution && bKociembaFirstSolution && cMethod == "Kociemba")
-            {
-                bKociembaFirstSolution = false;
-            }
 
             // Test variable to disable the 'steps one at a time' to solve te cube in the task MakeExplainTurnAsync()
             // If not testing the solution to solve the cube then set bTestSolveCube = false
