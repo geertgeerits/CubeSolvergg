@@ -31,13 +31,13 @@ namespace CubeSolver
             // Search for the solution to solve the cube without creating the tables
             //string solution = SearchRunTime.Solution(searchString, out _, buildTables: false);
 
-            // Search for the solution to solve the cube with creating the tables
+            // Search for the solution to solve the cube and create the tables if they do not exist
             string solution;
 
             if (CheckIfTableExists())
             {
-                //solution = Search.Solution(searchString, out info);  // Error; System.TypeInitializationException: The type initializer for 'CubeSolver.CoordCube' threw an exception
-                solution = SearchRunTime.Solution(searchString, out _, buildTables: false);
+                solution = Search.Solution(searchString, out _);                                // Faster
+                //solution = SearchRunTime.Solution(searchString, out _, buildTables: false);   // Slower for the first time the Kociemba method is run
             }
             else
             {
@@ -224,7 +224,7 @@ namespace CubeSolver
         /// Check if the tables exists
         /// </summary>
         /// <returns></returns>
-        private static bool CheckIfTableExists()
+        public static bool CheckIfTableExists()
         {
             if (!File.Exists(Path.Combine(Globals.cPathTables, "twist")))
             {

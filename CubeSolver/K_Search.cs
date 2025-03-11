@@ -268,9 +268,9 @@
                 // +++++++++++++ compute new coordinates and new minDistPhase1 ++++++++++
                 // if minDistPhase1 =0, the H subgroup is reached
                 mv = 3 * ax[n] + po[n] - 1;
-                flip[n + 1] = CoordCube.flipMove[flip[n],mv];
-                twist[n + 1] = CoordCube.twistMove[twist[n],mv];
-                slice[n + 1] = CoordCube.FRtoBR_Move[slice[n] * 24,mv] / 24;
+                flip[n + 1] = CoordCube.flipMove[flip[n], mv];
+                twist[n + 1] = CoordCube.twistMove[twist[n], mv];
+                slice[n + 1] = CoordCube.FRtoBR_Move[slice[n] * 24, mv] / 24;
                 minDistPhase1[n + 1] = Math.Max(CoordCube.GetPruning(CoordCube.Slice_Flip_Prun, CoordCube.N_SLICE1 * flip[n + 1] + slice[n + 1]), CoordCube.GetPruning(CoordCube.Slice_Twist_Prun, CoordCube.N_SLICE1 * twist[n + 1] + slice[n + 1]));
                 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -406,7 +406,7 @@
                 mv = 3 * ax[n] + po[n] - 1;
 
                 URFtoDLF[n + 1] = CoordCube.URFtoDLF_Move[URFtoDLF[n], mv];
-                FRtoBR[n + 1] = CoordCube.FRtoBR_Move[FRtoBR[n],mv];
+                FRtoBR[n + 1] = CoordCube.FRtoBR_Move[FRtoBR[n], mv];
                 parity[n + 1] = CoordCube.parityMove[parity[n]][mv];
                 URtoDF[n + 1] = CoordCube.URtoDF_Move[URtoDF[n], mv];
 

@@ -72,7 +72,7 @@ namespace CubeSolver
             return fc.To_fc_String();
         }
 
-        //// Error when building tables !!!
+        //// Error when serialize tables !!!
         //// NotSupportedException: Serialization and deserialization of 'System.Int16[,]' instances is not supported
         //public static void SerializeTable(string filename, short[,] array)
         //{
@@ -95,7 +95,7 @@ namespace CubeSolver
         }
 
         /// <summary>
-        /// Convert a 2D array to a jagged array.
+        /// Convert a 2D array to a jagged array
         /// </summary>
         /// <param name="array"></param>
         /// <returns></returns>
@@ -117,12 +117,45 @@ namespace CubeSolver
             return jaggedArray;
         }
 
+        //// Error when deserialize tables !!!
+        //// System.TypeInitializationException: 'The type initializer for 'CubeSolver.CoordCube' threw an exception.'
+        //// TypeInitializationException: The type initializer for 'CubeSolver.CoordCubeTables' threw an exception.
+        //public static short[,] DeserializeTable(string filename)
+        //{
+        //    EnsureFolder(Globals.cPathTables);
+        //    using Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Open);
+        //    var result = JsonSerializer.Deserialize<short[,]>(s) ?? throw new InvalidOperationException("Deserialization returned null.");
+        //    return result;
+        //}
+
         public static short[,] DeserializeTable(string filename)
         {
             EnsureFolder(Globals.cPathTables);
             using Stream s = File.Open(Path.Combine(Globals.cPathTables, filename), FileMode.Open);
-            var result = JsonSerializer.Deserialize<short[,]>(s) ?? throw new InvalidOperationException("Deserialization returned null.");
-            return result;
+            var jaggedArray = JsonSerializer.Deserialize<short[][]>(s) ?? throw new InvalidOperationException("Deserialization returned null.");
+            return ConvertTo2DArray(jaggedArray);
+        }
+
+        /// <summary>
+        /// Convert a jagged array to a 2D array
+        /// </summary>
+        /// <param name="jaggedArray"></param>
+        /// <returns></returns>
+        private static short[,] ConvertTo2DArray(short[][] jaggedArray)
+        {
+            int rows = jaggedArray.Length;
+            int cols = jaggedArray[0].Length;
+            var array = new short[rows, cols];
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    array[i, j] = jaggedArray[i][j];
+                }
+            }
+
+            return array;
         }
 
         public static void SerializeSbyteArray(string filename, sbyte[] array)
