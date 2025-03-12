@@ -17,8 +17,10 @@ https://apps.apple.com/us/app/cube-solver-gg/id6479165194
 Link to the Microsoft Store:
 https://apps.microsoft.com/detail/9p6tx258jbk7
 https://www.microsoft.com/store/apps/9P6TX258JBK7
-
 ms-windows-store://pdp/?productid=9P6TX258JBK7
+
+Link to the Amazon App Store:
+https://www.amazon.com/gp/product/B0F181F2S6
 
 This app leverages code from Herbert Kociemba and Matt Colbourne (Megalomatt) for cube solving.
 Kociemba’s algorithm is a cornerstone in efficient cube-solving methods.
