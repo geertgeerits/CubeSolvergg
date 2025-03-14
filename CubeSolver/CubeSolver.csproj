@@ -11,6 +11,7 @@
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<NeutralLanguage>en-US</NeutralLanguage>
 
 		<!-- Display name -->
 		<ApplicationTitle>Cube Solver gg</ApplicationTitle>
@@ -95,7 +96,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.40" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.50" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.3" />
 	</ItemGroup>
 
@@ -147,8 +148,8 @@
 		<AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
 		<AndroidSigningKeyPass></AndroidSigningKeyPass>
 		<AndroidSigningStorePass></AndroidSigningStorePass>
-		<ApplicationDisplayVersion>2.0.37</ApplicationDisplayVersion>
-		<ApplicationVersion>37</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.38</ApplicationDisplayVersion>
+		<ApplicationVersion>38</ApplicationVersion>
 		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
 	</PropertyGroup>
 
@@ -167,8 +168,8 @@
 		<ArchiveOnBuild>true</ArchiveOnBuild>
 		<TcpPort>58181</TcpPort>
 
-		<ApplicationDisplayVersion>2.0.37</ApplicationDisplayVersion>
-		<ApplicationVersion>37</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.38</ApplicationDisplayVersion>
+		<ApplicationVersion>38</ApplicationVersion>
 		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
 	</PropertyGroup>
 
