@@ -337,12 +337,98 @@
   <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
     <value>トグルボタン: キューブの色を設定する</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TurnCubeUpFaceToLeftFace_Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>裏側を半回転します。</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>裏側を反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>裏側を時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>下側を半回転させます。</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>下側を反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>下側を時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>立方体全体を回転させて、前面が下になり、右側が右側に残るようにします。</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>立方体全体を回転させて、前面が左側になり、上面が上部に残るようにします。</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>立方体全体を回転させて、前面が右側になり、上面が上部に残るようにします。</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>立方体全体を回転させて、前面が上になり、右側が右側に残るようにします。</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>立方体全体を回転させて、上面が左側になり、前面が前面に残るようにします。</value>
   </data>
   <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
-    <value />
+    <value>立方体全体を回転させて、上面が右側になり、前面が前面に残るようにします。</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>前面中央の層を右側（-）に 1/4 回転させます。</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>前面中央の層を上側（+）に 1/4 回転させます。</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>前面を半回転します。</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>前面を反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>前面を時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>左側を半回転します。</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>左側を反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>左側を時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>真ん中の層を半回転させます。</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>右中間層を前面（+）に1/4回転させます。</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>右中間層を上側（-）に1/4回転させます。</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>右側を半回転します。</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>右側を反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>右側を時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>上中間層を前側（-）に1/4回転させます。</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>上中間層を右側（+）に 1/4 回転させます。</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>上側を半回転します。</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>上側を反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>上側を時計回りに 1/4 回転 (+) します。</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>バージョン:</value>
@@ -357,6 +443,15 @@
     <value>キューブを解くことができません。
 
 原因としては、このキューブへの色の転送が間違っていることが考えられます。</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>立方体全体を回転させて、前面が背面になり、右側が右側に残るようにします。</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>立方体全体を回転させて、前面が背面に向かい、上側が上部に残るようにします。</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>立方体全体を回転させて、上面が下面になり、前面が前面に残るようにします。</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>時間（ミリ秒）:</value>
@@ -384,8 +479,59 @@
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>使用可能な各色のうち、コーナーキューブ上に同じ色が 4 つ存在する必要があります。</value>
   </data>
-  <data name="Turn2LayersBack2_Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>裏側と中間層を一緒に半回転させます。</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>背面と中間層を一緒に反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>背面と中間層を一緒に時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>下層と中層を一緒に半回転させます。</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>下層と中層を一緒に反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>下層と中層を一緒に時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>前面と中間層を一緒に半回転させます。</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>前面と中間層を一緒に反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>前層と中間層を一緒に時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>左層と中央層を一緒に半回転させます。</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>左層と中央層を一緒に反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>左層と中央層を一緒に時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>右層と中央層を一緒に半回転させます。</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>右層と中央層を一緒に反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>右層と中央層を一緒に時計回りに 1/4 回転 (+) します。</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>上層と中層を一緒に半回転させます。</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>上層と中層を一緒に反時計回りに 1/4 回転 (-) します。</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>上層と中層を一緒に時計回りに 1/4 回転 (+) します。</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>このアプリケーションの作成者にメールを送信する</value>
