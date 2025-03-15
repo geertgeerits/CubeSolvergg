@@ -33,7 +33,7 @@ namespace CubeSolver
         private bool bTurnIsBackwards;
         private bool bTurnContinuously;
         private bool bKociembaTablesExist;
-        private int nTimeCubeSolve = 60;
+        private readonly int nTimeCubeSolve = 60;
 
         //// Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
@@ -385,8 +385,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 305-306 and 358-381 (and change the line 405 to bTestSolveCube = true)
-                // and uncomment one of the lines 388-390 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 310-311 and 363-386 (and change the line 410 to bTestSolveCube = true)
+                // and uncomment one of the lines 393-395 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
