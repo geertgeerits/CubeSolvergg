@@ -217,13 +217,15 @@ Zeichen 3-4: Grün
 Zeichen 5-6: Blau</value>
   </data>
   <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Text-zu-Sprache: Es werden nicht alle Sprachen unterstützt, die in den Anwendungseinstellungen bereitgestellt werden.
-Diese Option variiert von Gerät zu Gerät und den installierten Sprachen. Es ist möglich, dass für einige Sprachen die Übersetzung in und aus der Sprache von den betreffenden Diensten über das Internet durchgeführt wird.
+    <value>Text-to-Speech: Es werden nicht alle in den App-Einstellungen verfügbaren Sprachen unterstützt.
 
-Für die Übersetzung des Textes wurde Google Translate verwendet. Dies ist keine Garantie dafür, dass alle Übersetzungen korrekt sind.
-Die unterstützten Sprachen sind: Tschechisch, Dänisch, Niederländisch, Englisch, Finnisch, Französisch, Deutsch, Ungarisch, Italienisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Spanisch und Schwedisch.
+Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich, dass die Übersetzung in und aus Sprache für einige Sprachen von den jeweiligen Diensten über das Internet erfolgt.
 
-Sie können mich jederzeit für Korrekturen kontaktieren.</value>
+Für die Übersetzung des Textes wurde Google Translate verwendet. Dies ist keine Garantie für die Richtigkeit aller Übersetzungen.
+
+Die unterstützten Sprachen sind: Tschechisch, Dänisch, Niederländisch, Englisch, Finnisch, Französisch, Deutsch, Ungarisch, Italienisch, Japanisch, Koreanisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Spanisch und Schwedisch.
+
+Bei Korrekturen können Sie mich jederzeit kontaktieren.</value>
   </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Information</value>

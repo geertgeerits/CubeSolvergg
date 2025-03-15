@@ -217,11 +217,11 @@ Caracteres 3-4: Verde
 Caracteres 5-6: Azul</value>
   </data>
   <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Texto para fala: Nem todos os idiomas são suportados fornecidos nas configurações do aplicativo.
-Esta opção varia de dispositivo para dispositivo e os idiomas instalados. É possível que, para alguns idiomas, a tradução de e para fala seja feita pela Internet pelos serviços envolvidos.
+    <value>Texto para fala: nem todos os idiomas fornecidos nas configurações do aplicativo são suportados.
+Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É possível que, para alguns idiomas, a tradução de e para a fala seja feita pela internet pelos serviços envolvidos.
 
-O Google Tradutor foi utilizado para a tradução do texto. Isso não é uma garantia de que todas as traduções estejam corretas.
-Os idiomas de suporte são: tcheco, dinamarquês, holandês, inglês, finlandês, francês, alemão, húngaro, italiano, norueguês, polonês, português, romeno, espanhol e sueco.
+O Google Translate foi usado para a tradução do texto. Isso não é uma garantia de que todas as traduções estejam corretas.
+Os idiomas suportados são: tcheco, dinamarquês, holandês, inglês, finlandês, francês, alemão, húngaro, italiano, japonês, coreano, norueguês, polonês, português, romeno, espanhol e sueco.
 
 Você sempre pode entrar em contato comigo para quaisquer correções.</value>
   </data>

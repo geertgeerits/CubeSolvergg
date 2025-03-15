@@ -217,13 +217,13 @@ Postacie 3-4: Zielony
 Postacie 5-6: Niebieski</value>
   </data>
   <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Tekst na mowę: nie wszystkie języki dostępne w ustawieniach aplikacji są obsługiwane.
-Ta opcja różni się w zależności od urządzenia i zainstalowanych języków. Możliwe jest, że w przypadku niektórych języków tłumaczenie na mowę i z mowy jest wykonywane przez Internet przez odpowiednie służby.
+    <value>Tekst na mowę: Nie wszystkie języki, które są dostępne w ustawieniach aplikacji, są obsługiwane.
+Ta opcja różni się w zależności od urządzenia i zainstalowanych języków. Możliwe, że w przypadku niektórych języków tłumaczenie na mowę i z mowy jest wykonywane przez Internet przez odpowiednie usługi.
 
 Do tłumaczenia tekstu użyto Tłumacza Google. Nie gwarantuje to, że wszystkie tłumaczenia są poprawne.
-Obsługiwane języki to: czeski, duński, holenderski, angielski, fiński, francuski, niemiecki, węgierski, włoski, norweski, polski, portugalski, rumuński, hiszpański i szwedzki.
+Obsługiwane języki to: czeski, duński, holenderski, angielski, fiński, francuski, niemiecki, węgierski, włoski, japoński, koreański, norweski, polski, portugalski, rumuński, hiszpański i szwedzki.
 
-Zawsze możesz się ze mną skontaktować w celu wprowadzenia ewentualnych poprawek.</value>
+Zawsze możesz skontaktować się ze mną w celu dokonania wszelkich korekt.</value>
   </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Informacje</value>

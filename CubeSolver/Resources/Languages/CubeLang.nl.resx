@@ -217,13 +217,14 @@ Karakters 3-4: groen
 Karakters 5-6: blauw</value>
   </data>
   <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Tekst naar spraak: niet alle talen die beschikbaar zijn in de applicatie-instellingen worden ondersteund.
-Deze optie is afhankelijk van apparaat tot apparaat en de geïnstalleerde talen. Het is mogelijk dat voor sommige talen de vertaling van en naar spraak via het internet wordt gedaan door de betrokken diensten.
+    <value>Tekst naar spraak: Niet alle talen die in de applicatie-instellingen worden aangeboden, worden ondersteund.
 
-Voor de vertaling van de tekst werd gebruik gemaakt van Google Translate.  Dit is geen garantie dat alle vertalingen correct zijn.
-De ondersteunende talen zijn: Tsjechisch, Deens, Nederlands, Engels, Fins, Frans, Duits, Hongaars, Italiaans, Noors, Pools, Portugees, Roemeens, Spaans en Zweeds.
+Deze optie verschilt per apparaat en de geïnstalleerde talen. Het is mogelijk dat voor sommige talen de vertaling van en naar spraak via internet wordt gedaan door de betreffende services.
 
-Voor eventuele correcties kunt u altijd contact met mij opnemen.</value>
+Google Translate is gebruikt voor de vertaling van de tekst. Dit is geen garantie dat alle vertalingen correct zijn.
+De ondersteunde talen zijn: Tsjechisch, Deens, Nederlands, Engels, Fins, Frans, Duits, Hongaars, Italiaans, Japans, Koreaans, Noors, Pools, Portugees, Roemeens, Spaans en Zweeds.
+
+U kunt altijd contact met mij opnemen voor eventuele correcties.</value>
   </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Informatie</value>

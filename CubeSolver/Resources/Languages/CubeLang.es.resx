@@ -217,13 +217,13 @@ Caracteres 3-4: Verde
 Caracteres 5-6: Azul</value>
   </data>
   <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Texto a voz: no se admiten todos los idiomas que se proporcionan en la configuración de la aplicación.
-Esta opción varía según el dispositivo y los idiomas instalados. Es posible que, para algunos idiomas, la traducción hacia y desde el habla la realicen los servicios correspondientes a través de Internet.
+    <value>Texto a voz: No todos los idiomas disponibles en la configuración de la aplicación son compatibles.
+Esta opción varía según el dispositivo y los idiomas instalados. Es posible que, para algunos idiomas, la traducción se realice a través de internet mediante los servicios correspondientes.
 
-Para la traducción del texto se utilizó Google Translate. Esto no es una garantía de que todas las traducciones sean correctas.
-Los idiomas de soporte son: checo, danés, holandés, inglés, finlandés, francés, alemán, húngaro, italiano, noruego, polaco, portugués, rumano, español y sueco.
+Se utilizó Google Translate para la traducción del texto. Esto no garantiza que todas las traducciones sean correctas.
+Los idiomas disponibles son: alemán, checo, danés, coreano, español, finlandés, francés, húngaro, inglés, italiano, japonés, neerlandés, noruego, polaco, portugués, rumano y sueco.
 
-Siempre puedes contactarme para cualquier corrección.</value>
+Puede contactarme para cualquier corrección.</value>
   </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Información</value>
