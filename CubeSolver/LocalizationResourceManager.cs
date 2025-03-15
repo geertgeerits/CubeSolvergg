@@ -6,7 +6,7 @@ namespace CubeSolver
     {
         private LocalizationResourceManager()
         {
-            CubeLang.Culture = CultureInfo.CurrentCulture;
+            CubeLang.Culture = CultureInfo.CurrentUICulture;
         }
 
         public static LocalizationResourceManager Instance { get; } = new();

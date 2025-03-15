@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.38
- * Date ........: 2025-03-14 (YYYY-MM-DD)
+ * Date ........: 2025-03-15 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -105,19 +105,21 @@ namespace CubeSolver
             //// Set the theme
             Globals.SetTheme();
 
-            //// Get and set the system OS user language
+            //// Get and set the user interface language
             try
             {
                 if (Globals.cLanguage == "")
                 {
-                    Globals.cLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+                    Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
                 }
             }
             catch (Exception)
             {
                 Globals.cLanguage = "en";
             }
-
+            Debug.WriteLine("Globals.cLanguage: " + Globals.cLanguage);
+            
+            // Set the language
             SetTextLanguage();
 
             //// Initialize text to speech and get and set the speech language
@@ -127,7 +129,7 @@ namespace CubeSolver
             {
                 if (Globals.cLanguageSpeech == "")
                 {
-                    cCultureName = Thread.CurrentThread.CurrentCulture.Name;
+                    cCultureName = Thread.CurrentThread.CurrentUICulture.Name;
                 }
             }
             catch (Exception)
@@ -136,6 +138,9 @@ namespace CubeSolver
             }
 
             ClassSpeech.InitializeTextToSpeech(cCultureName);
+
+            Debug.WriteLine("Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
+            Debug.WriteLine("cCultureName: " + cCultureName);
 
             //// Reset the colors of the cube
             ClassColorsCube.ResetCube();

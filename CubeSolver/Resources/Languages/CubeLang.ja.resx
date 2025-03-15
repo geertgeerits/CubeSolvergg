@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>同意する</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>許可されないもの:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>使用できる文字:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>近い</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>解決する</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>アプリケーションを閉じてください。</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>接触：</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>続く</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>著作権</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>背面</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>下向き</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>キューブの色:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>正面</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>内部の様子</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>左顔</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>外観</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>右顔</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>上面</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>デフォルト</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>キューブをプレイしたり解いたりします。</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>同意しない</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>メールアドレス:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>スピーチによる説明:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>テキストによる説明:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>キューブの側面を「時計回り」と「反時計回り」に回転させます。
+前面を「時計回り」に回転させるコマンドが与えられた場合、これは針が回転する方向です。「反時計回り」は反対方向に回転します。
+他の側面については、常に回転する側面の真正面にいることを「想像」する必要があります。したがって、背面を「時計回り」に回転させるという指示があった場合は、キューブの反対側にいることを想像し、背面を「時計回り」に回転させます。キューブ自体を回転させないでください。</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>保存したキューブを開きます。</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>現在のキューブを保存します。</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>混ざったキューブからこのキューブに色を移します。上部のカラーバーから色を選択し、キューブのピースをタップして色を変更します。このボタンをもう一度押してこのセクションを終了し、「解決」ボタンを押します。</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>16 進数カラーコード:
+
+文字 1 ～ 2: 赤
+文字 3 ～ 4: 緑
+文字 5 ～ 6: 青</value>
+  </data>
+  <data name="InfoExplanation_Text" xml:space="preserve">
+    <value>テキスト読み上げ: アプリケーション設定で提供されているすべての言語がサポートされているわけではありません。
+このオプションはデバイスやインストールされている言語によって異なります。一部の言語では、音声との翻訳がインターネット経由で関係サービスによって行われる可能性があります。
+
+テキストの翻訳には Google 翻訳を使用しました。すべての翻訳が正しいことを保証するものではありません。
+サポートされている言語は、チェコ語、デンマーク語、オランダ語、英語、フィンランド語、フランス語、ドイツ語、ハンガリー語、イタリア語、ノルウェー語、ポーランド語、ポルトガル語、ルーマニア語、スペイン語、スウェーデン語です。
+
+修正が必要な場合はいつでもご連絡ください。</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>言語スピーチ:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>言語：</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>ソフトウェアは「現状のまま」提供され、明示または黙示を問わず、商品性、特定目的への適合性、非侵害の保証を含むがこれに限定されない、いかなる種類の保証もありません。いかなる場合も、著者および/または発行者は、契約行為、不法行為、またはその他の行為にかかわらず、ソフトウェアまたはソフトウェアの使用またはその他の取引に起因または関連して発生する請求、損害、またはその他の責任について、一切の責任を負わないものとします。</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>ライセンス</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>このアプリケーションは非営利目的であれば自由に使用できます。
+このプログラムは完全に自己責任で使用してください。</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>中央の正方形の色は 1 回だけ出現します。</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>コーナーキューブの色は異なっている必要があります。</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>エッジキューブの色は異なっている必要があります。</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>おめでとうございます。キューブは解けました。</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>キューブは解けません。</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>使用可能な各色には、同じ色が 9 つ必要です。</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>キューブソルバー</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>いいえ</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>プライバシーポリシー：</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>個人情報やその他のデータは保存されず、私自身や他人に渡されることもありません。</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>アプリケーションが再起動されます。</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>リセット</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>変更した設定の一部は、適用するために保存する必要があります。
+保存後、アプリケーションが再起動され、キューブがリセットされます。</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>解決する</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>멈추다</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>テキストに、許可されていない文字が 1 つ以上含まれています。
+
+許可されていない文字:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>このデバイスではテキスト読み上げはサポートされていません。</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>暗い</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>ライト</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>システム</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>テーマ：</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>戻る</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>前進する</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>キューブを開く</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>キューブを保存する</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>トグルボタン: キューブの色を設定する</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TurnCubeUpFaceToLeftFace_Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>バージョン:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Webサイト</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>はい</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>キューブを解くことができません。
+
+原因としては、このキューブへの色の転送が間違っていることが考えられます。</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>時間（ミリ秒）:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>ターン数:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>解決方法:
+- 自動: 画面下部のキューブ ボタンを使用して、実際のキューブの色を入力します。完了したら、ボタンをもう一度押して、[解決] をタップします。キューブは、[Kociemba] アルゴリズムを使用して解決されます。提案された動きを実際のキューブに転送します。
+設定で [Kociemba] アルゴリズムを無効にすると、アプリは [Friedrich] (CFOP) 方式を使用します。
+- 逆: 矢印キーを使用してキューブをスクランブルしてから、[解決] を押します。キューブは逆の順序で解決されます。
+- 手動: ホーム画面で、矢印キーを使用してキューブを手動でスクランブルして解決します。
+これは、すべてのキューブを解決できることを保証するものではありません。</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>キューブは以前の状態に戻りました。</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>センターピースの色が間違っています。</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>使用可能な各色のうち、エッジ キューブ上に同じ色が 4 つ存在する必要があります。</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>使用可能な各色のうち、コーナーキューブ上に同じ色が 4 つ存在する必要があります。</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>このアプリケーションの作成者にメールを送信する</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>このアプリケーションのウェブサイトを開く</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>テスト済みのソリューション:</value>
+  </data>
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
+    <value>「コシエンバ」法でキューブを解くのに必要な平均ターン数は</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>キューブをスクランブルする</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>キューブをリセットする</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>キューブをリセットします。</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>キューブを混ぜます。</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>キューブを解く</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>1ターン戻る</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>1ターン進む</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>1ターン戻ります。</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>1ターン前進します。</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>介入なしでキューブを解く</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>介入なしでキューブを解きます。</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>介入してキューブを解く</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>介入してキューブを解きます。</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>トグルボタン: 介入ありまたは介入なしでキューブを解く</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>キューブを解いてください。</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>顔の回転、顔を時計回りに1/4回転（90度）</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>윗면</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>下向き</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>正面</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>背面</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>左顔</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>右顔</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>スライスが動き、中間層を時計回りに1/4回転（90度）します。</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>L方向に沿って進む</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>D方向に沿って進む</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>F方向に従う</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>キューブの回転、キューブを時計回りに1/4回転（90度）します</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>R方向に沿って進む</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>U方向に沿って進む</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>F方向に従う</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>ワイド移動では、2 つのレイヤーを一度に時計回りに 1/4 回転 (90 度) します。小文字は u、d、f、b、l、r です。</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>アポストロフィ (例: U') は反時計回りの 1/4 回転 (90 度) を示します。</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>数字の 2 (例: U2) は半回転 (180 度) することを意味します。</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value>「フリドリッヒ」（CFOP）法を用いると</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>クレジット: このアプリは、「Herbert Kociemba」(Kociemba Two-Phase Algorithm の作者) と「Matt Colbourne」のオープンソース コードを使用しています。彼らの貢献により、キューブを解く効率が大幅に向上しました。彼らの仕事に心から感謝します。</value>
+  </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>最初のゲームの起動には最大で</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>コシェンバ法:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>方法：</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>逆順</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>秒</value>
+  </data>
+</root>
