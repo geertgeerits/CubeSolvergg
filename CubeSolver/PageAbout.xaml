@@ -13,7 +13,7 @@
     </Shell.TitleView>
 
     <ScrollView>
-        <StackLayout>
+        <VerticalStackLayout>
             <Grid
                 Style="{StaticResource gridStyleInfo}"
                 RowDefinitions="Auto">
@@ -40,15 +40,21 @@
                         Style="{StaticResource labelStyleInfo}">
                     </Label>
 
-                    <HorizontalStackLayout>
+                    <Grid
+                        RowDefinitions="Auto"
+                        ColumnDefinitions="Auto, 50">
+                        
                         <Label
                             x:Name="lblEmail"
-                            Style="{StaticResource labelStyleInfo}">
+                            Style="{StaticResource labelStyleInfo}"
+                            Grid.Column="0"
+                            LineBreakMode="TailTruncation">
                         </Label>
 
                         <ImageButton
+                            Grid.Column="1"
                             Source="envelope_48x24p.png"                         
-                            HorizontalOptions="Center"
+                            HorizontalOptions="Start"
                             VerticalOptions="Center"
                             HeightRequest="24"
                             WidthRequest="48"
@@ -56,7 +62,7 @@
                             ToolTipProperties.Text="{x:Static resx:CubeLang.ToolTipAppEmail_Text}"
                             Clicked="OnBtnEmailLinkClicked">
                         </ImageButton>
-                    </HorizontalStackLayout>
+                    </Grid>
 
                     <HorizontalStackLayout>
                         <Label
@@ -595,6 +601,6 @@
                 </VerticalStackLayout>
             
             </Grid>
-        </StackLayout>
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

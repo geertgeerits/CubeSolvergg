@@ -263,7 +263,7 @@ Käytä tätä ohjelmaa täysin omalla vastuullasi.</value>
     <value>Jokaisesta saatavilla olevasta väristä on oltava yhdeksän samaa väriä.</value>
   </data>
   <data name="NameProgram_Text" xml:space="preserve">
-    <value>Cube Solver</value>
+    <value>Kuution ratkaisija</value>
   </data>
   <data name="No_Text" xml:space="preserve">
     <value>Ei</value>

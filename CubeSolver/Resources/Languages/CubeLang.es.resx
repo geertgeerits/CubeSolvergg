@@ -263,7 +263,7 @@ Utilice este programa bajo su propio riesgo.</value>
     <value>De cada color disponible, debe haber nueve del mismo color.</value>
   </data>
   <data name="NameProgram_Text" xml:space="preserve">
-    <value>Cube Solver</value>
+    <value>Solucionador de cubos</value>
   </data>
   <data name="No_Text" xml:space="preserve">
     <value>No</value>

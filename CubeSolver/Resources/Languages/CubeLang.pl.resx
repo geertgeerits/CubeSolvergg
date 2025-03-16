@@ -263,7 +263,7 @@ Korzystaj z tego programu całkowicie na własne ryzyko.</value>
     <value>Z każdego dostępnego koloru musi być dziewięć tego samego koloru.</value>
   </data>
   <data name="NameProgram_Text" xml:space="preserve">
-    <value>Cube Solver</value>
+    <value>Rozwiązywacz sześcianu</value>
   </data>
   <data name="No_Text" xml:space="preserve">
     <value>Nei</value>
