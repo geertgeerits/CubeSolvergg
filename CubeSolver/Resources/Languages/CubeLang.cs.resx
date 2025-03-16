@@ -184,7 +184,7 @@
     <value>Nesouhlasit</value>
   </data>
   <data name="Email_Text" xml:space="preserve">
-    <value>E-mailem:</value>
+    <value>E-mailem: </value>
   </data>
   <data name="ErrorTitle_Text" xml:space="preserve">
     <value>Chyba</value>
@@ -434,7 +434,7 @@ Nepovoleno:</value>
     <value>Verze:</value>
   </data>
   <data name="Website_Text" xml:space="preserve">
-    <value>Webová stránka</value>
+    <value>Webová stránka: </value>
   </data>
   <data name="Yes_Text" xml:space="preserve">
     <value>Ano</value>

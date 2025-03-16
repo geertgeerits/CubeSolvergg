@@ -184,7 +184,7 @@
     <value>Instämmer inte alls</value>
   </data>
   <data name="Email_Text" xml:space="preserve">
-    <value>E-post:</value>
+    <value>E-post: </value>
   </data>
   <data name="ErrorTitle_Text" xml:space="preserve">
     <value>Fel</value>
@@ -434,7 +434,7 @@ Inte tillåtet:</value>
     <value>Version:</value>
   </data>
   <data name="Website_Text" xml:space="preserve">
-    <value>Hemsida</value>
+    <value>Hemsida: </value>
   </data>
   <data name="Yes_Text" xml:space="preserve">
     <value>Ja</value>

@@ -184,7 +184,7 @@
     <value>맞지 않다</value>
   </data>
   <data name="Email_Text" xml:space="preserve">
-    <value>이메일:</value>
+    <value>이메일: </value>
   </data>
   <data name="ErrorTitle_Text" xml:space="preserve">
     <value>오류</value>
@@ -434,7 +434,7 @@
     <value>버전:</value>
   </data>
   <data name="Website_Text" xml:space="preserve">
-    <value>웹사이트</value>
+    <value>웹사이트: </value>
   </data>
   <data name="Yes_Text" xml:space="preserve">
     <value>예</value>

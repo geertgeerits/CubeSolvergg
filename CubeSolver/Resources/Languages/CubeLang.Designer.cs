@@ -286,7 +286,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to E-mail:.
+        ///   Looks up a localized string similar to E-mail: .
         /// </summary>
         internal static string Email_Text {
             get {
@@ -1638,7 +1638,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Website.
+        ///   Looks up a localized string similar to Website: .
         /// </summary>
         internal static string Website_Text {
             get {

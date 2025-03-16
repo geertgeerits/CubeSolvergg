@@ -7,6 +7,7 @@ namespace CubeSolver
             try
             {
                 InitializeComponent();
+                BindingContext = this;
             }
             catch (Exception ex)
             {
@@ -20,8 +21,6 @@ namespace CubeSolver
             //// Put text in the chosen language in the controls and variables
             lblVersion.Text = $"{CubeLang.Version_Text} 2.0.38";
             lblCopyright.Text = $"{CubeLang.Copyright_Text} © 1981-2025 Geert Geerits";
-            lblEmail.Text = $"{CubeLang.Email_Text} geertgeerits@gmail.com";
-            lblWebsite.Text = $"{CubeLang.Website_Text}: ../cube-solver";
             lblPrivacyPolicy.Text = $"\n{CubeLang.PrivacyPolicyTitle_Text} {CubeLang.PrivacyPolicy_Text}";
             lblLicense.Text = $"\n{CubeLang.LicenseTitle_Text}: {CubeLang.License_Text}";
             lblCredits.Text = $"\n{CubeLang.InfoCredits_Text}";
@@ -29,19 +28,64 @@ namespace CubeSolver
             lblHelp.Text = $"\n{CubeLang.HelpCube_Text}";
             lblExplanation.Text = $"\n{CubeLang.InfoExplanation_Text}";
         }
+    }
+
+    /// <summary>
+    /// Open e-mail app and open webpage (reusable hyperlink class)
+    /// </summary>
+    public sealed partial class HyperlinkSpan : Span
+    {
+        public static readonly BindableProperty UrlProperty =
+            BindableProperty.Create(nameof(Url), typeof(string), typeof(HyperlinkSpan), null);
+
+        public string Url
+        {
+            get { return (string)GetValue(UrlProperty); }
+            set { SetValue(UrlProperty, value); }
+        }
+
+        public HyperlinkSpan()
+        {
+            FontAttributes = FontAttributes.Bold;
+            TextDecorations = TextDecorations.Underline;
+
+            GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                // Launcher.OpenAsync is provided by Essentials
+                //Command = new Command(async () => await Launcher.OpenAsync(Url))
+                Command = new Command(async () => await OpenHyperlink(Url))
+            });
+        }
 
         /// <summary>
-        /// Open e-mail program
+        /// Open the e-mail program or the website link
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private async void OnBtnEmailLinkClicked(object sender, EventArgs e)
+        /// <param name="url"></param>
+        /// <returns></returns>
+        private static async Task OpenHyperlink(string url)
+        {
+            if (url.StartsWith("mailto:"))
+            {
+                await OpenEmailLink(url[7..]);
+            }
+            else
+            {
+                await OpenWebsiteLink(url);
+            }
+        }
+
+        /// <summary>
+        /// Open the e-mail program
+        /// </summary>
+        /// <param name="url"></param>
+        /// <returns></returns>
+        private static async Task OpenEmailLink(string url)
         {
             if (Email.Default.IsComposeSupported)
             {
-                string subject = "Cube Solver gg";
+                string subject = "Barcode generator and scanner";
                 string body = "";
-                string[] recipients = ["geertgeerits@gmail.com"];
+                string[] recipients = [url];
 
                 var message = new EmailMessage
                 {
@@ -57,7 +101,7 @@ namespace CubeSolver
                 }
                 catch (Exception ex)
                 {
-                    await DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                    await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
                 }
             }
         }
@@ -65,13 +109,13 @@ namespace CubeSolver
         /// <summary>
         /// Open the website link in the default browser
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private async void OnBtnWebsiteLinkClicked(object sender, EventArgs e)
+        /// <param name="url"></param>
+        /// <returns></returns>
+        private static async Task OpenWebsiteLink(string url)
         {
             try
             {
-                Uri uri = new("https://geertgeerits.wixsite.com/geertgeerits/cube-solver");
+                Uri uri = new(url);
                 BrowserLaunchOptions options = new()
                 {
                     LaunchMode = BrowserLaunchMode.SystemPreferred,
@@ -82,7 +126,7 @@ namespace CubeSolver
             }
             catch (Exception ex)
             {
-                await DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
             }
         }
     }

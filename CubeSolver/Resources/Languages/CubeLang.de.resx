@@ -184,7 +184,7 @@
     <value>Nicht zustimmen</value>
   </data>
   <data name="Email_Text" xml:space="preserve">
-    <value>E-mail:</value>
+    <value>E-mail: </value>
   </data>
   <data name="ErrorTitle_Text" xml:space="preserve">
     <value>Fehler</value>
@@ -436,7 +436,7 @@ Nicht erlaubt:</value>
     <value>Ausführung:</value>
   </data>
   <data name="Website_Text" xml:space="preserve">
-    <value>Webseite</value>
+    <value>Webseite: </value>
   </data>
   <data name="Yes_Text" xml:space="preserve">
     <value>Ja</value>
