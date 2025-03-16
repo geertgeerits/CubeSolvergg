@@ -83,7 +83,7 @@ namespace CubeSolver
         {
             if (Email.Default.IsComposeSupported)
             {
-                string subject = "Barcode generator and scanner";
+                string subject = "Cube Solver gg";
                 string body = "";
                 string[] recipients = [url];
 

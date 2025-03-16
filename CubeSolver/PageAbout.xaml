@@ -46,8 +46,7 @@
                         Style="{StaticResource labelStyleInfo}">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="{x:Static resx:CubeLang.Email_Text}"
-                                      FontAttributes="Bold" />
+                                <Span Text="{x:Static resx:CubeLang.Email_Text}" />
                                 <link:HyperlinkSpan Text="geertgeerits@gmail.com"
                                                     Url="mailto:geertgeerits@gmail.com" />
                             </FormattedString>
@@ -58,8 +57,7 @@
                         Style="{StaticResource labelStyleInfo}">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="{x:Static resx:CubeLang.Website_Text}"
-                                      FontAttributes="Bold" />
+                                <Span Text="{x:Static resx:CubeLang.Website_Text}" />
                                 <link:HyperlinkSpan Text="../cube-solver"
                                                     Url="https://geertgeerits.wixsite.com/geertgeerits/cube-solver" />
                             </FormattedString>
