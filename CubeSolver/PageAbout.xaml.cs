@@ -48,6 +48,7 @@ namespace CubeSolver
         {
             FontAttributes = FontAttributes.Bold;
             TextDecorations = TextDecorations.Underline;
+            FontSize = 16;
 
             GestureRecognizers.Add(new TapGestureRecognizer
             {
