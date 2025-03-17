@@ -1827,7 +1827,7 @@ namespace CubeSolver
             {
                 if (cTurnCubeText.Length > 6)
                 {
-                    if (cTurnCubeText.Substring(cTurnCubeText.Length - 2, 2) == ").")
+                    if (cTurnCubeText.Substring(cTurnCubeText.Length - 2, 1) == ")")
                     {
                         cTurnCubeText = cTurnCubeText[..^5];
                     }
