@@ -24,6 +24,7 @@
                 Content.AnchorX = 0;
                 Content.AnchorY = 0;
             }
+
             if (e.Status == GestureStatus.Running)
             {
                 // Calculate the scale factor to be applied.
@@ -55,6 +56,7 @@
                 // Apply scale factor
                 Content.Scale = currentScale;
             }
+
             if (e.Status == GestureStatus.Completed)
             {
                 // Store the translation delta's of the wrapped user interface element.

@@ -48,8 +48,8 @@ namespace CubeSolver
         {
             FontFamily = "OpenSansRegular";
             FontAttributes = FontAttributes.Bold;
-            TextDecorations = TextDecorations.Underline;
             FontSize = 16;
+            TextDecorations = TextDecorations.Underline;
 
             GestureRecognizers.Add(new TapGestureRecognizer
             {

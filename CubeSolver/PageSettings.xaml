@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:CubeSolver"
-             xmlns:zoom="clr-namespace:CubeSolver"
              x:Class="CubeSolver.PageSettings">
 
     <Shell.TitleView>
@@ -13,410 +12,408 @@
         </Label>
     </Shell.TitleView>
 
-    <zoom:PinchToZoomContainer>
-        <Grid
-            RowDefinitions="Auto, *, Auto"
-            HorizontalOptions="Center"
-            Margin="5">
+    <Grid
+        RowDefinitions="Auto, *, Auto"
+        HorizontalOptions="Center"
+        Margin="5">
 
-            <ScrollView
-                Grid.Row="1"
-                Grid.Column="0"
-                Orientation="Vertical">
+        <ScrollView
+            Grid.Row="1"
+            Grid.Column="0"
+            Orientation="Vertical">
 
-                <Grid
-                    Style="{StaticResource gridStyleSettings}"
-                    RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
-                    RowSpacing="6">
+            <Grid
+                Style="{StaticResource gridStyleSettings}"
+                RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                RowSpacing="6">
+
+                <Border
+                    Style="{StaticResource borderStyleDefault}"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2">
+
+                    <Label
+                        x:Name="lblExplanation"
+                        Style="{StaticResource labelStyleExplanation}"
+                        Text="{local:Translate SettingsSaved_Text}">
+                    </Label>
+                </Border>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="{local:Translate Language_Text}">
+                </Label>
+
+                <Border
+                    Style="{StaticResource borderStyleDefault}"
+                    Grid.Row="1"
+                    Grid.Column="1">
+
+                    <Picker
+                        x:Name="pckLanguage"
+                        VerticalOptions="Center"
+                        MinimumWidthRequest="160"
+                        VerticalTextAlignment="Center"
+                        SelectedIndexChanged="OnPickerLanguageChanged">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Čeština</x:String>
+                                <x:String>Dansk</x:String>
+                                <x:String>Deutsch</x:String>
+                                <x:String>English</x:String>
+                                <x:String>Español</x:String>
+                                <x:String>Français</x:String>
+                                <x:String>한국어 (Hangugeo)</x:String>
+                                <x:String>Italiano</x:String>
+                                <x:String>Magyar</x:String>
+                                <x:String>Nederlands</x:String>
+                                <x:String>日本語 (Nihongo)</x:String>
+                                <x:String>Norsk</x:String>
+                                <x:String>Polski</x:String>
+                                <x:String>Português</x:String>
+                                <x:String>Română</x:String>
+                                <x:String>Suomi</x:String>
+                                <x:String>Svenska</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Border>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Text="{local:Translate LanguageSpeech_Text}">
+                </Label>
+
+                <Border
+                    Style="{StaticResource borderStyleDefault}"
+                    Grid.Row="2"
+                    Grid.Column="1">
+
+                    <Picker
+                        x:Name="pckLanguageSpeech"
+                        VerticalOptions="Center"
+                        MinimumWidthRequest="160"
+                        VerticalTextAlignment="Center"
+                        SelectedIndexChanged="OnPickerLanguageSpeechChanged">
+                    </Picker>
+                </Border>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Text="{local:Translate Theme_Text}">
+                </Label>
+
+                <Border
+                    Style="{StaticResource borderStyleDefault}"
+                    Grid.Row="3"
+                    Grid.Column="1">
+
+                    <Picker
+                        x:Name="pckTheme"
+                        VerticalOptions="Center"
+                        MinimumWidthRequest="160"
+                        VerticalTextAlignment="Center"
+                        SelectedIndexChanged="OnPickerThemeChanged">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>System</x:String>
+                                <x:String>Light</x:String>
+                                <x:String>Dark</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
+                </Border>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Text="{local:Translate UseKociembaSolution_Text}">
+                </Label>
+
+                <Switch
+                    x:Name="swtUseKociembaSolution"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Toggled="OnSwtUseKociembaSolution">
+                </Switch>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Text="{local:Translate ExplainedByText_Text}">
+                </Label>
+
+                <Switch
+                    x:Name="swtExplainText"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Toggled="OnSwtExplainTextToggled">
+                </Switch>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Text="{local:Translate ExplainedBySpeech_Text}">
+                </Label>
+
+                <Switch
+                    x:Name="swtExplainSpeech"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Toggled="OnSwtExplainSpeechToggled">
+                </Switch>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Text="{local:Translate CubeColors_Text}">
+                </Label>
+
+                <HorizontalStackLayout
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Spacing="10">
 
                     <Border
                         Style="{StaticResource borderStyleDefault}"
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2">
+                        WidthRequest="120"
+                        HorizontalOptions="Start">
 
-                        <Label
-                            x:Name="lblExplanation"
-                            Style="{StaticResource labelStyleExplanation}"
-                            Text="{local:Translate SettingsSaved_Text}">
-                            </Label>
-                    </Border>
-
-                    <Label
-                        Style="{StaticResource labelStyleDefault}"
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        Text="{local:Translate Language_Text}">
-                    </Label>
-
-                    <Border
-                        Style="{StaticResource borderStyleDefault}"
-                        Grid.Row="1"
-                        Grid.Column="1">
-
-                        <Picker
-                            x:Name="pckLanguage"
-                            VerticalOptions="Center"
-                            MinimumWidthRequest="160"
-                            VerticalTextAlignment="Center"
-                            SelectedIndexChanged="OnPickerLanguageChanged">
-                            <Picker.ItemsSource>
-                                <x:Array Type="{x:Type x:String}">
-                                    <x:String>Čeština</x:String>
-                                    <x:String>Dansk</x:String>
-                                    <x:String>Deutsch</x:String>
-                                    <x:String>English</x:String>
-                                    <x:String>Español</x:String>
-                                    <x:String>Français</x:String>
-                                    <x:String>한국어 (Hangugeo)</x:String>
-                                    <x:String>Italiano</x:String>
-                                    <x:String>Magyar</x:String>
-                                    <x:String>Nederlands</x:String>
-                                    <x:String>日本語 (Nihongo)</x:String>
-                                    <x:String>Norsk</x:String>
-                                    <x:String>Polski</x:String>
-                                    <x:String>Português</x:String>
-                                    <x:String>Română</x:String>
-                                    <x:String>Suomi</x:String>
-                                    <x:String>Svenska</x:String>
-                                </x:Array>
-                            </Picker.ItemsSource>
-                        </Picker>
-                    </Border>
-
-                    <Label
-                        Style="{StaticResource labelStyleDefault}"
-                        Grid.Row="2"
-                        Grid.Column="0"
-                        Text="{local:Translate LanguageSpeech_Text}">
-                    </Label>
-
-                    <Border
-                        Style="{StaticResource borderStyleDefault}"
-                        Grid.Row="2"
-                        Grid.Column="1">
-
-                        <Picker
-                            x:Name="pckLanguageSpeech"
-                            VerticalOptions="Center"
-                            MinimumWidthRequest="160"
-                            VerticalTextAlignment="Center"
-                            SelectedIndexChanged="OnPickerLanguageSpeechChanged">
-                        </Picker>
-                    </Border>
-
-                    <Label
-                        Style="{StaticResource labelStyleDefault}"
-                        Grid.Row="3"
-                        Grid.Column="0"
-                        Text="{local:Translate Theme_Text}">
-                    </Label>
-
-                    <Border
-                        Style="{StaticResource borderStyleDefault}"
-                        Grid.Row="3"
-                        Grid.Column="1">
-
-                        <Picker
-                            x:Name="pckTheme"
-                            VerticalOptions="Center"
-                            MinimumWidthRequest="160"
-                            VerticalTextAlignment="Center"
-                            SelectedIndexChanged="OnPickerThemeChanged">
-                            <Picker.ItemsSource>
-                                <x:Array Type="{x:Type x:String}">
-                                    <x:String>System</x:String>
-                                    <x:String>Light</x:String>
-                                    <x:String>Dark</x:String>
-                                </x:Array>
-                            </Picker.ItemsSource>
-                        </Picker>
-                    </Border>
-
-                    <Label
-                        Style="{StaticResource labelStyleDefault}"
-                        Grid.Row="4"
-                        Grid.Column="0"
-                        Text="{local:Translate UseKociembaSolution_Text}">
-                    </Label>
-
-                    <Switch
-                        x:Name="swtUseKociembaSolution"
-                        Grid.Row="4"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="2"
-                        Toggled="OnSwtUseKociembaSolution">
-                    </Switch>
-
-                    <Label
-                        Style="{StaticResource labelStyleDefault}"
-                        Grid.Row="5"
-                        Grid.Column="0"
-                        Text="{local:Translate ExplainedByText_Text}">
-                    </Label>
-
-                    <Switch
-                        x:Name="swtExplainText"
-                        Grid.Row="5"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="2"
-                        Toggled="OnSwtExplainTextToggled">
-                    </Switch>
-
-                    <Label
-                        Style="{StaticResource labelStyleDefault}"
-                        Grid.Row="6"
-                        Grid.Column="0"
-                        Text="{local:Translate ExplainedBySpeech_Text}">
-                    </Label>
-
-                    <Switch
-                        x:Name="swtExplainSpeech"
-                        Grid.Row="6"
-                        Grid.Column="1"
-                        Grid.ColumnSpan="2"
-                        Toggled="OnSwtExplainSpeechToggled">
-                    </Switch>
-
-                    <Label
-                        Style="{StaticResource labelStyleDefault}"
-                        Grid.Row="7"
-                        Grid.Column="0"
-                        Text="{local:Translate CubeColors_Text}">
-                    </Label>
-
-                    <HorizontalStackLayout
-                        Grid.Row="7"
-                        Grid.Column="1"
-                        Spacing="10">
-
-                        <Border
-                            Style="{StaticResource borderStyleDefault}"
-                            WidthRequest="120"
-                            HorizontalOptions="Start">
-
-                            <Entry
-                                x:Name="entHexColor"
-                                HorizontalOptions="Start"
-                                WidthRequest="120"
-                                ClearButtonVisibility="WhileEditing"
-                                Keyboard="Text"
-                                ReturnType="Done"
-                                MaxLength="6"
-                                TextTransform="Uppercase"
-                                TextChanged="EntryHexColorTextChanged"
-                                Unfocused="EntryHexColorUnfocused">
-                            </Entry>
-                        </Border>
-
-                        <Button
-                            Style="{StaticResource buttonStyleHelp}"
+                        <Entry
+                            x:Name="entHexColor"
                             HorizontalOptions="Start"
-                            ToolTipProperties.Text="{local:Translate ToolTipHelp_Text}"
-                            Clicked="OnSettingsHexColorHelpClicked">
-                        </Button>
-                    </HorizontalStackLayout>
+                            WidthRequest="120"
+                            ClearButtonVisibility="WhileEditing"
+                            Keyboard="Text"
+                            ReturnType="Done"
+                            MaxLength="6"
+                            TextTransform="Uppercase"
+                            TextChanged="EntryHexColorTextChanged"
+                            Unfocused="EntryHexColorUnfocused">
+                        </Entry>
+                    </Border>
 
-                    <Grid
-                        RowDefinitions="Auto, Auto"
-                        ColumnDefinitions="*, 50, 50, 50, 50, 50, 50, *"
-                        Grid.Row="9"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2">
-
-                        <Border
-                            Style="{StaticResource borderStyleGroup}"
-                            Grid.Row="0"
-                            Grid.Column="0"
-                            Grid.RowSpan="2"
-                            Grid.ColumnSpan="8">
-                        </Border>
-
-                        <Polygon
-                            x:Name="plgCubeColor1"
-                            Style="{StaticResource polygonStyleColor}"
-                            Grid.Row="0"
-                            Grid.Column="1"
-                            Margin="0,3,0,0"
-                            Fill="Red">
-                        </Polygon>
-
-                        <Polygon
-                            x:Name="plgCubeColor2"
-                            Style="{StaticResource polygonStyleColor}"
-                            Grid.Row="0"
-                            Grid.Column="2"
-                            Margin="0,3,0,0"
-                            Fill="Blue">
-                        </Polygon>
-
-                        <Polygon
-                            x:Name="plgCubeColor3"
-                            Style="{StaticResource polygonStyleColor}"
-                            Grid.Row="0"
-                            Grid.Column="3"
-                            Margin="0,3,0,0"
-                            Fill="Orange">
-                        </Polygon>
-
-                        <Polygon
-                            x:Name="plgCubeColor4"
-                            Style="{StaticResource polygonStyleColor}"
-                            Grid.Row="0"
-                            Grid.Column="4"
-                            Margin="0,3,0,0"
-                            Fill="Green">
-                        </Polygon>
-
-                        <Polygon
-                            x:Name="plgCubeColor5"
-                            Style="{StaticResource polygonStyleColor}"
-                            Grid.Row="0"
-                            Grid.Column="5"
-                            Margin="0,3,0,0"
-                            Fill="White">
-                        </Polygon>
-
-                        <Polygon
-                            x:Name="plgCubeColor6"
-                            Style="{StaticResource polygonStyleColor}"
-                            Grid.Row="0"
-                            Grid.Column="6"
-                            Margin="0,3,0,0"
-                            Fill="Yellow">
-                        </Polygon>
-
-                        <RadioButton
-                            x:Name="rbnCubeColor1"
-                            Style="{StaticResource radiobuttonStyleColor}"
-                            Grid.Row="1"
-                            Grid.Column="1"
-                            Value="rbnCubeColor1"
-                            IsChecked="True"
-                            CheckedChanged="OnRbnCubeColorCheckedChanged">
-                        </RadioButton>
-
-                        <RadioButton
-                            x:Name="rbnCubeColor2"
-                            Style="{StaticResource radiobuttonStyleColor}"
-                            Grid.Row="1"
-                            Grid.Column="2"
-                            Value="rbnCubeColor2"
-                            CheckedChanged="OnRbnCubeColorCheckedChanged">
-                        </RadioButton>
-
-                        <RadioButton
-                            x:Name="rbnCubeColor3"
-                            Style="{StaticResource radiobuttonStyleColor}"
-                            Grid.Row="1"
-                            Grid.Column="3"
-                            Value="rbnCubeColor3"
-                            CheckedChanged="OnRbnCubeColorCheckedChanged">
-                        </RadioButton>
-
-                        <RadioButton
-                            x:Name="rbnCubeColor4"
-                            Style="{StaticResource radiobuttonStyleColor}"
-                            Grid.Row="1"
-                            Grid.Column="4"
-                            Value="rbnCubeColor4"
-                            CheckedChanged="OnRbnCubeColorCheckedChanged">
-                        </RadioButton>
-
-                        <RadioButton
-                            x:Name="rbnCubeColor5"
-                            Style="{StaticResource radiobuttonStyleColor}"
-                            Grid.Row="1"
-                            Grid.Column="5"
-                            Value="rbnCubeColor5"
-                            CheckedChanged="OnRbnCubeColorCheckedChanged">
-                        </RadioButton>
-
-                        <RadioButton
-                            x:Name="rbnCubeColor6"
-                            Style="{StaticResource radiobuttonStyleColor}"
-                            Grid.Row="1"
-                            Grid.Column="6"
-                            Value="rbnCubeColor6"
-                            CheckedChanged="OnRbnCubeColorCheckedChanged">
-                        </RadioButton>
-                    </Grid>
-
+                    <Button
+                        Style="{StaticResource buttonStyleHelp}"
+                        HorizontalOptions="Start"
+                        ToolTipProperties.Text="{local:Translate ToolTipHelp_Text}"
+                        Clicked="OnSettingsHexColorHelpClicked">
+                    </Button>
+                </HorizontalStackLayout>
+                
+                <Grid
+                    RowDefinitions="Auto, Auto"
+                    ColumnDefinitions="*, 50, 50, 50, 50, 50, 50, *"
+                    Grid.Row="9"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2">
+                   
                     <Border
                         Style="{StaticResource borderStyleGroup}"
-                        Grid.Row="10"
+                        Grid.Row="0"
                         Grid.Column="0"
-                        Grid.RowSpan="3"
-                        Grid.ColumnSpan="2">
+                        Grid.RowSpan="2"
+                        Grid.ColumnSpan="8">
                     </Border>
 
-                    <Slider
-                        x:Name="sldColorRed"
-                        Style="{StaticResource sliderStyleColor}"
-                        Grid.Row="10"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"
-                        ThumbColor="Red"
-                        MinimumTrackColor="Red"
-                        ValueChanged="OnSliderColorValueChanged">
-                    </Slider>
+                    <Polygon
+                        x:Name="plgCubeColor1"
+                        Style="{StaticResource polygonStyleColor}"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Margin="0,3,0,0"
+                        Fill="Red">
+                    </Polygon>
 
-                    <Slider
-                        x:Name="sldColorGreen"
-                        Style="{StaticResource sliderStyleColor}"
-                        Grid.Row="11"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"
-                        ThumbColor="Green"
-                        MinimumTrackColor="Green"
-                        ValueChanged="OnSliderColorValueChanged">
-                    </Slider>
+                    <Polygon
+                        x:Name="plgCubeColor2"
+                        Style="{StaticResource polygonStyleColor}"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Margin="0,3,0,0"
+                        Fill="Blue">
+                    </Polygon>
 
-                    <Slider
-                        x:Name="sldColorBlue"
-                        Style="{StaticResource sliderStyleColor}"
-                        Grid.Row="12"
-                        Grid.Column="0"
-                        Grid.ColumnSpan="2"
-                        ThumbColor="Blue"
-                        MinimumTrackColor="Blue"
-                        ValueChanged="OnSliderColorValueChanged">
-                    </Slider>
+                    <Polygon
+                        x:Name="plgCubeColor3"
+                        Style="{StaticResource polygonStyleColor}"
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        Margin="0,3,0,0"
+                        Fill="Orange">
+                    </Polygon>
 
-                    <Entry
-                        x:Name="entDummy"
-                        Grid.Row="13"
-                        HeightRequest="2"
-                        WidthRequest="5"
-                        BackgroundColor="Transparent"
-                        TextColor="Transparent"
-                        Focused="EntDummyFocused">
-                    </Entry>
+                    <Polygon
+                        x:Name="plgCubeColor4"
+                        Style="{StaticResource polygonStyleColor}"
+                        Grid.Row="0"
+                        Grid.Column="4"
+                        Margin="0,3,0,0"
+                        Fill="Green">
+                    </Polygon>
 
+                    <Polygon
+                        x:Name="plgCubeColor5"
+                        Style="{StaticResource polygonStyleColor}"
+                        Grid.Row="0"
+                        Grid.Column="5"
+                        Margin="0,3,0,0"
+                        Fill="White">
+                    </Polygon>
+
+                    <Polygon
+                        x:Name="plgCubeColor6"
+                        Style="{StaticResource polygonStyleColor}"
+                        Grid.Row="0"
+                        Grid.Column="6"
+                        Margin="0,3,0,0"
+                        Fill="Yellow">
+                    </Polygon>
+                   
+                    <RadioButton
+                        x:Name="rbnCubeColor1"
+                        Style="{StaticResource radiobuttonStyleColor}"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Value="rbnCubeColor1"
+                        IsChecked="True"
+                        CheckedChanged="OnRbnCubeColorCheckedChanged">
+                    </RadioButton>
+
+                    <RadioButton
+                        x:Name="rbnCubeColor2"
+                        Style="{StaticResource radiobuttonStyleColor}"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        Value="rbnCubeColor2"
+                        CheckedChanged="OnRbnCubeColorCheckedChanged">
+                    </RadioButton>
+
+                    <RadioButton
+                        x:Name="rbnCubeColor3"
+                        Style="{StaticResource radiobuttonStyleColor}"
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Value="rbnCubeColor3"
+                        CheckedChanged="OnRbnCubeColorCheckedChanged">
+                    </RadioButton>
+
+                    <RadioButton
+                        x:Name="rbnCubeColor4"
+                        Style="{StaticResource radiobuttonStyleColor}"
+                        Grid.Row="1"
+                        Grid.Column="4"
+                        Value="rbnCubeColor4"
+                        CheckedChanged="OnRbnCubeColorCheckedChanged">
+                    </RadioButton>
+
+                    <RadioButton
+                        x:Name="rbnCubeColor5"
+                        Style="{StaticResource radiobuttonStyleColor}"
+                        Grid.Row="1"
+                        Grid.Column="5"
+                        Value="rbnCubeColor5"
+                        CheckedChanged="OnRbnCubeColorCheckedChanged">
+                    </RadioButton>
+
+                    <RadioButton
+                        x:Name="rbnCubeColor6"
+                        Style="{StaticResource radiobuttonStyleColor}"
+                        Grid.Row="1"
+                        Grid.Column="6"
+                        Value="rbnCubeColor6"
+                        CheckedChanged="OnRbnCubeColorCheckedChanged">
+                    </RadioButton>
                 </Grid>
-            </ScrollView>
 
-            <Button
-                x:Name="btnSettingsSave"
-                Style="{StaticResource buttonStyleDefault}"
-                Grid.Row="2"
-                HorizontalOptions="Start"
-                WidthRequest="{OnIdiom 170, Phone=170, Tablet=270, Desktop=270}"
-                Text="{local:Translate SettingsSave_Text}"
-                ToolTipProperties.Text="{local:Translate SettingsSave_Text}"
-                Clicked="OnSettingsSaveClicked">
-            </Button>
+                <Border
+                    Style="{StaticResource borderStyleGroup}"
+                    Grid.Row="10"
+                    Grid.Column="0"
+                    Grid.RowSpan="3"
+                    Grid.ColumnSpan="2">
+                </Border>
 
-            <Button
-                Style="{StaticResource buttonStyleDefault}"
-                Grid.Row="2"
-                HorizontalOptions="End"
-                WidthRequest="{OnIdiom 170, Phone=170, Tablet=270, Desktop=270}"
-                Text="{local:Translate SettingsReset_Text}"
-                ToolTipProperties.Text="{local:Translate SettingsReset_Text}"
-                Clicked="OnSettingsResetClicked">
-            </Button>
+                <Slider
+                    x:Name="sldColorRed"
+                    Style="{StaticResource sliderStyleColor}"
+                    Grid.Row="10"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    ThumbColor="Red"
+                    MinimumTrackColor="Red"
+                    ValueChanged="OnSliderColorValueChanged">
+                </Slider>
 
-        </Grid>
-    </zoom:PinchToZoomContainer>
+                <Slider
+                    x:Name="sldColorGreen"
+                    Style="{StaticResource sliderStyleColor}"
+                    Grid.Row="11"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    ThumbColor="Green"
+                    MinimumTrackColor="Green"
+                    ValueChanged="OnSliderColorValueChanged">
+                </Slider>
+
+                <Slider
+                    x:Name="sldColorBlue"
+                    Style="{StaticResource sliderStyleColor}"
+                    Grid.Row="12"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    ThumbColor="Blue"
+                    MinimumTrackColor="Blue"
+                    ValueChanged="OnSliderColorValueChanged">
+                </Slider>
+
+                <Entry
+                    x:Name="entDummy"
+                    Grid.Row="13"
+                    HeightRequest="2"
+                    WidthRequest="5"
+                    BackgroundColor="Transparent"
+                    TextColor="Transparent"
+                    Focused="EntDummyFocused">
+                </Entry>
+
+            </Grid>
+        </ScrollView>
+
+        <Button
+            x:Name="btnSettingsSave"
+            Style="{StaticResource buttonStyleDefault}"
+            Grid.Row="2"
+            HorizontalOptions="Start"
+            WidthRequest="{OnIdiom 170, Phone=170, Tablet=270, Desktop=270}"
+            Text="{local:Translate SettingsSave_Text}"
+            ToolTipProperties.Text="{local:Translate SettingsSave_Text}"
+            Clicked="OnSettingsSaveClicked">
+        </Button>
+
+        <Button
+            Style="{StaticResource buttonStyleDefault}"
+            Grid.Row="2"
+            HorizontalOptions="End"
+            WidthRequest="{OnIdiom 170, Phone=170, Tablet=270, Desktop=270}"
+            Text="{local:Translate SettingsReset_Text}"
+            ToolTipProperties.Text="{local:Translate SettingsReset_Text}"
+            Clicked="OnSettingsResetClicked">
+        </Button>
+
+    </Grid>
 </ContentPage>

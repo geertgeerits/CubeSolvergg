@@ -17,10 +17,11 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <zoom:PinchToZoomContainer>
-                <Grid
-                    Style="{StaticResource gridStyleInfo}"
-                    RowDefinitions="Auto">
+            <Grid
+                Style="{StaticResource gridStyleInfo}"
+                RowDefinitions="Auto">
+
+                <zoom:PinchToZoomContainer>
 
                     <VerticalStackLayout>
                         <Label
@@ -50,8 +51,8 @@
                                 <FormattedString>
                                     <Span Text="{x:Static resx:CubeLang.Email_Text}"
                                           FontFamily="OpenSansRegular"
-                                          FontSize="16"
-                                          FontAttributes="Bold" />
+                                          FontAttributes="Bold"
+                                          FontSize="16" />
                                     <link:HyperlinkSpan Text="geertgeerits@gmail.com"
                                                         Url="mailto:geertgeerits@gmail.com" />
                                 </FormattedString>
@@ -64,8 +65,8 @@
                                 <FormattedString>
                                     <Span Text="{x:Static resx:CubeLang.Website_Text}"
                                           FontFamily="OpenSansRegular"
-                                          FontSize="16"
-                                          FontAttributes="Bold" />
+                                          FontAttributes="Bold"
+                                          FontSize="16" />
                                     <link:HyperlinkSpan Text="../cube-solver"
                                                         Url="https://geertgeerits.wixsite.com/geertgeerits/cube-solver" />
                                 </FormattedString>
@@ -589,9 +590,9 @@
                             </Label>
                         </VerticalStackLayout>
                     </VerticalStackLayout>
-                </Grid>
 
-            </zoom:PinchToZoomContainer>
+                </zoom:PinchToZoomContainer>
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
