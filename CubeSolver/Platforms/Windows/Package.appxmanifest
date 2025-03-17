@@ -27,11 +27,31 @@
     <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
   </Dependencies>
 
-  <Resources>
+  <!--<Resources>
     <Resource Language="x-generate" />
-  </Resources>
+  </Resources>-->
 
-  <Applications>
+	<Resources>
+		<Resource Language="en" />
+		<Resource Language="cs" />
+		<Resource Language="da" />
+		<Resource Language="de" />
+		<Resource Language="es" />
+		<Resource Language="fi" />
+		<Resource Language="fr" />
+		<Resource Language="hu" />
+		<Resource Language="it" />
+		<Resource Language="ja" />
+		<Resource Language="ko" />
+		<Resource Language="nb" />
+		<Resource Language="nl" />
+		<Resource Language="pl" />
+		<Resource Language="pt" />
+		<Resource Language="ro" />
+		<Resource Language="sv" />
+	</Resources>
+
+	<Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="$targetentrypoint$">
       <uap:VisualElements
         DisplayName="$placeholder$"
