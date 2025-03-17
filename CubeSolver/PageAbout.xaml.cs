@@ -46,6 +46,7 @@ namespace CubeSolver
 
         public HyperlinkSpan()
         {
+            FontFamily = "OpenSansRegular";
             FontAttributes = FontAttributes.Bold;
             TextDecorations = TextDecorations.Underline;
             FontSize = 16;
