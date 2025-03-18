@@ -108,7 +108,7 @@ namespace CubeSolver
             //// Get and set the user interface language
             try
             {
-                if (Globals.cLanguage == "")
+                if (string.IsNullOrEmpty(Globals.cLanguage))
                 {
                     Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
                 }
@@ -119,7 +119,6 @@ namespace CubeSolver
             }
             Debug.WriteLine("Globals.cLanguage: " + Globals.cLanguage);
             
-            // Set the language
             SetTextLanguage();
 
             //// Initialize text to speech and get and set the speech language
@@ -127,7 +126,7 @@ namespace CubeSolver
 
             try
             {
-                if (Globals.cLanguageSpeech == "")
+                if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
                 {
                     cCultureName = Thread.CurrentThread.CurrentUICulture.Name;
                 }

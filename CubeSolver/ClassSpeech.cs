@@ -67,17 +67,20 @@
                 {
                     int nTotalItems = Globals.cLanguageLocales.Length;
 
-                    for (int nItem = 0; nItem < nTotalItems; nItem++)
+                    if (!string.IsNullOrEmpty(cCultureName))
                     {
-                        if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
+                        for (int nItem = 0; nItem < nTotalItems; nItem++)
                         {
-                            Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
-                            break;
+                            if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
+                            {
+                                Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
+                                break;
+                            }
                         }
                     }
 
                     // If the language is not found try it with the language (Globals.cLanguage) of the user setting for this app
-                    if (Globals.cLanguageSpeech == "")
+                    if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
                     {
                         for (int nItem = 0; nItem < nTotalItems; nItem++)
                         {
@@ -91,7 +94,7 @@
                 }
 
                 // If the language is still not found use the first language in the array
-                if (Globals.cLanguageSpeech == "")
+                if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
                 {
                     Globals.cLanguageSpeech = Globals.cLanguageLocales![0];
                 }
