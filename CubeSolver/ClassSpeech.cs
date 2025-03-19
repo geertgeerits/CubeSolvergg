@@ -28,7 +28,9 @@
             catch (Exception ex)
             {
                 // Text to speech is not supported on this device
+#if DEBUG                
                 await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message + "\n\n" + CubeLang.TextToSpeechError_Text, CubeLang.ButtonClose_Text);
+#endif
                 Globals.bExplainSpeech = false;
                 return;
             }
@@ -101,7 +103,9 @@
             }
             catch (Exception ex)
             {
+#if DEBUG                
                 Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+#endif
             }
         }
 
@@ -121,7 +125,9 @@
             if (Globals.bTextToSpeechIsBusy)
             {
                 if (Globals.cts?.IsCancellationRequested ?? true)
+                {
                     return;
+                }
 
                 Globals.cts.Cancel();
             }
@@ -160,7 +166,9 @@
             if (Globals.bTextToSpeechIsBusy)
             {
                 if (Globals.cts?.IsCancellationRequested ?? true)
+                {
                     return;
+                }
 
                 Globals.cts.Cancel();
                 Globals.bTextToSpeechIsBusy = false;
