@@ -217,11 +217,11 @@ Caractères 3-4: Vert
 Caractères 5-6: Bleu</value>
   </data>
   <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Synthèse vocale : Toutes les langues proposées dans les paramètres de l’application ne sont pas prises en charge.
-Cette option varie selon l’appareil et les langues installées. Il est possible que, pour certaines langues, la traduction vocale soit effectuée via Internet par les services concernés.
+    <value>Synthèse vocale : Toutes les langues proposées dans les paramètres de l'application ne sont pas prises en charge.
+Cette option varie selon l'appareil et les langues installées. Il est possible que, pour certaines langues, la traduction vocale soit effectuée via Internet par les services concernés.
 
-Google Traduction a été utilisé pour la traduction du texte. Ceci ne garantit pas l’exactitude de toutes les traductions.
-Les langues prises en charge sont : tchèque, danois, néerlandais, anglais, finnois, français, allemand, hongrois, italien, japonais, coréen, norvégien, polonais, portugais, roumain, espagnol et suédois.
+Google Traduction a été utilisé pour la traduction du texte. Ceci ne garantit pas l'exactitude de toutes les traductions.
+Les langues prises en charge sont : tchèque, danois, néerlandais, anglais, finnois, français, allemand, hongrois, italien, japonais, coréen, norvégien, polonais, portugais, roumain, espagnol, suédois et ukrainien.
 
 Vous pouvez me contacter à tout moment pour toute correction.</value>
   </data>

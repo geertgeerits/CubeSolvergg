@@ -60,6 +60,7 @@ namespace CubeSolver
                 "ro" => 14,     // Română - Romanian
                 "fi" => 15,     // Suomi - Finnish
                 "sv" => 16,     // Svenska - Swedish
+                "uk" => 17,     // Українська (Ukraїnska) - Ukrainian
                 _ => 3,         // English
             };
 
@@ -118,6 +119,7 @@ namespace CubeSolver
                     14 => "ro",     // Română - Romanian
                     15 => "fi",     // Suomi - Finnish
                     16 => "sv",     // Svenska - Swedish
+                    17 => "uk",     // Українська (Ukraїnska) - Ukrainian
                     _ => "en",      // English
                 };
             }

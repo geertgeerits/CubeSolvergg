@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>домовлений</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Заборонено:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Дозволені символи:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Закрити</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Скинути</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Розв'язати</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Будь ласка, закрийте програму.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Контакти:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Продовжити</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Авторське право</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Задня грань</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Вниз обличчям</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Кольори куба:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Передня грань</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Вид зсередини</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Ліве обличчя</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Вид ззовні</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Праве обличчя</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Верхнє обличчя</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>За замовчуванням</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Грайте або розбирайте куб.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Не згоден</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>Електронна пошта: </value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Помилка</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Пояснюється мовленням:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Пояснюється текстом:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Поверніть грані куба «за годинниковою стрілкою» і «проти годинникової стрілки»:
+Якщо дано команду повернути передню частину «за годинниковою стрілкою», то це в тому напрямку, у якому повертаються стрілки. «Проти годинникової стрілки» означає поворот в інший бік.
+Для інших сторін ви завжди повинні «уявити», що ви перебуваєте прямо перед стороною, яку потрібно повернути. Отже, якщо там написано «поверніть спинку за годинниковою стрілкою», уявіть, що ви знаходитесь на іншій стороні куба, а потім поверніть спинку «за годинниковою стрілкою». Не обертайте сам куб.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Відкрийте збережений куб.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Зберегти поточний куб.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Перенесіть кольори з перемішаного куба на цей куб. Виберіть колір на панелі кольорів у верхній частині, а потім торкніться частин куба, щоб змінити їх. Натисніть цю кнопку ще раз, щоб вийти з цього розділу, і натисніть кнопку «Вирішити».</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Шістнадцяткові коди кольорів:
+
+Символи 1-2: Червоний
+Символи 3-4: зелений
+Символи 5-6: синій</value>
+  </data>
+  <data name="InfoExplanation_Text" xml:space="preserve">
+    <value>Синтез мовлення: підтримуються не всі мови, указані в налаштуваннях програми.
+Цей параметр залежить від пристрою та встановленої мови. Можливо, для деяких мов переклад на мову та з мови здійснюється через Інтернет відповідними службами.
+
+Для перекладу тексту використовувався Google Translate. Це не гарантує, що всі переклади правильні.
+Підтримувані мови: чеська, датська, голландська, англійська, фінська, французька, німецька, угорська, італійська, японська, корейська, норвезька, польська, португальська, румунська, іспанська, шведська та українська.
+
+Ви завжди можете зв'язатися зі мною для будь-яких виправлень.</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Інформація</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Мова мовлення:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>мова:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Програмне забезпечення надається «як є», без будь-яких гарантій, явних чи неявних, включаючи, але не обмежуючись гарантіями придатності для продажу, придатності для певної мети та непорушення прав. За жодних обставин автор та/або видавець не несуть відповідальності за будь-які претензії, збитки чи іншу відповідальність, будь то внаслідок договору, цивільного правопорушення чи іншим чином, що виникає внаслідок програмного забезпечення або у зв’язку з ним, використанням або іншими операціями з програмним забезпеченням.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Ліцензія</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Цю програму можна вільно використовувати в некомерційних цілях.
+Використовуйте цю програму виключно на свій страх і ризик.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Колір центрального квадрата може зустрічатися лише один раз.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Кольори кутового куба повинні бути різними.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Кольори реберного куба повинні бути різними.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Вітаємо, куб складено.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Куб не розв'язаний.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>З кожного доступного кольору має бути дев'ять одного кольору.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Вирішувач кубів</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>немає</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Політика конфіденційності:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Жодні особисті та інші дані не зберігаються та не передаються мені чи іншим.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Програма буде перезапущена.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Скинути</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Деякі змінені налаштування потрібно зберегти, щоб застосувати їх.
+Після збереження програма перезапускається, а куб скидається.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>зберегти</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Налаштування</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Розв'язати</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>СТІЙ</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Текст містить один або кілька неприпустимих символів.
+
+Заборонено:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Синтез мовлення не підтримується на цьому пристрої.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Темний</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>світло</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>система</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Тема:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Іди назад</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Іди вперед</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Довідка</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Відкрийте куб</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Збережіть куб</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Кнопка перемикання: установіть кольори на кубі</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверніть задню сторону на півоберта.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Поверніть задню сторону на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Поверніть задню сторону на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверніть нижню сторону на півоберта.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Поверніть нижню сторону на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Поверніть нижню сторону на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Переверніть весь куб так, щоб лицьова сторона пішла вниз, права сторона залишилася праворуч.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Переверніть весь куб так, щоб лицьова сторона пішла вліво, а верхня залишилася вгорі.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Переверніть весь куб так, щоб лицьова сторона пішла в праву сторону, а верхня залишилася вгорі.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Переверніть весь куб так, щоб лицьова сторона пішла вгору, права сторона залишилася праворуч.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Поверніть весь куб так, щоб вершина пішла вліво, лицьова сторона залишилася спереду.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Переверніть весь куб так, щоб вершина пішла в праву сторону, лицьова сторона залишилася спереду.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Поверніть передньо-середній шар на чверть оберту вправо (-).</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Поверніть передньо-середній шар на чверть оберту до верхньої сторони (+).</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверніть лицьову сторону на півоберта.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Поверніть передню сторону на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Поверніть передню сторону на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверніть ліву сторону на півоберта.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Поверніть ліву сторону на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Поверніть ліву сторону на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Переверніть середній пласт на півоберта.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Поверніть правий середній шар на чверть оберту на лицьову сторону (+).</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Поверніть правий середній шар на чверть оберту до верхньої сторони (-).</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверніть правий бік на півоберта.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Поверніть правий бік на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Поверніть праву сторону на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Поверніть верхній середній шар на чверть оберту на лицьову сторону (-).</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Поверніть верхній середній шар на чверть оберту вправо (+).</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверніть верхню сторону на півоберта.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Поверніть верхню сторону на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Поверніть верхню сторону на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Версія:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>сайт: </value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>так</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Куб неможливо розв'язати.
+
+Можлива причина - неправильне перенесення кольорів на цей куб.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Переверніть весь кубик так, щоб передня частина пішла назад, а права сторона залишилася праворуч.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Перевертаємо весь кубик так, щоб передня частина переходила на задню, а верхня сторона залишалася вгорі.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Перевертаємо весь куб так, щоб верх пішов вниз, лицьова сторона залишилася спереду.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Час у мілісекундах:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Кількість обертів:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Способи вирішення:
+- Автоматично: використовуйте кнопку куба внизу екрана, щоб ввести кольори вашого справжнього куба. Після завершення натисніть кнопку ще раз, а потім торкніть «Вирішити». Куб буде розв’язано за допомогою алгоритму «Kociemba». Перенесіть запропоновані ходи на свій справжній куб.
+Якщо ви вимкнете алгоритм «Kociemba» в налаштуваннях, програма використовуватиме метод «Friedrich» (CFOP).
+- Реверс: використовуйте клавіші зі стрілками, щоб переміщати куб, а потім натисніть «Розв’язати». Розгадування кубика відбувається у зворотному порядку.
+- Вручну: на головному екрані використовуйте клавіші зі стрілками, щоб скачати та розгадати куб вручну.
+Це не гарантія того, що всі кубики можна розв’язати.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Куб повернувся в попередній стан.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Кольори центральних деталей неправильні.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>З кожного доступного кольору на реберному кубі має бути чотири одного кольору.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>З кожного доступного кольору на кутовому кубі має бути чотири одного кольору.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Поверніть задній і середній шар разом на півоберта.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Поверніть задній і середній шар разом на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Поверніть задній і середній шар разом на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Поверніть нижній і середній пласт разом на півоберта.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Поверніть нижній і середній шар разом на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Поверніть нижній і середній шар разом на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Поверніть передній і середній пласт разом на півоберта.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Поверніть передній і середній шар разом на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Поверніть передній і середній шар разом на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Поверніть разом лівий і середній шар на півоберта.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Поверніть разом лівий і середній шари на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Поверніть лівий і середній шар разом на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Поверніть правий і середній шар разом на півоберта.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Поверніть правий і середній шар разом на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Поверніть правий і середній шар разом на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Поверніть верхній і середній шар разом на півоберта.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Поверніть разом верхній і середній шар на чверть оберту «проти годинникової стрілки» (-).</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Поверніть разом верхній і середній шар на чверть оберту «за годинниковою стрілкою» (+).</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Надішліть електронний лист автору цієї програми</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Відкрийте веб-сайт цієї програми</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Перевірені рішення:</value>
+  </data>
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
+    <value>Середня кількість поворотів для розв’язування куба за методом Коціемби становить</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Розбийте кубик</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Скинути куб</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Скинути куб.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Розбийте кубик.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Розв'язати куб</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Поверніться на один оборот</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Пройдіть один оберт вперед</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Поверніться на один оборот.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Пройдіть один оберт вперед.</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Вирішіть куб без стороннього втручання</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Вирішіть куб без стороннього втручання.</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Розв’яжіть куб із втручанням</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Розв’яжіть куб із втручанням.</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>Кнопка перемикання: розгадайте куб із втручанням або без нього</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Розв'язати куб.</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>Обертання обличчя, поверніть обличчя на чверть оберту за годинниковою стрілкою (90 градусів)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Верхнє обличчя</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Вниз обличчям</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Передня грань</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Задня грань</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Ліве обличчя</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Праве обличчя</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>Зріз рухається, поверніть середній шар на чверть оберту за годинниковою стрілкою (90 градусів)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>Слідує в напрямку L</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>Слідує напрямку D</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>Слідує за напрямком F</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>Обертання куба, поверніть куб на чверть оберту за годинниковою стрілкою (90 градусів)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>Слідує за напрямком R</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>Слідує за напрямком U</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>Слідує за напрямком F</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>Широкі ходи, поверніть відразу 2 шари на чверть оберту за годинниковою стрілкою (90 градусів), вони в нижньому регістрі: u, d, f, b, l, r.</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>Апостроф (наприклад, U') позначає чверть повороту проти годинникової стрілки (90 градусів).</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>Цифра 2 (наприклад, U2) означає поворот на півоберта (180 градусів).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value>за допомогою методу «Фрідріха» (CFOP).</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>Подяки: ця програма використовує відкритий код від «Herbert Kociemba» (автора двофазного алгоритму Kociemba) і «Matt Colbourne». Їхній внесок значно підвищив ефективність розв’язування кубів. Окрема подяка за їх роботу.</value>
+  </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Перший запуск гри може тривати до</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>Метод Kociemba:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Метод:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Зворотній порядок</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>секунд</value>
+  </data>
+</root>
