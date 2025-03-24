@@ -110,7 +110,6 @@ namespace CubeSolver
             {
                 if (string.IsNullOrEmpty(Globals.cLanguage))
                 {
-                    //Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
                     Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.Name;
                 }
             }
@@ -122,25 +121,25 @@ namespace CubeSolver
 
             SetTextLanguage();
 
-            //// Initialize text to speech and get and set the speech language
-            string cCultureName = "";
+            //// Initialize text to speech
+            ClassSpeech.InitializeTextToSpeech();
 
             try
             {
                 if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
                 {
-                    cCultureName = Thread.CurrentThread.CurrentUICulture.Name;
+                    Globals.cLanguageSpeech = Thread.CurrentThread.CurrentUICulture.Name;
                 }
+
+                // Search for the language after a first start or reset of the application
+                ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
             }
             catch (Exception)
             {
-                cCultureName = "en-US";
+                Globals.cLanguageSpeech = "en-US";
+                ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
             }
-
-            ClassSpeech.InitializeTextToSpeech(cCultureName);
-
             Debug.WriteLine("Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
-            Debug.WriteLine("cCultureName: " + cCultureName);
 
             //// Reset the colors of the cube
             ClassColorsCube.ResetCube();

@@ -1,4 +1,6 @@
-﻿namespace CubeSolver
+﻿using System.Diagnostics;
+
+namespace CubeSolver
 {
     internal sealed class ClassSpeech
     {
@@ -8,8 +10,7 @@
         /// Initialize text to speech and fill the the array with the speech languages
         /// <para>.Country = KR ; .Id = ''  ; .Language = ko ; .Name = Korean (South Korea) ;</para>
         /// </summary>
-        /// <param name="cCultureName"></param>
-        public static async void InitializeTextToSpeech(string cCultureName)
+        public static async void InitializeTextToSpeech()
         {
             // Initialize text to speech
             int nTotalItems;
@@ -28,7 +29,7 @@
             catch (Exception ex)
             {
                 // Text to speech is not supported on this device
-#if DEBUG                
+#if DEBUG
                 await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message + "\n\n" + CubeLang.TextToSpeechError_Text, CubeLang.ButtonClose_Text);
 #endif
                 Globals.bExplainSpeech = false;
@@ -48,62 +49,55 @@
             }
 
             Array.Sort(Globals.cLanguageLocales);
-
-            // Search for the language after a first start or reset of the application
-            if (Globals.cLanguageSpeech == "")
-            {
-                SearchArrayWithSpeechLanguages(cCultureName);
-            }
-            //await Application.Current.MainPage.DisplayAlert("Globals.cLanguageSpeech", Globals.cLanguageSpeech, "OK");  // For testing
         }
 
         /// <summary>
         /// Search for the language after a first start or reset of the application
         /// </summary>
         /// <param name="cCultureName"></param>
-        private static void SearchArrayWithSpeechLanguages(string cCultureName)
+        public static void SearchArrayWithSpeechLanguages(string cCultureName)
         {
             try
             {
+                int nTotalItems = Globals.cLanguageLocales?.Length ?? 0;
+
                 if (Globals.cLanguageLocales is not null)
                 {
-                    int nTotalItems = Globals.cLanguageLocales.Length;
-
                     if (!string.IsNullOrEmpty(cCultureName))
                     {
+                        // Search for the speech language as 'en-US'
                         for (int nItem = 0; nItem < nTotalItems; nItem++)
                         {
                             if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
                             {
                                 Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
-                                break;
+                                return;
                             }
                         }
-                    }
 
-                    // If the language is not found try it with the language (Globals.cLanguage) of the user setting for this app
-                    if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
-                    {
-                        for (int nItem = 0; nItem < nTotalItems; nItem++)
+                        // Search for the speech language as 'en'
+                        cCultureName = cCultureName[..2];
+
+                        for (int nItem = 0; nTotalItems > nItem; nItem++)
                         {
-                            if (Globals.cLanguageLocales[nItem].StartsWith(Globals.cLanguage))
+                            if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
                             {
                                 Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
-                                break;
+                                return;
                             }
                         }
                     }
                 }
 
-                // If the language is still not found use the first language in the array
-                if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
+                // If the language is not found use the first language in the array
+                if (string.IsNullOrEmpty(Globals.cLanguageSpeech) && nTotalItems > 0)
                 {
                     Globals.cLanguageSpeech = Globals.cLanguageLocales![0];
                 }
             }
             catch (Exception ex)
             {
-#if DEBUG                
+#if DEBUG
                 Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
 #endif
             }
