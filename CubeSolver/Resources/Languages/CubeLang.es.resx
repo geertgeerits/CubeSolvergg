@@ -221,9 +221,9 @@ Caracteres 5-6: Azul</value>
 Esta opción varía según el dispositivo y los idiomas instalados. Es posible que, para algunos idiomas, la traducción se realice a través de internet mediante los servicios correspondientes.
 
 Se utilizó Google Translate para la traducción del texto. Esto no garantiza que todas las traducciones sean correctas.
-Los idiomas disponibles son: checo, danés, neerlandés, inglés, finlandés, francés, alemán, húngaro, italiano, japonés, coreano, noruego, polaco, portugués, rumano, español, sueco y ucraniano.
+Los idiomas disponibles son: alemán, chino, checo, danés, coreano, español, finlandés, francés, húngaro, inglés, italiano, japonés, neerlandés, noruego, polaco, portugués, rumano, sueco y ucraniano.
 
-Siempre puede contactarme para cualquier corrección.</value>
+Puede contactarme para cualquier corrección.</value>
   </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Información</value>

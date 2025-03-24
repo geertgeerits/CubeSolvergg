@@ -471,7 +471,7 @@ namespace CubeSolver.Resources.Languages {
         ///This option varies from device to device and the installed languages. It is possible that for some languages the translation to and from speech is done over the internet by the concerned services.
         ///
         ///Google Translate was used for the translation of the text. This is not a guarantee that all translations are correct.
-        ///The supporting languages are: Czech, Danish, Dutch, English, Finnish, French, German, Hungarian,  [rest of string was truncated]&quot;;.
+        ///The supporting languages are: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hu [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string InfoExplanation_Text {
             get {

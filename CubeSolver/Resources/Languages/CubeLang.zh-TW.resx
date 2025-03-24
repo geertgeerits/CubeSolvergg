@@ -118,553 +118,551 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Agree_Text" xml:space="preserve">
-    <value>Zustimmen</value>
+    <value>同意</value>
   </data>
   <data name="AllowedCharNot_Text" xml:space="preserve">
-    <value>Nicht erlaubt:</value>
+    <value>不允許：</value>
   </data>
   <data name="AllowedChar_Text" xml:space="preserve">
-    <value>Erlaubte Zeichen:</value>
+    <value>允許的字元：</value>
   </data>
   <data name="ButtonClose_Text" xml:space="preserve">
-    <value>Schließen</value>
+    <value>關閉</value>
   </data>
   <data name="ButtonReset_Text" xml:space="preserve">
-    <value>Zurücksetzen</value>
+    <value>重置</value>
   </data>
   <data name="ButtonSolve_Text" xml:space="preserve">
-    <value>Lösen</value>
+    <value>解決</value>
   </data>
   <data name="CloseApplication_Text" xml:space="preserve">
-    <value>Bitte schließen Sie die Anwendung.</value>
+    <value>請關閉該應用程式。</value>
   </data>
   <data name="Contact_Text" xml:space="preserve">
-    <value>Kontakt:</value>
+    <value>接觸：</value>
   </data>
   <data name="Continue_Text" xml:space="preserve">
-    <value>Weitermachen</value>
+    <value>繼續</value>
   </data>
   <data name="Copyright_Text" xml:space="preserve">
-    <value>Urheberrechte</value>
+    <value>版權</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Rückseite</value>
+    <value>背面</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Unterseite</value>
+    <value>面朝下</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
-    <value>Würfelfarben:</value>
+    <value>立方體顏色：</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Vorderseite</value>
+    <value>正面</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
-    <value>Innenansicht</value>
+    <value>內部視圖</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Linke Seite</value>
+    <value>左臉</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
-    <value>Aussenansicht</value>
+    <value>外觀</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Rechte Seite</value>
+    <value>右臉</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Oberseite</value>
+    <value>上臉部</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
-    <value>Standard</value>
+    <value>預設</value>
   </data>
   <data name="Description_Text" xml:space="preserve">
-    <value>Spiele oder löse den Würfel.</value>
+    <value>玩或解魔術方塊。</value>
   </data>
   <data name="Disagree_Text" xml:space="preserve">
-    <value>Nicht zustimmen</value>
+    <value>不同意</value>
   </data>
   <data name="Email_Text" xml:space="preserve">
-    <value>E-mail: </value>
+    <value>電子郵件：</value>
   </data>
   <data name="ErrorTitle_Text" xml:space="preserve">
-    <value>Fehler</value>
+    <value>錯誤</value>
   </data>
   <data name="ExplainedBySpeech_Text" xml:space="preserve">
-    <value>Redeweise erklärt:</value>
+    <value>語音解釋：</value>
   </data>
   <data name="ExplainedByText_Text" xml:space="preserve">
-    <value>Textlich erklärt:</value>
+    <value>文字解釋：</value>
   </data>
   <data name="HelpCube_Text" xml:space="preserve">
-    <value>Drehen Sie die Würfelseiten im Uhrzeigersinn und im Gegenuhrzeigersinn:
-Wenn der Befehl gegeben wird, die Vorderseite 'im Uhrzeigersinn' zu drehen, dann in die Richtung, in die sich die Zeiger drehen. 'Gegen den Uhrzeigersinn' dreht sich in die andere Richtung.
-Für die anderen Seiten muss man sich immer 'vorstellen', dass man direkt vor der zu wendenden Seite steht. Wenn es also heißt, drehen Sie die Rückseite im Uhrzeigersinn, stellen Sie sich vor, Sie befinden sich auf der anderen Seite des Würfels und drehen Sie dann die Rückseite im Uhrzeigersinn. Drehen Sie nicht den Würfel selbst.</value>
+    <value>順時針和逆時針旋轉立方體的側面：
+如果發出的命令是「順時針」轉動前部，那麼這就是手轉動的方向。 「逆時針」是朝另一個方向轉動。
+對於其他側面，您始終必須「想像」您正位於要轉動的側面的正前方。因此，如果它說將背面「順時針」轉動，想像您在立方體的另一側，然後將背面「順時針」轉動。不要旋轉立方體本身。</value>
   </data>
   <data name="HelpOpenCube_Text" xml:space="preserve">
-    <value>Öffnen Sie den gespeicherten Cube.</value>
+    <value>開啟已儲存的多維資料集。</value>
   </data>
   <data name="HelpSaveCube_Text" xml:space="preserve">
-    <value>Speichern Sie den aktuellen Cube.</value>
+    <value>保存目前立方體。</value>
   </data>
   <data name="HelpSetColorsCube_Text" xml:space="preserve">
-    <value>Übertragen Sie die Farben vom durcheinandergebrachten Würfel auf diesen Würfel. Wählen Sie oben in der Farbleiste eine Farbe aus und tippen Sie dann auf die Würfelteile, um sie zu ändern. Drücken Sie diese Schaltfläche erneut, um diesen Abschnitt zu verlassen, und klicken Sie auf die Schaltfläche 'Lösen'.</value>
+    <value>將混亂立方體的顏色轉移到這個立方體上。從頂部的顏色欄中選擇一種顏色，然後點擊立方體的碎片來改變它們。再次按下此按鈕離開此部分並按下“解決”按鈕。</value>
   </data>
   <data name="HexColorCodes_Text" xml:space="preserve">
-    <value>Hexadezimale Farbcodes:
+    <value>十六進位顏色代碼：
 
-Zeichen 1-2: Rot
-Zeichen 3-4: Grün
-Zeichen 5-6: Blau</value>
+角色 1-2：紅色
+角色 3-4：綠色
+角色 5-6：藍色</value>
   </data>
   <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Text-to-Speech: Es werden nicht alle in den App-Einstellungen verfügbaren Sprachen unterstützt.
+    <value>文本转语音：应用程序设置中提供的所有语言均不受支持。
+此选项因设备和安装的语言而异。对于某些语言，相关服务可能会通过互联网完成语音转语音。
 
-Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich, dass die Übersetzung in und aus Sprache für einige Sprachen von den jeweiligen Diensten über das Internet erfolgt.
+使用 Google 翻译翻译文本。这并不能保证所有翻译都是正确的。
+支持的语言包括：中文、捷克语、丹麦语、荷兰语、英语、芬兰语、法语、德语、匈牙利语、意大利语、日语、韩语、挪威语、波兰语、葡萄牙语、罗马尼亚语、西班牙语、瑞典语和乌克兰语。
 
-Für die Übersetzung des Textes wurde Google Translate verwendet. Dies ist keine Garantie für die Richtigkeit aller Übersetzungen.
-
-Die unterstützten Sprachen sind: Chinesisch, Tschechisch, Dänisch, Niederländisch, Englisch, Finnisch, Französisch, Deutsch, Ungarisch, Italienisch, Japanisch, Koreanisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Spanisch, Schwedisch und Ukrainisch.
-
-Bei Korrekturen können Sie mich jederzeit kontaktieren.</value>
+您可以随时联系我进行任何更正。</value>
   </data>
   <data name="Info_Text" xml:space="preserve">
-    <value>Information</value>
+    <value>資訊</value>
   </data>
   <data name="LanguageSpeech_Text" xml:space="preserve">
-    <value>Sprache Rede:</value>
+    <value>語言演講：</value>
   </data>
   <data name="Language_Text" xml:space="preserve">
-    <value>Sprache:</value>
+    <value>語言：</value>
   </data>
   <data name="LicenseMit2_Text" xml:space="preserve">
-    <value>Die Software wird „wie besehen“ bereitgestellt, ohne Gewährleistung jeglicher Art, weder ausdrücklich noch stillschweigend, einschließlich, aber nicht beschränkt auf die Gewährleistung der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung. In keinem Fall haften der Autor und/oder Herausgeber für Ansprüche, Schäden oder andere Haftungen, sei es aus einem Vertrag, aus unerlaubter Handlung oder auf andere Weise, die sich aus, aus oder im Zusammenhang mit der Software oder der Verwendung oder sonstigen Handlungen ergeben die Software.</value>
+    <value>該軟體以「現況」提供，不提供任何明示或暗示的保證，包括但不限於適銷性、適用於特定目的和非侵權性的保證。在任何情況下，作者和/或出版商均不對因軟體或軟體的使用或其他交易而引起的或與之相關的任何索賠、損害或其他責任負責，無論是合約行為、侵權行為或其他行為。</value>
   </data>
   <data name="LicenseTitle_Text" xml:space="preserve">
-    <value>Lizenz</value>
+    <value>執照</value>
   </data>
   <data name="License_Text" xml:space="preserve">
-    <value>Diese Anwendung darf für nichtkommerzielle Zwecke frei verwendet werden.
-Verwenden Sie dieses Programm ausschließlich auf eigene Gefahr.</value>
+    <value>此應用程式可以自由用於非商業用途。
+使用此程序的風險完全由您自己承擔。</value>
   </data>
   <data name="MessageColorCentralCube_Text" xml:space="preserve">
-    <value>Die Farbe des zentralen Quadrats darf nur einmal vorkommen.</value>
+    <value>中心方塊的顏色只能出現一次。</value>
   </data>
   <data name="MessageColorCornerCube_Text" xml:space="preserve">
-    <value>Die Farben eines Eckwürfels müssen unterschiedlich sein.</value>
+    <value>角立方體的顏色必須不同。</value>
   </data>
   <data name="MessageColorEdgeCube_Text" xml:space="preserve">
-    <value>Die Farben eines Kantenwürfels müssen unterschiedlich sein.</value>
+    <value>邊緣立方體的顏色必須不同。</value>
   </data>
   <data name="MessageCubeIsSolved_Text" xml:space="preserve">
-    <value>Herzlichen Glückwunsch, der Würfel ist gelöst.</value>
+    <value>恭喜，魔術方塊已解開。</value>
   </data>
   <data name="MessageCubeNotSolved_Text" xml:space="preserve">
-    <value>Der Würfel ist nicht gelöst.</value>
+    <value>魔術方塊還沒解決。</value>
   </data>
   <data name="MessageNineSameColor_Text" xml:space="preserve">
-    <value>Von jeder verfügbaren Farbe müssen es neun in derselben Farbe sein.</value>
+    <value>每種可用的顏色中必須有九種相同的顏色。</value>
   </data>
   <data name="NameProgram_Text" xml:space="preserve">
-    <value>Würfellöser</value>
+    <value>立方體解算器</value>
   </data>
   <data name="No_Text" xml:space="preserve">
-    <value>Nein</value>
+    <value>不</value>
   </data>
   <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
-    <value>Datenschutz-Bestimmungen:</value>
+    <value>隱私權政策：</value>
   </data>
   <data name="PrivacyPolicy_Text" xml:space="preserve">
-    <value>Es werden keine personenbezogenen und sonstigen Daten gespeichert oder an mich und andere weitergegeben.</value>
+    <value>不會儲存或傳遞任何個人和其他資料給我自己和他人。</value>
   </data>
   <data name="RestartApp_Text" xml:space="preserve">
-    <value>Die Anwendung wird neu gestartet.</value>
+    <value>應用程式將重新啟動。</value>
   </data>
   <data name="CubeSolver_Text" xml:space="preserve">
     <value>Cube Solver gg</value>
   </data>
   <data name="SettingsReset_Text" xml:space="preserve">
-    <value>Zurücksetzen</value>
+    <value>重置</value>
   </data>
   <data name="SettingsSaved_Text" xml:space="preserve">
-    <value>Einige geänderte Einstellungen müssen gespeichert werden, um sie zu übernehmen.
-Nach dem Speichern wird die Anwendung neu gestartet und der Cube zurückgesetzt.</value>
+    <value>必須保存一些更改的設定才能應用它們。
+保存後，應用程式重新啟動並且立方體被重置。</value>
   </data>
   <data name="SettingsSave_Text" xml:space="preserve">
-    <value>Speichern</value>
+    <value>節省</value>
   </data>
   <data name="Settings_Text" xml:space="preserve">
-    <value>Einstellungen</value>
+    <value>設定</value>
   </data>
   <data name="Solve_Text" xml:space="preserve">
-    <value>Lösen</value>
+    <value>解決</value>
   </data>
   <data name="Stop_Text" xml:space="preserve">
-    <value>Stoppen</value>
+    <value>停止</value>
   </data>
   <data name="TextContainsChar_Text" xml:space="preserve">
-    <value>Der Text enthält ein oder mehrere unzulässige Zeichen.
+    <value>文字包含一個或多個不允許的字元。
 
-Nicht erlaubt:</value>
+不允許：</value>
   </data>
   <data name="TextToSpeechError_Text" xml:space="preserve">
-    <value>Text-to-Speech wird auf diesem Gerät nicht unterstützt.</value>
+    <value>此設備不支援文字轉語音。</value>
   </data>
   <data name="ThemeDark_Text" xml:space="preserve">
-    <value>Dunkel</value>
+    <value>黑暗的</value>
   </data>
   <data name="ThemeLight_Text" xml:space="preserve">
-    <value>Hell</value>
+    <value>光</value>
   </data>
   <data name="ThemeSystem_Text" xml:space="preserve">
-    <value>System</value>
+    <value>系統</value>
   </data>
   <data name="Theme_Text" xml:space="preserve">
-    <value>Thema:</value>
+    <value>主題：</value>
   </data>
   <data name="ToolTipGoBack_Text" xml:space="preserve">
-    <value>Geh zurück</value>
+    <value>回去</value>
   </data>
   <data name="ToolTipGoForward_Text" xml:space="preserve">
-    <value>Vorwärts gehen</value>
+    <value>前進</value>
   </data>
   <data name="ToolTipHelp_Text" xml:space="preserve">
-    <value>Hilfe</value>
+    <value>幫助</value>
   </data>
   <data name="ToolTipOpenCube_Text" xml:space="preserve">
-    <value>Öffne den Würfel</value>
+    <value>打開立方體</value>
   </data>
   <data name="ToolTipSaveCube_Text" xml:space="preserve">
-    <value>Speichern Sie den Würfel</value>
+    <value>保存立方體</value>
   </data>
   <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
-    <value>Umschalttaste: Legen Sie die Farben für den Würfel fest</value>
+    <value>切換按鈕：設定立方體上的顏色</value>
   </data>
   <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
-    <value>Drehen Sie die Rückseite um eine halbe Umdrehung.</value>
+    <value>將背面旋轉半圈。</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die Rückseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>將背部逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die Rückseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>將背面順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
-    <value>Drehen Sie die Unterseite um eine halbe Umdrehung.</value>
+    <value>將底部旋轉半圈。</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die Unterseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>將底部逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die Unterseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>將底部順時針方向旋轉四分之一圈 (+)。</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach unten zeigt, die rechte Seite bleibt rechts.</value>
+    <value>轉動整個立方體，使其正面朝向底部，右側保持在右側。</value>
   </data>
   <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach links zeigt, die Oberseite bleibt oben.</value>
+    <value>轉動整個立方體，使正面朝向左側，而頂部仍保持在頂部。</value>
   </data>
   <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach rechts zeigt, die Oberseite oben bleibt.</value>
+    <value>轉動整個立方體，使正面朝向右側，而頂部仍保持在頂部。</value>
   </data>
   <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach oben zeigt, die rechte Seite bleibt rechts.</value>
+    <value>轉動整個立方體，使其正面朝向頂部，右側保持在右側。</value>
   </data>
   <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Oberseite nach links geht, die Vorderseite bleibt vorne.</value>
+    <value>轉動整個立方體，使頂部朝向左側，而正面保持在前面。</value>
   </data>
   <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Oberseite auf die rechte Seite geht, die Vorderseite bleibt vorne.</value>
+    <value>轉動整個立方體，使頂部朝向右側，而正面保持在前面。</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere mittlere Schicht um eine Vierteldrehung auf die rechte Seite (-).</value>
+    <value>將前中層向右側旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere mittlere Schicht um eine Vierteldrehung nach oben (+).</value>
+    <value>將前中層向頂部旋轉四分之一圈 (+)。</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
-    <value>Drehen Sie die Vorderseite um eine halbe Umdrehung.</value>
+    <value>將正面旋轉半圈。</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die Vorderseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>將正面逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die Vorderseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>將正面順時針方向旋轉四分之一圈 (+)。</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
-    <value>Drehen Sie die linke Seite eine halbe Umdrehung.</value>
+    <value>將左側旋轉半圈。</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die linke Seite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>將左側逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die linke Seite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>將左側順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
-    <value>Drehen Sie die mittlere Schicht eine halbe Umdrehung.</value>
+    <value>將中間層轉半圈。</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte mittlere Schicht um eine Vierteldrehung auf die Vorderseite (+).</value>
+    <value>將右中間層向正面旋轉四分之一圈 (+)。</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte mittlere Schicht um eine Vierteldrehung nach oben (-).</value>
+    <value>將右中間層向頂部旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte Seite eine halbe Umdrehung.</value>
+    <value>將右側旋轉半圈。</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte Seite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>將右側逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte Seite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>將右側順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Drehen Sie die obere mittlere Schicht um eine Vierteldrehung auf die Vorderseite (-).</value>
+    <value>將頂部中間層向正面旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Drehen Sie die obere mittlere Schicht um eine Vierteldrehung auf die rechte Seite (+).</value>
+    <value>將頂部中間層向右側旋轉四分之一圈 (+)。</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
-    <value>Drehen Sie die Oberseite um eine halbe Umdrehung.</value>
+    <value>將頂部旋轉半圈。</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die Oberseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>將頂部逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die Oberseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>將頂部順時針方向旋轉四分之一圈 (+)。</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
-    <value>Ausführung:</value>
+    <value>版本：</value>
   </data>
   <data name="Website_Text" xml:space="preserve">
-    <value>Webseite: </value>
+    <value>網站：</value>
   </data>
   <data name="Yes_Text" xml:space="preserve">
-    <value>Ja</value>
+    <value>是的</value>
   </data>
   <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
-    <value>Der Würfel kann nicht gelöst werden.
+    <value>該魔術方塊無法被解開。
 
-Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</value>
+可能的原因是將顏色錯誤地傳送到這個立方體。</value>
   </data>
   <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach hinten geht, die rechte Seite bleibt rechts.</value>
+    <value>轉動整個立方體，使前面移到後面，右側保持在右側。</value>
   </data>
   <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach hinten geht, die Oberseite oben bleibt.</value>
+    <value>轉動整個立方體，使前面朝向後面，頂部保持在頂部。</value>
   </data>
   <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
-    <value>Drehen Sie den gesamten Würfel so, dass die Oberseite nach unten geht, die Vorderseite vorne bleibt.</value>
+    <value>轉動整個立方體，使其頂部朝向底部，而正面仍保持在前面。</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
-    <value>Zeit in Millisekunden:</value>
+    <value>時間（毫秒）：</value>
   </data>
   <data name="ResultTurns_Text" xml:space="preserve">
-    <value>Anzahl der Züge:</value>
+    <value>圈數：</value>
   </data>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
-    <value>Lösungsmethoden:
-- Automatisch: Verwenden Sie die Würfelschaltfläche unten auf dem Bildschirm, um die Farben Ihres echten Würfels einzugeben. Wenn Sie fertig sind, drücken Sie die Schaltfläche erneut und tippen Sie dann auf „Lösen“. Der Würfel wird mithilfe des „Kociemba“-Algorithmus gelöst. Übertragen Sie die vorgeschlagenen Züge auf Ihren echten Würfel.
-Wenn Sie den „Kociemba“-Algorithmus in den Einstellungen deaktivieren, verwendet die App die „Friedrich“-Methode (CFOP).
-- Umgekehrt: Verwenden Sie die Pfeiltasten, um den Würfel zu verwirren, und drücken Sie dann auf „Lösen“. Der Würfel wird in umgekehrter Reihenfolge gelöst.
-- Manuell: Verwenden Sie auf dem Startbildschirm die Pfeiltasten, um den Würfel manuell zu verwirren und zu lösen.
-Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value>
+    <value>解決方法：
+- 自動：使用螢幕底部的立方體按鈕輸入真實立方體的顏色。完成後，再次按下按鈕，然後點擊「解決」。魔術方塊將使用“Kociemba”演算法來解決。將建議的移動轉移到真實的魔術方塊上。
+如果您在設定中停用“Kociemba”演算法，應用程式將使用“Friedrich”（CFOP）方法。
+- 反轉：使用箭頭鍵打亂魔術方塊，然後按下「解答」。魔術方塊將按照相反的順序來解決。
+- 手動：在主畫面上，使用箭頭鍵手動打亂和解決魔術方塊。
+這並不能保證所有魔術方塊都能被解開。</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
-    <value>Der Würfel befindet sich wieder in seinem vorherigen Zustand.</value>
+    <value>立方體恢復到原來的狀態。</value>
   </data>
   <data name="MessageColorCenterPiece_Text" xml:space="preserve">
-    <value>Die Farben der Mittelstücke sind falsch.</value>
+    <value>中心碎片的顏色錯誤。</value>
   </data>
   <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
-    <value>Von jeder verfügbaren Farbe müssen vier gleiche Farben auf einem Kantenwürfel vorhanden sein.</value>
+    <value>對於每種可用的顏色，邊緣立方體上必須有四種相同的顏色。</value>
   </data>
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
-    <value>Von jeder verfügbaren Farbe müssen vier gleiche Farben auf einem Eckwürfel vorhanden sein.</value>
+    <value>對於每種可用的顏色，角落立方體上必須有四種相同的顏色。</value>
   </data>
   <data name="Turn2LayersBack2_Text" xml:space="preserve">
-    <value>Drehen Sie die hintere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
+    <value>將後層和中間層一起旋轉半圈。</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die hintere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>將背部和中間層一起逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Drehen Sie die hintere und mittlere Schicht zusammen eine Vierteldrehung im Uhrzeigersinn (+).</value>
+    <value>將背面和中間層一起順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
-    <value>Drehen Sie die untere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
+    <value>將底層和中間層一起旋轉半圈。</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die untere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>將底層和中間層一起逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Drehen Sie die untere und mittlere Schicht gemeinsam um eine Vierteldrehung im Uhrzeigersinn (+).</value>
+    <value>將底層和中間層一起順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere und mittlere Schicht eine halbe Umdrehung zusammen.</value>
+    <value>將前層和中間層一起旋轉半圈。</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>將前層和中間層一起逆時針旋轉四分之一圈（-）。</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+    <value>將前層和中間層一起順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
-    <value>Drehen Sie die linke und die mittlere Schicht zusammen eine halbe Umdrehung.</value>
+    <value>將左側層和中間層一起轉半圈。</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die linke und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>將左側層和中間層一起逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Drehen Sie die linke und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+    <value>將左側層和中間層一起順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte und mittlere Schicht zusammen eine halbe Umdrehung.</value>
+    <value>將右層和中間層一起轉半圈。</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>將右側和中間層一起逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+    <value>將右側層和中間層一起順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
-    <value>Drehen Sie die obere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
+    <value>將頂層和中間層一起旋轉半圈。</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die obere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>將頂層和中間層一起逆時針旋轉四分之一圈 (-)。</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Drehen Sie die obere und mittlere Schicht gemeinsam um eine Vierteldrehung im Uhrzeigersinn (+).</value>
+    <value>將頂層和中間層一起順時針旋轉四分之一圈 (+)。</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
-    <value>Senden Sie eine E-Mail an den Autor dieser Anwendung</value>
+    <value>向該應用程式的作者發送電子郵件</value>
   </data>
   <data name="ToolTipAppWebsite_Text" xml:space="preserve">
-    <value>Öffnen Sie die Website dieser Anwendung</value>
+    <value>打開此應用程式的網站</value>
   </data>
   <data name="ResultSolutions_Text" xml:space="preserve">
-    <value>Getestete Lösungen:</value>
+    <value>已測試的解決方案：</value>
   </data>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Die durchschnittliche Anzahl der Runden zum Lösen des Würfels mit der Methode „Kociemba“ beträgt</value>
+    <value>使用「Kociemba」方法解決魔術方塊的平均次數是</value>
   </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
-    <value>Verwirre den Würfel</value>
+    <value>打亂魔術方塊</value>
   </data>
   <data name="ToolTipResetCube_Text" xml:space="preserve">
-    <value>Den Würfel zurücksetzen</value>
+    <value>重置立方體</value>
   </data>
   <data name="HelpResetCube_Text" xml:space="preserve">
-    <value>Setze den Würfel zurück.</value>
+    <value>重置立方體。</value>
   </data>
   <data name="HelpScrambleCube_Text" xml:space="preserve">
-    <value>Bringe den Würfel durcheinander.</value>
+    <value>打亂魔術方塊。</value>
   </data>
   <data name="ToolTipSolveCube_Text" xml:space="preserve">
-    <value>Löse den Würfel</value>
+    <value>解開魔術方塊</value>
   </data>
   <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
-    <value>Gehe eine Runde zurück</value>
+    <value>後退一圈</value>
   </data>
   <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
-    <value>Gehe eine Runde vorwärts</value>
+    <value>向前轉一圈</value>
   </data>
   <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
-    <value>Gehe eine Runde zurück.</value>
+    <value>回頭一圈。</value>
   </data>
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
-    <value>Gehe eine Runde vorwärts.</value>
+    <value>向前走一圈。</value>
   </data>
   <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
-    <value>Löse den Würfel ohne Eingriff</value>
+    <value>無需幹預即可解開魔術方塊</value>
   </data>
   <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
-    <value>Löse den Würfel ohne Eingriff.</value>
+    <value>無需幹預即可解決魔術方塊問題。</value>
   </data>
   <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
-    <value>Löse den Würfel mit Eingriff</value>
+    <value>透過幹預解決魔術方塊問題</value>
   </data>
   <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
-    <value>Löse den Würfel mit Eingriff.</value>
+    <value>透過幹預來解決魔術方塊問題。</value>
   </data>
   <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
-    <value>Umschaltfläche: Löse den Würfel mit oder ohne Eingriff</value>
+    <value>切換按鈕：在有或沒有乾預的情況下解決魔術方塊</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">
-    <value>Löse den Würfel.</value>
+    <value>解開魔術方塊。</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Flächenrotationen, drehen Sie die Fläche eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+    <value>臉部旋轉，將臉部順時針旋轉四分之一圈（90 度）</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Obere Seite</value>
+    <value>上臉部</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Untere Seite</value>
+    <value>面朝下</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Vorderseite</value>
+    <value>正面</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Rückseite</value>
+    <value>背面</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Linke Seite</value>
+    <value>左臉</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Rechte Seite</value>
+    <value>右臉</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Scheibenbewegungen, drehen Sie die mittlere Schicht eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+    <value>切片移動，將中間層順時針旋轉四分之一圈（90 度）</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
-    <value>Folgt der L-Richtung</value>
+    <value>沿 L 方向</value>
   </data>
   <data name="NotationTurn_E_Text" xml:space="preserve">
-    <value>Folgt der D-Richtung</value>
+    <value>沿著 D 方向</value>
   </data>
   <data name="NotationTurn_S_Text" xml:space="preserve">
-    <value>Folgt der F-Richtung</value>
+    <value>沿 F 方向</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Würfelrotationen, drehen Sie den Würfel eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+    <value>立方體旋轉，將立方體順時針旋轉四分之一圈（90 度）</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
-    <value>Folgt der R-Richtung</value>
+    <value>跟隨 R 方向</value>
   </data>
   <data name="NotationTurn_y_Text" xml:space="preserve">
-    <value>Folgt der U-Richtung</value>
+    <value>沿著 U 方向</value>
   </data>
   <data name="NotationTurn_z_Text" xml:space="preserve">
-    <value>Folgt der F-Richtung</value>
+    <value>沿 F 方向</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Weite Bewegungen, drehen Sie 2 Schichten gleichzeitig eine Vierteldrehung im Uhrzeigersinn (90 Grad), Sie werden in Kleinbuchstaben geschrieben: u, d, f, b, l, r.</value>
+    <value>寬移動，一次將 2 層順時針旋轉四分之一圈（90 度），小寫字母為：u、d、f、b、l、r。</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
-    <value>Ein Apostroph (z. B. U') zeigt eine Vierteldrehung gegen den Uhrzeigersinn (90 Grad) an.</value>
+    <value>撇號（例如 U'）表示逆時針四分之一旋轉（90 度）。</value>
   </data>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
-    <value>Die Zahl 2 (z. B. U2) bedeutet eine halbe Drehung (180 Grad).</value>
+    <value>數字 2（例如 U2）表示旋轉半圈（180 度）。</value>
   </data>
   <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>mit der Methode „Fridrich“ (CFOP) beträgt</value>
+    <value>使用“Fridrich”（CFOP）方法</value>
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
-    <value>Credits: Diese App verwendet Open-Source-Code von „Herbert Kociemba“ (Autor des Kociemba-Zweiphasenalgorithmus) und „Matt Colbourne“. Ihre Beiträge haben die Effizienz beim Würfellösen deutlich verbessert. Besonderer Dank für ihre Arbeit.</value>
+    <value>鳴謝：此應用程式使用了「Herbert Kociemba」（Kociemba 兩階段演算法的作者）和「Matt Colbourne」的開源程式碼。他們的貢獻大大提高了魔術方塊解謎的效率。特別感謝他們的工作。</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Der erste Spielstart kann bis zu</value>
+    <value>首次遊戲發布可能需要</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
-    <value>Kociemba-Methode:</value>
+    <value>Kociemba 方法：</value>
   </data>
   <data name="SolvingMethod_Text" xml:space="preserve">
-    <value>Methode:</value>
+    <value>方法：</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
-    <value>Umgekehrte Reihenfolge</value>
+    <value>逆序</value>
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>Sekunden dauern</value>
+    <value>秒</value>
   </data>
 </root>

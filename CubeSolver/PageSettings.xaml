@@ -78,6 +78,8 @@
                                 <x:String>Suomi</x:String>
                                 <x:String>Svenska</x:String>
                                 <x:String>Українська (Ukraїnska)</x:String>
+                                <x:String>中文（简体）(Zhōngwén)</x:String>
+                                <x:String>中文（繁體）(Zhōngguó rén)</x:String>
                             </x:Array>
                         </Picker.ItemsSource>
                     </Picker>

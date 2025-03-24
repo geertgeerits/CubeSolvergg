@@ -50,6 +50,8 @@
 		<Resource Language="ro" />
 		<Resource Language="sv" />
 		<Resource Language="uk" />
+		<Resource Language="zh-CN"/>
+		<Resource Language="zh-TW"/>
 	</Resources>
 
 	<Applications>

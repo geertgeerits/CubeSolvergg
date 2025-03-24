@@ -61,13 +61,15 @@ namespace CubeSolver
                 "fi" => 15,     // Suomi - Finnish
                 "sv" => 16,     // Svenska - Swedish
                 "uk" => 17,     // Українська (Ukraїnska) - Ukrainian
+                "zh-CN" => 18,  // 中文 (Zhōngwén) - Chinese simplified
+                "zh-TW" => 19,  // 中文 (Zhōngguó rén) - Chinese traditional
                 _ => 3,         // English
             };
 
             //// Fill the picker with the speech languages and set the saved language in the picker
             FillPickerWithSpeechLanguages();
 
-            //// Set the explaination of text and speech to false or true
+            //// Set the switches to false or true
             swtUseKociembaSolution.IsToggled = Globals.bKociembaSolution;
             swtExplainText.IsToggled = Globals.bExplainText;
             swtExplainSpeech.IsToggled = Globals.bExplainSpeech;
@@ -120,6 +122,8 @@ namespace CubeSolver
                     15 => "fi",     // Suomi - Finnish
                     16 => "sv",     // Svenska - Swedish
                     17 => "uk",     // Українська (Ukraїnska) - Ukrainian
+                    18 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
+                    19 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
                     _ => "en",      // English
                 };
             }

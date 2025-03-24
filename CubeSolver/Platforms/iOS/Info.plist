@@ -66,6 +66,8 @@
 		<string>ro</string>
 		<string>sv</string>
 		<string>uk</string>
+		<string>zh-Hans</string>
+		<string>zh-Hant</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
