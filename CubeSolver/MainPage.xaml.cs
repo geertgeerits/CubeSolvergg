@@ -124,15 +124,14 @@ namespace CubeSolver
             //// Initialize text to speech
             ClassSpeech.InitializeTextToSpeech();
 
+            // Search for the language after a first start or reset of the application
             try
             {
                 if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
                 {
                     Globals.cLanguageSpeech = Thread.CurrentThread.CurrentUICulture.Name;
+                    ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
                 }
-
-                // Search for the language after a first start or reset of the application
-                ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
             }
             catch (Exception)
             {
@@ -384,8 +383,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 309-310 and 362-385 (and change the line 409 to bTestSolveCube = true)
-                // and uncomment one of the lines 392-394 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 308-309 and 361-384 (and change the line 408 to bTestSolveCube = true)
+                // and uncomment one of the lines 391-393 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 

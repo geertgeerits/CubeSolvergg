@@ -75,9 +75,10 @@ namespace CubeSolver
                             }
                         }
 
-                        // Search for the speech language as 'en'
-                        cCultureName = cCultureName[..2];
+                        // Select the characters before the first hyphen if there is a hyphen in the string
+                        cCultureName = cCultureName.Split('-')[0];
 
+                        // Search for the speech language as 'en'
                         for (int nItem = 0; nTotalItems > nItem; nItem++)
                         {
                             if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
