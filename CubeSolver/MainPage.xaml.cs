@@ -117,16 +117,17 @@ namespace CubeSolver
                     {
                         Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.Name;
                     }
-
-                    Preferences.Default.Set("SettingLanguage", Globals.cLanguage);
                 }
             }
             catch (Exception)
             {
                 Globals.cLanguage = "en";
-                Preferences.Default.Set("SettingLanguage", Globals.cLanguage);
             }
-            Debug.WriteLine("Globals.cLanguage: " + Globals.cLanguage);
+            finally
+            {
+                Preferences.Default.Set("SettingLanguage", Globals.cLanguage);
+                Debug.WriteLine("Globals.cLanguage: " + Globals.cLanguage);
+            }
 
             SetTextLanguage();
 
@@ -139,17 +140,18 @@ namespace CubeSolver
                 if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
                 {
                     Globals.cLanguageSpeech = Thread.CurrentThread.CurrentUICulture.Name;
-                    ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
-                    Preferences.Default.Set("SettingLanguageSpeech", Globals.cLanguageSpeech);
                 }
             }
             catch (Exception)
             {
                 Globals.cLanguageSpeech = "en-US";
+            }
+            finally
+            {
                 ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
                 Preferences.Default.Set("SettingLanguageSpeech", Globals.cLanguageSpeech);
+                Debug.WriteLine("Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
             }
-            Debug.WriteLine("Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
 
             //// Reset the colors of the cube
             ClassColorsCube.ResetCube();
@@ -394,8 +396,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 319-320 and 372-395 (and change the line 419 to bTestSolveCube = true)
-                // and uncomment one of the lines 402-404 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 321-322 and 374-397 (and change the line 421 to bTestSolveCube = true)
+                // and uncomment one of the lines 404-406 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
