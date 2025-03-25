@@ -105,14 +105,14 @@ namespace CubeSolver
             //// Set the theme
             Globals.SetTheme();
 
-            //// Get and set the user interface language
+            //// Get and set the user interface language after a first start or reset of the application
             try
             {
                 if (string.IsNullOrEmpty(Globals.cLanguage))
                 {
                     Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
 
-                    // Chinese needs the country code as zh-CN or zh-TW
+                    // Chinese needs the country code as zh-CN and zh-TW
                     if (Globals.cLanguage == "zh")
                     {
                         Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.Name;
@@ -133,7 +133,7 @@ namespace CubeSolver
             //// Initialize text to speech
             ClassSpeech.InitializeTextToSpeech();
 
-            // Search for the language after a first start or reset of the application
+            // Search for the speech language after a first start or reset of the application
             try
             {
                 if (string.IsNullOrEmpty(Globals.cLanguageSpeech))

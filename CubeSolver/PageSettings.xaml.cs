@@ -210,7 +210,7 @@ namespace CubeSolver
                     }
                 }
 
-                // If the language is not found select the language without the region
+                // If the language was not found select the language without the region
                 if (!bIsSetSelectedIndex)
                 {
                     // Select the characters before the first hyphen if there is a hyphen in the string
@@ -222,7 +222,7 @@ namespace CubeSolver
                         {
                             pckLanguageSpeech.SelectedIndex = nItem;
                             bIsSetSelectedIndex = true;
-                            break;
+                            return;
                         }
                     }
                 }
