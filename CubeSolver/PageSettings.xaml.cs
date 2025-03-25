@@ -198,6 +198,7 @@ namespace CubeSolver
             {
                 int nTotalItems = Globals.cLanguageLocales.Length;
 
+                // Add the locales to the picker and select the language
                 for (int nItem = 0; nItem < nTotalItems; nItem++)
                 {
                     pckLanguageSpeech.Items.Add(Globals.cLanguageLocales[nItem]);
@@ -208,6 +209,23 @@ namespace CubeSolver
                         bIsSetSelectedIndex = true;
                     }
                 }
+
+                // If the language is not found select the language without the region
+                if (!bIsSetSelectedIndex)
+                {
+                    // Select the characters before the first hyphen if there is a hyphen in the string
+                    string cCultureName = Globals.cLanguageSpeech.Split('-')[0];
+
+                    for (int nItem = 0; nItem < nTotalItems; nItem++)
+                    {
+                        if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
+                        {
+                            pckLanguageSpeech.SelectedIndex = nItem;
+                            bIsSetSelectedIndex = true;
+                            break;
+                        }
+                    }
+                }
             }
 
             // If the language is not found set the picker to the first item
@@ -215,6 +233,8 @@ namespace CubeSolver
             {
                 pckLanguageSpeech.SelectedIndex = 0;
             }
+
+            Debug.WriteLine("FillPickerWithSpeechLanguages - Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
         }
 
         /// <summary>

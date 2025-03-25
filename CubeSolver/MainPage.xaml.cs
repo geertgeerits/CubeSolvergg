@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.38
- * Date ........: 2025-03-24 (YYYY-MM-DD)
+ * Date ........: 2025-03-25 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -110,12 +110,21 @@ namespace CubeSolver
             {
                 if (string.IsNullOrEmpty(Globals.cLanguage))
                 {
-                    Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.Name;
+                    Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.TwoLetterISOLanguageName;
+
+                    // Chinese needs the country code as zh-CN or zh-TW
+                    if (Globals.cLanguage == "zh")
+                    {
+                        Globals.cLanguage = Thread.CurrentThread.CurrentUICulture.Name;
+                    }
+
+                    Preferences.Default.Set("SettingLanguage", Globals.cLanguage);
                 }
             }
             catch (Exception)
             {
-                Globals.cLanguage = "en-US";
+                Globals.cLanguage = "en";
+                Preferences.Default.Set("SettingLanguage", Globals.cLanguage);
             }
             Debug.WriteLine("Globals.cLanguage: " + Globals.cLanguage);
 
@@ -131,12 +140,14 @@ namespace CubeSolver
                 {
                     Globals.cLanguageSpeech = Thread.CurrentThread.CurrentUICulture.Name;
                     ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
+                    Preferences.Default.Set("SettingLanguageSpeech", Globals.cLanguageSpeech);
                 }
             }
             catch (Exception)
             {
                 Globals.cLanguageSpeech = "en-US";
                 ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
+                Preferences.Default.Set("SettingLanguageSpeech", Globals.cLanguageSpeech);
             }
             Debug.WriteLine("Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
 
@@ -383,8 +394,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 308-309 and 361-384 (and change the line 408 to bTestSolveCube = true)
-                // and uncomment one of the lines 391-393 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 319-320 and 372-395 (and change the line 419 to bTestSolveCube = true)
+                // and uncomment one of the lines 402-404 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -2168,9 +2179,28 @@ namespace CubeSolver
                 SetArrowTooltips(true);
             }
         }
+
+        ///// <summary>
+        ///// Calculate the app speed
+        ///// </summary>
+        //private static void CalculateAppSpeed()
+        //{
+        //    // Create and start a stopwatch instance
+        //    long startTime = Stopwatch.GetTimestamp();
+        //    long nLoops = 1000_000_000_000;
+            
+        //    for (long nI = 0; nI > nLoops; nI++)
+        //    {
+            
+        //    }
+
+        //    // Stop the stopwatch and get the elapsed time
+        //    TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
+
+        //    Debug.WriteLine($"Time elapsed (Milliseconds): {delta.TotalMilliseconds}");
+        //}
     }
 }
-
 /*
 Numbering of cube surfaces for solutions: CFOP, Basic, Daisy, Cross
 -------------------------------------------------------------------
