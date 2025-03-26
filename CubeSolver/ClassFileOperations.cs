@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CubeSolver
 {
@@ -23,20 +24,19 @@ namespace CubeSolver
 
             try
             {
-                using (StreamWriter sw = new(cFileName, false))
+                using StreamWriter sw = new(cFileName, false);
+                
+                for (nRow = 1; nRow < 7; nRow++)
                 {
-                    for (nRow = 1; nRow < 7; nRow++)
-                    {
-                        sw.WriteLine(Globals.aFaceColors[nRow]);
-                    }
-
-                    for (nRow = 0; nRow < 54; nRow++)
-                    {
-                        sw.WriteLine(Globals.aPieces[nRow]);
-                    }
-
-                    sw.Close();
+                    sw.WriteLine(Globals.aFaceColors[nRow]);
                 }
+
+                for (nRow = 0; nRow < 54; nRow++)
+                {
+                    sw.WriteLine(Globals.aPieces[nRow]);
+                }
+
+                sw.Close();
             }
             catch (Exception ex)
             {
@@ -65,20 +65,19 @@ namespace CubeSolver
             try
             {
                 // Open the text file using a stream reader
-                using (StreamReader sr = new(cFileName, false))
+                using StreamReader sr = new(cFileName, false);
+                
+                for (nRow = 1; nRow < 7; nRow++)
                 {
-                    for (nRow = 1; nRow < 7; nRow++)
-                    {
-                        Globals.aFaceColors[nRow] = sr.ReadLine() ?? string.Empty;
-                    }
-
-                    for (nRow = 0; nRow < 54; nRow++)
-                    {
-                        Globals.aPieces[nRow] = sr.ReadLine() ?? string.Empty;
-                    }
-
-                    sr.Close();
+                    Globals.aFaceColors[nRow] = sr.ReadLine() ?? string.Empty;
                 }
+
+                for (nRow = 0; nRow < 54; nRow++)
+                {
+                    Globals.aPieces[nRow] = sr.ReadLine() ?? string.Empty;
+                }
+
+                sr.Close();
             }
             catch (Exception ex)
             {
@@ -106,18 +105,17 @@ namespace CubeSolver
                     File.Delete(cFileName);
                 }
 
-                using (StreamWriter sw = new(cFileName, false))
+                using StreamWriter sw = new(cFileName, false);
+                
+                sw.WriteLine($"Turns: {Globals.lCubeTurns.Count}");
+                sw.WriteLine();
+
+                foreach (string cItem in Globals.lCubeTurns)
                 {
-                    sw.WriteLine($"Turns: {Globals.lCubeTurns.Count}");
-                    sw.WriteLine();
-
-                    foreach (string cItem in Globals.lCubeTurns)
-                    {
-                        sw.WriteLine(cItem);
-                    }
-
-                    sw.Close();
+                    sw.WriteLine(cItem);
                 }
+
+                sw.Close();
             }
             catch (Exception ex)
             {
@@ -131,14 +129,14 @@ namespace CubeSolver
         }
 
         /// <summary>
-        /// Calculate the app speed for writing to a file for testing purposes
+        /// Calculate the duration for the first Kociemba solve with creation of the tables
         /// </summary>
-        public static int CalculateAppSpeed()
+        public static int DurationFirstKociembaSolve()
         {
             // Create and start a stopwatch instance
             long startTime = Stopwatch.GetTimestamp();
 
-            string cFileName = System.IO.Path.Combine(FileSystem.Current.CacheDirectory, "SpeedTest.txt");
+            string cFileName = Path.Combine(FileSystem.Current.CacheDirectory, "SpeedTest.txt");
 
             try
             {
@@ -149,9 +147,9 @@ namespace CubeSolver
 
                 using (StreamWriter sw = new(cFileName, false))
                 {
-                    for (int nI = 1; nI < 501; nI++)
+                    for (int nI = 1; nI < 1001; nI++)
                     {
-                        sw.WriteLine($"Loop: {nI}");
+                        sw.WriteLine($"Loop: {nI} {Math.Pow(nI, 2)} {Math.Sqrt(nI)}");
                     }
 
                     sw.Close();
@@ -161,14 +159,32 @@ namespace CubeSolver
             }
             catch (Exception ex)
             {
+#if DEBUG                
                 _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
-                return 0;
+#endif
+                // Return a default value of 60 seconds
+                return 60;
             }
 
             // Stop the stopwatch and get the elapsed time
             TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-            Debug.WriteLine($"Time elapsed (Milliseconds): {delta.TotalMilliseconds}");
-            return delta.Milliseconds;
+            
+            Debug.WriteLine($"Time elapsed (Milliseconds): {delta.TotalMilliseconds} - (Seconds): {delta.TotalSeconds}");
+
+            double nMillisecondsToMultiply = delta.TotalMilliseconds switch
+            {
+                < 30 => 1.5,
+                < 60 => 2.5,
+                _ => 1,
+            };
+
+            // Round up to the nearest 10 milliseconds
+            int nDurationFirstKociembaSolve = (int)Math.Ceiling(delta.TotalMilliseconds * nMillisecondsToMultiply / 10.0) * 10;
+
+            Debug.WriteLine($"Time elapsed (nDurationFirstKociembaSolve): {nDurationFirstKociembaSolve}");
+
+            // The duration in milliseconds is treated as a delay in seconds in the Kociemba solve
+            return nDurationFirstKociembaSolve;
         }
     }
 }

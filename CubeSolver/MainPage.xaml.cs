@@ -33,7 +33,7 @@ namespace CubeSolver
         private bool bTurnIsBackwards;
         private bool bTurnContinuously;
         private bool bKociembaTablesExist;
-        private readonly int nTimeCubeSolve = 60;
+        private readonly int nDurationFirstKociembaSolve = 60;
 
         //// Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
@@ -101,6 +101,11 @@ namespace CubeSolver
             {
                 bKociembaTablesExist = true;
             }
+            else
+            {
+                // Calculate the duration in seconds for the first Kociemba solve with creation of the tables
+                nDurationFirstKociembaSolve = ClassFileOperations.DurationFirstKociembaSolve();
+            }
 
             //// Set the theme
             Globals.SetTheme();
@@ -164,9 +169,6 @@ namespace CubeSolver
 
             //// For testing the logging of the executed line in the class 'ClassProgramLogging.cs'
             //ClassProgramLogging.LogExecutedLineTest();
-
-            //// Calculate the app speed for writing to a file for testing purposes
-            //int nSpeedMilliseconds = ClassFileOperations.CalculateAppSpeed();
 #endif
             // Herbert Kociemba solution (for testing)
             //string searchString = "UUUUUULLLURRURRURRFFFFFFFFFRRRDDDDDDLLDLLDLLDBBBBBBBBB";
@@ -340,7 +342,7 @@ namespace CubeSolver
             // Set the text of the label 'lblCubeOutsideView' to show the time to solve the cube when using the Kociemba solution for the first time
             if (Globals.bKociembaSolution && !bKociembaTablesExist && Globals.lCubeTurns.Count == 0)
             {
-                lblCubeOutsideView.Text = $"{CubeLang.WaitFirstGameLaunch_Text} {nTimeCubeSolve} {CubeLang.WaitFirstGameLaunch2_Text}";
+                lblCubeOutsideView.Text = $"{CubeLang.WaitFirstGameLaunch_Text} {nDurationFirstKociembaSolve} {CubeLang.WaitFirstGameLaunch2_Text}";
             }
 
             // Settings
@@ -399,8 +401,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 324-325 and 377-400 (and change the line 424 to bTestSolveCube = true)
-                // and uncomment one of the lines 407-409 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 326-327 and 379-402 (and change the line 426 to bTestSolveCube = true)
+                // and uncomment one of the lines 409-411 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
