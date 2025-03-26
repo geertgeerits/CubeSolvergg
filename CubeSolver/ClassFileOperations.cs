@@ -2,7 +2,7 @@
 
 namespace CubeSolver
 {
-    internal sealed class ClassSaveRestoreCube
+    internal sealed class ClassFileOperations
     {
         /// <summary>
         /// Save the cube data
@@ -23,20 +23,20 @@ namespace CubeSolver
 
             try
             {
-                using StreamWriter sw = new(cFileName, false);
-
-                for (nRow = 1; nRow < 7; nRow++)
+                using (StreamWriter sw = new(cFileName, false))
                 {
-                    sw.WriteLine(Globals.aFaceColors[nRow]);
-                }
+                    for (nRow = 1; nRow < 7; nRow++)
+                    {
+                        sw.WriteLine(Globals.aFaceColors[nRow]);
+                    }
 
-                for (nRow = 0; nRow < 54; nRow++)
-                {
-                    sw.WriteLine(Globals.aPieces[nRow]);
-                }
+                    for (nRow = 0; nRow < 54; nRow++)
+                    {
+                        sw.WriteLine(Globals.aPieces[nRow]);
+                    }
 
-                // Close the StreamWriter object
-                sw.Close();
+                    sw.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -65,20 +65,20 @@ namespace CubeSolver
             try
             {
                 // Open the text file using a stream reader
-                using StreamReader sr = new(cFileName, false);
-
-                for (nRow = 1; nRow < 7; nRow++)
+                using (StreamReader sr = new(cFileName, false))
                 {
-                    Globals.aFaceColors[nRow] = sr.ReadLine() ?? string.Empty;
-                }
+                    for (nRow = 1; nRow < 7; nRow++)
+                    {
+                        Globals.aFaceColors[nRow] = sr.ReadLine() ?? string.Empty;
+                    }
 
-                for (nRow = 0; nRow < 54; nRow++)
-                {
-                    Globals.aPieces[nRow] = sr.ReadLine() ?? string.Empty;
-                }
+                    for (nRow = 0; nRow < 54; nRow++)
+                    {
+                        Globals.aPieces[nRow] = sr.ReadLine() ?? string.Empty;
+                    }
 
-                // Close the StreamReader object
-                sr.Close();
+                    sr.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -97,7 +97,6 @@ namespace CubeSolver
         public static bool CubeTurnsSave(string cFile)
         {
             string cFileName = Path.Combine(FileSystem.Current.CacheDirectory, cFile);
-
             //Debug.WriteLine("FileSystem.Current.CacheDirectory: " + FileSystem.Current.CacheDirectory);  // For testing
 
             try
@@ -107,18 +106,18 @@ namespace CubeSolver
                     File.Delete(cFileName);
                 }
 
-                using StreamWriter sw = new(cFileName, false);
-
-                sw.WriteLine($"Turns: {Globals.lCubeTurns.Count}");
-                sw.WriteLine();
-
-                foreach (string cItem in Globals.lCubeTurns)
+                using (StreamWriter sw = new(cFileName, false))
                 {
-                    sw.WriteLine(cItem);
-                }
+                    sw.WriteLine($"Turns: {Globals.lCubeTurns.Count}");
+                    sw.WriteLine();
 
-                // Close the StreamWriter object
-                sw.Close();
+                    foreach (string cItem in Globals.lCubeTurns)
+                    {
+                        sw.WriteLine(cItem);
+                    }
+
+                    sw.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -129,6 +128,47 @@ namespace CubeSolver
             Debug.WriteLine($"CubeTurnsSave cFileName:\n{cFileName}");
 
             return true;
+        }
+
+        /// <summary>
+        /// Calculate the app speed for writing to a file for testing purposes
+        /// </summary>
+        public static int CalculateAppSpeed()
+        {
+            // Create and start a stopwatch instance
+            long startTime = Stopwatch.GetTimestamp();
+
+            string cFileName = System.IO.Path.Combine(FileSystem.Current.CacheDirectory, "SpeedTest.txt");
+
+            try
+            {
+                if (File.Exists(cFileName))
+                {
+                    File.Delete(cFileName);
+                }
+
+                using (StreamWriter sw = new(cFileName, false))
+                {
+                    for (int nI = 1; nI < 501; nI++)
+                    {
+                        sw.WriteLine($"Loop: {nI}");
+                    }
+
+                    sw.Close();
+                }
+
+                File.Delete(cFileName);
+            }
+            catch (Exception ex)
+            {
+                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                return 0;
+            }
+
+            // Stop the stopwatch and get the elapsed time
+            TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
+            Debug.WriteLine($"Time elapsed (Milliseconds): {delta.TotalMilliseconds}");
+            return delta.Milliseconds;
         }
     }
 }

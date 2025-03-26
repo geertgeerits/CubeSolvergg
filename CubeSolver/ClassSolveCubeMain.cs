@@ -44,7 +44,7 @@ namespace CubeSolver
                 {
 #if DEBUG
                     // Save the list with the cube turns to a file
-                    _ = ClassSaveRestoreCube.CubeTurnsSave("CubeTurnsAfterSolved.txt");
+                    _ = ClassFileOperations.CubeTurnsSave("CubeTurnsAfterSolved.txt");
 #endif
                     return true;
                 }

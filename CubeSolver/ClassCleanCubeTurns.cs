@@ -26,7 +26,7 @@ namespace CubeSolver
             //// Save the list with the cube turns before the cleaning to a file, for testing purposes
             if (bCubeTurnsSave)
             {
-                _ = ClassSaveRestoreCube.CubeTurnsSave("CubeTurnsBeforeFirstClean.txt");
+                _ = ClassFileOperations.CubeTurnsSave("CubeTurnsBeforeFirstClean.txt");
             }
 #endif
             //// Do the cleaning between 2 and 10 times
@@ -1584,7 +1584,7 @@ namespace CubeSolver
             //// Save the list with the cube turns after the cleaning to a file, for testing purposes
             if (bCubeTurnsSave)
             {
-                _ = ClassSaveRestoreCube.CubeTurnsSave("CubeTurnsAfterLastClean.txt");
+                _ = ClassFileOperations.CubeTurnsSave("CubeTurnsAfterLastClean.txt");
             }
 #endif
         }

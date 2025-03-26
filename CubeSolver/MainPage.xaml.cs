@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.38
- * Date ........: 2025-03-25 (YYYY-MM-DD)
+ * Date ........: 2025-03-26 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -162,8 +162,11 @@ namespace CubeSolver
             btnSolveNewSolutionsTest.IsVisible = false;
             Globals.bSolveNewSolutionsTest = false;
 
-            // For testing the logging of the executed line in the class 'ClassProgramLogging.cs'
+            //// For testing the logging of the executed line in the class 'ClassProgramLogging.cs'
             //ClassProgramLogging.LogExecutedLineTest();
+
+            //// Calculate the app speed for writing to a file for testing purposes
+            //int nSpeedMilliseconds = ClassFileOperations.CalculateAppSpeed();
 #endif
             // Herbert Kociemba solution (for testing)
             //string searchString = "UUUUUULLLURRURRURRFFFFFFFFFRRRDDDDDDLLDLLDLLDBBBBBBBBB";
@@ -396,8 +399,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 321-322 and 374-397 (and change the line 421 to bTestSolveCube = true)
-                // and uncomment one of the lines 404-406 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 324-325 and 377-400 (and change the line 424 to bTestSolveCube = true)
+                // and uncomment one of the lines 407-409 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -1855,7 +1858,7 @@ namespace CubeSolver
         /// <param name="e"></param>
         private void OnButtonOpenCubeClicked(object sender, EventArgs e)
         {
-            _ = ClassSaveRestoreCube.CubeDataOpen();
+            _ = ClassFileOperations.CubeDataOpen();
 
             GetCubeColorsFromArrays();
             Globals.lCubeTurns.Clear();
@@ -1869,7 +1872,7 @@ namespace CubeSolver
         private void OnButtonSaveCubeClicked(object sender, EventArgs e)
         {
             SetCubeColorsInArrays();
-            _ = ClassSaveRestoreCube.CubeDataSave();
+            _ = ClassFileOperations.CubeDataSave();
         }
 
         /// <summary>
@@ -2181,26 +2184,6 @@ namespace CubeSolver
                 SetArrowTooltips(true);
             }
         }
-
-        ///// <summary>
-        ///// Calculate the app speed
-        ///// </summary>
-        //private static void CalculateAppSpeed()
-        //{
-        //    // Create and start a stopwatch instance
-        //    long startTime = Stopwatch.GetTimestamp();
-        //    long nLoops = 1000_000_000_000;
-            
-        //    for (long nI = 0; nI > nLoops; nI++)
-        //    {
-            
-        //    }
-
-        //    // Stop the stopwatch and get the elapsed time
-        //    TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-
-        //    Debug.WriteLine($"Time elapsed (Milliseconds): {delta.TotalMilliseconds}");
-        //}
     }
 }
 /*
