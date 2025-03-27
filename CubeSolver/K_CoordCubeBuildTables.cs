@@ -5,19 +5,19 @@ namespace CubeSolver
     internal class CoordCubeBuildTables
     {
 
-        internal const short N_TWIST = 2187; // 3^7 possible corner orientations
-        internal const short N_FLIP = 2048; // 2^11 possible edge flips
-        internal const short N_SLICE1 = 495; // 12 choose 4 possible positions of FR,FL,BL,BR edges
-        internal const short N_SLICE2 = 24; // 4! permutations of FR,FL,BL,BR edges in phase2
-        internal const short N_PARITY = 2; // 2 possible corner parities
-        internal const short N_URFtoDLF = 20160; // 8!/(8-6)! permutation of URF,UFL,ULB,UBR,DFR,DLF corners
-        internal const short N_FRtoBR = 11880; // 12!/(12-4)! permutation of FR,FL,BL,BR edges
-        internal const short N_URtoUL = 1320; // 12!/(12-3)! permutation of UR,UF,UL edges
-        internal const short N_UBtoDF = 1320; // 12!/(12-3)! permutation of UB,DR,DF edges
-        internal const short N_URtoDF = 20160; // 8!/(8-6)! permutation of UR,UF,UL,UB,DR,DF edges in phase2
+        internal const short N_TWIST = 2187;        // 3^7 possible corner orientations
+        internal const short N_FLIP = 2048;         // 2^11 possible edge flips
+        internal const short N_SLICE1 = 495;        // 12 choose 4 possible positions of FR,FL,BL,BR edges
+        internal const short N_SLICE2 = 24;         // 4! permutations of FR,FL,BL,BR edges in phase2
+        internal const short N_PARITY = 2;          // 2 possible corner parities
+        internal const short N_URFtoDLF = 20160;    // 8!/(8-6)! permutation of URF,UFL,ULB,UBR,DFR,DLF corners
+        internal const short N_FRtoBR = 11880;      // 12!/(12-4)! permutation of FR,FL,BL,BR edges
+        internal const short N_URtoUL = 1320;       // 12!/(12-3)! permutation of UR,UF,UL edges
+        internal const short N_UBtoDF = 1320;       // 12!/(12-3)! permutation of UB,DR,DF edges
+        internal const short N_URtoDF = 20160;      // 8!/(8-6)! permutation of UR,UF,UL,UB,DR,DF edges in phase2
 
-        internal const int N_URFtoDLB = 40320; // 8! permutations of the corners
-        internal const int N_URtoBR = 479001600; // 8! permutations of the corners
+        internal const int N_URFtoDLB = 40320;      // 8! permutations of the corners
+        internal const int N_URtoBR = 479001600;    // 8! permutations of the corners
 
         internal const short N_MOVE = 18;
 
@@ -46,7 +46,7 @@ namespace CubeSolver
 
             if (unpackTables)
             {
-                //Generate move tables
+                // Generate move tables
                 Tools.SerializeTable("twist", twistMove);
                 Tools.SerializeTable("flip", flipMove);
                 Tools.SerializeTable("FRtoBR", FRtoBR_Move);
@@ -56,8 +56,7 @@ namespace CubeSolver
                 Tools.SerializeTable("UBtoDF", UBtoDF_Move);
                 Tools.SerializeTable("MergeURtoULandUBtoDF", MergeURtoULandUBtoDF);
 
-
-                //Generate Pruning tables
+                // Generate Pruning tables
                 Tools.SerializeSbyteArray("Slice_URFtoDLF_Parity_Prun", Slice_URFtoDLF_Parity_Prun);
                 Tools.SerializeSbyteArray("Slice_URtoDF_Parity_Prun", Slice_URtoDF_Parity_Prun);
                 Tools.SerializeSbyteArray("Slice_Twist_Prun", Slice_Twist_Prun);
@@ -163,7 +162,6 @@ namespace CubeSolver
         // Pruning table for the flip of the edges and the position (not permutation) of the UD-slice edges in phase1
         // The pruning table entries give a lower estimation for the number of moves to reach the H-subgroup.
         internal static sbyte[] Slice_Flip_Prun = new sbyte[N_SLICE1 * N_FLIP / 2];
-
 
 
         static CoordCubeBuildTables()

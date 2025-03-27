@@ -139,17 +139,18 @@ namespace CubeSolver
                 "Slice_URtoDF_Parity_Prun", "twist", "UBtoDF", "URFtoDLF", "URtoDF", "URtoUL"
             ];
 
-            foreach (var fileName in fileNames)
+            foreach (string fileName in fileNames)
             {
-                var destinationPath = Path.Combine(Globals.cPathTables, fileName);
+                var destinationPathFile = Path.Combine(Globals.cPathTables, fileName);
 
                 try
                 {
-                    using var resourceStream = await FileSystem.OpenAppPackageFileAsync(fileName);
-                    if (resourceStream != null)
+                    using Stream resourceStream = await FileSystem.OpenAppPackageFileAsync(fileName);
+                    if (resourceStream != null && !File.Exists(destinationPathFile))
                     {
-                        using var fileStream = File.Create(destinationPath);
+                        using FileStream fileStream = File.Create(destinationPathFile);
                         await resourceStream.CopyToAsync(fileStream);
+                        Debug.WriteLine($"File copied: {destinationPathFile}");
                     }
                 }
                 catch (FileNotFoundException ex)
