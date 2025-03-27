@@ -141,7 +141,7 @@ namespace CubeSolver
 
             foreach (string fileName in fileNames)
             {
-                var destinationPathFile = Path.Combine(Globals.cPathTables, fileName);
+                string destinationPathFile = Path.Combine(Globals.cPathTables, fileName);
 
                 try
                 {
