@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.38
- * Date ........: 2025-03-26 (YYYY-MM-DD)
+ * Date ........: 2025-03-27 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -33,7 +33,7 @@ namespace CubeSolver
         private bool bTurnIsBackwards;
         private bool bTurnContinuously;
         private bool bKociembaTablesExist;
-        private readonly int nDurationFirstKociembaSolve = 60;
+        private int nDurationFirstKociembaSolve = 60;
 
         //// Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
@@ -95,17 +95,6 @@ namespace CubeSolver
             Globals.aFaceColors[6] = Preferences.Default.Get("SettingCubeColor6", "#FFFF40");   // Down face: Yellow    FFFF00      FFFF40
             Globals.bKociembaSolution = Preferences.Default.Get("SettingKociembaSolution", true);
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
-
-            //// Check if the tables exist for the Kociemba solution
-            if (ClassSolveCubeKociemba.CheckIfTableExists())
-            {
-                bKociembaTablesExist = true;
-            }
-            else
-            {
-                // Calculate the duration in seconds for the first Kociemba solve with creation of the tables
-                nDurationFirstKociembaSolve = ClassFileOperations.DurationFirstKociembaSolve();
-            }
 
             //// Set the theme
             Globals.SetTheme();
@@ -314,6 +303,17 @@ namespace CubeSolver
         /// <param name="e"></param>
         private async void OnBtnSolveCubeClicked(object sender, EventArgs e)
         {
+            //// Check if the tables exist for the Kociemba solution
+            if (ClassSolveCubeKociemba.CheckIfTableExists())
+            {
+                bKociembaTablesExist = true;
+            }
+            else
+            {
+                // Calculate the duration in seconds for the first Kociemba solve with creation of the tables
+                nDurationFirstKociembaSolve = await ClassFileOperations.DurationFirstKociembaSolveAsync();
+            }
+
             // Check the number of colors of the cube
             if (!CheckNumberColorsCube())
             {

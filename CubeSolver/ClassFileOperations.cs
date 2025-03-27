@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CubeSolver
 {
@@ -129,9 +128,45 @@ namespace CubeSolver
         }
 
         /// <summary>
+        /// Copy the data files to the cache directory
+        /// </summary>
+        /// <returns></returns>
+        public static async Task CopyDataFilesToCacheAsync()
+        {
+            string[] fileNames =
+            [
+                "Flip", "FRtoBR", "MergeURtoULandUBtoDF", "Slice_Flip_Prun", "Slice_Twist_Prun", "Slice_URFtoDLF_Parity_Prun",
+                "Slice_URtoDF_Parity_Prun", "twist", "UBtoDF", "URFtoDLF", "URtoDF", "URtoUL"
+            ];
+
+            foreach (var fileName in fileNames)
+            {
+                var destinationPath = Path.Combine(Globals.cPathTables, fileName);
+
+                try
+                {
+                    using var resourceStream = await FileSystem.OpenAppPackageFileAsync(fileName);
+                    if (resourceStream != null)
+                    {
+                        using var fileStream = File.Create(destinationPath);
+                        await resourceStream.CopyToAsync(fileStream);
+                    }
+                }
+                catch (FileNotFoundException ex)
+                {
+                    Debug.WriteLine($"File not found: {fileName} - {ex.Message}");
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine($"Error copying file: {fileName} - {ex.Message}");
+                }
+            }
+        }
+
+        /// <summary>
         /// Calculate the duration for the first Kociemba solve with creation of the tables
         /// </summary>
-        public static int DurationFirstKociembaSolve()
+        public static async Task<int> DurationFirstKociembaSolveAsync()
         {
             // Create and start a stopwatch instance
             long startTime = Stopwatch.GetTimestamp();
@@ -159,16 +194,16 @@ namespace CubeSolver
             }
             catch (Exception ex)
             {
-#if DEBUG                
+#if DEBUG
                 _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
 #endif
                 // Return a default value of 60 seconds
-                return 60;
+                return await Task.FromResult(60);
             }
 
             // Stop the stopwatch and get the elapsed time
             TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-            
+
             Debug.WriteLine($"Time elapsed (Milliseconds): {delta.TotalMilliseconds} - (Seconds): {delta.TotalSeconds}");
 
             double nMillisecondsToMultiply = delta.TotalMilliseconds switch
@@ -184,7 +219,7 @@ namespace CubeSolver
             Debug.WriteLine($"Time elapsed (nDurationFirstKociembaSolve): {nDurationFirstKociembaSolve}");
 
             // The duration in milliseconds is treated as a delay in seconds in the Kociemba solve
-            return nDurationFirstKociembaSolve;
+            return await Task.FromResult(nDurationFirstKociembaSolve);
         }
     }
 }

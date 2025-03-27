@@ -27,5 +27,14 @@
                 MaximumWidth = 1100
             };
         }
+
+        /// <summary>
+        /// Copy the data files to the cache directory
+        /// </summary>
+        protected override async void OnStart()
+        {
+            base.OnStart();
+            await ClassFileOperations.CopyDataFilesToCacheAsync();
+        }
     }
 }
