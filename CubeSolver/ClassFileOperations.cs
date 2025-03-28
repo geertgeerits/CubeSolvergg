@@ -135,7 +135,7 @@ namespace CubeSolver
         {
             string[] fileNames =
             [
-                "Flip", "FRtoBR", "MergeURtoULandUBtoDF", "Slice_Flip_Prun", "Slice_Twist_Prun", "Slice_URFtoDLF_Parity_Prun",
+                "flip", "FRtoBR", "MergeURtoULandUBtoDF", "Slice_Flip_Prun", "Slice_Twist_Prun", "Slice_URFtoDLF_Parity_Prun",
                 "Slice_URtoDF_Parity_Prun", "twist", "UBtoDF", "URFtoDLF", "URtoDF", "URtoUL"
             ];
 
@@ -161,6 +161,40 @@ namespace CubeSolver
                 {
                     Debug.WriteLine($"Error copying file: {fileName} - {ex.Message}");
                 }
+            }
+#if DEBUG
+            LoadFolderContents(Globals.cPathTables);
+#endif
+        }
+
+        /// <summary>
+        /// Load the contents of the folder
+        /// </summary>
+        private static void LoadFolderContents(string folderPath)
+        {
+            List<string> folderContents = new List<string>();
+
+            try
+            {
+                // Get directories
+                string[] directories = Directory.GetDirectories(folderPath);
+                foreach (var dir in directories)
+                {
+                    folderContents.Add($"[DIR] {Path.GetFileName(dir)}");
+                }
+
+                // Get files
+                string[] files = Directory.GetFiles(folderPath);
+                foreach (var file in files)
+                {
+                    folderContents.Add(Path.GetFileName(file));
+                    Debug.WriteLine($"File: {file}");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., directory not found, access denied)
+                _ = Application.Current!.Windows[0].Page!.DisplayAlert("Error", ex.Message, "OK");
             }
         }
 

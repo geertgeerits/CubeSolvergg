@@ -226,16 +226,46 @@ namespace CubeSolver
         /// <returns></returns>
         public static bool CheckIfTableExists()
         {
-            if (!File.Exists(Path.Combine(Globals.cPathTables, "twist")))
-            {
-                return false;
-            }
             if (!File.Exists(Path.Combine(Globals.cPathTables, "flip")))
             {
                 return false;
             }
-
             if (!File.Exists(Path.Combine(Globals.cPathTables, "FRtoBR")))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "MergeURtoULandUBtoDF")))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Flip_Prun")))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Twist_Prun")))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URFtoDLF_Parity_Prun")))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URtoDF_Parity_Prun")))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "twist")))
+            {
+                return false;
+            }
+
+            if (!File.Exists(Path.Combine(Globals.cPathTables, "UBtoDF")))
             {
                 return false;
             }
@@ -251,36 +281,6 @@ namespace CubeSolver
             }
 
             if (!File.Exists(Path.Combine(Globals.cPathTables, "URtoUL")))
-            {
-                return false;
-            }
-
-            if (!File.Exists(Path.Combine(Globals.cPathTables, "UBtoDF")))
-            {
-                return false;
-            }
-
-            if (!File.Exists(Path.Combine(Globals.cPathTables, "MergeURtoULandUBtoDF")))
-            {
-                return false;
-            }
-
-            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URFtoDLF_Parity_Prun")))
-            {
-                return false;
-            }
-
-            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_URtoDF_Parity_Prun")))
-            {
-                return false;
-            }
-
-            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Twist_Prun")))
-            {
-                return false;
-            }
-
-            if (!File.Exists(Path.Combine(Globals.cPathTables, "Slice_Flip_Prun")))
             {
                 return false;
             }
