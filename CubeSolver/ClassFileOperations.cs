@@ -128,7 +128,7 @@ namespace CubeSolver
         }
 
         /// <summary>
-        /// Copy the data files to the cache directory
+        /// Copy the Kociemba data files to the cache directory
         /// </summary>
         /// <returns></returns>
         public static async Task CopyDataFilesToCacheAsync()
