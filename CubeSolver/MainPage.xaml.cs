@@ -316,7 +316,7 @@ namespace CubeSolver
                 return;
             }
 
-            //// Check if the tables exist for the Kociemba solution
+            // Check if the tables exist for the Kociemba solution
             if (ClassSolveCubeKociemba.CheckIfTableExists())
             {
                 bKociembaTablesExist = true;
@@ -325,6 +325,12 @@ namespace CubeSolver
             {
                 // Calculate the duration in seconds for the first Kociemba solve with creation of the tables
                 nDurationFirstKociembaSolve = await ClassFileOperations.DurationFirstKociembaSolveAsync();
+            }
+
+            // Set the text of the label 'lblCubeOutsideView' to show the time to solve the cube when using the Kociemba solution for the first time
+            if (Globals.bKociembaSolution && !bKociembaTablesExist && Globals.lCubeTurns.Count == 0)
+            {
+                lblCubeOutsideView.Text = $"{CubeLang.WaitFirstGameLaunch_Text} {nDurationFirstKociembaSolve} {CubeLang.WaitFirstGameLaunch2_Text}";
             }
 
             // Control settings
@@ -338,12 +344,6 @@ namespace CubeSolver
             btnGoOneTurnForward.IsEnabled = false;
             btnTurnContinuously.IsEnabled = false;
             lblCubeInsideView.IsVisible = false;
-
-            // Set the text of the label 'lblCubeOutsideView' to show the time to solve the cube when using the Kociemba solution for the first time
-            if (Globals.bKociembaSolution && !bKociembaTablesExist && Globals.lCubeTurns.Count == 0)
-            {
-                lblCubeOutsideView.Text = $"{CubeLang.WaitFirstGameLaunch_Text} {nDurationFirstKociembaSolve} {CubeLang.WaitFirstGameLaunch2_Text}";
-            }
 
             // Settings
             bColorDrop = false;

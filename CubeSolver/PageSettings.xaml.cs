@@ -221,7 +221,6 @@ namespace CubeSolver
                         if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
                         {
                             pckLanguageSpeech.SelectedIndex = nItem;
-                            bIsSetSelectedIndex = true;
                             return;
                         }
                     }

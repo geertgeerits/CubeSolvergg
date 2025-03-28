@@ -163,7 +163,6 @@ namespace CubeSolver
         // The pruning table entries give a lower estimation for the number of moves to reach the H-subgroup.
         internal static sbyte[] Slice_Flip_Prun = new sbyte[N_SLICE1 * N_FLIP / 2];
 
-
         static CoordCubeBuildTables()
         {
 

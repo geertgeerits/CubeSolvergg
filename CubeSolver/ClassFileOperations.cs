@@ -175,7 +175,7 @@ namespace CubeSolver
         /// <param name="folderPath"></param>
         private static void LoadFolderContents(string folderPath)
         {
-            List<string> folderContents = new List<string>();
+            List<string> folderContents = [];
 
             try
             {

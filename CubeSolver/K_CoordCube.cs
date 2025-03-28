@@ -2,20 +2,19 @@
 {
     internal class CoordCube
     {
+        internal const short N_TWIST = 2187;        // 3^7 possible corner orientations
+        internal const short N_FLIP = 2048;         // 2^11 possible edge flips
+        internal const short N_SLICE1 = 495;        // 12 choose 4 possible positions of FR,FL,BL,BR edges
+        internal const short N_SLICE2 = 24;         // 4! permutations of FR,FL,BL,BR edges in phase2
+        internal const short N_PARITY = 2;          // 2 possible corner parities
+        internal const short N_URFtoDLF = 20160;    // 8!/(8-6)! permutation of URF,UFL,ULB,UBR,DFR,DLF corners
+        internal const short N_FRtoBR = 11880;      // 12!/(12-4)! permutation of FR,FL,BL,BR edges
+        internal const short N_URtoUL = 1320;       // 12!/(12-3)! permutation of UR,UF,UL edges
+        internal const short N_UBtoDF = 1320;       // 12!/(12-3)! permutation of UB,DR,DF edges
+        internal const short N_URtoDF = 20160;      // 8!/(8-6)! permutation of UR,UF,UL,UB,DR,DF edges in phase2
 
-        internal const short N_TWIST = 2187; // 3^7 possible corner orientations
-        internal const short N_FLIP = 2048; // 2^11 possible edge flips
-        internal const short N_SLICE1 = 495; // 12 choose 4 possible positions of FR,FL,BL,BR edges
-        internal const short N_SLICE2 = 24; // 4! permutations of FR,FL,BL,BR edges in phase2
-        internal const short N_PARITY = 2; // 2 possible corner parities
-        internal const short N_URFtoDLF = 20160; // 8!/(8-6)! permutation of URF,UFL,ULB,UBR,DFR,DLF corners
-        internal const short N_FRtoBR = 11880; // 12!/(12-4)! permutation of FR,FL,BL,BR edges
-        internal const short N_URtoUL = 1320; // 12!/(12-3)! permutation of UR,UF,UL edges
-        internal const short N_UBtoDF = 1320; // 12!/(12-3)! permutation of UB,DR,DF edges
-        internal const short N_URtoDF = 20160; // 8!/(8-6)! permutation of UR,UF,UL,UB,DR,DF edges in phase2
-
-        internal const int N_URFtoDLB = 40320; // 8! permutations of the corners
-        internal const int N_URtoBR = 479001600; // 8! permutations of the corners
+        internal const int N_URFtoDLB = 40320;      // 8! permutations of the corners
+        internal const int N_URtoBR = 479001600;    // 8! permutations of the corners
 
         internal const short N_MOVE = 18;
 
@@ -45,7 +44,6 @@
             UBtoDF = c.GetUBtoDF();
             URtoDF = c.GetURtoDF();// only needed in phase2
             info += "[ Finished Initialiation: " + String.Format(@"{0:mm\:ss\.ffff}", (DateTime.Now - startTime)) + " ] ";
-
         }
 
         // A move on the coordinate level
@@ -65,7 +63,6 @@
                 URtoDF = MergeURtoULandUBtoDF[URtoUL, UBtoDF];
             }
         }
-
 
         // ******************************************Phase 1 move tables*****************************************************
 
@@ -87,7 +84,6 @@
         [1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1],
         [0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
         ];
-
 
         // ***********************************Phase 1 and 2 movetable********************************************************
 
@@ -127,7 +123,6 @@
         // Table to merge the coordinates of the UR,UF,UL and UB,DR,DF edges at the beginning of phase2
         internal static short[,] MergeURtoULandUBtoDF = CoordCubeTables.MergeURtoULandUBtoDF;
 
-
         // ****************************************Pruning tables for the search*********************************************
 
         // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -149,9 +144,8 @@
         // Pruning table for the flip of the edges and the position (not permutation) of the UD-slice edges in phase1
         // The pruning table entries give a lower estimation for the number of moves to reach the H-subgroup.
         internal static sbyte[] Slice_Flip_Prun = CoordCubeTables.Slice_Flip_Prun;
-        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
- 
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         // Set pruning value in table. Two values are stored in one byte.
         internal static void SetPruning(sbyte[] table, int index, sbyte value)
         {
@@ -182,7 +176,6 @@
 
     public static class CoordCubeTables
     {
-        
         // Movement
         public static readonly short[,] twist = Tools.DeserializeTable("twist");
         public static readonly short[,] flip = Tools.DeserializeTable("flip");

@@ -29,7 +29,7 @@
         }
 
         /// <summary>
-        /// Copy the data files to the cache directory
+        /// Copy the Kociemba data files to the cache directory
         /// </summary>
         protected override async void OnStart()
         {
