@@ -133,6 +133,7 @@ namespace CubeSolver
         /// <returns></returns>
         public static async Task CopyDataFilesToCacheAsync()
         {
+            // Be careful! File paths and file names are case sensitive in Android and iOS.
             string[] fileNames =
             [
                 "flip", "FRtoBR", "MergeURtoULandUBtoDF", "Slice_Flip_Prun", "Slice_Twist_Prun", "Slice_URFtoDLF_Parity_Prun",
@@ -163,13 +164,15 @@ namespace CubeSolver
                 }
             }
 #if DEBUG
+            // Load the contents of the folder for testing
             LoadFolderContents(Globals.cPathTables);
 #endif
         }
 
         /// <summary>
-        /// Load the contents of the folder
+        /// Load the contents of the folder for testing
         /// </summary>
+        /// <param name="folderPath"></param>
         private static void LoadFolderContents(string folderPath)
         {
             List<string> folderContents = new List<string>();

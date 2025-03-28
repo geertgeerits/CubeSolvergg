@@ -303,17 +303,6 @@ namespace CubeSolver
         /// <param name="e"></param>
         private async void OnBtnSolveCubeClicked(object sender, EventArgs e)
         {
-            //// Check if the tables exist for the Kociemba solution
-            if (ClassSolveCubeKociemba.CheckIfTableExists())
-            {
-                bKociembaTablesExist = true;
-            }
-            else
-            {
-                // Calculate the duration in seconds for the first Kociemba solve with creation of the tables
-                nDurationFirstKociembaSolve = await ClassFileOperations.DurationFirstKociembaSolveAsync();
-            }
-
             // Check the number of colors of the cube
             if (!CheckNumberColorsCube())
             {
@@ -325,6 +314,17 @@ namespace CubeSolver
             {
                 Globals.lCubeTurns.Clear();
                 return;
+            }
+
+            //// Check if the tables exist for the Kociemba solution
+            if (ClassSolveCubeKociemba.CheckIfTableExists())
+            {
+                bKociembaTablesExist = true;
+            }
+            else
+            {
+                // Calculate the duration in seconds for the first Kociemba solve with creation of the tables
+                nDurationFirstKociembaSolve = await ClassFileOperations.DurationFirstKociembaSolveAsync();
             }
 
             // Control settings
@@ -401,7 +401,7 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 326-327 and 379-402 (and change the line 426 to bTestSolveCube = true)
+                // For testing comment out the lines 315-316 and 379-402 (and change the line 426 to bTestSolveCube = true)
                 // and uncomment one of the lines 409-411 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
