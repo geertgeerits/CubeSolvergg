@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>सहमत</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>अनुमति नहीं:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>स्वीकृत वर्ण:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>बंद करना</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>रीसेट करें</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>हल करना</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>कृपया एप्लीकेशन बंद करें.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>संपर्क करना:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>जारी रखना</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>कॉपीराइट</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>बैक फ़ेस</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>नीचे चेहरा</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>घन रंग:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>सामने का चेहरा</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>अंदर का दृश्य</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>बायां चेहरा</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>बाहर का दृश्य</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>दाहिना चेहरा</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>ऊपरी चेहरा</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>गलती करना</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>क्यूब खेलें या हल करें.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>असहमत</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>ई-मेल:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>गलती</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>भाषण द्वारा समझाया गया:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>पाठ द्वारा समझाया गया:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>क्यूब के किनारों को 'घड़ी की दिशा में' और 'घड़ी की विपरीत दिशा में' घुमाएँ:
+अगर सामने वाले हिस्से को 'घड़ी की दिशा में' घुमाने का आदेश दिया गया है तो यह उस दिशा में है जिस दिशा में हाथ घुमाए जा रहे हैं। 'घड़ी की विपरीत दिशा में' घुमाना दूसरी दिशा में घुमाना है।
+अन्य पक्षों के लिए आपको हमेशा 'कल्पना' करनी होगी कि आप जिस तरफ घुमाए जाने वाले हैं उसके ठीक सामने हैं। इसलिए अगर यह कहता है कि पीछे वाले हिस्से को 'घड़ी की दिशा में' घुमाएँ तो कल्पना करें कि आप क्यूब के दूसरी तरफ हैं और फिर पीछे वाले हिस्से को 'घड़ी की दिशा में' घुमाएँ। क्यूब को खुद न घुमाएँ।</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>सहेजे गए क्यूब को खोलें.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>वर्तमान क्यूब को सहेजें.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>अव्यवस्थित क्यूब से रंगों को इस क्यूब में स्थानांतरित करें। शीर्ष पर रंग पट्टी से एक रंग चुनें और फिर क्यूब के टुकड़ों को बदलने के लिए उन पर टैप करें। इस अनुभाग को छोड़ने के लिए इस बटन को फिर से दबाएँ और 'समाधान करें' बटन दबाएँ।</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>हेक्साडेसिमल रंग कोड:
+
+अक्षर 1-2: लाल
+अक्षर 3-4: हरा
+अक्षर 5-6: नीला</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>जानकारी</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>भाषा भाषण:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>भाषा:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>सॉफ़्टवेयर को 'जैसा है', किसी भी प्रकार की वारंटी के बिना, व्यक्त या निहित, जिसमें व्यापारिकता, किसी विशेष उद्देश्य के लिए उपयुक्तता और गैर-उल्लंघन की वारंटी शामिल है, लेकिन इन्हीं तक सीमित नहीं है, प्रदान किया जाता है। किसी भी स्थिति में लेखक और/या प्रकाशक किसी भी दावे, क्षति या अन्य देयता के लिए उत्तरदायी नहीं होंगे, चाहे वह अनुबंध, अपकार या अन्यथा की कार्रवाई में हो, जो सॉफ़्टवेयर या सॉफ़्टवेयर में उपयोग या अन्य व्यवहारों से उत्पन्न, उससे बाहर या उससे संबंधित हो।</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>लाइसेंस</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>इस एप्लिकेशन का उपयोग गैर-वाणिज्यिक उद्देश्यों के लिए स्वतंत्र रूप से किया जा सकता है। इस प्रोग्राम का उपयोग पूरी तरह से अपने जोखिम पर करें।</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>केंद्रीय वर्ग का रंग केवल एक बार ही हो सकता है।</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>कोने वाले घन के रंग अलग-अलग होने चाहिए।</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>किनारे वाले घन के रंग अलग-अलग होने चाहिए।</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>बधाई हो, क्यूब हल हो गया है।</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>घन हल नहीं हुआ है.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>प्रत्येक उपलब्ध रंग में से, उसी रंग के नौ होने चाहिए।</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>क्यूब सॉल्वर</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>नहीं</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>गोपनीयता नीति:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>कोई भी व्यक्तिगत या अन्य डेटा संग्रहीत नहीं किया जाता है या मुझे या अन्य लोगों को नहीं दिया जाता है।</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>एप्लिकेशन पुनः प्रारंभ हो जाएगी.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>रीसेट करें</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>कुछ बदली हुई सेटिंग्स को लागू करने के लिए उन्हें सहेजना आवश्यक है। सहेजने के बाद, एप्लिकेशन को पुनः आरंभ किया जाता है और क्यूब को रीसेट किया जाता है।</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>बचाना</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>सेटिंग्स</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>हल करना</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>रुकना</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>पाठ में एक या अधिक वर्ण हैं जिनकी अनुमति नहीं है।
+
+अनुमति नहीं है:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>इस डिवाइस पर टेक्स्ट टू स्पीच समर्थित नहीं है.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>अँधेरा</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>रोशनी</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>प्रणाली</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>विषय:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>वापस जाओ</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>आगे बढ़ो</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>मदद</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>घन खोलें</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>घन को सुरक्षित रखें</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>टॉगल बटन: क्यूब पर रंग सेट करें</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TurnUpMiddleToRightFace_Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>संस्करण:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>वेबसाइट:</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>हाँ</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>इस घन को हल नहीं किया जा सकता।
+
+संभावित कारण इस घन में रंगों का गलत स्थानांतरण है।</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>मिलीसेकंड में समय:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>घुमावों की संख्या:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>समाधान विधियाँ:
+- स्वचालित: अपने असली क्यूब के रंग इनपुट करने के लिए स्क्रीन के नीचे क्यूब बटन का उपयोग करें। एक बार हो जाने के बाद, बटन को फिर से दबाएँ, फिर 'समाधान करें' पर टैप करें। क्यूब को 'कोसिएम्बा' एल्गोरिदम का उपयोग करके हल किया जाएगा। प्रस्तावित चालों को अपने असली क्यूब में स्थानांतरित करें।
+यदि आप सेटिंग में 'कोसिएम्बा' एल्गोरिदम को अक्षम करते हैं, तो ऐप 'फ्रेडरिक' (CFOP) विधि का उपयोग करेगा।
+- रिवर्स: क्यूब को अस्त-व्यस्त करने के लिए तीर कुंजियों का उपयोग करें, फिर 'समाधान करें' दबाएँ। क्यूब को उल्टे क्रम में हल किया जाएगा।
+- मैनुअल: होम स्क्रीन पर, क्यूब को अस्त-व्यस्त करने और मैन्युअल रूप से हल करने के लिए तीर कुंजियों का उपयोग करें।
+यह गारंटी नहीं है कि सभी क्यूब हल किए जा सकते हैं।</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>घन अपनी पूर्व अवस्था में वापस आ गया है।</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>मध्य भाग के रंग ग़लत हैं।</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>प्रत्येक उपलब्ध रंग में से, एक किनारे वाले घन पर एक ही रंग के चार टुकड़े होने चाहिए।</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>प्रत्येक उपलब्ध रंग में से, एक कोने वाले क्यूब पर एक ही रंग के चार क्यूब होने चाहिए।</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>इस एप्लिकेशन के लेखक को एक ईमेल भेजें</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>इस एप्लिकेशन की वेबसाइट खोलें</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>परीक्षणित समाधान:</value>
+  </data>
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
+    <value>'कोसिएम्बा' विधि का उपयोग करके घन को हल करने के लिए औसत संख्या है</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>घन को अस्तव्यस्त करें</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>क्यूब को रीसेट करें</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>क्यूब को रीसेट करें.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>घन को अस्तव्यस्त करें।</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>घन हल करें</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>एक मोड़ पीछे जाओ</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>एक मोड़ आगे बढो</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>एक मोड़ पीछे जाओ.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>एक मोड़ आगे बढ़ो.</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>बिना किसी हस्तक्षेप के घन को हल करें</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>बिना किसी हस्तक्षेप के घन को हल करें।</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>हस्तक्षेप के साथ घन को हल करें</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>हस्तक्षेप के साथ घन को हल करें.</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>टॉगल बटन: हस्तक्षेप के साथ या बिना हस्तक्षेप के क्यूब को हल करें</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>घन को हल करें.</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>चेहरा घुमाना, चेहरे को दक्षिणावर्त दिशा में एक चौथाई घुमाएं (90 डिग्री)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>ऊपरी चेहरा</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>नीचे चेहरा</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>सामने का चेहरा</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>बैक फ़ेस</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>बायां चेहरा</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>दाहिना चेहरा</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>स्लाइस को घुमाएं, बीच की परत को एक चौथाई घुमाएं दक्षिणावर्त (90 डिग्री)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>L दिशा का अनुसरण करता है</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>D दिशा का अनुसरण करता है</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>F दिशा का अनुसरण करता है</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>घन घूर्णन, घन को दक्षिणावर्त दिशा में एक चौथाई घुमाएं (90 डिग्री)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>R दिशा का अनुसरण करता है</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>U दिशा का अनुसरण करता है</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>F दिशा का अनुसरण करता है</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>चौड़ी चालें, एक बार में 2 परतों को दक्षिणावर्त (90 डिग्री) एक चौथाई मोड़ दें, वे छोटे अक्षरों में हैं: u, d, f, b, l, r.</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>एक एपोस्ट्रोफी (जैसे, U') एक वामावर्त चौथाई मोड़ (90 डिग्री) को इंगित करता है।</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>संख्या 2 (जैसे, U2) का अर्थ है आधा मोड़ (180 डिग्री) घुमाना।</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value>'फ्रिड्रिच' (सीएफओपी) विधि का उपयोग किया जाता है</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>श्रेय: यह ऐप 'हर्बर्ट कोसिएम्बा' (कोसिएम्बा टू-फ़ेज़ एल्गोरिदम के लेखक) और 'मैट कोलबोर्न' के ओपन-सोर्स कोड का उपयोग करता है। उनके योगदान ने क्यूब-सॉल्विंग दक्षता में काफी सुधार किया है। उनके काम के लिए विशेष धन्यवाद।</value>
+  </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>पहला गेम लॉन्च होने में लग सकता है समय</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>कोसिएम्बा विधि:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>तरीका:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>उल्टे क्रम</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>सेकंड</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>पाठ के अनुवाद के लिए Google अनुवाद का उपयोग किया गया था। यह गारंटी नहीं है कि सभी अनुवाद सही हैं।
+सहायक भाषाएँ हैं: चीनी, चेक, डेनिश, डच, अंग्रेजी, फिनिश, फ्रेंच, जर्मन, हंगेरियन, इतालवी, जापानी, कोरियाई, नॉर्वेजियन, पोलिश, पुर्तगाली, रोमानियाई, स्पेनिश, स्वीडिश और यूक्रेनी।</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>किसी भी सुधार के लिए आप मुझसे कभी भी संपर्क कर सकते हैं।</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>टेक्स्ट टू स्पीच: एप्लिकेशन सेटिंग में दी गई सभी भाषाएँ समर्थित नहीं हैं। यह विकल्प डिवाइस से डिवाइस और इंस्टॉल की गई भाषाओं के हिसाब से अलग-अलग होता है। यह संभव है कि कुछ भाषाओं के लिए स्पीच से अनुवाद इंटरनेट पर संबंधित सेवाओं द्वारा किया जाता है।</value>
+  </data>
+</root>
