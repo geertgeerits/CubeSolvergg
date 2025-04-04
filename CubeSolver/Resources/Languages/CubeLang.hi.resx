@@ -184,7 +184,7 @@
     <value>असहमत</value>
   </data>
   <data name="Email_Text" xml:space="preserve">
-    <value>ई-मेल:</value>
+    <value>ई-मेल: </value>
   </data>
   <data name="ErrorTitle_Text" xml:space="preserve">
     <value>गलती</value>
@@ -334,7 +334,7 @@
     <value>संस्करण:</value>
   </data>
   <data name="Website_Text" xml:space="preserve">
-    <value>वेबसाइट:</value>
+    <value>वेबसाइट: </value>
   </data>
   <data name="Yes_Text" xml:space="preserve">
     <value>हाँ</value>

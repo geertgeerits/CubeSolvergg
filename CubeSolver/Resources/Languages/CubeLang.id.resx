@@ -184,7 +184,7 @@
     <value>Tidak setuju</value>
   </data>
   <data name="Email_Text" xml:space="preserve">
-    <value>E-mail:</value>
+    <value>E-mail: </value>
   </data>
   <data name="ErrorTitle_Text" xml:space="preserve">
     <value>Kesalahan</value>
@@ -332,7 +332,7 @@ Tidak diperbolehkan:</value>
     <value>Versi:</value>
   </data>
   <data name="Website_Text" xml:space="preserve">
-    <value>Situs web:</value>
+    <value>Situs web: </value>
   </data>
   <data name="Yes_Text" xml:space="preserve">
     <value>Ya</value>
