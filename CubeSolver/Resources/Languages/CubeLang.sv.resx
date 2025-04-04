@@ -216,15 +216,6 @@ Karaktärer 1-2: Röd
 Karaktärer 3-4: Grön
 Karaktärer 5-6: Blå</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Text till tal: Alla språk som finns i programinställningarna stöds inte.
-Det här alternativet varierar från enhet till enhet och de installerade språken. Det är möjligt att för vissa språk görs översättningen till och från tal över internet av de berörda tjänsterna.
-
-Google Translate användes för översättningen av texten. Detta är inte en garanti för att alla översättningar är korrekta.
-Stödspråken är: kinesiska, tjeckiska, danska, holländska, engelska, finska, franska, tyska, ungerska, italienska, japanska, koreanska, norska, polska, portugisiska, rumänska, spanska, svenska och ukrainska.
-
-Du kan alltid kontakta mig för eventuella korrigeringar.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Information</value>
   </data>
@@ -664,5 +655,16 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>sekunder</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Google Translate användes för översättningen av texten. Detta är inte en garanti för att alla översättningar är korrekta.
+Stödspråken är: kinesiska, tjeckiska, danska, holländska, engelska, finska, franska, tyska, ungerska, italienska, japanska, koreanska, norska, polska, portugisiska, rumänska, spanska, svenska och ukrainska.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Du kan alltid kontakta mig för eventuella korrigeringar.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Text till tal: Alla språk som finns i programinställningarna stöds inte.
+Det här alternativet varierar från enhet till enhet och de installerade språken. Det är möjligt att för vissa språk görs översättningen till och från tal över internet av de berörda tjänsterna.</value>
   </data>
 </root>

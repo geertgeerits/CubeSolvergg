@@ -458,6 +458,15 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can always contact me for any corrections..
+        /// </summary>
+        internal static string InfoContact_Text {
+            get {
+                return ResourceManager.GetString("InfoContact_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Credits: This app uses open-source code from &apos;Herbert Kociemba&apos; (author of the Kociemba Two-Phase Algorithm) and &apos;Matt Colbourne&apos;. Their contributions have significantly improved cube-solving efficiency. Special thanks for their work..
         /// </summary>
         internal static string InfoCredits_Text {
@@ -467,15 +476,22 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Text to speech: Not all languages are supported that are provided in the application settings.
-        ///This option varies from device to device and the installed languages. It is possible that for some languages the translation to and from speech is done over the internet by the concerned services.
-        ///
-        ///Google Translate was used for the translation of the text. This is not a guarantee that all translations are correct.
-        ///The supporting languages are: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hu [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to Google Translate was used for the translation of the text. This is not a guarantee that all translations are correct.
+        ///The supporting languages are: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish and Ukrainian..
         /// </summary>
-        internal static string InfoExplanation_Text {
+        internal static string InfoLanguage_Text {
             get {
-                return ResourceManager.GetString("InfoExplanation_Text", resourceCulture);
+                return ResourceManager.GetString("InfoLanguage_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text to speech: Not all languages are supported that are provided in the application settings.
+        ///This option varies from device to device and the installed languages. It is possible that for some languages the translation to and from speech is done over the internet by the concerned services..
+        /// </summary>
+        internal static string InfoTextToSpeech_Text {
+            get {
+                return ResourceManager.GetString("InfoTextToSpeech_Text", resourceCulture);
             }
         }
         

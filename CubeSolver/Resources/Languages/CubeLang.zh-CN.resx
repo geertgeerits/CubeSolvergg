@@ -216,15 +216,6 @@
 字符 3-4：绿色
 字符 5-6：蓝色</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>文字轉語音：並非所有應用程式設定中提供的語言都受支援。
-此選項因裝置和安裝的語言而異。對於某些語言來說，相關服務可能會透過網路完成語音與語音之間的翻譯。
-
-使用 Google 翻譯來翻譯該文字。這並不能保證所有翻譯都是正確的。
-支援的語言有：中文、捷克語、丹麥語、荷蘭語、英語、芬蘭語、法語、德語、匈牙利語、義大利語、日語、韓語、挪威語、波蘭語、葡萄牙語、羅馬尼亞語、西班牙語、瑞典語和烏克蘭語。
-
-您可以隨時聯絡我進行任何更正。</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>信息</value>
   </data>
@@ -664,5 +655,16 @@
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>秒</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>使用 Google 翻譯來翻譯該文字。這並不能保證所有翻譯都是正確的。
+支援的語言有：中文、捷克語、丹麥語、荷蘭語、英語、芬蘭語、法語、德語、匈牙利語、義大利語、日語、韓語、挪威語、波蘭語、葡萄牙語、羅馬尼亞語、西班牙語、瑞典語和烏克蘭語。</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>您可以隨時聯絡我進行任何更正。</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>文字轉語音：並非所有應用程式設定中提供的語言都受支援。
+此選項因裝置和安裝的語言而異。對於某些語言來說，相關服務可能會透過網路完成語音與語音之間的翻譯。</value>
   </data>
 </root>

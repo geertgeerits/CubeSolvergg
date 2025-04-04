@@ -26,7 +26,9 @@ namespace CubeSolver
             lblCredits.Text = $"\n{CubeLang.InfoCredits_Text}";
             lblHelpOptionsSolveCube.Text = $"\n{CubeLang.HelpOptionsSolveCube_Text}\n{CubeLang.AverageTurnsKociemba_Text} 21, {CubeLang.AverageTurnsFridrich_Text} 60.";
             lblHelp.Text = $"\n{CubeLang.HelpCube_Text}";
-            lblExplanation.Text = $"\n{CubeLang.InfoExplanation_Text}";
+            lblTextToSpeech.Text = $"\n{CubeLang.InfoTextToSpeech_Text}";
+            lblLanguage.Text = $"\n{CubeLang.InfoLanguage_Text}";
+            lblContact.Text = $"\n{CubeLang.InfoContact_Text}";
         }
     }
 

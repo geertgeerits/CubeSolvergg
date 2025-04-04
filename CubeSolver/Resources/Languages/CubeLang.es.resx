@@ -216,15 +216,6 @@ Caracteres 1-2: Rojo
 Caracteres 3-4: Verde
 Caracteres 5-6: Azul</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Texto a voz: No todos los idiomas disponibles en la configuración de la aplicación son compatibles.
-Esta opción varía según el dispositivo y los idiomas instalados. Es posible que, para algunos idiomas, la traducción se realice a través de internet mediante los servicios correspondientes.
-
-Se utilizó Google Translate para la traducción del texto. Esto no garantiza que todas las traducciones sean correctas.
-Los idiomas disponibles son: alemán, chino, checo, danés, coreano, español, finlandés, francés, húngaro, inglés, italiano, japonés, neerlandés, noruego, polaco, portugués, rumano, sueco y ucraniano.
-
-Puede contactarme para cualquier corrección.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Información</value>
   </data>
@@ -664,5 +655,16 @@ Esto no es una garantía de que todos los cubos puedan resolverse.</value>
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>segundos</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Se utilizó Google Translate para la traducción del texto. Esto no garantiza que todas las traducciones sean correctas.
+Los idiomas disponibles son: alemán, chino, checo, danés, coreano, español, finlandés, francés, húngaro, inglés, italiano, japonés, neerlandés, noruego, polaco, portugués, rumano, sueco y ucraniano.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Puede contactarme para cualquier corrección.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Texto a voz: No todos los idiomas disponibles en la configuración de la aplicación son compatibles.
+Esta opción varía según el dispositivo y los idiomas instalados. Es posible que, para algunos idiomas, la traducción se realice a través de internet mediante los servicios correspondientes.</value>
   </data>
 </root>

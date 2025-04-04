@@ -216,15 +216,6 @@ Hahmot 1-2: Punainen
 Hahmot 3-4: Vihreä
 Hahmot 5-6: Sininen</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Tekstistä puheeksi: Kaikkia sovellusasetuksissa olevia kieliä ei tueta.
-Tämä vaihtoehto vaihtelee laitteittain ja asennetuista kielistä riippuen. On mahdollista, että joillekin kielille käännös puheeseen ja puheesta tapahtuu Internetin kautta asianomaisten palvelujen toimesta.
-
-Tekstin kääntämiseen käytettiin Google Translatea. Tämä ei takaa, että kaikki käännökset ovat oikein.
-Tukikielet ovat: kiina, tšekki, tanska, hollanti, englanti, suomi, ranska, saksa, unkari, italia, japani, korea, norja, puola, portugali, romania, espanja, ruotsi ja ukraina.
-
-Voit aina ottaa minuun yhteyttä korjauksista.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Tiedot</value>
   </data>
@@ -664,5 +655,16 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>sekuntia</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Tekstin kääntämiseen käytettiin Google Translatea. Tämä ei takaa, että kaikki käännökset ovat oikein.
+Tukikielet ovat: kiina, tšekki, tanska, hollanti, englanti, suomi, ranska, saksa, unkari, italia, japani, korea, norja, puola, portugali, romania, espanja, ruotsi ja ukraina.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Voit aina ottaa minuun yhteyttä korjauksista.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Tekstistä puheeksi: Kaikkia sovellusasetuksissa olevia kieliä ei tueta.
+Tämä vaihtoehto vaihtelee laitteittain ja asennetuista kielistä riippuen. On mahdollista, että joillekin kielille käännös puheeseen ja puheesta tapahtuu Internetin kautta asianomaisten palvelujen toimesta.</value>
   </data>
 </root>

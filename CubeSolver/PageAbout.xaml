@@ -584,8 +584,21 @@
                         </Grid>
 
                         <Label
-                            x:Name="lblExplanation"
-                            Style="{StaticResource labelStyleInfo}">
+                            x:Name="lblTextToSpeech"
+                            Style="{StaticResource labelStyleInfo}"
+                            Text="{x:Static resx:CubeLang.InfoTextToSpeech_Text}">
+                        </Label>
+
+                        <Label
+                            x:Name="lblLanguage"
+                            Style="{StaticResource labelStyleInfo}"
+                            Text="{x:Static resx:CubeLang.InfoLanguage_Text}">
+                        </Label>
+
+                        <Label
+                            x:Name="lblContact"
+                            Style="{StaticResource labelStyleInfo}"
+                            Text="{x:Static resx:CubeLang.InfoContact_Text}">
                         </Label>
                     </VerticalStackLayout>
 

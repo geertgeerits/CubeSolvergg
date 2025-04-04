@@ -216,15 +216,6 @@ A másik oldalon mindig „el kell képzelnie”, hogy közvetlenül a megfordí
 3-4. karakter: Zöld
 5-6. karakter: Kék</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Szövegfelolvasó: Nem minden nyelv támogatott, amely az alkalmazás beállításaiban található.
-Ez az opció készülékenként és a telepített nyelvektől függően változik. Lehetséges, hogy egyes nyelvek esetében a beszédre és beszédről történő fordítást az interneten keresztül végzik az érintett szolgálatok.
-
-A szöveg fordításához a Google Fordítót használtuk. Ez nem garancia arra, hogy minden fordítás helyes.
-A támogatott nyelvek: kínai, cseh, dán, holland, angol, finn, francia, német, magyar, olasz, japán, koreai, norvég, lengyel, portugál, román, spanyol, svéd és ukrán.
-
-Bármilyen javításért bármikor fordulhat hozzám.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Információ</value>
   </data>
@@ -664,5 +655,16 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>másodpercet is igénybe vehet</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>A szöveg fordításához a Google Fordítót használtuk. Ez nem garancia arra, hogy minden fordítás helyes.
+A támogatott nyelvek: kínai, cseh, dán, holland, angol, finn, francia, német, magyar, olasz, japán, koreai, norvég, lengyel, portugál, román, spanyol, svéd és ukrán.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Bármilyen javításért bármikor fordulhat hozzám.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Szövegfelolvasó: Nem minden nyelv támogatott, amely az alkalmazás beállításaiban található.
+Ez az opció készülékenként és a telepített nyelvektől függően változik. Lehetséges, hogy egyes nyelvek esetében a beszédre és beszédről történő fordítást az interneten keresztül végzik az érintett szolgálatok.</value>
   </data>
 </root>

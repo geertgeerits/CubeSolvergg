@@ -216,15 +216,6 @@ Postacie 1-2: Czerwony
 Postacie 3-4: Zielony
 Postacie 5-6: Niebieski</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Tekst na mowę: Nie wszystkie języki, które są dostępne w ustawieniach aplikacji, są obsługiwane.
-Ta opcja różni się w zależności od urządzenia i zainstalowanych języków. Możliwe, że w przypadku niektórych języków tłumaczenie na mowę i z mowy jest wykonywane przez Internet przez odpowiednie usługi.
-
-Do tłumaczenia tekstu użyto Tłumacza Google. Nie gwarantuje to, że wszystkie tłumaczenia są poprawne.
-Obsługiwane języki to: chiński, czeski, duński, holenderski, angielski, fiński, francuski, niemiecki, węgierski, włoski, japoński, koreański, norweski, polski, portugalski, rumuński, hiszpański, szwedzki i ukraiński.
-
-Zawsze możesz skontaktować się ze mną w celu dokonania wszelkich korekt.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Informacje</value>
   </data>
@@ -664,5 +655,16 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>sekund</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Do tłumaczenia tekstu użyto Tłumacza Google. Nie gwarantuje to, że wszystkie tłumaczenia są poprawne.
+Obsługiwane języki to: chiński, czeski, duński, holenderski, angielski, fiński, francuski, niemiecki, węgierski, włoski, japoński, koreański, norweski, polski, portugalski, rumuński, hiszpański, szwedzki i ukraiński.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Zawsze możesz skontaktować się ze mną w celu dokonania wszelkich korekt.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Tekst na mowę: Nie wszystkie języki, które są dostępne w ustawieniach aplikacji, są obsługiwane.
+Ta opcja różni się w zależności od urządzenia i zainstalowanych języków. Możliwe, że w przypadku niektórych języków tłumaczenie na mowę i z mowy jest wykonywane przez Internet przez odpowiednie usługi.</value>
   </data>
 </root>

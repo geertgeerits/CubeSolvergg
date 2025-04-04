@@ -216,15 +216,6 @@ Personajele 1-2: Roșu
 Personajele 3-4: Verde
 Personajele 5-6: Albastru</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Texto para fala: nem todos os idiomas fornecidos nas configurações do aplicativo são suportados.
-Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É possível que, para alguns idiomas, a tradução de e para a fala seja feita pela internet pelos serviços envolvidos.
-
-O Google Translate foi usado para a tradução do texto. Isso não é uma garantia de que todas as traduções estejam corretas.
-Os idiomas suportados são: chinês, tcheco, dinamarquês, holandês, inglês, finlandês, francês, alemão, húngaro, italiano, japonês, coreano, norueguês, polonês, português, romeno, espanhol, sueco e ucraniano.
-
-Você sempre pode entrar em contato comigo para quaisquer correções.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Informație</value>
   </data>
@@ -664,5 +655,16 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>de secunde</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>O Google Translate foi usado para a tradução do texto. Isso não é uma garantia de que todas as traduções estejam corretas.
+Os idiomas suportados são: chinês, tcheco, dinamarquês, holandês, inglês, finlandês, francês, alemão, húngaro, italiano, japonês, coreano, norueguês, polonês, português, romeno, espanhol, sueco e ucraniano.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Você sempre pode entrar em contato comigo para quaisquer correções.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Texto para fala: nem todos os idiomas fornecidos nas configurações do aplicativo são suportados.
+Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É possível que, para alguns idiomas, a tradução de e para a fala seja feita pela internet pelos serviços envolvidos.</value>
   </data>
 </root>

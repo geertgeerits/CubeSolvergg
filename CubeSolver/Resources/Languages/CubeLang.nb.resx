@@ -216,15 +216,6 @@ Tegn 1-2: Rød
 Tegn 3-4: Grønn
 Tegn 5-6: Blå</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Tekst til tale: Ikke alle språk støttes som er gitt i applikasjonsinnstillingene.
-Dette alternativet varierer fra enhet til enhet og de installerte språkene. Det er mulig at for noen språk blir oversettelsen til og fra tale gjort over internett av de aktuelle tjenestene.
-
-Google Translate ble brukt til oversettelsen av teksten. Dette er ikke en garanti for at alle oversettelser er korrekte.
-Støttespråkene er: kinesisk, tsjekkisk, dansk, nederlandsk, engelsk, finsk, fransk, tysk, ungarsk, italiensk, japansk, koreansk, norsk, polsk, portugisisk, rumensk, spansk, svensk og ukrainsk.
-
-Du kan alltid kontakte meg for eventuelle rettelser.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Informasjon</value>
   </data>
@@ -664,5 +655,16 @@ Dette er ikke en garanti for at alle kuber kan løses.</value>
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>sekunder</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Google Translate ble brukt til oversettelsen av teksten. Dette er ikke en garanti for at alle oversettelser er korrekte.
+Støttespråkene er: kinesisk, tsjekkisk, dansk, nederlandsk, engelsk, finsk, fransk, tysk, ungarsk, italiensk, japansk, koreansk, norsk, polsk, portugisisk, rumensk, spansk, svensk og ukrainsk.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Du kan alltid kontakte meg for eventuelle rettelser.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Tekst til tale: Ikke alle språk støttes som er gitt i applikasjonsinnstillingene.
+Dette alternativet varierer fra enhet til enhet og de installerte språkene. Det er mulig at for noen språk blir oversettelsen til og fra tale gjort over internett av de aktuelle tjenestene.</value>
   </data>
 </root>

@@ -216,15 +216,6 @@
 문자 3-4: 녹색
 문자 5-6: 파란색</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>텍스트 음성 변환: 애플리케이션 설정에서 제공되는 모든 언어가 지원되는 것은 아닙니다.
-이 옵션은 기기와 설치된 언어에 따라 다릅니다. 일부 언어의 경우 해당 서비스에서 인터넷을 통해 음성으로 번역하거나 음성에서 음성으로 번역할 수 있습니다.
-
-텍스트 번역에는 Google Translate가 사용되었습니다. 이는 모든 번역이 정확하다는 보장은 없습니다.
-지원 언어는 다음과 같습니다. 중국어, 체코어, 덴마크어, 네덜란드어, 영어, 핀란드어, 프랑스어, 독일어, 헝가리어, 이탈리아어, 일본어, 한국어, 노르웨이어, 폴란드어, 포르투갈어, 루마니아어, 스페인어, 스웨덴어, 우크라이나어.
-
-수정 사항이 있으면 언제든지 저에게 연락하세요.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>정보</value>
   </data>
@@ -664,5 +655,16 @@
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>초</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>텍스트 번역에는 Google Translate가 사용되었습니다. 이는 모든 번역이 정확하다는 보장은 없습니다.
+지원 언어는 다음과 같습니다. 중국어, 체코어, 덴마크어, 네덜란드어, 영어, 핀란드어, 프랑스어, 독일어, 헝가리어, 이탈리아어, 일본어, 한국어, 노르웨이어, 폴란드어, 포르투갈어, 루마니아어, 스페인어, 스웨덴어, 우크라이나어.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>수정 사항이 있으면 언제든지 저에게 연락하세요.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>텍스트 음성 변환: 애플리케이션 설정에서 제공되는 모든 언어가 지원되는 것은 아닙니다.
+이 옵션은 기기와 설치된 언어에 따라 다릅니다. 일부 언어의 경우 해당 서비스에서 인터넷을 통해 음성으로 번역하거나 음성에서 음성으로 번역할 수 있습니다.</value>
   </data>
 </root>

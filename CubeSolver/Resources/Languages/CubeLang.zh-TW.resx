@@ -216,15 +216,6 @@
 角色 3-4：綠色
 角色 5-6：藍色</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>文本转语音：应用程序设置中提供的所有语言均不受支持。
-此选项因设备和安装的语言而异。对于某些语言，相关服务可能会通过互联网完成语音转语音。
-
-使用 Google 翻译翻译文本。这并不能保证所有翻译都是正确的。
-支持的语言包括：中文、捷克语、丹麦语、荷兰语、英语、芬兰语、法语、德语、匈牙利语、意大利语、日语、韩语、挪威语、波兰语、葡萄牙语、罗马尼亚语、西班牙语、瑞典语和乌克兰语。
-
-您可以随时联系我进行任何更正。</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>資訊</value>
   </data>
@@ -664,5 +655,16 @@
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>秒</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>使用 Google 翻译翻译文本。这并不能保证所有翻译都是正确的。
+支持的语言包括：中文、捷克语、丹麦语、荷兰语、英语、芬兰语、法语、德语、匈牙利语、意大利语、日语、韩语、挪威语、波兰语、葡萄牙语、罗马尼亚语、西班牙语、瑞典语和乌克兰语。</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>您可以随时联系我进行任何更正。</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>文本转语音：应用程序设置中提供的所有语言均不受支持。
+此选项因设备和安装的语言而异。对于某些语言，相关服务可能会通过互联网完成语音转语音。</value>
   </data>
 </root>

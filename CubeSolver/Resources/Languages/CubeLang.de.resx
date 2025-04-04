@@ -216,17 +216,6 @@ Zeichen 1-2: Rot
 Zeichen 3-4: Grün
 Zeichen 5-6: Blau</value>
   </data>
-  <data name="InfoExplanation_Text" xml:space="preserve">
-    <value>Text-to-Speech: Es werden nicht alle in den App-Einstellungen verfügbaren Sprachen unterstützt.
-
-Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich, dass die Übersetzung in und aus Sprache für einige Sprachen von den jeweiligen Diensten über das Internet erfolgt.
-
-Für die Übersetzung des Textes wurde Google Translate verwendet. Dies ist keine Garantie für die Richtigkeit aller Übersetzungen.
-
-Die unterstützten Sprachen sind: Chinesisch, Tschechisch, Dänisch, Niederländisch, Englisch, Finnisch, Französisch, Deutsch, Ungarisch, Italienisch, Japanisch, Koreanisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Spanisch, Schwedisch und Ukrainisch.
-
-Bei Korrekturen können Sie mich jederzeit kontaktieren.</value>
-  </data>
   <data name="Info_Text" xml:space="preserve">
     <value>Information</value>
   </data>
@@ -666,5 +655,16 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
   </data>
   <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
     <value>Sekunden dauern</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Für die Übersetzung des Textes wurde Google Translate verwendet. Dies ist keine Garantie für die Richtigkeit aller Übersetzungen.
+Die unterstützten Sprachen sind: Chinesisch, Tschechisch, Dänisch, Niederländisch, Englisch, Finnisch, Französisch, Deutsch, Ungarisch, Italienisch, Japanisch, Koreanisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Spanisch, Schwedisch und Ukrainisch.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Bei Korrekturen können Sie mich jederzeit kontaktieren.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Text-to-Speech: Es werden nicht alle in den App-Einstellungen verfügbaren Sprachen unterstützt.
+Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich, dass die Übersetzung in und aus Sprache für einige Sprachen von den jeweiligen Diensten über das Internet erfolgt.</value>
   </data>
 </root>
