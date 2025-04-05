@@ -328,6 +328,99 @@ Tidak diperbolehkan:</value>
   <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
     <value>Tombol alih: Mengatur warna pada kubus</value>
   </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Putar sisi belakang setengah putaran.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Putar sisi belakang seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Putar sisi belakang seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Putar sisi bawah setengah putaran.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Putar sisi bawah seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Putar sisi bawah seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian depannya mengarah ke bawah, sisi kanannya tetap di sebelah kanan.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian depannya berada di sisi kiri, sisi atasnya tetap di atas.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian depannya menghadap ke sisi kanan, sisi atasnya tetap di atas.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian depannya mengarah ke atas, sisi kanannya tetap di sebelah kanan.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian atasnya berada di sisi kiri, sisi depan tetap di depan.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian atasnya menghadap ke sisi kanan, sisi depan tetap di depan.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Belokannya adalah lapisan tengah depan atau seperempat belokan ke sisi kanan (-).</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Putar lapisan tengah depan seperempat putaran ke sisi atas (+).</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Belokannya ke arah depan setengah putaran.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Putar sisi depan seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Putar sisi depan seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Belokannya setengah putaran ke kiri.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Putar sisi kiri seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Putar sisi kiri seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Putar lapisan tengah dan setengah putaran.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Putar lapisan tengah kanan seperempat putaran ke sisi depan (+).</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Putar lapisan tengah kanan seperempat putaran ke sisi atas (-).</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Belokannya setengah putaran ke kanan.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Putar sisi kanan seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Putar sisi kanan seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Belokannya adalah lapisan tengah atas atau seperempat putaran ke sisi depan (-).</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Putar lapisan tengah atas seperempat putaran ke sisi kanan (+).</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Belokannya ke sisi atas setengah putaran.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Putar sisi atas seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Putar sisi atas seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Versi:</value>
   </data>
@@ -341,6 +434,15 @@ Tidak diperbolehkan:</value>
     <value>Kubus tidak dapat dipecahkan.
 
 Kemungkinan penyebabnya adalah transfer warna yang salah ke kubus ini.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian depan menghadap ke belakang, sisi kanan tetap di kanan.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian depan menghadap ke belakang, sisi atas tetap di atas.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Putar seluruh kubus sehingga bagian atasnya mengarah ke bawah, sisi depannya tetap di depan.</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>Waktu dalam milidetik:</value>
@@ -367,6 +469,60 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
   </data>
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>Dari setiap warna yang tersedia, harus ada empat warna yang sama pada kubus sudut.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Putar lapisan belakang dan tengah setengah putaran.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Putar lapisan belakang dan tengah bersama-sama seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Putar lapisan belakang dan tengah bersama-sama seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Putar lapisan bawah dan tengah bersama-sama setengah putaran.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Putar lapisan bawah dan tengah bersama-sama seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Putar lapisan bawah dan tengah bersama-sama seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Putar lapisan depan dan tengah bersama-sama setengah putaran.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Putar lapisan depan dan tengah bersama-sama seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Putar lapisan depan dan tengah bersama-sama seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Putar lapisan kiri dan tengah bersama-sama setengah putaran.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Putar lapisan kiri dan tengah bersama-sama seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Putar lapisan kiri dan tengah bersama-sama seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Putar lapisan kanan dan tengah bersama-sama setengah putaran.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Putar lapisan kanan dan tengah bersama-sama seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Putar lapisan kanan dan tengah bersama-sama seperempat putaran 'searah jarum jam' (+).</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Putar lapisan atas dan tengah setengah putaran.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Putar lapisan atas dan tengah bersama-sama seperempat putaran 'berlawanan arah jarum jam' (-).</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Putar lapisan atas dan tengah bersama-sama seperempat putaran 'searah jarum jam' (+).</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Kirim email ke penulis aplikasi ini</value>
