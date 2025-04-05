@@ -477,7 +477,7 @@ namespace CubeSolver.Resources.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to Google Translate was used for the translation of the text. This is not a guarantee that all translations are correct.
-        ///The supporting languages are: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish and Ukrainian..
+        ///The supporting languages are: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish and Ukrainian..
         /// </summary>
         internal static string InfoLanguage_Text {
             get {

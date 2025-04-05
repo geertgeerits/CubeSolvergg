@@ -657,8 +657,8 @@ Ceci ne garantit pas que tous les cubes peuvent être résolus.</value>
     <value>secondes</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
-    <value>Google Traduction a été utilisé pour la traduction du texte. Ceci ne garantit pas l’exactitude de toutes les traductions.
-Les langues prises en charge sont : chinois, tchèque, danois, néerlandais, anglais, finnois, français, allemand, hongrois, italien, japonais, coréen, norvégien, polonais, portugais, roumain, espagnol, suédois et ukrainien.</value>
+    <value>Google Traduction a été utilisé pour la traduction du texte. Ceci ne garantit pas l'exactitude de toutes les traductions.
+Les langues prises en charge sont : allemand, anglais, chinois, coréen, danois, espagnol, finnois, français, hindi, hongrois, indonésien, italien, japonais, néerlandais, norvégien, polonais, portugais, roumain, suédois, tchèque et ukrainien.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Vous pouvez me contacter à tout moment pour toute correction.</value>

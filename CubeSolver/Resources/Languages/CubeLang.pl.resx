@@ -657,8 +657,8 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
     <value>sekund</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
-    <value>Do tłumaczenia tekstu użyto Tłumacza Google. Nie gwarantuje to, że wszystkie tłumaczenia są poprawne.
-Obsługiwane języki to: chiński, czeski, duński, holenderski, angielski, fiński, francuski, niemiecki, węgierski, włoski, japoński, koreański, norweski, polski, portugalski, rumuński, hiszpański, szwedzki i ukraiński.</value>
+    <value>Do przetłumaczenia tekstu użyto Tłumacza Google. Nie gwarantuje to, że wszystkie tłumaczenia są poprawne.
+Języki pomocnicze to: chiński, czeski, duński, holenderski, angielski, fiński, francuski, niemiecki, hindi, węgierski, indonezyjski, włoski, japoński, koreański, norweski, polski, portugalski, rumuński, hiszpański, szwedzki i ukraiński.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Zawsze możesz skontaktować się ze mną w celu dokonania wszelkich korekt.</value>
