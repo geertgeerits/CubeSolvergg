@@ -65,6 +65,25 @@ namespace CubeSolver
                 {
                     if (!string.IsNullOrEmpty(cCultureName))
                     {
+                        // Search for the indonesian speech language as 'id' and 'in'
+                        // Android generating old/wrong language code for Indonesia - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
+                        if (cCultureName == "id")
+                        {
+                            for (int nItem = 0; nItem < nTotalItems; nItem++)
+                            {
+                                if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
+                                {
+                                    Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
+                                    return;
+                                }
+                                else
+                                {
+                                    cCultureName = "in";
+                                    Globals.cLanguageSpeech = "in";
+                                }
+                            }
+                        }
+
                         // Search for the speech language as 'en-US'
                         for (int nItem = 0; nItem < nTotalItems; nItem++)
                         {
@@ -107,9 +126,9 @@ namespace CubeSolver
         /// <summary>
         /// Convert text to speech
         /// </summary>
-        /// <param name="cTurnCubeText"></param>
+        /// <param name="cText"></param>
         /// <returns></returns>
-        public static async Task ConvertTextToSpeechAsync(string cTurnCubeText)
+        public static async Task ConvertTextToSpeechAsync(string cText)
         {
             /* If you do not wait long enough to press the arrow key in the Task 'MakeExplainTurnAsync()',
                an error message will sometimes appear: 'The operation was canceled'.
@@ -128,7 +147,7 @@ namespace CubeSolver
             }
 
             // Start with the text to speech
-            if (cTurnCubeText is not null and not "")
+            if (cText is not null and not "")
             {
                 Globals.bTextToSpeechIsBusy = true;
 
@@ -138,10 +157,10 @@ namespace CubeSolver
 
                     SpeechOptions options = new()
                     {
-                        Locale = locales?.Single(l => l.Language + "-" + l.Country + " " + l.Name == Globals.cLanguageSpeech)
+                        Locale = locales?.Single(static l => l.Language + "-" + l.Country + " " + l.Name == Globals.cLanguageSpeech)
                     };
 
-                    await TextToSpeech.Default.SpeakAsync(cTurnCubeText, options, cancelToken: Globals.cts.Token);
+                    await TextToSpeech.Default.SpeakAsync(cText, options, cancelToken: Globals.cts.Token);
                     Globals.bTextToSpeechIsBusy = false;
                 }
                 catch (Exception ex)
@@ -169,5 +188,23 @@ namespace CubeSolver
                 Globals.bTextToSpeechIsBusy = false;
             }
         }
+
+        ///// <summary>
+        ///// Get the current language tag and map old language codes to new ones
+        ///// </summary>
+        ///// <returns></returns>
+        //public static string GetCurrentLanguageTag()
+        //{
+        //    string languageTag = CultureInfo.CurrentCulture.Name;
+
+        //    // Map old language codes to new ones
+        //    return languageTag switch
+        //    {
+        //        "iw" => "he",       // Hebrew
+        //        "ji" => "yi",       // Yiddish
+        //        "in" => "id",       // Indonesian
+        //        _ => languageTag
+        //    };
+        //}
     }
 }

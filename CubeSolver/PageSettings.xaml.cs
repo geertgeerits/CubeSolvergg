@@ -53,8 +53,8 @@ namespace CubeSolver
                 "ko" => 7,      // 한국어 (Hangugeo) - Korean
                 "hi" => 8,      // हिन्दी (Hindī)
                 "it" => 9,      // Italiano - Italian
-                "hu" => 10,      // Magyar - Hungarian
-                "nl" => 11,      // Nederlands - Dutch
+                "hu" => 10,     // Magyar - Hungarian
+                "nl" => 11,     // Nederlands - Dutch
                 "ja" => 12,     // 日本語 (Nihongo) - Japanese
                 "nb" => 13,     // Norsk Bokmål - Norwegian Bokmål
                 "pl" => 14,     // Polski - Polish
@@ -153,6 +153,20 @@ namespace CubeSolver
                         {
                             pckLanguageSpeech.SelectedIndex = nItem;
                             break;
+                        }
+                    }
+
+                    // Search for the indonesian speech language as 'id' and 'in'
+                    // Android generating old/wrong language code for Indonesia - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
+                    if (Globals.cLanguage == "id")
+                    {
+                        for (int nItem = 0; nItem < nTotalItems; nItem++)
+                        {
+                            if (Globals.cLanguageLocales[nItem].StartsWith("in"))
+                            {
+                                pckLanguageSpeech.SelectedIndex = nItem;
+                                break;
+                            }
                         }
                     }
                 }
