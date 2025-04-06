@@ -67,7 +67,7 @@ namespace CubeSolver
                     {
                         // Search for the indonesian speech language as 'id' and 'in'
                         // Android generating old/wrong language code for Indonesia - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
-                        if (cCultureName == "id")
+                        if (cCultureName.StartsWith("id"))
                         {
                             for (int nItem = 0; nItem < nTotalItems; nItem++)
                             {
@@ -78,8 +78,7 @@ namespace CubeSolver
                                 }
                                 else
                                 {
-                                    cCultureName = "in";
-                                    Globals.cLanguageSpeech = "in";
+                                    cCultureName = "in-ID";
                                 }
                             }
                         }

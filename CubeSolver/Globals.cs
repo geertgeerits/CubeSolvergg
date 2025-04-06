@@ -121,11 +121,11 @@ namespace CubeSolver
         /// <summary>
         /// Set the current UI culture of the selected language
         /// </summary>
-        public static void SetCultureSelectedLanguage()
+        public static void SetCultureSelectedLanguage(string cCultureName)
         {
             try
             {
-                CultureInfo switchToCulture = new(cLanguage);
+                CultureInfo switchToCulture = new(cCultureName);
                 LocalizationResourceManager.Instance.SetCulture(switchToCulture);
             }
             catch

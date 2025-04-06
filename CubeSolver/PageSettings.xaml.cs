@@ -137,7 +137,7 @@ namespace CubeSolver
                 Globals.bLanguageChanged = true;
 
                 // Set the current UI culture of the selected language
-                Globals.SetCultureSelectedLanguage();
+                Globals.SetCultureSelectedLanguage(Globals.cLanguage);
 
                 // Put text in the chosen language in the controls and variables
                 SetLanguage();
@@ -158,7 +158,7 @@ namespace CubeSolver
 
                     // Search for the indonesian speech language as 'id' and 'in'
                     // Android generating old/wrong language code for Indonesia - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
-                    if (Globals.cLanguage == "id")
+                    if (Globals.cLanguage.StartsWith("id"))
                     {
                         for (int nItem = 0; nItem < nTotalItems; nItem++)
                         {
@@ -237,6 +237,20 @@ namespace CubeSolver
                     for (int nItem = 0; nItem < nTotalItems; nItem++)
                     {
                         if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
+                        {
+                            pckLanguageSpeech.SelectedIndex = nItem;
+                            return;
+                        }
+                    }
+                }
+
+                // Search for the indonesian speech language as 'id' and 'in'
+                // Android generating old/wrong language code for Indonesia - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
+                if (Globals.cLanguage.StartsWith("id"))
+                {
+                    for (int nItem = 0; nItem < nTotalItems; nItem++)
+                    {
+                        if (Globals.cLanguageLocales[nItem].StartsWith("in"))
                         {
                             pckLanguageSpeech.SelectedIndex = nItem;
                             return;

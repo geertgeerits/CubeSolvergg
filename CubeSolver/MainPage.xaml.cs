@@ -100,6 +100,11 @@ namespace CubeSolver
             Globals.SetTheme();
 
             //// Get and set the user interface language after a first start or reset of the application
+            // For testing the Indonesian language
+            //Globals.cLanguage = "id";
+            //Globals.cLanguageSpeech = "id-ID";
+            //Globals.SetCultureSelectedLanguage("id-ID");
+
             try
             {
                 if (string.IsNullOrEmpty(Globals.cLanguage))
@@ -401,8 +406,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 315-316 and 379-402 (and change the line 426 to bTestSolveCube = true)
-                // and uncomment one of the lines 409-411 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 320-321 and 384-407 (and change the line 431 to bTestSolveCube = true)
+                // and uncomment one of the lines 414-416 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -2176,7 +2181,7 @@ namespace CubeSolver
         private void SetTextLanguage()
         {
             // Set the current UI culture of the selected language
-            Globals.SetCultureSelectedLanguage();
+            Globals.SetCultureSelectedLanguage(Globals.cLanguage);
 
             // Set the text of the controls
             lblCubeOutsideView.Text = CubeLang.CubeOutsideView_Text;
