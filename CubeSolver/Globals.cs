@@ -14,7 +14,6 @@ namespace CubeSolver
         public static bool bLanguageChanged;
         public static string cLanguageSpeech = string.Empty;
         public static string[]? cLanguageLocales;
-        public static bool bLanguageLocalesExist;
         public static bool bExplainText;
         public static bool bExplainSpeech;
         public static bool bTextToSpeechIsBusy;

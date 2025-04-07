@@ -10,7 +10,7 @@ namespace CubeSolver
         /// Initialize text to speech and fill the the array with the speech languages
         /// <para>.Country = KR ; .Id = ''  ; .Language = ko ; .Name = Korean (South Korea) ;</para>
         /// </summary>
-        public static async void InitializeTextToSpeech()
+        public static async Task<bool> InitializeTextToSpeechAsync()
         {
             // Initialize text to speech
             int nTotalItems;
@@ -23,7 +23,7 @@ namespace CubeSolver
 
                 if (nTotalItems == 0)
                 {
-                    return;
+                    return false;
                 }
             }
             catch (Exception ex)
@@ -32,11 +32,8 @@ namespace CubeSolver
 #if DEBUG
                 await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message + "\n\n" + CubeLang.TextToSpeechError_Text, CubeLang.ButtonClose_Text);
 #endif
-                Globals.bExplainSpeech = false;
-                return;
+                return false;
             }
-
-            Globals.bLanguageLocalesExist = true;
 
             // Put the locales in the array and sort the array
             Globals.cLanguageLocales = new string[nTotalItems];
@@ -49,14 +46,18 @@ namespace CubeSolver
             }
 
             Array.Sort(Globals.cLanguageLocales);
+
+            return true;
         }
 
         /// <summary>
-        /// Search for the language after a first start or reset of the application
+        /// // Search the selected language in the cLanguageLocales array
         /// </summary>
         /// <param name="cCultureName"></param>
-        public static void SearchArrayWithSpeechLanguages(string cCultureName)
+        public static int SearchArrayWithSpeechLanguages(string cCultureName)
         {
+            Debug.WriteLine("SearchArrayWithSpeechLanguages - cCultureName: " + cCultureName);
+
             try
             {
                 int nTotalItems = Globals.cLanguageLocales?.Length ?? 0;
@@ -74,13 +75,11 @@ namespace CubeSolver
                                 if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
                                 {
                                     Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
-                                    return;
-                                }
-                                else
-                                {
-                                    cCultureName = "in-ID";
+                                    return nItem;
                                 }
                             }
+
+                            cCultureName = "in-ID";
                         }
 
                         // Search for the speech language as 'en-US'
@@ -89,7 +88,7 @@ namespace CubeSolver
                             if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
                             {
                                 Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
-                                return;
+                                return nItem;
                             }
                         }
 
@@ -102,7 +101,7 @@ namespace CubeSolver
                             if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
                             {
                                 Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
-                                return;
+                                return nItem;
                             }
                         }
                     }
@@ -112,6 +111,7 @@ namespace CubeSolver
                 if (string.IsNullOrEmpty(Globals.cLanguageSpeech) && nTotalItems > 0)
                 {
                     Globals.cLanguageSpeech = Globals.cLanguageLocales![0];
+                    return 0;
                 }
             }
             catch (Exception ex)
@@ -120,6 +120,8 @@ namespace CubeSolver
                 Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
 #endif
             }
+
+            return 0;
         }
 
         /// <summary>

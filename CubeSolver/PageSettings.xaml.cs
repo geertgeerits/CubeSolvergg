@@ -41,7 +41,7 @@ namespace CubeSolver
             //// Put text in the chosen language in the controls and variables
             SetLanguage();
 
-            //// Set the current language in the picker
+            //// Select the current language in the picker
             pckLanguage.SelectedIndex = Globals.cLanguage switch
             {
                 "id" => 0,      // Bahasa Indonesia
@@ -75,6 +75,7 @@ namespace CubeSolver
             swtUseKociembaSolution.IsToggled = Globals.bKociembaSolution;
             swtExplainText.IsToggled = Globals.bExplainText;
             swtExplainSpeech.IsToggled = Globals.bExplainSpeech;
+            swtExplainSpeech.IsEnabled = Globals.bExplainSpeech;
 
             //// Initialize the cube colors
             plgCubeColor1.Fill = Color.FromArgb(Globals.aFaceColors[1]);
@@ -142,34 +143,9 @@ namespace CubeSolver
                 // Put text in the chosen language in the controls and variables
                 SetLanguage();
 
-                // Search the new language in the cLanguageLocales array and select the new speech language
-                if (Globals.cLanguageLocales is not null)
-                {
-                    int nTotalItems = Globals.cLanguageLocales.Length;
-
-                    for (int nItem = 0; nItem < nTotalItems; nItem++)
-                    {
-                        if (Globals.cLanguageLocales[nItem].StartsWith(Globals.cLanguage))
-                        {
-                            pckLanguageSpeech.SelectedIndex = nItem;
-                            break;
-                        }
-                    }
-
-                    // Search for the indonesian speech language as 'id' and 'in'
-                    // Android generating old/wrong language code for Indonesia - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
-                    if (Globals.cLanguage.StartsWith("id"))
-                    {
-                        for (int nItem = 0; nItem < nTotalItems; nItem++)
-                        {
-                            if (Globals.cLanguageLocales[nItem].StartsWith("in"))
-                            {
-                                pckLanguageSpeech.SelectedIndex = nItem;
-                                break;
-                            }
-                        }
-                    }
-                }
+                // Search the selected language in the cLanguageLocales array and select the new speech language
+                pckLanguageSpeech.SelectedIndex = ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguage);
+                Debug.WriteLine("pckLanguageSpeech.SelectedIndex: " + pckLanguageSpeech.SelectedIndex);
             }
         }
 
@@ -200,70 +176,24 @@ namespace CubeSolver
         /// </summary>
         private void FillPickerWithSpeechLanguages()
         {
-            // .Country = KR ; .Id = ''  ; .Language = ko ; .Name = Korean (South Korea) ;
-
             // If there are no locales then return
-            bool bIsSetSelectedIndex = false;
-
-            if (!Globals.bLanguageLocalesExist)
+            if (Globals.cLanguageLocales is null)
             {
                 pckLanguageSpeech.IsEnabled = false;
                 return;
             }
 
             // Put the sorted locales from the array in the picker and select the saved language
-            if (Globals.cLanguageLocales is not null)
+            int nTotalItems = Globals.cLanguageLocales.Length;
+
+            // Add the locales to the picker and select the language
+            for (int nItem = 0; nItem < nTotalItems; nItem++)
             {
-                int nTotalItems = Globals.cLanguageLocales.Length;
-
-                // Add the locales to the picker and select the language
-                for (int nItem = 0; nItem < nTotalItems; nItem++)
-                {
-                    pckLanguageSpeech.Items.Add(Globals.cLanguageLocales[nItem]);
-
-                    if (Globals.cLanguageSpeech == Globals.cLanguageLocales[nItem])
-                    {
-                        pckLanguageSpeech.SelectedIndex = nItem;
-                        bIsSetSelectedIndex = true;
-                    }
-                }
-
-                // If the language was not found select the language without the region
-                if (!bIsSetSelectedIndex)
-                {
-                    // Select the characters before the first hyphen if there is a hyphen in the string
-                    string cCultureName = Globals.cLanguageSpeech.Split('-')[0];
-
-                    for (int nItem = 0; nItem < nTotalItems; nItem++)
-                    {
-                        if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
-                        {
-                            pckLanguageSpeech.SelectedIndex = nItem;
-                            return;
-                        }
-                    }
-                }
-
-                // Search for the indonesian speech language as 'id' and 'in'
-                // Android generating old/wrong language code for Indonesia - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
-                if (Globals.cLanguage.StartsWith("id"))
-                {
-                    for (int nItem = 0; nItem < nTotalItems; nItem++)
-                    {
-                        if (Globals.cLanguageLocales[nItem].StartsWith("in"))
-                        {
-                            pckLanguageSpeech.SelectedIndex = nItem;
-                            return;
-                        }
-                    }
-                }
+                pckLanguageSpeech.Items.Add(Globals.cLanguageLocales[nItem]);
             }
 
-            // If the language is not found set the picker to the first item
-            if (!bIsSetSelectedIndex)
-            {
-                pckLanguageSpeech.SelectedIndex = 0;
-            }
+            // Search the selected language in the cLanguageLocales array and select the new speech language
+            pckLanguageSpeech.SelectedIndex = ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
 
             Debug.WriteLine("FillPickerWithSpeechLanguages - Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
         }
