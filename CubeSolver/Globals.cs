@@ -16,6 +16,7 @@ namespace CubeSolver
         public static string[]? cLanguageLocales;
         public static bool bExplainText;
         public static bool bExplainSpeech;
+        public static bool bExplainSpeechAvailable;
         public static bool bTextToSpeechIsBusy;
         public static CancellationTokenSource? cts;
         public static bool bKociembaSolution;

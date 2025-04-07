@@ -179,7 +179,12 @@ namespace CubeSolver
         /// </summary>
         private static async void InitializeTextToSpeech()
         {
-            Globals.bExplainSpeech = await ClassSpeech.InitializeTextToSpeechAsync();
+            Globals.bExplainSpeechAvailable = await ClassSpeech.InitializeTextToSpeechAsync();
+
+            if (!Globals.bExplainSpeechAvailable)
+            {
+                Globals.bExplainSpeech = false;
+            }
         }
 
         //// TitleView buttons clicked events
@@ -413,8 +418,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 327-328 and 391-414 (and change the line 438 to bTestSolveCube = true)
-                // and uncomment one of the lines 421-423 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 332-333 and 396-419 (and change the line 443 to bTestSolveCube = true)
+                // and uncomment one of the lines 426-428 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 

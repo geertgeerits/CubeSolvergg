@@ -75,7 +75,7 @@ namespace CubeSolver
             swtUseKociembaSolution.IsToggled = Globals.bKociembaSolution;
             swtExplainText.IsToggled = Globals.bExplainText;
             swtExplainSpeech.IsToggled = Globals.bExplainSpeech;
-            swtExplainSpeech.IsEnabled = Globals.bExplainSpeech;
+            swtExplainSpeech.IsEnabled = Globals.bExplainSpeechAvailable;
 
             //// Initialize the cube colors
             plgCubeColor1.Fill = Color.FromArgb(Globals.aFaceColors[1]);
