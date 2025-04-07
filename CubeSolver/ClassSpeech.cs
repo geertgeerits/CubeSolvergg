@@ -7,6 +7,19 @@ namespace CubeSolver
         private static IEnumerable<Locale>? locales;
 
         /// <summary>
+        /// Initialize text to speech
+        /// </summary>
+        public static async void InitializeTextToSpeech()
+        {
+            Globals.bExplainSpeechAvailable = await InitializeTextToSpeechAsync();
+
+            if (!Globals.bExplainSpeechAvailable)
+            {
+                Globals.bExplainSpeech = false;
+            }
+        }
+
+        /// <summary>
         /// Initialize text to speech and fill the the array with the speech languages
         /// <para>.Country = KR ; .Id = ''  ; .Language = ko ; .Name = Korean (South Korea) ;</para>
         /// </summary>
