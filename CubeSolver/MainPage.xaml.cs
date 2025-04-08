@@ -104,7 +104,6 @@ namespace CubeSolver
             //Globals.cLanguage = "id";
             //Globals.cLanguageSpeech = "id-ID";
             //Globals.SetCultureSelectedLanguage("id-ID");
-
             try
             {
                 if (string.IsNullOrEmpty(Globals.cLanguage))
@@ -410,8 +409,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 324-325 and 388-411 (and change the line 435 to bTestSolveCube = true)
-                // and uncomment one of the lines 418-420 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 323-324 and 387-410 (and change the line 434 to bTestSolveCube = true)
+                // and uncomment one of the lines 417-419 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
