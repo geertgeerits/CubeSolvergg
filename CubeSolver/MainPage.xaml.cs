@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.39
- * Date ........: 2025-04-07 (YYYY-MM-DD)
+ * Date ........: 2025-04-08 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -132,6 +132,11 @@ namespace CubeSolver
 
             //// Initialize text to speech
             ClassSpeech.InitializeTextToSpeech();
+
+            if (!Globals.bTextToSpeechAvailable)
+            {
+                Globals.bExplainSpeech = false;
+            }
 
             // Search for the speech language after a first start or reset of the application
             try
@@ -405,8 +410,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 319-320 and 383-406 (and change the line 430 to bTestSolveCube = true)
-                // and uncomment one of the lines 413-415 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 324-325 and 388-411 (and change the line 435 to bTestSolveCube = true)
+                // and uncomment one of the lines 418-420 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 

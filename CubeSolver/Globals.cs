@@ -13,12 +13,10 @@ namespace CubeSolver
         public static string cLanguage = string.Empty;
         public static bool bLanguageChanged;
         public static string cLanguageSpeech = string.Empty;
-        public static string[]? cLanguageLocales;
         public static bool bExplainText;
         public static bool bExplainSpeech;
-        public static bool bExplainSpeechAvailable;
+        public static bool bTextToSpeechAvailable;
         public static bool bTextToSpeechIsBusy;
-        public static CancellationTokenSource? cts;
         public static bool bKociembaSolution;
         public static bool bLicense;
         public static int nTestedSolutions;

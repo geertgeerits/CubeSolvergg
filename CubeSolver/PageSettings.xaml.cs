@@ -69,13 +69,13 @@ namespace CubeSolver
             };
 
             //// Fill the picker with the speech languages and set the saved language in the picker
-            FillPickerWithSpeechLanguages();
+            ClassSpeech.FillPickerWithSpeechLanguages(pckLanguageSpeech);
 
             //// Set the switches to false or true
             swtUseKociembaSolution.IsToggled = Globals.bKociembaSolution;
             swtExplainText.IsToggled = Globals.bExplainText;
             swtExplainSpeech.IsToggled = Globals.bExplainSpeech;
-            swtExplainSpeech.IsEnabled = Globals.bExplainSpeechAvailable;
+            swtExplainSpeech.IsEnabled = Globals.bTextToSpeechAvailable;
 
             //// Initialize the cube colors
             plgCubeColor1.Fill = Color.FromArgb(Globals.aFaceColors[1]);
@@ -169,33 +169,6 @@ namespace CubeSolver
                 "Dark" => 2,        // Dark
                 _ => 0,             // System
             };
-        }
-
-        /// <summary>
-        /// Fill the picker with the speech languages from the array
-        /// </summary>
-        private void FillPickerWithSpeechLanguages()
-        {
-            // If there are no locales then return
-            if (Globals.cLanguageLocales is null)
-            {
-                pckLanguageSpeech.IsEnabled = false;
-                return;
-            }
-
-            // Put the sorted locales from the array in the picker and select the saved language
-            int nTotalItems = Globals.cLanguageLocales.Length;
-
-            // Add the locales to the picker and select the language
-            for (int nItem = 0; nItem < nTotalItems; nItem++)
-            {
-                pckLanguageSpeech.Items.Add(Globals.cLanguageLocales[nItem]);
-            }
-
-            // Search the selected language in the cLanguageLocales array and select the new speech language
-            pckLanguageSpeech.SelectedIndex = ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
-
-            Debug.WriteLine("FillPickerWithSpeechLanguages - Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
         }
 
         /// <summary>

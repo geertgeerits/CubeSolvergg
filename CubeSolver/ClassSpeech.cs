@@ -4,19 +4,16 @@ namespace CubeSolver
 {
     internal sealed class ClassSpeech
     {
+        private static string[]? cLanguageLocales;
         private static IEnumerable<Locale>? locales;
+        private static CancellationTokenSource? cts;
 
         /// <summary>
         /// Initialize text to speech
         /// </summary>
         public static async void InitializeTextToSpeech()
         {
-            Globals.bExplainSpeechAvailable = await InitializeTextToSpeechAsync();
-
-            if (!Globals.bExplainSpeechAvailable)
-            {
-                Globals.bExplainSpeech = false;
-            }
+            Globals.bTextToSpeechAvailable = await InitializeTextToSpeechAsync();
         }
 
         /// <summary>
@@ -49,18 +46,43 @@ namespace CubeSolver
             }
 
             // Put the locales in the array and sort the array
-            Globals.cLanguageLocales = new string[nTotalItems];
+            cLanguageLocales = new string[nTotalItems];
             int nItem = 0;
 
             foreach (var l in locales)
             {
-                Globals.cLanguageLocales[nItem] = l.Language + "-" + l.Country + " " + l.Name;
+                cLanguageLocales[nItem] = l.Language + "-" + l.Country + " " + l.Name;
                 nItem++;
             }
 
-            Array.Sort(Globals.cLanguageLocales);
+            Array.Sort(cLanguageLocales);
 
             return true;
+        }
+
+        /// <summary>
+        /// Fill the picker with the speech languages
+        /// </summary>
+        /// <param name="picker"></param>
+        public static void FillPickerWithSpeechLanguages(Picker picker)
+        {
+            // If there are no locales, disable the picker and return
+            if (cLanguageLocales is null)
+            {
+                picker.IsEnabled = false;
+                return;
+            }
+
+            // Populate the picker with sorted locales
+            foreach (var locale in cLanguageLocales)
+            {
+                picker.Items.Add(locale);
+            }
+
+            // Select the saved language
+            picker.SelectedIndex = SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
+
+            Debug.WriteLine("FillPickerWithSpeechLanguages - Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
         }
 
         /// <summary>
@@ -69,38 +91,40 @@ namespace CubeSolver
         /// <param name="cCultureName"></param>
         public static int SearchArrayWithSpeechLanguages(string cCultureName)
         {
-            Debug.WriteLine("SearchArrayWithSpeechLanguages - cCultureName: " + cCultureName);
+            Debug.WriteLine("SearchArrayWithSpeechLanguages - cCultureName IN: " + cCultureName);
 
             try
             {
-                int nTotalItems = Globals.cLanguageLocales?.Length ?? 0;
+                int nTotalItems = cLanguageLocales?.Length ?? 0;
 
-                if (Globals.cLanguageLocales is not null)
+                if (cLanguageLocales is not null)
                 {
                     if (!string.IsNullOrEmpty(cCultureName))
                     {
-                        // Search for the indonesian speech language as 'id' and 'in'
-                        // Android generating old/wrong language code for Indonesia - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
-                        if (cCultureName.StartsWith("id"))
+                        // Search for the Indonesian or Hebrew or Yiddish language code, if not found search for the old language code
+                        // Android generating old/wrong language codes - https://stackoverflow.com/questions/44245959/android-generating-wrong-language-code-for-indonesia
+                        if (cCultureName.StartsWith("id") || cCultureName.StartsWith("he") || cCultureName.StartsWith("yi"))
                         {
                             for (int nItem = 0; nItem < nTotalItems; nItem++)
                             {
-                                if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
+                                if (cLanguageLocales[nItem].StartsWith(cCultureName))
                                 {
-                                    Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
+                                    Globals.cLanguageSpeech = cLanguageLocales[nItem];
                                     return nItem;
                                 }
                             }
 
-                            cCultureName = "in-ID";
+                            // Convert the new language code to the old one
+                            cCultureName = GetCurrentLanguageTag(cCultureName);
+                            Debug.WriteLine("SearchArrayWithSpeechLanguages - cCultureName NEW to OLD: " + cCultureName);
                         }
 
                         // Search for the speech language as 'en-US'
                         for (int nItem = 0; nItem < nTotalItems; nItem++)
                         {
-                            if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
+                            if (cLanguageLocales[nItem].StartsWith(cCultureName))
                             {
-                                Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
+                                Globals.cLanguageSpeech = cLanguageLocales[nItem];
                                 return nItem;
                             }
                         }
@@ -111,9 +135,9 @@ namespace CubeSolver
                         // Search for the speech language as 'en'
                         for (int nItem = 0; nTotalItems > nItem; nItem++)
                         {
-                            if (Globals.cLanguageLocales[nItem].StartsWith(cCultureName))
+                            if (cLanguageLocales[nItem].StartsWith(cCultureName))
                             {
-                                Globals.cLanguageSpeech = Globals.cLanguageLocales[nItem];
+                                Globals.cLanguageSpeech = cLanguageLocales[nItem];
                                 return nItem;
                             }
                         }
@@ -123,7 +147,7 @@ namespace CubeSolver
                 // If the language is not found use the first language in the array
                 if (string.IsNullOrEmpty(Globals.cLanguageSpeech) && nTotalItems > 0)
                 {
-                    Globals.cLanguageSpeech = Globals.cLanguageLocales![0];
+                    Globals.cLanguageSpeech = cLanguageLocales![0];
                     return 0;
                 }
             }
@@ -135,6 +159,23 @@ namespace CubeSolver
             }
 
             return 0;
+        }
+
+        /// <summary>
+        /// Get the current language tag and map new language codes to old ones
+        /// </summary>
+        /// <returns></returns>
+        public static string GetCurrentLanguageTag(string languageTag)
+        {
+            // Map new language codes to old ones
+            return languageTag switch
+            {
+                "id" => "in",           // Indonesian
+                "id-ID" => "in-ID",     // Indonesian
+                "he" => "iw",           // Hebrew
+                "yi" => "ji",           // Yiddish
+                _ => languageTag
+            };
         }
 
         /// <summary>
@@ -152,12 +193,12 @@ namespace CubeSolver
             // Cancel the text to speech
             if (Globals.bTextToSpeechIsBusy)
             {
-                if (Globals.cts?.IsCancellationRequested ?? true)
+                if (cts?.IsCancellationRequested ?? true)
                 {
                     return;
                 }
 
-                Globals.cts.Cancel();
+                cts.Cancel();
             }
 
             // Start with the text to speech
@@ -167,14 +208,14 @@ namespace CubeSolver
 
                 try
                 {
-                    Globals.cts = new CancellationTokenSource();
+                    cts = new CancellationTokenSource();
 
                     SpeechOptions options = new()
                     {
                         Locale = locales?.Single(static l => l.Language + "-" + l.Country + " " + l.Name == Globals.cLanguageSpeech)
                     };
 
-                    await TextToSpeech.Default.SpeakAsync(cText, options, cancelToken: Globals.cts.Token);
+                    await TextToSpeech.Default.SpeakAsync(cText, options, cancelToken: cts.Token);
                     Globals.bTextToSpeechIsBusy = false;
                 }
                 catch (Exception ex)
@@ -193,32 +234,14 @@ namespace CubeSolver
         {
             if (Globals.bTextToSpeechIsBusy)
             {
-                if (Globals.cts?.IsCancellationRequested ?? true)
+                if (cts?.IsCancellationRequested ?? true)
                 {
                     return;
                 }
 
-                Globals.cts.Cancel();
+                cts.Cancel();
                 Globals.bTextToSpeechIsBusy = false;
             }
         }
-
-        ///// <summary>
-        ///// Get the current language tag and map old language codes to new ones
-        ///// </summary>
-        ///// <returns></returns>
-        //public static string GetCurrentLanguageTag()
-        //{
-        //    string languageTag = CultureInfo.CurrentCulture.Name;
-
-        //    // Map old language codes to new ones
-        //    return languageTag switch
-        //    {
-        //        "iw" => "he",       // Hebrew
-        //        "ji" => "yi",       // Yiddish
-        //        "in" => "id",       // Indonesian
-        //        _ => languageTag
-        //    };
-        //}
     }
 }
