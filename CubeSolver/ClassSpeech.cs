@@ -114,7 +114,7 @@ namespace CubeSolver
                                 }
                             }
 
-                            // Convert the new language code to the old one
+                            // Map new language codes to old codes
                             cCultureName = GetCurrentLanguageTag(cCultureName);
                             Debug.WriteLine("SearchArrayWithSpeechLanguages - cCultureName NEW to OLD: " + cCultureName);
                         }
@@ -162,7 +162,7 @@ namespace CubeSolver
         }
 
         /// <summary>
-        /// Get the current language tag and map new language codes to old ones
+        /// Map new language codes to old codes
         /// </summary>
         /// <returns></returns>
         public static string GetCurrentLanguageTag(string languageTag)
@@ -170,10 +170,11 @@ namespace CubeSolver
             // Map new language codes to old ones
             return languageTag switch
             {
-                "id" => "in",           // Indonesian
-                "id-ID" => "in-ID",     // Indonesian
-                "he" => "iw",           // Hebrew
-                "yi" => "ji",           // Yiddish
+                "id" => "in",           // Indonesian - Changed in 1989 to 'id'
+                "id-ID" => "in-ID",
+                "he" => "iw",           // Hebrew - Changed in 1989 to 'he'
+                "he-IL" => "iw-IL",
+                "yi" => "ji",           // Yiddish - Changed in 1989 to 'yi'
                 _ => languageTag
             };
         }

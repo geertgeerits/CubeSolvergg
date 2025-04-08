@@ -68,7 +68,7 @@ namespace CubeSolver
                 _ => 4,         // English
             };
 
-            //// Fill the picker with the speech languages and set the saved language in the picker
+            //// Fill the picker with the speech languages and select the saved language in the picker
             ClassSpeech.FillPickerWithSpeechLanguages(pckLanguageSpeech);
 
             //// Set the switches to false or true
@@ -145,7 +145,7 @@ namespace CubeSolver
 
                 // Search the selected language in the cLanguageLocales array and select the new speech language
                 pckLanguageSpeech.SelectedIndex = ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguage);
-                Debug.WriteLine("pckLanguageSpeech.SelectedIndex: " + pckLanguageSpeech.SelectedIndex);
+                Debug.WriteLine("pckLanguageSpeech.SelectedIndex OUT: " + pckLanguageSpeech.SelectedIndex);
             }
         }
 
