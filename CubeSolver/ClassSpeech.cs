@@ -51,7 +51,7 @@ namespace CubeSolver
 
             foreach (var l in locales)
             {
-                cLanguageLocales[nItem] = l.Language + "-" + l.Country + " " + l.Name;
+                cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name}";
                 nItem++;
             }
 
@@ -86,7 +86,7 @@ namespace CubeSolver
         }
 
         /// <summary>
-        /// // Search the selected language in the cLanguageLocales array
+        /// Search the selected language in the cLanguageLocales array
         /// </summary>
         /// <param name="cCultureName"></param>
         public static int SearchArrayWithSpeechLanguages(string cCultureName)
@@ -213,7 +213,7 @@ namespace CubeSolver
 
                     SpeechOptions options = new()
                     {
-                        Locale = locales?.Single(static l => l.Language + "-" + l.Country + " " + l.Name == Globals.cLanguageSpeech)
+                        Locale = locales?.Single(static l => $"{l.Language}-{l.Country} {l.Name}" == Globals.cLanguageSpeech)
                     };
 
                     await TextToSpeech.Default.SpeakAsync(cText, options, cancelToken: cts.Token);
