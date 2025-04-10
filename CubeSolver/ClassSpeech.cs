@@ -14,42 +14,42 @@ namespace CubeSolver
         /// </summary>
         public static async Task<bool> InitializeTextToSpeechAsync()
         {
-            // Initialize text to speech
-            int nTotalItems;
-
             try
             {
+                // Initialize text to speech
                 locales = await TextToSpeech.Default.GetLocalesAsync();
+                int nTotalItems = locales.Count();
 
-                nTotalItems = locales.Count();
+                Debug.WriteLine($"Number of locales retrieved: {nTotalItems}");
 
                 if (nTotalItems == 0)
                 {
+                    Debug.WriteLine("No locales found. Text-to-speech may not be supported on this device.");
                     return false;
                 }
+
+                // Populate and sort locales
+                cLanguageLocales = new string[nTotalItems];
+                int nItem = 0;
+
+                foreach (var l in locales)
+                {
+                    cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name}";
+                    nItem++;
+                }
+
+                Array.Sort(cLanguageLocales);
+
+                return true;
             }
             catch (Exception ex)
             {
-                // Text to speech is not supported on this device
 #if DEBUG
-                await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message + "\n\n" + CubeLang.TextToSpeechError_Text, CubeLang.ButtonClose_Text);
+                Debug.WriteLine($"Error in InitializeTextToSpeechAsync: {ex.Message}");
+                await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, $"{ex.Message}\n\n{CubeLang.TextToSpeechError_Text}", CubeLang.ButtonClose_Text);
 #endif
                 return false;
             }
-
-            // Put the locales in the array and sort the array
-            cLanguageLocales = new string[nTotalItems];
-            int nItem = 0;
-
-            foreach (var l in locales)
-            {
-                cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name}";
-                nItem++;
-            }
-
-            Array.Sort(cLanguageLocales);
-
-            return true;
         }
 
         /// <summary>
