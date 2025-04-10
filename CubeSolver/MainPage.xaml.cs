@@ -160,7 +160,7 @@ namespace CubeSolver
         /// The InitializeTextToSpeechAsync method is called asynchronously after the UI components are initialized
         /// Once the asynchronous operation completes, the Globals.bTextToSpeechAvailable value is checked, and the UI is updated accordingly
         /// </summary>
-        private async void InitializeTextToSpeechAsync()
+        private static async void InitializeTextToSpeechAsync()
         {
             // Search for the speech language after a first start or reset of the application
             try
