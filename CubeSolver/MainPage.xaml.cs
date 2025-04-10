@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.39
- * Date ........: 2025-04-09 (YYYY-MM-DD)
+ * Date ........: 2025-04-10 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -130,31 +130,7 @@ namespace CubeSolver
             SetTextLanguage();
 
             //// Initialize text to speech
-            ClassSpeech.InitializeTextToSpeech();
-
-            if (!Globals.bTextToSpeechAvailable)
-            {
-                Globals.bExplainSpeech = false;
-            }
-
-            // Search for the speech language after a first start or reset of the application
-            try
-            {
-                if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
-                {
-                    Globals.cLanguageSpeech = Thread.CurrentThread.CurrentUICulture.Name;
-                }
-            }
-            catch (Exception)
-            {
-                Globals.cLanguageSpeech = "en-US";
-            }
-            finally
-            {
-                ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
-                Preferences.Default.Set("SettingLanguageSpeech", Globals.cLanguageSpeech);
-                Debug.WriteLine("Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
-            }
+            InitializeTextToSpeechAsync();
 
             //// Reset the colors of the cube
             ClassColorsCube.ResetCube();
@@ -176,6 +152,43 @@ namespace CubeSolver
             //solution = SearchRunTime.solution(searchString, out info, buildTables: true);
             ////string solution = Search.solution(searchString, out info);
             //Debug.WriteLine("Search.solution: " + solution);
+        }
+
+        /// <summary>
+        /// Initialize text to speech and get and set the speech language
+        /// Must be called in the constructor of the MainPage and not in the ClassSpeech.cs
+        /// The InitializeTextToSpeechAsync method is called asynchronously after the UI components are initialized
+        /// Once the asynchronous operation completes, the Globals.bTextToSpeechAvailable value is checked, and the UI is updated accordingly
+        /// </summary>
+        private async void InitializeTextToSpeechAsync()
+        {
+            // Search for the speech language after a first start or reset of the application
+            try
+            {
+                if (string.IsNullOrEmpty(Globals.cLanguageSpeech))
+                {
+                    Globals.cLanguageSpeech = Thread.CurrentThread.CurrentUICulture.Name;
+                }
+            }
+            catch (Exception)
+            {
+                Globals.cLanguageSpeech = "en-US";
+            }
+            finally
+            {
+                Globals.bTextToSpeechAvailable = await ClassSpeech.InitializeTextToSpeechAsync();
+                ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
+                Preferences.Default.Set("SettingLanguageSpeech", Globals.cLanguageSpeech);
+                Debug.WriteLine("Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
+            }
+
+            if (!Globals.bTextToSpeechAvailable)
+            {
+                Globals.bExplainSpeech = false;
+            }
+
+            Debug.WriteLine("MainPage - Globals.bTextToSpeechAvailable: " + Globals.bTextToSpeechAvailable);
+            Debug.WriteLine("MainPage - Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
         }
 
         //// TitleView buttons clicked events
@@ -409,8 +422,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 323-324 and 387-410 (and change the line 434 to bTestSolveCube = true)
-                // and uncomment one of the lines 417-419 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 336-337 and 400-423 (and change the line 447 to bTestSolveCube = true)
+                // and uncomment one of the lines 430-432 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 

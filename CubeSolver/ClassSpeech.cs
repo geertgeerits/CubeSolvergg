@@ -9,14 +9,6 @@ namespace CubeSolver
         private static CancellationTokenSource? cts;
 
         /// <summary>
-        /// Initialize text to speech
-        /// </summary>
-        public static async void InitializeTextToSpeech()
-        {
-            Globals.bTextToSpeechAvailable = await InitializeTextToSpeechAsync();
-        }
-
-        /// <summary>
         /// Initialize text to speech and fill the the array with the speech languages
         /// <para>.Country = KR ; .Id = ''  ; .Language = ko ; .Name = Korean (South Korea) ;</para>
         /// </summary>
@@ -203,7 +195,7 @@ namespace CubeSolver
             }
 
             // Start with the text to speech
-            if (cText is not null and not "")
+            if (!string.IsNullOrEmpty(cText))
             {
                 Globals.bTextToSpeechIsBusy = true;
 
