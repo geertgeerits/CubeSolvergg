@@ -512,8 +512,8 @@ namespace CubeSolver
             Preferences.Default.Set("SettingCubeColor6", Globals.aFaceColors[6]);
             Preferences.Default.Set("SettingKociembaSolution", Globals.bKociembaSolution);
 
-            // Wait 500 milliseconds otherwise the settings are not saved in Android
-            Task.Delay(500).Wait();
+            // Wait 400 milliseconds otherwise the settings are not saved in Android
+            Task.Delay(400).Wait();
 
             // Restart the application
             Application.Current!.Windows[0].Page = new AppShell();
@@ -552,8 +552,8 @@ namespace CubeSolver
                 Preferences.Default.Remove("SettingKociembaSolution");
             }
 
-            // Wait 500 milliseconds otherwise the settings are not saved in Android.
-            Task.Delay(500).Wait();
+            // Wait 400 milliseconds otherwise the settings are not saved in Android.
+            Task.Delay(400).Wait();
 
             // Restart the application
             Application.Current!.Windows[0].Page = new AppShell();

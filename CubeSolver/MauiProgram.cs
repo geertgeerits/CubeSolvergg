@@ -17,7 +17,7 @@ namespace CubeSolver
                     fonts.AddFont("PublicSans-Bold.ttf", "PublicSansBold");
                 })
 
-                .ConfigureLifecycleEvents(events =>
+                .ConfigureLifecycleEvents(static events =>
                 {
 #if ANDROID
                     events.AddAndroid(android => android
