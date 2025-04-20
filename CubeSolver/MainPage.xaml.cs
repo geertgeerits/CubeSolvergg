@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.39
- * Date ........: 2025-04-11 (YYYY-MM-DD)
+ * Date ........: 2025-04-20 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -374,7 +374,6 @@ namespace CubeSolver
             IsEnabledArrows(false);
 
             string cMethod = string.Empty;
-            Globals.nTestedSolutions = 0;
 
             // Start the activity indicator
             activityIndicator.IsRunning = true;
@@ -387,6 +386,7 @@ namespace CubeSolver
             if (Globals.lCubeTurns.Count > 0)
             {
                 cMethod = CubeLang.ReverseOrder_Text;
+                Globals.nTestedSolutions = 1;
                 Globals.lCubeTurns.Reverse();
                 ClassCleanCubeTurns.CleanListCubeTurns(Globals.lCubeTurns, true);
                 bSolved = true;
@@ -419,6 +419,7 @@ namespace CubeSolver
                 if (!bSolved || !Globals.bKociembaSolution)
                 {
                     cMethod = "CFOP";
+                    Globals.nTestedSolutions = 0;
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
