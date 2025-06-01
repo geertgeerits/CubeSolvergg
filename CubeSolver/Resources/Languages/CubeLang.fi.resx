@@ -667,4 +667,7 @@ Tukikielet ovat: kiina, tšekki, tanska, hollanti, englanti, suomi, ranska, saks
     <value>Tekstistä puheeksi: Kaikkia sovellusasetuksissa olevia kieliä ei tueta.
 Tämä vaihtoehto vaihtelee laitteittain ja asennetuista kielistä riippuen. On mahdollista, että joillekin kielille käännös puheeseen ja puheesta tapahtuu Internetin kautta asianomaisten palvelujen toimesta.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Internet-yhteyttä ei ole saatavilla.</value>
+  </data>
 </root>

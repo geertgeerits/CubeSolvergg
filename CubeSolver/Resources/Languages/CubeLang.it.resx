@@ -667,4 +667,7 @@ Le lingue supportate sono: cinese, ceco, danese, olandese, inglese, finlandese, 
     <value>Da testo a voce: non sono supportate tutte le lingue fornite nelle impostazioni dell'applicazione.
 Questa opzione varia da dispositivo a dispositivo e dalle lingue installate. È possibile che per alcune lingue la traduzione da e verso la voce venga effettuata tramite Internet dai servizi interessati.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>La connessione a Internet non è disponibile.</value>
+  </data>
 </root>

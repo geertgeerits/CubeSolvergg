@@ -117,6 +117,16 @@ namespace CubeSolver
         /// <returns></returns>
         private static async Task OpenWebsiteLink(string url)
         {
+            // Check the internet connection
+            NetworkAccess accessType = Connectivity.Current.NetworkAccess;
+
+            if (accessType != NetworkAccess.Internet)
+            {
+                await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.InternetConnectionNo_Text, CubeLang.ButtonClose_Text);
+                return;
+            }
+
+            // Open the website link in the default browser
             try
             {
                 Uri uri = new(url);

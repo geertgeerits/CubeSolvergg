@@ -664,4 +664,7 @@
   <data name="InfoTextToSpeech_Text" xml:space="preserve">
     <value>टेक्स्ट टू स्पीच: एप्लिकेशन सेटिंग में दी गई सभी भाषाएँ समर्थित नहीं हैं। यह विकल्प डिवाइस से डिवाइस और इंस्टॉल की गई भाषाओं के हिसाब से अलग-अलग होता है। यह संभव है कि कुछ भाषाओं के लिए स्पीच से अनुवाद इंटरनेट पर संबंधित सेवाओं द्वारा किया जाता है।</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>इंटरनेट कनेक्शन उपलब्ध नहीं है.</value>
+  </data>
 </root>

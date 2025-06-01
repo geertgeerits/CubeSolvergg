@@ -667,4 +667,7 @@ De ondersteunende talen zijn: Chinees, Tsjechisch, Deens, Nederlands, Engels, Fi
     <value>Tekst naar spraak: Niet alle talen die in de applicatie-instellingen worden aangeboden, worden ondersteund.
 Deze optie verschilt per apparaat en de geïnstalleerde talen. Het is mogelijk dat voor sommige talen de vertaling van en naar spraak via internet wordt gedaan door de betreffende services.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Er is geen internetverbinding beschikbaar.</value>
+  </data>
 </root>

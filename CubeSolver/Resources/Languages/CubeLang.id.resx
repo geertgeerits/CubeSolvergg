@@ -667,4 +667,7 @@ Bahasa yang didukung adalah: Mandarin, Ceko, Denmark, Belanda, Inggris, Finlandi
     <value>Teks ke ucapan: Tidak semua bahasa yang tersedia dalam pengaturan aplikasi didukung.
 Opsi ini bervariasi dari perangkat ke perangkat dan bahasa yang diinstal. Ada kemungkinan bahwa untuk beberapa bahasa, penerjemahan ke dan dari ucapan dilakukan melalui internet oleh layanan terkait.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Koneksi ke internet tidak tersedia.</value>
+  </data>
 </root>

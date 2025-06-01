@@ -496,6 +496,15 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Connection to the internet is not available..
+        /// </summary>
+        internal static string InternetConnectionNo_Text {
+            get {
+                return ResourceManager.GetString("InternetConnectionNo_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Language:.
         /// </summary>
         internal static string Language_Text {

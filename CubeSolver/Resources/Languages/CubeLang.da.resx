@@ -667,4 +667,7 @@ De understøttende sprog er: kinesisk, tjekkisk, dansk, hollandsk, engelsk, fins
     <value>Tekst til tale: Ikke alle sprog understøttes, som er angivet i applikationsindstillingerne.
 Denne mulighed varierer fra enhed til enhed og de installerede sprog. Det er muligt, at for nogle sprog udføres oversættelsen til og fra tale over internettet af de pågældende tjenester.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Der er ingen internetforbindelse.</value>
+  </data>
 </root>

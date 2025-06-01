@@ -667,4 +667,7 @@ Les langues prises en charge sont : allemand, anglais, chinois, coréen, danois
     <value>Synthèse vocale : Toutes les langues proposées dans les paramètres de l’application ne sont pas prises en charge.
 Cette option varie selon l’appareil et les langues installées. Il est possible que, pour certaines langues, la traduction vocale soit effectuée via Internet par les services concernés.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>La connexion à Internet n'est pas disponible.</value>
+  </data>
 </root>

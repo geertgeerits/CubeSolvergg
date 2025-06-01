@@ -667,4 +667,7 @@ Stödspråken är: kinesiska, tjeckiska, danska, holländska, engelska, finska, 
     <value>Text till tal: Alla språk som finns i programinställningarna stöds inte.
 Det här alternativet varierar från enhet till enhet och de installerade språken. Det är möjligt att för vissa språk görs översättningen till och från tal över internet av de berörda tjänsterna.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Internetanslutning är inte tillgänglig.</value>
+  </data>
 </root>

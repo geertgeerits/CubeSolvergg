@@ -667,4 +667,7 @@ Los idiomas disponibles son: alemán, chino, checo, danés, coreano, español, f
     <value>Texto a voz: No todos los idiomas disponibles en la configuración de la aplicación son compatibles.
 Esta opción varía según el dispositivo y los idiomas instalados. Es posible que, para algunos idiomas, la traducción se realice a través de internet mediante los servicios correspondientes.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>La conexión a Internet no está disponible.</value>
+  </data>
 </root>

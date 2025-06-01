@@ -667,4 +667,7 @@ Podporované jazyky jsou: čínština, čeština, dánština, holandština, angl
     <value>Převod textu na řeč: Nejsou podporovány všechny jazyky uvedené v nastavení aplikace.
 Tato možnost se liší zařízení od zařízení a nainstalované jazyky. Je možné, že u některých jazyků je překlad do az řeči prováděn prostřednictvím internetu příslušnými službami.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Připojení k internetu není k dispozici.</value>
+  </data>
 </root>

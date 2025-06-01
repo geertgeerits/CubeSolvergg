@@ -667,4 +667,7 @@ Støttespråkene er: kinesisk, tsjekkisk, dansk, nederlandsk, engelsk, finsk, fr
     <value>Tekst til tale: Ikke alle språk støttes som er gitt i applikasjonsinnstillingene.
 Dette alternativet varierer fra enhet til enhet og de installerte språkene. Det er mulig at for noen språk blir oversettelsen til og fra tale gjort over internett av de aktuelle tjenestene.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Tilkobling til internett er ikke tilgjengelig.</value>
+  </data>
 </root>

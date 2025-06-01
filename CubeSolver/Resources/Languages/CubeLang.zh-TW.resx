@@ -667,4 +667,7 @@
     <value>文本转语音：应用程序设置中提供的所有语言均不受支持。
 此选项因设备和安装的语言而异。对于某些语言，相关服务可能会通过互联网完成语音转语音。</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>無法連接網路。</value>
+  </data>
 </root>

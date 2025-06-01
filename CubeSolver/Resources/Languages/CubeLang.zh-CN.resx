@@ -667,4 +667,7 @@
     <value>文字轉語音：並非所有應用程式設定中提供的語言都受支援。
 此選項因裝置和安裝的語言而異。對於某些語言來說，相關服務可能會透過網路完成語音與語音之間的翻譯。</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>无法连接互联网。</value>
+  </data>
 </root>

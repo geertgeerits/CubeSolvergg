@@ -667,4 +667,7 @@ Os idiomas de suporte são: chinês, tcheco, dinamarquês, holandês, inglês, f
     <value>Texto para fala: nem todos os idiomas fornecidos nas configurações do aplicativo são suportados.
 Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É possível que, para alguns idiomas, a tradução de e para a fala seja feita pela internet pelos serviços envolvidos.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>A conexão com a internet não está disponível.</value>
+  </data>
 </root>

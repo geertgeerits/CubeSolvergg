@@ -667,4 +667,7 @@ Die unterstützten Sprachen sind: Chinesisch, Tschechisch, Dänisch, Niederländ
     <value>Text-to-Speech: Es werden nicht alle in den App-Einstellungen verfügbaren Sprachen unterstützt.
 Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich, dass die Übersetzung in und aus Sprache für einige Sprachen von den jeweiligen Diensten über das Internet erfolgt.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Es ist keine Verbindung zum Internet verfügbar.</value>
+  </data>
 </root>

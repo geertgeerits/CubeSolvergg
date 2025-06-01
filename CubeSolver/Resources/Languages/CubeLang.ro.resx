@@ -667,4 +667,7 @@ Limbile suportate sunt: ​​chineză, cehă, daneză, olandeză, engleză, fin
     <value>Texto para fala: nem todos os idiomas fornecidos nas configurações do aplicativo são suportados.
 Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É possível que, para alguns idiomas, a tradução de e para a fala seja feita pela internet pelos serviços envolvidos.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Conexiunea la internet nu este disponibilă.</value>
+  </data>
 </root>

@@ -6,7 +6,7 @@ Solve your Cube.
 
 Supporting languages: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish and Ukrainian.
 
-The program was tested on a Samsung Galaxy A3 and S21 phone, iPhone 7 and 14, iPad 8th generation.
+The program was tested on a Samsung Galaxy A3, S21 and S25 phone, iPhone 7 and 16, iPad 8th generation.
 
 Link to the Google Play Store:
 https://play.google.com/store/apps/details?id=com.geertgeerits.rubikscube

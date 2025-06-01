@@ -667,4 +667,7 @@ The supporting languages are: Chinese, Czech, Danish, Dutch, English, Finnish, F
     <value>Text to speech: Not all languages are supported that are provided in the application settings.
 This option varies from device to device and the installed languages. It is possible that for some languages the translation to and from speech is done over the internet by the concerned services.</value>
   </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Connection to the internet is not available.</value>
+  </data>
 </root>
