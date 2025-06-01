@@ -429,8 +429,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 336-337 and 400-423 (and change the line 447 to bTestSolveCube = true)
-                // and uncomment one of the lines 430-432 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 342-343 and 406-430 (and change the line 454 to bTestSolveCube = true)
+                // and uncomment one of the lines 437-439 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
