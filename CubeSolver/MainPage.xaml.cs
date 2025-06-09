@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.39
- * Date ........: 2025-06-01 (YYYY-MM-DD)
+ * Date ........: 2025-06-09 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
@@ -457,7 +457,15 @@ namespace CubeSolver
             {
                 // Display the number of turns and the elapsed time in milliseconds
                 int nNumberOfTurns = Globals.lCubeTurns.Count;
-                await DisplayAlert("", $"{CubeLang.SolvingMethod_Text} {cMethod}\n{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultSolutions_Text} {Globals.nTestedSolutions}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
+
+                if (Globals.nTestedSolutions <= 1)
+                {
+                    await DisplayAlert("", $"{CubeLang.SolvingMethod_Text} {cMethod}\n{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
+                }
+                else
+                {
+                    await DisplayAlert("", $"{CubeLang.SolvingMethod_Text} {cMethod}\n{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultSolutions_Text} {Globals.nTestedSolutions}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
+                }
 
                 await Task.Delay(500);
 
