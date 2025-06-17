@@ -23,3 +23,6 @@ This app leverages code from Herbert Kociemba and Matt Colbourne (Megalomatt) fo
 Kociemba’s algorithm is a cornerstone in efficient cube-solving methods.
 Megalomatt's contributions have enhanced open-source cube solvers.
 Their work is greatly appreciated!
+
+Due to trademark issues, the app is currently unavailable in the Apple App Store in all countries.
+Likewise, the Android version is not available in the Google Play Store in the USA, Europe, and certain other regions.
