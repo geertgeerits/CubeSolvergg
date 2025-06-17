@@ -455,7 +455,8 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
 - Automatyczne: użyj przycisku kostki na dole ekranu, aby wprowadzić kolory swojej prawdziwej kostki. Po wykonaniu tej czynności naciśnij przycisk ponownie, a następnie dotknij „Rozwiąż”. Kostka zostanie rozwiązana za pomocą algorytmu „Kociemba”. Przenieś proponowane ruchy do swojej prawdziwej kostki.
 Jeśli wyłączysz algorytm „Kociemba” w ustawieniach, aplikacja użyje metody „Friedrich” (CFOP).
 - Odwrotne: użyj klawiszy strzałek, aby pomieszać kostkę, a następnie naciśnij „Rozwiąż”. Kostka zostanie rozwiązana w odwrotnej kolejności.
-- Ręczne: na ekranie głównym użyj klawiszy strzałek, aby pomieszać i rozwiązać kostkę ręcznie.
+- Ręcznie: Na ekranie głównym użyj klawiszy strzałek, aby pomieszać i rozwiązać kostkę. Alternatywnie naciśnij przycisk kostki dwa razy, a następnie naciśnij przycisk rozwiązania, a kostka zostanie rozwiązana za pomocą metody „Kociemba” lub „CFOP”.
+
 Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

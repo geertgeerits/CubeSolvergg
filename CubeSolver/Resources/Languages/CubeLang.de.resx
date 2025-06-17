@@ -455,7 +455,8 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
 - Automatisch: Verwenden Sie die Würfelschaltfläche unten auf dem Bildschirm, um die Farben Ihres echten Würfels einzugeben. Wenn Sie fertig sind, drücken Sie die Schaltfläche erneut und tippen Sie dann auf „Lösen“. Der Würfel wird mithilfe des „Kociemba“-Algorithmus gelöst. Übertragen Sie die vorgeschlagenen Züge auf Ihren echten Würfel.
 Wenn Sie den „Kociemba“-Algorithmus in den Einstellungen deaktivieren, verwendet die App die „Friedrich“-Methode (CFOP).
 - Umgekehrt: Verwenden Sie die Pfeiltasten, um den Würfel zu verwirren, und drücken Sie dann auf „Lösen“. Der Würfel wird in umgekehrter Reihenfolge gelöst.
-- Manuell: Verwenden Sie auf dem Startbildschirm die Pfeiltasten, um den Würfel manuell zu verwirren und zu lösen.
+Manuell: Verwende auf dem Startbildschirm die Pfeiltasten, um den Würfel zu lösen. Alternativ kannst du auch zweimal die Würfeltaste und dann die Lösungstaste drücken. Der Würfel wird dann entweder mit der „Kociemba“- oder der „CFOP“-Methode gelöst.
+
 Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

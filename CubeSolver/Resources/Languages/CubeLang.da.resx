@@ -455,7 +455,8 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
 - Automatisk: Brug terningknappen nederst på skærmen til at indtaste farverne på din rigtige terning. Når du er færdig, skal du trykke på knappen igen og derefter trykke på 'Løs'. Terningen vil blive løst ved hjælp af 'Kociemba'-algoritmen. Overfør de foreslåede træk til din rigtige terning.
 Hvis du deaktiverer 'Kociemba'-algoritmen i indstillingerne, vil appen bruge 'Friedrich' (CFOP)-metoden.
 - Omvendt: Brug piletasterne til at kryptere terningen, og tryk derefter på 'Løs'. Terningen vil blive løst i omvendt rækkefølge.
-- Manuel: På startskærmen skal du bruge piletasterne til at scramble og løse terningen manuelt.
+- Manuelt: Brug piletasterne på startskærmen til at kæmpe og løse terningen. Alternativt kan du trykke to gange på terningknappen og derefter trykke på løs-knappen, hvorefter terningen løses ved hjælp af enten 'Kociemba'- eller 'CFOP'-metoden.
+
 Dette er ikke en garanti for, at alle terninger kan løses.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

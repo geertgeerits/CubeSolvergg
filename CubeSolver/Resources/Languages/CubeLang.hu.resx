@@ -455,7 +455,8 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
 - Automatikus: használja a képernyő alján található kocka gombot a valódi kocka színeinek beviteléhez. Ha elkészült, nyomja meg újra a gombot, majd érintse meg a „Megoldás” gombot. A kockát a 'Kociemba' algoritmus segítségével oldjuk meg. Helyezze át a javasolt mozdulatokat a valódi kockájába.
 Ha letiltja a „Kociemba” algoritmust a beállításokban, az alkalmazás a „Friedrich” (CFOP) módszert fogja használni.
 - Fordítva: a nyílbillentyűkkel keverje össze a kockát, majd nyomja meg a "Megoldás" gombot. A kocka megoldása fordított sorrendben történik.
-- Kézi: a kezdőképernyőn használja a nyílbillentyűket a kocka kézi kódolásához és megoldásához.
+- Manuálisan: A kezdőképernyőn a nyílbillentyűk segítségével rakd össze és rakd ki a kockát. Alternatív megoldásként nyomd meg kétszer a kocka gombot, majd nyomd meg a megoldás gombot, és a kocka a 'Kociemba' vagy a 'CFOP' módszerrel lesz megoldva.
+
 Ez nem garancia arra, hogy minden kocka megoldható.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

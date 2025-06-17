@@ -455,7 +455,8 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
 - Automatique : utilisez le bouton du cube en bas de l'écran pour saisir les couleurs de votre vrai cube. Une fois terminé, appuyez à nouveau sur le bouton, puis appuyez sur « Résoudre ». Le cube sera résolu à l'aide de l'algorithme « Kociemba ». Transférez les mouvements proposés sur votre vrai cube.
 Si vous désactivez l'algorithme « Kociemba » dans les paramètres, l'application utilisera la méthode « Friedrich » (CFOP).
 - Inverser : utilisez les touches fléchées pour brouiller le cube, puis appuyez sur « Résoudre ». Le cube sera résolu dans l'ordre inverse.
-- Manuel : sur l'écran d'accueil, utilisez les touches fléchées pour brouiller et résoudre le cube manuellement.
+- Manuellement : Sur l'écran d'accueil, utilisez les touches fléchées pour mélanger et résoudre le cube. Vous pouvez également appuyer deux fois sur le bouton du cube, puis sur le bouton de résolution. Le cube sera alors résolu selon la méthode « Kociemba » ou « CFOP ».
+
 Ceci ne garantit pas que tous les cubes peuvent être résolus.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

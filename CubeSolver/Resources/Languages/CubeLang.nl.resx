@@ -455,7 +455,8 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
 - Automatisch: gebruik de kubusknop onderaan het scherm om de kleuren van uw echte kubus in te voeren. Druk nogmaals op de knop en tik vervolgens op 'Oplossen'. De kubus wordt opgelost met behulp van het 'Kociemba'-algoritme. Breng de voorgestelde zetten over naar uw echte kubus.
 Als u het 'Kociemba'-algoritme in de instellingen uitschakelt, gebruikt de app de 'Friedrich'-methode (CFOP).
 - Omgekeerd: gebruik de pijltjestoetsen om de kubus te husselen en druk vervolgens op 'Oplossen'. De kubus wordt in omgekeerde volgorde opgelost.
-- Handmatig: gebruik op het startscherm de pijltjestoetsen om de kubus handmatig te husselen en op te lossen.
+- Handmatig: Gebruik op het startscherm de pijltjestoetsen om de kubus te husselen en op te lossen. Je kunt ook twee keer op de kubusknop drukken en vervolgens op de oplosknop. De kubus wordt dan opgelost met de 'Kociemba'- of 'CFOP'-methode.
+
 Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

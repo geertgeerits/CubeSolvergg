@@ -455,7 +455,8 @@ Kemungkinan penyebabnya adalah transfer warna yang salah ke kubus ini.</value>
 - Otomatis: Gunakan tombol kubus di bagian bawah layar untuk memasukkan warna kubus asli Anda. Setelah selesai, tekan tombol lagi, lalu ketuk 'Selesaikan'. Kubus akan diselesaikan menggunakan algoritma 'Kociemba'. Pindahkan gerakan yang diusulkan ke kubus asli Anda.
 Jika Anda menonaktifkan algoritma 'Kociemba' di pengaturan, aplikasi akan menggunakan metode 'Friedrich' (CFOP).
 - Mundur: Gunakan tombol panah untuk mengacak kubus, lalu tekan 'Selesaikan'. Kubus akan diselesaikan dalam urutan terbalik.
-- Manual: Di layar beranda, gunakan tombol panah untuk mengacak dan menyelesaikan kubus secara manual.
+- Secara manual: Di layar beranda, gunakan tombol panah untuk mengacak dan memecahkan kubus. Atau, tekan tombol kubus dua kali, lalu tekan tombol selesaikan, dan kubus akan dipecahkan menggunakan metode 'Kociemba' atau 'CFOP'.
+
 Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

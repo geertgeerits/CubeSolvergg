@@ -455,7 +455,8 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
 - Automaticky: pomocí tlačítka kostky ve spodní části obrazovky zadejte barvy skutečné kostky. Po dokončení znovu stiskněte tlačítko a klepněte na „Vyřešit“. Kostka bude řešena pomocí algoritmu 'Kociemba'. Přeneste navrhované tahy do své skutečné krychle.
 Pokud v nastavení zakážete algoritmus 'Kociemba', aplikace použije metodu 'Friedrich' (CFOP).
 - Obrátit: pomocí kláves se šipkami rozšiřte kostku a poté stiskněte 'Solve'. Kostka bude řešena v opačném pořadí.
-- Manuální: na domovské obrazovce použijte klávesy se šipkami k zakódování a ručnímu vyřešení kostky.
+- Ručně: Na domovské obrazovce použijte šipky k procházení a skládání krychle. Případně stiskněte dvakrát tlačítko krychle a poté tlačítko pro složení. Krychle bude složena metodou „Kociemba“ nebo „CFOP“.
+
 To není zárukou, že všechny kostky lze vyřešit.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

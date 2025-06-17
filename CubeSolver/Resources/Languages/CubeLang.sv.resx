@@ -455,7 +455,8 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
 - Automatisk: använd kubknappen längst ner på skärmen för att mata in färgerna på din riktiga kub. När du är klar trycker du på knappen igen och trycker sedan på "Lös". Kuben kommer att lösas med hjälp av 'Kociemba'-algoritmen. Överför de föreslagna dragen till din riktiga kub.
 Om du inaktiverar 'Kociemba'-algoritmen i inställningarna kommer appen att använda 'Friedrich' (CFOP)-metoden.
 - Omvänd: använd piltangenterna för att förvränga kuben och tryck sedan på "Lös". Kuben kommer att lösas i omvänd ordning.
-- Manuell: på hemskärmen, använd piltangenterna för att förvränga och lösa kuben manuellt.
+- Manuellt: Använd piltangenterna på startskärmen för att klättra och lösa kuben. Alternativt kan du trycka två gånger på kubknappen och sedan trycka på lös-knappen, så löses kuben med antingen 'Kociemba'- eller 'CFOP'-metoden.
+
 Detta är inte en garanti för att alla kuber kan lösas.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

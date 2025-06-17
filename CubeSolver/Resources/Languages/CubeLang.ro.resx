@@ -455,7 +455,8 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
 - Automat: utilizați butonul cub din partea de jos a ecranului pentru a introduce culorile cubului real. După ce ați terminat, apăsați din nou butonul, apoi atingeți „Rezolvare”. Cubul va fi rezolvat folosind algoritmul „Kociemba”. Transferați mișcările propuse în cubul real.
 Dacă dezactivați algoritmul „Kociemba” în setări, aplicația va folosi metoda „Friedrich” (CFOP).
 - Reverse: utilizați tastele săgeți pentru a amesteca cubul, apoi apăsați „Rezolvare”. Cubul va fi rezolvat în ordine inversă.
-- Manual: pe ecranul de start, utilizați tastele săgeți pentru a amesteca și rezolva cubul manual.
+- Manual: Pe ecranul principal, folosește tastele săgeată pentru a dezbate și a rezolva cubul. Alternativ, apasă butonul cub de două ori, apoi apasă butonul de rezolvare, iar cubul va fi rezolvat folosind fie metoda „Kociemba”, fie metoda „CFOP”.
+
 Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

@@ -455,7 +455,8 @@ Mahdollinen syy on värien virheellinen siirto tähän kuutioon.</value>
 - Automaattinen: käytä näytön alareunassa olevaa kuutiopainiketta syöttääksesi oikean kuutiosi värit. Kun olet valmis, paina painiketta uudelleen ja napauta sitten Ratkaise. Kuutio ratkaistaan ​​käyttämällä Kociemba-algoritmia. Siirrä ehdotetut liikkeet oikeaan kuutioosi.
 Jos poistat Kociemba-algoritmin käytöstä asetuksista, sovellus käyttää Friedrich (CFOP) -menetelmää.
 - Käänteinen: sekoita kuutio nuolinäppäimillä ja paina sitten 'Ratkaise'. Kuutio ratkaistaan ​​päinvastaisessa järjestyksessä.
-- Manuaalinen: aloitusnäytössä voit sekoittaa ja ratkaista kuution manuaalisesti nuolinäppäimillä.
+- Manuaalisesti: Aloitusnäytössä voit sekoittaa ja ratkaista kuution nuolinäppäimillä. Vaihtoehtoisesti voit painaa kuutiopainiketta kahdesti ja sitten ratkaisupainiketta, jolloin kuutio ratkaistaan ​​joko 'Kociemba'- tai 'CFOP'-menetelmällä.
+
 Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">

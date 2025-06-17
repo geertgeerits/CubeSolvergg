@@ -455,7 +455,8 @@ La possibile causa è un trasferimento errato dei colori su questo cubo.</value>
 - Automatico: usa il pulsante del cubo in fondo allo schermo per inserire i colori del tuo cubo reale. Una volta fatto, premi di nuovo il pulsante, quindi tocca "Risolvi". Il cubo verrà risolto usando l'algoritmo "Kociemba". Trasferisci le mosse proposte al tuo cubo reale.
 Se disabiliti l'algoritmo "Kociemba" nelle impostazioni, l'app userà il metodo "Friedrich" (CFOP).
 - Inverso: usa i tasti freccia per mescolare il cubo, quindi premi "Risolvi". Il cubo verrà risolto in ordine inverso.
-- Manuale: nella schermata iniziale, usa i tasti freccia per mescolare e risolvere manualmente il cubo.
+- Manualmente: nella schermata iniziale, usa i tasti freccia per mescolare e risolvere il cubo. In alternativa, premi due volte il pulsante del cubo, quindi premi il pulsante di risoluzione e il cubo verrà risolto utilizzando il metodo "Kociemba" o "CFOP".
+
 Questa non è una garanzia che tutti i cubi possano essere risolti.</value>
   </data>
   <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
