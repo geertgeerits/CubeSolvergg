@@ -3,10 +3,10 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.39
- * Date ........: 2025-06-17 (YYYY-MM-DD)
+ * Date ........: 2025-06-18 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
- * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for a Commodore PET 2001
+ * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
  * Dependencies : None
  * Thanks to ...: Gerald Versluis - https://www.youtube.com/@jfversluis
  *                Herbert Kociemba - https://kociemba.org/cube.htm
@@ -63,13 +63,6 @@ namespace CubeSolver
             //// Set the margins for the controls in the title bar for Windows if using the Shell
             imgbtnAbout.Margin = new Thickness(20, 0, 0, 0);
             lblTitlePage.Margin = new Thickness(16, 10, 0, 0);
-
-            //// !!!BUG!!! in Windows: Set the width for the 2e colomn of the grid because 'GridUnitType.Star' does not work in Windows if using the 'NavigationPage.TitleView'
-            //grdTitleView.ColumnDefinitions[1].Width = new GridLength(675);
-
-            //// Set the margins for the controls in the title bar for Windows if using the 'NavigationPage.TitleView'
-            //imgbtnAbout.HorizontalOptions = LayoutOptions.Center;
-            //lblTitlePage.Margin = new Thickness(16, 10, 0, 0);
 #endif
 #if IOS
             //// !!!BUG!!!? in iOS - Set the margin for the label 'lblExplainTurnCube' because Padding does not work in iOS
@@ -301,7 +294,6 @@ namespace CubeSolver
             {
                 Globals.lCubeTurns.Clear();
 
-
                 if (!CheckNumberColorsCube())
                 {
                     bColorDrop = true;
@@ -429,8 +421,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 342-343 and 406-430 (and change the line 454 to bTestSolveCube = true)
-                // and uncomment one of the lines 437-439 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 334-335 and 398-422 (and change the line 446 to bTestSolveCube = true)
+                // and uncomment one of the lines 429-431 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -2284,37 +2276,4 @@ ________________________|_______|_______|_______|_______________________________
                         |   6   |   7   |   8   |
                         |_______|_______|_______|
                                   Front
-*/
-
-/*
-SPEED SPAN ARRAYS VERSUS REGULAR ARRAYS IN THIS APP
----------------------------------------------------
-My own tests - which one is faster: Android: Span - iOS: Span - Windows: Regular
-
-Is het possible that string span array of 54 elements are slower than regular sting arrays in c# ?
-
-Yes, it is possible for a `Span<string>` array of 54 elements to be slower than a regular `string[]` array in C#.
-The performance difference can depend on several factors:
-1. **Memory Allocation**: `Span<T>` is a stack-only type, which means it is allocated on the stack and cannot be used
-   in asynchronous methods or stored in heap-allocated objects. This can sometimes lead to performance benefits,
-   but in cases where the stack space is limited or the span is used in a way that requires frequent copying, it might be slower¹.
-
-2. **Bounds Checking**: `Span<T>` includes bounds checking to prevent out-of-bounds errors, which can add a slight overhead
-   compared to regular arrays².
-
-3. **Usage Patterns**: If the `Span<string>` is being sliced or manipulated frequently, the overhead of these operations
-   can add up. Regular arrays might be faster in scenarios where the data is accessed in a straightforward manner without
-   much slicing or manipulation².
-
-4. **Garbage Collection**: Regular arrays are heap-allocated and subject to garbage collection, which can introduce pauses
-   in your application. `Span<T>`, being stack-allocated, avoids this but at the cost of limited lifetime and scope¹.
-
-In summary, while `Span<T>` can offer performance benefits in many scenarios, there are cases where a regular array
-might be more efficient, especially if the usage pattern involves minimal slicing and manipulation.
-
-If you have a specific use case or performance issue, feel free to share more details, and I can help you analyze it further!
-
-Source: Conversation with Copilot, 2024-11-04
-(1) Improve C# code performance with Span<T> - NDepend Blog. https://blog.ndepend.com/improve-c-code-performance-with-spant/.
-(2) Spans in C#: Your Best Friend for Efficient Coding - Habr. https://habr.com/en/articles/831844/.
 */
