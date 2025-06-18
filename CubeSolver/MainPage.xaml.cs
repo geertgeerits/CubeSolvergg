@@ -2,7 +2,7 @@
  * Display name : Cube Solver gg
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
- * Version .....: 2.0.39
+ * Version .....: 2.0.40
  * Date ........: 2025-06-18 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
