@@ -724,7 +724,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Face rotations, turn the face a quarter turn clockwise (90 degrees).
+        ///   Looks up a localized string similar to Face rotations: turn the face a quarter turn clockwise (90 degrees).
         /// </summary>
         internal static string NotationTurn_Face_Text {
             get {

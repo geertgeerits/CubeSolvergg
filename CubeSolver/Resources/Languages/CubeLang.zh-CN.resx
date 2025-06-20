@@ -151,7 +151,7 @@
     <value>背面</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>面朝下</value>
+    <value>下侧</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>立方体颜色：</value>
@@ -163,16 +163,16 @@
     <value>内部视图</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>左脸</value>
+    <value>左侧</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>外观</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>右脸</value>
+    <value>右侧</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>上面部</value>
+    <value>上侧</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>默认</value>
@@ -583,13 +583,13 @@
     <value>解开魔方。</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>面部旋转，将面部顺时针旋转四分之一圈（90 度）</value>
+    <value>侧面旋转：顺时针旋转四分之一圈（90度）</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>上面部</value>
+    <value>上侧</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>面朝下</value>
+    <value>下侧</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
     <value>正面</value>
@@ -598,10 +598,10 @@
     <value>背面</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>左脸</value>
+    <value>左侧</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>右脸</value>
+    <value>右侧</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>切片移动，将中间层顺时针旋转四分之一圈（90 度）</value>

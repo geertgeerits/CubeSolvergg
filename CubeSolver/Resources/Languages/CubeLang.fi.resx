@@ -148,10 +148,10 @@
     <value>Tekijänoikeus</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Takakasvot</value>
+    <value>Takapuoli</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Kasvot alaspäin</value>
+    <value>Alaspäin</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Kuution värit:</value>
@@ -163,16 +163,16 @@
     <value>Näkymä sisäpuolelta</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Vasen kasvo</value>
+    <value>Vasen puoli</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Näkymä ulkopuolelta</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Oikeat kasvot</value>
+    <value>Oikea puoli</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Yläkasvot</value>
+    <value>Yläpuoli</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Oletusasetus</value>
@@ -583,25 +583,25 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
     <value>Ratkaise kuutio.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Kasvojen kierrokset, käännä kasvoja neljänneskierros myötäpäivään (90 astetta)</value>
+    <value>Sivukierrokset: käännä sivua neljänneskierros myötäpäivään (90 astetta)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Yläkasvot</value>
+    <value>Yläpuoli</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Kasvot alaspäin</value>
+    <value>Alaspäin</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
     <value>Etupuoli</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Takakasvot</value>
+    <value>Takapuoli</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Vasen kasvo</value>
+    <value>Vasen puoli</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Oikeat kasvot</value>
+    <value>Oikea puoli</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Viipale liikkuu, käännä keskikerrosta neljänneskierros myötäpäivään (90 astetta)</value>

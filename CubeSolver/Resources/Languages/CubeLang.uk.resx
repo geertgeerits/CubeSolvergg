@@ -148,31 +148,31 @@
     <value>Авторське право</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Задня грань</value>
+    <value>Зворотна сторона</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Вниз обличчям</value>
+    <value>Нижня сторона</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Кольори куба:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Передня грань</value>
+    <value>Передня сторона</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>Вид зсередини</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Ліве обличчя</value>
+    <value>Ліва сторона</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Вид ззовні</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Праве обличчя</value>
+    <value>Права сторона</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Верхнє обличчя</value>
+    <value>Верхня сторона</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>За замовчуванням</value>
@@ -583,25 +583,25 @@
     <value>Розв'язати куб.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Обертання обличчя, поверніть обличчя на чверть оберту за годинниковою стрілкою (90 градусів)</value>
+    <value>Бічні обертання: поверніть сторону на чверть оберту за годинниковою стрілкою (90 градусів)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Верхнє обличчя</value>
+    <value>Верхня сторона</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Вниз обличчям</value>
+    <value>Нижня сторона</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Передня грань</value>
+    <value>Передня сторона</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Задня грань</value>
+    <value>Зворотна сторона</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Ліве обличчя</value>
+    <value>Ліва сторона</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Праве обличчя</value>
+    <value>Права сторона</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Зріз рухається, поверніть середній шар на чверть оберту за годинниковою стрілкою (90 градусів)</value>

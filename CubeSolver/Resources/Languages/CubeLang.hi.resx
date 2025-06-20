@@ -148,31 +148,31 @@
     <value>कॉपीराइट</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>बैक फ़ेस</value>
+    <value>पीछे की ओर</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>नीचे चेहरा</value>
+    <value>नीचे की ओर</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>घन रंग:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>सामने का चेहरा</value>
+    <value>सामने की ओर</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>अंदर का दृश्य</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>बायां चेहरा</value>
+    <value>बाएं ओर</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>बाहर का दृश्य</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>दाहिना चेहरा</value>
+    <value>दाएं ओर</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>ऊपरी चेहरा</value>
+    <value>ऊपर की ओर</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>गलती करना</value>
@@ -581,25 +581,25 @@
     <value>घन को हल करें.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>चेहरा घुमाना, चेहरे को दक्षिणावर्त दिशा में एक चौथाई घुमाएं (90 डिग्री)</value>
+    <value>साइड घुमाव: साइड को दक्षिणावर्त दिशा में एक चौथाई मोड़ें (90 डिग्री)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>ऊपरी चेहरा</value>
+    <value>ऊपर की ओर</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>नीचे चेहरा</value>
+    <value>नीचे की ओर</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>सामने का चेहरा</value>
+    <value>सामने की ओर</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>बैक फ़ेस</value>
+    <value>पीछे की ओर</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>बायां चेहरा</value>
+    <value>बाएं ओर</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>दाहिना चेहरा</value>
+    <value>दाएं ओर</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>स्लाइस को घुमाएं, बीच की परत को एक चौथाई घुमाएं दक्षिणावर्त (90 डिग्री)</value>

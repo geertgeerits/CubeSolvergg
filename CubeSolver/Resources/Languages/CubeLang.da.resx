@@ -151,7 +151,7 @@
     <value>Bagside</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Ned i ansigtet</value>
+    <value>Nederside</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Kube farver:</value>
@@ -163,16 +163,16 @@
     <value>Indefra</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Venstre ansigt</value>
+    <value>Venstre side</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Udefra</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Højre ansigt</value>
+    <value>Højre side</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Overansigt</value>
+    <value>Overside</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Standard</value>
@@ -583,13 +583,13 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
     <value>Løs terningen.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Ansigtsrotationer, drej ansigtet en kvart omgang med uret (90 grader)</value>
+    <value>Siderotationer: drej siden en kvart omgang med uret (90 grader)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Overansigt</value>
+    <value>Overside</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Ned i ansigtet</value>
+    <value>Nederside</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
     <value>Forside</value>
@@ -598,10 +598,10 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
     <value>Bagside</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Venstre ansigt</value>
+    <value>Venstre side</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Højre ansigt</value>
+    <value>Højre side</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Skiven bevæger sig, drej det midterste lag en kvart omgang med uret (90 grader)</value>

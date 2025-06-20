@@ -583,7 +583,7 @@ This is not a guarantee that all cubes can be solved.</value>
     <value>Solve the cube.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Face rotations, turn the face a quarter turn clockwise (90 degrees)</value>
+    <value>Face rotations: turn the face a quarter turn clockwise (90 degrees)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Upper face</value>

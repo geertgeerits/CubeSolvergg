@@ -151,7 +151,7 @@
     <value>Baksida</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Nedåt ansiktet</value>
+    <value>Nedsida</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Kubfärger:</value>
@@ -163,16 +163,16 @@
     <value>Inifrån</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Vänster ansikte</value>
+    <value>Vänster sida</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Utifrån utsikt</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Höger ansikte</value>
+    <value>Höger sida</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Övre ansiktet</value>
+    <value>Översida</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Standard</value>
@@ -583,13 +583,13 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
     <value>Lös kuben.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Ansiktsrotationer, vrid ansiktet ett kvarts varv medurs (90 grader)</value>
+    <value>Sidrotationer: vrid sidan ett kvarts varv medurs (90 grader)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Övre ansikte</value>
+    <value>Översida</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Nedåt ansikte</value>
+    <value>Nedsida</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
     <value>Framsida</value>
@@ -598,10 +598,10 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
     <value>Baksida</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Vänster ansikte</value>
+    <value>Vänster sida</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Höger ansikte</value>
+    <value>Höger sida</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Skivan rör sig, vrid mittskiktet ett kvarts varv medurs (90 grader)</value>

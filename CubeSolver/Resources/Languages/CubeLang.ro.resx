@@ -148,31 +148,31 @@
     <value>Drepturi de autor</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Fața din spate</value>
+    <value>Partea din spate</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Fața în jos</value>
+    <value>Partea de jos</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Culorile cubului:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Fața din față</value>
+    <value>Partea din față</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>Vedere din interior</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Fața stângă</value>
+    <value>Partea stângă</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Vedere din exterior</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Fața dreaptă</value>
+    <value>Partea dreaptă</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Fața superioară</value>
+    <value>Partea superioară</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Standard</value>
@@ -583,25 +583,25 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
     <value>Rezolvați cubul.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Rotacie e mujesqe, rotiți fața un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
+    <value>Rotații laterale: rotiți lateralul cu un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Fața superioară</value>
+    <value>Partea superioară</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Fața în jos</value>
+    <value>Partea de jos</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Fața din față</value>
+    <value>Partea din față</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Fața din spate</value>
+    <value>Partea din spate</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Fața stângă</value>
+    <value>Partea stângă</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Fața dreaptă</value>
+    <value>Partea dreaptă</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Se mișcă felia, rotiți stratul din mijloc un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>

@@ -148,31 +148,31 @@
     <value>Derechos de autor</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Cara posterior</value>
+    <value>Parte trasera</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Cara inferior</value>
+    <value>Parte inferior</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Cubo de colores:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Cara frontal</value>
+    <value>Parte frontal</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>Vista interior</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Cara izquierda</value>
+    <value>Parte izquierda</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Vista exterior</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Cara derecha</value>
+    <value>Parte derecha</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Cara superior</value>
+    <value>Parte superior</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Estándar</value>
@@ -583,25 +583,25 @@ Esto no es una garantía de que todos los cubos puedan resolverse.</value>
     <value>Resuelve el cubo.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Rotaciones de las caras, gira la cara un cuarto de vuelta en sentido horario (90 grados)</value>
+    <value>Rotaciones laterales: girar el lateral un cuarto de vuelta en sentido horario (90 grados)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Cara superior</value>
+    <value>Parte superior</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Cara inferior</value>
+    <value>Parte inferior</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Cara frontal</value>
+    <value>Parte frontal</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Cara posterior</value>
+    <value>Parte trasera</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Cara izquierda</value>
+    <value>Parte izquierda</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Cara derecha</value>
+    <value>Parte derecha</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Movimientos de corte, gira la capa del medio un cuarto de vuelta en sentido horario (90 grados)</value>

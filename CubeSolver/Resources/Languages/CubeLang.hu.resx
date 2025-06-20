@@ -148,31 +148,31 @@
     <value>Szerzői jog</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Hátsó arc</value>
+    <value>Hátoldal</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Lefelé arccal</value>
+    <value>Alsó oldal</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Kocka színei:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Elülső arc</value>
+    <value>Elülső oldal</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>Belső nézet</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Bal arc</value>
+    <value>Bal oldal</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Külső kilátás</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Jobb arc</value>
+    <value>Jobb oldal</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Felső arc</value>
+    <value>Felső oldal</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Alapértelmezett</value>
@@ -583,25 +583,25 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
     <value>Oldja meg a kockát.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Arcforgatások, forgassa el az arcot negyed fordulattal az óramutató járásával megegyező irányba (90 fok)</value>
+    <value>Oldalsó forgatások: fordítsa el az oldalt negyed fordulattal az óramutató járásával megegyezően (90 fok)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Felső arc</value>
+    <value>Felső oldal</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Lefelé arccal</value>
+    <value>Alsó oldal</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Elülső arc</value>
+    <value>Elülső oldal</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Hátsó arc</value>
+    <value>Hátoldal</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Bal arc</value>
+    <value>Bal oldal</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Jobb arc</value>
+    <value>Jobb oldal</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>A szelet mozog, a középső réteget az óramutató járásával megegyezően negyed fordulattal (90 fokkal) elforgatjuk</value>

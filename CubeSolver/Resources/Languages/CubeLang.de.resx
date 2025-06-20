@@ -583,13 +583,13 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
     <value>Löse den Würfel.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Flächenrotationen, drehen Sie die Fläche eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+    <value>Seitendrehungen: Drehen Sie die Seite um eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Obere Seite</value>
+    <value>Oberseite</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Untere Seite</value>
+    <value>Unterseite</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
     <value>Vorderseite</value>

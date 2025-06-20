@@ -148,31 +148,31 @@
     <value>Direito autoral</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Face posterior</value>
+    <value>Lado verso</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Face inferior</value>
+    <value>Lado inferior</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Cores do cubo:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Face frontal</value>
+    <value>Lado frontal</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>Vista interior</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Face esquerda</value>
+    <value>Lado esquerdo</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Vista externa</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Face direita</value>
+    <value>Lado direito</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Face superior</value>
+    <value>Lado superior</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Padrão</value>
@@ -583,25 +583,25 @@ Isso não é uma garantia de que todos os cubos podem ser resolvidos.</value>
     <value>Resolva o cubo.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Rotações de face, gire a face um quarto de volta no sentido horário (90 graus)</value>
+    <value>Rotações laterais: gire o lado um quarto de volta no sentido horário (90 graus)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Face superior</value>
+    <value>Lado superior</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Face para baixo</value>
+    <value>Lado inferior</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Face frontal</value>
+    <value>Lado frontal</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Face traseira</value>
+    <value>Lado verso</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Face esquerda</value>
+    <value>Lado esquerdo</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Face direita</value>
+    <value>Lado direito</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>A fatia se move, gire a camada do meio um quarto de volta no sentido horário (90 graus)</value>

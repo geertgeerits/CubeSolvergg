@@ -151,7 +151,7 @@
     <value>뒷면</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>아래 얼굴</value>
+    <value>아래쪽</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>큐브 색상:</value>
@@ -163,13 +163,13 @@
     <value>내부 모습</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>좌향좌</value>
+    <value>왼쪽</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>외부에서 본 모습</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>오른쪽 얼굴</value>
+    <value>오른쪽</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
     <value>윗면</value>
@@ -583,13 +583,13 @@
     <value>큐브를 풀어보세요.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>얼굴 회전, 얼굴을 시계 방향으로 1/4바퀴(90도) 돌립니다.</value>
+    <value>측면 회전: 측면을 시계 방향으로 1/4바퀴(90도) 돌립니다</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>윗면</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>아래 얼굴</value>
+    <value>아래쪽</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
     <value>앞면</value>
@@ -598,10 +598,10 @@
     <value>뒷면</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>좌향좌</value>
+    <value>왼쪽</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>오른쪽 얼굴</value>
+    <value>오른쪽</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>슬라이스 이동, 중간 레이어를 시계 방향으로 1/4 회전(90도)</value>

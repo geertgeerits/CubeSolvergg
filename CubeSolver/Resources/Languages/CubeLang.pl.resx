@@ -151,28 +151,28 @@
     <value>Tylna strona</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Opuszczona twarz</value>
+    <value>Dół strony</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Kolory kostek:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Przód twarzy</value>
+    <value>Przód strony</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>Widok wewnątrz</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Lewa twarz</value>
+    <value>Lewa strona</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Zewnętrzny widok</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Prawa twarz</value>
+    <value>Prawa strona</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Górna twarz</value>
+    <value>Górna strona</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Standard</value>
@@ -583,25 +583,25 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
     <value>Rozwiąż kostkę.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Obroty ścian, obróć ścianę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
+    <value>Obrót strony: obróć stronę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Górna ściana</value>
+    <value>Górna strona</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Dół ściany</value>
+    <value>Dół strony</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Przednia ściana</value>
+    <value>Przód strony</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Tylna ściana</value>
+    <value>Tylna strona</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Lewa ściana</value>
+    <value>Lewa strona</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Prawa ściana</value>
+    <value>Prawa strona</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Przesuwanie się plasterków, obróć środkową warstwę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>

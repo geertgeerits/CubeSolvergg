@@ -148,31 +148,31 @@
     <value>Auteursrechten</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Achterzijde</value>
+    <value>Achterkant</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Onderzijde</value>
+    <value>Onderkant</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Kubus kleuren:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Voorzijde</value>
+    <value>Voorkant</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>Binnenkant</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Linkerzijde</value>
+    <value>Linkerkant</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Buitenkant</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Rechterzijde</value>
+    <value>Rechterkant</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Bovenzijde</value>
+    <value>Bovenkant</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Standaard</value>
@@ -583,7 +583,7 @@ Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
     <value>Los de kubus op.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Vlakrotaties, draai het vlak een kwartslag met de klok mee (90 graden)</value>
+    <value>Zijwaartse rotaties: draai de zijkant een kwartslag met de klok mee (90 graden)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
     <value>Bovenkant</value>

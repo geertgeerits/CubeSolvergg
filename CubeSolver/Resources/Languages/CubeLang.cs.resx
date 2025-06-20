@@ -148,10 +148,10 @@
     <value>Autorská práva</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Zadní obličej</value>
+    <value>Zadní strana</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Dolů obličej</value>
+    <value>Spodní strana</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Barvy kostek:</value>
@@ -163,16 +163,16 @@
     <value>Pohled dovnitř</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Levá tvář</value>
+    <value>Levá strana</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Pohled zvenčí</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Pravá tvář</value>
+    <value>Pravá strana</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Horní část obličeje</value>
+    <value>Horní strana</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Výchozí</value>
@@ -583,25 +583,25 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
     <value>Vyřešte kostku.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Rotace obličeje, otočte obličej o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
+    <value>Otáčení stran: otočte stranu o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Horní část obličeje</value>
+    <value>Horní strana</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Dolů obličej</value>
+    <value>Spodní strana</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Přední čelo</value>
+    <value>Přední strana</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Zadní obličej</value>
+    <value>Zadní strana</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Levá tvář</value>
+    <value>Levá strana</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Pravá tvář</value>
+    <value>Pravá strana</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Řez se pohybuje, otočte střední vrstvu o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>

@@ -151,25 +151,25 @@
     <value>背面</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>下向き</value>
+    <value>下面</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>キューブの色:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>正面</value>
+    <value>前面</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>内部の様子</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>左顔</value>
+    <value>左側</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>外観</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>右顔</value>
+    <value>右側</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
     <value>上面</value>
@@ -583,25 +583,25 @@
     <value>キューブを解いてください。</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>顔の回転、顔を時計回りに1/4回転（90度）</value>
+    <value>側面の回転：側面を時計回りに1/4回転（90度）させます</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>윗면</value>
+    <value>上面</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>下向き</value>
+    <value>下面</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>正面</value>
+    <value>前面</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
     <value>背面</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>左顔</value>
+    <value>左側</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>右顔</value>
+    <value>右側</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>スライスが動き、中間層を時計回りに1/4回転（90度）します。</value>

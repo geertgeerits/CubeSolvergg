@@ -148,31 +148,31 @@
     <value>Hak cipta</value>
   </data>
   <data name="CubeBackFace_Text" xml:space="preserve">
-    <value>Wajah belakang</value>
+    <value>Sisi belakang</value>
   </data>
   <data name="CubeDownFace_Text" xml:space="preserve">
-    <value>Wajah ke bawah</value>
+    <value>Sisi bawah</value>
   </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Warna kubus:</value>
   </data>
   <data name="CubeFrontFace_Text" xml:space="preserve">
-    <value>Wajah depan</value>
+    <value>Sisi depan</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>Tampilan dalam</value>
   </data>
   <data name="CubeLeftFace_Text" xml:space="preserve">
-    <value>Wajah kiri</value>
+    <value>Sisi kiri</value>
   </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Tampilan luar</value>
   </data>
   <data name="CubeRightFace_Text" xml:space="preserve">
-    <value>Wajah kanan</value>
+    <value>Sisi kanan</value>
   </data>
   <data name="CubeUpFace_Text" xml:space="preserve">
-    <value>Wajah bagian atas</value>
+    <value>Sisi atas</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Bawaan</value>
@@ -583,25 +583,25 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
     <value>Pecahkan kubusnya.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Rotasi muka, putar muka seperempat putaran searah jarum jam (90 derajat)</value>
+    <value>Rotasi sisi: putar sisi seperempat putaran searah jarum jam (90 derajat)</value>
   </data>
   <data name="NotationTurn_U_Text" xml:space="preserve">
-    <value>Wajah bagian atas</value>
+    <value>Sisi atas</value>
   </data>
   <data name="NotationTurn_D_Text" xml:space="preserve">
-    <value>Wajah ke bawah</value>
+    <value>Sisi bawah</value>
   </data>
   <data name="NotationTurn_F_Text" xml:space="preserve">
-    <value>Wajah depan</value>
+    <value>Sisi depan</value>
   </data>
   <data name="NotationTurn_B_Text" xml:space="preserve">
-    <value>Wajah belakang</value>
+    <value>Sisi belakang</value>
   </data>
   <data name="NotationTurn_L_Text" xml:space="preserve">
-    <value>Wajah kiri</value>
+    <value>Sisi kiri</value>
   </data>
   <data name="NotationTurn_R_Text" xml:space="preserve">
-    <value>Wajah kanan</value>
+    <value>Sisi kanan</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Gerakan irisan, putar lapisan tengah seperempat putaran searah jarum jam (90 derajat)</value>
