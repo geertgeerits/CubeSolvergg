@@ -14,6 +14,16 @@ namespace CubeSolver
                 DisplayAlert("InitializeComponent: PageAbout", ex.Message, "OK");
                 return;
             }
+
+            //// Set the flow direction to right-to-left for Arabic
+            if (Globals.cLanguage == "ar" || Globals.cLanguage == "ar-SA")
+            {
+                FlowDirection = FlowDirection.RightToLeft;
+            }
+            else
+            {
+                FlowDirection = FlowDirection.LeftToRight;
+            }
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
             lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
