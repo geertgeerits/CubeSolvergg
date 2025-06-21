@@ -332,19 +332,19 @@ Nepovoleno:</value>
     <value>Otočte zadní stranu o půl otáčky.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Otočte zadní stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte zadní stranu o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Otočte zadní stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte zadní stranu o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Otočte spodní stranu o půl otáčky.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Otočte spodní stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte spodní stranu o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Otočte spodní stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte spodní stranu o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Otočte celou kostku tak, aby přední strana šla dolů, pravá strana zůstala vpravo.</value>
@@ -365,61 +365,61 @@ Nepovoleno:</value>
     <value>Otočte celou kostku tak, aby vršek šel na pravou stranu, přední strana zůstala vepředu.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Otočte přední střední vrstvu o čtvrt otáčky na pravou stranu (-).</value>
+    <value>Otočte přední střední vrstvu o čtvrt otáčky na pravou stranu. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Otočte přední prostřední vrstvu o čtvrt otáčky k horní straně (+).</value>
+    <value>Otočte přední prostřední vrstvu o čtvrt otáčky k horní straně. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Otočte přední stranu o půl otáčky.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Otočte přední stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte přední stranu o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Otočte přední stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte přední stranu o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Otočte levou stranu o půl otáčky.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Otočte levou stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte levou stranu o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Otočte levou stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte levou stranu o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Otočte střední vrstvu o půl otáčky.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Otočte pravou prostřední vrstvu o čtvrt otáčky na přední stranu (+).</value>
+    <value>Otočte pravou prostřední vrstvu o čtvrt otáčky na přední stranu. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Otočte pravou prostřední vrstvu o čtvrt otáčky k horní straně (-).</value>
+    <value>Otočte pravou prostřední vrstvu o čtvrt otáčky k horní straně. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Otočte pravou stranu o půl otáčky.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Otočte pravou stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte pravou stranu o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Otočte pravou stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte pravou stranu o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Otočte horní střední vrstvu o čtvrt otáčky na přední stranu (-).</value>
+    <value>Otočte horní střední vrstvu o čtvrt otáčky na přední stranu. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Otočte horní střední vrstvu o čtvrt otáčky doprava (+).</value>
+    <value>Otočte horní střední vrstvu o čtvrt otáčky doprava. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Otočte horní stranu o půl otáčky.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Otočte horní stranu o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte horní stranu o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Otočte horní stranu o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte horní stranu o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Verze:</value>
@@ -475,55 +475,55 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
     <value>Otočte zadní a střední vrstvu dohromady o půl otáčky.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Otočte zadní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte zadní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Otočte zadní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte zadní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Otočte spodní a střední vrstvu dohromady o půl otáčky.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Otočte spodní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte spodní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Otočte spodní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte spodní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Otočte přední a střední vrstvu dohromady o půl otáčky.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Otočte přední a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte přední a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Otočte přední a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte přední a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Otočte levou a střední vrstvu dohromady o půl otáčky.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Otočte levou a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte levou a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Otočte levou a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte levou a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Otočte pravou a střední vrstvu dohromady o půl otáčky.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Otočte pravou a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte pravou a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Otočte pravou a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte pravou a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Otočte horní a střední vrstvu dohromady o půl otáčky.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Otočte horní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“ (-).</value>
+    <value>Otočte horní a střední vrstvu dohromady o čtvrt otáčky „proti směru hodinových ručiček“. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Otočte horní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“ (+).</value>
+    <value>Otočte horní a střední vrstvu dohromady o čtvrt otáčky „ve směru hodinových ručiček“. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Pošlete e-mail autorovi této aplikace</value>
