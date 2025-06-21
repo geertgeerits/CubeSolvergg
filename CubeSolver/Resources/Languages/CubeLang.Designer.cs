@@ -477,7 +477,7 @@ namespace CubeSolver.Resources.Languages {
         
         /// <summary>
         ///   Looks up a localized string similar to Google Translate was used for the translation of the text. This is not a guarantee that all translations are correct.
-        ///The supporting languages are: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish and Ukrainian..
+        ///The supporting languages are: Arabic, Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish, Turkish and Ukrainian..
         /// </summary>
         internal static string InfoLanguage_Text {
             get {
@@ -688,7 +688,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cube rotations, turn the cube a quarter turn clockwise (90 degrees).
+        ///   Looks up a localized string similar to Cube rotations: turn the cube a quarter turn clockwise (90 degrees).
         /// </summary>
         internal static string NotationTurn_Cube_Text {
             get {
@@ -778,7 +778,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Slice moves, turn the middle layer a quarter turn clockwise (90 degrees).
+        ///   Looks up a localized string similar to Slice moves: turn the middle layer a quarter turn clockwise (90 degrees).
         /// </summary>
         internal static string NotationTurn_Slice_Text {
             get {
@@ -796,7 +796,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wide moves, turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r..
+        ///   Looks up a localized string similar to Wide moves: turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r..
         /// </summary>
         internal static string NotationTurn_Wide_Text {
             get {

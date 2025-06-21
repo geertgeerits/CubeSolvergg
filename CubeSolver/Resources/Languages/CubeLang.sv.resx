@@ -604,7 +604,7 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
     <value>Höger sida</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Skivan rör sig, vrid mittskiktet ett kvarts varv medurs (90 grader)</value>
+    <value>Skivan rör sig: vrid mittskiktet ett kvarts varv medurs (90 grader)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Följer L-riktningen</value>
@@ -616,7 +616,7 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
     <value>Följer F-riktningen</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Kubrotationer, vrid kuben ett kvarts varv medurs (90 grader)</value>
+    <value>Kubrotationer: vrid kuben ett kvarts varv medurs (90 grader)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Följer R-riktningen</value>

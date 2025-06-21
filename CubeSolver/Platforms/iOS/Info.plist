@@ -49,6 +49,7 @@
 
 	<key>CFBundleLocalizations</key>
 	<array>
+		<string>ar</string>
 		<string>cs</string>
 		<string>da</string>
 		<string>de</string>
@@ -67,6 +68,7 @@
 		<string>pt</string>
 		<string>ro</string>
 		<string>sv</string>
+		<string>tr</string>
 		<string>uk</string>
 		<string>zh-Hans</string>
 		<string>zh-Hant</string>

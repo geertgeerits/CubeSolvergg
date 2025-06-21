@@ -604,7 +604,7 @@ Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
     <value>Rechterkant</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Slice-bewegingen, draai de middelste laag een kwartslag met de klok mee (90 graden)</value>
+    <value>Slice-bewegingen: draai de middelste laag een kwartslag met de klok mee (90 graden)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Volgt de L-richting</value>
@@ -616,7 +616,7 @@ Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
     <value>Volgt de F-richting</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Kubusrotaties, draai de kubus een kwartslag met de klok mee (90 graden)</value>
+    <value>Kubusrotaties: draai de kubus een kwartslag met de klok mee (90 graden)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Volgt de R-richting</value>

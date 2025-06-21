@@ -604,7 +604,7 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
     <value>Jobb oldal</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>A szelet mozog, a középső réteget az óramutató járásával megegyezően negyed fordulattal (90 fokkal) elforgatjuk</value>
+    <value>A szelet mozog: a középső réteget az óramutató járásával megegyezően negyed fordulattal (90 fokkal) elforgatjuk</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Követi az L irányt</value>
@@ -616,7 +616,7 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
     <value>Követi az F irányt</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Kocka forgatása, forgassa el a kockát negyed fordulattal az óramutató járásával megegyezően (90 fokkal)</value>
+    <value>Kocka forgatása: forgassa el a kockát negyed fordulattal az óramutató járásával megegyezően (90 fokkal)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Követi az R irányt</value>

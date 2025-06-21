@@ -604,7 +604,7 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
     <value>Rechte Seite</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Scheibenbewegungen, drehen Sie die mittlere Schicht eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+    <value>Scheibenbewegungen: drehen Sie die mittlere Schicht eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Folgt der L-Richtung</value>
@@ -616,7 +616,7 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
     <value>Folgt der F-Richtung</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Würfelrotationen, drehen Sie den Würfel eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
+    <value>Würfelrotationen: drehen Sie den Würfel eine Vierteldrehung im Uhrzeigersinn (90 Grad)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Folgt der R-Richtung</value>

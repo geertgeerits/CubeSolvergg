@@ -604,7 +604,7 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
     <value>Højre side</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Skiven bevæger sig, drej det midterste lag en kvart omgang med uret (90 grader)</value>
+    <value>Skiven bevæger sig: drej det midterste lag en kvart omgang med uret (90 grader)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Følger L-retningen</value>
@@ -616,7 +616,7 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
     <value>Følger F-retningen</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Terningrotationer, drej terningen en kvart omgang med uret (90 grader)</value>
+    <value>Terningrotationer: drej terningen en kvart omgang med uret (90 grader)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Følger R-retningen</value>

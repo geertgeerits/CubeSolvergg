@@ -604,7 +604,7 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
     <value>Sisi kanan</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Gerakan irisan, putar lapisan tengah seperempat putaran searah jarum jam (90 derajat)</value>
+    <value>Gerakan irisan: putar lapisan tengah seperempat putaran searah jarum jam (90 derajat)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Mengikuti arah L</value>
@@ -616,7 +616,7 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
     <value>Mengikuti arah F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Rotasi kubus, putar kubus seperempat putaran searah jarum jam (90 derajat)</value>
+    <value>Rotasi kubus: putar kubus seperempat putaran searah jarum jam (90 derajat)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Mengikuti arah R</value>

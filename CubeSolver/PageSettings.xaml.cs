@@ -21,13 +21,19 @@ namespace CubeSolver
             }
 
             //// Set the flow direction to right-to-left for Arabic
-            if (Globals.cLanguage == "ar" || Globals.cLanguage == "ar-SA")
+            if (Globals.cLanguage == "ar" || Globals.cLanguage == "he")
             {
-                FlowDirection = FlowDirection.RightToLeft;
+                if (FlowDirection != FlowDirection.RightToLeft)
+                {
+                    FlowDirection = FlowDirection.RightToLeft;
+                }
             }
             else
             {
-                FlowDirection = FlowDirection.LeftToRight;
+                if (FlowDirection != FlowDirection.LeftToRight)
+                {
+                    FlowDirection = FlowDirection.LeftToRight;
+                }
             }
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
@@ -54,28 +60,30 @@ namespace CubeSolver
             //// Select the current language in the picker
             pckLanguage.SelectedIndex = Globals.cLanguage switch
             {
-                "id" => 0,      // Bahasa Indonesia
-                "cs" => 1,      // Čeština - Czech
-                "da" => 2,      // Dansk - Danish
-                "de" => 3,      // Deutsch - German
-                "es" => 5,      // Español - Spanish
-                "fr" => 6,      // Français - French
-                "ko" => 7,      // 한국어 (Hangugeo) - Korean
-                "hi" => 8,      // हिन्दी (Hindī)
-                "it" => 9,      // Italiano - Italian
-                "hu" => 10,     // Magyar - Hungarian
-                "nl" => 11,     // Nederlands - Dutch
-                "ja" => 12,     // 日本語 (Nihongo) - Japanese
-                "nb" => 13,     // Norsk Bokmål - Norwegian Bokmål
-                "pl" => 14,     // Polski - Polish
-                "pt" => 15,     // Português - Portuguese
-                "ro" => 16,     // Română - Romanian
-                "fi" => 17,     // Suomi - Finnish
-                "sv" => 18,     // Svenska - Swedish
-                "uk" => 19,     // Українська (Ukraїnska) - Ukrainian
-                "zh-CN" => 20,  // 中文 (Zhōngwén) - Chinese simplified
-                "zh-TW" => 21,  // 中文 (Zhōngguó rén) - Chinese traditional
-                _ => 4,         // English
+                "ar" => 0,      // العربية (al'Arabiyyeẗ) - Arabic
+                "id" => 1,      // Bahasa Indonesia
+                "cs" => 2,      // Čeština - Czech
+                "da" => 3,      // Dansk - Danish
+                "de" => 4,      // Deutsch - German
+                "es" => 6,      // Español - Spanish
+                "fr" => 7,      // Français - French
+                "ko" => 8,      // 한국어 (Hangugeo) - Korean
+                "hi" => 9,      // हिन्दी (Hindī)
+                "it" => 10,     // Italiano - Italian
+                "hu" => 11,     // Magyar - Hungarian
+                "nl" => 12,     // Nederlands - Dutch
+                "ja" => 13,     // 日本語 (Nihongo) - Japanese
+                "nb" => 14,     // Norsk Bokmål - Norwegian Bokmål
+                "pl" => 15,     // Polski - Polish
+                "pt" => 16,     // Português - Portuguese
+                "ro" => 17,     // Română - Romanian
+                "fi" => 18,     // Suomi - Finnish
+                "sv" => 19,     // Svenska - Swedish
+                "tr" => 20,     // Türkçe - Turkish
+                "uk" => 21,     // Українська (Ukraїnska) - Ukrainian
+                "zh-CN" => 22,  // 中文 (Zhōngwén) - Chinese simplified
+                "zh-TW" => 23,  // 中文 (Zhōngguó rén) - Chinese traditional
+                _ => 5,         // English
             };
 
             //// Fill the picker with the speech languages and select the saved language in the picker
@@ -118,27 +126,29 @@ namespace CubeSolver
             {
                 Globals.cLanguage = selectedIndex switch
                 {
-                    0 => "id",      // Bahasa Indonesia
-                    1 => "cs",      // Čeština - Czech
-                    2 => "da",      // Dansk - Danish
-                    3 => "de",      // Deutsch - German
-                    5 => "es",      // Español - Spanish
-                    6 => "fr",      // Français - French
-                    7 => "ko",      // 한국어 (Hangugeo) - Korean
-                    8 => "hi",      // हिन्दी (Hindī)
-                    9 => "it",      // Italiano - Italian
-                    10 => "hu",     // Magyar - Hungarian
-                    11 => "nl",     // Nederlands - Dutch
-                    12 => "ja",     // 日本語 (Nihongo) - Japanese
-                    13 => "nb",     // Norsk Bokmål - Norwegian Bokmål
-                    14 => "pl",     // Polski - Polish
-                    15 => "pt",     // Português - Portuguese
-                    16 => "ro",     // Română - Romanian
-                    17 => "fi",     // Suomi - Finnish
-                    18 => "sv",     // Svenska - Swedish
-                    19 => "uk",     // Українська (Ukraїnska) - Ukrainian
-                    20 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
-                    21 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
+                    0 => "ar",      // العربية (al'Arabiyyeẗ) - Arabic
+                    1 => "id",      // Bahasa Indonesia
+                    2 => "cs",      // Čeština - Czech
+                    3 => "da",      // Dansk - Danish
+                    4 => "de",      // Deutsch - German
+                    6 => "es",      // Español - Spanish
+                    7 => "fr",      // Français - French
+                    8 => "ko",      // 한국어 (Hangugeo) - Korean
+                    9 => "hi",      // हिन्दी (Hindī)
+                    10 => "it",     // Italiano - Italian
+                    11 => "hu",     // Magyar - Hungarian
+                    12 => "nl",     // Nederlands - Dutch
+                    13 => "ja",     // 日本語 (Nihongo) - Japanese
+                    14 => "nb",     // Norsk Bokmål - Norwegian Bokmål
+                    15 => "pl",     // Polski - Polish
+                    16 => "pt",     // Português - Portuguese
+                    17 => "ro",     // Română - Romanian
+                    18 => "fi",     // Suomi - Finnish
+                    19 => "sv",     // Svenska - Swedish
+                    20 => "tr",     // Türkçe - Turkish
+                    21 => "uk",     // Українська (Ukraїnska) - Ukrainian
+                    22 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
+                    23 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
                     _ => "en",      // English
                 };
             }

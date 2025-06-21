@@ -16,13 +16,19 @@ namespace CubeSolver
             }
 
             //// Set the flow direction to right-to-left for Arabic
-            if (Globals.cLanguage == "ar" || Globals.cLanguage == "ar-SA")
+            if (Globals.cLanguage == "ar" || Globals.cLanguage == "he")
             {
-                FlowDirection = FlowDirection.RightToLeft;
+                if (FlowDirection != FlowDirection.RightToLeft)
+                {
+                    FlowDirection = FlowDirection.RightToLeft;
+                }
             }
             else
             {
-                FlowDirection = FlowDirection.LeftToRight;
+                if (FlowDirection != FlowDirection.LeftToRight)
+                {
+                    FlowDirection = FlowDirection.LeftToRight;
+                }
             }
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows

@@ -33,6 +33,7 @@
 
 	<Resources>
 		<Resource Language="en" />
+		<Resource Language="ar" />
 		<Resource Language="cs" />
 		<Resource Language="da" />
 		<Resource Language="de" />
@@ -51,6 +52,7 @@
 		<Resource Language="pt" />
 		<Resource Language="ro" />
 		<Resource Language="sv" />
+		<Resource Language="tr" />
 		<Resource Language="uk" />
 		<Resource Language="zh-CN"/>
 		<Resource Language="zh-TW"/>

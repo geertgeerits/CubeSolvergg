@@ -604,7 +604,7 @@
     <value>Права сторона</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Зріз рухається, поверніть середній шар на чверть оберту за годинниковою стрілкою (90 градусів)</value>
+    <value>Зріз рухається: поверніть середній шар на чверть оберту за годинниковою стрілкою (90 градусів)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Слідує в напрямку L</value>
@@ -616,7 +616,7 @@
     <value>Слідує за напрямком F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Обертання куба, поверніть куб на чверть оберту за годинниковою стрілкою (90 градусів)</value>
+    <value>Обертання куба: поверніть куб на чверть оберту за годинниковою стрілкою (90 градусів)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Слідує за напрямком R</value>

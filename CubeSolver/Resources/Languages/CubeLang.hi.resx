@@ -602,7 +602,7 @@
     <value>दाएं ओर</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>स्लाइस को घुमाएं, बीच की परत को एक चौथाई घुमाएं दक्षिणावर्त (90 डिग्री)</value>
+    <value>स्लाइस को घुमाएं: बीच की परत को एक चौथाई घुमाएं दक्षिणावर्त (90 डिग्री)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>L दिशा का अनुसरण करता है</value>
@@ -614,7 +614,7 @@
     <value>F दिशा का अनुसरण करता है</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>घन घूर्णन, घन को दक्षिणावर्त दिशा में एक चौथाई घुमाएं (90 डिग्री)</value>
+    <value>घन घूर्णन: घन को दक्षिणावर्त दिशा में एक चौथाई घुमाएं (90 डिग्री)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>R दिशा का अनुसरण करता है</value>

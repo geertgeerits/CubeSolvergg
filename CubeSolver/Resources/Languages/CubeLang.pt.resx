@@ -604,7 +604,7 @@ Isso não é uma garantia de que todos os cubos podem ser resolvidos.</value>
     <value>Lado direito</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>A fatia se move, gire a camada do meio um quarto de volta no sentido horário (90 graus)</value>
+    <value>A fatia se move: gire a camada do meio um quarto de volta no sentido horário (90 graus)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Segue a direção L</value>
@@ -616,7 +616,7 @@ Isso não é uma garantia de que todos os cubos podem ser resolvidos.</value>
     <value>Segue a direção F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Rotações do cubo, gire o cubo um quarto de volta no sentido horário (90 graus)</value>
+    <value>Rotações do cubo: gire o cubo um quarto de volta no sentido horário (90 graus)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Segue a direção R</value>

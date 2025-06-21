@@ -604,7 +604,7 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
     <value>Pravá strana</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Řez se pohybuje, otočte střední vrstvu o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
+    <value>Řez se pohybuje: otočte střední vrstvu o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Sleduje směr L</value>
@@ -616,7 +616,7 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
     <value>Sleduje směr F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Otočení kostky, otočte kostkou o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
+    <value>Otočení kostky: otočte kostkou o čtvrt otáčky ve směru hodinových ručiček (90 stupňů)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Sleduje směr R</value>

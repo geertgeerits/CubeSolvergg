@@ -604,7 +604,7 @@
     <value>오른쪽</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>슬라이스 이동, 중간 레이어를 시계 방향으로 1/4 회전(90도)</value>
+    <value>슬라이스 이동: 중간 레이어를 시계 방향으로 1/4 회전(90도)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>L 방향을 따릅니다</value>
@@ -616,7 +616,7 @@
     <value>F 방향을 따릅니다</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>큐브 회전, 큐브를 시계 방향으로 1/4 회전(90도)합니다.</value>
+    <value>큐브 회전: 큐브를 시계 방향으로 1/4 회전(90도)합니다.</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>R 방향을 따릅니다</value>

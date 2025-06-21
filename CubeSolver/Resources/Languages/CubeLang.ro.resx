@@ -604,7 +604,7 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
     <value>Partea dreaptă</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Se mișcă felia, rotiți stratul din mijloc un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
+    <value>Se mișcă felia: rotiți stratul din mijloc un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Urmează direcția L</value>
@@ -616,7 +616,7 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
     <value>Urmează direcția F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Rotații cubului, rotiți cubul un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
+    <value>Rotații cubului: rotiți cubul un sfert de tură în sensul acelor de ceasornic (90 de grade)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Urmează direcția R</value>

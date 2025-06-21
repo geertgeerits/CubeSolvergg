@@ -604,7 +604,7 @@ Ceci ne garantit pas que tous les cubes peuvent être résolus.</value>
     <value>Face droite</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Déplacements en tranches, faites tourner la couche intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
+    <value>Déplacements en tranches: faites tourner la couche intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Suite la direction L</value>
@@ -616,7 +616,7 @@ Ceci ne garantit pas que tous les cubes peuvent être résolus.</value>
     <value>Suite la direction F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Rotations du cube, faites tourner le cube d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
+    <value>Rotations du cube: faites tourner le cube d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Suite la direction R</value>

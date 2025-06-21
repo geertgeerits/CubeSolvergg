@@ -604,7 +604,7 @@
     <value>右侧</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>切片移动，将中间层顺时针旋转四分之一圈（90 度）</value>
+    <value>切片移动:  将中间层顺时针旋转四分之一圈（90 度）</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>沿 L 方向</value>
@@ -616,7 +616,7 @@
     <value>沿 F 方向</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>立方体旋转，将立方体顺时针旋转四分之一圈（90 度）</value>
+    <value>立方体旋转:  将立方体顺时针旋转四分之一圈（90 度）</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>跟随 R 方向</value>

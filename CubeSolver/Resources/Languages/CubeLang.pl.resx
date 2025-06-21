@@ -604,7 +604,7 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
     <value>Prawa strona</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Przesuwanie się plasterków, obróć środkową warstwę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
+    <value>Przesuwanie się plasterków: obróć środkową warstwę o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Podąża w kierunku L</value>
@@ -616,7 +616,7 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
     <value>Podąża w kierunku F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Obrót sześcianu, obróć sześcian o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
+    <value>Obrót sześcianu: obróć sześcian o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Podąża w kierunku R</value>

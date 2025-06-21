@@ -604,7 +604,7 @@ Dette er ikke en garanti for at alle kuber kan løses.</value>
     <value>Høyre side</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Skiven beveger seg, vri det midterste laget en kvart omdreining med klokken (90 grader)</value>
+    <value>Skiven beveger seg: vri det midterste laget en kvart omdreining med klokken (90 grader)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Følger L-retningen</value>
@@ -616,7 +616,7 @@ Dette er ikke en garanti for at alle kuber kan løses.</value>
     <value>Følger F-retningen</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Kuberotasjoner, drei kuben en kvart omdreining med klokken (90 grader)</value>
+    <value>Kuberotasjoner: drei kuben en kvart omdreining med klokken (90 grader)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Følger R-retningen</value>

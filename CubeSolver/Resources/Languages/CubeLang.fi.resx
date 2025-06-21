@@ -604,7 +604,7 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
     <value>Oikea puoli</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Viipale liikkuu, käännä keskikerrosta neljänneskierros myötäpäivään (90 astetta)</value>
+    <value>Viipale liikkuu: käännä keskikerrosta neljänneskierros myötäpäivään (90 astetta)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Seuraa L-suuntaa</value>
@@ -616,7 +616,7 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
     <value>Seuraa F-suuntaa</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Kuution kierto, käännä kuutiota neljänneskierros myötäpäivään (90 astetta)</value>
+    <value>Kuution kierto: käännä kuutiota neljänneskierros myötäpäivään (90 astetta)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Seuraa R-suuntaa</value>

@@ -604,7 +604,7 @@ Questa non è una garanzia che tutti i cubi possano essere risolti.</value>
     <value>Lato destro</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Spostamenti di fetta, ruota lo strato intermedio di un quarto di giro in senso orario (90 gradi)</value>
+    <value>Spostamenti di fetta: ruota lo strato intermedio di un quarto di giro in senso orario (90 gradi)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Segue la direzione L</value>
@@ -616,7 +616,7 @@ Questa non è una garanzia che tutti i cubi possano essere risolti.</value>
     <value>Segue la direzione F</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Rotazioni del cubo, ruota il cubo di un quarto di giro in senso orario (90 gradi)</value>
+    <value>Rotazioni del cubo: ruota il cubo di un quarto di giro in senso orario (90 gradi)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Segue la direzione R</value>

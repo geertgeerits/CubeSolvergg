@@ -604,7 +604,7 @@
     <value>右側</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>スライスが動き、中間層を時計回りに1/4回転（90度）します。</value>
+    <value>スライスが動き: 中間層を時計回りに1/4回転（90度）します。</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>L方向に沿って進む</value>
@@ -616,7 +616,7 @@
     <value>F方向に従う</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>キューブの回転、キューブを時計回りに1/4回転（90度）します</value>
+    <value>キューブの回転 : キューブを時計回りに1/4回転（90度）します</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>R方向に沿って進む</value>

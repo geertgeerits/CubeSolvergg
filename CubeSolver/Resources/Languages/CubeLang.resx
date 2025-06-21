@@ -604,7 +604,7 @@ This is not a guarantee that all cubes can be solved.</value>
     <value>Right face</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
-    <value>Slice moves, turn the middle layer a quarter turn clockwise (90 degrees)</value>
+    <value>Slice moves: turn the middle layer a quarter turn clockwise (90 degrees)</value>
   </data>
   <data name="NotationTurn_M_Text" xml:space="preserve">
     <value>Follows the L direction</value>
@@ -616,7 +616,7 @@ This is not a guarantee that all cubes can be solved.</value>
     <value>Follows the F direction</value>
   </data>
   <data name="NotationTurn_Cube_Text" xml:space="preserve">
-    <value>Cube rotations, turn the cube a quarter turn clockwise (90 degrees)</value>
+    <value>Cube rotations: turn the cube a quarter turn clockwise (90 degrees)</value>
   </data>
   <data name="NotationTurn_x_Text" xml:space="preserve">
     <value>Follows the R direction</value>
@@ -628,7 +628,7 @@ This is not a guarantee that all cubes can be solved.</value>
     <value>Follows the F direction</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Wide moves, turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r.</value>
+    <value>Wide moves: turn 2 layers at once a quarter turn clockwise (90 degrees), they are in lower case: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>An apostrophe (e.g., U') indicates a counter-clockwise quarter turn (90 degrees).</value>
@@ -659,7 +659,7 @@ This is not a guarantee that all cubes can be solved.</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate was used for the translation of the text. This is not a guarantee that all translations are correct.
-The supporting languages are: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish and Ukrainian.</value>
+The supporting languages are: Arabic, Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish, Turkish and Ukrainian.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>You can always contact me for any corrections.</value>

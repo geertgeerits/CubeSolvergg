@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>يوافق</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>غير مسموح به:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>الأحرف المسموح بها:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>يغلق</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>إعادة ضبط</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>يحل</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>الرجاء إغلاق التطبيق.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>اتصال:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>يكمل</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>حقوق الطبع والنشر</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>ألوان المكعب:</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>منظر داخلي</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>منظر خارجي</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>تقصير</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>العب أو حل المكعب.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>لا أوافق</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>بريد إلكتروني:</value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>موضح بالكلام:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>موضح بالنص:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>أدر جوانب المكعب باتجاه عقارب الساعة وعكسها:
+
+إذا طُلب منك تدوير الجهة الأمامية باتجاه عقارب الساعة، فهذا يعني أن اتجاه دوران العقارب هو عكس اتجاه عقارب الساعة.
+
+للأوجه الأخرى، تخيل دائمًا أنك أمام الجهة المراد تدويرها. فإذا طُلب منك تدوير الجهة الخلفية باتجاه عقارب الساعة، تخيل أنك على الجهة الأخرى من المكعب، ثم أدر الجهة الخلفية باتجاه عقارب الساعة. لا تُدِر المكعب نفسه.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>افتح المكعب المحفوظ.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>احفظ المكعب الحالي.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>انقل الألوان من المكعب المُشتت إلى هذا المكعب. اختر لونًا من شريط الألوان في الأعلى، ثم انقر على قطع المكعب لتغييرها. اضغط على هذا الزر مرة أخرى لمغادرة هذا القسم، ثم اضغط على زر "حل".</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>رموز ألوان النظام السداسي عشر:
+
+الأحرف من ١ إلى ٢: أحمر
+الأحرف من ٣ إلى ٤: أخضر
+الأحرف من ٥ إلى ٦: أزرق</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>معلومة</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>اللغة الكلام:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>لغة:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>يُقدَّم البرنامج "كما هو"، دون أي ضمان من أي نوع، صريحًا كان أم ضمنيًا، بما في ذلك على سبيل المثال لا الحصر ضمانات قابلية التسويق والملاءمة لغرض معين وعدم التعدي. لا يتحمل المؤلف و/أو الناشر، في أي حال من الأحوال، مسؤولية أي مطالبة أو أضرار أو أي مسؤولية أخرى، سواءً في دعوى عقدية أو جنحة أو غير ذلك، ناشئة عن البرنامج أو استخدامه أو أي تعاملات أخرى معه، أو مرتبطة به، أو ناتجة عنه.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>رخصة</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>يُمكن استخدام هذا التطبيق بحرية لأغراض غير تجارية.
+
+استخدم هذا البرنامج على مسؤوليتك الخاصة تمامًا.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>لا يمكن أن يظهر لون المربع المركزي إلا مرة واحدة.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>يجب أن تكون ألوان مكعب الزاوية مختلفة.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>يجب أن تكون ألوان مكعب الحافة مختلفة.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>مبروك تم حل المكعب</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>المكعب لم يتم حله.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>من كل لون متاح، يجب أن يكون هناك تسعة من نفس اللون.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>حل المكعبات</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>لا</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>سياسة الخصوصية:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>لا يتم تخزين أي بيانات شخصية أو غيرها أو نقلها لي أو للآخرين.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>سيتم إعادة تشغيل التطبيق.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>إعادة ضبط</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>يجب حفظ بعض الإعدادات المتغيرة لتطبيقها. بعد الحفظ، يُعاد تشغيل التطبيق ويُعاد ضبط المكعب.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>يحفظ</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>إعدادات</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>يحل</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>قف</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>يحتوي النص على حرف أو أكثر غير مسموح به.
+
+غير مسموح به:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>لا يدعم هذا الجهاز تحويل النص إلى كلام.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>مظلم</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>ضوء</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>نظام</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>سمة:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>عُد</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>إذهب للأمام</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>يساعد</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>لا يمكن حل المكعب.
+
+السبب المحتمل هو نقل الألوان بشكل غير صحيح إلى هذا المكعب.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>الوقت بالمللي ثانية:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>عدد الدورات:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>طرق الحل:
+- تلقائي: استخدم زر المكعب أسفل الشاشة لإدخال ألوان المكعب الحقيقي. بعد الانتهاء، اضغط على الزر مرة أخرى، ثم انقر على "حل". سيتم حل المكعب باستخدام خوارزمية "Kociemba". انقل الحركات المقترحة إلى مكعبك الحقيقي.
+- إذا عطّلت خوارزمية "Kociemba" في الإعدادات، فسيستخدم التطبيق طريقة "Friedrich" (CFOP).
+- عكسي: استخدم مفاتيح الأسهم لخلط المكعب، ثم اضغط على "حل". سيتم حل المكعب بترتيب عكسي.
+- يدوي: على الشاشة الرئيسية، استخدم مفاتيح الأسهم لخلط المكعب وحله. أو اضغط على زر المكعب مرتين، ثم اضغط على زر الحل، وسيتم حل المكعب باستخدام طريقة "Kociemba" أو "CFOP".
+
+هذا لا يضمن إمكانية حل جميع المكعبات.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>لقد عاد المكعب إلى حالته السابقة.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>الألوان الموجودة في القطع المركزية خاطئة.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>من كل لون متاح، يجب أن يكون هناك أربعة من نفس اللون على مكعب الحافة.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>من كل لون متاح، يجب أن يكون هناك أربعة من نفس اللون على مكعب الزاوية.</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>أرسل بريدًا إلكترونيًا إلى مؤلف هذا التطبيق</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>افتح موقع هذا التطبيق</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>الحلول التي تم اختبارها:</value>
+  </data>
+  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
+    <value>متوسط ​​عدد الدورات لحل المكعب باستخدام طريقة "كوسيمبا" هو</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>إعادة تعيين المكعب.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>خلط المكعب.</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>العودة دورة واحدة</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>اذهب خطوة واحدة للأمام</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>العودة دورة واحدة.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>اذهب خطوة واحدة للأمام.</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>حل المكعب دون تدخل.</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>حل المكعب بالتدخل.</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>حل المكعب.</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>دوران الوجه: أدر الوجه ربع دورة في اتجاه عقارب الساعة (90 درجة)</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>تحركات الشريحة: أدر الطبقة الوسطى ربع دورة في اتجاه عقارب الساعة (90 درجة)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>يتبع اتجاه L</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>يتبع اتجاه D</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>يتبع اتجاه F</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>دوران المكعب: أدر المكعب ربع دورة في اتجاه عقارب الساعة (90 درجة)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>يتبع اتجاه R</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>يتبع اتجاه U</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>يتبع اتجاه F</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>الحركات الواسعة: قم بتدوير طبقتين في وقت واحد ربع دورة باتجاه عقارب الساعة (90 درجة)، وهما بالأحرف الصغيرة: u، d، f، b، l، r.</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>تشير علامة الاقتباس العليا (على سبيل المثال، U') إلى ربع دورة عكس اتجاه عقارب الساعة (90 درجة).</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>الرقم 2 (على سبيل المثال، U2) يعني الدوران نصف دورة (180 درجة).</value>
+  </data>
+  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
+    <value>استخدام طريقة "فريدريش" (CFOP) هو</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>الاعتمادات: يستخدم هذا التطبيق شيفرة مفتوحة المصدر من "هربرت كوسيمبا" (مؤلف خوارزمية كوسيمبا ثنائية الطور) و"مات كولبورن". وقد ساهمت مساهماتهما في تحسين كفاءة حل المكعبات بشكل ملحوظ. شكرًا خاصًا لهما على عملهما.</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>طريقة:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>ترتيب عكسي</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>تم استخدام ترجمة جوجل لترجمة النص. هذا لا يضمن صحة جميع الترجمات.
+
+اللغات المدعومة هي: العربية، الصينية المبسطة، الصينية التقليدية، التشيكية، الدنماركية، الهولندية، الإنجليزية، الفنلندية، الفرنسية، الألمانية، الهندية، المجرية، الإندونيسية، الإيطالية، اليابانية، الكورية، النرويجية، البولندية، البرتغالية، الرومانية، الإسبانية، السويدية، التركية، والأوكرانية.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>يمكنك دائمًا الاتصال بي لأي تصحيحات.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>تحويل النص إلى كلام: لا تدعم جميع اللغات المُتاحة في إعدادات التطبيق. يختلف هذا الخيار باختلاف الجهاز واللغات المُثبّتة. قد تتم ترجمة بعض اللغات من وإلى الكلام عبر الإنترنت بواسطة الخدمات المُختصة.</value>
+  </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>الاتصال بالإنترنت غير متاح.</value>
+  </data>
+</root>
