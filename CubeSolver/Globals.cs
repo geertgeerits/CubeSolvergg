@@ -104,19 +104,6 @@ namespace CubeSolver
         //// Global methods
 
         /// <summary>
-        /// Set the theme
-        /// </summary>
-        public static void SetTheme()
-        {
-            Application.Current!.UserAppTheme = cTheme switch
-            {
-                "Light" => AppTheme.Light,
-                "Dark" => AppTheme.Dark,
-                _ => AppTheme.Unspecified,
-            };
-        }
-
-        /// <summary>
         /// Set the current UI culture of the selected language
         /// </summary>
         public static void SetCultureSelectedLanguage(string cCultureName)
@@ -130,6 +117,40 @@ namespace CubeSolver
             {
                 // Do nothing
             }
+        }
+
+        //// Set the flow direction of the text elements
+        public static void SetFlowDirection(VisualElement element)
+        {
+            // Set the flow direction to right-to-left for Arabic and Hebrew languages
+            if (cLanguage == "ar" || cLanguage == "he")
+            {
+                if (element.FlowDirection != FlowDirection.RightToLeft)
+                {
+                    element.FlowDirection = FlowDirection.RightToLeft;
+                }
+            }
+            // Set the flow direction to left-to-right for the other languages
+            else
+            {
+                if (element.FlowDirection != FlowDirection.LeftToRight)
+                {
+                    element.FlowDirection = FlowDirection.LeftToRight;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Set the theme
+        /// </summary>
+        public static void SetTheme()
+        {
+            Application.Current!.UserAppTheme = cTheme switch
+            {
+                "Light" => AppTheme.Light,
+                "Dark" => AppTheme.Dark,
+                _ => AppTheme.Unspecified,
+            };
         }
 
         /// <summary>

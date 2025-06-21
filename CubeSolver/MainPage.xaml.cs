@@ -74,6 +74,9 @@ namespace CubeSolver
             // To avoid this issue, you can set the scale of the activity indicator programmatically in the code-behind file
             activityIndicator.Scale = 2;
 #endif
+            //// Set the flow direction of the text elements
+            Globals.SetFlowDirection(lblCubeOutsideView);
+
             //// Get the saved settings
             Globals.cTheme = Preferences.Default.Get("SettingTheme", "System");
             Globals.cLanguage = Preferences.Default.Get("SettingLanguage", "");
@@ -351,7 +354,7 @@ namespace CubeSolver
             // Set the text of the label 'lblCubeOutsideView' to show the time to solve the cube when using the Kociemba solution for the first time
             if (Globals.bKociembaSolution && !bKociembaTablesExist && Globals.lCubeTurns.Count == 0)
             {
-                lblCubeOutsideView.Text = $"{CubeLang.WaitFirstGameLaunch_Text} {nDurationFirstKociembaSolve} {CubeLang.WaitFirstGameLaunch2_Text}";
+                lblCubeOutsideView.Text = string.Format(CubeLang.WaitFirstGameLaunch_Text, nDurationFirstKociembaSolve);
             }
 
             // Control settings
@@ -423,8 +426,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 334-335 and 398-422 (and change the line 446 to bTestSolveCube = true)
-                // and uncomment one of the lines 429-431 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 339-340 and 403-427 (and change the line 451 to bTestSolveCube = true)
+                // and uncomment one of the lines 434-436 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -1873,7 +1876,13 @@ namespace CubeSolver
             {
                 if (cTurnCubeText.Length > 6)
                 {
-                    if (cTurnCubeText.Substring(cTurnCubeText.Length - 2, 1) == ")")
+                    // if the text ends with a space, open and closing parenthesis  (+) , remove the last 4 characters
+                    if (cTurnCubeText[^1] == ')')
+                    {
+                        cTurnCubeText = cTurnCubeText[..^4];
+                    }
+                    // if the text ends with a space, closing parenthesis and a point  (+). , remove the last 5 characters
+                    else if (cTurnCubeText.Substring(cTurnCubeText.Length - 2, 1) == ")")
                     {
                         cTurnCubeText = cTurnCubeText[..^5];
                     }

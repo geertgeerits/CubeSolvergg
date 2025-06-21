@@ -1168,7 +1168,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the back and middle layer together a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the back and middle layer together a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string Turn2LayersBackCCW_Text {
             get {
@@ -1177,7 +1177,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the back and middle layer together a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the back and middle layer together a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string Turn2LayersBackCW_Text {
             get {
@@ -1195,7 +1195,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the bottom and middle layer together a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the bottom and middle layer together a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string Turn2LayersDownCCW_Text {
             get {
@@ -1204,7 +1204,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the bottom and middle layer together a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the bottom and middle layer together a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string Turn2LayersDownCW_Text {
             get {
@@ -1222,7 +1222,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the front and middle layer together a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the front and middle layer together a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string Turn2LayersFrontCCW_Text {
             get {
@@ -1231,7 +1231,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the front and middle layer together a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the front and middle layer together a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string Turn2LayersFrontCW_Text {
             get {
@@ -1249,7 +1249,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the left and middle layer together a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the left and middle layer together a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string Turn2LayersLeftCCW_Text {
             get {
@@ -1258,7 +1258,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the left and middle layer together a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the left and middle layer together a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string Turn2LayersLeftCW_Text {
             get {
@@ -1276,7 +1276,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the right and middle layer together a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the right and middle layer together a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string Turn2LayersRightCCW_Text {
             get {
@@ -1285,7 +1285,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the right and middle layer together a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the right and middle layer together a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string Turn2LayersRightCW_Text {
             get {
@@ -1303,7 +1303,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the top and middle layer together a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the top and middle layer together a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string Turn2LayersUpCCW_Text {
             get {
@@ -1312,7 +1312,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the top and middle layer together a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the top and middle layer together a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string Turn2LayersUpCW_Text {
             get {
@@ -1330,7 +1330,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the back side a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the back side a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string TurnBackFaceToLeft_Text {
             get {
@@ -1339,7 +1339,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the back side a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the back side a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string TurnBackFaceToRight_Text {
             get {
@@ -1438,7 +1438,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the bottom side a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the bottom side a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string TurnDownFaceToLeft_Text {
             get {
@@ -1447,7 +1447,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the bottom side a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the bottom side a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string TurnDownFaceToRight_Text {
             get {
@@ -1465,7 +1465,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the front side a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the front side a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string TurnFrontFaceToLeft_Text {
             get {
@@ -1474,7 +1474,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the front side a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the front side a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string TurnFrontFaceToRight_Text {
             get {
@@ -1483,7 +1483,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the front-middle layer a quarter turn to the right side (-)..
+        ///   Looks up a localized string similar to Turn the front-middle layer a quarter turn to the right side. (-).
         /// </summary>
         internal static string TurnFrontMiddleToRightFace_Text {
             get {
@@ -1492,7 +1492,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the front-middle layer a quarter turn to the top side (+)..
+        ///   Looks up a localized string similar to Turn the front-middle layer a quarter turn to the top side. (+).
         /// </summary>
         internal static string TurnFrontMiddleToUpFace_Text {
             get {
@@ -1510,7 +1510,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the left side a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the left side a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string TurnLeftFaceToLeft_Text {
             get {
@@ -1519,7 +1519,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the left side a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the left side a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string TurnLeftFaceToRight_Text {
             get {
@@ -1546,7 +1546,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the right side a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the right side a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string TurnRightFaceToLeft_Text {
             get {
@@ -1555,7 +1555,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the right side a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the right side a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string TurnRightFaceToRight_Text {
             get {
@@ -1564,7 +1564,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the right-middle layer a quarter turn to the front side (+)..
+        ///   Looks up a localized string similar to Turn the right-middle layer a quarter turn to the front side. (+).
         /// </summary>
         internal static string TurnRightMiddleToFrontFace_Text {
             get {
@@ -1573,7 +1573,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the right-middle layer a quarter turn to the top side (-)..
+        ///   Looks up a localized string similar to Turn the right-middle layer a quarter turn to the top side. (-).
         /// </summary>
         internal static string TurnRightMiddleToUpFace_Text {
             get {
@@ -1591,7 +1591,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the top side a quarter turn &apos;counter clockwise&apos; (-)..
+        ///   Looks up a localized string similar to Turn the top side a quarter turn &apos;counter clockwise&apos;. (-).
         /// </summary>
         internal static string TurnUpFaceToLeft_Text {
             get {
@@ -1600,7 +1600,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the top side a quarter turn &apos;clockwise&apos; (+)..
+        ///   Looks up a localized string similar to Turn the top side a quarter turn &apos;clockwise&apos;. (+).
         /// </summary>
         internal static string TurnUpFaceToRight_Text {
             get {
@@ -1609,7 +1609,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the top-middle layer a quarter turn to the front side (-)..
+        ///   Looks up a localized string similar to Turn the top-middle layer a quarter turn to the front side. (-).
         /// </summary>
         internal static string TurnUpMiddleToFrontFace_Text {
             get {
@@ -1618,7 +1618,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turn the top-middle layer a quarter turn to the right side (+)..
+        ///   Looks up a localized string similar to Turn the top-middle layer a quarter turn to the right side. (+).
         /// </summary>
         internal static string TurnUpMiddleToRightFace_Text {
             get {
@@ -1645,7 +1645,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to First game launch may take up to.
+        ///   Looks up a localized string similar to First game launch may take up to {0} seconds.
         /// </summary>
         internal static string WaitFirstGameLaunch_Text {
             get {

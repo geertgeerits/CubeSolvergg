@@ -15,21 +15,8 @@ namespace CubeSolver
                 return;
             }
 
-            //// Set the flow direction to right-to-left for Arabic
-            if (Globals.cLanguage == "ar" || Globals.cLanguage == "he")
-            {
-                if (FlowDirection != FlowDirection.RightToLeft)
-                {
-                    FlowDirection = FlowDirection.RightToLeft;
-                }
-            }
-            else
-            {
-                if (FlowDirection != FlowDirection.LeftToRight)
-                {
-                    FlowDirection = FlowDirection.LeftToRight;
-                }
-            }
+            // Set the flow direction of the text elements
+            Globals.SetFlowDirection(this);
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
             lblTitlePage.Margin = new Thickness(80, 15, 0, 0);

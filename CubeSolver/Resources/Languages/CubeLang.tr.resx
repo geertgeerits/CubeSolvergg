@@ -147,14 +147,32 @@
   <data name="Copyright_Text" xml:space="preserve">
     <value>Telif hakkı</value>
   </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Arka taraf</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Aşağı taraf</value>
+  </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>Küp renkleri:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Ön taraf</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>İç görünüm</value>
   </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Sol taraf</value>
+  </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>Dış görünüm</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Sağ taraf</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Üst taraf</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>Varsayılan</value>
@@ -301,10 +319,130 @@ Kaydedildikten sonra uygulama yeniden başlatılır ve küp sıfırlanır.</valu
   <data name="ToolTipHelp_Text" xml:space="preserve">
     <value>Yardım</value>
   </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Küpü aç</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Küpü kaydet</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Geçiş düğmesi: Küp üzerindeki renkleri ayarlayın</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Arka tarafını yarım tur çevirin.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Arka tarafı çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Arka tarafı çeyrek tur saat yönünde çevirin. (+)</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Alt tarafı yarım tur çevirin.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Alt tarafı çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Alt tarafı çeyrek tur saat yönünde çevirin. (+)</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Küpün tamamını ön tarafı alta gelecek şekilde çevirin, sağ tarafı sağda kalsın.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Küpün tamamını ön tarafı sol tarafa gelecek şekilde çevirin, üst tarafı üstte kalsın.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Küpün tamamını ön tarafı sağ tarafa gelecek şekilde çevirin, üst tarafı üstte kalsın.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Küpün tamamını ön tarafı üste gelecek şekilde çevirin, sağ tarafı sağda kalsın.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Küpün tamamını, üst kısmı sol tarafa gelecek şekilde çevirin, ön tarafı önde kalsın.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Küpün tamamını, üst kısmı sağ tarafa gelecek şekilde çevirin, ön tarafı önde kalsın.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Ön orta katmanı çeyrek tur sağ tarafa doğru kıvırın. (-)</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Ön-orta katmanı üst tarafa doğru çeyrek tur çevirin. (+)</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Ön tarafı yarım tur çevirin.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Ön tarafı çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Ön tarafı çeyrek tur saat yönünde çevirin. (+)</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Sol tarafı yarım tur çevirin.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Sol tarafı çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Sol tarafı çeyrek tur saat yönünde çevirin. (+)</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Ortadaki katmanı yarım tur çevirin.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Sağ orta katmanı çeyrek tur ön tarafa doğru çevirin. (+)</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Sağ ortadaki katmanı üst tarafa doğru çeyrek tur çevirin. (-)</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Sağ tarafı yarım tur dön.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Sağ tarafı çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Sağ tarafı çeyrek tur saat yönünde çevirin. (+)</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Üst-orta katmanı ön tarafa doğru çeyrek tur çevirin. (-)</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Üst orta katmanı çeyrek tur sağ tarafa doğru çevirin. (+)</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Üst tarafı yarım tur çevirin.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Üst tarafı çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Üst tarafı çeyrek tur saat yönünde çevirin. (+)</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Sürüm:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Web sitesi:</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Evet</value>
+  </data>
   <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
     <value>Küp çözülemiyor.
 
 Olası neden, bu kübe renklerin yanlış aktarılmasıdır.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Küpün tamamını, ön tarafı arkaya gelecek şekilde, sağ tarafı sağda kalacak şekilde çevirin.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Küpün tamamını, ön tarafı arkaya gelecek şekilde, üst tarafı üstte kalacak şekilde çevirin.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Küpün tamamını, üst kısmı alta gelecek şekilde, ön tarafı önde kalacak şekilde çevirin.</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>Milisaniye cinsinden zaman:</value>
@@ -333,6 +471,60 @@ Bu, tüm küplerin çözülebileceğinin garantisi değildir.</value>
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>Mevcut her renkten, bir köşe küpünde aynı renkten dört tane bulunmalıdır.</value>
   </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Arka ve orta katmanı yarım tur birleştirin.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Arka ve orta katmanı çeyrek tur 'saat yönünün tersine' birlikte çevirin. (-)</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Arka ve orta katmanı çeyrek tur 'saat yönünde' birlikte çevirin. (+)</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Alt ve orta katmanı yarım tur birleştirerek kapatın.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Alt ve orta katmanı çeyrek tur 'saat yönünün tersine' birlikte çevirin. (-)</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Alt ve orta katmanı birlikte çeyrek tur 'saat yönünde' çevirin. (+)</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Ön ve orta katmanı yarım tur birleştirin.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Ön ve orta katmanı çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Ön ve orta katmanı çeyrek tur 'saat yönünde' birlikte çevirin. (+)</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Sol ve orta katmanı yarım tur birleştirerek katlayın.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Sol ve orta katmanı birlikte çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Sol ve orta katmanı birlikte çeyrek tur 'saat yönünde' çevirin. (+)</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Sağ ve orta katmanı birlikte yarım tur çevirin.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Sağ ve orta katmanı birlikte çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Sağ ve orta katmanı birlikte çeyrek tur 'saat yönünde' çevirin. (+)</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Üst ve orta katmanı yarım tur birleştirin.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Üst ve orta katmanı çeyrek tur 'saat yönünün tersine' çevirin. (-)</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Üst ve orta katmanı çeyrek tur 'saat yönünde' birlikte çevirin. (+)</value>
+  </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Bu uygulamanın yazarına bir e-posta gönderin</value>
   </data>
@@ -345,11 +537,20 @@ Bu, tüm küplerin çözülebileceğinin garantisi değildir.</value>
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>'Kociemba' yöntemini kullanarak küpü çözmek için gereken ortalama tur sayısı</value>
   </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Küpü karıştır</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Küpü sıfırla</value>
+  </data>
   <data name="HelpResetCube_Text" xml:space="preserve">
     <value>Küpü sıfırla.</value>
   </data>
   <data name="HelpScrambleCube_Text" xml:space="preserve">
     <value>Küpü karıştırın.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Küpü çöz</value>
   </data>
   <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
     <value>Bir dönüş geri git</value>
@@ -363,17 +564,44 @@ Bu, tüm küplerin çözülebileceğinin garantisi değildir.</value>
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Bir tur ileri git.</value>
   </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Müdahale olmadan küpü çözün</value>
+  </data>
   <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Müdahaleye gerek kalmadan küpü çözün.</value>
   </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Küpü müdahale ile çözün</value>
+  </data>
   <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Küpü müdahale ile çözün.</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>Geçiş düğmesi: Küpü müdahaleyle veya müdahalesiz çözün</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>Küpü çöz.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>Yüz döndürme: Yüzü saat yönünde çeyrek tur (90 derece) döndürün</value>
+    <value>Yan dönüşler: tarafı saat yönünde çeyrek tur çevirin (90 derece)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Üst taraf</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Aşağı taraf</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Ön taraf</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Arka taraf</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Sol taraf</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Sağ taraf</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>Dilim hareketleri: orta katmanı saat yönünde çeyrek tur (90 derece) döndürün</value>
@@ -414,11 +642,20 @@ Bu, tüm küplerin çözülebileceğinin garantisi değildir.</value>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Krediler: Bu uygulama 'Herbert Kociemba' (Kociemba İki Aşamalı Algoritmasının yazarı) ve 'Matt Colbourne'un açık kaynaklı kodunu kullanır. Katkıları küp çözme verimliliğini önemli ölçüde iyileştirdi. Çalışmaları için özel teşekkürler.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>İlk oyun başlatma işlemi {0} saniyeye kadar sürebilir</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>Kociemba yöntemi:</value>
+  </data>
   <data name="SolvingMethod_Text" xml:space="preserve">
     <value>Yöntem:</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Ters sıra</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>saniyeler</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Metnin çevirisi için Google Translate kullanıldı. Bu, tüm çevirilerin doğru olduğunun garantisi değildir.

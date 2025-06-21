@@ -147,14 +147,32 @@
   <data name="Copyright_Text" xml:space="preserve">
     <value>حقوق الطبع والنشر</value>
   </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>الجهة الخلفية</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>الجهة السفلية</value>
+  </data>
   <data name="CubeColors_Text" xml:space="preserve">
     <value>ألوان المكعب:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>الجهة الأمامية</value>
   </data>
   <data name="CubeInsideView_Text" xml:space="preserve">
     <value>منظر داخلي</value>
   </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>الجهة اليسرى</value>
+  </data>
   <data name="CubeOutsideView_Text" xml:space="preserve">
     <value>منظر خارجي</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>الجهة اليمنى</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>الجهة العلوية</value>
   </data>
   <data name="Default_Text" xml:space="preserve">
     <value>تقصير</value>
@@ -303,10 +321,130 @@
   <data name="ToolTipHelp_Text" xml:space="preserve">
     <value>يساعد</value>
   </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>افتح المكعب</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>احفظ المكعب</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>زر التبديل: تعيين الألوان على المكعب</value>
+  </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>أدر الجانب الخلفي نصف دورة.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>قم بإدارة الجانب الخلفي ربع دورة عكس اتجاه عقارب الساعة. (-)</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>أدر الجانب الخلفي ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>أدر الجانب السفلي نصف دورة.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>قم بإدارة الجانب السفلي ربع دورة عكس اتجاه عقارب الساعة. (-)</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>قم بإدارة الجانب السفلي ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يتجه الجانب الأمامي إلى الأسفل، ويبقى الجانب الأيمن على اليمين.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يصبح الجزء الأمامي متجهًا إلى الجانب الأيسر، ويبقى الجانب العلوي في الأعلى.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يصبح الجزء الأمامي متجهًا إلى الجانب الأيمن، ويبقى الجانب العلوي في الأعلى.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يصبح الجانب الأمامي في الأعلى، ويبقى الجانب الأيمن على اليمين.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يصبح الجزء العلوي منه على الجانب الأيسر، ويبقى الجانب الأمامي في الأمام.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يصبح الجزء العلوي منه على الجانب الأيمن، ويبقى الجانب الأمامي في المقدمة.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الوسطى الأمامية بمقدار ربع دورة إلى الجانب الأيمن. (-)</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الوسطى الأمامية بمقدار ربع دورة إلى الجانب العلوي. (+)</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>أدر الجانب الأمامي نصف دورة.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>قم بإدارة الجانب الأمامي ربع دورة عكس اتجاه عقارب الساعة. (-)</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>قم بإدارة الجانب الأمامي ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>أدر الجانب الأيسر نصف دورة.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>أدر الجانب الأيسر ربع دورة عكس اتجاه عقارب الساعة. (-)</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>أدر الجانب الأيسر ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الوسطى نصف دورة.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الوسطى اليمنى بمقدار ربع دورة إلى الجانب الأمامي. (+)</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الوسطى اليمنى بمقدار ربع دورة إلى الجانب العلوي. (-)</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>أدر الجانب الأيمن نصف دورة.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>أدر الجانب الأيمن ربع دورة عكس اتجاه عقارب الساعة. (-)</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>أدر الجانب الأيمن ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة العلوية الوسطى بمقدار ربع دورة إلى الجانب الأمامي. (-)</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الوسطى العلوية بمقدار ربع دورة إلى الجانب الأيمن. (+)</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>أدر الجانب العلوي نصف دورة.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>قم بإدارة الجانب العلوي ربع دورة عكس اتجاه عقارب الساعة. (-)</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>قم بإدارة الجانب العلوي ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>إصدار:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>موقع إلكتروني:</value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>نعم</value>
+  </data>
   <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
     <value>لا يمكن حل المكعب.
 
 السبب المحتمل هو نقل الألوان بشكل غير صحيح إلى هذا المكعب.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يتجه الجانب الأمامي إلى الخلف، ويبقى الجانب الأيمن على اليمين.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يتجه الجانب الأمامي إلى الخلف، ويبقى الجانب العلوي في الأعلى.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>قم بإدارة المكعب بأكمله بحيث يصبح الجزء العلوي في الأسفل، ويبقى الجانب الأمامي في المقدمة.</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>الوقت بالمللي ثانية:</value>
@@ -335,6 +473,60 @@
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>من كل لون متاح، يجب أن يكون هناك أربعة من نفس اللون على مكعب الزاوية.</value>
   </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>قم بقلب الطبقة الخلفية والوسطى معًا بمقدار نصف دورة.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الخلفية والوسطى معًا بمقدار ربع دورة "عكس اتجاه عقارب الساعة". (-)</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الخلفية والوسطى معًا بمقدار ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>قم بقلب الطبقة السفلية والوسطى معًا بنصف دورة.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة السفلية والوسطى معًا بمقدار ربع دورة "عكس اتجاه عقارب الساعة". (-)</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة السفلية والوسطى معًا بمقدار ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>قم بلف الطبقة الأمامية والوسطى معًا بمقدار نصف دورة.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الأمامية والوسطى معًا بمقدار ربع دورة "عكس اتجاه عقارب الساعة". (-)</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة الأمامية والوسطى معًا بمقدار ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>قم بلف الطبقة اليسرى والوسطى معًا بنصف دورة.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة اليسرى والوسطى معًا بمقدار ربع دورة "عكس اتجاه عقارب الساعة". (-)</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة اليسرى والوسطى معًا بمقدار ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>قم بلف الطبقة اليمنى والوسطى معًا بنصف دورة.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة اليمنى والوسطى معًا بمقدار ربع دورة "عكس اتجاه عقارب الساعة". (-)</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة اليمنى والوسطى معًا بمقدار ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>قم بقلب الطبقة العلوية والوسطى معًا بنصف دورة.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة العلوية والوسطى معًا بمقدار ربع دورة "عكس اتجاه عقارب الساعة". (-)</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>قم بإدارة الطبقة العلوية والوسطى معًا بمقدار ربع دورة في اتجاه عقارب الساعة. (+)</value>
+  </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>أرسل بريدًا إلكترونيًا إلى مؤلف هذا التطبيق</value>
   </data>
@@ -347,11 +539,20 @@
   <data name="AverageTurnsKociemba_Text" xml:space="preserve">
     <value>متوسط ​​عدد الدورات لحل المكعب باستخدام طريقة "كوسيمبا" هو</value>
   </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>خلط المكعب</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>إعادة تعيين المكعب</value>
+  </data>
   <data name="HelpResetCube_Text" xml:space="preserve">
     <value>إعادة تعيين المكعب.</value>
   </data>
   <data name="HelpScrambleCube_Text" xml:space="preserve">
     <value>خلط المكعب.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>حل المكعب</value>
   </data>
   <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
     <value>العودة دورة واحدة</value>
@@ -365,17 +566,44 @@
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>اذهب خطوة واحدة للأمام.</value>
   </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>حل المكعب دون تدخل</value>
+  </data>
   <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>حل المكعب دون تدخل.</value>
   </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>حل المكعب بالتدخل</value>
+  </data>
   <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>حل المكعب بالتدخل.</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>زر التبديل: حل المكعب مع أو بدون تدخل</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>حل المكعب.</value>
   </data>
   <data name="NotationTurn_Face_Text" xml:space="preserve">
-    <value>دوران الوجه: أدر الوجه ربع دورة في اتجاه عقارب الساعة (90 درجة)</value>
+    <value>دوران الجانب: أدر الجانب ربع دورة باتجاه عقارب الساعة (90 درجة)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>الجهة العلوية</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>الجهة السفلية</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>الجهة الأمامية</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>الجهة الخلفية</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>الجهة اليسرى</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>الجهة اليمنى</value>
   </data>
   <data name="NotationTurn_Slice_Text" xml:space="preserve">
     <value>تحركات الشريحة: أدر الطبقة الوسطى ربع دورة في اتجاه عقارب الساعة (90 درجة)</value>
@@ -416,11 +644,20 @@
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>الاعتمادات: يستخدم هذا التطبيق شيفرة مفتوحة المصدر من "هربرت كوسيمبا" (مؤلف خوارزمية كوسيمبا ثنائية الطور) و"مات كولبورن". وقد ساهمت مساهماتهما في تحسين كفاءة حل المكعبات بشكل ملحوظ. شكرًا خاصًا لهما على عملهما.</value>
   </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>قد يستغرق تشغيل اللعبة لأول مرة ما يصل إلى {0} ثانية</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>طريقة كوسيمبا:</value>
+  </data>
   <data name="SolvingMethod_Text" xml:space="preserve">
     <value>طريقة:</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>ترتيب عكسي</value>
+  </data>
+  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
+    <value>ثواني</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>تم استخدام ترجمة جوجل لترجمة النص. هذا لا يضمن صحة جميع الترجمات.
