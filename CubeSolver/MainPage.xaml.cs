@@ -2220,19 +2220,7 @@ namespace CubeSolver
 
             // Set the flow direction of the text elements
             Globals.SetFlowDirection(this);
-            //Globals.SetFlowDirection(lblCubeOutsideView);
-
-            // Set the TextAlignment of the label for the outside view of the cube
-            if (Globals.cLanguage == "ar" || Globals.cLanguage == "he")
-            {
-                lblCubeOutsideView.FlowDirection = FlowDirection.RightToLeft;
-                lblCubeOutsideView.HorizontalTextAlignment = TextAlignment.End;
-            }
-            else
-            {
-                lblCubeOutsideView.FlowDirection = FlowDirection.LeftToRight;
-                lblCubeOutsideView.HorizontalTextAlignment = TextAlignment.Start;
-            }
+            Globals.SetFlowDirection(lblExplainTurnCube);
 
             // Set the text of the controls
             lblCubeOutsideView.Text = CubeLang.CubeOutsideView_Text;
