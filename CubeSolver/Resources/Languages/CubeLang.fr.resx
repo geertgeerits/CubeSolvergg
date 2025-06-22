@@ -332,19 +332,19 @@ Interdit:</value>
     <value>Tournez la face arrière d'un demi-tour.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Tourner la face arrière d'un quart de tour 'dans le sens inverse des aiguilles d'une montre' (-).</value>
+    <value>Tourner la face arrière d'un quart de tour 'dans le sens inverse des aiguilles d'une montre'. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Tournez la face arrière d'un quart de tour 'dans le sens des aiguilles d'une montre' (+).</value>
+    <value>Tournez la face arrière d'un quart de tour 'dans le sens des aiguilles d'une montre'. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Tournez le côté inférieur d'un demi-tour.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Tourner le côté inférieur d'un quart de tour 'dans le sens inverse des aiguilles d'une montre' (-).</value>
+    <value>Tourner le côté inférieur d'un quart de tour 'dans le sens inverse des aiguilles d'une montre'. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Tournez le côté inférieur d'un quart de tour 'dans le sens des aiguilles d'une montre' (+).</value>
+    <value>Tournez le côté inférieur d'un quart de tour 'dans le sens des aiguilles d'une montre'. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Tournez tout le cube pour que le devant aille vers le bas, le côté droit reste à droite.</value>
@@ -365,61 +365,61 @@ Interdit:</value>
     <value>Tournez l'ensemble du cube pour que le haut aille vers la droite, la face avant reste à l'avant.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Tournez la couche centrale avant d'un quart de tour vers la droite (-).</value>
+    <value>Tournez la couche centrale avant d'un quart de tour vers la droite. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Tournez la couche intermédiaire avant d'un quart de tour vers le haut (+).</value>
+    <value>Tournez la couche intermédiaire avant d'un quart de tour vers le haut. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Tournez la face avant d'un demi-tour.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Tourner la face avant d'un quart de tour 'dans le sens inverse des aiguilles d'une montre' (-).</value>
+    <value>Tourner la face avant d'un quart de tour 'dans le sens inverse des aiguilles d'une montre'. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Tournez la face avant d'un quart de tour 'dans le sens des aiguilles d'une montre' (+).</value>
+    <value>Tournez la face avant d'un quart de tour 'dans le sens des aiguilles d'une montre'. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Tournez le côté gauche d'un demi-tour.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Tourner le côté gauche d'un quart de tour 'dans le sens inverse des aiguilles d'une montre' (-).</value>
+    <value>Tourner le côté gauche d'un quart de tour 'dans le sens inverse des aiguilles d'une montre'. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Tourner le côté gauche d'un quart de tour 'dans le sens des aiguilles d'une montre' (+).</value>
+    <value>Tourner le côté gauche d'un quart de tour 'dans le sens des aiguilles d'une montre'. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Tournez la couche intermédiaire d'un demi-tour.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Tournez la couche médiane droite d'un quart de tour vers l'avant (+).</value>
+    <value>Tournez la couche médiane droite d'un quart de tour vers l'avant. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Tournez la couche médiane droite d'un quart de tour vers le haut (-).</value>
+    <value>Tournez la couche médiane droite d'un quart de tour vers le haut. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Tournez le côté droit d'un demi-tour.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Tourner le côté droit d'un quart de tour 'dans le sens inverse des aiguilles d'une montre' (-).</value>
+    <value>Tourner le côté droit d'un quart de tour 'dans le sens inverse des aiguilles d'une montre'. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Tournez le côté droit d'un quart de tour 'dans le sens des aiguilles d'une montre' (+).</value>
+    <value>Tournez le côté droit d'un quart de tour 'dans le sens des aiguilles d'une montre'. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Tournez la couche intermédiaire supérieure d'un quart de tour vers l'avant (-).</value>
+    <value>Tournez la couche intermédiaire supérieure d'un quart de tour vers l'avant. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Tournez la couche centrale supérieure d'un quart de tour vers la droite (+).</value>
+    <value>Tournez la couche centrale supérieure d'un quart de tour vers la droite. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Tournez le côté supérieur d'un demi-tour.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Tourner le côté supérieur d'un quart de tour 'dans le sens inverse des aiguilles d'une montre' (-).</value>
+    <value>Tourner le côté supérieur d'un quart de tour 'dans le sens inverse des aiguilles d'une montre'. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Tournez le côté supérieur d'un quart de tour 'dans le sens des aiguilles d'une montre' (+).</value>
+    <value>Tournez le côté supérieur d'un quart de tour 'dans le sens des aiguilles d'une montre'. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Version:</value>
@@ -475,55 +475,55 @@ Ceci ne garantit pas que tous les cubes peuvent être résolus.</value>
     <value>Tournez ensemble la couche arrière et la couche intermédiaire d’un demi-tour.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Tournez ensemble la couche arrière et la couche intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre (-).</value>
+    <value>Tournez ensemble la couche arrière et la couche intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Tournez ensemble la couche arrière et la couche intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (+).</value>
+    <value>Tournez ensemble la couche arrière et la couche intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Tournez ensemble les couches inférieure et intermédiaire d’un demi-tour.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches inférieure et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre (-).</value>
+    <value>Tournez ensemble les couches inférieure et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches inférieure et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (+).</value>
+    <value>Tournez ensemble les couches inférieure et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Tournez ensemble les couches avant et intermédiaire d’un demi-tour.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches avant et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre (-).</value>
+    <value>Tournez ensemble les couches avant et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches avant et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (+).</value>
+    <value>Tournez ensemble les couches avant et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Tournez ensemble les couches gauche et intermédiaire d’un demi-tour.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches gauche et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre (-).</value>
+    <value>Tournez ensemble les couches gauche et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches gauche et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (+).</value>
+    <value>Tournez ensemble les couches gauche et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Tournez ensemble les couches droite et intermédiaire d'un demi-tour.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches droite et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre (-).</value>
+    <value>Tournez ensemble les couches droite et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches droite et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (+).</value>
+    <value>Tournez ensemble les couches droite et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Tournez ensemble les couches supérieure et intermédiaire d’un demi-tour.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches supérieure et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre (-).</value>
+    <value>Tournez ensemble les couches supérieure et intermédiaire d'un quart de tour dans le sens inverse des aiguilles d'une montre. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Tournez ensemble les couches supérieure et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre (+).</value>
+    <value>Tournez ensemble les couches supérieure et intermédiaire d'un quart de tour dans le sens des aiguilles d'une montre. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Envoyer un e-mail à l'auteur de cette application</value>

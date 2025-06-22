@@ -332,19 +332,19 @@ Ei sallittu:</value>
     <value>Käännä takapuolta puoli kierrosta.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Kierrä takapuolta neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä takapuolta neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Käännä takapuolta neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Käännä takapuolta neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Käännä alareunaa puoli kierrosta.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Kierrä alareunaa neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä alareunaa neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Kierrä alareunaa neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Kierrä alareunaa neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Käännä koko kuutio niin, että etuosa menee pohjaan, oikea puoli jää oikealle.</value>
@@ -365,61 +365,61 @@ Ei sallittu:</value>
     <value>Käännä koko kuutio niin, että yläosa menee oikealle, etupuoli jää eteen.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Käännä etu-keskikerrosta neljänneskierros oikealle puolelle (-).</value>
+    <value>Käännä etu-keskikerrosta neljänneskierros oikealle puolelle. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Käännä etu-keskikerrosta neljänneskierros yläpuolelle (+).</value>
+    <value>Käännä etu-keskikerrosta neljänneskierros yläpuolelle. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Käännä etupuolta puoli kierrosta.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Kierrä etupuolta neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä etupuolta neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Kierrä etupuolta neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Kierrä etupuolta neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Käännä vasenta puolta puoli kierrosta.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Kierrä vasenta puolta neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä vasenta puolta neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Kierrä vasenta puolta neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Kierrä vasenta puolta neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Käännä keskimmäistä kerrosta puoli kierrosta.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Käännä oikea-keskikerrosta neljänneskierros etupuolelle (+).</value>
+    <value>Käännä oikea-keskikerrosta neljänneskierros etupuolelle. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Käännä oikea-keskikerrosta neljänneskierros yläpuolelle (-).</value>
+    <value>Käännä oikea-keskikerrosta neljänneskierros yläpuolelle. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Käännä oikeaa puolta puoli kierrosta.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Kierrä oikeaa puolta neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä oikeaa puolta neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Käännä oikeaa puolta neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Käännä oikeaa puolta neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Käännä ylä-keskikerrosta neljänneskierros etupuolelle (-).</value>
+    <value>Käännä ylä-keskikerrosta neljänneskierros etupuolelle. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Käännä ylä-keskikerrosta neljänneskierros oikealle puolelle (+).</value>
+    <value>Käännä ylä-keskikerrosta neljänneskierros oikealle puolelle. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Käännä yläreunaa puoli kierrosta.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Kierrä yläreunaa neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä yläreunaa neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Käännä yläpuolta neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Käännä yläpuolta neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Versio:</value>
@@ -475,55 +475,55 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
     <value>Käännä taka- ja keskikerros yhteen puoli kierrosta.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Kierrä taka- ja keskikerrosta yhteen neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä taka- ja keskikerrosta yhteen neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Kierrä taka- ja keskikerrosta yhteen neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Kierrä taka- ja keskikerrosta yhteen neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Käännä ala- ja keskikerrosta puoli kierrosta yhteen.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Kierrä ala- ja keskikerrosta yhteen neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä ala- ja keskikerrosta yhteen neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Kierrä ala- ja keskikerrosta yhteen neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Kierrä ala- ja keskikerrosta yhteen neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Käännä etu- ja keskikerros yhteen puoli kierrosta.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Kierrä etu- ja keskikerrosta yhteen neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä etu- ja keskikerrosta yhteen neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Kierrä etu- ja keskikerrosta yhteen neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Kierrä etu- ja keskikerrosta yhteen neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Käännä vasenta ja keskimmäistä kerrosta yhteen puoli kierrosta.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Kierrä vasenta ja keskimmäistä kerrosta yhteen neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä vasenta ja keskimmäistä kerrosta yhteen neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Käännä vasenta ja keskimmäistä kerrosta yhteen neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Käännä vasenta ja keskimmäistä kerrosta yhteen neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Käännä oikeaa ja keskimmäistä kerrosta yhteen puoli kierrosta.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Kierrä oikeaa ja keskimmäistä kerrosta yhteen neljänneskierros 'vastapäivään' (-).</value>
+    <value>Kierrä oikeaa ja keskimmäistä kerrosta yhteen neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Käännä oikeaa ja keskimmäistä kerrosta yhteen neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Käännä oikeaa ja keskimmäistä kerrosta yhteen neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Käännä ylä- ja keskikerrosta puoli kierrosta yhteen.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Käännä ylä- ja keskikerrosta yhteen neljänneskierros 'vastapäivään' (-).</value>
+    <value>Käännä ylä- ja keskikerrosta yhteen neljänneskierros 'vastapäivään'. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Käännä ylä- ja keskikerrosta yhteen neljänneskierros 'myötäpäivään' (+).</value>
+    <value>Käännä ylä- ja keskikerrosta yhteen neljänneskierros 'myötäpäivään'. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Lähetä sähköposti tämän sovelluksen kirjoittajalle</value>

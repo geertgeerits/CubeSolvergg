@@ -332,19 +332,19 @@ Non autorizzato:</value>
     <value>Girare il lato posteriore di mezzo giro.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Girare il lato posteriore di un quarto di giro 'in senso antiorario' (-).</value>
+    <value>Girare il lato posteriore di un quarto di giro 'in senso antiorario'. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Girare il lato posteriore di un quarto di giro 'in senso orario' (+).</value>
+    <value>Girare il lato posteriore di un quarto di giro 'in senso orario'. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Girare il lato inferiore di mezzo giro.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Girare il lato inferiore di un quarto di giro 'in senso antiorario' (-).</value>
+    <value>Girare il lato inferiore di un quarto di giro 'in senso antiorario'. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Girare il lato inferiore di un quarto di giro 'in senso orario' (+).</value>
+    <value>Girare il lato inferiore di un quarto di giro 'in senso orario'. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Gira l'intero cubo in modo che la parte anteriore vada in basso, il lato destro rimanga a destra.</value>
@@ -365,61 +365,61 @@ Non autorizzato:</value>
     <value>Gira l'intero cubo in modo che la parte superiore vada verso destra, la parte anteriore rimanga davanti.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Ruota lo strato centrale anteriore di un quarto di giro sul lato destro (-).</value>
+    <value>Ruota lo strato centrale anteriore di un quarto di giro sul lato destro. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Gira lo strato centrale anteriore di un quarto di giro verso l'alto (+).</value>
+    <value>Gira lo strato centrale anteriore di un quarto di giro verso l'alto. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Girare il lato anteriore di mezzo giro.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Girare il lato anteriore di un quarto di giro 'in senso antiorario' (-).</value>
+    <value>Girare il lato anteriore di un quarto di giro 'in senso antiorario'. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Ruotare il lato anteriore di un quarto di giro 'in senso orario' (+).</value>
+    <value>Ruotare il lato anteriore di un quarto di giro 'in senso orario'. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Girare il lato sinistro di mezzo giro.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Girare il lato sinistro di un quarto di giro 'in senso antiorario' (-).</value>
+    <value>Girare il lato sinistro di un quarto di giro 'in senso antiorario'. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Girare il lato sinistro di un quarto di giro 'in senso orario' (+).</value>
+    <value>Girare il lato sinistro di un quarto di giro 'in senso orario'. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Girare lo strato intermedio di mezzo giro.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Gira lo strato centrale di un quarto di giro destro sul lato anteriore (+).</value>
+    <value>Gira lo strato centrale di un quarto di giro destro sul lato anteriore. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Ruota lo strato centrale di un quarto di giro destro sul lato superiore (-).</value>
+    <value>Ruota lo strato centrale di un quarto di giro destro sul lato superiore. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Girare il lato destro di mezzo giro.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Girare il lato destro di un quarto di giro 'in senso antiorario' (-).</value>
+    <value>Girare il lato destro di un quarto di giro 'in senso antiorario'. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Girare il lato destro di un quarto di giro 'in senso orario' (+).</value>
+    <value>Girare il lato destro di un quarto di giro 'in senso orario'. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Girare lo strato medio superiore di un quarto di giro sul lato anteriore (-).</value>
+    <value>Girare lo strato medio superiore di un quarto di giro sul lato anteriore. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Ruota lo strato superiore centrale di un quarto di giro sul lato destro (+).</value>
+    <value>Ruota lo strato superiore centrale di un quarto di giro sul lato destro. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Girare il lato superiore di mezzo giro.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Girare il lato superiore di un quarto di giro 'in senso antiorario' (-).</value>
+    <value>Girare il lato superiore di un quarto di giro 'in senso antiorario'. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Ruotare il lato superiore di un quarto di giro 'in senso orario' (+).</value>
+    <value>Ruotare il lato superiore di un quarto di giro 'in senso orario'. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Versione:</value>
@@ -475,55 +475,55 @@ Questa non è una garanzia che tutti i cubi possano essere risolti.</value>
     <value>Gira insieme lo strato posteriore e quello centrale di mezzo giro.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Gira insieme lo strato posteriore e quello centrale di un quarto di giro in senso antiorario (-).</value>
+    <value>Gira insieme lo strato posteriore e quello centrale di un quarto di giro in senso antiorario. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato posteriore e quello centrale di un quarto di giro in senso orario (+).</value>
+    <value>Ruota insieme lo strato posteriore e quello centrale di un quarto di giro in senso orario. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Gira insieme lo strato inferiore e quello intermedio di mezzo giro.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato inferiore e quello intermedio di un quarto di giro in senso antiorario (-).</value>
+    <value>Ruota insieme lo strato inferiore e quello intermedio di un quarto di giro in senso antiorario. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato inferiore e quello intermedio di un quarto di giro in senso orario (+).</value>
+    <value>Ruota insieme lo strato inferiore e quello intermedio di un quarto di giro in senso orario. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Gira insieme lo strato anteriore e quello centrale di mezzo giro.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato anteriore e quello intermedio di un quarto di giro in senso antiorario (-).</value>
+    <value>Ruota insieme lo strato anteriore e quello intermedio di un quarto di giro in senso antiorario. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato anteriore e quello intermedio di un quarto di giro in senso orario (+).</value>
+    <value>Ruota insieme lo strato anteriore e quello intermedio di un quarto di giro in senso orario. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Gira insieme lo strato sinistro e quello centrale di mezzo giro.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato sinistro e quello centrale di un quarto di giro in senso antiorario (-).</value>
+    <value>Ruota insieme lo strato sinistro e quello centrale di un quarto di giro in senso antiorario. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato sinistro e quello centrale di un quarto di giro in senso orario (+).</value>
+    <value>Ruota insieme lo strato sinistro e quello centrale di un quarto di giro in senso orario. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Gira insieme lo strato destro e quello centrale di mezzo giro.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato destro e quello centrale di un quarto di giro in senso antiorario (-).</value>
+    <value>Ruota insieme lo strato destro e quello centrale di un quarto di giro in senso antiorario. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato destro e quello centrale di un quarto di giro in senso orario (+).</value>
+    <value>Ruota insieme lo strato destro e quello centrale di un quarto di giro in senso orario. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Gira insieme lo strato superiore e quello intermedio di mezzo giro.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato superiore e quello intermedio di un quarto di giro in senso antiorario (-).</value>
+    <value>Ruota insieme lo strato superiore e quello intermedio di un quarto di giro in senso antiorario. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Ruota insieme lo strato superiore e quello intermedio di un quarto di giro in senso orario (+).</value>
+    <value>Ruota insieme lo strato superiore e quello intermedio di un quarto di giro in senso orario. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Invia una e-mail all'autore di questa applicazione</value>

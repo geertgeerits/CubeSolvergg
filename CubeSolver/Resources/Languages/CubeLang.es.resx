@@ -332,19 +332,19 @@ No permitido:</value>
     <value>Gire la parte de atrás media vuelta.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Gire la parte trasera un cuarto de vuelta en sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire la parte trasera un cuarto de vuelta en sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Gire la parte trasera un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire la parte trasera un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Gire el lado inferior media vuelta.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Gire el lado inferior un cuarto de vuelta en sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire el lado inferior un cuarto de vuelta en sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Gire el lado inferior un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire el lado inferior un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Gira todo el cubo de modo que el frente vaya hacia abajo, el lado derecho quede a la derecha.</value>
@@ -365,61 +365,61 @@ No permitido:</value>
     <value>Gira todo el cubo de modo que la parte superior quede hacia el lado derecho y la parte frontal quede al frente.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Gire la capa frontal-media un cuarto de vuelta hacia el lado derecho (-).</value>
+    <value>Gire la capa frontal-media un cuarto de vuelta hacia el lado derecho. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Gire la capa frontal-media un cuarto de vuelta hacia el lado superior (+).</value>
+    <value>Gire la capa frontal-media un cuarto de vuelta hacia el lado superior. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Gire la parte delantera media vuelta.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Gire la parte frontal un cuarto de vuelta en sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire la parte frontal un cuarto de vuelta en sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Gire el lado frontal un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire el lado frontal un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Gire el lado izquierdo media vuelta.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Gire el lado izquierdo un cuarto de vuelta en sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire el lado izquierdo un cuarto de vuelta en sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Gire el lado izquierdo un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire el lado izquierdo un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Gira la capa intermedia media vuelta.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Gire la capa media un cuarto de vuelta derecha hacia el lado frontal (+).</value>
+    <value>Gire la capa media un cuarto de vuelta derecha hacia el lado frontal. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Gire la capa media un cuarto de vuelta derecha hacia el lado superior (-).</value>
+    <value>Gire la capa media un cuarto de vuelta derecha hacia el lado superior. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Gire el lado derecho media vuelta.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Gire el lado derecho un cuarto de vuelta en sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire el lado derecho un cuarto de vuelta en sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Gire el lado derecho un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire el lado derecho un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Gire la capa superior-media un cuarto de vuelta hacia el lado frontal (-).</value>
+    <value>Gire la capa superior-media un cuarto de vuelta hacia el lado frontal. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Gire la capa superior-media un cuarto de vuelta hacia el lado derecho (+).</value>
+    <value>Gire la capa superior-media un cuarto de vuelta hacia el lado derecho. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Gire el lado superior media vuelta.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Gire el lado superior un cuarto de vuelta en sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire el lado superior un cuarto de vuelta en sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Gire el lado superior un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire el lado superior un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Versión:</value>
@@ -475,55 +475,55 @@ Esto no es una garantía de que todos los cubos puedan resolverse.</value>
     <value>Junte la capa posterior y media media vuelta.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Gire la capa posterior y la intermedia juntas un cuarto de vuelta en el sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire la capa posterior y la intermedia juntas un cuarto de vuelta en el sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Gire la capa posterior y la intermedia juntas un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire la capa posterior y la intermedia juntas un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Junte la capa inferior y media media vuelta.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Gire las capas inferior y media juntas un cuarto de vuelta en el sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire las capas inferior y media juntas un cuarto de vuelta en el sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Gire las capas inferior y media juntas un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire las capas inferior y media juntas un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Gire la capa frontal y media juntas media vuelta.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Gire la capa frontal y media juntas un cuarto de vuelta en sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire la capa frontal y media juntas un cuarto de vuelta en sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Gire la capa frontal y media juntas un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire la capa frontal y media juntas un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Gire la capa izquierda y media juntas media vuelta.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Gire las capas izquierda y media juntas un cuarto de vuelta en el sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire las capas izquierda y media juntas un cuarto de vuelta en el sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Gire las capas izquierda y media juntas un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire las capas izquierda y media juntas un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Gire la capa derecha y la del medio juntas media vuelta.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Gire la capa derecha y la del medio juntas un cuarto de vuelta en el sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire la capa derecha y la del medio juntas un cuarto de vuelta en el sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Gire las capas derecha y media juntas un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire las capas derecha y media juntas un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Junte la capa superior y la intermedia media vuelta.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Gire las capas superior e intermedia un cuarto de vuelta en el sentido contrario a las agujas del reloj (-).</value>
+    <value>Gire las capas superior e intermedia un cuarto de vuelta en el sentido contrario a las agujas del reloj. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Gire las capas superior e intermedia un cuarto de vuelta en el sentido de las agujas del reloj (+).</value>
+    <value>Gire las capas superior e intermedia un cuarto de vuelta en el sentido de las agujas del reloj. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Enviar un correo electrónico al autor de esta aplicación</value>

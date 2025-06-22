@@ -332,19 +332,19 @@ Niedozwolony:</value>
     <value>Obróć tylną stronę o pół obrotu.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Obróć tylną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć tylną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Obróć tylną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć tylną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Obróć dolną część o pół obrotu.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Obróć dolną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć dolną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Obróć dolną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć dolną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Obróć całą kostkę tak, aby przód znalazł się na dole, prawa strona pozostała po prawej stronie.</value>
@@ -365,61 +365,61 @@ Niedozwolony:</value>
     <value>Obróć całą kostkę tak, aby góra znalazła się na prawej stronie, przód pozostał z przodu.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Obróć przednią warstwę środkową o ćwierć obrotu w prawą stronę (-).</value>
+    <value>Obróć przednią warstwę środkową o ćwierć obrotu w prawą stronę. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Obróć przednią środkową warstwę o ćwierć obrotu w górę (+).</value>
+    <value>Obróć przednią środkową warstwę o ćwierć obrotu w górę. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Obróć przednią stronę o pół obrotu.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Obróć przednią stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć przednią stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Obróć przednią stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć przednią stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Obróć lewą stronę o pół obrotu.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Obróć lewą stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć lewą stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Obróć lewą stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć lewą stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Obróć środkową warstwę o pół obrotu.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Obróć prawą środkową warstwę o ćwierć obrotu do przodu (+).</value>
+    <value>Obróć prawą środkową warstwę o ćwierć obrotu do przodu. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Obróć prawą środkową warstwę o ćwierć obrotu w górę (-).</value>
+    <value>Obróć prawą środkową warstwę o ćwierć obrotu w górę. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Obróć prawą stronę o pół obrotu.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Obróć prawą stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć prawą stronę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Obróć prawą stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć prawą stronę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Obróć górną środkową warstwę o ćwierć obrotu do przodu (-).</value>
+    <value>Obróć górną środkową warstwę o ćwierć obrotu do przodu. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Obróć górną środkową warstwę o ćwierć obrotu w prawą stronę (+).</value>
+    <value>Obróć górną środkową warstwę o ćwierć obrotu w prawą stronę. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Obróć górną stronę o pół obrotu.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Obróć górną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć górną część o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Obróć górną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć górną część o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Wersja:</value>
@@ -475,55 +475,55 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
     <value>Obróć tylną i środkową warstwę razem o pół obrotu.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Obróć warstwę tylną i środkową o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć warstwę tylną i środkową o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Obróć warstwę tylną i środkową o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć warstwę tylną i środkową o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Obróć dolną i środkową warstwę razem o pół obrotu.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Obróć dolną i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć dolną i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Obróć dolną i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć dolną i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Obróć przednią i środkową warstwę razem o pół obrotu.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Obróć przednią i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć przednią i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Obróć przednią i środkową warstwę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć przednią i środkową warstwę o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Obróć lewą i środkową warstwę razem o pół obrotu.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Obróć lewą i środkową warstwę razem o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć lewą i środkową warstwę razem o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Obróć lewą i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć lewą i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Obróć prawą i środkową warstwę razem o pół obrotu.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Obróć prawą i środkową warstwę razem o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć prawą i środkową warstwę razem o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Obróć prawą i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć prawą i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Obróć górną i środkową warstwę razem o pół obrotu.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Obróć górną i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (-).</value>
+    <value>Obróć górną i środkową warstwę o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Obróć górną i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara (+).</value>
+    <value>Obróć górną i środkową warstwę razem o ćwierć obrotu w kierunku zgodnym z ruchem wskazówek zegara. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Wyślij e-mail do autora tej aplikacji</value>

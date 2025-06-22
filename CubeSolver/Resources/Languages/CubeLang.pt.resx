@@ -332,19 +332,19 @@ Não permitido:</value>
     <value>Vire a parte de trás meia volta.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Gire a parte de trás um quarto de volta 'no sentido anti-horário' (-).</value>
+    <value>Gire a parte de trás um quarto de volta 'no sentido anti-horário'. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Vire a parte de trás um quarto de volta 'no sentido horário' (+).</value>
+    <value>Vire a parte de trás um quarto de volta 'no sentido horário'. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Vire o lado inferior meia volta.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Gire o lado inferior um quarto de volta 'no sentido anti-horário' (-).</value>
+    <value>Gire o lado inferior um quarto de volta 'no sentido anti-horário'. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Gire o lado inferior um quarto de volta 'no sentido horário' (+).</value>
+    <value>Gire o lado inferior um quarto de volta 'no sentido horário'. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Gire todo o cubo de forma que a frente fique para baixo, o lado direito fique à direita.</value>
@@ -365,61 +365,61 @@ Não permitido:</value>
     <value>Vire o cubo inteiro de forma que a parte superior fique para o lado direito, a parte frontal fique na frente.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Vire a camada frontal do meio um quarto de volta para o lado direito (-).</value>
+    <value>Vire a camada frontal do meio um quarto de volta para o lado direito. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Vire a camada frontal do meio um quarto de volta para o lado superior (+).</value>
+    <value>Vire a camada frontal do meio um quarto de volta para o lado superior. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Vire a parte da frente meia volta.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Gire a parte da frente um quarto de volta 'no sentido anti-horário' (-).</value>
+    <value>Gire a parte da frente um quarto de volta 'no sentido anti-horário'. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Gire a parte da frente um quarto de volta 'no sentido horário' (+).</value>
+    <value>Gire a parte da frente um quarto de volta 'no sentido horário'. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Vire o lado esquerdo meia volta.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Gire o lado esquerdo um quarto de volta 'no sentido anti-horário' (-).</value>
+    <value>Gire o lado esquerdo um quarto de volta 'no sentido anti-horário'. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Gire o lado esquerdo um quarto de volta 'no sentido horário' (+).</value>
+    <value>Gire o lado esquerdo um quarto de volta 'no sentido horário'. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Gire a camada intermediária meia volta.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Vire a camada do meio um quarto de volta à direita para a frente (+).</value>
+    <value>Vire a camada do meio um quarto de volta à direita para a frente. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Vire a camada do meio um quarto de volta à direita para o lado superior (-).</value>
+    <value>Vire a camada do meio um quarto de volta à direita para o lado superior. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Vire o lado direito meia volta.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Gire o lado direito um quarto de volta 'no sentido anti-horário' (-).</value>
+    <value>Gire o lado direito um quarto de volta 'no sentido anti-horário'. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Gire o lado direito um quarto de volta 'no sentido horário' (+).</value>
+    <value>Gire o lado direito um quarto de volta 'no sentido horário'. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Vire a camada superior do meio um quarto de volta para a frente (-).</value>
+    <value>Vire a camada superior do meio um quarto de volta para a frente. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Vire a camada superior central um quarto de volta para o lado direito (+).</value>
+    <value>Vire a camada superior central um quarto de volta para o lado direito. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Vire o lado superior meia volta.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Gire o lado superior um quarto de volta 'no sentido anti-horário' (-).</value>
+    <value>Gire o lado superior um quarto de volta 'no sentido anti-horário'. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Gire o lado superior um quarto de volta 'no sentido horário' (+).</value>
+    <value>Gire o lado superior um quarto de volta 'no sentido horário'. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Versão:</value>
@@ -475,55 +475,55 @@ Isso não é uma garantia de que todos os cubos podem ser resolvidos.</value>
     <value>Vire as camadas traseira e intermediária juntas meia volta.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Gire as camadas traseira e intermediária juntas um quarto de volta no sentido anti-horário (-).</value>
+    <value>Gire as camadas traseira e intermediária juntas um quarto de volta no sentido anti-horário. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Gire as camadas traseira e intermediária juntas um quarto de volta no sentido horário (+).</value>
+    <value>Gire as camadas traseira e intermediária juntas um quarto de volta no sentido horário. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Vire as camadas inferior e intermediária juntas meia volta.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Gire as camadas inferior e intermediária juntas um quarto de volta no sentido anti-horário (-).</value>
+    <value>Gire as camadas inferior e intermediária juntas um quarto de volta no sentido anti-horário. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Gire as camadas inferior e intermediária juntas um quarto de volta no sentido horário (+).</value>
+    <value>Gire as camadas inferior e intermediária juntas um quarto de volta no sentido horário. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Vire as camadas frontal e intermediária juntas meia volta.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Gire as camadas frontal e intermediária juntas um quarto de volta no sentido anti-horário (-).</value>
+    <value>Gire as camadas frontal e intermediária juntas um quarto de volta no sentido anti-horário. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Gire as camadas frontal e intermediária juntas um quarto de volta no sentido horário (+).</value>
+    <value>Gire as camadas frontal e intermediária juntas um quarto de volta no sentido horário. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Gire as camadas esquerda e intermediária juntas meia volta.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Gire as camadas esquerda e intermediária juntas um quarto de volta no sentido anti-horário (-).</value>
+    <value>Gire as camadas esquerda e intermediária juntas um quarto de volta no sentido anti-horário. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Gire as camadas esquerda e intermediária juntas um quarto de volta no sentido horário (+).</value>
+    <value>Gire as camadas esquerda e intermediária juntas um quarto de volta no sentido horário. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Gire as camadas direita e intermediária juntas meia volta.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Gire as camadas direita e intermediária juntas um quarto de volta no sentido anti-horário (-).</value>
+    <value>Gire as camadas direita e intermediária juntas um quarto de volta no sentido anti-horário. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Gire as camadas direita e intermediária juntas um quarto de volta no sentido horário (+).</value>
+    <value>Gire as camadas direita e intermediária juntas um quarto de volta no sentido horário. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Vire as camadas superior e intermediária juntas meia volta.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Gire as camadas superior e intermediária juntas um quarto de volta no sentido anti-horário (-).</value>
+    <value>Gire as camadas superior e intermediária juntas um quarto de volta no sentido anti-horário. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Gire as camadas superior e intermediária juntas um quarto de volta no sentido horário (+).</value>
+    <value>Gire as camadas superior e intermediária juntas um quarto de volta no sentido horário. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Envie um e-mail para o autor deste aplicativo</value>

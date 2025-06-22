@@ -341,19 +341,19 @@ Not allowed:</value>
     <value>Turn the back side half a turn.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Turn the back side a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the back side a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Turn the back side a quarter turn 'clockwise' (+).</value>
+    <value>Turn the back side a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Turn the bottom side half a turn.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Turn the bottom side a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the bottom side a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Turn the bottom side a quarter turn 'clockwise' (+).</value>
+    <value>Turn the bottom side a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Turn the entire cube so that the front goes to the bottom, the right side remains at the right.</value>
@@ -374,61 +374,61 @@ Not allowed:</value>
     <value>Turn the entire cube so that the top goes to the right side, the front side remains at the front.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Turn the front-middle layer a quarter turn to the right side (-).</value>
+    <value>Turn the front-middle layer a quarter turn to the right side. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Turn the front-middle layer a quarter turn to the top side (+).</value>
+    <value>Turn the front-middle layer a quarter turn to the top side. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Turn the front side half a turn.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Turn the front side a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the front side a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Turn the front side a quarter turn 'clockwise' (+).</value>
+    <value>Turn the front side a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Turn the left side half a turn.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Turn the left side a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the left side a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Turn the left side a quarter turn 'clockwise' (+).</value>
+    <value>Turn the left side a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Turn the middle layer half a turn.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Turn the right-middle layer a quarter turn to the front side (+).</value>
+    <value>Turn the right-middle layer a quarter turn to the front side. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Turn the right-middle layer a quarter turn to the top side (-).</value>
+    <value>Turn the right-middle layer a quarter turn to the top side. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Turn the right side half a turn.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Turn the right side a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the right side a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Turn the right side a quarter turn 'clockwise' (+).</value>
+    <value>Turn the right side a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Turn the top-middle layer a quarter turn to the front side (-).</value>
+    <value>Turn the top-middle layer a quarter turn to the front side. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Turn the top-middle layer a quarter turn to the right side (+).</value>
+    <value>Turn the top-middle layer a quarter turn to the right side. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Turn the top side half a turn.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Turn the top side a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the top side a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Turn the top side a quarter turn 'clockwise' (+).</value>
+    <value>Turn the top side a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Version:</value>
@@ -481,55 +481,55 @@ Possible cause is incorrect transfer of colors to this cube.</value>
     <value>Turn the back and middle layer together half a turn.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Turn the back and middle layer together a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the back and middle layer together a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Turn the back and middle layer together a quarter turn 'clockwise' (+).</value>
+    <value>Turn the back and middle layer together a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Turn the bottom and middle layer together half a turn.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Turn the bottom and middle layer together a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the bottom and middle layer together a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Turn the bottom and middle layer together a quarter turn 'clockwise' (+).</value>
+    <value>Turn the bottom and middle layer together a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Turn the front and middle layer together half a turn.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Turn the front and middle layer together a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the front and middle layer together a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Turn the front and middle layer together a quarter turn 'clockwise' (+).</value>
+    <value>Turn the front and middle layer together a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Turn the left and middle layer together half a turn.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Turn the left and middle layer together a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the left and middle layer together a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Turn the left and middle layer together a quarter turn 'clockwise' (+).</value>
+    <value>Turn the left and middle layer together a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Turn the right and middle layer together half a turn.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Turn the right and middle layer together a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the right and middle layer together a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Turn the right and middle layer together a quarter turn 'clockwise' (+).</value>
+    <value>Turn the right and middle layer together a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Turn the top and middle layer together half a turn.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Turn the top and middle layer together a quarter turn 'counter clockwise' (-).</value>
+    <value>Turn the top and middle layer together a quarter turn 'counter clockwise'. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Turn the top and middle layer together a quarter turn 'clockwise' (+).</value>
+    <value>Turn the top and middle layer together a quarter turn 'clockwise'. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Send an email to the author of this application</value>

@@ -332,19 +332,19 @@ Inte tillåtet:</value>
     <value>Vänd baksidan ett halvt varv.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Vrid baksidan ett kvarts varv "moturs" (-).</value>
+    <value>Vrid baksidan ett kvarts varv "moturs". (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Vrid baksidan ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid baksidan ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Vänd undersidan ett halvt varv.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Vrid undersidan ett kvarts varv 'moturs' (-).</value>
+    <value>Vrid undersidan ett kvarts varv 'moturs'. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Vrid undersidan ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid undersidan ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Vänd hela kuben så att framsidan går till botten, höger sida förblir till höger.</value>
@@ -365,61 +365,61 @@ Inte tillåtet:</value>
     <value>Vänd hela kuben så att toppen går åt höger sida, framsidan blir kvar längst fram.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Vrid det främre och mittersta lagret ett kvarts varv till höger sida (-).</value>
+    <value>Vrid det främre och mittersta lagret ett kvarts varv till höger sida. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Vrid det främre-mellanlagret ett kvarts varv till översidan (+).</value>
+    <value>Vrid det främre-mellanlagret ett kvarts varv till översidan. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Vrid framsidan ett halvt varv.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Vrid framsidan ett kvarts varv 'moturs' (-).</value>
+    <value>Vrid framsidan ett kvarts varv 'moturs'. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Vrid framsidan ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid framsidan ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Vrid vänster sida ett halvt varv.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Vrid vänster sida ett kvarts varv "moturs" (-).</value>
+    <value>Vrid vänster sida ett kvarts varv "moturs". (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Vrid vänster sida ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid vänster sida ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Vänd mellanlagret ett halvt varv.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Vrid det högra mittenskiktet ett kvarts varv till framsidan (+).</value>
+    <value>Vrid det högra mittenskiktet ett kvarts varv till framsidan. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Vrid det högra mittenskiktet ett kvarts varv till översidan (-).</value>
+    <value>Vrid det högra mittenskiktet ett kvarts varv till översidan. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Vrid höger ett halvt varv.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Vrid höger sida ett kvarts varv "moturs" (-).</value>
+    <value>Vrid höger sida ett kvarts varv "moturs". (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Vrid höger sida ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid höger sida ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Vrid det övre och mittersta lagret ett kvarts varv till framsidan (-).</value>
+    <value>Vrid det övre och mittersta lagret ett kvarts varv till framsidan. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Vrid det övre och mittersta lagret ett kvarts varv till höger sida (+).</value>
+    <value>Vrid det övre och mittersta lagret ett kvarts varv till höger sida. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Vänd ovansidan ett halvt varv.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Vrid ovansidan ett kvarts varv "moturs" (-).</value>
+    <value>Vrid ovansidan ett kvarts varv "moturs". (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Vrid ovansidan ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid ovansidan ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Version:</value>
@@ -475,55 +475,55 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
     <value>Vänd ihop bak- och mellanlagret ett halvt varv.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Vrid ihop bak- och mittskiktet ett kvarts varv 'moturs' (-).</value>
+    <value>Vrid ihop bak- och mittskiktet ett kvarts varv 'moturs'. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Vrid ihop bak- och mittskiktet ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid ihop bak- och mittskiktet ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Vänd ihop botten och mellanlagret ett halvt varv.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Vrid ihop det nedre och mittersta lagret ett kvarts varv 'moturs' (-).</value>
+    <value>Vrid ihop det nedre och mittersta lagret ett kvarts varv 'moturs'. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Vrid ihop det nedre och mittersta lagret ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid ihop det nedre och mittersta lagret ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Vänd ihop det främre och mittersta lagret ett halvt varv.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Vrid det främre och mittersta lagret tillsammans ett kvarts varv 'moturs' (-).</value>
+    <value>Vrid det främre och mittersta lagret tillsammans ett kvarts varv 'moturs'. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Vrid ihop det främre och mittersta lagret ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid ihop det främre och mittersta lagret ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Vrid ihop vänster och mellanlag ett halvt varv.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Vrid det vänstra och mellersta lagret tillsammans ett kvarts varv "moturs" (-).</value>
+    <value>Vrid det vänstra och mellersta lagret tillsammans ett kvarts varv "moturs". (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Vrid det vänstra och mellersta lagret tillsammans ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid det vänstra och mellersta lagret tillsammans ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Vänd ihop höger och mellanlag ett halvt varv.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Vrid det högra och mittersta lagret tillsammans ett kvarts varv 'moturs' (-).</value>
+    <value>Vrid det högra och mittersta lagret tillsammans ett kvarts varv 'moturs'. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Vrid det högra och mittersta lagret tillsammans ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid det högra och mittersta lagret tillsammans ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Vänd ihop översta och mellanlagret ett halvt varv.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Vrid ihop det övre och mittersta lagret ett kvarts varv "moturs" (-).</value>
+    <value>Vrid ihop det övre och mittersta lagret ett kvarts varv "moturs". (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Vrid ihop det övre och mittersta lagret ett kvarts varv 'medurs' (+).</value>
+    <value>Vrid ihop det övre och mittersta lagret ett kvarts varv 'medurs'. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Skicka ett e-postmeddelande till författaren av den här applikationen</value>

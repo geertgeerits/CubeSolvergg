@@ -332,19 +332,19 @@ Nem megengedett:</value>
     <value>Fordítsa el a hátsó oldalt fél fordulattal.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Fordítsa el a hátsó oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+    <value>Fordítsa el a hátsó oldalt negyed fordulattal az óramutató járásával ellentétes irányban. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Fordítsa el a hátsó oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+    <value>Fordítsa el a hátsó oldalt negyed fordulattal az óramutató járásával megegyező irányba. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Fordítsa el az alsó oldalt fél fordulattal.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Forgassa el az alsó oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+    <value>Forgassa el az alsó oldalt negyed fordulattal az óramutató járásával ellentétes irányban. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Forgassa el az alsó oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+    <value>Forgassa el az alsó oldalt negyed fordulattal az óramutató járásával megegyező irányba. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Forgassa el az egész kockát úgy, hogy az eleje lefelé menjen, a jobb oldal jobbra maradjon.</value>
@@ -365,61 +365,61 @@ Nem megengedett:</value>
     <value>Forgassa el az egész kockát úgy, hogy a teteje a jobb oldalra kerüljön, az elülső oldal maradjon elöl.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Fordítsa el az elülső-középső réteget negyed fordulattal jobbra (-).</value>
+    <value>Fordítsa el az elülső-középső réteget negyed fordulattal jobbra. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Fordítsa el az elülső-középső réteget negyed fordulattal a felső oldalra (+).</value>
+    <value>Fordítsa el az elülső-középső réteget negyed fordulattal a felső oldalra. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Fordítsa el az elülső oldalt fél fordulattal.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Forgassa el az elülső oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+    <value>Forgassa el az elülső oldalt negyed fordulattal az óramutató járásával ellentétes irányban. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Forgassa el az elülső oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+    <value>Forgassa el az elülső oldalt negyed fordulattal az óramutató járásával megegyező irányba. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Fordítsa el a bal oldalt fél fordulattal.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Forgassa el a bal oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+    <value>Forgassa el a bal oldalt negyed fordulattal az óramutató járásával ellentétes irányban. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Forgassa el a bal oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+    <value>Forgassa el a bal oldalt negyed fordulattal az óramutató járásával megegyező irányba. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Fordítsa el a középső réteget fél fordulattal.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Fordítsa el a jobb-középső réteget negyed fordulattal az elülső oldalra (+).</value>
+    <value>Fordítsa el a jobb-középső réteget negyed fordulattal az elülső oldalra. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Fordítsa el a jobb-középső réteget negyed fordulattal a felső oldalra (-).</value>
+    <value>Fordítsa el a jobb-középső réteget negyed fordulattal a felső oldalra. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Fordítsa el a jobb oldalt fél fordulattal.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Forgassa el a jobb oldalt negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+    <value>Forgassa el a jobb oldalt negyed fordulattal az óramutató járásával ellentétes irányban. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Forgassa el a jobb oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+    <value>Forgassa el a jobb oldalt negyed fordulattal az óramutató járásával megegyező irányba. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Fordítsa el a felső-középső réteget negyed fordulattal az elülső oldalra (-).</value>
+    <value>Fordítsa el a felső-középső réteget negyed fordulattal az elülső oldalra. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Fordítsa el a felső-középső réteget negyed fordulattal jobbra (+).</value>
+    <value>Fordítsa el a felső-középső réteget negyed fordulattal jobbra. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Fordítsa el a felső oldalt fél fordulattal.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Forgassa el a felső oldalt negyed fordulattal „az óramutató járásával ellentétes irányba” (-).</value>
+    <value>Forgassa el a felső oldalt negyed fordulattal „az óramutató járásával ellentétes irányba”. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Forgassa el a felső oldalt negyed fordulattal az óramutató járásával megegyező irányba (+).</value>
+    <value>Forgassa el a felső oldalt negyed fordulattal az óramutató járásával megegyező irányba. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Változat:</value>
@@ -475,55 +475,55 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
     <value>Fordítsa össze a hátsó és a középső réteget fél fordulattal.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Forgassa el a hátsó és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+    <value>Forgassa el a hátsó és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Forgassa el a hátsó és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+    <value>Forgassa el a hátsó és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Az alsó és a középső réteget fél fordulattal összeforgatjuk.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Forgassa el az alsó és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+    <value>Forgassa el az alsó és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Forgassa el az alsó és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+    <value>Forgassa el az alsó és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Fordítsa össze fél fordulattal az elülső és a középső réteget.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Forgassa össze az elülső és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba” (-).</value>
+    <value>Forgassa össze az elülső és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba”. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Forgassa el az elülső és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+    <value>Forgassa el az elülső és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Forgassa el a bal és a középső réteget fél fordulattal együtt.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Forgassa el a bal és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban (-).</value>
+    <value>Forgassa el a bal és a középső réteget negyed fordulattal az óramutató járásával ellentétes irányban. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Forgassa el a bal és a középső réteget negyed fordulattal „óramutató járásával megegyezően” (+).</value>
+    <value>Forgassa el a bal és a középső réteget negyed fordulattal „óramutató járásával megegyezően”. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Fordítsa össze a jobb és a középső réteget fél fordulattal.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Forgassa össze a jobb és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba” (-).</value>
+    <value>Forgassa össze a jobb és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba”. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Forgassa össze a jobb és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+    <value>Forgassa össze a jobb és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>A felső és a középső réteget fél fordulattal összeforgatjuk.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Forgassa el a felső és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba” (-).</value>
+    <value>Forgassa el a felső és a középső réteget negyed fordulattal „az óramutató járásával ellentétes irányba”. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Forgassa össze a felső és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban (+).</value>
+    <value>Forgassa össze a felső és a középső réteget negyed fordulattal az óramutató járásával megegyező irányban. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Küldjön e-mailt az alkalmazás szerzőjének</value>

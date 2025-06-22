@@ -332,19 +332,19 @@
     <value>뒷면을 반 바퀴 돌립니다.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>뒷면을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>뒷면을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>뒷면을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>뒷면을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>아랫부분을 반 바퀴 돌리세요.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>아래쪽을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>아래쪽을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>아래쪽을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>아래쪽을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>큐브 전체를 돌려 앞면이 아래로 가고 오른쪽은 오른쪽에 남게 하세요.</value>
@@ -365,61 +365,61 @@
     <value>큐브 전체를 돌려서 윗부분이 오른쪽으로 가고 앞면이 앞으로 오게 하세요.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>앞쪽 가운데 층을 오른쪽으로 1/4바퀴 돌립니다 (-).</value>
+    <value>앞쪽 가운데 층을 오른쪽으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>앞쪽 가운데 층을 위쪽으로 1/4바퀴 돌립니다 (+).</value>
+    <value>앞쪽 가운데 층을 위쪽으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>앞면을 반 바퀴 돌립니다.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>앞면을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>앞면을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>앞면을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>앞면을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>왼쪽으로 반 바퀴 돌립니다.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>왼쪽을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>왼쪽을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>왼쪽을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>왼쪽을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>중간 층을 반 바퀴 돌립니다.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>오른쪽 가운데 층을 앞쪽으로 1/4바퀴 돌립니다 (+).</value>
+    <value>오른쪽 가운데 층을 앞쪽으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>오른쪽 가운데 층을 위쪽으로 1/4바퀴 돌립니다 (-).</value>
+    <value>오른쪽 가운데 층을 위쪽으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>오른쪽으로 반 바퀴 돌립니다.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>오른쪽을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>오른쪽을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>오른쪽을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>오른쪽을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>상단 중간 층을 앞면으로 1/4바퀴 돌립니다 (-).</value>
+    <value>상단 중간 층을 앞면으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>위쪽 가운데 층을 오른쪽으로 1/4바퀴 돌립니다 (+).</value>
+    <value>위쪽 가운데 층을 오른쪽으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>윗부분을 반 바퀴 돌립니다.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>윗부분을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>윗부분을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>윗부분을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>윗부분을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>버전:</value>
@@ -475,55 +475,55 @@
     <value>뒷면과 가운데 층을 함께 반 바퀴 돌립니다.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>뒷면과 가운데 층을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>뒷면과 가운데 층을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>뒷면과 가운데 층을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>뒷면과 가운데 층을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>아랫부분과 중간 부분을 함께 반 바퀴 돌립니다.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>아래쪽과 가운데 층을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>아래쪽과 가운데 층을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>아랫부분과 중간 부분을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>아랫부분과 중간 부분을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>앞면과 중간 층을 함께 반 바퀴 돌립니다.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>앞면과 중간 층을 함께 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>앞면과 중간 층을 함께 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>앞면과 중간 층을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>앞면과 중간 층을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>왼쪽과 가운데 층을 함께 반 바퀴 돌립니다.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>왼쪽과 가운데 층을 함께 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>왼쪽과 가운데 층을 함께 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>왼쪽과 가운데 층을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>왼쪽과 가운데 층을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>오른쪽 겹과 가운데 겹을 함께 반 바퀴 돌립니다.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>오른쪽과 가운데 층을 함께 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>오른쪽과 가운데 층을 함께 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>오른쪽과 가운데 층을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>오른쪽과 가운데 층을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>윗면과 중간면을 함께 반 바퀴 돌립니다.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>윗면과 중간 층을 시계 반대 방향으로 1/4바퀴 돌립니다 (-).</value>
+    <value>윗면과 중간 층을 시계 반대 방향으로 1/4바퀴 돌립니다. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>윗면과 중간 층을 시계 방향으로 1/4바퀴 돌립니다 (+).</value>
+    <value>윗면과 중간 층을 시계 방향으로 1/4바퀴 돌립니다. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>이 애플리케이션의 작성자에게 이메일을 보내세요</value>
