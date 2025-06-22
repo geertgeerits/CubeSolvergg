@@ -625,7 +625,7 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
     <value>Følger F-retningen</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Brede bevægelser, drej 2 lag på én gang en kvart omgang med uret (90 grader), de er med små bogstaver: u, d, f, b, l, r.</value>
+    <value>Brede bevægelser: drej 2 lag på én gang en kvart omgang med uret (90 grader), de er med små bogstaver: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>En apostrof (f.eks. U') angiver en kvart omgang mod uret (90 grader).</value>

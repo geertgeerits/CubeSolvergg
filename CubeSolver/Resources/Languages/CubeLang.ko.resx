@@ -625,7 +625,7 @@
     <value>F 방향을 따릅니다</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>와이드 이동은 2개의 레이어를 시계 방향으로 1/4회전(90도)하고, 소문자로 표기합니다: u, d, f, b, l, r.</value>
+    <value>넓은 움직임: 2개의 레이어를 시계 방향으로 1/4바퀴(90도) 돌립니다. 소문자로 표기합니다: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>아포스트로피(예: U')는 시계 반대 방향으로 1/4 회전(90도)을 나타냅니다.</value>

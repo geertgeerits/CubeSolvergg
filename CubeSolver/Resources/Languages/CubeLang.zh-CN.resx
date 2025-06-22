@@ -332,19 +332,19 @@
     <value>将背面旋转半圈。</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>将背面逆时针旋转四分之一圈 (-)。</value>
+    <value>将背面逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>将背面顺时针旋转四分之一圈 (+)。</value>
+    <value>将背面顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>将底部旋转半圈。</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>将底部逆时针旋转四分之一圈 (-)。</value>
+    <value>将底部逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>将底部沿顺时针方向旋转四分之一圈 (+)。</value>
+    <value>将底部顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>转动整个立方体，使其正面朝向底部，右侧保持在右侧。</value>
@@ -365,61 +365,61 @@
     <value>转动整个立方体，使顶部朝向右侧，而正面保持在前面。</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>将前中层向右侧旋转四分之一圈 (-)。</value>
+    <value>将前中层向右侧旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>将前中层向顶部旋转四分之一圈 (+)。</value>
+    <value>将前中层向顶部旋转四分之一圈。 (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>将正面旋转半圈。</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>将正面逆时针旋转四分之一圈 (-)。</value>
+    <value>将正面逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>将正面沿顺时针方向旋转四分之一圈 (+)。</value>
+    <value>将正面顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>将左侧旋转半圈。</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>将左侧逆时针旋转四分之一圈 (-)。</value>
+    <value>将左侧逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>将左侧顺时针旋转四分之一圈 (+)。</value>
+    <value>将左侧顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>将中间层转半圈。</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>将右中间层向正面旋转四分之一圈 (+)。</value>
+    <value>将右中间层向正面旋转四分之一圈。 (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>将右中间层向顶部旋转四分之一圈 (-)。</value>
+    <value>将右中间层向顶部旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>将右侧旋转半圈。</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>将右侧逆时针旋转四分之一圈 (-)。</value>
+    <value>将右侧逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>将右侧顺时针旋转四分之一圈 (+)。</value>
+    <value>将右侧顺时针旋转四分之一圈。(+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>将顶部中间层向正面旋转四分之一圈 (-)。</value>
+    <value>将顶部中间层向正面旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>将顶部中间层向右侧旋转四分之一圈 (+)。</value>
+    <value>将顶部中间层向右侧旋转四分之一圈。 (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>将顶部旋转半圈。</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>将顶部逆时针旋转四分之一圈 (-)。</value>
+    <value>将顶部逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>将顶部沿顺时针方向旋转四分之一圈 (+)。</value>
+    <value>将顶部顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>版本：</value>
@@ -475,55 +475,55 @@
     <value>将后层和中间层一起旋转半圈。</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>将背面和中间层一起逆时针旋转四分之一圈 (-)。</value>
+    <value>将背面和中间层一起逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>将背面和中间层一起顺时针旋转四分之一圈 (+)。</value>
+    <value>将后层和中间层一起顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>将底层和中间层一起旋转半圈。</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>将底层和中间层一起逆时针旋转四分之一圈 (-)。</value>
+    <value>将底层和中间层一起逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>将底层和中间层一起顺时针旋转四分之一圈 (+)。</value>
+    <value>将底层和中间层一起顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>将前层和中间层一起旋转半圈。</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>将前层和中间层一起逆时针旋转四分之一圈（-）。</value>
+    <value>将前层和中间层一起逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>将前层和中间层一起顺时针旋转四分之一圈 (+)。</value>
+    <value>将前层和中间层一起顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>将左侧层和中间层一起转半圈。</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>将左侧层和中间层一起逆时针旋转四分之一圈 (-)。</value>
+    <value>将左侧层和中间层一起逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>将左侧层和中间层一起顺时针旋转四分之一圈 (+)。</value>
+    <value>将左侧层和中间层一起顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>将右层和中间层一起转半圈。</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>将右侧和中间层一起逆时针旋转四分之一圈 (-)。</value>
+    <value>将右侧和中间层一起逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>将右侧层和中间层一起顺时针旋转四分之一圈 (+)。</value>
+    <value>将右侧和中间层一起顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>将顶层和中间层一起旋转半圈。</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>将顶层和中间层一起逆时针旋转四分之一圈 (-)。</value>
+    <value>将顶层和中间层一起逆时针旋转四分之一圈。 (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>将顶层和中间层一起顺时针旋转四分之一圈 (+)。</value>
+    <value>将顶层和中间层一起顺时针旋转四分之一圈。 (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>向该应用程序的作者发送电子邮件</value>
@@ -625,7 +625,7 @@
     <value>沿 F 方向</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>宽移动，一次将 2 层顺时针旋转四分之一圈（90 度），小写字母为：u、d、f、b、l、r。</value>
+    <value>宽移动：将 2 层同时顺时针旋转四分之一圈（90 度），小写字母为：u、d、f、b、l、r。</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>撇号（例如 U'）表示逆时针四分之一旋转（90 度）。</value>

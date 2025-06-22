@@ -111,10 +111,14 @@ namespace CubeSolver
             try
             {
                 CultureInfo culture = new(cCultureName);
-                Thread.CurrentThread.CurrentCulture = culture;
-                Thread.CurrentThread.CurrentUICulture = culture;
-                CultureInfo.DefaultThreadCurrentCulture = culture;
-                CultureInfo.DefaultThreadCurrentUICulture = culture;
+
+                // When using CurrentUICulture, resetting the settings will not reset the UI language immediately
+                // and the cLayoutDirection will not be determined correctly
+                // Does not work as expected in Android
+                Thread.CurrentThread.CurrentCulture = culture;          // Neccessary for Windows
+                //Thread.CurrentThread.CurrentUICulture = culture;
+                CultureInfo.DefaultThreadCurrentCulture = culture;      // Neccessary for Windows
+                //CultureInfo.DefaultThreadCurrentUICulture = culture;
 
                 LocalizationResourceManager.Instance.SetCulture(culture);
             }
@@ -133,7 +137,8 @@ namespace CubeSolver
             string cLayoutDirection = layoutDirection.ToString();
 
             // Set the flow direction to right-to-left for Arabic and Hebrew languages
-            if (cLayoutDirection == "RightToLeft")
+            //if (cLayoutDirection == "RightToLeft")
+            if (cLanguage == "ar" || cLanguage == "he")
             {
                 if (element.FlowDirection != FlowDirection.RightToLeft)
                 {

@@ -330,19 +330,19 @@
     <value>पीछे वाले भाग को आधा मोड़ दें।</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>पीछे के भाग को 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>पीछे की ओर एक चौथाई मोड़ 'वामावर्त' घुमाएं। (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>पीछे वाले भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>पीछे वाले भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>नीचे वाले भाग को आधा मोड़ दें।</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>नीचे वाले भाग को 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>नीचे वाले भाग को 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>नीचे वाले भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>नीचे वाले भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>पूरे क्यूब को इस प्रकार घुमाएं कि सामने वाला भाग नीचे चला जाए, तथा दाहिना भाग दाहिना भाग ही रहे।</value>
@@ -363,61 +363,61 @@
     <value>पूरे क्यूब को इस प्रकार घुमाएं कि ऊपरी हिस्सा दाहिनी ओर चला जाए, तथा सामने वाला हिस्सा सामने की ओर रहे।</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>सामने की मध्य परत को दाहिनी ओर एक चौथाई मोड़ दें (-)।</value>
+    <value>सामने-मध्य परत को दाईं ओर एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>सामने की मध्य परत को ऊपर की ओर एक चौथाई मोड़ दें (+)।</value>
+    <value>सामने की मध्य परत को ऊपर की ओर एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>सामने वाले भाग को आधा मोड़ दें।</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>सामने वाले भाग को 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>सामने वाले भाग को 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>सामने वाले भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>सामने वाले भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>बायीं ओर को आधा मोड़ें।</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>बायीं ओर को 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>बायीं ओर को 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>बायीं ओर को 'घड़ी की दिशा में' एक चौथाई मोड़ें (+)।</value>
+    <value>बायीं ओर को 'घड़ी की दिशा में' एक चौथाई मोड़ें। (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>बीच वाली परत को आधा मोड़ दें।</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>दाहिनी-मध्य परत को सामने की ओर एक चौथाई मोड़ दें (+)।</value>
+    <value>दाहिनी-मध्य परत को सामने की ओर एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>दाहिनी-मध्य परत को ऊपर की ओर एक चौथाई मोड़ दें (-)।</value>
+    <value>दाहिनी-मध्य परत को ऊपर की ओर एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>दाहिनी ओर को आधा मोड़ें।</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>दाहिने भाग को 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>दाहिने भाग को 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>दाहिने भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ें (+)।</value>
+    <value>दाहिने भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ें। (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>ऊपरी-मध्य परत को सामने की ओर एक चौथाई मोड़ दें (-)।</value>
+    <value>ऊपरी-मध्य परत को सामने की ओर एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>ऊपरी-मध्य परत को दाहिनी ओर एक चौथाई मोड़ दें (+)।</value>
+    <value>ऊपरी-मध्य परत को दाईं ओर एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>ऊपरी भाग को आधा मोड़ दें।</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>ऊपरी भाग को 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>ऊपरी सतह को 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>ऊपरी भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>ऊपरी भाग को 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>संस्करण:</value>
@@ -473,55 +473,55 @@
     <value>पीछे और बीच की परत को एक साथ आधा मोड़ें।</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>पीछे और बीच की परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>पीछे और बीच की परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>पीछे और बीच की परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>पीछे और बीच की परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>निचली और मध्य परत को एक साथ आधा मोड़ दें।</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>निचली और मध्य परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>निचली और मध्य परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>निचली और मध्य परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>निचली और मध्य परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>सामने और बीच की परत को एक साथ आधा मोड़ दें।</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>सामने और बीच की परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>सामने और बीच की परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>सामने और बीच की परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>सामने और बीच की परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>बायीं और मध्य परत को एक साथ आधा मोड़ें।</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>बायीं और मध्य परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>बायीं और मध्य परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>बायीं और मध्य परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ें (+)।</value>
+    <value>बायीं और मध्य परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ें। (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>दाएं और मध्य परत को एक साथ आधा मोड़ें।</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>दाएं और मध्य परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>दाएं और मध्य परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>दाएं और मध्य परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>दाएं और मध्य परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>ऊपरी और मध्य परत को एक साथ आधा मोड़ दें।</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>ऊपरी और मध्य परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें (-)।</value>
+    <value>ऊपरी और मध्य परत को एक साथ 'वामावर्त' एक चौथाई मोड़ दें। (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>ऊपरी और मध्य परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें (+)।</value>
+    <value>ऊपरी और मध्य परत को एक साथ 'घड़ी की दिशा में' एक चौथाई मोड़ दें। (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>इस एप्लिकेशन के लेखक को एक ईमेल भेजें</value>
@@ -623,7 +623,7 @@
     <value>F दिशा का अनुसरण करता है</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>चौड़ी चालें, एक बार में 2 परतों को दक्षिणावर्त (90 डिग्री) एक चौथाई मोड़ दें, वे छोटे अक्षरों में हैं: u, d, f, b, l, r.</value>
+    <value>विस्तृत चालें: एक बार में 2 परतों को दक्षिणावर्त (90 डिग्री) एक चौथाई मोड़ दें, वे छोटे अक्षरों में हैं: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>एक एपोस्ट्रोफी (जैसे, U') एक वामावर्त चौथाई मोड़ (90 डिग्री) को इंगित करता है।</value>

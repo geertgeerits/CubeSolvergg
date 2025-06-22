@@ -625,7 +625,7 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
     <value>Követi az F irányt</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Széles mozgások, negyed fordulattal az óramutató járásával megegyezően (90 fok) egyszerre 2 réteget forgassunk, kisbetűvel írják: u, d, f, b, l, r.</value>
+    <value>Széles mozgások: negyed fordulattal az óramutató járásával megegyezően (90 fok) egyszerre 2 réteget forgassunk, kisbetűvel írják: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Az aposztróf (pl. U') az óramutató járásával ellentétes negyedfordulatot (90 fok) jelöl.</value>

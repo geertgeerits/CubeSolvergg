@@ -625,7 +625,7 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
     <value>Seuraa F-suuntaa</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Leveät liikkeet, käännä 2 kerrosta kerralla neljänneskierros myötäpäivään (90 astetta), ne ovat pienillä kirjaimilla: u, d, f, b, l, r.</value>
+    <value>Leveät liikkeet: käännä 2 kerrosta kerralla neljänneskierros myötäpäivään (90 astetta), ne ovat pienillä kirjaimilla: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Heittomerkki (esim. U') osoittaa vastapäivään neljänneskierroksen (90 astetta).</value>

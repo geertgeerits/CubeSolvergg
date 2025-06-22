@@ -625,7 +625,7 @@ Dette er ikke en garanti for at alle kuber kan løses.</value>
     <value>Følger F-retningen</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Brede bevegelser, snu 2 lag samtidig en kvart omdreining med klokken (90 grader), de er med små bokstaver: u, d, f, b, l, r.</value>
+    <value>Brede bevegelser: snu 2 lag samtidig en kvart omdreining med klokken (90 grader), de er med små bokstaver: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>En apostrof (f.eks. U') indikerer en kvart omdreining mot klokken (90 grader).</value>

@@ -332,19 +332,19 @@
     <value>裏側を半回転します。</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>裏側を反時計回りに1/4回転させます (-)。</value>
+    <value>裏側を反時計回りに1/4回転させます。(-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>裏側を時計回りに1/4回転させます (+)。</value>
+    <value>裏側を時計回りに1/4回転させます。(+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>下側を半回転させます。</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>下側を反時計回りに 1/4 回転させます (-)。</value>
+    <value>下側を反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>下側を時計回りに 1/4 回転させます (+)。</value>
+    <value>下側を時計回りに1/4回転させます。(+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>立方体全体を回転させて、前面が下になり、右側が右側に残るようにします。</value>
@@ -365,61 +365,61 @@
     <value>立方体全体を回転させて、上面が右側になり、前面が前面に残るようにします。</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>前面中央の層を右側に 1/4 回転させます (-)。</value>
+    <value>前中間層を右側に 1/4 回転させます。(-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>前面中央の層を上側へ 1/4 回転させます (+)。</value>
+    <value>前中間層を上側へ1/4回転させます。(+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>前面を半回転します。</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>前面を反時計回りに 1/4 回転させます (-)。</value>
+    <value>前面を反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>前面を時計回りに 1/4 回転させます (+)。</value>
+    <value>前面を時計回りに1/4回転させます。(+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>左側を半回転します。</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>左側を反時計回りに 1/4 回転させます (-)。</value>
+    <value>左側を反時計回りに1/4回転させます。(-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>左側を時計回りに 4 分の 1 回転させます (+)。</value>
+    <value>左側を時計回りに1/4回転させます。(+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>真ん中の層を半回転させます。</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>右中間層を前面に 1/4 回転させます (+)。</value>
+    <value>右中間層を、前面に1/4回転させます。(+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>右中間層を上側へ 1/4 回転させます (-)。</value>
+    <value>右中間層を上側へ1/4回転させます。(-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>右側を半回転します。</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>右側を反時計回りに 1/4 回転させます (-)。</value>
+    <value>右側を反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>右側を時計回りに 4 分の 1 回転させます (+)。</value>
+    <value>右側を時計回りに1/4回転させます。(+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>上中間層を前面に 1/4 回転させます (-)。</value>
+    <value>上中層を前側へ1/4回転させます。(-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>上部の中間層を右側に 1/4 回転させます (+)。</value>
+    <value>上中間層を右側に 1/4 回転させます。(+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>上側を半回転します。</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>上側を反時計回りに 1/4 回転させます (-)。</value>
+    <value>上側を反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>上側を時計回りに 1/4 回転させます (+)。</value>
+    <value>上側を時計回りに1/4回転させます。(+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>バージョン:</value>
@@ -475,55 +475,55 @@
     <value>裏側と中間層を一緒に半回転させます。</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>背面と中間層を一緒に反時計回りに 1/4 回転させます (-)。</value>
+    <value>背面と中間層を一緒に反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>背面と中間層を一緒に時計回りに 1/4 回転させます (+)。</value>
+    <value>背面と中間層を一緒に時計回りに 1/4 回転させます。(+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>下層と中層を一緒に半回転させます。</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>下の層と真ん中の層を一緒に反時計回りに 1/4 回転させます (-)。</value>
+    <value>下層と中層を一緒に反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>下の層と真ん中の層を一緒に時計回りに 1/4 回転させます (+)。</value>
+    <value>下層と中層を一緒に時計回りに 1/4 回転させます。(+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>前面と中間層を一緒に半回転させます。</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>前面と中間層を一緒に反時計回りに 1/4 回転させます (-)。</value>
+    <value>前面と中間層を一緒に反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>前面と中間層を一緒に時計回りに 1/4 回転させます (+)。</value>
+    <value>前面と中間層を一緒に時計回りに 1/4 回転させます。(+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>左層と中央層を一緒に半回転させます。</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>左層と中央層を一緒に反時計回りに 1/4 回転させます (-)。</value>
+    <value>左層と中央層を一緒に反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>左層と中央層を一緒に時計回りに 1/4 回転させます (+)。</value>
+    <value>左層と中央層を一緒に時計回りに 1/4 回転させます。(+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>右層と中央層を一緒に半回転させます。</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>右層と中央層を一緒に反時計回りに 1/4 回転させます (-)。</value>
+    <value>右層と中央層を一緒に反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>右層と中央層を一緒に時計回りに 1/4 回転させます (+)。</value>
+    <value>右層と中央層を一緒に時計回りに 1/4 回転させます。(+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>上層と中層を一緒に半回転させます。</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>上層と中層を一緒に反時計回りに 1/4 回転させます (-)。</value>
+    <value>上層と中層を一緒に反時計回りに 1/4 回転させます。(-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>上層と中層を一緒に時計回りに 1/4 回転させます (+)。</value>
+    <value>上層と中層を一緒に時計回りに 1/4 回転させます。(+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>このアプリケーションの作成者にメールを送信する</value>
@@ -625,7 +625,7 @@
     <value>F方向に従う</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>ワイド移動では、2 つのレイヤーを一度に時計回りに 1/4 回転 (90 度) します。小文字は u、d、f、b、l、r です。</value>
+    <value>ワイドムーブ: 2 つのレイヤーを一度に時計回りに 1/4 回転 (90 度) します。小文字は u、d、f、b、l、r です。</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>アポストロフィ (例: U') は反時計回りの 1/4 回転 (90 度) を示します。</value>

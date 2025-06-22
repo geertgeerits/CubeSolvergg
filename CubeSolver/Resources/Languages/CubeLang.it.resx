@@ -625,7 +625,7 @@ Questa non è una garanzia che tutti i cubi possano essere risolti.</value>
     <value>Segue la direzione F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Spostamenti ampi, ruota 2 strati contemporaneamente di un quarto di giro in senso orario (90 gradi), sono in minuscolo: u, d, f, b, l, r.</value>
+    <value>Spostamenti ampi: ruota 2 strati contemporaneamente di un quarto di giro in senso orario (90 gradi), sono in minuscolo: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Un apostrofo (ad esempio, U') indica un quarto di giro in senso antiorario (90 gradi).</value>

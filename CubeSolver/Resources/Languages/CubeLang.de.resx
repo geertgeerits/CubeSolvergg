@@ -625,7 +625,7 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
     <value>Folgt der F-Richtung</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Weite Bewegungen, drehen Sie 2 Schichten gleichzeitig eine Vierteldrehung im Uhrzeigersinn (90 Grad), Sie werden in Kleinbuchstaben geschrieben: u, d, f, b, l, r.</value>
+    <value>Weite Bewegungen: drehen Sie 2 Schichten gleichzeitig eine Vierteldrehung im Uhrzeigersinn (90 Grad), Sie werden in Kleinbuchstaben geschrieben: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Ein Apostroph (z. B. U') zeigt eine Vierteldrehung gegen den Uhrzeigersinn (90 Grad) an.</value>

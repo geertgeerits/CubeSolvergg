@@ -625,7 +625,7 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
     <value>Podąża w kierunku F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Szerokie ruchy, obróć 2 warstwy na raz o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni), są pisane małymi literami: u, d, f, b, l, r.</value>
+    <value>Szerokie ruchy: obróć 2 warstwy na raz o ćwierć obrotu zgodnie z ruchem wskazówek zegara (90 stopni), są pisane małymi literami: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Apostrof (np. U') oznacza obrót o ćwierć obrotu w kierunku przeciwnym do ruchu wskazówek zegara (90 stopni).</value>

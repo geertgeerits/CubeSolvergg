@@ -625,7 +625,7 @@ Esto no es una garantía de que todos los cubos puedan resolverse.</value>
     <value>Sigue la dirección F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Movimientos anchos, gira 2 capas a la vez un cuarto de vuelta en sentido horario (90 grados), están en minúsculas: u, d, f, b, l, r.</value>
+    <value>Movimientos anchos: gira 2 capas a la vez un cuarto de vuelta en sentido horario (90 grados), están en minúsculas: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Un apóstrofo (p. ej., U') indica un cuarto de vuelta en sentido antihorario (90 grados).</value>

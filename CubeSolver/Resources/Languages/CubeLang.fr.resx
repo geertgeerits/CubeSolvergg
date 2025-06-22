@@ -625,7 +625,7 @@ Ceci ne garantit pas que tous les cubes peuvent être résolus.</value>
     <value>Suite la direction F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Déplacements larges, faites tourner 2 couches à la fois d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés), elles sont en minuscules : u, d, f, b, l, r.</value>
+    <value>Déplacements larges: faites tourner 2 couches à la fois d'un quart de tour dans le sens des aiguilles d'une montre (90 degrés), elles sont en minuscules : u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Une apostrophe (par exemple, U') indique un quart de tour dans le sens inverse des aiguilles d'une montre (90 degrés).</value>

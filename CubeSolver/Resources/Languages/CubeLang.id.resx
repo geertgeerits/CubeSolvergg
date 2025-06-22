@@ -625,7 +625,7 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
     <value>Mengikuti arah F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Gerakan lebar, putar 2 lapisan sekaligus seperempat putaran searah jarum jam (90 derajat), dalam huruf kecil: u, d, f, b, l, r.</value>
+    <value>Gerakan lebar: putar 2 lapisan sekaligus seperempat putaran searah jarum jam (90 derajat), dalam huruf kecil: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Tanda apostrof (misalnya U') menunjukkan seperempat putaran berlawanan arah jarum jam (90 derajat).</value>

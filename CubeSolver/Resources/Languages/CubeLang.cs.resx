@@ -625,7 +625,7 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
     <value>Sleduje směr F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Široké pohyby, otočte 2 vrstvy najednou o čtvrt otáčky ve směru hodinových ručiček (90 stupňů), jsou malá písmena: u, d, f, b, l, r.</value>
+    <value>Široké pohyby: otočte 2 vrstvy najednou o čtvrt otáčky ve směru hodinových ručiček (90 stupňů), jsou malá písmena: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Apostrof (např. U') označuje čtvrt otáčky proti směru hodinových ručiček (90 stupňů).</value>

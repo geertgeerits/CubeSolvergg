@@ -625,7 +625,7 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
     <value>Urmează direcția F</value>
   </data>
   <data name="NotationTurn_Wide_Text" xml:space="preserve">
-    <value>Mișcări largi, rotiți 2 straturi deodată un sfert de tură în sensul acelor de ceasornic (90 de grade), sunt cu litere mici: u, d, f, b, l, r.</value>
+    <value>Mișcări largi: rotiți 2 straturi deodată un sfert de tură în sensul acelor de ceasornic (90 de grade), sunt cu litere mici: u, d, f, b, l, r.</value>
   </data>
   <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
     <value>Un apostrof (de exemplu, U') indică un sfert de rotație în sens invers acelor de ceasornic (90 de grade).</value>
