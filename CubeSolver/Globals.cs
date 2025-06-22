@@ -112,12 +112,12 @@ namespace CubeSolver
             {
                 CultureInfo culture = new(cCultureName);
 
+                // Does not work as expected for all platforms
                 // When using CurrentUICulture, resetting the settings will not reset the UI language immediately
-                // and the cLayoutDirection will not be determined correctly
-                // Does not work as expected in Android
-                Thread.CurrentThread.CurrentCulture = culture;          // Neccessary for Windows
+                // and the cLayoutDirection will not be determined correctly for Windows
+                //Thread.CurrentThread.CurrentCulture = culture;
                 //Thread.CurrentThread.CurrentUICulture = culture;
-                CultureInfo.DefaultThreadCurrentCulture = culture;      // Neccessary for Windows
+                //CultureInfo.DefaultThreadCurrentCulture = culture;
                 //CultureInfo.DefaultThreadCurrentUICulture = culture;
 
                 LocalizationResourceManager.Instance.SetCulture(culture);
@@ -131,13 +131,12 @@ namespace CubeSolver
         //// Set the flow direction of the text elements
         public static void SetFlowDirection(VisualElement element)
         {
-            LayoutDirection layoutDirection = AppInfo.Current.RequestedLayoutDirection;
-            Debug.WriteLine($"LayoutDirection: {layoutDirection}");
-
-            string cLayoutDirection = layoutDirection.ToString();
+            // Does not work as expected for all platforms
+            //LayoutDirection layoutDirection = AppInfo.Current.RequestedLayoutDirection;
+            //Debug.WriteLine($"LayoutDirection: {layoutDirection}");
+            //string cLayoutDirection = layoutDirection.ToString();
 
             // Set the flow direction to right-to-left for Arabic and Hebrew languages
-            //if (cLayoutDirection == "RightToLeft")
             if (cLanguage == "ar" || cLanguage == "he")
             {
                 if (element.FlowDirection != FlowDirection.RightToLeft)
