@@ -649,8 +649,8 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
     <value>Opačné pořadí</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
-    <value>K překladu textu byl použit Google Translate. To nezaručuje, že všechny překlady jsou správné.
-Podporované jazyky jsou: čínština, čeština, dánština, holandština, angličtina, finština, francouzština, němčina, hindština, maďarština, indonéština, italština, japonština, korejština, norština, polština, portugalština, rumunština, španělština, švédština a ukrajinština.</value>
+    <value>Pro překlad textu byl použit Google Translate. To nezaručuje, že všechny překlady jsou správné.
+Podporované jazyky jsou: arabština, zjednodušená čínština, tradiční čínština, čeština, dánština, holandština, angličtina, finština, francouzština, němčina, hindština, maďarština, indonéština, italština, japonština, korejština, norština, polština, portugalština, rumunština, španělština, švédština, turečtina a ukrajinština.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Pro případné opravy mě můžete vždy kontaktovat.</value>

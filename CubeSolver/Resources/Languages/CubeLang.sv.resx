@@ -649,8 +649,8 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
     <value>Omvänd ordning</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
-    <value>Google Translate användes för översättningen av texten. Detta är inte en garanti för att alla översättningar är korrekta.
-Stödspråken är: kinesiska, tjeckiska, danska, holländska, engelska, finska, franska, tyska, hindi, ungerska, indonesiska, italienska, japanska, koreanska, norska, polska, portugisiska, rumänska, spanska, svenska och ukrainska.</value>
+    <value>Google Translate användes för översättningen av texten. Detta är ingen garanti för att alla översättningar är korrekta.
+De språk som stöds är: arabiska, förenklad kinesiska, traditionell kinesiska, tjeckiska, danska, nederländska, engelska, finska, franska, tyska, hindi, ungerska, indonesiska, italienska, japanska, koreanska, norska, polska, portugisiska, rumänska, spanska, svenska, turkiska och ukrainska.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Du kan alltid kontakta mig för eventuella korrigeringar.</value>

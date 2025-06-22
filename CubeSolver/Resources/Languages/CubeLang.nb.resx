@@ -649,8 +649,8 @@ Dette er ikke en garanti for at alle kuber kan løses.</value>
     <value>Omvendt rekkefølge</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
-    <value>Google Translate ble brukt til oversettelsen av teksten. Dette er ikke en garanti for at alle oversettelser er korrekte.
-Støttespråkene er: kinesisk, tsjekkisk, dansk, nederlandsk, engelsk, finsk, fransk, tysk, hindi, ungarsk, indonesisk, italiensk, japansk, koreansk, norsk, polsk, portugisisk, rumensk, spansk, svensk og ukrainsk.</value>
+    <value>Google Translate ble brukt til oversettelsen av teksten. Dette er ingen garanti for at alle oversettelser er korrekte.
+Støttede språk er: arabisk, forenklet kinesisk, tradisjonell kinesisk, tsjekkisk, dansk, nederlandsk, engelsk, finsk, fransk, tysk, hindi, ungarsk, indonesisk, italiensk, japansk, koreansk, norsk, polsk, portugisisk, rumensk, spansk, svensk, tyrkisk og ukrainsk.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Du kan alltid kontakte meg for eventuelle rettelser.</value>

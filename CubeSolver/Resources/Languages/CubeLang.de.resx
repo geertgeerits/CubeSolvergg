@@ -332,19 +332,19 @@ Nicht erlaubt:</value>
     <value>Drehen Sie die Rückseite um eine halbe Umdrehung.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die Rückseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>Drehen Sie die Rückseite um eine Vierteldrehung 'gegen den Uhrzeigersinn'. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die Rückseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>Drehen Sie die Rückseite um eine Vierteldrehung 'im Uhrzeigersinn'. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Drehen Sie die Unterseite um eine halbe Umdrehung.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die Unterseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>Drehen Sie die Unterseite um eine Vierteldrehung 'gegen den Uhrzeigersinn'. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die Unterseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>Drehen Sie die Unterseite um eine Vierteldrehung 'im Uhrzeigersinn'. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Drehen Sie den gesamten Würfel so, dass die Vorderseite nach unten zeigt, die rechte Seite bleibt rechts.</value>
@@ -365,61 +365,61 @@ Nicht erlaubt:</value>
     <value>Drehen Sie den gesamten Würfel so, dass die Oberseite auf die rechte Seite geht, die Vorderseite bleibt vorne.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere mittlere Schicht um eine Vierteldrehung auf die rechte Seite (-).</value>
+    <value>Drehen Sie die vordere mittlere Schicht um eine Vierteldrehung auf die rechte Seite. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere mittlere Schicht um eine Vierteldrehung nach oben (+).</value>
+    <value>Drehen Sie die vordere mittlere Schicht um eine Vierteldrehung nach oben. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Drehen Sie die Vorderseite um eine halbe Umdrehung.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die Vorderseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>Drehen Sie die Vorderseite um eine Vierteldrehung 'gegen den Uhrzeigersinn'. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die Vorderseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>Drehen Sie die Vorderseite um eine Vierteldrehung 'im Uhrzeigersinn'. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Drehen Sie die linke Seite eine halbe Umdrehung.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die linke Seite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>Drehen Sie die linke Seite um eine Vierteldrehung 'gegen den Uhrzeigersinn'. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die linke Seite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>Drehen Sie die linke Seite um eine Vierteldrehung 'im Uhrzeigersinn'. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Drehen Sie die mittlere Schicht eine halbe Umdrehung.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte mittlere Schicht um eine Vierteldrehung auf die Vorderseite (+).</value>
+    <value>Drehen Sie die rechte mittlere Schicht um eine Vierteldrehung auf die Vorderseite. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte mittlere Schicht um eine Vierteldrehung nach oben (-).</value>
+    <value>Drehen Sie die rechte mittlere Schicht um eine Vierteldrehung nach oben. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Drehen Sie die rechte Seite eine halbe Umdrehung.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte Seite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>Drehen Sie die rechte Seite um eine Vierteldrehung 'gegen den Uhrzeigersinn'. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte Seite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>Drehen Sie die rechte Seite um eine Vierteldrehung 'im Uhrzeigersinn'. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Drehen Sie die obere mittlere Schicht um eine Vierteldrehung auf die Vorderseite (-).</value>
+    <value>Drehen Sie die obere mittlere Schicht um eine Vierteldrehung auf die Vorderseite. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Drehen Sie die obere mittlere Schicht um eine Vierteldrehung auf die rechte Seite (+).</value>
+    <value>Drehen Sie die obere mittlere Schicht um eine Vierteldrehung auf die rechte Seite. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Drehen Sie die Oberseite um eine halbe Umdrehung.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Drehen Sie die Oberseite um eine Vierteldrehung 'gegen den Uhrzeigersinn' (-).</value>
+    <value>Drehen Sie die Oberseite um eine Vierteldrehung 'gegen den Uhrzeigersinn'. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Drehen Sie die Oberseite um eine Vierteldrehung 'im Uhrzeigersinn' (+).</value>
+    <value>Drehen Sie die Oberseite um eine Vierteldrehung 'im Uhrzeigersinn'. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Ausführung:</value>
@@ -475,55 +475,55 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
     <value>Drehen Sie die hintere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die hintere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>Drehen Sie die hintere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Drehen Sie die hintere und mittlere Schicht zusammen eine Vierteldrehung im Uhrzeigersinn (+).</value>
+    <value>Drehen Sie die hintere und mittlere Schicht zusammen eine Vierteldrehung im Uhrzeigersinn. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Drehen Sie die untere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die untere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>Drehen Sie die untere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Drehen Sie die untere und mittlere Schicht gemeinsam um eine Vierteldrehung im Uhrzeigersinn (+).</value>
+    <value>Drehen Sie die untere und mittlere Schicht gemeinsam um eine Vierteldrehung im Uhrzeigersinn. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Drehen Sie die vordere und mittlere Schicht eine halbe Umdrehung zusammen.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>Drehen Sie die vordere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Drehen Sie die vordere und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+    <value>Drehen Sie die vordere und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Drehen Sie die linke und die mittlere Schicht zusammen eine halbe Umdrehung.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die linke und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>Drehen Sie die linke und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Drehen Sie die linke und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+    <value>Drehen Sie die linke und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Drehen Sie die rechte und mittlere Schicht zusammen eine halbe Umdrehung.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>Drehen Sie die rechte und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Drehen Sie die rechte und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“ (+).</value>
+    <value>Drehen Sie die rechte und mittlere Schicht gemeinsam um eine Vierteldrehung „im Uhrzeigersinn“. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Drehen Sie die obere und mittlere Schicht zusammen eine halbe Umdrehung.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Drehen Sie die obere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“ (-).</value>
+    <value>Drehen Sie die obere und mittlere Schicht gemeinsam eine Vierteldrehung „gegen den Uhrzeigersinn“. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Drehen Sie die obere und mittlere Schicht gemeinsam um eine Vierteldrehung im Uhrzeigersinn (+).</value>
+    <value>Drehen Sie die obere und mittlere Schicht gemeinsam um eine Vierteldrehung im Uhrzeigersinn. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Senden Sie eine E-Mail an den Autor dieser Anwendung</value>
@@ -650,7 +650,7 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Für die Übersetzung des Textes wurde Google Translate verwendet. Dies ist keine Garantie für die Richtigkeit aller Übersetzungen.
-Die unterstützten Sprachen sind: Chinesisch, Tschechisch, Dänisch, Niederländisch, Englisch, Finnisch, Französisch, Deutsch, Hindi, Ungarisch, Indonesisch, Italienisch, Japanisch, Koreanisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Spanisch, Schwedisch und Ukrainisch.</value>
+Die unterstützten Sprachen sind: Arabisch, Chinesisch (vereinfacht), Chinesisch (traditionell), Tschechisch, Dänisch, Niederländisch, Englisch, Finnisch, Französisch, Deutsch, Hindi, Ungarisch, Indonesisch, Italienisch, Japanisch, Koreanisch, Norwegisch, Polnisch, Portugiesisch, Rumänisch, Spanisch, Schwedisch, Türkisch und Ukrainisch.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Bei Korrekturen können Sie mich jederzeit kontaktieren.</value>

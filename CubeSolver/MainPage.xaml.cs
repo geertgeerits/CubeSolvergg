@@ -73,9 +73,6 @@ namespace CubeSolver
             // To avoid this issue, you can set the scale of the activity indicator programmatically in the code-behind file
             activityIndicator.Scale = 2;
 #endif
-            //// Set the flow direction of the text elements
-            Globals.SetFlowDirection(lblCubeOutsideView);
-
             //// Get the saved settings
             Globals.cTheme = Preferences.Default.Get("SettingTheme", "System");
             Globals.cLanguage = Preferences.Default.Get("SettingLanguage", "");
@@ -124,6 +121,7 @@ namespace CubeSolver
                 Debug.WriteLine("Globals.cLanguage: " + Globals.cLanguage);
             }
 
+            // Set the text language
             SetTextLanguage();
 
             //// Initialize text to speech
@@ -2219,6 +2217,22 @@ namespace CubeSolver
         {
             // Set the current UI culture of the selected language
             Globals.SetCultureSelectedLanguage(Globals.cLanguage);
+
+            // Set the flow direction of the text elements
+            Globals.SetFlowDirection(this);
+            //Globals.SetFlowDirection(lblCubeOutsideView);
+
+            // Set the TextAlignment of the label for the outside view of the cube
+            if (Globals.cLanguage == "ar" || Globals.cLanguage == "he")
+            {
+                lblCubeOutsideView.FlowDirection = FlowDirection.RightToLeft;
+                lblCubeOutsideView.HorizontalTextAlignment = TextAlignment.End;
+            }
+            else
+            {
+                lblCubeOutsideView.FlowDirection = FlowDirection.LeftToRight;
+                lblCubeOutsideView.HorizontalTextAlignment = TextAlignment.Start;
+            }
 
             // Set the text of the controls
             lblCubeOutsideView.Text = CubeLang.CubeOutsideView_Text;

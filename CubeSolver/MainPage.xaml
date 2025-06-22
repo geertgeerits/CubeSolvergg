@@ -68,7 +68,8 @@
         RowDefinitions="Auto, *, Auto"
         ColumnDefinitions="100*, 150, 100*"
         HorizontalOptions="Center"
-        Margin="2">
+        Margin="2"
+        FlowDirection="LeftToRight">
 
         <Grid
             x:Name="grdCubeColorSelect"

@@ -649,8 +649,8 @@ Isso não é uma garantia de que todos os cubos podem ser resolvidos.</value>
     <value>Ordem inversa</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
-    <value>O Google Translate foi usado para a tradução do texto. Isso não é garantia de que todas as traduções estejam corretas.
-Os idiomas de suporte são: chinês, tcheco, dinamarquês, holandês, inglês, finlandês, francês, alemão, hindi, húngaro, indonésio, italiano, japonês, coreano, norueguês, polonês, português, romeno, espanhol, sueco e ucraniano.</value>
+    <value>O Google Tradutor foi utilizado para a tradução do texto. Isso não garante que todas as traduções estejam corretas.
+Os idiomas disponíveis são: árabe, chinês simplificado, chinês tradicional, tcheco, dinamarquês, holandês, inglês, finlandês, francês, alemão, hindi, húngaro, indonésio, italiano, japonês, coreano, norueguês, polonês, português, romeno, espanhol, sueco, turco e ucraniano.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Você sempre pode entrar em contato comigo para quaisquer correções.</value>

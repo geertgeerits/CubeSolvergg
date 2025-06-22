@@ -649,8 +649,9 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
     <value>Ordine inversă</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
-    <value>Google Translate a fost folosit pentru traducerea textului. Aceasta nu este o garanție că toate traducerile sunt corecte.
-Limbile suportate sunt: ​​chineză, cehă, daneză, olandeză, engleză, finlandeză, franceză, germană, hindi, maghiară, indoneziană, italiană, japoneză, coreeană, norvegiană, poloneză, portugheză, română, spaniolă, suedeză și ucraineană.</value>
+    <value>Google Translate a fost utilizat pentru traducerea textului. Aceasta nu garantează că toate traducerile sunt corecte.
+
+Limbile acceptate sunt: ​​arabă, chineză simplificată, chineză tradițională, cehă, daneză, olandeză, engleză, finlandeză, franceză, germană, hindi, maghiară, indoneziană, italiană, japoneză, coreeană, norvegiană, poloneză, portugheză, română, spaniolă, suedeză, turcă și ucraineană.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Você sempre pode entrar em contato comigo para quaisquer correções.</value>

@@ -332,19 +332,19 @@ Ikke tilladt:</value>
     <value>Vend bagsiden en halv omgang.</value>
   </data>
   <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
-    <value>Drej bagsiden en kvart omgang 'mod uret' (-).</value>
+    <value>Drej bagsiden en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="TurnBackFaceToRight_Text" xml:space="preserve">
-    <value>Drej bagsiden en kvart omgang 'med uret' (+).</value>
+    <value>Drej bagsiden en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
     <value>Vend undersiden en halv omgang.</value>
   </data>
   <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
-    <value>Drej undersiden en kvart omgang 'mod uret' (-).</value>
+    <value>Drej undersiden en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="TurnDownFaceToRight_Text" xml:space="preserve">
-    <value>Drej undersiden en kvart omgang 'med uret' (+).</value>
+    <value>Drej undersiden en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
     <value>Vend hele terningen, så forsiden går til bunds, højre side forbliver til højre.</value>
@@ -365,61 +365,61 @@ Ikke tilladt:</value>
     <value>Vend hele terningen, så toppen går til højre side, forsiden forbliver foran.</value>
   </data>
   <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
-    <value>Drej det forreste-midterste lag en kvart omgang til højre side (-).</value>
+    <value>Drej det forreste-midterste lag en kvart omgang til højre side. (-)</value>
   </data>
   <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
-    <value>Drej det forreste-midterste lag en kvart omgang til oversiden (+).</value>
+    <value>Drej det forreste-midterste lag en kvart omgang til oversiden. (+)</value>
   </data>
   <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
     <value>Drej forsiden en halv omgang.</value>
   </data>
   <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
-    <value>Drej forsiden en kvart omgang 'mod uret' (-).</value>
+    <value>Drej forsiden en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
-    <value>Drej forsiden en kvart omgang 'med uret' (+).</value>
+    <value>Drej forsiden en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
     <value>Drej venstre side en halv omgang.</value>
   </data>
   <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
-    <value>Drej venstre side en kvart omgang 'mod uret' (-).</value>
+    <value>Drej venstre side en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
-    <value>Drej venstre side en kvart omgang 'med uret' (+).</value>
+    <value>Drej venstre side en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
     <value>Vend mellemlaget en halv omgang.</value>
   </data>
   <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Drej det højre-midterste lag en kvart omgang til forsiden (+).</value>
+    <value>Drej det højre-midterste lag en kvart omgang til forsiden. (+)</value>
   </data>
   <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
-    <value>Drej det højre-midterste lag en kvart omgang til oversiden (-).</value>
+    <value>Drej det højre-midterste lag en kvart omgang til oversiden. (-)</value>
   </data>
   <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
     <value>Drej højre side en halv omgang.</value>
   </data>
   <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
-    <value>Drej højre side en kvart omgang 'mod uret' (-).</value>
+    <value>Drej højre side en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="TurnRightFaceToRight_Text" xml:space="preserve">
-    <value>Drej højre side en kvart omgang 'med uret' (+).</value>
+    <value>Drej højre side en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
-    <value>Drej det øverste-midterste lag en kvart omgang til forsiden (-).</value>
+    <value>Drej det øverste-midterste lag en kvart omgang til forsiden. (-)</value>
   </data>
   <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
-    <value>Drej det øverste-midterste lag en kvart omgang til højre (+).</value>
+    <value>Drej det øverste-midterste lag en kvart omgang til højre. (+)</value>
   </data>
   <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
     <value>Vend oversiden en halv omgang.</value>
   </data>
   <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
-    <value>Drej den øverste side en kvart omgang 'mod uret' (-).</value>
+    <value>Drej den øverste side en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="TurnUpFaceToRight_Text" xml:space="preserve">
-    <value>Drej den øverste side en kvart omgang 'med uret' (+).</value>
+    <value>Drej den øverste side en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Version:</value>
@@ -475,55 +475,55 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
     <value>Vend bag- og mellemlaget sammen en halv omgang.</value>
   </data>
   <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
-    <value>Drej bag- og mellemlaget sammen en kvart omgang 'mod uret' (-).</value>
+    <value>Drej bag- og mellemlaget sammen en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="Turn2LayersBackCW_Text" xml:space="preserve">
-    <value>Drej bag- og mellemlaget sammen en kvart omgang 'med uret' (+).</value>
+    <value>Drej bag- og mellemlaget sammen en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="Turn2LayersDown2_Text" xml:space="preserve">
     <value>Vend bund- og mellemlag sammen en halv omgang.</value>
   </data>
   <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
-    <value>Drej det nederste og mellemste lag sammen en kvart omgang 'mod uret' (-).</value>
+    <value>Drej det nederste og mellemste lag sammen en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="Turn2LayersDownCW_Text" xml:space="preserve">
-    <value>Drej det nederste og mellemste lag sammen en kvart omgang 'med uret' (+).</value>
+    <value>Drej det nederste og mellemste lag sammen en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="Turn2LayersFront2_Text" xml:space="preserve">
     <value>Vend forreste og midterste lag sammen en halv omgang.</value>
   </data>
   <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
-    <value>Drej det forreste og midterste lag sammen en kvart omgang 'mod uret' (-).</value>
+    <value>Drej det forreste og midterste lag sammen en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
-    <value>Drej det forreste og midterste lag sammen en kvart omgang 'med uret' (+).</value>
+    <value>Drej det forreste og midterste lag sammen en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="Turn2LayersLeft2_Text" xml:space="preserve">
     <value>Vend venstre og midterste lag sammen en halv omgang.</value>
   </data>
   <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
-    <value>Drej venstre og midterste lag sammen en kvart omgang 'mod uret' (-).</value>
+    <value>Drej venstre og midterste lag sammen en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
-    <value>Drej venstre og midterste lag sammen en kvart omgang 'med uret' (+).</value>
+    <value>Drej venstre og midterste lag sammen en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="Turn2LayersRight2_Text" xml:space="preserve">
     <value>Vend højre og midterste lag sammen en halv omgang.</value>
   </data>
   <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
-    <value>Drej højre og midterste lag sammen en kvart omgang 'mod uret' (-).</value>
+    <value>Drej højre og midterste lag sammen en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="Turn2LayersRightCW_Text" xml:space="preserve">
-    <value>Drej højre og midterste lag sammen en kvart omgang 'med uret' (+).</value>
+    <value>Drej højre og midterste lag sammen en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="Turn2LayersUp2_Text" xml:space="preserve">
     <value>Vend det øverste og mellemste lag sammen en halv omgang.</value>
   </data>
   <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
-    <value>Drej det øverste og mellemste lag sammen en kvart omgang 'mod uret' (-).</value>
+    <value>Drej det øverste og mellemste lag sammen en kvart omgang 'mod uret'. (-)</value>
   </data>
   <data name="Turn2LayersUpCW_Text" xml:space="preserve">
-    <value>Drej det øverste og mellemste lag sammen en kvart omgang 'med uret' (+).</value>
+    <value>Drej det øverste og mellemste lag sammen en kvart omgang 'med uret'. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Send en e-mail til forfatteren af denne ansøgning</value>
@@ -650,7 +650,7 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate blev brugt til oversættelsen af ​​teksten. Dette er ikke en garanti for, at alle oversættelser er korrekte.
-De understøttende sprog er: kinesisk, tjekkisk, dansk, hollandsk, engelsk, finsk, fransk, tysk, hindi, ungarsk, indonesisk, italiensk, japansk, koreansk, norsk, polsk, portugisisk, rumænsk, spansk, svensk og ukrainsk.</value>
+De understøttede sprog er: arabisk, forenklet kinesisk, traditionelt kinesisk, tjekkisk, dansk, hollandsk, engelsk, finsk, fransk, tysk, hindi, ungarsk, indonesisk, italiensk, japansk, koreansk, norsk, polsk, portugisisk, rumænsk, spansk, svensk, tyrkisk og ukrainsk.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Du kan altid kontakte mig for eventuelle rettelser.</value>
