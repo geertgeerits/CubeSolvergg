@@ -2,6 +2,14 @@ namespace CubeSolver
 {
     public sealed partial class PageAbout : ContentPage
     {
+        // INotifyPropertyChanged implementation...
+        private string _language = Globals.cLanguage;
+        public string Language
+        {
+            get => _language;
+            set { _language = value; OnPropertyChanged(); }
+        }
+
         public PageAbout()
         {
             try
