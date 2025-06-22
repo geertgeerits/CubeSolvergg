@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace CubeSolver
+﻿namespace CubeSolver
 {
     internal sealed class ClassFileOperations
     {

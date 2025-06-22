@@ -534,9 +534,6 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Solutii testate:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Numărul mediu de ture pentru a rezolva cubul folosind metoda „Kociemba” este</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Amestecă cubul</value>
   </data>
@@ -636,14 +633,11 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Cifra 2 (de exemplu, U2) înseamnă a întoarce o jumătate de tură (180 de grade).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>folosind metoda „Fridrich” (CFOP) este</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credite: Această aplicație folosește cod open-source de la „Herbert Kociemba” (autorul algoritmului în două faze Kociemba) și „Matt Colbourne”. Contribuțiile lor au îmbunătățit semnificativ eficiența rezolvării cuburilor. Mulțumiri speciale pentru munca lor.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Lansarea primului joc poate dura până la</value>
+    <value>Prima lansare a jocului poate dura până la {0} secunde.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Metoda Kociemba:</value>
@@ -653,9 +647,6 @@ Aceasta nu este o garanție că toate cuburile pot fi rezolvate.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Ordine inversă</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>de secunde</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate a fost folosit pentru traducerea textului. Aceasta nu este o garanție că toate traducerile sunt corecte.
@@ -670,5 +661,8 @@ Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É 
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Conexiunea la internet nu este disponibilă.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Numărul mediu de ture pentru a rezolva cubul folosind metoda „Kociemba” este {0}, iar folosind metoda „Fridrich” (CFOP) este {1}.</value>
   </data>
 </root>

@@ -534,9 +534,6 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Getestete Lösungen:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Die durchschnittliche Anzahl der Runden zum Lösen des Würfels mit der Methode „Kociemba“ beträgt</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Verwirre den Würfel</value>
   </data>
@@ -636,14 +633,11 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Die Zahl 2 (z. B. U2) bedeutet eine halbe Drehung (180 Grad).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>mit der Methode „Fridrich“ (CFOP) beträgt</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credits: Diese App verwendet Open-Source-Code von „Herbert Kociemba“ (Autor des Kociemba-Zweiphasenalgorithmus) und „Matt Colbourne“. Ihre Beiträge haben die Effizienz beim Würfellösen deutlich verbessert. Besonderer Dank für ihre Arbeit.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Der erste Spielstart kann bis zu</value>
+    <value>Der erste Spielstart kann bis zu {0} Sekunden dauern.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba-Methode:</value>
@@ -653,9 +647,6 @@ Dies ist keine Garantie dafür, dass alle Würfel gelöst werden können.</value
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Umgekehrte Reihenfolge</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>Sekunden dauern</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Für die Übersetzung des Textes wurde Google Translate verwendet. Dies ist keine Garantie für die Richtigkeit aller Übersetzungen.
@@ -670,5 +661,8 @@ Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Es ist keine Verbindung zum Internet verfügbar.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Die durchschnittliche Anzahl der Runden zum Lösen des Würfels beträgt mit der „Kociemba“-Methode {0}, mit der „Fridrich“-Methode (CFOP) beträgt sie {1}.</value>
   </data>
 </root>

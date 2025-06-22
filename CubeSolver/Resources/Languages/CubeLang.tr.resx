@@ -534,9 +534,6 @@ Bu, tüm küplerin çözülebileceğinin garantisi değildir.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Test edilmiş çözümler:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>'Kociemba' yöntemini kullanarak küpü çözmek için gereken ortalama tur sayısı</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Küpü karıştır</value>
   </data>
@@ -636,14 +633,11 @@ Bu, tüm küplerin çözülebileceğinin garantisi değildir.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>2 rakamı (örneğin U2) yarım dönüş (180 derece) anlamına gelir.</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>'Fridrich' (CFOP) yöntemini kullanarak</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Krediler: Bu uygulama 'Herbert Kociemba' (Kociemba İki Aşamalı Algoritmasının yazarı) ve 'Matt Colbourne'un açık kaynaklı kodunu kullanır. Katkıları küp çözme verimliliğini önemli ölçüde iyileştirdi. Çalışmaları için özel teşekkürler.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>İlk oyun başlatma işlemi {0} saniyeye kadar sürebilir</value>
+    <value>İlk oyunun başlatılması {0} saniyeye kadar sürebilir.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba yöntemi:</value>
@@ -653,9 +647,6 @@ Bu, tüm küplerin çözülebileceğinin garantisi değildir.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Ters sıra</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>saniyeler</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Metnin çevirisi için Google Translate kullanıldı. Bu, tüm çevirilerin doğru olduğunun garantisi değildir.
@@ -670,5 +661,8 @@ Bu seçenek cihazdan cihaza ve yüklü dillere göre değişir. Bazı diller iç
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>İnternet bağlantısı mevcut değil.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>'Kociemba' yöntemi kullanılarak küpü çözmek için gereken ortalama tur sayısı {0}, 'Fridrich' (CFOP) yöntemi kullanılarak çözülen ortalama tur sayısı ise {1}'dir.</value>
   </data>
 </root>

@@ -534,9 +534,6 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Tesztelt megoldások:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Az átlagos fordulatok száma a kocka 'Kociemba' módszerrel történő megoldásához</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Rántsd össze a kockát</value>
   </data>
@@ -636,14 +633,11 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>A 2-es szám (pl. U2) azt jelenti, hogy fél fordulatot kell elfordítani (180 fokkal).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>a „Fridrich” (CFOP) módszert használva</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Köszönetnyilvánítás: Ez az alkalmazás „Herbert Kociemba” (a Kociemba kétfázisú algoritmus szerzője) és „Matt Colbourne” nyílt forráskódját használja. Hozzájárulásuk jelentősen javította a kockamegoldás hatékonyságát. Külön köszönet a munkájukért.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>A játék első indítása akár</value>
+    <value>A játék első indítása akár {0} másodpercet is igénybe vehet.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba módszer:</value>
@@ -653,9 +647,6 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Fordított sorrend</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>másodpercet is igénybe vehet</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>A szöveg fordításához a Google Fordítót használtuk. Ez nem garancia arra, hogy minden fordítás helyes.
@@ -670,5 +661,8 @@ Ez az opció készülékenként és a telepített nyelvektől függően változi
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Nincs internetkapcsolat.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>A kocka kirakásához szükséges átlagos fordulók száma a 'Kociemba' módszerrel {0}, a 'Fridrich' (CFOP) módszerrel pedig {1}.</value>
   </data>
 </root>

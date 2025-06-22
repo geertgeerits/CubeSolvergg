@@ -1,7 +1,6 @@
 ﻿/* This module tries to solve the cube from minimum 1632 different starting positions.
    The solution with the fewest rotations is then used. */
 
-using System.Diagnostics;
 using static CubeSolver.Globals;
 
 namespace CubeSolver

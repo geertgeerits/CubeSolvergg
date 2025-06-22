@@ -534,9 +534,6 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Testede løsninger:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Gennemsnitligt antal omgange for at løse terningen ved hjælp af 'Kociemba'-metoden er</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Rør terningen sammen</value>
   </data>
@@ -636,14 +633,11 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Tallet 2 (f.eks. U2) betyder at dreje en halv omgang (180 grader).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>ved hjælp af 'Fridrich' (CFOP) metoden er</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credits: Denne app bruger open source-kode fra 'Herbert Kociemba' (forfatter af Kociemba Two-Phase Algorithm) og 'Matt Colbourne'. Deres bidrag har forbedret kube-løsningseffektiviteten markant. Særlig tak for deres arbejde.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Første spilstart kan tage op til</value>
+    <value>Første spilstart kan tage op til {0} sekunder.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba metode:</value>
@@ -653,9 +647,6 @@ Dette er ikke en garanti for, at alle terninger kan løses.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Omvendt rækkefølge</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>sekunder</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate blev brugt til oversættelsen af ​​teksten. Dette er ikke en garanti for, at alle oversættelser er korrekte.
@@ -670,5 +661,8 @@ Denne mulighed varierer fra enhed til enhed og de installerede sprog. Det er mul
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Der er ingen internetforbindelse.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Det gennemsnitlige antal ture til at løse terningen ved hjælp af 'Kociemba'-metoden er {0}, og ved brug af 'Fridrich' (CFOP)-metoden er det {1}.</value>
   </data>
 </root>

@@ -534,9 +534,6 @@ This is not a guarantee that all cubes can be solved.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Tested solutions:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Average number of turns to solve the cube using the 'Kociemba' method is</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Scramble the cube</value>
   </data>
@@ -636,14 +633,11 @@ This is not a guarantee that all cubes can be solved.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>The number 2 (e.g., U2) means to turn a half turn (180 degrees).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>using the 'Fridrich' (CFOP) method is</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credits: This app uses open-source code from 'Herbert Kociemba' (author of the Kociemba Two-Phase Algorithm) and 'Matt Colbourne'. Their contributions have significantly improved cube-solving efficiency. Special thanks for their work.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>First game launch may take up to {0} seconds</value>
+    <value>First game launch may take up to {0} seconds.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba method:</value>
@@ -653,9 +647,6 @@ This is not a guarantee that all cubes can be solved.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Reverse order</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>seconds</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate was used for the translation of the text. This is not a guarantee that all translations are correct.
@@ -670,5 +661,8 @@ This option varies from device to device and the installed languages. It is poss
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Connection to the internet is not available.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Average number of turns to solve the cube using the 'Kociemba' method is {0}, using the 'Fridrich' (CFOP) method is {1}.</value>
   </data>
 </root>

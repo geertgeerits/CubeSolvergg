@@ -534,9 +534,6 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Testovaná řešení:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Průměrný počet otáček k vyřešení kostky metodou 'Kociemba' je</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Rozdrťte kostku</value>
   </data>
@@ -636,14 +633,11 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Číslo 2 (např. U2) znamená otočení o půl otáčky (180 stupňů).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>pomocí metody 'Fridrich' (CFOP)</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Kredity: Tato aplikace používá otevřený zdrojový kód od 'Herbert Kociemba' (autor Kociemba dvoufázového algoritmu) a 'Matt Colbourne'. Jejich příspěvky výrazně zlepšily účinnost řešení krychlí. Zvláštní poděkování za jejich práci.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>První spuštění hry může trvat až</value>
+    <value>První spuštění hry může trvat až {0} sekund.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba metoda:</value>
@@ -653,9 +647,6 @@ To není zárukou, že všechny kostky lze vyřešit.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Opačné pořadí</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>sekund</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>K překladu textu byl použit Google Translate. To nezaručuje, že všechny překlady jsou správné.
@@ -670,5 +661,8 @@ Tato možnost se liší zařízení od zařízení a nainstalované jazyky. Je m
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Připojení k internetu není k dispozici.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Průměrný počet tahů potřebných k vyřešení krychle metodou „Kociemba“ je {0}, metodou „Fridrich“ (CFOP) je {1}.</value>
   </data>
 </root>

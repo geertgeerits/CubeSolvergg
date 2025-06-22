@@ -534,9 +534,6 @@
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>テスト済みのソリューション:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>「コシエンバ」法でキューブを解くのに必要な平均ターン数は</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>キューブをスクランブルする</value>
   </data>
@@ -636,14 +633,11 @@
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>数字の 2 (例: U2) は半回転 (180 度) することを意味します。</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>「フリドリッヒ」（CFOP）法を用いると</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>クレジット: このアプリは、「Herbert Kociemba」(Kociemba Two-Phase Algorithm の作者) と「Matt Colbourne」のオープンソース コードを使用しています。彼らの貢献により、キューブを解く効率が大幅に向上しました。彼らの仕事に心から感謝します。</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>最初のゲームの起動には最大で</value>
+    <value>最初のゲームの起動には最大 {0} 秒かかる場合があります。</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>コシェンバ法:</value>
@@ -653,9 +647,6 @@
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>逆順</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>秒</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>テキストの翻訳には Google 翻訳が使用されました。すべての翻訳が正確であることを保証するものではありません。
@@ -670,5 +661,8 @@
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>インターネットに接続できません。</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>'Kociemba' 法を使用してキューブを解くのに必要な平均ターン数は {0} で、'Fridrich' (CFOP) 法を使用した場合は {1} です。</value>
   </data>
 </root>

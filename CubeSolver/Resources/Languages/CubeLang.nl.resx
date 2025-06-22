@@ -534,9 +534,6 @@ Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Geteste oplossingen:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Gemiddeld aantal beurten om de kubus op te lossen met behulp van de 'Kociemba' methode is</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Gooi de kubus door elkaar</value>
   </data>
@@ -636,14 +633,11 @@ Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Het getal 2 (bijv. U2) betekent een halve slag draaien (180 graden).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>met behulp van de Fridrich (CFOP) methode is</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Credits: Deze app gebruikt open-source code van 'Herbert Kociemba' (auteur van het Kociemba Two-Phase Algorithm) en 'Matt Colbourne'. Hun bijdragen hebben de efficiëntie van het oplossen van kubussen aanzienlijk verbeterd. Speciale dank voor hun werk.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Het starten van het eerste spel kan tot</value>
+    <value>Het kan tot {0} seconden duren voordat het spel voor het eerst wordt opgestart.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba-methode:</value>
@@ -653,9 +647,6 @@ Dit is geen garantie dat alle kubussen kunnen worden opgelost.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Omgekeerde volgorde</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>seconden duren.</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate is gebruikt voor de vertaling van de tekst. Dit is geen garantie dat alle vertalingen correct zijn.
@@ -670,5 +661,8 @@ Deze optie verschilt per apparaat en de geïnstalleerde talen. Het is mogelijk d
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Er is geen internetverbinding beschikbaar.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Het gemiddelde aantal beurten om de kubus op te lossen met de 'Kociemba'-methode is {0}, met de 'Fridrich' (CFOP)-methode is dat {1}.</value>
   </data>
 </root>

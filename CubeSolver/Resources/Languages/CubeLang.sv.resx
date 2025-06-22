@@ -534,9 +534,6 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Testade lösningar:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Genomsnittligt antal varv för att lösa kuben med hjälp av 'Kociemba'-metoden är</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Skruva ihop kuben</value>
   </data>
@@ -636,14 +633,11 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Siffran 2 (t.ex. U2) betyder att vända ett halvt varv (180 grader).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>använder "Fridrich"-metoden (CFOP)</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Tack: Denna app använder öppen källkod från 'Herbert Kociemba' (författare till Kociemba Two-Phase Algorithm) och 'Matt Colbourne'. Deras bidrag har avsevärt förbättrat kublösningseffektiviteten. Särskilt tack för deras arbete.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Första spelstarten kan ta upp till</value>
+    <value>Första spelstarten kan ta upp till {0} sekunder.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba metod:</value>
@@ -653,9 +647,6 @@ Detta är inte en garanti för att alla kuber kan lösas.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Omvänd ordning</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>sekunder</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate användes för översättningen av texten. Detta är inte en garanti för att alla översättningar är korrekta.
@@ -670,5 +661,8 @@ Det här alternativet varierar från enhet till enhet och de installerade språk
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Internetanslutning är inte tillgänglig.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Genomsnittligt antal varv för att lösa kuben med 'Kociemba'-metoden är {0}, med 'Fridrich'-metoden (CFOP) är det {1}.</value>
   </data>
 </root>

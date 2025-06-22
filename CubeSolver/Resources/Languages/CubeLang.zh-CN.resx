@@ -534,9 +534,6 @@
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>已测试的解决方案：</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>使用“Kociemba”方法解决魔方的平均次数是</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>打乱魔方</value>
   </data>
@@ -636,14 +633,11 @@
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>数字 2（例如 U2）表示旋转半圈（180 度）。</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>使用“Fridrich”（CFOP）方法</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>鸣谢：此应用程序使用了“Herbert Kociemba”（Kociemba 两阶段算法的作者）和“Matt Colbourne”的开源代码。他们的贡献显著提高了魔方解谜效率。特别感谢他们的工作。</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>首次游戏发布可能需要</value>
+    <value>首次启动游戏可能需要最多 {0} 秒。</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba 方法：</value>
@@ -653,9 +647,6 @@
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>逆序</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>秒</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>文本翻译使用了 Google 翻译。这并不能保证所有翻译都是正确的。
@@ -670,5 +661,8 @@
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>无法连接互联网。</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>使用 'Kociemba' 方法解决魔方的平均转数为 {0}，使用 'Fridrich' (CFOP) 方法解决魔方的平均转数为 {1}。</value>
   </data>
 </root>

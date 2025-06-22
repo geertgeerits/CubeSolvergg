@@ -534,9 +534,6 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Solusi yang diuji:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Rata-rata jumlah putaran untuk menyelesaikan kubus menggunakan metode 'Kociemba' adalah</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Acak kubusnya</value>
   </data>
@@ -636,14 +633,11 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Angka 2 (misalnya U2) berarti berputar setengah putaran (180 derajat).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>menggunakan metode 'Fridrich' (CFOP) adalah</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Kredit: Aplikasi ini menggunakan kode sumber terbuka dari 'Herbert Kociemba' (penulis Algoritma Dua Fase Kociemba) dan 'Matt Colbourne'. Kontribusi mereka telah meningkatkan efisiensi pemecahan kubus secara signifikan. Ucapan terima kasih khusus atas kerja keras mereka.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Peluncuran game pertama mungkin memakan waktu hingga</value>
+    <value>Peluncuran game pertama mungkin memakan waktu hingga {0} detik.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Metode Kociemba:</value>
@@ -653,9 +647,6 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Urutan terbalik</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>detik</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate digunakan untuk menerjemahkan teks. Ini bukan jaminan bahwa semua terjemahan itu benar.
@@ -670,5 +661,8 @@ Opsi ini bervariasi dari perangkat ke perangkat dan bahasa yang diinstal. Ada ke
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Koneksi ke internet tidak tersedia.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Jumlah rata-rata putaran untuk menyelesaikan kubus menggunakan metode 'Kociemba' adalah {0}, menggunakan metode 'Fridrich' (CFOP) adalah {1}.</value>
   </data>
 </root>

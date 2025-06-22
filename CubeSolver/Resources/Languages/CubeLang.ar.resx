@@ -536,9 +536,6 @@
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>الحلول التي تم اختبارها:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>متوسط ​​عدد الدورات لحل المكعب باستخدام طريقة "كوسيمبا" هو</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>خلط المكعب</value>
   </data>
@@ -638,14 +635,11 @@
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>الرقم 2 (على سبيل المثال، U2) يعني الدوران نصف دورة (180 درجة).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>استخدام طريقة "فريدريش" (CFOP) هو</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>الاعتمادات: يستخدم هذا التطبيق شيفرة مفتوحة المصدر من "هربرت كوسيمبا" (مؤلف خوارزمية كوسيمبا ثنائية الطور) و"مات كولبورن". وقد ساهمت مساهماتهما في تحسين كفاءة حل المكعبات بشكل ملحوظ. شكرًا خاصًا لهما على عملهما.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>قد يستغرق تشغيل اللعبة لأول مرة ما يصل إلى {0} ثانية</value>
+    <value>قد يستغرق تشغيل اللعبة لأول مرة ما يصل إلى {0} ثانية.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>طريقة كوسيمبا:</value>
@@ -655,9 +649,6 @@
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>ترتيب عكسي</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>ثواني</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>تم استخدام ترجمة جوجل لترجمة النص. هذا لا يضمن صحة جميع الترجمات.
@@ -672,5 +663,8 @@
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>الاتصال بالإنترنت غير متاح.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>متوسط ​​عدد الدورات لحل المكعب باستخدام طريقة "Kociemba" هو {0}، باستخدام طريقة "Fridrich" (CFOP) هو {1}.</value>
   </data>
 </root>

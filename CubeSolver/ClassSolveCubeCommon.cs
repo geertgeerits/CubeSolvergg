@@ -3,7 +3,6 @@
    file:///C:/Sources/MAUI/CubeSolver/Miscellaneous/Manuals/RubiksCubeBeginnerInstructions.pdf
    https://www.rubiksplace.com/speedcubing/guide/ */
 
-using System.Diagnostics;
 using static CubeSolver.Globals;
 
 namespace CubeSolver

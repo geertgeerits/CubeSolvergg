@@ -534,9 +534,6 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Testatut ratkaisut:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Keskimääräinen kierrosten lukumäärä kuution ratkaisemiseksi Kociemba-menetelmällä on</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Sekoita kuutio</value>
   </data>
@@ -636,14 +633,11 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Numero 2 (esim. U2) tarkoittaa puolikierrosta (180 astetta).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>Fridrich-menetelmää (CFOP) käyttäen</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Tekijät: Tämä sovellus käyttää avoimen lähdekoodin 'Herbert Kociemba' (Kociemba Two-Phase Algorithmin kirjoittaja) ja 'Matt Colbourne'. Heidän panoksensa ovat merkittävästi parantaneet kuution ratkaisun tehokkuutta. Erityiset kiitokset heidän työstään.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Pelin ensimmäinen käynnistys voi kestää jopa</value>
+    <value>Pelin ensimmäinen käynnistys voi kestää jopa {0} sekuntia.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Kociemba menetelmä:</value>
@@ -653,9 +647,6 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Käänteinen järjestys</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>sekuntia</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Tekstin kääntämiseen käytettiin Google Translatea. Tämä ei takaa, että kaikki käännökset ovat oikein.
@@ -670,5 +661,8 @@ Tämä vaihtoehto vaihtelee laitteittain ja asennetuista kielistä riippuen. On 
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Internet-yhteyttä ei ole saatavilla.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Kuution ratkaisemiseen tarvittavien kierrosten keskimääräinen määrä Kociemba-menetelmällä on {0} ja Fridrich-menetelmällä (CFOP) {1}.</value>
   </data>
 </root>

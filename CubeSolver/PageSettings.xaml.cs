@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace CubeSolver
+﻿namespace CubeSolver
 {
     public sealed partial class PageSettings : ContentPage
     {

@@ -1,7 +1,7 @@
 ﻿//// Global usings
 global using System.Globalization;
 global using CubeSolver.Resources.Languages;
-using System.Diagnostics;
+global using System.Diagnostics;
 
 namespace CubeSolver
 {
@@ -110,8 +110,13 @@ namespace CubeSolver
         {
             try
             {
-                CultureInfo switchToCulture = new(cCultureName);
-                LocalizationResourceManager.Instance.SetCulture(switchToCulture);
+                CultureInfo culture = new(cCultureName);
+                Thread.CurrentThread.CurrentCulture = culture;
+                Thread.CurrentThread.CurrentUICulture = culture;
+                CultureInfo.DefaultThreadCurrentCulture = culture;
+                CultureInfo.DefaultThreadCurrentUICulture = culture;
+
+                LocalizationResourceManager.Instance.SetCulture(culture);
             }
             catch
             {
@@ -122,8 +127,13 @@ namespace CubeSolver
         //// Set the flow direction of the text elements
         public static void SetFlowDirection(VisualElement element)
         {
+            LayoutDirection layoutDirection = AppInfo.Current.RequestedLayoutDirection;
+            Debug.WriteLine($"LayoutDirection: {layoutDirection}");
+
+            string cLayoutDirection = layoutDirection.ToString();
+
             // Set the flow direction to right-to-left for Arabic and Hebrew languages
-            if (cLanguage == "ar" || cLanguage == "he")
+            if (cLayoutDirection == "RightToLeft")
             {
                 if (element.FlowDirection != FlowDirection.RightToLeft)
                 {

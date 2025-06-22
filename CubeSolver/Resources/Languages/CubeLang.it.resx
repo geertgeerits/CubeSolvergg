@@ -534,9 +534,6 @@ Questa non è una garanzia che tutti i cubi possano essere risolti.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Soluzioni testate:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Il numero medio di turni per risolvere il cubo utilizzando il metodo 'Kociemba' è</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Mescola il cubo</value>
   </data>
@@ -636,14 +633,11 @@ Questa non è una garanzia che tutti i cubi possano essere risolti.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Il numero 2 (ad esempio, U2) significa ruotare di mezzo giro (180 gradi).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>utilizzando il metodo 'Fridrich' (CFOP) è</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Crediti: questa app utilizza codice open source di 'Herbert Kociemba' (autore dell'algoritmo a due fasi di Kociemba) e 'Matt Colbourne'. I loro contributi hanno migliorato significativamente l'efficienza nella risoluzione del cubo. Un ringraziamento speciale per il loro lavoro.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Il primo avvio del gioco potrebbe richiedere fino a</value>
+    <value>Il primo avvio del gioco potrebbe richiedere fino a {0} secondi.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Metodo Kociemba:</value>
@@ -653,9 +647,6 @@ Questa non è una garanzia che tutti i cubi possano essere risolti.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Ordine inverso</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>secondi</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Per la traduzione del testo è stato utilizzato Google Translate. Ciò non garantisce che tutte le traduzioni siano corrette.
@@ -670,5 +661,8 @@ Questa opzione varia da dispositivo a dispositivo e dalle lingue installate. È 
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>La connessione a Internet non è disponibile.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Il numero medio di giri per risolvere il cubo usando il metodo 'Kociemba' è {0}, usando il metodo 'Fridrich' (CFOP) è {1}.</value>
   </data>
 </root>

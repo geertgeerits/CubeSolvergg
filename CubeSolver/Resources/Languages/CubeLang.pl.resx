@@ -534,9 +534,6 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Przetestowane rozwiązania:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Średnia liczba tur do rozwiązania kostki używając metody „Kociemba” to</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Pomieszaj kostkę</value>
   </data>
@@ -636,14 +633,11 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Liczba 2 (np. U2) oznacza obrót o pół obrotu (180 stopni).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>używając metody „Fridrich” (CFOP) to</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Źródła: Ta aplikacja używa kodu open-source od „Herbert Kociemba” (autora algorytmu dwufazowego Kociemba) i „Matt Colbourne”. Ich wkład znacząco poprawił wydajność rozwiązywania kostki. Szczególne podziękowania za ich pracę.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Pierwsze uruchomienie gry może potrwać do</value>
+    <value>Pierwsze uruchomienie gry może potrwać do {0} sekund.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Metoda Kociemba:</value>
@@ -653,9 +647,6 @@ Nie jest to gwarancja, że ​​wszystkie kostki można rozwiązać.</value>
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Odwrotna kolejność</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>sekund</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Do przetłumaczenia tekstu użyto Tłumacza Google. Nie gwarantuje to, że wszystkie tłumaczenia są poprawne.
@@ -670,5 +661,8 @@ Ta opcja różni się w zależności od urządzenia i zainstalowanych języków.
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Połączenie internetowe jest niedostępne.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Średnia liczba tur potrzebnych do ułożenia kostki metodą „Kociemba” wynosi {0}, a metodą „Fridrich” (CFOP) wynosi {1}.</value>
   </data>
 </root>

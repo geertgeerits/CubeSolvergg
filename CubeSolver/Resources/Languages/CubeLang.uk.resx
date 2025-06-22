@@ -534,9 +534,6 @@
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Перевірені рішення:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>Середня кількість поворотів для розв’язування куба за методом Коціемби становить</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>Розбийте кубик</value>
   </data>
@@ -636,14 +633,11 @@
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>Цифра 2 (наприклад, U2) означає поворот на півоберта (180 градусів).</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>за допомогою методу «Фрідріха» (CFOP).</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Подяки: ця програма використовує відкритий код від «Herbert Kociemba» (автора двофазного алгоритму Kociemba) і «Matt Colbourne». Їхній внесок значно підвищив ефективність розв’язування кубів. Окрема подяка за їх роботу.</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>Перший запуск гри може тривати до</value>
+    <value>Перший запуск гри може тривати до {0} секунд.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>Метод Kociemba:</value>
@@ -653,9 +647,6 @@
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>Зворотній порядок</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>секунд</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Для перекладу тексту використовувався Google Translate. Це не гарантує, що всі переклади правильні.
@@ -670,5 +661,8 @@
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>Підключення до Інтернету недоступне.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Середня кількість обертів для розв'язання куба методом «Коціємба» становить {0}, методом «Фрідріха» (CFOP) — {1}.</value>
   </data>
 </root>

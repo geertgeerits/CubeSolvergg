@@ -88,20 +88,11 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to using the &apos;Fridrich&apos; (CFOP) method is.
+        ///   Looks up a localized string similar to Average number of turns to solve the cube using the &apos;Kociemba&apos; method is {0}, using the &apos;Fridrich&apos; (CFOP) method is {1}..
         /// </summary>
-        internal static string AverageTurnsFridrich_Text {
+        internal static string AverageTurns_Text {
             get {
-                return ResourceManager.GetString("AverageTurnsFridrich_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Average number of turns to solve the cube using the &apos;Kociemba&apos; method is.
-        /// </summary>
-        internal static string AverageTurnsKociemba_Text {
-            get {
-                return ResourceManager.GetString("AverageTurnsKociemba_Text", resourceCulture);
+                return ResourceManager.GetString("AverageTurns_Text", resourceCulture);
             }
         }
         
@@ -1645,20 +1636,11 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to First game launch may take up to {0} seconds.
+        ///   Looks up a localized string similar to First game launch may take up to {0} seconds..
         /// </summary>
         internal static string WaitFirstGameLaunch_Text {
             get {
                 return ResourceManager.GetString("WaitFirstGameLaunch_Text", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to seconds.
-        /// </summary>
-        internal static string WaitFirstGameLaunch2_Text {
-            get {
-                return ResourceManager.GetString("WaitFirstGameLaunch2_Text", resourceCulture);
             }
         }
         

@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using static CubeSolver.Globals;
+﻿using static CubeSolver.Globals;
 
 namespace CubeSolver
 {

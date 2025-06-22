@@ -532,9 +532,6 @@
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>परीक्षणित समाधान:</value>
   </data>
-  <data name="AverageTurnsKociemba_Text" xml:space="preserve">
-    <value>'कोसिएम्बा' विधि का उपयोग करके घन को हल करने के लिए औसत संख्या है</value>
-  </data>
   <data name="ToolTipScrambleCube_Text" xml:space="preserve">
     <value>घन को अस्तव्यस्त करें</value>
   </data>
@@ -634,14 +631,11 @@
   <data name="NotationTurn_Number_Text" xml:space="preserve">
     <value>संख्या 2 (जैसे, U2) का अर्थ है आधा मोड़ (180 डिग्री) घुमाना।</value>
   </data>
-  <data name="AverageTurnsFridrich_Text" xml:space="preserve">
-    <value>'फ्रिड्रिच' (सीएफओपी) विधि का उपयोग किया जाता है</value>
-  </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>श्रेय: यह ऐप 'हर्बर्ट कोसिएम्बा' (कोसिएम्बा टू-फ़ेज़ एल्गोरिदम के लेखक) और 'मैट कोलबोर्न' के ओपन-सोर्स कोड का उपयोग करता है। उनके योगदान ने क्यूब-सॉल्विंग दक्षता में काफी सुधार किया है। उनके काम के लिए विशेष धन्यवाद।</value>
   </data>
   <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
-    <value>पहला गेम लॉन्च होने में लग सकता है समय</value>
+    <value>पहले गेम लॉन्च में {0} सेकंड तक का समय लग सकता है.</value>
   </data>
   <data name="UseKociembaSolution_Text" xml:space="preserve">
     <value>कोसिएम्बा विधि:</value>
@@ -651,9 +645,6 @@
   </data>
   <data name="ReverseOrder_Text" xml:space="preserve">
     <value>उल्टे क्रम</value>
-  </data>
-  <data name="WaitFirstGameLaunch2_Text" xml:space="preserve">
-    <value>सेकंड</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>पाठ के अनुवाद के लिए Google अनुवाद का उपयोग किया गया था। यह गारंटी नहीं है कि सभी अनुवाद सही हैं।
@@ -667,5 +658,8 @@
   </data>
   <data name="InternetConnectionNo_Text" xml:space="preserve">
     <value>इंटरनेट कनेक्शन उपलब्ध नहीं है.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>'कोसिएम्बा' विधि का उपयोग करके घन को हल करने के लिए औसत घुमावों की संख्या {0} है, 'फ्रिड्रिच' (सीएफओपी) विधि का उपयोग करके {1} है।</value>
   </data>
 </root>
