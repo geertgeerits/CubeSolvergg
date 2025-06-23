@@ -26,10 +26,8 @@ namespace CubeSolver
             //// Set the flow direction of the text elements
             Globals.SetFlowDirection(this);
 
-            //// Set the font size of some controls
+            //// Set the font properties of some controls
             lblCubeSolver.FontSize = Globals.nFontSize;
-            lblEmail.FontSize = Globals.nFontSize;
-            lblWebsite.FontSize = Globals.nFontSize;
 
             if (lblEmail.FormattedText is FormattedString formattedEmail)
             {

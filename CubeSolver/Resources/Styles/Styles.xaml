@@ -51,7 +51,7 @@
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
         <Setter Property="FontAttributes" Value="Bold"/>
         <Setter Property="FontFamily" Value="OpenSansRegular" />
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="{DynamicResource GlobalFontSize}" />
         <!--<Style.Triggers>
             <DataTrigger TargetType="Label" Binding="{Binding Language}" Value="ar">
                 <Setter Property="FontSize" Value="20" />
@@ -64,7 +64,7 @@
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
         <Setter Property="PlaceholderColor" Value="{AppThemeBinding Light={StaticResource MidGray}, Dark={StaticResource Light}}" />
         <Setter Property="FontFamily" Value="OpenSansRegular"/>
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="{DynamicResource GlobalFontSize}" />
         <Setter Property="FontAttributes" Value="Bold"/>
     </Style>
 
@@ -75,7 +75,7 @@
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
         <Setter Property="PlaceholderColor" Value="{AppThemeBinding Light={StaticResource MidGray}, Dark={StaticResource Light}}" />
         <Setter Property="FontFamily" Value="OpenSansRegular"/>
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="{DynamicResource GlobalFontSize}" />
         <Setter Property="FontAttributes" Value="Bold"/>
     </Style>
 
@@ -88,7 +88,7 @@
         <Setter Property="CornerRadius" Value="5" />
         <Setter Property="BorderWidth" Value="1" />
         <Setter Property="FontFamily" Value="OpenSansRegular"/>
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="{DynamicResource GlobalFontSize}" />
         <Setter Property="FontAttributes" Value="Bold"/>
         <Setter Property="VisualStateManager.VisualStateGroups">
             <VisualStateGroupList>
@@ -140,7 +140,7 @@
         <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
         <Setter Property="FontFamily" Value="OpenSansRegular"/>
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="{DynamicResource GlobalFontSize}" />
         <Setter Property="FontAttributes" Value="Bold"/>
     </Style>
 
@@ -150,7 +150,7 @@
         <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource LightEntryBG}, Dark={StaticResource DarkEntryBG}}" />
         <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}" />
         <Setter Property="FontFamily" Value="OpenSansRegular"/>
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="{DynamicResource GlobalFontSize}" />
         <Setter Property="FontAttributes" Value="Bold"/>
     </Style>
 
