@@ -665,4 +665,7 @@ Tato možnost se liší zařízení od zařízení a nainstalované jazyky. Je m
   <data name="AverageTurns_Text" xml:space="preserve">
     <value>Průměrný počet tahů potřebných k vyřešení krychle metodou „Kociemba“ je {0}, metodou „Fridrich“ (CFOP) je {1}.</value>
   </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>Velikost písma:</value>
+  </data>
 </root>

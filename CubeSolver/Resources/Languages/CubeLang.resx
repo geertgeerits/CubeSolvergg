@@ -665,4 +665,7 @@ This option varies from device to device and the installed languages. It is poss
   <data name="AverageTurns_Text" xml:space="preserve">
     <value>Average number of turns to solve the cube using the 'Kociemba' method is {0}, using the 'Fridrich' (CFOP) method is {1}.</value>
   </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>Font size:</value>
+  </data>
 </root>

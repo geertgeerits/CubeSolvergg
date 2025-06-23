@@ -88,6 +88,9 @@
             // Set the first hex colorcode in the entry field and set the slider positions
             SetCubeHexColor();
 
+            // Set the slider font size
+            sldFontSize.Value = Globals.nFontSize;
+
             // Start the stopWatch for resetting all the settings
             stopWatch.Start();
         }
@@ -156,6 +159,9 @@
         /// </summary>
         private void SetLanguage()
         {
+            // Set the global font size
+            Globals.SetGlobalFontSize();
+
             // Set the flow direction of the text elements
             Globals.SetFlowDirection(this);
 
@@ -499,6 +505,17 @@
         }
 
         /// <summary>
+        /// Slider font size value changed event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void OnSliderFontSizeChanged(object sender, ValueChangedEventArgs e)
+        {
+            Globals.nFontSize = e.NewValue;
+            Globals.SetGlobalFontSize();
+        }
+
+        /// <summary>
         /// Button save settings clicked event
         /// </summary>
         /// <param name="sender"></param>
@@ -506,6 +523,7 @@
         private static void OnSettingsSaveClicked(object sender, EventArgs e)
         {
             Preferences.Default.Set("SettingTheme", Globals.cTheme);
+            Preferences.Default.Set("SettingFontSize", Globals.nFontSize);
             Preferences.Default.Set("SettingLanguage", Globals.cLanguage);
             Preferences.Default.Set("SettingLanguageSpeech", Globals.cLanguageSpeech);
             Preferences.Default.Set("SettingExplainText", Globals.bExplainText);
@@ -545,6 +563,7 @@
             {
                 // Reset some settings
                 Preferences.Default.Remove("SettingTheme");
+                Preferences.Default.Remove("SettingFontSize");
                 Preferences.Default.Remove("SettingLanguage");
                 Preferences.Default.Remove("SettingLanguageSpeech");
                 Preferences.Default.Remove("SettingExplainText");

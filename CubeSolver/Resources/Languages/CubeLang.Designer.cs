@@ -313,6 +313,15 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Font size:.
+        /// </summary>
+        internal static string FontSize_Text {
+            get {
+                return ResourceManager.GetString("FontSize_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rotate the cube sides &apos;clockwise&apos; and &apos;counter clockwise&apos;:
         ///If the command is given to turn the front &apos;clockwise&apos; then this is in the direction the hands are turning. &apos;Counter clockwise&apos; is turning in the other direction.
         ///For the other sides you always have to &apos;imagine&apos; that you are directly in front of the side to be turned. So if it says turn the back &apos;clockwise&apos; imagine you are on the other side of the cube and then turn the back &apos;clockwise&apos;. Do not rotate the cube itself..

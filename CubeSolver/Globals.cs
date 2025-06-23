@@ -10,6 +10,7 @@ namespace CubeSolver
     {
         //// Global variables
         public static string cTheme = string.Empty;
+        public static double nFontSize;
         public static string cLanguage = string.Empty;
         public static bool bLanguageChanged;
         public static string cLanguageSpeech = string.Empty;
@@ -152,6 +153,15 @@ namespace CubeSolver
                     element.FlowDirection = FlowDirection.LeftToRight;
                 }
             }
+        }
+
+        /// <summary>
+        /// Set the global font size
+        /// </summary>
+        public static void SetGlobalFontSize()
+        {
+            Application.Current.Resources["GlobalFontSize"] = nFontSize;
+            //Application.Current?.Resources["GlobalFontSize"] = 20;
         }
 
         /// <summary>

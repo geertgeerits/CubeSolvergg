@@ -25,6 +25,30 @@ namespace CubeSolver
 
             //// Set the flow direction of the text elements
             Globals.SetFlowDirection(this);
+
+            //// Set the font size of some controls
+            lblCubeSolver.FontSize = Globals.nFontSize;
+            lblEmail.FontSize = Globals.nFontSize;
+            lblWebsite.FontSize = Globals.nFontSize;
+
+            if (lblEmail.FormattedText is FormattedString formattedEmail)
+            {
+                foreach (var span in formattedEmail.Spans)
+                {
+                    span.FontSize = Globals.nFontSize;
+                    span.FontAttributes = FontAttributes.Bold;
+                }
+            }
+
+            if (lblWebsite.FormattedText is FormattedString formattedWebsite)
+            {
+                foreach (var span in formattedWebsite.Spans)
+                {
+                    span.FontSize = Globals.nFontSize;
+                    span.FontAttributes = FontAttributes.Bold;
+                }
+            }
+
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
             lblTitlePage.Margin = new Thickness(80, 15, 0, 0);

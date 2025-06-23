@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.40
- * Date ........: 2025-06-22 (YYYY-MM-DD)
+ * Date ........: 2025-06-23 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -75,6 +75,7 @@ namespace CubeSolver
 #endif
             //// Get the saved settings
             Globals.cTheme = Preferences.Default.Get("SettingTheme", "System");
+            Globals.nFontSize = Preferences.Default.Get("SettingFontSize", 18d);
             Globals.cLanguage = Preferences.Default.Get("SettingLanguage", "");
             Globals.cLanguageSpeech = Preferences.Default.Get("SettingLanguageSpeech", "");
             Globals.bExplainText = Preferences.Default.Get("SettingExplainText", false);
@@ -423,8 +424,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 336-337 and 400-424 (and change the line 448 to bTestSolveCube = true)
-                // and uncomment one of the lines 431-433 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 337-338 and 401-425 (and change the line 449 to bTestSolveCube = true)
+                // and uncomment one of the lines 432-434 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -2210,6 +2211,9 @@ namespace CubeSolver
         {
             // Set the current UI culture of the selected language
             Globals.SetCultureSelectedLanguage(Globals.cLanguage);
+
+            // Set the global font size
+            Globals.SetGlobalFontSize();
 
             // Set the flow direction of the text elements
             Globals.SetFlowDirection(this);

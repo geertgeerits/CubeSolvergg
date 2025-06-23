@@ -24,7 +24,7 @@
 
             <Grid
                 Style="{StaticResource gridStyleSettings}"
-                RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+                RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto, Auto"
                 RowSpacing="6">
 
                 <Border
@@ -210,6 +210,7 @@
                             MaxLength="6"
                             TextTransform="Uppercase"
                             TextChanged="EntryHexColorTextChanged"
+                            FlowDirection="LeftToRight"
                             Unfocused="EntryHexColorUnfocused">
                         </Entry>
                     </Border>
@@ -388,9 +389,28 @@
                     ValueChanged="OnSliderColorValueChanged">
                 </Slider>
 
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="13"
+                    Grid.Column="0"
+                    Text="{local:Translate FontSize_Text}">
+                </Label>
+
+                <Slider
+                    x:Name="sldFontSize"
+                    Style="{StaticResource sliderStyleColor}"
+                    Grid.Row="13"
+                    Grid.Column="1"
+                    ThumbColor="Magenta"
+                    MinimumTrackColor="Magenta"
+                    Minimum="12"
+                    Maximum="30"
+                    ValueChanged="OnSliderFontSizeChanged">
+                </Slider>
+
                 <Entry
                     x:Name="entDummy"
-                    Grid.Row="13"
+                    Grid.Row="14"
                     HeightRequest="2"
                     WidthRequest="5"
                     BackgroundColor="Transparent"

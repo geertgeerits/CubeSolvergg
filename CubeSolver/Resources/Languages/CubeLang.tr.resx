@@ -665,4 +665,7 @@ Bu seçenek cihazdan cihaza ve yüklü dillere göre değişir. Bazı diller iç
   <data name="AverageTurns_Text" xml:space="preserve">
     <value>'Kociemba' yöntemi kullanılarak küpü çözmek için gereken ortalama tur sayısı {0}, 'Fridrich' (CFOP) yöntemi kullanılarak çözülen ortalama tur sayısı ise {1}'dir.</value>
   </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>Yazı tipi boyutu:</value>
+  </data>
 </root>

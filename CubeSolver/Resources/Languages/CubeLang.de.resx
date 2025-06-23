@@ -665,4 +665,7 @@ Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich
   <data name="AverageTurns_Text" xml:space="preserve">
     <value>Die durchschnittliche Anzahl der Runden zum Lösen des Würfels beträgt mit der „Kociemba“-Methode {0}, mit der „Fridrich“-Methode (CFOP) beträgt sie {1}.</value>
   </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>Schriftgröße:</value>
+  </data>
 </root>

@@ -25,6 +25,7 @@
 
                     <VerticalStackLayout>
                         <Label
+                            x:Name="lblCubeSolver"
                             Style="{StaticResource labelStyleInfo}"
                             Text="{x:Static resx:CubeLang.CubeSolver_Text}"
                             FontSize="18">
@@ -46,6 +47,7 @@
                         </Label>
 
                         <Label
+                            x:Name="lblEmail"
                             Style="{StaticResource labelStyleInfo}">
                             <Label.FormattedText>
                                 <FormattedString>
@@ -60,6 +62,7 @@
                         </Label>
 
                         <Label
+                            x:Name="lblWebsite"
                             Style="{StaticResource labelStyleInfo}">
                             <Label.FormattedText>
                                 <FormattedString>

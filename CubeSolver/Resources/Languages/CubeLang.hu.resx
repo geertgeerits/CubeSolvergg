@@ -666,4 +666,7 @@ Ez az opció készülékenként és a telepített nyelvektől függően változi
   <data name="AverageTurns_Text" xml:space="preserve">
     <value>A kocka kirakásához szükséges átlagos fordulók száma a 'Kociemba' módszerrel {0}, a 'Fridrich' (CFOP) módszerrel pedig {1}.</value>
   </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>Betűméret:</value>
+  </data>
 </root>
