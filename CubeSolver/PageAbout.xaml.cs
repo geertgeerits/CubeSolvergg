@@ -2,13 +2,13 @@ namespace CubeSolver
 {
     public sealed partial class PageAbout : ContentPage
     {
-        // INotifyPropertyChanged implementation...
-        private string _language = Globals.cLanguage;
-        public string Language
-        {
-            get => _language;
-            set { _language = value; OnPropertyChanged(); }
-        }
+        //// DataTrigger for the FontSize depending on the UI language
+        //private string _language = Globals.cLanguage;
+        //public string Language
+        //{
+        //    get => _language;
+        //    set { _language = value; OnPropertyChanged(); }
+        //}
 
         public PageAbout()
         {
@@ -23,7 +23,7 @@ namespace CubeSolver
                 return;
             }
 
-            // Set the flow direction of the text elements
+            //// Set the flow direction of the text elements
             Globals.SetFlowDirection(this);
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
@@ -61,7 +61,7 @@ namespace CubeSolver
         {
             FontFamily = "OpenSansRegular";
             FontAttributes = FontAttributes.Bold;
-            FontSize = 16;
+            FontSize = 18;
             TextDecorations = TextDecorations.Underline;
 
             GestureRecognizers.Add(new TapGestureRecognizer
