@@ -666,6 +666,6 @@
     <value>'코시엠바' 방법을 사용하여 큐브를 풀기 위한 평균 턴 수는 {0}이고, '프리드리히'(CFOP) 방법을 사용하면 {1}입니다.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>글꼴 크기:</value>
+    <value>글꼴 크기</value>
   </data>
 </root>

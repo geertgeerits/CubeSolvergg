@@ -666,6 +666,6 @@ Opsi ini bervariasi dari perangkat ke perangkat dan bahasa yang diinstal. Ada ke
     <value>Jumlah rata-rata putaran untuk menyelesaikan kubus menggunakan metode 'Kociemba' adalah {0}, menggunakan metode 'Fridrich' (CFOP) adalah {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Ukuran huruf:</value>
+    <value>Ukuran huruf</value>
   </data>
 </root>

@@ -666,6 +666,6 @@
     <value>'Kociemba' 法を使用してキューブを解くのに必要な平均ターン数は {0} で、'Fridrich' (CFOP) 法を使用した場合は {1} です。</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>フォントサイズ:</value>
+    <value>フォントサイズ</value>
   </data>
 </root>

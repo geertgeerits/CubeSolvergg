@@ -183,24 +183,41 @@
                     Toggled="OnSwtExplainSpeechToggled">
                 </Switch>
 
-                <Label
-                    Style="{StaticResource labelStyleDefault}"
+
+                <HorizontalStackLayout
                     Grid.Row="7"
-                    Grid.Column="0"
-                    Text="{local:Translate FontSize_Text}">
-                </Label>
+                    Grid.Column="0">
+                    
+                    <Label
+                        Style="{StaticResource labelStyleDefault}"
+                        Text="{local:Translate FontSize_Text}">
+                    </Label>
+
+                    <Label
+                        Style="{StaticResource labelStyleDefault}"
+                        x:DataType="Slider"
+                        BindingContext="{x:Reference sldFontSize}"
+                        Text="{Binding Value, StringFormat=' ({0:F0}):'}"
+                        HorizontalOptions="End"
+                        VerticalTextAlignment="Center">
+                    </Label>
+                </HorizontalStackLayout>
 
                 <Slider
                     x:Name="sldFontSize"
+                    x:DataType="Label"
+                    BindingContext="{x:Reference label}"
                     Style="{StaticResource sliderStyleColor}"
                     Grid.Row="7"
                     Grid.Column="1"
                     ThumbColor="Magenta"
                     MinimumTrackColor="Magenta"
-                    Minimum="12"
+                    Minimum="10"
                     Maximum="30"
+                    Value="{Binding fontSize, Mode=OneWayToSource}"
                     ValueChanged="OnSliderFontSizeChanged">
                 </Slider>
+                
 
                 <Label
                     Style="{StaticResource labelStyleDefault}"

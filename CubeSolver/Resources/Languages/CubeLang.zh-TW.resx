@@ -666,6 +666,6 @@
     <value>使用 'Kociemba' 方法解魔術方塊的平均轉數為 {0}，使用 'Fridrich' (CFOP) 方法解魔術方塊的平均轉數為 {1}。</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>字體大小：</value>
+    <value>字體大小</value>
   </data>
 </root>
