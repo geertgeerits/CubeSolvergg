@@ -666,6 +666,6 @@
     <value>Середня кількість обертів для розв'язання куба методом «Коціємба» становить {0}, методом «Фрідріха» (CFOP) — {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Розмір шрифту</value>
+    <value>Розмір шрифту:</value>
   </data>
 </root>

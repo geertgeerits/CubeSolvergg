@@ -666,6 +666,6 @@ Tämä vaihtoehto vaihtelee laitteittain ja asennetuista kielistä riippuen. On 
     <value>Kuution ratkaisemiseen tarvittavien kierrosten keskimääräinen määrä Kociemba-menetelmällä on {0} ja Fridrich-menetelmällä (CFOP) {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Fonttikoko</value>
+    <value>Fonttikoko:</value>
   </data>
 </root>

@@ -194,10 +194,11 @@
                     </Label>
 
                     <Label
+                        x:Name="lblFontSize"
                         Style="{StaticResource labelStyleDefault}"
                         x:DataType="Slider"
                         BindingContext="{x:Reference sldFontSize}"
-                        Text="{Binding Value, StringFormat=' ({0:F0}):'}"
+                        Text="{Binding Value, StringFormat=' {0:F0}'}"
                         HorizontalOptions="End"
                         VerticalTextAlignment="Center">
                     </Label>
@@ -206,7 +207,7 @@
                 <Slider
                     x:Name="sldFontSize"
                     x:DataType="Label"
-                    BindingContext="{x:Reference label}"
+                    BindingContext="{x:Reference lblFontSize}"
                     Style="{StaticResource sliderStyleColor}"
                     Grid.Row="7"
                     Grid.Column="1"

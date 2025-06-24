@@ -313,7 +313,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Font size.
+        ///   Looks up a localized string similar to Font size:.
         /// </summary>
         internal static string FontSize_Text {
             get {

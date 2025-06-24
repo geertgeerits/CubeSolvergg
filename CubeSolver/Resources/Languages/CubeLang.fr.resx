@@ -666,6 +666,6 @@ Cette option varie selon l’appareil et les langues installées. Il est possibl
     <value>Le nombre moyen de tours pour résoudre le cube en utilisant la méthode « Kociemba » est de {0}, celui en utilisant la méthode « Fridrich » (CFOP) est de {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Taille de la police</value>
+    <value>Taille de la police:</value>
   </data>
 </root>

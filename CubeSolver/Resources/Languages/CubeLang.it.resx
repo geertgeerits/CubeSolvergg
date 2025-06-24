@@ -666,6 +666,6 @@ Questa opzione varia da dispositivo a dispositivo e dalle lingue installate. È 
     <value>Il numero medio di giri per risolvere il cubo usando il metodo 'Kociemba' è {0}, usando il metodo 'Fridrich' (CFOP) è {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Dimensione del carattere</value>
+    <value>Dimensione del carattere:</value>
   </data>
 </root>

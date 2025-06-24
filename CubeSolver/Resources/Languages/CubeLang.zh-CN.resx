@@ -666,6 +666,6 @@
     <value>使用 'Kociemba' 方法解决魔方的平均转数为 {0}，使用 'Fridrich' (CFOP) 方法解决魔方的平均转数为 {1}。</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>字体大小</value>
+    <value>字体大小：</value>
   </data>
 </root>

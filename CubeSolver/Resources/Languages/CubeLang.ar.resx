@@ -668,6 +668,6 @@
     <value>متوسط ​​عدد الدورات لحل المكعب باستخدام طريقة "Kociemba" هو {0}، باستخدام طريقة "Fridrich" (CFOP) هو {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>حجم الخط</value>
+    <value>حجم الخط:</value>
   </data>
 </root>

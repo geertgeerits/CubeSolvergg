@@ -666,6 +666,6 @@ Denne mulighed varierer fra enhed til enhed og de installerede sprog. Det er mul
     <value>Det gennemsnitlige antal ture til at løse terningen ved hjælp af 'Kociemba'-metoden er {0}, og ved brug af 'Fridrich' (CFOP)-metoden er det {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Skriftstørrelse</value>
+    <value>Skriftstørrelse:</value>
   </data>
 </root>

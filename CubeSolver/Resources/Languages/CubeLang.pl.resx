@@ -666,6 +666,6 @@ Ta opcja różni się w zależności od urządzenia i zainstalowanych języków.
     <value>Średnia liczba tur potrzebnych do ułożenia kostki metodą „Kociemba” wynosi {0}, a metodą „Fridrich” (CFOP) wynosi {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Rozmiar czcionki</value>
+    <value>Rozmiar czcionki:</value>
   </data>
 </root>

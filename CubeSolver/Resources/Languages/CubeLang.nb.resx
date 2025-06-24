@@ -666,6 +666,6 @@ Dette alternativet varierer fra enhet til enhet og de installerte språkene. Det
     <value>Gjennomsnittlig antall runder for å løse kuben ved bruk av «Kociemba»-metoden er {0}, ved bruk av «Fridrich»-metoden (CFOP) er det {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Skriftstørrelse</value>
+    <value>Skriftstørrelse:</value>
   </data>
 </root>

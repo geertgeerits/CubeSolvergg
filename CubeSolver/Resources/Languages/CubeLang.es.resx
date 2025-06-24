@@ -666,6 +666,6 @@ Esta opción varía según el dispositivo y los idiomas instalados. Es posible q
     <value>El número promedio de vueltas para resolver el cubo utilizando el método 'Kociemba' es {0}, utilizando el método 'Fridrich' (CFOP) es {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Tamaño de fuente</value>
+    <value>Tamaño de fuente:</value>
   </data>
 </root>
