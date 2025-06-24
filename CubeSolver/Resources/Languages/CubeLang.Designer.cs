@@ -151,7 +151,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright.
+        ///   Looks up a localized string similar to Copyright:.
         /// </summary>
         internal static string Copyright_Text {
             get {

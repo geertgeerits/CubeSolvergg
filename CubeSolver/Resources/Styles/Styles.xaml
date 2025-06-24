@@ -52,11 +52,6 @@
         <Setter Property="FontAttributes" Value="Bold"/>
         <Setter Property="FontFamily" Value="OpenSansRegular" />
         <Setter Property="FontSize" Value="{DynamicResource GlobalFontSize}" />
-        <!--<Style.Triggers>
-            <DataTrigger TargetType="Label" Binding="{Binding Language}" Value="ar">
-                <Setter Property="FontSize" Value="20" />
-            </DataTrigger>
-        </Style.Triggers>-->
     </Style>
 
     <Style TargetType="Editor">
