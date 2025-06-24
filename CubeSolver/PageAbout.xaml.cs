@@ -15,6 +15,7 @@ namespace CubeSolver
                 return;
             }
 
+            // !!!BUG!!! Do not use this when FlowDirection = "RightToLeft" in Android(and iOS)
             //// Set the flow direction of the text elements
             Globals.SetFlowDirection(this);
 

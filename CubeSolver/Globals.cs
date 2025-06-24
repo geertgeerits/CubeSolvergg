@@ -161,7 +161,7 @@ namespace CubeSolver
         public static void SetGlobalFontSize()
         {
             Application.Current.Resources["GlobalFontSize"] = nFontSize;
-            //Application.Current?.Resources["GlobalFontSize"] = 20;
+            //Application.Current?.Resources["GlobalFontSize"] = nFontSize;
         }
 
         /// <summary>

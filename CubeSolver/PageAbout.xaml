@@ -45,6 +45,7 @@
                         </Label>
 
                         <HorizontalStackLayout>
+                            <!--!!!BUG!!! Does not work when FlowDirection="RightToLeft" in Android (and iOS)-->
                             <!--<Label
                                 x:Name="lblEmail"
                                 Style="{StaticResource labelStyleInfo}"
@@ -68,19 +69,17 @@
                                 Text="{x:Static resx:CubeLang.Email_Text}">
                             </Label>
 
-                            <Button
-                                VerticalOptions="Start"
-                                BackgroundColor="Transparent"
-                                BorderWidth="0"
-                                Padding="0"
-                                Margin="5,0,0,5"
-                                TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
-                                Text="geertgeerits@gmail.com"
+                            <ImageButton
+                                Style="{StaticResource imageButtonInternet}"
                                 Clicked="OnButtonEmailClicked">
-                            </Button>
+                                <ImageButton.Source>
+                                    <AppThemeBinding Light="ic_action_mail_black_32p.png" Dark="ic_action_mail_white_32p.png" />
+                                </ImageButton.Source>
+                            </ImageButton>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
+                            <!--!!!BUG!!! Does not work when FlowDirection="RightToLeft" in Android (and iOS)-->
                             <!--<Label
                                 x:Name="lblWebsite"
                                 Style="{StaticResource labelStyleInfo}"
@@ -102,15 +101,13 @@
                                 Text="{x:Static resx:CubeLang.Website_Text}">
                             </Label>
 
-                            <Button
-                                BackgroundColor="Transparent"
-                                BorderWidth="0"
-                                Padding="0"
-                                Margin="5,0,0,5"
-                                TextColor="{AppThemeBinding Light={StaticResource Black}, Dark={StaticResource White}}"
-                                Text="../cube-solver"
+                            <ImageButton
+                                Style="{StaticResource imageButtonInternet}"
                                 Clicked="OnButtonWebsiteClicked">
-                            </Button>
+                                <ImageButton.Source>
+                                    <AppThemeBinding Light="ic_action_link_black_32p.png" Dark="ic_action_link_white_32p.png" />
+                                </ImageButton.Source>
+                            </ImageButton>
                         </HorizontalStackLayout>
                         
                         <Label
