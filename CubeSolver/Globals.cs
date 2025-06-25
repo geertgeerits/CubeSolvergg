@@ -32,7 +32,7 @@ namespace CubeSolver
 
 #if DEBUG
         // Test variable
-        public static bool bSolveNewSolutionsTest;
+        //public static bool bSolveNewSolutionsTest;
 #endif
 
         // Cube turns

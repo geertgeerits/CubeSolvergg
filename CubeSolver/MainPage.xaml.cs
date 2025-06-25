@@ -133,8 +133,8 @@ namespace CubeSolver
             GetCubeColorsFromArrays();
 #if DEBUG
             //// Set the button to true and 'bSolveNewSolutionsTest' to false in debug mode for testing purposes
-            btnSolveNewSolutionsTest.IsVisible = false;
-            Globals.bSolveNewSolutionsTest = false;
+            //btnSolveNewSolutionsTest.IsVisible = false;
+            //Globals.bSolveNewSolutionsTest = false;
 
             //// For testing the logging of the executed line in the class 'ClassProgramLogging.cs'
             //ClassProgramLogging.LogExecutedLineTest();
@@ -201,26 +201,26 @@ namespace CubeSolver
             await Navigation.PushAsync(new PageAbout());
         }
 
-        /// <summary>
-        /// Use the toggle button 'btnSolveNewSolutionsTest' to solve the cube with or without new test turns in debug mode
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void OnBtnSolveNewSolutionsTestClicked(object sender, EventArgs e)
-        {
-#if DEBUG
-            Globals.bSolveNewSolutionsTest = !Globals.bSolveNewSolutionsTest;
+//        /// <summary>
+//        /// Use the toggle button 'btnSolveNewSolutionsTest' to solve the cube with or without new test turns in debug mode
+//        /// </summary>
+//        /// <param name="sender"></param>
+//        /// <param name="e"></param>
+//        private void OnBtnSolveNewSolutionsTestClicked(object sender, EventArgs e)
+//        {
+//#if DEBUG
+//            Globals.bSolveNewSolutionsTest = !Globals.bSolveNewSolutionsTest;
 
-            if (Globals.bSolveNewSolutionsTest)
-            {
-                btnSolveNewSolutionsTest.Text = "+";
-            }
-            else
-            {
-                btnSolveNewSolutionsTest.Text = "-";
-            }
-#endif
-        }
+//            if (Globals.bSolveNewSolutionsTest)
+//            {
+//                btnSolveNewSolutionsTest.Text = "+";
+//            }
+//            else
+//            {
+//                btnSolveNewSolutionsTest.Text = "-";
+//            }
+//#endif
+//        }
 
         /// <summary>
         /// Go to the Settings page

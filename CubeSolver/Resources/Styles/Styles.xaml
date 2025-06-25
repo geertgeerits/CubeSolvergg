@@ -270,7 +270,7 @@
         <Setter Property="HorizontalTextAlignment" Value="Start" />
         <Setter Property="TextColor" Value="Black" />
         <Setter Property="FontAutoScalingEnabled" Value="False" />
-        <Setter Property="FontSize" Value="18" />
+        <Setter Property="FontSize" Value="19" />
         <Setter Property="LineBreakMode" Value="TailTruncation" />
     </Style>
 

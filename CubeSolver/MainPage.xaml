@@ -9,7 +9,7 @@
         <Grid
             x:Name="grdTitleView"
             RowDefinitions="Auto"
-            ColumnDefinitions="60, 140*, 50, 60"
+            ColumnDefinitions="60, 140*, 60"
             Margin="4"
             FlowDirection="LeftToRight">
 
@@ -33,10 +33,10 @@
                 Text="{local:Translate NameProgram_Text}">
             </Label>
 
-            <Button
+            <!--<Button
                 x:Name="btnSolveNewSolutionsTest"
-                Grid.Column="2"
-                HorizontalOptions="Center"
+                Grid.Column="1"
+                HorizontalOptions="End"
                 VerticalOptions="Center"
                 HeightRequest="40"
                 WidthRequest="40"
@@ -48,11 +48,11 @@
                 Text="-"
                 IsVisible="False"
                 Clicked="OnBtnSolveNewSolutionsTestClicked">
-            </Button>
+            </Button>-->
 
             <ImageButton
                 x:Name="imgbtnSettings"
-                Grid.Column="3"
+                Grid.Column="2"
                 Source="settings_32p.png"
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
