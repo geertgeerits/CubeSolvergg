@@ -159,6 +159,9 @@
         /// </summary>
         private void SetLanguage()
         {
+            // Set the font size label text
+            lblFontSize.Text = $"{CubeLang.FontSize_Text} {Globals.nFontSize:F0}";
+
             // Set the global font size
             Globals.SetGlobalFontSize();
 
@@ -513,6 +516,8 @@
         {
             Globals.nFontSize = e.NewValue;
             Globals.SetGlobalFontSize();
+            
+            lblFontSize.Text = $"{CubeLang.FontSize_Text} {Globals.nFontSize:F0}";
         }
 
         /// <summary>

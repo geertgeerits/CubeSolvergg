@@ -184,30 +184,16 @@
                     Toggled="OnSwtExplainSpeechToggled">
                 </Switch>
 
-                <Grid
+                <Label
+                    x:Name="lblFontSize"
+                    Style="{StaticResource labelStyleDefault}"
                     Grid.Row="7"
-                    Grid.Column="0">
-                    
-                    <Label
-                        Style="{StaticResource labelStyleDefault}"
-                        Text="{local:Translate FontSize_Text}">
-                    </Label>
-
-                    <Label
-                        x:Name="lblFontSize"
-                        Style="{StaticResource labelStyleDefault}"
-                        x:DataType="Slider"
-                        BindingContext="{x:Reference sldFontSize}"
-                        Text="{Binding Value, StringFormat=' {0:F0}'}"
-                        HorizontalOptions="End"
-                        VerticalTextAlignment="Center">
-                    </Label>
-                </Grid>
+                    Grid.Column="0"
+                    Text="">
+                </Label>
 
                 <Slider
                     x:Name="sldFontSize"
-                    x:DataType="Label"
-                    BindingContext="{x:Reference lblFontSize}"
                     Style="{StaticResource sliderStyleColor}"
                     Grid.Row="7"
                     Grid.Column="1"
@@ -215,7 +201,6 @@
                     MinimumTrackColor="Magenta"
                     Minimum="10"
                     Maximum="30"
-                    Value="{Binding Mode=OneWayToSource}"
                     ValueChanged="OnSliderFontSizeChanged">
                 </Slider>
 
