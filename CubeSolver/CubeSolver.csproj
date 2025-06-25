@@ -69,6 +69,7 @@
 	  <Compile Remove="ClassSolveCubeDaisy.cs" />
 	  <Compile Remove="ClassTestCubeTurns.cs" />
 	  <Compile Remove="PageWebsite.xaml.cs" />
+	  <Compile Remove="PinchToZoomContainer.cs" />
 	</ItemGroup>
 
 	<ItemGroup>

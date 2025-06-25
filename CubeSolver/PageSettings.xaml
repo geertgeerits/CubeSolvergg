@@ -8,7 +8,8 @@
         <Label
             x:Name="lblTitlePage"
             Style="{StaticResource labelStyleTitleView}"
-            Text="{local:Translate Settings_Text}">
+            Text="{local:Translate Settings_Text}"
+            FlowDirection="LeftToRight">
         </Label>
     </Shell.TitleView>
 

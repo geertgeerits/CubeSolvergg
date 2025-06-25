@@ -10,7 +10,8 @@
             x:Name="grdTitleView"
             RowDefinitions="Auto"
             ColumnDefinitions="60, 140*, 50, 60"
-            Margin="4">
+            Margin="4"
+            FlowDirection="LeftToRight">
 
             <ImageButton
                 x:Name="imgbtnAbout"

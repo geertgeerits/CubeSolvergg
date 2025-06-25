@@ -173,7 +173,7 @@
                             <Setter Property="ColumnDefinitions">
                                 <Setter.Value>
                                     <ColumnDefinitionCollection>
-                                        <ColumnDefinition Width="{OnIdiom 340, Phone=340, Tablet=560, Desktop=560}" />
+                                        <ColumnDefinition Width="{OnIdiom 340, Phone=340*, Tablet=560, Desktop=560}" />
                                     </ColumnDefinitionCollection>
                                 </Setter.Value>
                             </Setter>
