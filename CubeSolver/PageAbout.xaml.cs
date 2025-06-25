@@ -36,6 +36,9 @@ namespace CubeSolver
                 //// Set the margins for the controls in the title bar for Windows
                 lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
 #endif
+            //// Set the label IsVisible property for the program name
+            lblNameProgram.IsVisible = Globals.cLanguage != "en";
+
             //// Put text in the chosen language in the controls and variables
             lblVersion.Text = $"{CubeLang.Version_Text} 2.0.40";
             lblCopyright.Text = $"{CubeLang.Copyright_Text} © 1981-2025 Geert Geerits";

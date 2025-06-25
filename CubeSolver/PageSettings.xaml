@@ -183,8 +183,7 @@
                     Toggled="OnSwtExplainSpeechToggled">
                 </Switch>
 
-
-                <HorizontalStackLayout
+                <Grid
                     Grid.Row="7"
                     Grid.Column="0">
                     
@@ -202,7 +201,7 @@
                         HorizontalOptions="End"
                         VerticalTextAlignment="Center">
                     </Label>
-                </HorizontalStackLayout>
+                </Grid>
 
                 <Slider
                     x:Name="sldFontSize"
@@ -215,10 +214,9 @@
                     MinimumTrackColor="Magenta"
                     Minimum="10"
                     Maximum="30"
-                    Value="{Binding fontSize, Mode=OneWayToSource}"
+                    Value="{Binding Mode=OneWayToSource}"
                     ValueChanged="OnSliderFontSizeChanged">
                 </Slider>
-                
 
                 <Label
                     Style="{StaticResource labelStyleDefault}"

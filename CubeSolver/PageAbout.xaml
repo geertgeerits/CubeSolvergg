@@ -30,8 +30,9 @@
                         </Label>
 
                         <Label
+                            x:Name="lblNameProgram"
                             Style="{StaticResource labelStyleInfo}"
-                            Text="{x:Static resx:CubeLang.Description_Text}">
+                            Text="{x:Static resx:CubeLang.NameProgram_Text}">
                         </Label>
 
                         <Label
