@@ -4,7 +4,7 @@ ______________
 
 Solve your Cube.
 
-Supporting languages: Chinese, Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish and Ukrainian.
+Supporting languages: Arabic, Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish, Turkish and Ukrainian.
 
 The program was tested on a Samsung Galaxy A3, S21 and S25 phone, iPhone 7 and 16, iPad 8th generation.
 
