@@ -40,7 +40,7 @@ namespace CubeSolver
             lblNameProgram.IsVisible = Globals.cLanguage != "en";
 
             //// Put text in the chosen language in the controls and variables
-            lblVersion.Text = $"{CubeLang.Version_Text} 2.0.40";
+            lblVersion.Text = $"{CubeLang.Version_Text} 2.0.41";
             lblCopyright.Text = $"{CubeLang.Copyright_Text} © 1981-2025 Geert Geerits";
             lblPrivacyPolicy.Text = $"\n{CubeLang.PrivacyPolicyTitle_Text} {CubeLang.PrivacyPolicy_Text}";
             lblLicense.Text = $"\n{CubeLang.LicenseTitle_Text}: {CubeLang.License_Text}";
