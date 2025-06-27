@@ -32,6 +32,7 @@
                 Margin = new Thickness(0, 0, 25, 0)
             };
 
+            sldFontSize.Margin = slider.Margin;
             sldColorRed.Margin = slider.Margin;
             sldColorGreen.Margin = slider.Margin;
             sldColorBlue.Margin = slider.Margin;
