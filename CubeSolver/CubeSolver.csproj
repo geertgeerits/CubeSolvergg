@@ -28,8 +28,7 @@
 		<!--<WindowsPackageType>None</WindowsPackageType>-->
 
 		<!--!!!BUG!!!? in iOS.  Below version 16.0 the app crashes when you try to open the settings page, this at least since 2025-02-04-->
-		<!--<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">12.2</SupportedOSPlatformVersion>-->
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">16.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">12.2</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
@@ -100,7 +99,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.6" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.80" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.81" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.6" />
 	</ItemGroup>
 

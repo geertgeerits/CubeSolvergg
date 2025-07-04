@@ -8,6 +8,15 @@ namespace CubeSolver
     //// Global variables and methods
     internal static class Globals
     {
+        // Languages where the flow direction is right-to-left:
+        // ar:Arabic, dv:Divehi/Maldivian, fa:Dari/Persian (Farsi), he:Hebrew, iw:Hebrew, kd:Kurdish (Sorani), pk:Panjabi-Shahmuki,
+        // ps:Pushto/Pashto, ug:Uighur/Uyghur, ur:Urdu, yi:Yiddish
+        // ??? Aramaic, (az:Azeri), (ff:Fula), ..:N'ko, Rohingya, syr:Syriac
+        private static readonly HashSet<string> cRightToLeftLanguages =
+        [
+            "ar", "dv", "fa", "he", "iw", "kd", "pk", "ps", "ug", "ur", "yi"
+        ];
+
         //// Global variables
         public static string cTheme = string.Empty;
         public static double nFontSize;
@@ -137,8 +146,8 @@ namespace CubeSolver
             //Debug.WriteLine($"LayoutDirection: {layoutDirection}");
             //string cLayoutDirection = layoutDirection.ToString();
 
-            // Set the flow direction to right-to-left for Arabic and Hebrew languages
-            if (cLanguage == "ar" || cLanguage == "he")
+            // Set the flow direction to right-to-left for the next languages:
+            if (cRightToLeftLanguages.Contains(cLanguage))
             {
                 if (element.FlowDirection != FlowDirection.RightToLeft)
                 {
