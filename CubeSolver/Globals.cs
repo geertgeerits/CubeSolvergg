@@ -9,12 +9,13 @@ namespace CubeSolver
     internal static class Globals
     {
         // Languages where the flow direction is right-to-left:
-        // ar:Arabic, dv:Divehi/Maldivian, fa:Dari/Persian (Farsi), he:Hebrew, iw:Hebrew, kd:Kurdish (Sorani), pk:Panjabi-Shahmuki,
-        // ps:Pushto/Pashto, ug:Uighur/Uyghur, ur:Urdu, yi:Yiddish
-        // ??? Aramaic, (az:Azeri), (ff:Fula), ..:N'ko, Rohingya, syr:Syriac
-        private static readonly HashSet<string> cRightToLeftLanguages =
+        // ISO 639-1: ar:Arabic, dv:Divehi/Maldivian, fa:Dari/Persian (Farsi), ff:Fula, he:Hebrew, iw:Hebrew, kd:Kurdish (Sorani), pk:Panjabi-Shahmuki,
+        //            ps:Pushto/Pashto, ug:Uighur/Uyghur, ur:Urdu, yi:Yiddish
+        // ISO 639-2: arc:Aramaic, nqo:N'ko, rhg:Rohingya, syr:Syriac
+        // az:Azeri: when written in Latin or Cyrillic scripts, Azeri is left-to-right (LTR). in Arabic script, it is right-to-left (RTL)
+        private static readonly HashSet<string> cRightToLeftLanguages_ISO639_1 =
         [
-            "ar", "dv", "fa", "he", "iw", "kd", "pk", "ps", "ug", "ur", "yi"
+            "ar", "dv", "fa", "ff", "he", "iw", "kd", "pk", "ps", "ug", "ur", "yi"
         ];
 
         //// Global variables
@@ -147,7 +148,7 @@ namespace CubeSolver
             //string cLayoutDirection = layoutDirection.ToString();
 
             // Set the flow direction to right-to-left for the next languages:
-            if (cRightToLeftLanguages.Contains(cLanguage))
+            if (cRightToLeftLanguages_ISO639_1.Contains(cLanguage))
             {
                 if (element.FlowDirection != FlowDirection.RightToLeft)
                 {
