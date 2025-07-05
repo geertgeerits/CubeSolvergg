@@ -12,7 +12,7 @@ namespace CubeSolver
         // ISO 639-1: ar:Arabic, dv:Divehi/Maldivian, fa:Dari/Persian (Farsi), ff:Fula, he:Hebrew, iw:Hebrew, kd:Kurdish (Sorani), pk:Panjabi-Shahmuki,
         //            ps:Pushto/Pashto, ug:Uighur/Uyghur, ur:Urdu, yi:Yiddish
         // ISO 639-2: arc:Aramaic, nqo:N'ko, rhg:Rohingya, syr:Syriac
-        // az:Azeri: when written in Latin or Cyrillic scripts, Azeri is left-to-right (LTR). in Arabic script, it is right-to-left (RTL)
+        // az:Azeri: when written in Latin or Cyrillic scripts, Azeri is left-to-right (LTR), in Arabic script, it is right-to-left (RTL)
         private static readonly HashSet<string> cRightToLeftLanguages_ISO639_1 =
         [
             "ar", "dv", "fa", "ff", "he", "iw", "kd", "pk", "ps", "ug", "ur", "yi"
