@@ -8,15 +8,15 @@ namespace CubeSolver
     //// Global variables and methods
     internal static class Globals
     {
-        // Languages where the flow direction is right-to-left:
-        // ISO 639-1: ar:Arabic, dv:Divehi/Maldivian, fa:Dari/Persian (Farsi), ff:Fula, he:Hebrew, iw:Hebrew, kd:Kurdish (Sorani), pk:Panjabi-Shahmuki,
-        //            ps:Pushto/Pashto, ug:Uighur/Uyghur, ur:Urdu, yi:Yiddish
-        // ISO 639-2: arc:Aramaic, nqo:N'ko, rhg:Rohingya, syr:Syriac
-        // az:Azeri: when written in Latin or Cyrillic scripts, Azeri is left-to-right (LTR), in Arabic script, it is right-to-left (RTL)
-        private static readonly HashSet<string> cRightToLeftLanguages_ISO639_1 =
-        [
-            "ar", "dv", "fa", "ff", "he", "iw", "kd", "pk", "ps", "ug", "ur", "yi"
-        ];
+        //// Languages where the flow direction is right-to-left:
+        /* ISO 639-1: ar:Arabic, dv:Divehi/Maldivian, fa:Dari/Persian (Farsi), ff:Fula, he:Hebrew, iw:Hebrew, kd:Kurdish (Sorani), pk:Panjabi-Shahmuki,
+                      ps:Pushto/Pashto, ug:Uighur/Uyghur, ur:Urdu, yi:Yiddish
+           ISO 639-2: arc:Aramaic, nqo:N'ko, rhg:Rohingya, syr:Syriac
+           az:Azeri: when written in Latin or Cyrillic scripts, Azeri is left-to-right (LTR), in Arabic script, it is right-to-left (RTL) */
+        //private static readonly HashSet<string> cRightToLeftLanguages_ISO639_1 =
+        //[
+        //    "ar", "dv", "fa", "ff", "he", "iw", "kd", "pk", "ps", "ug", "ur", "yi"
+        //];
 
         //// Global variables
         public static string cTheme = string.Empty;
@@ -122,16 +122,10 @@ namespace CubeSolver
             try
             {
                 CultureInfo culture = new(cCultureName);
-
-                // Does not work as expected for all platforms
-                // When using CurrentUICulture, resetting the settings will not reset the UI language immediately
-                // and the cLayoutDirection will not be determined correctly for Windows
-                //Thread.CurrentThread.CurrentCulture = culture;
-                //Thread.CurrentThread.CurrentUICulture = culture;
-                //CultureInfo.DefaultThreadCurrentCulture = culture;
-                //CultureInfo.DefaultThreadCurrentUICulture = culture;
-
                 LocalizationResourceManager.Instance.SetCulture(culture);
+
+                // Necessary for the determination of the flow direction
+                CultureInfo.CurrentUICulture = new CultureInfo(cCultureName);
             }
             catch
             {
@@ -142,20 +136,20 @@ namespace CubeSolver
         //// Set the flow direction of the text elements
         public static void SetFlowDirection(VisualElement element)
         {
-            // Does not work as expected for all platforms
-            //LayoutDirection layoutDirection = AppInfo.Current.RequestedLayoutDirection;
-            //Debug.WriteLine($"LayoutDirection: {layoutDirection}");
-            //string cLayoutDirection = layoutDirection.ToString();
+            // Get the flow direction of the current UI culture
+            bool bIsRightToLeft = CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft;
+            Debug.WriteLine($"CurrentUICulture: {CultureInfo.CurrentUICulture.Name}, IsRightToLeft: {bIsRightToLeft}");
 
-            // Set the flow direction to right-to-left for the next languages:
-            if (cRightToLeftLanguages_ISO639_1.Contains(cLanguage))
+            // Set the flow direction to right-to-left
+            //if (cRightToLeftLanguages_ISO639_1.Contains(cLanguage))
+            if (bIsRightToLeft)
             {
                 if (element.FlowDirection != FlowDirection.RightToLeft)
                 {
                     element.FlowDirection = FlowDirection.RightToLeft;
                 }
             }
-            // Set the flow direction to left-to-right for the other languages
+            // Set the flow direction to left-to-right
             else
             {
                 if (element.FlowDirection != FlowDirection.LeftToRight)
