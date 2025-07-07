@@ -69,6 +69,14 @@
                 _ => 5,         // English
             };
 
+            // Languages to add in the future:
+            /*
+            "bn"   // বাংলা (Bāŋlā) - Bengali
+            "ru"   // Русский язык (Russkiĭ âzyk) - Russian
+            "ur"   // اُردُو (Urduw) - Urdu
+            "vi"   // Tiếng Việt (Việt ngữ) - Vietnamese
+            */
+            
             //// Fill the picker with the speech languages and select the saved language in the picker
             ClassSpeech.FillPickerWithSpeechLanguages(pckLanguageSpeech);
 
