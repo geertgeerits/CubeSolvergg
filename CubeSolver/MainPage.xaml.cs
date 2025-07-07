@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2025
  * Version .....: 2.0.41
- * Date ........: 2025-07-06 (YYYY-MM-DD)
+ * Date ........: 2025-07-07 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -126,7 +126,7 @@ namespace CubeSolver
             SetTextLanguage();
 
             //// Initialize text to speech
-            InitializeTextToSpeechAsync();
+            _ = InitializeTextToSpeechAsync();
 
             //// Reset the colors of the cube
             ClassColorsCube.ResetCube();
@@ -156,7 +156,7 @@ namespace CubeSolver
         /// The InitializeTextToSpeechAsync method is called asynchronously after the UI components are initialized
         /// Once the asynchronous operation completes, the Globals.bTextToSpeechAvailable value is checked, and the UI is updated accordingly
         /// </summary>
-        private static async void InitializeTextToSpeechAsync()
+        private static async Task InitializeTextToSpeechAsync()
         {
             // Search for the speech language after a first start or reset of the application
             try
@@ -916,7 +916,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnFrontCCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnFrontFaceToRight_Text);
+            _ = ExplainTurnCube(CubeLang.TurnFrontFaceToRight_Text);
             ClassCubeTurns.TurnFrontFaceTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -947,7 +947,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnUpHorMiddleLeft);
             }
 
-            ExplainTurnCube(CubeLang.TurnUpMiddleToRightFace_Text);
+            _ = ExplainTurnCube(CubeLang.TurnUpMiddleToRightFace_Text);
             ClassCubeTurns.TurnUpHorMiddleTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -972,7 +972,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnBackCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnBackFaceToLeft_Text);
+            _ = ExplainTurnCube(CubeLang.TurnBackFaceToLeft_Text);
             ClassCubeTurns.TurnBackFaceTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -997,7 +997,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnLeftCCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnLeftFaceToRight_Text);
+            _ = ExplainTurnCube(CubeLang.TurnLeftFaceToRight_Text);
             ClassCubeTurns.TurnLeftFaceTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -1028,7 +1028,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnUpVerMiddleBack);
             }
 
-            ExplainTurnCube(CubeLang.TurnUpMiddleToFrontFace_Text);
+            _ = ExplainTurnCube(CubeLang.TurnUpMiddleToFrontFace_Text);
             ClassCubeTurns.TurnUpVerMiddleTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -1053,7 +1053,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnRightCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnRightFaceToLeft_Text);
+            _ = ExplainTurnCube(CubeLang.TurnRightFaceToLeft_Text);
             ClassCubeTurns.TurnRightFaceTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -1078,7 +1078,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnUpCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnUpFaceToLeft_Text);
+            _ = ExplainTurnCube(CubeLang.TurnUpFaceToLeft_Text);
             ClassCubeTurns.TurnUpFaceTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -1109,7 +1109,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnFrontHorMiddleLeft);
             }
 
-            ExplainTurnCube(CubeLang.TurnFrontMiddleToRightFace_Text);
+            _ = ExplainTurnCube(CubeLang.TurnFrontMiddleToRightFace_Text);
             ClassCubeTurns.TurnFrontHorMiddleTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -1134,7 +1134,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnDownCCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnDownFaceToRight_Text);
+            _ = ExplainTurnCube(CubeLang.TurnDownFaceToRight_Text);
             ClassCubeTurns.TurnDownFaceTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -1159,7 +1159,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnUpCCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnUpFaceToRight_Text);
+            _ = ExplainTurnCube(CubeLang.TurnUpFaceToRight_Text);
             ClassCubeTurns.TurnUpFaceTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -1190,7 +1190,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnFrontHorMiddleRight);
             }
 
-            ExplainTurnCube(CubeLang.TurnRightMiddleToFrontFace_Text);
+            _ = ExplainTurnCube(CubeLang.TurnRightMiddleToFrontFace_Text);
             ClassCubeTurns.TurnFrontHorMiddleTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -1215,7 +1215,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnDownCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnDownFaceToLeft_Text);
+            _ = ExplainTurnCube(CubeLang.TurnDownFaceToLeft_Text);
             ClassCubeTurns.TurnDownFaceTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -1240,7 +1240,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnLeftCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnLeftFaceToLeft_Text);
+            _ = ExplainTurnCube(CubeLang.TurnLeftFaceToLeft_Text);
             ClassCubeTurns.TurnLeftFaceTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -1271,7 +1271,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnUpVerMiddleFront);
             }
 
-            ExplainTurnCube(CubeLang.TurnFrontMiddleToUpFace_Text);
+            _ = ExplainTurnCube(CubeLang.TurnFrontMiddleToUpFace_Text);
             ClassCubeTurns.TurnUpVerMiddleTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -1296,7 +1296,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnRightCCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnRightFaceToRight_Text);
+            _ = ExplainTurnCube(CubeLang.TurnRightFaceToRight_Text);
             ClassCubeTurns.TurnRightFaceTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -1321,7 +1321,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnFrontCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnFrontFaceToLeft_Text);
+            _ = ExplainTurnCube(CubeLang.TurnFrontFaceToLeft_Text);
             ClassCubeTurns.TurnFrontFaceTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -1352,7 +1352,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnUpHorMiddleRight);
             }
 
-            ExplainTurnCube(CubeLang.TurnRightMiddleToUpFace_Text);
+            _ = ExplainTurnCube(CubeLang.TurnRightMiddleToUpFace_Text);
             ClassCubeTurns.TurnUpHorMiddleTo("CCW");
             GetCubeColorsFromArrays();
         }
@@ -1377,7 +1377,7 @@ namespace CubeSolver
                 Globals.lCubeTurns.Add(Globals.turnBackCCW);
             }
 
-            ExplainTurnCube(CubeLang.TurnBackFaceToRight_Text);
+            _ = ExplainTurnCube(CubeLang.TurnBackFaceToRight_Text);
             ClassCubeTurns.TurnBackFaceTo("CW");
             GetCubeColorsFromArrays();
         }
@@ -1390,7 +1390,7 @@ namespace CubeSolver
             if (!bSolvingCube)
             {
                 bTurnIsBackwards = false;
-                ExplainTurnCube(CubeLang.TurnCubeFrontFaceToLeftFace_Text);
+                _ = ExplainTurnCube(CubeLang.TurnCubeFrontFaceToLeftFace_Text);
             }
 
             ClassCubeTurns.TurnUpFaceTo("CW");
@@ -1407,7 +1407,7 @@ namespace CubeSolver
             if (!bSolvingCube)
             {
                 bTurnIsBackwards = false;
-                ExplainTurnCube(CubeLang.TurnCubeFrontFaceToRightFace_Text);
+                _ = ExplainTurnCube(CubeLang.TurnCubeFrontFaceToRightFace_Text);
             }
 
             ClassCubeTurns.TurnUpFaceTo("CCW");
@@ -1424,7 +1424,7 @@ namespace CubeSolver
             if (!bSolvingCube)
             {
                 bTurnIsBackwards = false;
-                ExplainTurnCube(CubeLang.TurnCubeFrontFaceToUpFace_Text);
+                _ = ExplainTurnCube(CubeLang.TurnCubeFrontFaceToUpFace_Text);
             }
 
             ClassCubeTurns.TurnRightFaceTo("CW");
@@ -1441,7 +1441,7 @@ namespace CubeSolver
             if (!bSolvingCube)
             {
                 bTurnIsBackwards = false;
-                ExplainTurnCube(CubeLang.TurnCubeFrontFaceToDownFace_Text);
+                _ = ExplainTurnCube(CubeLang.TurnCubeFrontFaceToDownFace_Text);
             }
 
             ClassCubeTurns.TurnRightFaceTo("CCW");
@@ -1458,7 +1458,7 @@ namespace CubeSolver
             if (!bSolvingCube)
             {
                 bTurnIsBackwards = false;
-                ExplainTurnCube(CubeLang.TurnCubeUpFaceToRightFace_Text);
+                _ = ExplainTurnCube(CubeLang.TurnCubeUpFaceToRightFace_Text);
             }
 
             ClassCubeTurns.TurnFrontFaceTo("CW");
@@ -1475,7 +1475,7 @@ namespace CubeSolver
             if (!bSolvingCube)
             {
                 bTurnIsBackwards = false;
-                ExplainTurnCube(CubeLang.TurnCubeUpFaceToLeftFace_Text);
+                _ = ExplainTurnCube(CubeLang.TurnCubeUpFaceToLeftFace_Text);
             }
 
             ClassCubeTurns.TurnFrontFaceTo("CCW");
@@ -1488,7 +1488,7 @@ namespace CubeSolver
         /// Explain the turn of the cube called from OnTurn....Clicked and Turn.... methods
         /// </summary>
         /// <param name="cTurnCubeText"></param>
-        private async void ExplainTurnCube(string cTurnCubeText)
+        private async Task ExplainTurnCube(string cTurnCubeText)
         {
             // Convert text to speech
             ExplainTurnCubeSpeech(cTurnCubeText);
