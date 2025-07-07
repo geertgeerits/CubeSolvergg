@@ -44,39 +44,40 @@
             pckLanguage.SelectedIndex = Globals.cLanguage switch
             {
                 "ar" => 0,      // العربية (al'Arabiyyeẗ) - Arabic
-                "id" => 1,      // Bahasa Indonesia
-                "cs" => 2,      // Čeština - Czech
-                "da" => 3,      // Dansk - Danish
-                "de" => 4,      // Deutsch - German
-                "es" => 6,      // Español - Spanish
-                "fr" => 7,      // Français - French
-                "ko" => 8,      // 한국어 (Hangugeo) - Korean
-                "hi" => 9,      // हिन्दी (Hindī)
-                "it" => 10,     // Italiano - Italian
-                "hu" => 11,     // Magyar - Hungarian
-                "nl" => 12,     // Nederlands - Dutch
-                "ja" => 13,     // 日本語 (Nihongo) - Japanese
-                "nb" => 14,     // Norsk Bokmål - Norwegian Bokmål
-                "pl" => 15,     // Polski - Polish
-                "pt" => 16,     // Português - Portuguese
-                "ro" => 17,     // Română - Romanian
-                "fi" => 18,     // Suomi - Finnish
-                "sv" => 19,     // Svenska - Swedish
-                "tr" => 20,     // Türkçe - Turkish
-                "uk" => 21,     // Українська (Ukraїnska) - Ukrainian
-                "zh-CN" => 22,  // 中文 (Zhōngwén) - Chinese simplified
-                "zh-TW" => 23,  // 中文 (Zhōngguó rén) - Chinese traditional
-                _ => 5,         // English
+                "bn" => 1,      // বাংলা (Bāŋlā) - Bengali
+                "id" => 2,      // Bahasa Indonesia
+                "cs" => 3,      // Čeština - Czech
+                "da" => 4,      // Dansk - Danish
+                "de" => 5,      // Deutsch - German
+                "el" => 6,      // Ελληνικά (Elliniká) - Greek
+                "es" => 8,      // Español - Spanish
+                "fr" => 9,      // Français - French
+                "ko" => 10,     // 한국어 (Hangugeo) - Korean
+                "hi" => 11,     // हिन्दी (Hindī)
+                "it" => 12,     // Italiano - Italian
+                "hu" => 13,     // Magyar - Hungarian
+                "nl" => 14,     // Nederlands - Dutch
+                "ja" => 15,     // 日本語 (Nihongo) - Japanese
+                "nb" => 16,     // Norsk Bokmål - Norwegian Bokmål
+                "pl" => 17,     // Polski - Polish
+                "pt" => 18,     // Português - Portuguese
+                "ro" => 19,     // Română - Romanian
+                "fi" => 20,     // Suomi - Finnish
+                "sv" => 21,     // Svenska - Swedish
+                "tr" => 22,     // Türkçe - Turkish
+                "ur" => 23,     // اُردُو (Urduw) - Urdu
+                "uk" => 24,     // Українська (Ukraїnska) - Ukrainian
+                "zh-CN" => 25,  // 中文 (Zhōngwén) - Chinese simplified
+                "zh-TW" => 26,  // 中文 (Zhōngguó rén) - Chinese traditional
+                _ => 7,         // English
             };
 
             // Languages to add in the future:
             /*
-            "bn"   // বাংলা (Bāŋlā) - Bengali
             "ru"   // Русский язык (Russkiĭ âzyk) - Russian
-            "ur"   // اُردُو (Urduw) - Urdu
             "vi"   // Tiếng Việt (Việt ngữ) - Vietnamese
             */
-            
+
             //// Fill the picker with the speech languages and select the saved language in the picker
             ClassSpeech.FillPickerWithSpeechLanguages(pckLanguageSpeech);
 
@@ -121,28 +122,31 @@
                 Globals.cLanguage = selectedIndex switch
                 {
                     0 => "ar",      // العربية (al'Arabiyyeẗ) - Arabic
-                    1 => "id",      // Bahasa Indonesia
-                    2 => "cs",      // Čeština - Czech
-                    3 => "da",      // Dansk - Danish
-                    4 => "de",      // Deutsch - German
-                    6 => "es",      // Español - Spanish
-                    7 => "fr",      // Français - French
-                    8 => "ko",      // 한국어 (Hangugeo) - Korean
-                    9 => "hi",      // हिन्दी (Hindī)
-                    10 => "it",     // Italiano - Italian
-                    11 => "hu",     // Magyar - Hungarian
-                    12 => "nl",     // Nederlands - Dutch
-                    13 => "ja",     // 日本語 (Nihongo) - Japanese
-                    14 => "nb",     // Norsk Bokmål - Norwegian Bokmål
-                    15 => "pl",     // Polski - Polish
-                    16 => "pt",     // Português - Portuguese
-                    17 => "ro",     // Română - Romanian
-                    18 => "fi",     // Suomi - Finnish
-                    19 => "sv",     // Svenska - Swedish
-                    20 => "tr",     // Türkçe - Turkish
-                    21 => "uk",     // Українська (Ukraїnska) - Ukrainian
-                    22 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
-                    23 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
+                    1 => "bn",      // বাংলা (Bāŋlā) - Bengali
+                    2 => "id",      // Bahasa Indonesia
+                    3 => "cs",      // Čeština - Czech
+                    4 => "da",      // Dansk - Danish
+                    5 => "de",      // Deutsch - German
+                    6 => "el",      // Ελληνικά (Elliniká) - Greek
+                    8 => "es",      // Español - Spanish
+                    9 => "fr",      // Français - French
+                    10 => "ko",     // 한국어 (Hangugeo) - Korean
+                    11 => "hi",     // हिन्दी (Hindī)
+                    12 => "it",     // Italiano - Italian
+                    13 => "hu",     // Magyar - Hungarian
+                    14 => "nl",     // Nederlands - Dutch
+                    15 => "ja",     // 日本語 (Nihongo) - Japanese
+                    16 => "nb",     // Norsk Bokmål - Norwegian Bokmål
+                    17 => "pl",     // Polski - Polish
+                    18 => "pt",     // Português - Portuguese
+                    19 => "ro",     // Română - Romanian
+                    20 => "fi",     // Suomi - Finnish
+                    21 => "sv",     // Svenska - Swedish
+                    22 => "tr",     // Türkçe - Turkish
+                    23 => "ur",     // اُردُو (Urduw) - Urdu
+                    24 => "uk",     // Українська (Ukraїnska) - Ukrainian
+                    25 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
+                    26 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
                     _ => "en",      // English
                 };
             }
