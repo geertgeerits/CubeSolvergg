@@ -44,8 +44,8 @@
             pckLanguage.SelectedIndex = Globals.cLanguage switch
             {
                 "ar" => 0,      // العربية (al'Arabiyyeẗ) - Arabic
-                "bn" => 1,      // বাংলা (Bāŋlā) - Bengali
-                "id" => 2,      // Bahasa Indonesia
+                "id" => 1,      // Bahasa Indonesia
+                "bn" => 2,      // বাংলা (Bāŋlā) - Bengali
                 "cs" => 3,      // Čeština - Czech
                 "da" => 4,      // Dansk - Danish
                 "de" => 5,      // Deutsch - German
@@ -67,8 +67,8 @@
                 "tr" => 22,     // Türkçe - Turkish
                 "ur" => 23,     // اُردُو (Urduw) - Urdu
                 "uk" => 24,     // Українська (Ukraїnska) - Ukrainian
-                "zh-CN" => 25,  // 中文 (Zhōngwén) - Chinese simplified
-                "zh-TW" => 26,  // 中文 (Zhōngguó rén) - Chinese traditional
+                "zh-TW" => 25,  // 中文 (Zhōngguó rén) - Chinese traditional
+                "zh-CN" => 26,  // 中文 (Zhōngwén) - Chinese simplified
                 _ => 7,         // English
             };
 
@@ -122,8 +122,8 @@
                 Globals.cLanguage = selectedIndex switch
                 {
                     0 => "ar",      // العربية (al'Arabiyyeẗ) - Arabic
-                    1 => "bn",      // বাংলা (Bāŋlā) - Bengali
-                    2 => "id",      // Bahasa Indonesia
+                    1 => "id",      // Bahasa Indonesia
+                    2 => "bn",      // বাংলা (Bāŋlā) - Bengali
                     3 => "cs",      // Čeština - Czech
                     4 => "da",      // Dansk - Danish
                     5 => "de",      // Deutsch - German
@@ -145,8 +145,8 @@
                     22 => "tr",     // Türkçe - Turkish
                     23 => "ur",     // اُردُو (Urduw) - Urdu
                     24 => "uk",     // Українська (Ukraїnska) - Ukrainian
-                    25 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
-                    26 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
+                    25 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
+                    26 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
                     _ => "en",      // English
                 };
             }
@@ -594,6 +594,10 @@
                 Preferences.Default.Remove("SettingCubeColor6");
                 Preferences.Default.Remove("SettingKociembaSolution");
             }
+
+            // Reset to the default culture
+            CultureInfo defaultCulture = CultureInfo.CurrentCulture;
+            CultureInfo.CurrentUICulture = defaultCulture;
 
             // Wait 400 milliseconds otherwise the settings are not saved in Android.
             Task.Delay(400).Wait();

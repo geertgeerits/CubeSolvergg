@@ -650,7 +650,7 @@ Tämä ei takaa, että kaikki kuutiot voidaan ratkaista.</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Tekstin kääntämiseen käytettiin Google Kääntäjää. Tämä ei takaa, että kaikki käännökset ovat oikeita.
-Tuetut kielet ovat: arabia, kiina (yksinkertaistettu), kiina (perinteinen), tšekki, tanska, hollanti, englanti, suomi, ranska, saksa, hindi, unkari, indonesia, italia, japani, korea, norja, puola, portugali, romania, espanja, ruotsi, turkki ja ukraina.</value>
+Tuetut kielet ovat: arabia, bengali, kiina (yksinkertaistettu), kiina (perinteinen), tšekki, tanska, hollanti, englanti, suomi, ranska, saksa, kreikka, hindi, unkari, indonesia, italia, japani, korea, norja, puola, portugali, romania, espanja, ruotsi, turkki, ukraina ja urdu.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Voit aina ottaa minuun yhteyttä korjauksista.</value>
