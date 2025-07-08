@@ -147,7 +147,369 @@
   <data name="Copyright_Text" xml:space="preserve">
     <value>کاپی رائٹ:</value>
   </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>پچھلی طرف</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>نیچے کی طرف</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>مکعب رنگ:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>سامنے کی طرف</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>اندر کا منظر</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>بائیں طرف</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>باہر کا منظر</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>دائیں طرف</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>اوپری طرف</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>طے شدہ</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>مکعب کھیلیں یا حل کریں۔</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>اختلاف کرنا</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>ای میل: </value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>خرابی</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>تقریر کے ذریعے وضاحت:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>متن کے ذریعے وضاحت:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>کیوب سائیڈز کو 'کلاک وائز' اور 'کاؤنٹر کلاک وائز' گھمائیں:
+اگر سامنے کو 'گھڑی کی سمت' موڑنے کا حکم دیا جائے تو یہ اس سمت ہے جس طرف ہاتھ مڑ رہے ہیں۔ 'کلاک وائز' دوسری سمت مڑ رہا ہے۔
+دوسری طرفوں کے لیے آپ کو ہمیشہ 'تصور' کرنا پڑتا ہے کہ آپ رخ کرنے کے لیے سیدھے سامنے ہیں۔ لہذا اگر یہ کہتا ہے کہ پیچھے کی طرف 'گھڑی کی سمت' کی طرف مڑیں تو تصور کریں کہ آپ کیوب کے دوسری طرف ہیں اور پھر پیچھے کو 'گھڑی کی سمت' موڑ دیں۔ کیوب کو خود نہ گھمائیں۔</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>محفوظ شدہ کیوب کھولیں۔</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>موجودہ کیوب کو محفوظ کریں۔</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>گڑبڑ شدہ کیوب سے رنگوں کو اس کیوب میں منتقل کریں۔ سب سے اوپر رنگ بار سے ایک رنگ منتخب کریں اور پھر ان کو تبدیل کرنے کے لیے کیوب کے ٹکڑوں کو تھپتھپائیں۔ اس حصے کو چھوڑنے کے لیے اس بٹن کو دوبارہ دبائیں اور 'حل' بٹن کو دبائیں۔</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>ہیکساڈیسیمل کلر کوڈز:
+
+حروف 1-2: سرخ
+حروف 3-4: سبز
+حروف 5-6: نیلا</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>معلومات</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>زبان کی تقریر:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>زبان:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>سافٹ ویئر 'جیسے ہے' فراہم کیا جاتا ہے، بغیر کسی قسم کی وارنٹی کے، ظاہر یا مضمر، بشمول تجارتی قابلیت، کسی خاص مقصد کے لیے فٹنس اور خلاف ورزی کی وارنٹیوں تک محدود نہیں۔ کسی بھی صورت میں مصنف اور/یا ناشر کسی بھی دعوے، نقصانات یا دیگر ذمہ داریوں کے لیے ذمہ دار نہیں ہوں گے، خواہ وہ معاہدے کی کارروائی، تشدد یا کسی اور صورت میں، سافٹ ویئر یا سافٹ ویئر کے استعمال یا دیگر معاملات سے پیدا ہونے والے، اس سے یا اس کے سلسلے میں ہو۔</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>لائسنس</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>یہ ایپلیکیشن غیر تجارتی مقاصد کے لیے آزادانہ طور پر استعمال کی جا سکتی ہے۔
+اس پروگرام کو مکمل طور پر اپنی ذمہ داری پر استعمال کریں۔</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>مرکزی مربع کا رنگ صرف ایک بار ہوسکتا ہے۔</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>کونے کیوب کے رنگ مختلف ہونے چاہئیں۔</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>کنارے کیوب کے رنگ مختلف ہونے چاہئیں۔</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>مبارک ہو، کیوب حل ہو گیا ہے۔</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>کیوب حل نہیں ہوا ہے۔</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>ہر دستیاب رنگ میں سے، ایک ہی رنگ کے نو ہونے چاہئیں۔</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>مکعب حل کرنے والا</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>نہیں</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>رازداری کی پالیسی:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>کوئی ذاتی اور دیگر ڈیٹا میرے اور دوسروں کو محفوظ یا منتقل نہیں کیا جاتا ہے۔</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>درخواست دوبارہ شروع کی جائے گی۔</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>دوبارہ ترتیب دیں۔</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>کچھ تبدیل شدہ ترتیبات کو لاگو کرنے کے لیے محفوظ کرنا ضروری ہے۔
+محفوظ کرنے کے بعد، ایپلیکیشن دوبارہ شروع ہو جاتی ہے اور کیوب کو دوبارہ ترتیب دیا جاتا ہے۔</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>محفوظ کریں۔</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>ترتیبات</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>حل کریں۔</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>رک جاؤ</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>متن میں ایک یا زیادہ حروف ہیں جن کی اجازت نہیں ہے۔
+
+اجازت نہیں ہے:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>اس ڈیوائس پر ٹیکسٹ ٹو اسپیچ تعاون یافتہ نہیں ہے۔</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>اندھیرا</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>روشنی</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>سسٹم</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>تھیم:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>واپس جاؤ</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>آگے بڑھو</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>مدد</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>کیوب کھولیں۔</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>کیوب کو محفوظ کریں۔</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>ٹوگل بٹن: کیوب پر رنگ سیٹ کریں۔</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>ورژن:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>ویب سائٹ: </value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>جی ہاں</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>کیوب کو حل نہیں کیا جا سکتا.
+
+ممکنہ وجہ اس مکعب میں رنگوں کی غلط منتقلی ہے۔</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>ملی سیکنڈ میں وقت:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>موڑ کی تعداد:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>حل کے طریقے:
+- خودکار: اپنے اصلی کیوب کے رنگ داخل کرنے کے لیے اسکرین کے نیچے کیوب بٹن کا استعمال کریں۔ کام کرنے کے بعد، بٹن کو دوبارہ دبائیں، پھر 'حل کریں' کو تھپتھپائیں۔ کیوب کو 'Kociemba' الگورتھم کا استعمال کرتے ہوئے حل کیا جائے گا۔ مجوزہ چالوں کو اپنے اصلی کیوب میں منتقل کریں۔
+اگر آپ سیٹنگز میں 'Kociemba' الگورتھم کو غیر فعال کرتے ہیں تو ایپ 'Friedrich' (CFOP) طریقہ استعمال کرے گی۔
+- ریورس کریں: کیوب کو گھیرنے کے لیے تیر والے بٹنوں کا استعمال کریں، پھر 'Solve' کو دبائیں۔ کیوب کو ریورس ترتیب میں حل کیا جائے گا۔
+- دستی طور پر: ہوم اسکرین پر، کیوب کو حل کرنے اور حل کرنے کے لیے تیر والے بٹنوں کا استعمال کریں۔ متبادل طور پر، کیوب بٹن کو دو بار دبائیں، پھر حل بٹن دبائیں، اور کیوب کو یا تو 'Kociemba' یا 'CFOP' طریقہ استعمال کرتے ہوئے حل کیا جائے گا۔
+
+یہ اس بات کی ضمانت نہیں ہے کہ تمام کیوبز کو حل کیا جاسکتا ہے۔</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>کیوب اپنی سابقہ ​​حالت میں واپس آ گیا ہے۔</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>مرکز کے ٹکڑوں کے رنگ غلط ہیں۔</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>ہر دستیاب رنگ میں سے، ایک کنارے کیوب پر ایک ہی رنگ کے چار ہونے چاہئیں۔</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>ہر دستیاب رنگ میں سے، کونے کیوب پر ایک ہی رنگ کے چار ہونے چاہئیں۔</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>اس درخواست کے مصنف کو ای میل بھیجیں۔</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>اس ایپلی کیشن کی ویب سائٹ کھولیں۔</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>آزمائشی حل:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>کیوب کو گھماؤ</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>کیوب کو دوبارہ ترتیب دیں۔</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>کیوب کو دوبارہ ترتیب دیں۔</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>کیوب کو گھماؤ۔</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>کیوب کو حل کریں۔</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>ایک موڑ واپس جائیں۔</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>ایک بار آگے بڑھیں۔</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>ایک موڑ واپس جائیں۔</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>ایک بار آگے بڑھیں۔</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>کیوب کو بغیر مداخلت کے حل کریں۔</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>کیوب کو بغیر مداخلت کے حل کریں۔</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>مداخلت کے ساتھ کیوب کو حل کریں۔</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>مداخلت کے ساتھ کیوب کو حل کریں۔</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>ٹوگل بٹن: کیوب کو مداخلت کے ساتھ یا بغیر حل کریں۔</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>کیوب کو حل کریں۔</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>سائیڈ کی گردشیں: طرف کو گھڑی کی سمت میں ایک چوتھائی موڑ دیں (90 ڈگری)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>اوپری طرف</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>نیچے کی طرف</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>سامنے کی طرف</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>پچھلی طرف</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>بائیں طرف</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>دائیں طرف</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>سلائس حرکتیں: درمیانی تہہ کو گھڑی کی سمت میں ایک چوتھائی موڑ دیں (90 ڈگری)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>L سمت کی پیروی کرتا ہے۔</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>D سمت کی پیروی کرتا ہے۔</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>F سمت کی پیروی کرتا ہے۔</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>مکعب کی گردش: کیوب کو گھڑی کی سمت میں ایک چوتھائی موڑ دیں (90 ڈگری)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>R سمت کی پیروی کرتا ہے۔</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>U سمت کی پیروی کرتا ہے۔</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>F سمت کی پیروی کرتا ہے۔</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>چوڑی حرکتیں: 2 تہوں کو ایک بار ایک سہ ماہی میں گھڑی کی سمت موڑیں (90 ڈگری)، وہ لوئر کیس میں ہیں: u, d, f, b, l, r۔</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>Apostrophe (مثال کے طور پر، U') گھڑی کے مخالف سہ ماہی موڑ (90 ڈگری) کی نشاندہی کرتا ہے۔</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>نمبر 2 (مثال کے طور پر، U2) کا مطلب ہے آدھا موڑ (180 ڈگری)۔</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>کریڈٹ: یہ ایپ 'Herbert Kociemba' (Kociemba ٹو فیز الگورتھم کے مصنف) اور 'Matt Colbourne' کا اوپن سورس کوڈ استعمال کرتی ہے۔ ان کے تعاون سے کیوب حل کرنے کی کارکردگی میں نمایاں بہتری آئی ہے۔ ان کے کام کا خصوصی شکریہ۔</value>
+  </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>پہلی گیم لانچ ہونے میں {0} سیکنڈ تک لگ سکتے ہیں۔</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>کوسیمبا طریقہ:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>طریقہ:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>الٹا آرڈر</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>متن کے ترجمے کے لیے گوگل ٹرانسلیٹ کا استعمال کیا گیا۔ یہ اس بات کی ضمانت نہیں ہے کہ تمام ترجمے درست ہیں۔
+معاون زبانیں ہیں: عربی، بنگالی، چینی آسان، چینی روایتی، چیک، ڈینش، ڈچ، انگریزی، فینیش، فرانسیسی، جرمن، یونانی، ہندی، ہنگری، انڈونیشی، اطالوی، جاپانی، کورین، نارویجن، پولش، پرتگالی، رومانیہ، ہسپانوی، سویڈش، ترکی، یوکرینی اور اردو۔</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>آپ کسی بھی اصلاح کے لیے مجھ سے ہمیشہ رابطہ کر سکتے ہیں۔</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>متن سے تقریر: تمام زبانیں تعاون یافتہ نہیں ہیں جو ایپلیکیشن کی ترتیبات میں فراہم کی گئی ہیں۔
+یہ اختیار ڈیوائس سے ڈیوائس اور انسٹال شدہ زبانوں میں مختلف ہوتا ہے۔ یہ ممکن ہے کہ کچھ زبانوں کے لیے تقریر کا ترجمہ انٹرنیٹ پر متعلقہ خدمات کے ذریعے کیا جاتا ہے۔</value>
+  </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>انٹرنیٹ سے کنکشن دستیاب نہیں ہے۔</value>
+  </data>
   <data name="AverageTurns_Text" xml:space="preserve">
     <value>'Kociemba' طریقہ استعمال کرتے ہوئے کیوب کو حل کرنے کے لیے موڑ کی اوسط تعداد {0} ہے، 'Fridrich' (CFOP) طریقہ استعمال کرتے ہوئے {1} ہے۔</value>
+  </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>فونٹ سائز:</value>
   </data>
 </root>

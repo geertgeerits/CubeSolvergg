@@ -147,7 +147,374 @@
   <data name="Copyright_Text" xml:space="preserve">
     <value>কপিরাইট:</value>
   </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>পিছনের দিক</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>নিচের দিক</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>ঘনকীয় রঙ:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>সামনের দিক</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>ভেতরের দৃশ্য</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>বাম দিক</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>বাইরের দৃশ্য</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>ডান দিক</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>উপরের দিক</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>ডিফল্ট</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>কিউবটি খেলুন বা সমাধান করুন।</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>অসম্মতি</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>ইমেইল: </value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>ত্রুটি</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>বক্তৃতা দ্বারা ব্যাখ্যা করা হয়েছে:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>টেক্সট দ্বারা ব্যাখ্যা করা হয়েছে:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>ঘনকের পাশগুলো 'ঘড়ির কাঁটার দিকে' এবং 'ঘড়ির কাঁটার বিপরীতে' ঘোরান:
+
+যদি সামনের দিকটা 'ঘড়ির কাঁটার দিকে' ঘোরানোর নির্দেশ দেওয়া হয়, তাহলে এটি হাতগুলো যে দিকে ঘুরছে সেই দিকেই হবে। 'ঘড়ির কাঁটার বিপরীতে' ঘোরানো হচ্ছে অন্য দিকে।
+
+অন্য দিকের জন্য আপনাকে সবসময় 'কল্পনা' করতে হবে যে আপনি যে দিকে ঘুরতে হবে তার ঠিক সামনে আছেন। তাই যদি বলা হয় 'ঘড়ির কাঁটার দিকে' ঘুরো, তাহলে কল্পনা করুন যে আপনি ঘনকের অন্য দিকে আছেন এবং তারপর পিছনের দিকটা 'ঘড়ির কাঁটার দিকে' ঘুরো। ঘনকটি নিজেই ঘোরাবেন না।</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>সংরক্ষিত কিউবটি খুলুন।</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>বর্তমান কিউবটি সংরক্ষণ করুন।</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>এলোমেলো কিউব থেকে এই কিউবে রঙগুলি স্থানান্তর করুন। উপরের রঙ বার থেকে একটি রঙ নির্বাচন করুন এবং তারপরে কিউবের টুকরোগুলি পরিবর্তন করতে ট্যাপ করুন। এই বিভাগটি ছেড়ে যেতে আবার এই বোতামটি টিপুন এবং 'সমাধান করুন' বোতামটি টিপুন।</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>হেক্সাডেসিমেল রঙের কোড:
+
+অক্ষর ১-২: লাল
+অক্ষর ৩-৪: সবুজ
+অক্ষর ৫-৬: নীল</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>তথ্য</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>ভাষা বক্তৃতা:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>ভাষা:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>সফটওয়্যারটি 'যেমন আছে তেমন'ভাবে সরবরাহ করা হয়েছে, কোনও ধরণের, স্পষ্ট বা অন্তর্নিহিত ওয়ারেন্টি ছাড়াই, যার মধ্যে রয়েছে ব্যবসায়িকতার ওয়ারেন্টি, নির্দিষ্ট উদ্দেশ্যে উপযুক্ততা এবং অ-লঙ্ঘন। কোনও পরিস্থিতিতেই লেখক এবং/অথবা প্রকাশক কোনও দাবি, ক্ষতি বা অন্যান্য দায়বদ্ধতার জন্য দায়ী থাকবেন না, তা চুক্তির কোনও পদক্ষেপ, ক্ষতিপূরণ বা অন্যথায়, সফ্টওয়্যার থেকে উদ্ভূত, এর বাইরে বা এর সাথে সম্পর্কিত, সফ্টওয়্যারের ব্যবহার বা অন্যান্য লেনদেনের ক্ষেত্রে।</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>লাইসেন্স</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>এই অ্যাপ্লিকেশনটি অ-বাণিজ্যিক উদ্দেশ্যে অবাধে ব্যবহার করা যেতে পারে।
+এই প্রোগ্রামটি সম্পূর্ণরূপে আপনার নিজের ঝুঁকিতে ব্যবহার করুন।</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>কেন্দ্রীয় বর্গক্ষেত্রের রঙ কেবল একবারই ঘটতে পারে।</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>একটি কোণার ঘনকের রঙ অবশ্যই ভিন্ন হতে হবে।</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>একটি প্রান্ত ঘনকের রঙ অবশ্যই ভিন্ন হতে হবে।</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>অভিনন্দন, কিউবটি সমাধান করা হয়েছে।</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>ঘনকটি সমাধান করা হয়নি।</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>প্রতিটি উপলব্ধ রঙের মধ্যে, একই রঙের নয়টি থাকতে হবে।</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>কিউব সলভার</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>না</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>গোপনীয়তা নীতি:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>আমার এবং অন্যদের কাছে কোনও ব্যক্তিগত এবং অন্যান্য তথ্য সংরক্ষণ করা হয় না বা প্রেরণ করা হয় না।</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>অ্যাপ্লিকেশনটি পুনরায় চালু হবে।</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>রিসেট</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>কিছু পরিবর্তিত সেটিংস প্রয়োগ করার জন্য সেভ করতে হবে।
+সেভ করার পর, অ্যাপ্লিকেশনটি পুনরায় চালু করা হয় এবং কিউবটি রিসেট করা হয়।</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>সংরক্ষণ করুন</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>সেটিংস</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>সমাধান করুন</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>থামো</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>লেখাটিতে এক বা একাধিক অক্ষর রয়েছে যা অনুমোদিত নয়।
+
+অনুমোদিত নয়:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>এই ডিভাইসে টেক্সট টু স্পিচ সমর্থিত নয়।</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>অন্ধকার</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>আলো</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>সিস্টেম</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>থিম:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>ফিরে যাও</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>এগিয়ে যান</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>সাহায্য</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>কিউবটি খুলুন</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>কিউবটি সংরক্ষণ করুন</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>টগল বোতাম: কিউবের রঙ সেট করুন</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>সংস্করণ:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>ওয়েবসাইট: </value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>হাঁ</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>ঘনকটি সমাধান করা যাচ্ছে না।
+
+সম্ভাব্য কারণ হল এই ঘনকে রঙের ভুল স্থানান্তর।</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>মিলিসেকেন্ডে সময়:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>বাঁকের সংখ্যা:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>সমাধান পদ্ধতি:
+- স্বয়ংক্রিয়: আপনার আসল ঘনকের রঙ ইনপুট করতে স্ক্রিনের নীচের কিউব বোতামটি ব্যবহার করুন। একবার হয়ে গেলে, আবার বোতামটি টিপুন, তারপর 'সমাধান করুন' এ আলতো চাপুন। 'কোসিম্বা' অ্যালগরিদম ব্যবহার করে ঘনকটি সমাধান করা হবে। প্রস্তাবিত পদক্ষেপগুলি আপনার আসল ঘনকে স্থানান্তর করুন।
+
+আপনি যদি সেটিংসে 'কোসিম্বা' অ্যালগরিদম অক্ষম করেন, তাহলে অ্যাপটি 'ফ্রেডরিখ' (CFOP) পদ্ধতি ব্যবহার করবে।
+
+- বিপরীত: ঘনকটি স্ক্র্যাম্বল করতে তীর কী ব্যবহার করুন, তারপর 'সমাধান করুন' টিপুন। ঘনকটি বিপরীত ক্রমে সমাধান করা হবে।
+
+- ম্যানুয়ালি: হোম স্ক্রিনে, ঘনকটি স্ক্র্যাম্বল করতে এবং সমাধান করতে তীর কী ব্যবহার করুন। বিকল্পভাবে, ঘনক বোতামটি দুবার টিপুন, তারপর সমাধান বোতামটি টিপুন, এবং ঘনকটি 'কোসিম্বা' বা 'সিএফওপি' পদ্ধতি ব্যবহার করে সমাধান করা হবে।
+
+এটি কোনও গ্যারান্টি নয় যে সমস্ত ঘনক সমাধান করা যেতে পারে।</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>ঘনকটি তার আগের অবস্থায় ফিরে এসেছে।</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>মাঝখানের অংশগুলোর রঙ ভুল।</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>প্রতিটি উপলব্ধ রঙের মধ্যে, একটি প্রান্ত ঘনকে একই রঙের চারটি থাকতে হবে।</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>প্রতিটি উপলব্ধ রঙের মধ্যে, একটি কোণার ঘনক্ষেত্রে একই রঙের চারটি থাকতে হবে।</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>এই অ্যাপ্লিকেশনটির লেখককে একটি ইমেল পাঠান।</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>এই অ্যাপ্লিকেশনটির ওয়েবসাইটটি খুলুন।</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>পরীক্ষিত সমাধান:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>কিউবটা আঁচড়ে নাও</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>কিউবটি রিসেট করুন</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>কিউবটি রিসেট করুন।</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>কিউবটি নাড়াচাড়া করো।</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>কিউবটি সমাধান করো</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>এক পালা ফিরে যাও।</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>এক পালা এগিয়ে যান।</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>এক পালা করে ফিরে যাও।</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>এক পালা সামনে যাও।</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>হস্তক্ষেপ ছাড়াই ঘনকটি সমাধান করুন</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>হস্তক্ষেপ ছাড়াই ঘনকটি সমাধান করুন।</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>হস্তক্ষেপের মাধ্যমে ঘনকটি সমাধান করুন</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>হস্তক্ষেপের মাধ্যমে ঘনকটি সমাধান করুন।</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>টগল বোতাম: হস্তক্ষেপ সহ বা ছাড়াই ঘনকটি সমাধান করুন</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>ঘনকটি সমাধান করো।</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>পার্শ্ব ঘূর্ণন: পাশটি এক চতুর্থাংশ ঘড়ির কাঁটার দিকে ঘুরিয়ে (৯০ ডিগ্রি)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>উপরের দিক</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>নিচের দিক</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>সামনের দিক</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>পিছনের দিক</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>বাম দিক</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>ডান দিক</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>স্লাইস মুভ: মাঝের স্তরটি ঘড়ির কাঁটার দিকে এক চতুর্থাংশ ঘুরিয়ে দিন (৯০ ডিগ্রি)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>L দিক অনুসরণ করে</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>D দিক অনুসরণ করে</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>F দিক অনুসরণ করে</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>ঘনক ঘূর্ণন: ঘনকটিকে ঘড়ির কাঁটার দিকে এক চতুর্থাংশ ঘুরিয়ে দিন (90 ডিগ্রি)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>R দিক অনুসরণ করে</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>U দিক অনুসরণ করে</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>F দিক অনুসরণ করে</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>প্রশস্ত নড়াচড়া: একবারে দুটি স্তর ঘুরিয়ে দিন, এক চতুর্থাংশ ঘড়ির কাঁটার দিকে (90 ডিগ্রি), এগুলি ছোট হাতের অক্ষরে: u, d, f, b, l, r।</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>একটি অ্যাপোস্ট্রফি (যেমন, U') ঘড়ির কাঁটার বিপরীতে একটি চতুর্থাংশ বাঁক (90 ডিগ্রি) নির্দেশ করে।</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>সংখ্যা 2 (যেমন, U2) এর অর্থ অর্ধেক বাঁক (180 ডিগ্রি) ঘোরানো।</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>ক্রেডিট: এই অ্যাপটি 'হার্বার্ট কোসিম্বা' (কোসিম্বা টু-ফেজ অ্যালগরিদমের লেখক) এবং 'ম্যাট কলবোর্ন'-এর ওপেন-সোর্স কোড ব্যবহার করে। তাদের অবদান কিউব-সমাধানের দক্ষতা উল্লেখযোগ্যভাবে উন্নত করেছে। তাদের কাজের জন্য বিশেষ ধন্যবাদ।</value>
+  </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>প্রথম গেমটি লঞ্চ হতে {0} সেকেন্ড পর্যন্ত সময় লাগতে পারে।</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>কোসিম্বা পদ্ধতি:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>পদ্ধতি:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>বিপরীত ক্রম</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>লেখাটির অনুবাদের জন্য গুগল ট্রান্সলেট ব্যবহার করা হয়েছে। এটি কোনও গ্যারান্টি নয় যে সমস্ত অনুবাদ সঠিক।
+সমর্থিত ভাষাগুলি হল: আরবি, বাংলা, সরলীকৃত চীনা, ঐতিহ্যবাহী চীনা, চেক, ডেনিশ, ডাচ, ইংরেজি, ফিনিশ, ফরাসি, জার্মান, গ্রীক, হিন্দি, হাঙ্গেরিয়ান, ইন্দোনেশিয়ান, ইতালীয়, জাপানি, কোরিয়ান, নরওয়েজিয়ান, পোলিশ, পর্তুগিজ, রোমানিয়ান, স্প্যানিশ, সুইডিশ, তুর্কি, ইউক্রেনীয় এবং উর্দু।</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>যেকোনো সংশোধনের জন্য আপনি সর্বদা আমার সাথে যোগাযোগ করতে পারেন।</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>টেক্সট টু স্পিচ: অ্যাপ্লিকেশন সেটিংসে প্রদত্ত সমস্ত ভাষা সমর্থিত নয়।
+এই বিকল্পটি ডিভাইস থেকে ডিভাইস এবং ইনস্টল করা ভাষা অনুসারে পরিবর্তিত হয়। এটা সম্ভব যে কিছু ভাষার জন্য সংশ্লিষ্ট পরিষেবাগুলি ইন্টারনেটের মাধ্যমে স্পিচ থেকে অনুবাদ করে।</value>
+  </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>ইন্টারনেট সংযোগ উপলব্ধ নেই।</value>
+  </data>
   <data name="AverageTurns_Text" xml:space="preserve">
     <value>'কোসিম্বা' পদ্ধতি ব্যবহার করে ঘনকটি সমাধান করার গড় পালা সংখ্যা হল {0}, 'ফ্রিডরিচ' (CFOP) পদ্ধতি ব্যবহার করে {1}।</value>
+  </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>ফন্টের আকার:</value>
   </data>
 </root>

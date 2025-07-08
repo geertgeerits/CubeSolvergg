@@ -147,7 +147,371 @@
   <data name="Copyright_Text" xml:space="preserve">
     <value>Πνευματική ιδιοκτησία:</value>
   </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Πίσω πλευρά</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Κάτω πλευρά</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Χρώματα κύβων:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Μπροστινή πλευρά</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Εσωτερική όψη</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Αριστερή πλευρά</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Εξωτερική όψη</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Δεξιά πλευρά</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Άνω πλευρά</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>Αθέτηση</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Παίξε ή λύσε τον κύβο.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Διαφωνώ</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>E-mail: </value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Εξηγείται με ομιλία:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Εξηγείται από κείμενο:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Περιστρέψτε τις πλευρές του κύβου «δεξιόστροφα» και «αριστερόστροφα»:
+Εάν δοθεί η εντολή να γυρίσετε το μπροστινό μέρος «δεξιόστροφα», τότε αυτό είναι προς την κατεύθυνση που περιστρέφονται οι δείκτες. «Αριστερόστροφα» είναι η περιστροφή προς την αντίθετη κατεύθυνση.
+Για τις άλλες πλευρές πρέπει πάντα να «φανταστείτε» ότι βρίσκεστε ακριβώς μπροστά από την πλευρά που θέλετε να γυρίσετε. Έτσι, αν λέει να γυρίσετε το πίσω μέρος «δεξιόστροφα», φανταστείτε ότι βρίσκεστε στην άλλη πλευρά του κύβου και στη συνέχεια να γυρίσετε το πίσω μέρος «δεξιόστροφα». Μην περιστρέφετε τον ίδιο τον κύβο.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Άνοιξε τον αποθηκευμένο κύβο.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Αποθήκευση του τρέχοντος κύβου.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Μεταφέρετε τα χρώματα από τον μπερδεμένο κύβο σε αυτόν τον κύβο. Επιλέξτε ένα χρώμα από τη γραμμή χρωμάτων στο επάνω μέρος και, στη συνέχεια, πατήστε τα κομμάτια του κύβου για να τα αλλάξετε. Πατήστε ξανά αυτό το κουμπί για να φύγετε από αυτήν την ενότητα και πατήστε το κουμπί «Λύση».</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Δεκαεξαδικοί χρωματικοί κωδικοί:
+
+Χαρακτήρες 1-2: Κόκκινο
+Χαρακτήρες 3-4: Πράσινο
+Χαρακτήρες 5-6: Μπλε</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Πληροφορίες</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Γλωσσική ομιλία:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Γλώσσα:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Το λογισμικό παρέχεται «ως έχει», χωρίς κανενός είδους εγγύηση, ρητή ή σιωπηρή, συμπεριλαμβανομένων ενδεικτικά των εγγυήσεων εμπορευσιμότητας, καταλληλότητας για συγκεκριμένο σκοπό και μη παραβίασης. Σε καμία περίπτωση ο δημιουργός ή/και ο εκδότης δεν θα ευθύνονται για οποιαδήποτε αξίωση, ζημία ή άλλη ευθύνη, είτε σε αγωγή σύμβασης, αδικοπραξίας είτε άλλως, που προκύπτει από, από ή σε σχέση με το λογισμικό ή τη χρήση ή άλλες συναλλαγές στο λογισμικό.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Αδεια</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Αυτή η εφαρμογή μπορεί να χρησιμοποιηθεί ελεύθερα για μη εμπορικούς σκοπούς.
+Χρησιμοποιήστε αυτό το πρόγραμμα αποκλειστικά με δική σας ευθύνη.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Το χρώμα του κεντρικού τετραγώνου μπορεί να εμφανιστεί μόνο μία φορά.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Τα χρώματα ενός γωνιακού κύβου πρέπει να είναι διαφορετικά.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Τα χρώματα ενός κύβου ακμής πρέπει να είναι διαφορετικά.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Συγχαρητήρια, ο κύβος λύθηκε.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Ο κύβος δεν λύνεται.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Από κάθε διαθέσιμο χρώμα, πρέπει να υπάρχουν εννέα του ίδιου χρώματος.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Επίλυση κύβων</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Οχι</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Πολιτική Απορρήτου:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Δεν αποθηκεύονται ούτε διαβιβάζονται προσωπικά και άλλα δεδομένα σε εμένα και σε άλλους.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Η εφαρμογή θα επανεκκινηθεί.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Επαναφορά</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Ορισμένες τροποποιημένες ρυθμίσεις πρέπει να αποθηκευτούν για να εφαρμοστούν.
+Μετά την αποθήκευση, η εφαρμογή επανεκκινείται και ο κύβος επαναφέρεται.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Εκτός</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Ρυθμίσεις</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Λύνω</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Στάση</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Το κείμενο περιέχει έναν ή περισσότερους χαρακτήρες που δεν επιτρέπονται.
+
+Δεν επιτρέπονται:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Η μετατροπή κειμένου σε ομιλία δεν υποστηρίζεται σε αυτήν τη συσκευή.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Σκοτάδι</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Φως</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>Σύστημα</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Θέμα:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Πάω πίσω</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Προβαίνω</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Βοήθεια</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Άνοιξε τον κύβο</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Αποθήκευση του κύβου</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Κουμπί εναλλαγής: Ορίστε τα χρώματα στον κύβο</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Εκδοχή:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Δικτυακός τόπος: </value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Ναί</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Ο κύβος δεν μπορεί να λυθεί.
+
+Πιθανή αιτία είναι η λανθασμένη μεταφορά χρωμάτων σε αυτόν τον κύβο.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Χρόνος σε χιλιοστά του δευτερολέπτου:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Αριθμός στροφών:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Μέθοδοι επίλυσης:
+- Αυτόματα: Χρησιμοποιήστε το κουμπί του κύβου στο κάτω μέρος της οθόνης για να εισαγάγετε τα χρώματα του πραγματικού σας κύβου. Μόλις τελειώσετε, πατήστε ξανά το κουμπί και, στη συνέχεια, πατήστε «Λύση». Ο κύβος θα λυθεί χρησιμοποιώντας τον αλγόριθμο «Kociemba». Μεταφέρετε τις προτεινόμενες κινήσεις στον πραγματικό σας κύβο.
+
+Εάν απενεργοποιήσετε τον αλγόριθμο «Kociemba» στις ρυθμίσεις, η εφαρμογή θα χρησιμοποιήσει τη μέθοδο «Friedrich» (CFOP).
+- Αντίστροφα: Χρησιμοποιήστε τα πλήκτρα βέλους για να ανακατέψετε τον κύβο και, στη συνέχεια, πατήστε «Λύση». Ο κύβος θα λυθεί με αντίστροφη σειρά.
+- Χειροκίνητα: Στην αρχική οθόνη, χρησιμοποιήστε τα πλήκτρα βέλους για να ανακατέψετε και να λύσετε τον κύβο. Εναλλακτικά, πατήστε δύο φορές το κουμπί του κύβου και, στη συνέχεια, πατήστε το κουμπί επίλυσης και ο κύβος θα λυθεί χρησιμοποιώντας είτε τη μέθοδο «Kociemba» είτε τη μέθοδο «CFOP».
+
+Αυτό δεν αποτελεί εγγύηση ότι όλοι οι κύβοι μπορούν να λυθούν.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Ο κύβος επιστρέφει στην προηγούμενη κατάστασή του.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Τα χρώματα των κεντρικών κομματιών είναι λάθος.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>Από κάθε διαθέσιμο χρώμα, πρέπει να υπάρχουν τέσσερα του ίδιου χρώματος σε έναν κύβο άκρης.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>Από κάθε διαθέσιμο χρώμα, πρέπει να υπάρχουν τέσσερις του ίδιου χρώματος σε έναν γωνιακό κύβο.</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Στείλτε ένα email στον δημιουργό αυτής της εφαρμογής</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Ανοίξτε τον ιστότοπο αυτής της εφαρμογής</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Δοκιμασμένες λύσεις:</value>
+  </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Ανακάτεψε τον κύβο</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Επαναφορά του κύβου</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Επαναφέρετε τον κύβο.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Ανακατέψτε τον κύβο.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Λύστε τον κύβο</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Γύρνα πίσω μία στροφή</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Πήγαινε μια στροφή μπροστά</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Γύρνα πίσω μία στροφή.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Πήγαινε μια στροφή μπροστά.</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Λύστε τον κύβο χωρίς παρέμβαση</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Λύστε τον κύβο χωρίς παρέμβαση.</value>
+  </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Λύστε τον κύβο με παρέμβαση</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Λύστε τον κύβο με παρέμβαση.</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>Κουμπί εναλλαγής: Λύστε τον κύβο με ή χωρίς παρέμβαση</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Λύστε τον κύβο.</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>Περιστροφές πλευρών: περιστρέψτε την πλευρά κατά ένα τέταρτο της στροφής δεξιόστροφα (90 μοίρες)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Άνω πλευρά</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Κάτω πλευρά</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Μπροστινή πλευρά</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Πίσω πλευρά</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Αριστερή πλευρά</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Δεξιά πλευρά</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>Κινήσεις κοπής: περιστρέψτε το μεσαίο στρώμα κατά ένα τέταρτο της στροφής δεξιόστροφα (90 μοίρες)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>Ακολουθεί την κατεύθυνση L</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>Ακολουθεί την κατεύθυνση D</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>Ακολουθεί την κατεύθυνση F</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>Περιστροφές κύβου: περιστρέψτε τον κύβο κατά ένα τέταρτο της στροφής δεξιόστροφα (90 μοίρες)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>Ακολουθεί την κατεύθυνση R</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>Ακολουθεί την κατεύθυνση U</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>Ακολουθεί την κατεύθυνση F</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>Κινήσεις σε μεγάλο πλάτος: περιστρέψτε 2 στρώσεις ταυτόχρονα κατά ένα τέταρτο της στροφής δεξιόστροφα (90 μοίρες), είναι με πεζά γράμματα: u, d, f, b, l, r.</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>Μια απόστροφος (π.χ., U') υποδεικνύει μια αριστερόστροφη στροφή ενός τετάρτου (90 μοίρες).</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>Ο αριθμός 2 (π.χ., U2) σημαίνει μισή στροφή (180 μοίρες).</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>Συντελεστές: Αυτή η εφαρμογή χρησιμοποιεί κώδικα ανοιχτού κώδικα από τους 'Herbert Kociemba' (συγγραφέα του αλγορίθμου δύο φάσεων Kociemba) και 'Matt Colbourne'. Οι συνεισφορές τους έχουν βελτιώσει σημαντικά την αποτελεσματικότητα της επίλυσης κύβων. Ιδιαίτερες ευχαριστίες για την εργασία τους.</value>
+  </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Η πρώτη εκκίνηση του παιχνιδιού μπορεί να διαρκέσει έως και {0} δευτερόλεπτα.</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>Μέθοδος Κοτσιέμπα:</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Μέθοδος:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Αντίστροφη σειρά</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Για τη μετάφραση του κειμένου χρησιμοποιήθηκε το Google Translate. Αυτό δεν αποτελεί εγγύηση ότι όλες οι μεταφράσεις είναι σωστές.
+Οι υποστηριζόμενες γλώσσες είναι: Αραβικά, Βενγκάλι, απλοποιημένα Κινέζικα, παραδοσιακά Κινέζικα, Τσεχικά, Δανικά, Ολλανδικά, Αγγλικά, Φινλανδικά, Γαλλικά, Γερμανικά, Ελληνικά, Χίντι, Ουγγρικά, Ινδονησιακά, Ιταλικά, Ιαπωνικά, Κορεατικά, Νορβηγικά, Πολωνικά, Πορτογαλικά, Ρουμανικά, Ισπανικά, Σουηδικά, Τουρκικά, Ουκρανικά και Ουρντού.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Μπορείτε πάντα να επικοινωνήσετε μαζί μου για τυχόν διορθώσεις.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Μετατροπή κειμένου σε ομιλία: Δεν υποστηρίζονται όλες οι γλώσσες που παρέχονται στις ρυθμίσεις της εφαρμογής.
+
+Αυτή η επιλογή διαφέρει από συσκευή σε συσκευή και από τις εγκατεστημένες γλώσσες. Είναι πιθανό για ορισμένες γλώσσες η μετάφραση από και προς ομιλία να γίνεται μέσω διαδικτύου από τις αρμόδιες υπηρεσίες.</value>
+  </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Η σύνδεση στο διαδίκτυο δεν είναι διαθέσιμη.</value>
+  </data>
   <data name="AverageTurns_Text" xml:space="preserve">
     <value>Ο μέσος αριθμός στροφών για την επίλυση του κύβου χρησιμοποιώντας τη μέθοδο 'Kociemba' είναι {0}, ενώ χρησιμοποιώντας τη μέθοδο 'Fridrich' (CFOP) είναι {1}.</value>
+  </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>Μέγεθος γραμματοσειράς:</value>
   </data>
 </root>
