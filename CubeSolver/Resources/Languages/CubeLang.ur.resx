@@ -328,6 +328,99 @@
   <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
     <value>ٹوگل بٹن: کیوب پر رنگ سیٹ کریں۔</value>
   </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>پیچھے کی طرف آدھا موڑ دیں۔</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>پچھلی طرف کو ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (-)</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>پچھلی طرف کو ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>نیچے کی طرف آدھا موڑ دیں۔</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>نیچے کی طرف ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (-)</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>نیچے کی طرف ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ سامنے والا نیچے کی طرف جائے، دائیں طرف دائیں طرف رہے۔</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ سامنے والا بائیں طرف جائے، اوپر والا حصہ اوپر ہی رہے۔</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ سامنے والا حصہ دائیں طرف جائے، اوپر والا حصہ اوپر ہی رہے۔</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ سامنے والا اوپر کی طرف جائے، دائیں طرف دائیں طرف رہے۔</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ اوپر بائیں طرف جائے، سامنے والا حصہ سامنے رہے۔</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ اوپر والا دائیں طرف جائے، سامنے والا حصہ سامنے رہے۔</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>سامنے والی درمیانی تہہ کو دائیں جانب ایک چوتھائی مڑیں۔ (-)</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>سامنے کی درمیانی تہہ کو چوتھائی موڑ اوپر کی طرف موڑ دیں۔ (+)</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>سامنے کی طرف آدھا موڑ دیں۔</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>سامنے کی طرف کو ایک چوتھائی موڑ 'کلاک وائز' کے خلاف مڑیں۔ (-)</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>سامنے کی طرف کو ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>بائیں طرف آدھا موڑ مڑیں۔</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>بائیں طرف ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (-)</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>بائیں طرف ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>درمیانی تہہ کو آدھا موڑ دیں۔</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>دائیں درمیانی تہہ کو ایک چوتھائی مڑ کر سامنے کی طرف مڑیں۔ (+)</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>دائیں درمیانی تہہ کو ایک چوتھائی مڑ کر اوپر کی طرف مڑیں۔ (-)</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>دائیں طرف آدھا موڑ مڑیں۔</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>دائیں طرف ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (-)</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>دائیں طرف ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>اوپری درمیانی تہہ کو ایک چوتھائی موڑ سامنے کی طرف موڑ دیں۔ (-)</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>اوپری درمیانی تہہ کو دائیں جانب ایک چوتھائی مڑیں۔ (+)</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>اوپر کی طرف آدھا موڑ دیں۔</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>اوپر کی طرف کو ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (-)</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>اوپر کی طرف ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
   <data name="Version_Text" xml:space="preserve">
     <value>ورژن:</value>
   </data>
@@ -341,6 +434,15 @@
     <value>کیوب کو حل نہیں کیا جا سکتا.
 
 ممکنہ وجہ اس مکعب میں رنگوں کی غلط منتقلی ہے۔</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ آگے پیچھے کی طرف جائے، دائیں طرف دائیں طرف رہے۔</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ سامنے والا پیچھے کی طرف جائے، اوپر والا حصہ سب سے اوپر رہے۔</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>پورے کیوب کو موڑ دیں تاکہ اوپر نیچے کی طرف جائے، سامنے والا حصہ سامنے رہے۔</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>ملی سیکنڈ میں وقت:</value>
@@ -368,6 +470,60 @@
   </data>
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>ہر دستیاب رنگ میں سے، کونے کیوب پر ایک ہی رنگ کے چار ہونے چاہئیں۔</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>پیچھے اور درمیانی تہہ کو ایک ساتھ آدھا موڑ دیں۔</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>پیچھے اور درمیانی تہہ کو ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (-)</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>پیچھے اور درمیانی تہہ کو ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>نیچے اور درمیانی تہہ کو ایک ساتھ آدھا موڑ دیں۔</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>نچلی اور درمیانی تہہ کو ایک چوتھائی 'کلاک وائز' کے مخالف موڑ دیں۔ (-)</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>نیچے اور درمیانی تہہ کو ایک ساتھ ایک چوتھائی موڑ 'گھڑی کی سمت' میں موڑ دیں۔ (+)</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>سامنے اور درمیانی تہہ کو ایک ساتھ آدھا موڑ دیں۔</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>اگلی اور درمیانی تہہ کو ایک ساتھ ایک چوتھائی موڑ 'گھڑی کی سمت' میں موڑ دیں۔ (-)</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>سامنے اور درمیانی تہہ کو ایک ساتھ ایک چوتھائی موڑ 'گھڑی کی سمت' میں موڑ دیں۔ (+)</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>بائیں اور درمیانی تہہ کو ایک ساتھ آدھا موڑ دیں۔</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>بائیں اور درمیانی تہہ کو ایک ساتھ ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (-)</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>بائیں اور درمیانی تہہ کو ایک ساتھ ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>دائیں اور درمیانی تہہ کو ایک ساتھ آدھا موڑ دیں۔</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>دائیں اور درمیانی تہہ کو ایک ساتھ ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (-)</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>دائیں اور درمیانی تہہ کو ایک ساتھ ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>اوپری اور درمیانی تہہ کو ایک ساتھ آدھا موڑ دیں۔</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>اوپری اور درمیانی تہہ کو ایک ساتھ ایک چوتھائی موڑ 'کلاک وائز' کے خلاف موڑ دیں۔ (-)</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>اوپری اور درمیانی تہہ کو ایک چوتھائی مڑیں 'گھڑی کی سمت'۔ (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>اس درخواست کے مصنف کو ای میل بھیجیں۔</value>

@@ -330,6 +330,99 @@
   <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
     <value>টগল বোতাম: কিউবের রঙ সেট করুন</value>
   </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>পিছনের দিকটি অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>পিছনের দিকটি 'ঘড়ির কাঁটার বিপরীতে' এক চতুর্থাংশ ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>পিছনের দিকটি 'ঘড়ির কাঁটার দিকে' এক চতুর্থাংশ ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>নিচের দিকটি অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>নিচের দিকটি 'ঘড়ির কাঁটার বিপরীতে' এক চতুর্থাংশ ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>নিচের দিকটি 'ঘড়ির কাঁটার দিকে' এক চতুর্থাংশ ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে সামনের দিকটি নীচে চলে যায়, ডান দিকটি ডানদিকে থাকে।</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে সামনের দিকটি বাম দিকে চলে যায়, উপরের দিকটি উপরের দিকে থাকে।</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে সামনের দিকটি ডান দিকে চলে যায়, উপরের দিকটি উপরের দিকে থাকে।</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে সামনের অংশটি উপরে চলে যায়, ডান দিকটি ডানদিকে থাকে।</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে উপরের অংশটি বাম দিকে চলে যায়, সামনের অংশটি সামনের দিকে থাকে।</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে উপরের অংশটি ডান দিকে চলে যায়, সামনের অংশটি সামনের দিকে থাকে।</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>সামনের-মাঝের স্তরটি ডান দিকে এক চতুর্থাংশ ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>সামনের-মাঝের স্তরটি এক চতুর্থাংশ ঘুরিয়ে উপরের দিকে ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>সামনের দিকটি অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>সামনের দিকটি 'ঘড়ির কাঁটার বিপরীতে' এক চতুর্থাংশ ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>সামনের দিকটি 'ঘড়ির কাঁটার দিকে' এক চতুর্থাংশ ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>বাম দিকে অর্ধেক মোড় নিন।</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>বাম দিকে এক চতুর্থাংশ ঘুরিয়ে 'ঘড়ির কাঁটার বিপরীতে' ঘুরুন। (-)</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>বাম দিকে এক চতুর্থাংশ 'ঘড়ির কাঁটার দিকে' ঘুরুন। (+)</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>মাঝের স্তরটি অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>ডান-মাঝারি স্তরটি সামনের দিকে এক চতুর্থাংশ ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>ডান-মাঝের স্তরটি এক চতুর্থাংশ ঘুরিয়ে উপরের দিকে ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>অর্ধেক বাঁক নিয়ে ডান দিকে ঘুরুন।</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>ডান দিকে এক চতুর্থাংশ ঘুরিয়ে 'ঘড়ির কাঁটার বিপরীতে' ঘুরুন। (-)</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>ডান দিকে এক চতুর্থাংশ 'ঘড়ির কাঁটার দিকে' ঘুরুন। (+)</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>উপরের-মাঝারি স্তরটি সামনের দিকে এক চতুর্থাংশ ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>উপরের-মাঝারি স্তরটি ডান দিকে এক চতুর্থাংশ ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>উপরের দিকটি অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>উপরের দিকটি 'ঘড়ির কাঁটার বিপরীতে' এক চতুর্থাংশ ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>উপরের দিকটি 'ঘড়ির কাঁটার দিকে' এক চতুর্থাংশ ঘুরিয়ে দিন। (+)</value>
+  </data>
   <data name="Version_Text" xml:space="preserve">
     <value>সংস্করণ:</value>
   </data>
@@ -343,6 +436,15 @@
     <value>ঘনকটি সমাধান করা যাচ্ছে না।
 
 সম্ভাব্য কারণ হল এই ঘনকে রঙের ভুল স্থানান্তর।</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে সামনের দিকটি পিছনে চলে যায়, ডান দিকটি ডানদিকে থাকে।</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে সামনের দিকটি পিছনে চলে যায়, উপরের দিকটি উপরে থাকে।</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>পুরো ঘনকটি এমনভাবে ঘুরিয়ে দিন যাতে উপরের দিকটি নীচে চলে যায়, সামনের দিকটি সামনের দিকে থাকে।</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>মিলিসেকেন্ডে সময়:</value>
@@ -373,6 +475,60 @@
   </data>
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>প্রতিটি উপলব্ধ রঙের মধ্যে, একটি কোণার ঘনক্ষেত্রে একই রঙের চারটি থাকতে হবে।</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>পিছনের এবং মাঝের স্তরটি একসাথে অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>পিছনের এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার বিপরীতে' ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>পিছনের এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার দিকে' ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>নীচের এবং মাঝের স্তরটি একসাথে অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>নীচের এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার বিপরীতে' ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>নীচের এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার দিকে' ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>সামনের এবং মাঝের স্তরটি একসাথে অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>সামনের এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার বিপরীতে' ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>সামনের এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার দিকে' ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>বাম এবং মাঝের স্তর একসাথে অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>বাম এবং মাঝের স্তরটি একত্রে 'ঘড়ির কাঁটার বিপরীতে' এক চতুর্থাংশ ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>বাম এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার দিকে' ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>ডান এবং মাঝের স্তর একসাথে অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>ডান এবং মাঝের স্তরটি একত্রে 'ঘড়ির কাঁটার বিপরীতে' এক চতুর্থাংশ ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>ডান এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার দিকে' ঘুরিয়ে দিন। (+)</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>উপরের এবং মাঝের স্তরটি একসাথে অর্ধেক ঘুরিয়ে দিন।</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>উপরের এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার বিপরীতে' ঘুরিয়ে দিন। (-)</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>উপরের এবং মাঝের স্তরটি এক চতুর্থাংশ 'ঘড়ির কাঁটার দিকে' ঘুরিয়ে দিন। (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>এই অ্যাপ্লিকেশনটির লেখককে একটি ইমেল পাঠান।</value>

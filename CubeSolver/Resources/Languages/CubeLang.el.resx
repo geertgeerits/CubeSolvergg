@@ -328,6 +328,99 @@
   <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
     <value>Κουμπί εναλλαγής: Ορίστε τα χρώματα στον κύβο</value>
   </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Γυρίστε την πίσω πλευρά μισή στροφή.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Γυρίστε την πίσω πλευρά κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Γυρίστε την πίσω πλευρά κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Γυρίστε την κάτω πλευρά κατά μισή στροφή.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Γυρίστε την κάτω πλευρά κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Γυρίστε την κάτω πλευρά κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε το μπροστινό μέρος να πάει προς τα κάτω, η δεξιά πλευρά να παραμείνει στα δεξιά.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε το μπροστινό μέρος να πάει στην αριστερή πλευρά, η πάνω πλευρά να παραμείνει στην κορυφή.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε το μπροστινό μέρος να πάει στη δεξιά πλευρά, η πάνω πλευρά να παραμείνει στην κορυφή.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε το μπροστινό μέρος να πάει προς τα πάνω, η δεξιά πλευρά να παραμείνει στα δεξιά.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε η κορυφή να πάει στην αριστερή πλευρά, η μπροστινή πλευρά να παραμείνει μπροστά.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε η κορυφή να πάει στη δεξιά πλευρά, η μπροστινή πλευρά να παραμείνει μπροστά.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Γυρίστε το μπροστινό-μεσαίο στρώμα κατά ένα τέταρτο της στροφής προς τα δεξιά. (-)</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Γυρίστε το μπροστινό-μεσαίο στρώμα κατά ένα τέταρτο της στροφής προς την πάνω πλευρά. (+)</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Γυρίστε την μπροστινή πλευρά κατά μισή στροφή.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Γυρίστε την μπροστινή πλευρά κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Γυρίστε την μπροστινή πλευρά κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Γυρίστε την αριστερή πλευρά μισή στροφή.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Γυρίστε την αριστερή πλευρά κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Γυρίστε την αριστερή πλευρά κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Γυρίστε το μεσαίο στρώμα μισή στροφή.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Γυρίστε τη δεξιά-μεσαία στρώση κατά ένα τέταρτο της στροφής προς την μπροστινή πλευρά. (+)</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Γυρίστε τη δεξιά-μεσαία στρώση κατά ένα τέταρτο της στροφής προς την πάνω πλευρά. (-)</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Γυρίστε τη δεξιά πλευρά μισή στροφή.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Γυρίστε τη δεξιά πλευρά κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Γυρίστε τη δεξιά πλευρά κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Γυρίστε το πάνω-μεσαίο στρώμα κατά ένα τέταρτο της στροφής προς τα εμπρός. (-)</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Γυρίστε την πάνω-μεσαία στρώση κατά ένα τέταρτο της στροφής προς τα δεξιά. (+)</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Γυρίστε την πάνω πλευρά κατά μισή στροφή.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Γυρίστε την πάνω πλευρά κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Γυρίστε την πάνω πλευρά κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Εκδοχή:</value>
   </data>
@@ -341,6 +434,15 @@
     <value>Ο κύβος δεν μπορεί να λυθεί.
 
 Πιθανή αιτία είναι η λανθασμένη μεταφορά χρωμάτων σε αυτόν τον κύβο.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε το μπροστινό μέρος να πάει προς τα πίσω, η δεξιά πλευρά να παραμείνει στα δεξιά.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε το μπροστινό μέρος να πάει προς τα πίσω, η πάνω πλευρά να παραμείνει στην κορυφή.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Γυρίστε ολόκληρο τον κύβο έτσι ώστε η κορυφή να πηγαίνει προς τα κάτω, η μπροστινή πλευρά να παραμένει μπροστά.</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>Χρόνος σε χιλιοστά του δευτερολέπτου:</value>
@@ -369,6 +471,60 @@
   </data>
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>Από κάθε διαθέσιμο χρώμα, πρέπει να υπάρχουν τέσσερις του ίδιου χρώματος σε έναν γωνιακό κύβο.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Γυρίστε το πίσω και το μεσαίο στρώμα μαζί μισή στροφή.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Γυρίστε το πίσω και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Γυρίστε το πίσω και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Γυρίστε το κάτω και το μεσαίο στρώμα μαζί μισή στροφή.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Γυρίστε το κάτω και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Γυρίστε το κάτω και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Γυρίστε το μπροστινό και το μεσαίο στρώμα μαζί μισή στροφή.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Γυρίστε το μπροστινό και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Γυρίστε το μπροστινό και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Γυρίστε το αριστερό και το μεσαίο στρώμα μαζί μισή στροφή.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Γυρίστε το αριστερό και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Γυρίστε το αριστερό και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Γυρίστε τη δεξιά και τη μεσαία στρώση μαζί μισή στροφή.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Γυρίστε το δεξί και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Γυρίστε το δεξί και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Γυρίστε το πάνω και το μεσαίο στρώμα μαζί μισή στροφή.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Γυρίστε το πάνω και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «αριστερόστροφα». (-)</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Γυρίστε το πάνω και το μεσαίο στρώμα μαζί κατά ένα τέταρτο της στροφής «δεξιόστροφα». (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Στείλτε ένα email στον δημιουργό αυτής της εφαρμογής</value>
