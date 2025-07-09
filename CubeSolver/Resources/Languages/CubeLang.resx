@@ -650,7 +650,7 @@ This is not a guarantee that all cubes can be solved.</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>Google Translate was used for the translation of the text. This is not a guarantee that all translations are correct.
-The supporting languages are: Arabic, Bengali, Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Spanish, Swedish, Turkish, Ukrainian and Urdu.</value>
+The supporting languages are: Arabic, Bengali, Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish, Ukrainian, Urdu and Vietnamese.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>You can always contact me for any corrections.</value>

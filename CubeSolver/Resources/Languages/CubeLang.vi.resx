@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>Đồng ý</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Không được phép:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Ký tự được phép:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Cài lại</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Gỡ rối</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Vui lòng đóng ứng dụng.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Liên hệ:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Tiếp tục</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Bản quyền:</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Mặt sau</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Mặt dưới</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Màu sắc của khối lập phương:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Mặt trước</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Góc nhìn bên trong</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Mặt trái</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Nhìn từ bên ngoài</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Mặt phải</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Mặt trên</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Chơi hoặc giải khối lập phương.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Không đồng ý</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>E-mail: </value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Giải thích bằng lời nói:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Giải thích bằng văn bản:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Xoay các mặt khối lập phương theo 'chiều kim đồng hồ' và 'ngược chiều kim đồng hồ':
+Nếu lệnh được đưa ra là xoay mặt trước theo 'chiều kim đồng hồ' thì đây là hướng mà kim đang xoay. 'Ngược chiều kim đồng hồ' là xoay theo hướng ngược lại.
+Đối với các mặt còn lại, bạn luôn phải 'tưởng tượng' rằng bạn đang ở ngay phía trước mặt cần xoay. Vì vậy, nếu lệnh nói xoay mặt sau theo 'chiều kim đồng hồ', hãy tưởng tượng bạn đang ở mặt bên kia của khối lập phương và sau đó xoay mặt sau theo 'chiều kim đồng hồ'. Không xoay chính khối lập phương.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Mở khối lập phương đã lưu.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Lưu khối lập phương hiện tại.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Chuyển màu từ khối lập phương lộn xộn sang khối lập phương này. Chọn một màu từ thanh màu ở trên cùng rồi chạm vào các mảnh của khối lập phương để thay đổi chúng. Nhấn nút này một lần nữa để rời khỏi phần này và nhấn nút 'Giải'.</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Mã màu thập lục phân:
+
+Ký tự 1-2: Đỏ
+Ký tự 3-4: Xanh lá cây
+Ký tự 5-6: Xanh lam</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Ngôn ngữ nói:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Ngôn ngữ:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Phần mềm được cung cấp 'nguyên trạng', không có bất kỳ bảo hành nào, dù là rõ ràng hay ngụ ý, bao gồm nhưng không giới hạn ở các bảo hành về khả năng bán được, tính phù hợp cho một mục đích cụ thể và không vi phạm. Trong mọi trường hợp, tác giả và/hoặc nhà xuất bản sẽ không chịu trách nhiệm cho bất kỳ khiếu nại, thiệt hại hoặc trách nhiệm pháp lý nào khác, cho dù trong hành động hợp đồng, hành vi sai trái hoặc các trường hợp khác, phát sinh từ, do hoặc liên quan đến phần mềm hoặc việc sử dụng hoặc các giao dịch khác trong phần mềm.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Giấy phép</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Ứng dụng này có thể được sử dụng miễn phí cho mục đích phi thương mại.
+Sử dụng chương trình này hoàn toàn theo rủi ro của riêng bạn.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Màu sắc của hình vuông trung tâm chỉ có thể xuất hiện một lần.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Màu sắc của khối lập phương góc phải khác nhau.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Màu sắc của khối lập phương cạnh phải khác nhau.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Xin chúc mừng, khối lập phương đã được giải xong.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Khối lập phương chưa được giải.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Trong mỗi màu có sẵn, phải có chín màu giống nhau.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Giải khối lập phương</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Không</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Chính sách bảo mật:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Không có dữ liệu cá nhân và dữ liệu nào khác được lưu trữ hoặc chuyển cho tôi và người khác.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Ứng dụng sẽ được khởi động lại.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Cài lại</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Một số thiết lập đã thay đổi phải được lưu lại để áp dụng chúng.
+Sau khi lưu, ứng dụng sẽ được khởi động lại và khối lập phương sẽ được thiết lập lại.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Cứu</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Cài đặt</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Gỡ rối</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Dừng lại</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Văn bản chứa một hoặc nhiều ký tự không được phép.
+
+Không được phép:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Thiết bị này không hỗ trợ chuyển văn bản thành giọng nói.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Tối tăm</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Ánh sáng</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Chủ đề:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Không thể giải được khối lập phương.
+
+Nguyên nhân có thể là do chuyển màu không đúng sang khối lập phương này.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Thời gian tính bằng mili giây:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Số vòng quay:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Phương pháp giải:
+- Tự động: Sử dụng nút khối lập phương ở cuối màn hình để nhập màu khối lập phương thực của bạn. Khi hoàn tất, hãy nhấn lại nút, sau đó chạm vào 'Giải'. Khối lập phương sẽ được giải bằng thuật toán 'Kociemba'. Chuyển các bước di chuyển được đề xuất sang khối lập phương thực của bạn.
+Nếu bạn tắt thuật toán 'Kociemba' trong phần cài đặt, ứng dụng sẽ sử dụng phương pháp 'Friedrich' (CFOP).
+- Đảo ngược: Sử dụng các phím mũi tên để xáo trộn khối lập phương, sau đó nhấn 'Giải'. Khối lập phương sẽ được giải theo thứ tự ngược lại.
+- Thủ công: Trên màn hình chính, sử dụng các phím mũi tên để xáo trộn và giải khối lập phương. Ngoài ra, hãy nhấn nút khối lập phương hai lần, sau đó nhấn nút giải và khối lập phương sẽ được giải bằng phương pháp 'Kociemba' hoặc 'CFOP'.
+
+Điều này không đảm bảo rằng tất cả các khối lập phương đều có thể được giải.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Khối lập phương đã trở lại trạng thái ban đầu.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Màu sắc của các vật trang trí ở giữa không đúng.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>Với mỗi màu có sẵn, phải có bốn khối lập phương cùng màu trên một cạnh.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>Với mỗi màu có sẵn, phải có bốn viên cùng màu trên một khối góc.</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Gửi email cho tác giả của ứng dụng này</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Mở trang web của ứng dụng này</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Các giải pháp đã thử nghiệm:</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Đặt lại khối lập phương.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Làm xáo trộn khối lập phương.</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Quay lại một lượt.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Đi về phía trước một vòng.</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Giải khối lập phương mà không cần can thiệp.</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Giải khối lập phương bằng cách can thiệp.</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Giải khối lập phương.</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>Xoay mặt: xoay mặt một phần tư vòng theo chiều kim đồng hồ (90 độ)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Mặt trên</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Mặt dưới</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Mặt trước</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Mặt sau</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Mặt trái</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Mặt phải</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>Di chuyển lát cắt: xoay lớp giữa một phần tư vòng theo chiều kim đồng hồ (90 độ)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>Theo hướng L</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>Theo hướng D</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>Theo hướng F</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>Xoay khối lập phương: xoay khối lập phương một phần tư vòng theo chiều kim đồng hồ (90 độ)</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>Theo hướng R</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>Theo hướng U</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>Theo hướng F</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>Di chuyển rộng: xoay 2 lớp cùng lúc một phần tư vòng theo chiều kim đồng hồ (90 độ), chúng ở dạng chữ thường: u, d, f, b, l, r.</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>Dấu nháy đơn (ví dụ: U') biểu thị một phần tư vòng quay ngược chiều kim đồng hồ (90 độ).</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>Số 2 (ví dụ: U2) có nghĩa là quay nửa vòng (180 độ).</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>Ghi công: Ứng dụng này sử dụng mã nguồn mở từ 'Herbert Kociemba' (tác giả của Thuật toán hai pha Kociemba) và 'Matt Colbourne'. Những đóng góp của họ đã cải thiện đáng kể hiệu quả giải khối lập phương. Xin cảm ơn đặc biệt vì công sức của họ.</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Phương pháp:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Đảo ngược thứ tự</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Google Dịch được sử dụng để dịch văn bản. Điều này không đảm bảo rằng tất cả các bản dịch đều chính xác.
+Các ngôn ngữ hỗ trợ là: tiếng Ả Rập, tiếng Bengal, tiếng Trung giản thể, tiếng Trung phồn thể, tiếng Séc, tiếng Đan Mạch, tiếng Hà Lan, tiếng Anh, tiếng Phần Lan, tiếng Pháp, tiếng Đức, tiếng Hy Lạp, tiếng Hindi, tiếng Hungary, tiếng Indonesia, tiếng Ý, tiếng Nhật, tiếng Hàn, tiếng Na Uy, tiếng Ba Lan, tiếng Bồ Đào Nha, tiếng Rumani, tiếng Nga, tiếng Tây Ban Nha, tiếng Thụy Điển, tiếng Thổ Nhĩ Kỳ, tiếng Ukraina, tiếng Urdu và tiếng Việt.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Bạn luôn có thể liên hệ với tôi để sửa lỗi.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Chuyển văn bản thành giọng nói: Không phải tất cả các ngôn ngữ được cung cấp trong cài đặt ứng dụng đều được hỗ trợ.
+Tùy chọn này thay đổi tùy theo thiết bị và ngôn ngữ được cài đặt. Có thể đối với một số ngôn ngữ, việc dịch sang và từ giọng nói được thực hiện qua internet bởi các dịch vụ liên quan.</value>
+  </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Không có kết nối Internet.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Số vòng xoay trung bình để giải khối lập phương bằng phương pháp 'Kociemba' là {0}, bằng phương pháp 'Fridrich' (CFOP) là {1}.</value>
+  </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>Kích thước phông chữ:</value>
+  </data>
+</root>

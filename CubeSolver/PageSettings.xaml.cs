@@ -62,21 +62,17 @@
                 "pl" => 17,     // Polski - Polish
                 "pt" => 18,     // Português - Portuguese
                 "ro" => 19,     // Română - Romanian
-                "fi" => 20,     // Suomi - Finnish
-                "sv" => 21,     // Svenska - Swedish
-                "tr" => 22,     // Türkçe - Turkish
-                "ur" => 23,     // اُردُو (Urduw) - Urdu
-                "uk" => 24,     // Українська (Ukraїnska) - Ukrainian
-                "zh-TW" => 25,  // 中文 (Zhōngguó rén) - Chinese traditional
-                "zh-CN" => 26,  // 中文 (Zhōngwén) - Chinese simplified
+                "ru" => 20,     // Русский язык (Russkiĭ âzyk) - Russian
+                "fi" => 21,     // Suomi - Finnish
+                "sv" => 22,     // Svenska - Swedish
+                "vi" => 23,     // Tiếng Việt (Việt ngữ) - Vietnamese
+                "tr" => 24,     // Türkçe - Turkish
+                "ur" => 25,     // اُردُو (Urduw) - Urdu
+                "uk" => 26,     // Українська (Ukraїnska) - Ukrainian
+                "zh-TW" => 27,  // 中文 (Zhōngguó rén) - Chinese traditional
+                "zh-CN" => 28,  // 中文 (Zhōngwén) - Chinese simplified
                 _ => 7,         // English
             };
-
-            // Languages to add in the future:
-            /*
-            "ru"   // Русский язык (Russkiĭ âzyk) - Russian
-            "vi"   // Tiếng Việt (Việt ngữ) - Vietnamese
-            */
 
             //// Fill the picker with the speech languages and select the saved language in the picker
             ClassSpeech.FillPickerWithSpeechLanguages(pckLanguageSpeech);
@@ -140,13 +136,15 @@
                     17 => "pl",     // Polski - Polish
                     18 => "pt",     // Português - Portuguese
                     19 => "ro",     // Română - Romanian
-                    20 => "fi",     // Suomi - Finnish
-                    21 => "sv",     // Svenska - Swedish
-                    22 => "tr",     // Türkçe - Turkish
-                    23 => "ur",     // اُردُو (Urduw) - Urdu
-                    24 => "uk",     // Українська (Ukraїnska) - Ukrainian
-                    25 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
-                    26 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
+                    20 => "ru",     // Русский язык (Russkiĭ âzyk) - Russian
+                    21 => "fi",     // Suomi - Finnish
+                    22 => "sv",     // Svenska - Swedish
+                    23 => "vi",     // Tiếng Việt (Việt ngữ) - Vietnamese
+                    24 => "tr",     // Türkçe - Turkish
+                    25 => "ur",     // اُردُو (Urduw) - Urdu
+                    26 => "uk",     // Українська (Ukraїnska) - Ukrainian
+                    27 => "zh-TW",  // 中文 (Zhōngguó rén) - Chinese traditional
+                    28 => "zh-CN",  // 中文 (Zhōngwén) - Chinese simplified
                     _ => "en",      // English
                 };
             }

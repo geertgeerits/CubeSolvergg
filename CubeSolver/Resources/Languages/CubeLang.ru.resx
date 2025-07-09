@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Agree_Text" xml:space="preserve">
+    <value>Соглашаться</value>
+  </data>
+  <data name="AllowedCharNot_Text" xml:space="preserve">
+    <value>Не разрешено:</value>
+  </data>
+  <data name="AllowedChar_Text" xml:space="preserve">
+    <value>Допустимые символы:</value>
+  </data>
+  <data name="ButtonClose_Text" xml:space="preserve">
+    <value>Закрывать</value>
+  </data>
+  <data name="ButtonReset_Text" xml:space="preserve">
+    <value>Перезагрузить</value>
+  </data>
+  <data name="ButtonSolve_Text" xml:space="preserve">
+    <value>Решать</value>
+  </data>
+  <data name="CloseApplication_Text" xml:space="preserve">
+    <value>Пожалуйста, закройте приложение.</value>
+  </data>
+  <data name="Contact_Text" xml:space="preserve">
+    <value>Контакт:</value>
+  </data>
+  <data name="Continue_Text" xml:space="preserve">
+    <value>Продолжать</value>
+  </data>
+  <data name="Copyright_Text" xml:space="preserve">
+    <value>Авторские права:</value>
+  </data>
+  <data name="CubeBackFace_Text" xml:space="preserve">
+    <value>Задняя сторона</value>
+  </data>
+  <data name="CubeDownFace_Text" xml:space="preserve">
+    <value>Нижняя сторона</value>
+  </data>
+  <data name="CubeColors_Text" xml:space="preserve">
+    <value>Цвета куба:</value>
+  </data>
+  <data name="CubeFrontFace_Text" xml:space="preserve">
+    <value>Передняя сторона</value>
+  </data>
+  <data name="CubeInsideView_Text" xml:space="preserve">
+    <value>Вид изнутри</value>
+  </data>
+  <data name="CubeLeftFace_Text" xml:space="preserve">
+    <value>Левая сторона</value>
+  </data>
+  <data name="CubeOutsideView_Text" xml:space="preserve">
+    <value>Внешний вид</value>
+  </data>
+  <data name="CubeRightFace_Text" xml:space="preserve">
+    <value>Правая сторона</value>
+  </data>
+  <data name="CubeUpFace_Text" xml:space="preserve">
+    <value>Верхняя сторона</value>
+  </data>
+  <data name="Default_Text" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="Description_Text" xml:space="preserve">
+    <value>Сыграйте или соберите кубик.</value>
+  </data>
+  <data name="Disagree_Text" xml:space="preserve">
+    <value>Не согласен</value>
+  </data>
+  <data name="Email_Text" xml:space="preserve">
+    <value>Электронная почта: </value>
+  </data>
+  <data name="ErrorTitle_Text" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ExplainedBySpeech_Text" xml:space="preserve">
+    <value>Объяснено речью:</value>
+  </data>
+  <data name="ExplainedByText_Text" xml:space="preserve">
+    <value>Объясняется текстом:</value>
+  </data>
+  <data name="HelpCube_Text" xml:space="preserve">
+    <value>Вращайте грани кубика по часовой стрелке и против часовой стрелки:
+Если дана команда повернуть переднюю часть кубика по часовой стрелке, то это направление вращения стрелок. «Против часовой стрелки» означает вращение в другую сторону.
+Для других граней кубика всегда нужно «представлять», что вы находитесь прямо перед той, которую нужно повернуть. Например, если команда «поверните заднюю часть кубика по часовой стрелке», представьте, что вы находитесь на другой стороне кубика, а затем поверните заднюю часть кубика по часовой стрелке. Сам кубик не вращайте.</value>
+  </data>
+  <data name="HelpOpenCube_Text" xml:space="preserve">
+    <value>Откройте сохраненный куб.</value>
+  </data>
+  <data name="HelpSaveCube_Text" xml:space="preserve">
+    <value>Сохранить текущий куб.</value>
+  </data>
+  <data name="HelpSetColorsCube_Text" xml:space="preserve">
+    <value>Перенесите цвета из перемешанного кубика в этот. Выберите цвет на цветовой панели вверху, а затем коснитесь частей кубика, чтобы изменить их. Нажмите эту кнопку ещё раз, чтобы выйти из этого раздела, и нажмите кнопку «Решить».</value>
+  </data>
+  <data name="HexColorCodes_Text" xml:space="preserve">
+    <value>Шестнадцатеричные коды цветов:
+
+Символы 1-2: Красный
+Символы 3-4: Зелёный
+Символы 5-6: Синий</value>
+  </data>
+  <data name="Info_Text" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="LanguageSpeech_Text" xml:space="preserve">
+    <value>Язык речи:</value>
+  </data>
+  <data name="Language_Text" xml:space="preserve">
+    <value>Язык:</value>
+  </data>
+  <data name="LicenseMit2_Text" xml:space="preserve">
+    <value>Программное обеспечение предоставляется «как есть», без каких-либо гарантий, явных или подразумеваемых, включая, помимо прочего, гарантии товарной пригодности, пригодности для конкретной цели и отсутствия нарушений прав. Ни при каких обстоятельствах автор и/или издатель не несут ответственности за любые претензии, убытки или иную ответственность, будь то по договорным, деликтным или иным основаниям, возникающим из программного обеспечения или в связи с ним, а также из использования или иных действий с программным обеспечением.</value>
+  </data>
+  <data name="LicenseTitle_Text" xml:space="preserve">
+    <value>Лицензия</value>
+  </data>
+  <data name="License_Text" xml:space="preserve">
+    <value>Это приложение можно использовать бесплатно в некоммерческих целях.
+Используйте эту программу исключительно на свой страх и риск.</value>
+  </data>
+  <data name="MessageColorCentralCube_Text" xml:space="preserve">
+    <value>Цвет центрального квадрата может встречаться только один раз.</value>
+  </data>
+  <data name="MessageColorCornerCube_Text" xml:space="preserve">
+    <value>Цвета углового кубика должны быть разными.</value>
+  </data>
+  <data name="MessageColorEdgeCube_Text" xml:space="preserve">
+    <value>Цвета ребер кубика должны быть разными.</value>
+  </data>
+  <data name="MessageCubeIsSolved_Text" xml:space="preserve">
+    <value>Поздравляю, кубик собран.</value>
+  </data>
+  <data name="MessageCubeNotSolved_Text" xml:space="preserve">
+    <value>Кубик не собран.</value>
+  </data>
+  <data name="MessageNineSameColor_Text" xml:space="preserve">
+    <value>Должно быть девять фишек каждого доступного цвета.</value>
+  </data>
+  <data name="NameProgram_Text" xml:space="preserve">
+    <value>Решатель кубов</value>
+  </data>
+  <data name="No_Text" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="PrivacyPolicyTitle_Text" xml:space="preserve">
+    <value>Политика конфиденциальности:</value>
+  </data>
+  <data name="PrivacyPolicy_Text" xml:space="preserve">
+    <value>Никакие персональные и иные данные не хранятся и не передаются мне или другим лицам.</value>
+  </data>
+  <data name="RestartApp_Text" xml:space="preserve">
+    <value>Приложение будет перезапущено.</value>
+  </data>
+  <data name="CubeSolver_Text" xml:space="preserve">
+    <value>Cube Solver gg</value>
+  </data>
+  <data name="SettingsReset_Text" xml:space="preserve">
+    <value>Перезагрузить</value>
+  </data>
+  <data name="SettingsSaved_Text" xml:space="preserve">
+    <value>Для применения некоторых изменённых настроек необходимо сохранить их.
+После сохранения приложение перезапускается, и куб сбрасывается.</value>
+  </data>
+  <data name="SettingsSave_Text" xml:space="preserve">
+    <value>Сохранять</value>
+  </data>
+  <data name="Settings_Text" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Solve_Text" xml:space="preserve">
+    <value>Решать</value>
+  </data>
+  <data name="Stop_Text" xml:space="preserve">
+    <value>Останавливаться</value>
+  </data>
+  <data name="TextContainsChar_Text" xml:space="preserve">
+    <value>Текст содержит один или несколько недопустимых символов.
+
+Не допускается:</value>
+  </data>
+  <data name="TextToSpeechError_Text" xml:space="preserve">
+    <value>Функция преобразования текста в речь на этом устройстве не поддерживается.</value>
+  </data>
+  <data name="ThemeDark_Text" xml:space="preserve">
+    <value>Темный</value>
+  </data>
+  <data name="ThemeLight_Text" xml:space="preserve">
+    <value>Свет</value>
+  </data>
+  <data name="ThemeSystem_Text" xml:space="preserve">
+    <value>Система</value>
+  </data>
+  <data name="Theme_Text" xml:space="preserve">
+    <value>Тема:</value>
+  </data>
+  <data name="ToolTipGoBack_Text" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
+    <value>Кубик не может быть собран.
+
+Возможная причина — неправильный перенос цветов на этот кубик.</value>
+  </data>
+  <data name="ResultTime_Text" xml:space="preserve">
+    <value>Время в миллисекундах:</value>
+  </data>
+  <data name="ResultTurns_Text" xml:space="preserve">
+    <value>Количество витков:</value>
+  </data>
+  <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
+    <value>Методы решения:
+- Автоматический: Используйте кнопку с изображением кубика в нижней части экрана, чтобы ввести цвета вашего настоящего кубика. После этого нажмите кнопку ещё раз, а затем нажмите «Собрать». Кубик будет собран с использованием алгоритма «Коциемба». Перенесите предложенные ходы на ваш настоящий кубик.
+Если отключить алгоритм «Коциемба» в настройках, приложение будет использовать метод «Фридриха» (CFOP).
+- Обратный: Используйте клавиши со стрелками, чтобы перемешать кубик, затем нажмите «Собрать». Кубик будет собран в обратном порядке.
+- Вручную: На главном экране используйте клавиши со стрелками, чтобы перемешать и собрать кубик. Или нажмите кнопку с изображением кубика дважды, затем нажмите кнопку «Собрать», и кубик будет собран с использованием метода «Коциемба» или «CFOP».
+
+Это не гарантирует, что все кубики будут собраны.</value>
+  </data>
+  <data name="MessageCubeBackInPreviousState_Text" xml:space="preserve">
+    <value>Куб вернулся в прежнее состояние.</value>
+  </data>
+  <data name="MessageColorCenterPiece_Text" xml:space="preserve">
+    <value>Цвета центральных частей неправильные.</value>
+  </data>
+  <data name="MessageFourSameColorEdgeCube_Text" xml:space="preserve">
+    <value>На реберном кубике должно быть четыре фишки каждого доступного цвета.</value>
+  </data>
+  <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
+    <value>На угловом кубике должно быть четыре фишки каждого доступного цвета.</value>
+  </data>
+  <data name="ToolTipAppEmail_Text" xml:space="preserve">
+    <value>Написать письмо автору этого приложения</value>
+  </data>
+  <data name="ToolTipAppWebsite_Text" xml:space="preserve">
+    <value>Откройте сайт этого приложения.</value>
+  </data>
+  <data name="ResultSolutions_Text" xml:space="preserve">
+    <value>Проверенные решения:</value>
+  </data>
+  <data name="HelpResetCube_Text" xml:space="preserve">
+    <value>Сбросьте настройки куба.</value>
+  </data>
+  <data name="HelpScrambleCube_Text" xml:space="preserve">
+    <value>Перемешайте кубик.</value>
+  </data>
+  <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Вернитесь на один ход назад.</value>
+  </data>
+  <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
+    <value>Сделайте один ход вперед.</value>
+  </data>
+  <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Соберите куб без вмешательства.</value>
+  </data>
+  <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Решите куб с помощью вмешательства.</value>
+  </data>
+  <data name="HelpSolveCube_Text" xml:space="preserve">
+    <value>Соберите куб.</value>
+  </data>
+  <data name="NotationTurn_Face_Text" xml:space="preserve">
+    <value>Поворот стороны: поверните сторону на четверть оборота по часовой стрелке (90 градусов)</value>
+  </data>
+  <data name="NotationTurn_U_Text" xml:space="preserve">
+    <value>Верхняя сторона</value>
+  </data>
+  <data name="NotationTurn_D_Text" xml:space="preserve">
+    <value>Нижняя сторона</value>
+  </data>
+  <data name="NotationTurn_F_Text" xml:space="preserve">
+    <value>Передняя сторона</value>
+  </data>
+  <data name="NotationTurn_B_Text" xml:space="preserve">
+    <value>Задняя сторона</value>
+  </data>
+  <data name="NotationTurn_L_Text" xml:space="preserve">
+    <value>Левая сторона</value>
+  </data>
+  <data name="NotationTurn_R_Text" xml:space="preserve">
+    <value>Правая сторона</value>
+  </data>
+  <data name="NotationTurn_Slice_Text" xml:space="preserve">
+    <value>Движение среза: поверните средний слой на четверть оборота по часовой стрелке (90 градусов)</value>
+  </data>
+  <data name="NotationTurn_M_Text" xml:space="preserve">
+    <value>Следует направлению L</value>
+  </data>
+  <data name="NotationTurn_E_Text" xml:space="preserve">
+    <value>Следует направлению D</value>
+  </data>
+  <data name="NotationTurn_S_Text" xml:space="preserve">
+    <value>Следует направлению F</value>
+  </data>
+  <data name="NotationTurn_Cube_Text" xml:space="preserve">
+    <value>Вращение куба: поверните куб на четверть оборота по часовой стрелке (90 градусов).</value>
+  </data>
+  <data name="NotationTurn_x_Text" xml:space="preserve">
+    <value>Следует направлению R</value>
+  </data>
+  <data name="NotationTurn_y_Text" xml:space="preserve">
+    <value>Следует направлению U</value>
+  </data>
+  <data name="NotationTurn_z_Text" xml:space="preserve">
+    <value>Следует направлению F</value>
+  </data>
+  <data name="NotationTurn_Wide_Text" xml:space="preserve">
+    <value>Широкие ходы: повернуть 2 слоя одновременно на четверть оборота по часовой стрелке (90 градусов), они указаны строчными буквами: u, d, f, b, l, r.</value>
+  </data>
+  <data name="NotationTurn_Apostrophe_Text" xml:space="preserve">
+    <value>Апостроф (например, U') обозначает поворот против часовой стрелки на четверть (90 градусов).</value>
+  </data>
+  <data name="NotationTurn_Number_Text" xml:space="preserve">
+    <value>Число 2 (например, U2) означает поворот на пол-оборота (180 градусов).</value>
+  </data>
+  <data name="InfoCredits_Text" xml:space="preserve">
+    <value>Благодарности: Это приложение использует открытый исходный код Герберта Косиембы (автора двухфазного алгоритма Косиембы) и Мэтта Колборна. Их вклад значительно повысил эффективность сборки кубика. Отдельное спасибо за их работу.</value>
+  </data>
+  <data name="SolvingMethod_Text" xml:space="preserve">
+    <value>Метод:</value>
+  </data>
+  <data name="ReverseOrder_Text" xml:space="preserve">
+    <value>Обратный порядок</value>
+  </data>
+  <data name="InfoLanguage_Text" xml:space="preserve">
+    <value>Для перевода текста использовался Google Translate. Это не гарантирует правильность всех переводов.
+Поддерживаемые языки: арабский, бенгальский, китайский упрощённый, китайский традиционный, чешский, датский, голландский, английский, финский, французский, немецкий, греческий, хинди, венгерский, индонезийский, итальянский, японский, корейский, норвежский, польский, португальский, румынский, русский, испанский, шведский, турецкий, украинский, урду и вьетнамский.</value>
+  </data>
+  <data name="InfoContact_Text" xml:space="preserve">
+    <value>Вы всегда можете связаться со мной для внесения любых исправлений.</value>
+  </data>
+  <data name="InfoTextToSpeech_Text" xml:space="preserve">
+    <value>Перевод текста в речь: поддерживаются не все языки, указанные в настройках приложения.
+Эта возможность зависит от устройства и установленных языков. Возможно, для некоторых языков перевод в речь и обратно осуществляется через интернет соответствующими сервисами.</value>
+  </data>
+  <data name="InternetConnectionNo_Text" xml:space="preserve">
+    <value>Подключение к Интернету отсутствует.</value>
+  </data>
+  <data name="AverageTurns_Text" xml:space="preserve">
+    <value>Среднее количество ходов для сборки кубика методом «Коциемба» — {0}, методом «Фридриха» (CFOP) — {1}.</value>
+  </data>
+  <data name="FontSize_Text" xml:space="preserve">
+    <value>Размер шрифта:</value>
+  </data>
+</root>
