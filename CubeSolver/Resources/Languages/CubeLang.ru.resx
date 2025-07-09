@@ -328,6 +328,99 @@
   <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
     <value>Кнопка переключения: установка цветов на кубе.</value>
   </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверните обратную сторону на пол-оборота.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Поверните заднюю сторону на четверть оборота против часовой стрелки. (-)</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Поверните заднюю сторону на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверните нижнюю сторону на пол-оборота.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Поверните нижнюю сторону на четверть оборота против часовой стрелки. (-)</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Поверните нижнюю сторону на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы передняя часть оказалась внизу, а правая сторона осталась справа.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы лицевая сторона оказалась слева, а верхняя сторона осталась наверху.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы лицевая сторона оказалась справа, а верхняя сторона осталась наверху.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы лицевая сторона оказалась наверху, а правая сторона осталась справа.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы верхняя часть оказалась слева, а передняя часть осталась спереди.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы верхняя часть оказалась справа, а передняя часть осталась спереди.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Поверните передне-средний слой на четверть оборота вправо. (-)</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Поверните передне-средний слой на четверть оборота вверх. (+)</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверните лицевую сторону на пол-оборота.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Поверните лицевую сторону на четверть оборота против часовой стрелки. (-)</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Поверните лицевую сторону на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверните левую сторону на пол-оборота.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Поверните левую сторону на четверть оборота против часовой стрелки. (-)</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Поверните левую сторону на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Поверните средний слой на пол-оборота.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Поверните правый средний слой на четверть оборота вперед. (+)</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Поверните правый средний слой на четверть оборота вверх. (-)</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверните правую сторону на пол-оборота.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Поверните правую сторону на четверть оборота против часовой стрелки. (-)</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Поверните правую сторону на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Поверните верхний средний слой на четверть оборота на лицевую сторону. (-)</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Поверните верхний средний слой на четверть оборота вправо. (+)</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Поверните верхнюю сторону на пол-оборота.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Поверните верхнюю сторону на четверть оборота против часовой стрелки. (-)</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Поверните верхнюю сторону на четверть оборота по часовой стрелке. (+)</value>
+  </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Версия:</value>
   </data>
@@ -341,6 +434,15 @@
     <value>Кубик не может быть собран.
 
 Возможная причина — неправильный перенос цветов на этот кубик.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы передняя часть стала задней, а правая сторона осталась справа.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы передняя часть стала задней, а верхняя грань осталась наверху.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Поверните весь куб так, чтобы верхняя часть оказалась внизу, а передняя сторона осталась спереди.</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>Время в миллисекундах:</value>
@@ -368,6 +470,60 @@
   </data>
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>На угловом кубике должно быть четыре фишки каждого доступного цвета.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Сложите вместе задний и средний слои на пол-оборота.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Поверните задний и средний слои вместе на четверть оборота «против часовой стрелки». (-)</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Поверните задний и средний слои вместе на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Поверните нижний и средний слой вместе на пол-оборота.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Поверните нижний и средний слои вместе на четверть оборота «против часовой стрелки». (-)</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Поверните нижний и средний слои вместе на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Поверните передний и средний слои вместе на пол-оборота.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Поверните передний и средний слои вместе на четверть оборота «против часовой стрелки». (-)</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Поверните передний и средний слои вместе на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Поверните левый и средний слой вместе на пол-оборота.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Поверните левый и средний слои вместе на четверть оборота «против часовой стрелки». (-)</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Поверните левый и средний слои вместе на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Поверните правый и средний слой вместе на пол-оборота.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Поверните правый и средний слои вместе на четверть оборота «против часовой стрелки». (-)</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Поверните правый и средний слои вместе на четверть оборота по часовой стрелке. (+)</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Поверните верхний и средний слой вместе на пол-оборота.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Поверните верхний и средний слои вместе на четверть оборота «против часовой стрелки». (-)</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Поверните верхний и средний слои вместе на четверть оборота по часовой стрелке. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Написать письмо автору этого приложения</value>

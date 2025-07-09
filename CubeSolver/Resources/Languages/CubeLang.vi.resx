@@ -328,6 +328,99 @@ Không được phép:</value>
   <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
     <value>Nút chuyển đổi: Thiết lập màu sắc trên khối lập phương</value>
   </data>
+  <data name="TurnBackFaceHalfTurn_Text" xml:space="preserve">
+    <value>Xoay mặt sau nửa vòng.</value>
+  </data>
+  <data name="TurnBackFaceToLeft_Text" xml:space="preserve">
+    <value>Xoay mặt sau một phần tư vòng theo hướng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="TurnBackFaceToRight_Text" xml:space="preserve">
+    <value>Xoay mặt sau một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="TurnDownFaceHalfTurn_Text" xml:space="preserve">
+    <value>Xoay mặt dưới nửa vòng.</value>
+  </data>
+  <data name="TurnDownFaceToLeft_Text" xml:space="preserve">
+    <value>Xoay mặt dưới một phần tư vòng theo hướng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="TurnDownFaceToRight_Text" xml:space="preserve">
+    <value>Xoay mặt dưới một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="TurnCubeFrontFaceToDownFace_Text" xml:space="preserve">
+    <value>Xoay toàn bộ khối lập phương sao cho mặt trước hướng xuống dưới, mặt phải vẫn ở bên phải.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToLeftFace_Text" xml:space="preserve">
+    <value>Xoay toàn bộ khối lập phương sao cho mặt trước quay về phía bên trái, mặt trên vẫn ở phía trên.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToRightFace_Text" xml:space="preserve">
+    <value>Xoay toàn bộ khối lập phương sao cho mặt trước quay về phía bên phải, mặt trên vẫn ở phía trên.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToUpFace_Text" xml:space="preserve">
+    <value>Xoay toàn bộ khối lập phương sao cho mặt trước hướng lên trên, mặt phải vẫn ở bên phải.</value>
+  </data>
+  <data name="TurnCubeUpFaceToLeftFace_Text" xml:space="preserve">
+    <value>Xoay toàn bộ khối lập phương sao cho phần trên quay về phía bên trái, phần trước vẫn ở phía trước.</value>
+  </data>
+  <data name="TurnCubeUpFaceToRightFace_Text" xml:space="preserve">
+    <value>Xoay toàn bộ khối lập phương sao cho phần trên quay về phía bên phải, phần trước vẫn ở phía trước.</value>
+  </data>
+  <data name="TurnFrontMiddleToRightFace_Text" xml:space="preserve">
+    <value>Xoay lớp giữa phía trước một phần tư vòng sang phía bên phải. (-)</value>
+  </data>
+  <data name="TurnFrontMiddleToUpFace_Text" xml:space="preserve">
+    <value>Xoay lớp giữa phía trước một phần tư vòng về phía mặt trên. (+)</value>
+  </data>
+  <data name="TurnFrontFaceHalfTurn_Text" xml:space="preserve">
+    <value>Xoay mặt trước nửa vòng.</value>
+  </data>
+  <data name="TurnFrontFaceToLeft_Text" xml:space="preserve">
+    <value>Xoay mặt trước một phần tư vòng theo hướng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="TurnFrontFaceToRight_Text" xml:space="preserve">
+    <value>Xoay mặt trước một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="TurnLeftFaceHalfTurn_Text" xml:space="preserve">
+    <value>Xoay nửa vòng về phía bên trái.</value>
+  </data>
+  <data name="TurnLeftFaceToLeft_Text" xml:space="preserve">
+    <value>Xoay bên trái một phần tư vòng theo hướng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="TurnLeftFaceToRight_Text" xml:space="preserve">
+    <value>Xoay bên trái một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="TurnMiddleLayerHalfTurn_Text" xml:space="preserve">
+    <value>Xoay lớp giữa nửa vòng.</value>
+  </data>
+  <data name="TurnRightMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Xoay lớp giữa bên phải một phần tư vòng về phía mặt trước. (+)</value>
+  </data>
+  <data name="TurnRightMiddleToUpFace_Text" xml:space="preserve">
+    <value>Xoay lớp giữa bên phải một phần tư vòng về phía mặt trên. (-)</value>
+  </data>
+  <data name="TurnRightFaceHalfTurn_Text" xml:space="preserve">
+    <value>Xoay nửa vòng về phía bên phải.</value>
+  </data>
+  <data name="TurnRightFaceToLeft_Text" xml:space="preserve">
+    <value>Xoay bên phải một phần tư vòng theo hướng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="TurnRightFaceToRight_Text" xml:space="preserve">
+    <value>Xoay bên phải một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="TurnUpMiddleToFrontFace_Text" xml:space="preserve">
+    <value>Lật lớp giữa trên cùng một phần tư vòng về phía mặt trước. (-)</value>
+  </data>
+  <data name="TurnUpMiddleToRightFace_Text" xml:space="preserve">
+    <value>Lật lớp giữa trên cùng một phần tư vòng sang mặt phải. (+)</value>
+  </data>
+  <data name="TurnUpFaceHalfTurn_Text" xml:space="preserve">
+    <value>Xoay mặt trên nửa vòng.</value>
+  </data>
+  <data name="TurnUpFaceToLeft_Text" xml:space="preserve">
+    <value>Поверните верхнюю сторону на четверть оборота против часовой стрелки. (-)</value>
+  </data>
+  <data name="TurnUpFaceToRight_Text" xml:space="preserve">
+    <value>Xoay mặt trên một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
   <data name="Version_Text" xml:space="preserve">
     <value>Phiên bản:</value>
   </data>
@@ -341,6 +434,15 @@ Không được phép:</value>
     <value>Không thể giải được khối lập phương.
 
 Nguyên nhân có thể là do chuyển màu không đúng sang khối lập phương này.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceRightStays_Text" xml:space="preserve">
+    <value>Lật toàn bộ khối lập phương sao cho mặt trước quay ra sau, mặt phải vẫn ở bên phải.</value>
+  </data>
+  <data name="TurnCubeFrontFaceToBackFaceUpStays_Text" xml:space="preserve">
+    <value>Lật toàn bộ khối lập phương sao cho mặt trước quay ra sau, mặt trên vẫn ở trên cùng.</value>
+  </data>
+  <data name="TurnCubeUpFaceToDownFaceFrontStays_Text" xml:space="preserve">
+    <value>Xoay toàn bộ khối lập phương sao cho phần trên hướng xuống dưới, mặt trước vẫn ở phía trước.</value>
   </data>
   <data name="ResultTime_Text" xml:space="preserve">
     <value>Thời gian tính bằng mili giây:</value>
@@ -368,6 +470,60 @@ Nếu bạn tắt thuật toán 'Kociemba' trong phần cài đặt, ứng dụn
   </data>
   <data name="MessageFourSameColorCornerCube_Text" xml:space="preserve">
     <value>Với mỗi màu có sẵn, phải có bốn viên cùng màu trên một khối góc.</value>
+  </data>
+  <data name="Turn2LayersBack2_Text" xml:space="preserve">
+    <value>Lật lớp sau và lớp giữa lại với nhau nửa vòng.</value>
+  </data>
+  <data name="Turn2LayersBackCCW_Text" xml:space="preserve">
+    <value>Xoay lớp sau và lớp giữa lại với nhau một phần tư vòng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="Turn2LayersBackCW_Text" xml:space="preserve">
+    <value>Xoay lớp sau và lớp giữa lại với nhau một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="Turn2LayersDown2_Text" xml:space="preserve">
+    <value>Lật lớp dưới cùng và lớp giữa lại với nhau nửa vòng.</value>
+  </data>
+  <data name="Turn2LayersDownCCW_Text" xml:space="preserve">
+    <value>Xoay lớp dưới cùng và lớp giữa lại với nhau một phần tư vòng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="Turn2LayersDownCW_Text" xml:space="preserve">
+    <value>Xoay lớp dưới cùng và lớp giữa lại với nhau một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="Turn2LayersFront2_Text" xml:space="preserve">
+    <value>Lật lớp trước và lớp giữa lại với nhau nửa vòng.</value>
+  </data>
+  <data name="Turn2LayersFrontCCW_Text" xml:space="preserve">
+    <value>Xoay lớp trước và lớp giữa lại với nhau một phần tư vòng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="Turn2LayersFrontCW_Text" xml:space="preserve">
+    <value>Xoay lớp trước và lớp giữa lại với nhau một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="Turn2LayersLeft2_Text" xml:space="preserve">
+    <value>Xoay lớp bên trái và lớp giữa lại với nhau nửa vòng.</value>
+  </data>
+  <data name="Turn2LayersLeftCCW_Text" xml:space="preserve">
+    <value>Xoay lớp bên trái và lớp giữa lại với nhau một phần tư vòng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="Turn2LayersLeftCW_Text" xml:space="preserve">
+    <value>Xoay lớp bên trái và lớp giữa lại với nhau một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="Turn2LayersRight2_Text" xml:space="preserve">
+    <value>Xoay lớp bên phải và lớp giữa lại với nhau nửa vòng.</value>
+  </data>
+  <data name="Turn2LayersRightCCW_Text" xml:space="preserve">
+    <value>Xoay lớp bên phải và lớp giữa lại với nhau một phần tư vòng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="Turn2LayersRightCW_Text" xml:space="preserve">
+    <value>Xoay lớp bên phải và lớp giữa lại với nhau một phần tư vòng theo chiều kim đồng hồ. (+)</value>
+  </data>
+  <data name="Turn2LayersUp2_Text" xml:space="preserve">
+    <value>Lật lớp trên cùng và lớp giữa lại với nhau nửa vòng.</value>
+  </data>
+  <data name="Turn2LayersUpCCW_Text" xml:space="preserve">
+    <value>Xoay lớp trên cùng và lớp giữa lại với nhau một phần tư vòng 'ngược chiều kim đồng hồ'. (-)</value>
+  </data>
+  <data name="Turn2LayersUpCW_Text" xml:space="preserve">
+    <value>Xoay lớp trên cùng và lớp giữa lại với nhau một phần tư vòng theo chiều kim đồng hồ. (+)</value>
   </data>
   <data name="ToolTipAppEmail_Text" xml:space="preserve">
     <value>Gửi email cho tác giả của ứng dụng này</value>
