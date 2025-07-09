@@ -651,7 +651,7 @@ Ez nem garancia arra, hogy minden kocka megoldható.</value>
   <data name="InfoLanguage_Text" xml:space="preserve">
     <value>A szöveg fordításához a Google Fordítót használtuk. Ez nem garantálja, hogy minden fordítás helyes.
 
-A támogatott nyelvek: arab, bengáli, kínai (egyszerűsített), kínai (hagyományos), cseh, dán, holland, angol, finn, francia, német, görög, hindi, magyar, indonéz, olasz, japán, koreai, norvég, lengyel, portugál, román, spanyol, svéd, török, ukrán és urdu.</value>
+A támogatott nyelvek: arab, bengáli, kínai (egyszerűsített), kínai (hagyományos), cseh, dán, holland, angol, finn, francia, német, görög, hindi, magyar, indonéz, olasz, japán, koreai, norvég, lengyel, portugál, román, orosz, spanyol, svéd, török, ukrán, urdu és vietnami.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Bármilyen javításért bármikor fordulhat hozzám.</value>

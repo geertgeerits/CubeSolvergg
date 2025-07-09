@@ -649,8 +649,8 @@ Ini bukan jaminan bahwa semua kubus dapat diselesaikan.</value>
     <value>Urutan terbalik</value>
   </data>
   <data name="InfoLanguage_Text" xml:space="preserve">
-    <value>Google Translate digunakan untuk menerjemahkan teks. Ini bukan jaminan bahwa semua terjemahan itu benar.
-Bahasa yang didukung adalah: Arab, Bengali, Mandarin sederhana, Mandarin tradisional, Ceko, Denmark, Belanda, Inggris, Finlandia, Prancis, Jerman, Yunani, Hindi, Hungaria, Indonesia, Italia, Jepang, Korea, Norwegia, Polandia, Portugis, Rumania, Spanyol, Swedia, Turki, Ukraina, dan Urdu.</value>
+    <value>Google Translate digunakan untuk menerjemahkan teks. Ini bukan jaminan bahwa semua terjemahan akurat.
+Bahasa yang didukung adalah: Arab, Bengali, Tionghoa Sederhana, Tionghoa Tradisional, Ceko, Denmark, Belanda, Inggris, Finlandia, Prancis, Jerman, Yunani, Hindi, Hungaria, Indonesia, Italia, Jepang, Korea, Norwegia, Polandia, Portugis, Rumania, Rusia, Spanyol, Swedia, Turki, Ukraina, Urdu, dan Vietnam.</value>
   </data>
   <data name="InfoContact_Text" xml:space="preserve">
     <value>Anda selalu dapat menghubungi saya untuk koreksi apa pun.</value>
