@@ -313,6 +313,30 @@ Không được phép:</value>
   <data name="ToolTipGoBack_Text" xml:space="preserve">
     <value>Quay lại</value>
   </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Tiến về phía trước</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Giúp đỡ</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Mở khối lập phương</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Lưu khối lập phương</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Nút chuyển đổi: Thiết lập màu sắc trên khối lập phương</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Phiên bản:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Trang web: </value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Đúng</value>
+  </data>
   <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
     <value>Không thể giải được khối lập phương.
 
@@ -354,11 +378,26 @@ Nếu bạn tắt thuật toán 'Kociemba' trong phần cài đặt, ứng dụn
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Các giải pháp đã thử nghiệm:</value>
   </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Xáo trộn khối lập phương</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Đặt lại khối lập phương</value>
+  </data>
   <data name="HelpResetCube_Text" xml:space="preserve">
     <value>Đặt lại khối lập phương.</value>
   </data>
   <data name="HelpScrambleCube_Text" xml:space="preserve">
     <value>Làm xáo trộn khối lập phương.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Giải khối lập phương</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Quay lại một lượt</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Đi một vòng về phía trước</value>
   </data>
   <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
     <value>Quay lại một lượt.</value>
@@ -366,11 +405,20 @@ Nếu bạn tắt thuật toán 'Kociemba' trong phần cài đặt, ứng dụn
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Đi về phía trước một vòng.</value>
   </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Giải khối lập phương mà không cần can thiệp</value>
+  </data>
   <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Giải khối lập phương mà không cần can thiệp.</value>
   </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Giải khối lập phương với sự can thiệp</value>
+  </data>
   <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Giải khối lập phương bằng cách can thiệp.</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>Nút chuyển đổi: Giải khối lập phương có hoặc không có sự can thiệp</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>Giải khối lập phương.</value>
@@ -431,6 +479,12 @@ Nếu bạn tắt thuật toán 'Kociemba' trong phần cài đặt, ứng dụn
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Ghi công: Ứng dụng này sử dụng mã nguồn mở từ 'Herbert Kociemba' (tác giả của Thuật toán hai pha Kociemba) và 'Matt Colbourne'. Những đóng góp của họ đã cải thiện đáng kể hiệu quả giải khối lập phương. Xin cảm ơn đặc biệt vì công sức của họ.</value>
+  </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Lần khởi chạy trò chơi đầu tiên có thể mất tới {0} giây.</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>Phương pháp Kociemba:</value>
   </data>
   <data name="SolvingMethod_Text" xml:space="preserve">
     <value>Phương pháp:</value>

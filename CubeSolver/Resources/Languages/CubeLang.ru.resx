@@ -311,7 +311,31 @@
     <value>Тема:</value>
   </data>
   <data name="ToolTipGoBack_Text" xml:space="preserve">
-    <value>Quay lại</value>
+    <value>Возвращаться</value>
+  </data>
+  <data name="ToolTipGoForward_Text" xml:space="preserve">
+    <value>Идти вперед</value>
+  </data>
+  <data name="ToolTipHelp_Text" xml:space="preserve">
+    <value>Помощь</value>
+  </data>
+  <data name="ToolTipOpenCube_Text" xml:space="preserve">
+    <value>Откройте куб</value>
+  </data>
+  <data name="ToolTipSaveCube_Text" xml:space="preserve">
+    <value>Сохраните куб</value>
+  </data>
+  <data name="ToolTipSetColorsCube_Text" xml:space="preserve">
+    <value>Кнопка переключения: установка цветов на кубе.</value>
+  </data>
+  <data name="Version_Text" xml:space="preserve">
+    <value>Версия:</value>
+  </data>
+  <data name="Website_Text" xml:space="preserve">
+    <value>Веб-сайт: </value>
+  </data>
+  <data name="Yes_Text" xml:space="preserve">
+    <value>Да</value>
   </data>
   <data name="MessageCubeCannotBeSolved_Text" xml:space="preserve">
     <value>Кубик не может быть собран.
@@ -354,11 +378,26 @@
   <data name="ResultSolutions_Text" xml:space="preserve">
     <value>Проверенные решения:</value>
   </data>
+  <data name="ToolTipScrambleCube_Text" xml:space="preserve">
+    <value>Перемешайте куб</value>
+  </data>
+  <data name="ToolTipResetCube_Text" xml:space="preserve">
+    <value>Сбросить куб</value>
+  </data>
   <data name="HelpResetCube_Text" xml:space="preserve">
     <value>Сбросьте настройки куба.</value>
   </data>
   <data name="HelpScrambleCube_Text" xml:space="preserve">
     <value>Перемешайте кубик.</value>
+  </data>
+  <data name="ToolTipSolveCube_Text" xml:space="preserve">
+    <value>Реши куб</value>
+  </data>
+  <data name="ToolTipGoOneTurnBackward_Text" xml:space="preserve">
+    <value>Вернуться на один ход назад</value>
+  </data>
+  <data name="ToolTipGoOneTurnForward_Text" xml:space="preserve">
+    <value>Сделайте один поворот вперед</value>
   </data>
   <data name="HelpGoOneTurnBackward_Text" xml:space="preserve">
     <value>Вернитесь на один ход назад.</value>
@@ -366,11 +405,20 @@
   <data name="HelpGoOneTurnForward_Text" xml:space="preserve">
     <value>Сделайте один ход вперед.</value>
   </data>
+  <data name="ToolTipTurnContinuouslyPlay_Text" xml:space="preserve">
+    <value>Соберите куб без вмешательства</value>
+  </data>
   <data name="HelpTurnContinuouslyPlay_Text" xml:space="preserve">
     <value>Соберите куб без вмешательства.</value>
   </data>
+  <data name="ToolTipTurnContinuouslyStop_Text" xml:space="preserve">
+    <value>Решить куб с вмешательством</value>
+  </data>
   <data name="HelpTurnContinuouslyStop_Text" xml:space="preserve">
     <value>Решите куб с помощью вмешательства.</value>
+  </data>
+  <data name="ToolTipTurnContinuously_Text" xml:space="preserve">
+    <value>Кнопка переключения: Соберите куб с вмешательством или без него.</value>
   </data>
   <data name="HelpSolveCube_Text" xml:space="preserve">
     <value>Соберите куб.</value>
@@ -431,6 +479,12 @@
   </data>
   <data name="InfoCredits_Text" xml:space="preserve">
     <value>Благодарности: Это приложение использует открытый исходный код Герберта Косиембы (автора двухфазного алгоритма Косиембы) и Мэтта Колборна. Их вклад значительно повысил эффективность сборки кубика. Отдельное спасибо за их работу.</value>
+  </data>
+  <data name="WaitFirstGameLaunch_Text" xml:space="preserve">
+    <value>Первый запуск игры может занять до {0} секунд.</value>
+  </data>
+  <data name="UseKociembaSolution_Text" xml:space="preserve">
+    <value>Метод Коциембы:</value>
   </data>
   <data name="SolvingMethod_Text" xml:space="preserve">
     <value>Метод:</value>
