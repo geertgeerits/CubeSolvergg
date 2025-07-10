@@ -220,6 +220,8 @@
                     Grid.Row="1"
                     Grid.Column="1"
                     HorizontalOptions="End"
+                    HorizontalTextAlignment="End"
+                    MaximumWidthRequest="230"
                     Text="{local:Translate CubeUpFace_Text}">
                 </Label>
 
@@ -642,6 +644,8 @@
                     Grid.Row="5"
                     Grid.Column="1"
                     VerticalTextAlignment="Start"
+                    HorizontalTextAlignment="Start"
+                    MaximumWidthRequest="144"
                     Text="{local:Translate CubeFrontFace_Text}">
                 </Label>
 
@@ -651,6 +655,8 @@
                     Grid.Column="1"
                     HorizontalOptions="End"
                     VerticalTextAlignment="Start"
+                    HorizontalTextAlignment="End"
+                    MaximumWidthRequest="144"
                     Text="{local:Translate CubeRightFace_Text}">
                 </Label>
 
@@ -737,6 +743,8 @@
                     Grid.Row="7"
                     Grid.Column="1"
                     VerticalTextAlignment="End"
+                    HorizontalTextAlignment="Start"
+                    MaximumWidthRequest="144"
                     Text="{local:Translate CubeLeftFace_Text}">
                 </Label>
 
@@ -746,6 +754,8 @@
                     Grid.Column="1"
                     HorizontalOptions="End"
                     VerticalTextAlignment="End"
+                    HorizontalTextAlignment="End"
+                    MaximumWidthRequest="144"
                     Text="{local:Translate CubeBackFace_Text}">
                 </Label>
 
@@ -1051,6 +1061,8 @@
                     Grid.Column="1"
                     HorizontalOptions="Center"
                     VerticalTextAlignment="Start"
+                    HorizontalTextAlignment="Center"
+                    MaximumWidthRequest="280"
                     Text="{local:Translate CubeDownFace_Text}">
                 </Label>
             </Grid>
