@@ -199,7 +199,7 @@
                     Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="3"
-                    MinimumHeightRequest="80"
+                    MinimumHeightRequest="85"
                     HorizontalOptions="Center"
                     BackgroundColor="Transparent"
                     IsVisible="False">

@@ -2223,7 +2223,11 @@ namespace CubeSolver
 
             // Set the text of the controls in the chosen language
             lblCubeOutsideView.Text = CubeLang.CubeOutsideView_Text;
-            lblExplainTurnCube.Text = await SetExplainTextAsync(cTurnTemp);
+
+            if (!string.IsNullOrEmpty(cTurnTemp))
+            {
+                lblExplainTurnCube.Text = await SetExplainTextAsync(cTurnTemp);
+            }
 
             if (!bSolvingCube)
             {
