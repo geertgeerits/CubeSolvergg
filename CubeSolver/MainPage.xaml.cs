@@ -33,7 +33,7 @@ namespace CubeSolver
         private bool bTurnContinuously;
         private bool bKociembaTablesExist;
         private int nDurationFirstKociembaSolve = 60;
-        private string cTurnTemp = "";
+        private string cTurnTemp = string.Empty;
 
         //// Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
@@ -124,7 +124,7 @@ namespace CubeSolver
             }
 
             // Set the text language
-            SetTextLanguage();
+            _ = SetTextLanguageAsync();
 
             //// Initialize text to speech
             _ = InitializeTextToSpeechAsync();
@@ -425,8 +425,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 337-338 and 401-425 (and change the line 449 to bTestSolveCube = true)
-                // and uncomment one of the lines 432-434 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 338-339 and 402-426 (and change the line 450 to bTestSolveCube = true)
+                // and uncomment one of the lines 433-435 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -1682,6 +1682,7 @@ namespace CubeSolver
         private async Task<string> SetExplainTextAsync(string cTurn)
         {
             string cTurnCubeText = "";
+            cTurnTemp = cTurn;
 
             switch (cTurn)
             {
@@ -2200,7 +2201,7 @@ namespace CubeSolver
         {
             if (Globals.bLanguageChanged)
             {
-                SetTextLanguage();
+                _ = SetTextLanguageAsync();
                 Globals.bLanguageChanged = false;
             }
         }
@@ -2208,7 +2209,7 @@ namespace CubeSolver
         /// <summary>
         /// Put text in the chosen language in the controls
         /// </summary>
-        private void SetTextLanguage()
+        private async Task SetTextLanguageAsync()
         {
             // Set the current UI culture of the selected language
             Globals.SetCultureSelectedLanguage(Globals.cLanguage);
@@ -2220,11 +2221,9 @@ namespace CubeSolver
             Globals.SetFlowDirection(this);
             Globals.SetFlowDirection(lblExplainTurnCube);
 
-            // Set the text of the controls
+            // Set the text of the controls in the chosen language
             lblCubeOutsideView.Text = CubeLang.CubeOutsideView_Text;
-            
-            //lblExplainTurnCube.Text = "A";
-            //string cTurnCubeText = SetExplainTextAsync(cTurnTemp);
+            lblExplainTurnCube.Text = await SetExplainTextAsync(cTurnTemp);
 
             if (!bSolvingCube)
             {
