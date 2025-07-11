@@ -61,6 +61,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="Explanation\**" />
+	  <Compile Remove="Explanation\**" />
+	  <EmbeddedResource Remove="Explanation\**" />
+	  <MauiCss Remove="Explanation\**" />
+	  <MauiXaml Remove="Explanation\**" />
+	  <None Remove="Explanation\**" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Remove="ClassProgramLogging.cs" />
 	  <Compile Remove="ClassSolveCubeBasic.cs" />
 	  <Compile Remove="ClassSolveCubeCFOPSpan.cs" />
@@ -135,10 +144,6 @@
 	    <Generator>ResXFileCodeGenerator</Generator>
 	    <LastGenOutput>CubeLang.Designer.cs</LastGenOutput>
 	  </EmbeddedResource>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Explanation\" />
 	</ItemGroup>
 
 	<ItemGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">

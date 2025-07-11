@@ -1675,7 +1675,7 @@ namespace CubeSolver
         }
 
         /// <summary>
-        /// Set the explain text depending on the direction of rotation of the cube face
+        /// Set the explain text depending on the direction of rotation of the cube
         /// </summary>
         /// <param name="cTurn"></param>
         /// <returns></returns>
@@ -2227,6 +2227,12 @@ namespace CubeSolver
             if (!string.IsNullOrEmpty(cCurrentTurn))
             {
                 lblExplainTurnCube.Text = await SetExplainTextAsync(cCurrentTurn);
+
+                if (!bTurnContinuously)
+                {
+                    // Convert text to speech
+                    ExplainTurnCubeSpeech(lblExplainTurnCube.Text);
+                }
             }
 
             if (!bSolvingCube)
