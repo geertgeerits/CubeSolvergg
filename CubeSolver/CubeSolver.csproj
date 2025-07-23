@@ -21,8 +21,8 @@
 		<ApplicationIdGuid>be8353b4-1c5d-4ba1-b563-077ed70cd644</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
-		<ApplicationVersion>1</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.42</ApplicationDisplayVersion>
+		<ApplicationVersion>42</ApplicationVersion>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
 		<!--<WindowsPackageType>None</WindowsPackageType>-->
@@ -108,7 +108,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.7" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.82" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.90" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.7" />
 	</ItemGroup>
 
@@ -156,8 +156,8 @@
 		<AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
 		<AndroidSigningKeyPass></AndroidSigningKeyPass>
 		<AndroidSigningStorePass></AndroidSigningStorePass>
-		<ApplicationDisplayVersion>2.0.41</ApplicationDisplayVersion>
-		<ApplicationVersion>41</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.42</ApplicationDisplayVersion>
+		<ApplicationVersion>42</ApplicationVersion>
 		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
 	</PropertyGroup>
 
@@ -176,8 +176,8 @@
 		<ArchiveOnBuild>true</ArchiveOnBuild>
 		<TcpPort>58181</TcpPort>
 
-		<ApplicationDisplayVersion>2.0.41</ApplicationDisplayVersion>
-		<ApplicationVersion>41</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.42</ApplicationDisplayVersion>
+		<ApplicationVersion>42</ApplicationVersion>
 		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
 	</PropertyGroup>
 
