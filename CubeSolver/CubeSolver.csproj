@@ -21,6 +21,7 @@
 		<ApplicationIdGuid>be8353b4-1c5d-4ba1-b563-077ed70cd644</ApplicationIdGuid>
 
 		<!-- Versions -->
+		<PackageVersion>2.0.42</PackageVersion>
 		<ApplicationDisplayVersion>2.0.42</ApplicationDisplayVersion>
 		<ApplicationVersion>42</ApplicationVersion>
 
