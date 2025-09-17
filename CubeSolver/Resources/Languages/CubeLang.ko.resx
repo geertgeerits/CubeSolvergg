@@ -668,4 +668,9 @@
   <data name="FontSize_Text" xml:space="preserve">
     <value>글꼴 크기:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store 및 App Store 로고는 미국 및 기타 국가와 지역에 등록된 Apple Inc.의 상표입니다.
+Google, Google Play, Google Play 로고 및 Android는 Google LLC의 상표입니다.
+Microsoft, Microsoft Store, Microsoft Store 로고 및 Windows는 Microsoft Corporation의 상표입니다.</value>
+  </data>
 </root>

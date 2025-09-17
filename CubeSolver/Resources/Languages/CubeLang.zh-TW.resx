@@ -668,4 +668,9 @@
   <data name="FontSize_Text" xml:space="preserve">
     <value>字體大小：</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple、App Store 和 App Store 標誌是 Apple Inc. 在美國及其他國家和地區註冊的商標。
+Google、Google Play、Google Play 標誌和 Android 是 Google LLC 的商標。
+Microsoft、Microsoft Store、Microsoft Store 標誌和 Windows 是 Microsoft Corporation 的商標。</value>
+  </data>
 </root>

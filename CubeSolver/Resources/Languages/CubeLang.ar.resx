@@ -670,4 +670,9 @@
   <data name="FontSize_Text" xml:space="preserve">
     <value>حجم الخط:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple وApp Store وشعار App Store علامات تجارية لشركة Apple Inc.، مسجلة في الولايات المتحدة ودول ومناطق أخرى.
+Google وGoogle Play وشعار Google Play وAndroid علامات تجارية لشركة Google LLC.
+Microsoft وMicrosoft Store وشعار Microsoft Store وWindows علامات تجارية لشركة Microsoft Corporation.</value>
+  </data>
 </root>

@@ -668,4 +668,9 @@ Bu seçenek cihazdan cihaza ve yüklü dillere göre değişir. Bazı diller iç
   <data name="FontSize_Text" xml:space="preserve">
     <value>Yazı tipi boyutu:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store ve App Store logosu, Apple Inc.'in ABD ve diğer ülke ve bölgelerde tescilli ticari markalarıdır.
+Google, Google Play, Google Play logosu ve Android, Google LLC'nin ticari markalarıdır.
+Microsoft, Microsoft Store, Microsoft Store logosu ve Windows, Microsoft Corporation'ın ticari markalarıdır.</value>
+  </data>
 </root>

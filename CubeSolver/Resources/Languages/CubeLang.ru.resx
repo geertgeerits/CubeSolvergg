@@ -668,4 +668,9 @@
   <data name="FontSize_Text" xml:space="preserve">
     <value>Размер шрифта:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store и логотип App Store являются товарными знаками Apple Inc., зарегистрированными в США и других странах и регионах.
+Google, Google Play, логотип Google Play и Android являются товарными знаками Google LLC.
+Microsoft, Microsoft Store, логотип Microsoft Store и Windows являются товарными знаками Microsoft Corporation.</value>
+  </data>
 </root>

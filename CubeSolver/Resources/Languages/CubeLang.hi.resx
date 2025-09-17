@@ -665,4 +665,9 @@
   <data name="FontSize_Text" xml:space="preserve">
     <value>फ़ॉन्ट आकार:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store और App Store लोगो, Apple Inc. के ट्रेडमार्क हैं, जो अमेरिका और अन्य देशों व क्षेत्रों में पंजीकृत हैं।
+Google, Google Play, Google Play लोगो और Android, Google LLC के ट्रेडमार्क हैं।
+Microsoft, Microsoft Store, Microsoft Store लोगो और Windows, Microsoft Corporation के ट्रेडमार्क हैं।</value>
+  </data>
 </root>

@@ -670,4 +670,9 @@
   <data name="FontSize_Text" xml:space="preserve">
     <value>Μέγεθος γραμματοσειράς:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Οι ονομασίες Apple, App Store και το λογότυπο App Store είναι εμπορικά σήματα της Apple Inc., καταχωρισμένα στις ΗΠΑ και σε άλλες χώρες και περιοχές.
+Οι ονομασίες Google, Google Play, το λογότυπο Google Play και Android είναι εμπορικά σήματα της Google LLC.
+Οι ονομασίες Microsoft, Microsoft Store, το λογότυπο Microsoft Store και τα Windows είναι εμπορικά σήματα της Microsoft Corporation.</value>
+  </data>
 </root>

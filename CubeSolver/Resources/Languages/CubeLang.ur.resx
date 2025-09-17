@@ -668,4 +668,9 @@
   <data name="FontSize_Text" xml:space="preserve">
     <value>فونٹ سائز:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store اور App Store لوگو Apple Inc. کے ٹریڈ مارک ہیں، جو امریکہ اور دیگر ممالک اور خطوں میں رجسٹرڈ ہیں۔
+گوگل، گوگل پلے، گوگل پلے لوگو اور اینڈرائیڈ گوگل ایل ایل سی کے ٹریڈ مارک ہیں۔
+Microsoft، Microsoft Store، Microsoft Store لوگو اور Windows Microsoft Corporation کے ٹریڈ مارک ہیں۔</value>
+  </data>
 </root>

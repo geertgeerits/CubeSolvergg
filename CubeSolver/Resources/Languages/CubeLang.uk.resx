@@ -668,4 +668,9 @@
   <data name="FontSize_Text" xml:space="preserve">
     <value>Розмір шрифту:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store та логотип App Store є торговими марками Apple Inc., зареєстрованими в США та інших країнах і регіонах.
+Google, Google Play, логотип Google Play та Android є торговими марками Google LLC.
+Microsoft, Microsoft Store, логотип Microsoft Store та Windows є торговими марками Microsoft Corporation.</value>
+  </data>
 </root>

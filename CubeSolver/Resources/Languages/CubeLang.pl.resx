@@ -668,4 +668,9 @@ Ta opcja różni się w zależności od urządzenia i zainstalowanych języków.
   <data name="FontSize_Text" xml:space="preserve">
     <value>Rozmiar czcionki:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store i logo App Store są znakami towarowymi firmy Apple Inc., zarejestrowanymi w Stanach Zjednoczonych oraz innych krajach i regionach.
+Google, Google Play, logo Google Play i Android są znakami towarowymi firmy Google LLC.
+Microsoft, Microsoft Store, logo Microsoft Store i Windows są znakami towarowymi firmy Microsoft Corporation.</value>
+  </data>
 </root>

@@ -417,7 +417,6 @@ namespace CubeSolver
                 lCubePositions.Add(turnLeftCCW);
                 lCubePositions.Add(turnFront2);
                 await SolveCubeFromMultiplePositions2Async(cSolution);
-
             }
         }
 

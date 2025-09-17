@@ -668,4 +668,9 @@ Dette alternativet varierer fra enhet til enhet og de installerte språkene. Det
   <data name="FontSize_Text" xml:space="preserve">
     <value>Skriftstørrelse:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store og App Store-logoen er varemerker for Apple Inc., registrert i USA og andre land og regioner.
+Google, Google Play, Google Play-logoen og Android er varemerker for Google LLC.
+Microsoft, Microsoft Store, Microsoft Store-logoen og Windows er varemerker for Microsoft Corporation.</value>
+  </data>
 </root>

@@ -668,4 +668,9 @@ Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich
   <data name="FontSize_Text" xml:space="preserve">
     <value>Schriftgröße:</value>
   </data>
+  <data name="Trademarks_Text" xml:space="preserve">
+    <value>Apple, App Store und das App Store-Logo sind Marken von Apple Inc. und in den USA sowie anderen Ländern und Regionen eingetragen.
+Google, Google Play, das Google Play-Logo und Android sind Marken von Google LLC.
+Microsoft, Microsoft Store, das Microsoft Store-Logo und Windows sind Marken der Microsoft Corporation.</value>
+  </data>
 </root>

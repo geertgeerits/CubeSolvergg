@@ -1,3 +1,5 @@
+using CubeSolver.Resources.Languages;
+
 namespace CubeSolver
 {
     public sealed partial class PageAbout : ContentPage
@@ -50,6 +52,7 @@ namespace CubeSolver
             lblTextToSpeech.Text = $"\n{CubeLang.InfoTextToSpeech_Text}";
             lblLanguage.Text = $"\n{CubeLang.InfoLanguage_Text}";
             lblContact.Text = $"\n{CubeLang.InfoContact_Text}";
+            lblTrademarks.Text = $"\n{CubeLang.Trademarks_Text}";
         }
 
         /// <summary>
