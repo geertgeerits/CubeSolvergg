@@ -127,11 +127,6 @@
                 </Label>
 
                 <Label
-                    x:Name="lblCredits"
-                    Style="{StaticResource labelStyleInfo}">
-                </Label>
-
-                <Label
                     x:Name="lblHelpOptionsSolveCube"
                     Style="{StaticResource labelStyleInfo}">
                 </Label>
@@ -637,6 +632,11 @@
                     x:Name="lblContact"
                     Style="{StaticResource labelStyleInfo}"
                     Text="{x:Static resx:CubeLang.InfoContact_Text}">
+                </Label>
+
+                <Label
+                    x:Name="lblCredits"
+                    Style="{StaticResource labelStyleInfo}">
                 </Label>
 
                 <Label

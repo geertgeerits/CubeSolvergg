@@ -46,12 +46,12 @@ namespace CubeSolver
             lblCopyright.Text = $"{CubeLang.Copyright_Text} © 1981-2025 Geert Geerits";
             lblPrivacyPolicy.Text = $"\n{CubeLang.PrivacyPolicyTitle_Text} {CubeLang.PrivacyPolicy_Text}";
             lblLicense.Text = $"\n{CubeLang.LicenseTitle_Text}: {CubeLang.License_Text}";
-            lblCredits.Text = $"\n{CubeLang.InfoCredits_Text}";
             lblHelpOptionsSolveCube.Text = $"\n{CubeLang.HelpOptionsSolveCube_Text}\n{string.Format(CubeLang.AverageTurns_Text, 21, 60)}";
             lblHelp.Text = $"\n{CubeLang.HelpCube_Text}";
             lblTextToSpeech.Text = $"\n{CubeLang.InfoTextToSpeech_Text}";
             lblLanguage.Text = $"\n{CubeLang.InfoLanguage_Text}";
             lblContact.Text = $"\n{CubeLang.InfoContact_Text}";
+            lblCredits.Text = $"\n{CubeLang.InfoCredits_Text}";
             lblTrademarks.Text = $"\n{CubeLang.Trademarks_Text}";
         }
 
