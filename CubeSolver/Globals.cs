@@ -1,9 +1,4 @@
-﻿//// Global usings
-global using System.Globalization;
-global using CubeSolver.Resources.Languages;
-global using System.Diagnostics;
-
-namespace CubeSolver
+﻿namespace CubeSolver
 {
     //// Global variables and methods
     internal static class Globals
@@ -164,12 +159,7 @@ namespace CubeSolver
         /// </summary>
         public static void SetGlobalFontSize()
         {
-            if (Application.Current is not null)
-            {
-                Application.Current.Resources["GlobalFontSize"] = nFontSize;
-            }
-            
-            //Application.Current?.Resources["GlobalFontSize"] = nFontSize;
+            Application.Current?.Resources["GlobalFontSize"] = nFontSize;
         }
 
         /// <summary>

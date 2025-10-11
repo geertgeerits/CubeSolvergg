@@ -1,5 +1,3 @@
-using CubeSolver.Resources.Languages;
-
 namespace CubeSolver
 {
     public sealed partial class PageAbout : ContentPage
@@ -13,7 +11,7 @@ namespace CubeSolver
             }
             catch (Exception ex)
             {
-                DisplayAlert("InitializeComponent: PageAbout", ex.Message, "OK");
+                DisplayAlertAsync("InitializeComponent: PageAbout", ex.Message, "OK");
                 return;
             }
 
@@ -43,7 +41,7 @@ namespace CubeSolver
 
             //// Put text in the chosen language in the controls and variables
             lblVersion.Text = $"{CubeLang.Version_Text} 2.0.42";
-            lblCopyright.Text = $"{CubeLang.Copyright_Text} © 1981-2025 Geert Geerits";
+            lblCopyright.Text = $"{CubeLang.Copyright_Text} © 1981-2026 Geert Geerits";
             lblPrivacyPolicy.Text = $"\n{CubeLang.PrivacyPolicyTitle_Text} {CubeLang.PrivacyPolicy_Text}";
             lblLicense.Text = $"\n{CubeLang.LicenseTitle_Text}: {CubeLang.License_Text}";
             lblHelpOptionsSolveCube.Text = $"\n{CubeLang.HelpOptionsSolveCube_Text}\n{string.Format(CubeLang.AverageTurns_Text, 21, 60)}";
@@ -82,7 +80,7 @@ namespace CubeSolver
                 }
                 catch (Exception ex)
                 {
-                    await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                    await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
                 }
             }
         }
@@ -99,7 +97,7 @@ namespace CubeSolver
 
             if (accessType != NetworkAccess.Internet)
             {
-                await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.InternetConnectionNo_Text, CubeLang.ButtonClose_Text);
+                await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.InternetConnectionNo_Text, CubeLang.ButtonClose_Text);
                 return;
             }
 
@@ -117,7 +115,7 @@ namespace CubeSolver
             }
             catch (Exception ex)
             {
-                await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
             }
         }
     }
@@ -194,7 +192,7 @@ namespace CubeSolver
     //            }
     //            catch (Exception ex)
     //            {
-    //                await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+    //                await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
     //            }
     //        }
     //    }
@@ -211,7 +209,7 @@ namespace CubeSolver
 
     //        if (accessType != NetworkAccess.Internet)
     //        {
-    //            await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.InternetConnectionNo_Text, CubeLang.ButtonClose_Text);
+    //            await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.InternetConnectionNo_Text, CubeLang.ButtonClose_Text);
     //            return;
     //        }
 
@@ -229,7 +227,7 @@ namespace CubeSolver
     //        }
     //        catch (Exception ex)
     //        {
-    //            await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+    //            await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
     //        }
     //    }
     //}

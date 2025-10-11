@@ -1566,7 +1566,7 @@
             {
 #if DEBUG                
                 Debug.WriteLine("Error in method CleanListCubeTurns: " + ex.Message);
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, "CleanListCubeTurns: " + ex.Message, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, "CleanListCubeTurns: " + ex.Message, CubeLang.ButtonClose_Text);
 #endif
                 // Restore the list with the original cube turns
                 lCubeTurnsToClean.Clear();
@@ -1577,7 +1577,7 @@
 
             //// Stop the stopwatch
             //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-            //_ = Application.Current!.Windows[0].Page!.DisplayAlert("Time", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
+            //_ = Application.Current!.Windows[0].Page!.DisplayAlertAsync("Time", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
 #if DEBUG
             //// Save the list with the cube turns after the cleaning to a file, for testing purposes
             if (bCubeTurnsSave)

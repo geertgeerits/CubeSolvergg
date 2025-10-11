@@ -37,7 +37,7 @@
             }
             catch (Exception ex)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -78,7 +78,7 @@
             }
             catch (Exception ex)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -116,7 +116,7 @@
             }
             catch (Exception ex)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -195,7 +195,7 @@
             catch (Exception ex)
             {
                 // Handle exceptions (e.g., directory not found, access denied)
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert("Error", ex.Message, "OK");
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync("Error", ex.Message, "OK");
             }
         }
 
@@ -231,7 +231,7 @@
             catch (Exception ex)
             {
 #if DEBUG
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
 #endif
                 // Return a default value of 60 seconds
                 return await Task.FromResult(60);

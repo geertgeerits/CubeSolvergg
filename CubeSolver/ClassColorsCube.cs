@@ -319,7 +319,7 @@ namespace CubeSolver
 
             if (nNumberOfColors1 != 9 || nNumberOfColors2 != 9 || nNumberOfColors3 != 9 || nNumberOfColors4 != 9 || nNumberOfColors5 != 9 || nNumberOfColors6 != 9)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageNineSameColor_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageNineSameColor_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -358,7 +358,7 @@ namespace CubeSolver
 
             if (!bColorCenterCube)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCentralCube_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCentralCube_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -407,7 +407,7 @@ namespace CubeSolver
 
             if (!bColorCornerCube)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCornerCube_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCornerCube_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -423,7 +423,7 @@ namespace CubeSolver
 
             if (aNumberOfColors[1] > 4 || aNumberOfColors[2] > 4 || aNumberOfColors[3] > 4 || aNumberOfColors[4] > 4 || aNumberOfColors[5] > 4 || aNumberOfColors[6] > 4)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageFourSameColorCornerCube_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageFourSameColorCornerCube_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -442,7 +442,7 @@ namespace CubeSolver
 
             if (!bColorCornerCube)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorEdgeCube_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorEdgeCube_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -458,7 +458,7 @@ namespace CubeSolver
 
             if (aNumberOfColors[1] > 4 || aNumberOfColors[2] > 4 || aNumberOfColors[3] > 4 || aNumberOfColors[4] > 4 || aNumberOfColors[5] > 4 || aNumberOfColors[6] > 4)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageFourSameColorEdgeCube_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageFourSameColorEdgeCube_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -476,7 +476,7 @@ namespace CubeSolver
 
             if (!bResult1 || !bResult2 || !bResult3 || !bResult4 || !bResult5 || !bResult6)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -489,7 +489,7 @@ namespace CubeSolver
 
             if (!bResult1 || !bResult2 || !bResult3 || !bResult4 || !bResult5 || !bResult6)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -502,7 +502,7 @@ namespace CubeSolver
 
             if (!bResult1 || !bResult2 || !bResult3 || !bResult4 || !bResult5 || !bResult6)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -515,7 +515,7 @@ namespace CubeSolver
 
             if (!bResult1 || !bResult2 || !bResult3 || !bResult4 || !bResult5 || !bResult6)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -528,7 +528,7 @@ namespace CubeSolver
 
             if (!bResult1 || !bResult2 || !bResult3 || !bResult4 || !bResult5 || !bResult6)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
@@ -541,20 +541,20 @@ namespace CubeSolver
 
             if (!bResult1 || !bResult2 || !bResult3 || !bResult4 || !bResult5 || !bResult6)
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
             // Check the neighbors and opposite center pieces of the cube
             if (!CheckNeighborsCenterPieces())
             {
-                _ = Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
+                _ = Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.MessageColorCenterPiece_Text, CubeLang.ButtonClose_Text);
                 return false;
             }
 
             // Stop the stopwatch and get the elapsed time
             //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-            //_ = Application.Current!.Windows[0].Page!.DisplayAlert("CheckNumberColors", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
+            //_ = Application.Current!.Windows[0].Page!.DisplayAlertAsync("CheckNumberColors", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
 
             return true;
         }

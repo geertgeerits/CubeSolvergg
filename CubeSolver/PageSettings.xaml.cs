@@ -14,7 +14,7 @@
             }
             catch (Exception ex)
             {
-                DisplayAlert("InitializeComponent: PageSettings", ex.Message, "OK");
+                DisplayAlertAsync("InitializeComponent: PageSettings", ex.Message, "OK");
                 return;
             }
 #if WINDOWS
@@ -360,7 +360,7 @@
         /// <param name="e"></param>
         private async void OnSettingsHexColorHelpClicked(object sender, EventArgs e)
         {
-            await DisplayAlert("?", $"{CubeLang.HexColorCodes_Text}\n\n{CubeLang.AllowedChar_Text}\n{cHexCharacters}", CubeLang.ButtonClose_Text);
+            await DisplayAlertAsync("?", $"{CubeLang.HexColorCodes_Text}\n\n{CubeLang.AllowedChar_Text}\n{cHexCharacters}", CubeLang.ButtonClose_Text);
         }
 
         /// <summary>

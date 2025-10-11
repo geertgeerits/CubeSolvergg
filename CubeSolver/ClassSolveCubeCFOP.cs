@@ -51,7 +51,7 @@ namespace CubeSolver
             {
                 // Stop the stopwatch and get the elapsed time
                 //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-                //await Application.Current!.Windows[0].Page!.DisplayAlert("SolveTheCubeCFOPAsync", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
+                //await Application.Current!.Windows[0].Page!.DisplayAlertAsync("SolveTheCubeCFOPAsync", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
 
                 return true;
             }

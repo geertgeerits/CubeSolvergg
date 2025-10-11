@@ -233,7 +233,7 @@ namespace CubeSolver
                     break;
 
                 default:
-                    await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, $"TurnCubeLayersAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
+                    await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, $"TurnCubeLayersAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
                     return false;
             }
 
@@ -469,7 +469,7 @@ namespace CubeSolver
                     break;
 
                 default:
-                    await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.ErrorTitle_Text, $"TurnCubeLayersAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
+                    await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, $"TurnCubeLayersAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
                     return false;
             }
 
@@ -613,7 +613,7 @@ namespace CubeSolver
 
             // Stop the stopwatch and get the elapsed time
             //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-            //_ = Application.Current!.Windows[0].Page!.DisplayAlert("TurnFrontFaceTo", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
+            //_ = Application.Current!.Windows[0].Page!.DisplayAlertAsync("TurnFrontFaceTo", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
         }
 
         /// <summary>

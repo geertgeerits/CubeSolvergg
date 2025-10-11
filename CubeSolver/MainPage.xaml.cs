@@ -1,10 +1,10 @@
 ﻿/* Program .....: CubeSolver.sln
  * Display name : Cube Solver gg
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
- * Copyright ...: (C) 1981-2025
+ * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.42
- * Date ........: 2025-09-29 (YYYY-MM-DD)
- * Language ....: Microsoft Visual Studio 2022: .NET MAUI 9 - C# 13.0
+ * Date ........: 2025-10-11 (YYYY-MM-DD)
+ * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
  * Dependencies : None
@@ -56,7 +56,7 @@ namespace CubeSolver
             }
             catch (Exception ex)
             {
-                DisplayAlert("InitializeComponent: MainPage", ex.Message, "OK");
+                DisplayAlertAsync("InitializeComponent: MainPage", ex.Message, "OK");
                 return;
             }
 #if WINDOWS
@@ -456,11 +456,11 @@ namespace CubeSolver
 
                 if (Globals.nTestedSolutions <= 1)
                 {
-                    await DisplayAlert("", $"{CubeLang.SolvingMethod_Text} {cMethod}\n{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
+                    await DisplayAlertAsync("", $"{CubeLang.SolvingMethod_Text} {cMethod}\n{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
                 }
                 else
                 {
-                    await DisplayAlert("", $"{CubeLang.SolvingMethod_Text} {cMethod}\n{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultSolutions_Text} {Globals.nTestedSolutions}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
+                    await DisplayAlertAsync("", $"{CubeLang.SolvingMethod_Text} {cMethod}\n{CubeLang.ResultTurns_Text} {nNumberOfTurns}\n{CubeLang.ResultSolutions_Text} {Globals.nTestedSolutions}\n{CubeLang.ResultTime_Text} {elapsedMilliseconds}", CubeLang.ButtonClose_Text);
                 }
 
                 await Task.Delay(500);
@@ -585,18 +585,18 @@ namespace CubeSolver
                             _ = ClassSpeech.ConvertTextToSpeechAsync(CubeLang.MessageCubeIsSolved_Text);
                         }
 
-                        await DisplayAlert("", CubeLang.MessageCubeIsSolved_Text, CubeLang.ButtonClose_Text);
+                        await DisplayAlertAsync("", CubeLang.MessageCubeIsSolved_Text, CubeLang.ButtonClose_Text);
                     }
                     else
                     {
-                        await DisplayAlert("", CubeLang.MessageCubeBackInPreviousState_Text, CubeLang.ButtonClose_Text);
+                        await DisplayAlertAsync("", CubeLang.MessageCubeBackInPreviousState_Text, CubeLang.ButtonClose_Text);
                     }
                 }
             }
 
             if (!bSolved && !bSolvingCubeStop)
             {
-                await DisplayAlert("", CubeLang.MessageCubeCannotBeSolved_Text, CubeLang.ButtonClose_Text);
+                await DisplayAlertAsync("", CubeLang.MessageCubeCannotBeSolved_Text, CubeLang.ButtonClose_Text);
                 imgbtnResetCube.IsEnabled = true;
             }
 
@@ -1496,7 +1496,7 @@ namespace CubeSolver
 
             if (Globals.bExplainText)
             {
-                await DisplayAlert("", cTurnCubeText, CubeLang.ButtonClose_Text);
+                await DisplayAlertAsync("", cTurnCubeText, CubeLang.ButtonClose_Text);
             }
         }
 
@@ -1669,7 +1669,7 @@ namespace CubeSolver
                     break;
 
                 default:
-                    await DisplayAlert(CubeLang.ErrorTitle_Text, $"SetImageButtonArrowIsEnabledAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
+                    await DisplayAlertAsync(CubeLang.ErrorTitle_Text, $"SetImageButtonArrowIsEnabledAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
                     break;
             }
         }
@@ -1859,7 +1859,7 @@ namespace CubeSolver
                     break;
 
                 default:
-                    await DisplayAlert(CubeLang.ErrorTitle_Text, $"SetExplainTextAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
+                    await DisplayAlertAsync(CubeLang.ErrorTitle_Text, $"SetExplainTextAsync\ncTurn not found:\n{cTurn}", CubeLang.ButtonClose_Text);
                     break;
             }
 
@@ -2001,7 +2001,7 @@ namespace CubeSolver
 
             // Stop the stopwatch and get the elapsed time
             //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-            //_ = DisplayAlert("SetCubeColorsInArrays", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
+            //_ = DisplayAlertAsync("SetCubeColorsInArrays", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
         }
 
         /// <summary>
@@ -2030,7 +2030,7 @@ namespace CubeSolver
 
             // Stop the stopwatch and get the elapsed time
             //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
-            //_ = DisplayAlert("GetCubeColorsFromArrays", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
+            //_ = DisplayAlertAsync("GetCubeColorsFromArrays", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
         }
 
         /// <summary>
@@ -2164,7 +2164,7 @@ namespace CubeSolver
 
             if (Globals.bLicense == false)
             {
-                Globals.bLicense = await Application.Current!.Windows[0].Page!.DisplayAlert(CubeLang.LicenseTitle_Text, cLicense, CubeLang.Agree_Text, CubeLang.Disagree_Text);
+                Globals.bLicense = await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.LicenseTitle_Text, cLicense, CubeLang.Agree_Text, CubeLang.Disagree_Text);
 
                 if (Globals.bLicense)
                 {
@@ -2184,7 +2184,7 @@ namespace CubeSolver
                     imgbtnResetCube.IsEnabled = false;
                     IsEnabledArrows(false);
 
-                    await DisplayAlert(CubeLang.LicenseTitle_Text, CubeLang.CloseApplication_Text, CubeLang.ButtonClose_Text);
+                    await DisplayAlertAsync(CubeLang.LicenseTitle_Text, CubeLang.CloseApplication_Text, CubeLang.ButtonClose_Text);
 #else
                     Microsoft.Maui.Controls.Application.Current.Quit();
 #endif
