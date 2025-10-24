@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/maui/global"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:CubeSolver"
              x:Class="CubeSolver.PageSettings">
 
     <Shell.TitleView>
         <Label
             x:Name="lblTitlePage"
             Style="{StaticResource labelStyleTitleView}"
-            Text="{local:Translate Settings_Text}"
+            Text="{Translate Settings_Text}"
             FlowDirection="LeftToRight">
         </Label>
     </Shell.TitleView>
@@ -37,7 +36,7 @@
                     <Label
                         x:Name="lblExplanation"
                         Style="{StaticResource labelStyleExplanation}"
-                        Text="{local:Translate SettingsSaved_Text}">
+                        Text="{Translate SettingsSaved_Text}">
                     </Label>
                 </Border>
 
@@ -45,7 +44,7 @@
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="1"
                     Grid.Column="0"
-                    Text="{local:Translate Language_Text}">
+                    Text="{Translate Language_Text}">
                 </Label>
 
                 <Border
@@ -99,7 +98,7 @@
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="2"
                     Grid.Column="0"
-                    Text="{local:Translate LanguageSpeech_Text}">
+                    Text="{Translate LanguageSpeech_Text}">
                 </Label>
 
                 <Border
@@ -120,7 +119,7 @@
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="3"
                     Grid.Column="0"
-                    Text="{local:Translate Theme_Text}">
+                    Text="{Translate Theme_Text}">
                 </Label>
 
                 <Border
@@ -148,7 +147,7 @@
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="4"
                     Grid.Column="0"
-                    Text="{local:Translate UseKociembaSolution_Text}">
+                    Text="{Translate UseKociembaSolution_Text}">
                 </Label>
 
                 <Switch
@@ -163,7 +162,7 @@
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="5"
                     Grid.Column="0"
-                    Text="{local:Translate ExplainedByText_Text}">
+                    Text="{Translate ExplainedByText_Text}">
                 </Label>
 
                 <Switch
@@ -178,7 +177,7 @@
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="6"
                     Grid.Column="0"
-                    Text="{local:Translate ExplainedBySpeech_Text}">
+                    Text="{Translate ExplainedBySpeech_Text}">
                 </Label>
 
                 <Switch
@@ -213,7 +212,7 @@
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="8"
                     Grid.Column="0"
-                    Text="{local:Translate CubeColors_Text}">
+                    Text="{Translate CubeColors_Text}">
                 </Label>
 
                 <HorizontalStackLayout
@@ -244,7 +243,7 @@
                     <Button
                         Style="{StaticResource buttonStyleHelp}"
                         HorizontalOptions="Start"
-                        ToolTipProperties.Text="{local:Translate ToolTipHelp_Text}"
+                        ToolTipProperties.Text="{Translate ToolTipHelp_Text}"
                         Clicked="OnSettingsHexColorHelpClicked">
                     </Button>
                 </HorizontalStackLayout>
@@ -434,8 +433,8 @@
             Grid.Row="2"
             HorizontalOptions="Start"
             WidthRequest="{OnIdiom 170, Phone=170, Tablet=270, Desktop=270}"
-            Text="{local:Translate SettingsSave_Text}"
-            ToolTipProperties.Text="{local:Translate SettingsSave_Text}"
+            Text="{Translate SettingsSave_Text}"
+            ToolTipProperties.Text="{Translate SettingsSave_Text}"
             Clicked="OnSettingsSaveClicked">
         </Button>
 
@@ -444,8 +443,8 @@
             Grid.Row="2"
             HorizontalOptions="End"
             WidthRequest="{OnIdiom 170, Phone=170, Tablet=270, Desktop=270}"
-            Text="{local:Translate SettingsReset_Text}"
-            ToolTipProperties.Text="{local:Translate SettingsReset_Text}"
+            Text="{Translate SettingsReset_Text}"
+            ToolTipProperties.Text="{Translate SettingsReset_Text}"
             Clicked="OnSettingsResetClicked">
         </Button>
 

@@ -1,6 +1,5 @@
-﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/maui/global"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:CubeSolver"
              x:Class="CubeSolver.MainPage"
              Loaded="OnPageLoad"
              Appearing="OnPageAppearing">
@@ -21,8 +20,8 @@
                 VerticalOptions="Center"
                 HeightRequest="32"
                 WidthRequest="32"
-                SemanticProperties.Description="local:Translate Info_Text}"
-                ToolTipProperties.Text="{local:Translate Info_Text}"
+                SemanticProperties.Description="Translate Info_Text}"
+                ToolTipProperties.Text="{Translate Info_Text}"
                 Clicked="OnPageAboutClicked">
             </ImageButton>
 
@@ -30,7 +29,7 @@
                 x:Name="lblTitlePage"
                 Style="{StaticResource labelStyleTitleView}"
                 Grid.Column="1"
-                Text="{local:Translate NameProgram_Text}">
+                Text="{Translate NameProgram_Text}">
             </Label>
 
             <!--<Button
@@ -58,8 +57,8 @@
                 VerticalOptions="Center"
                 HeightRequest="32"
                 WidthRequest="32"
-                SemanticProperties.Description="local:Translate Settings_Text}"
-                ToolTipProperties.Text="{local:Translate Settings_Text}"
+                SemanticProperties.Description="Translate Settings_Text}"
+                ToolTipProperties.Text="{Translate Settings_Text}"
                 Clicked="OnPageSettingsClicked">
             </ImageButton>
         </Grid>
@@ -190,7 +189,7 @@
                     MinimumHeightRequest="48"
                     HorizontalOptions="Center"
                     BackgroundColor="Transparent"
-                    Text="{local:Translate CubeOutsideView_Text}">
+                    Text="{Translate CubeOutsideView_Text}">
                 </Label>
 
                 <Label
@@ -222,7 +221,7 @@
                     HorizontalOptions="End"
                     HorizontalTextAlignment="End"
                     MaximumWidthRequest="230"
-                    Text="{local:Translate CubeUpFace_Text}">
+                    Text="{Translate CubeUpFace_Text}">
                 </Label>
 
                 <AbsoluteLayout
@@ -646,7 +645,7 @@
                     VerticalTextAlignment="Start"
                     HorizontalTextAlignment="Start"
                     MaximumWidthRequest="144"
-                    Text="{local:Translate CubeFrontFace_Text}">
+                    Text="{Translate CubeFrontFace_Text}">
                 </Label>
 
                 <Label
@@ -657,7 +656,7 @@
                     VerticalTextAlignment="Start"
                     HorizontalTextAlignment="End"
                     MaximumWidthRequest="144"
-                    Text="{local:Translate CubeRightFace_Text}">
+                    Text="{Translate CubeRightFace_Text}">
                 </Label>
 
                 <Border
@@ -676,7 +675,7 @@
                     MinimumHeightRequest="48"
                     HorizontalOptions="Center"
                     BackgroundColor="Transparent"
-                    Text="{local:Translate CubeInsideView_Text}">
+                    Text="{Translate CubeInsideView_Text}">
                 </Label>
 
                 <ActivityIndicator
@@ -700,8 +699,8 @@
                     Margin="5,0,0,0"
                     HorizontalOptions="Start"
                     ImageSource="ic_action_undo.png"
-                    SemanticProperties.Description="local:Translate ToolTipGoOneTurnBackward_Text}"
-                    ToolTipProperties.Text="{local:Translate ToolTipGoOneTurnBackward_Text}"
+                    SemanticProperties.Description="Translate ToolTipGoOneTurnBackward_Text}"
+                    ToolTipProperties.Text="{Translate ToolTipGoOneTurnBackward_Text}"
                     IsVisible="False"
                     Clicked="OnButtonGoOneTurnBackwardClicked">
                 </Button>
@@ -718,8 +717,8 @@
                     FontFamily="PublicSansBold"
                     FontSize="22"
                     CharacterSpacing="2"
-                    SemanticProperties.Description="{local:Translate ToolTipGoOneTurnForward_Text}"
-                    ToolTipProperties.Text="{local:Translate ToolTipGoOneTurnForward_Text}"
+                    SemanticProperties.Description="{Translate ToolTipGoOneTurnForward_Text}"
+                    ToolTipProperties.Text="{Translate ToolTipGoOneTurnForward_Text}"
                     IsVisible="False"
                     Clicked="OnButtonGoOneTurnForwardClicked">
                 </Button>
@@ -732,8 +731,8 @@
                     Margin="0,0,5,0"
                     HorizontalOptions="End"
                     ImageSource="ic_action_playback_play.png"
-                    SemanticProperties.Description="local:Translate ToolTipTurnContinuously_Text}"
-                    ToolTipProperties.Text="{local:Translate ToolTipTurnContinuously_Text}"
+                    SemanticProperties.Description="Translate ToolTipTurnContinuously_Text}"
+                    ToolTipProperties.Text="{Translate ToolTipTurnContinuously_Text}"
                     IsVisible="False"
                     Clicked="OnButtonTurnContinuouslyClicked">
                 </Button>
@@ -745,7 +744,7 @@
                     VerticalTextAlignment="End"
                     HorizontalTextAlignment="Start"
                     MaximumWidthRequest="144"
-                    Text="{local:Translate CubeLeftFace_Text}">
+                    Text="{Translate CubeLeftFace_Text}">
                 </Label>
 
                 <Label
@@ -756,7 +755,7 @@
                     VerticalTextAlignment="End"
                     HorizontalTextAlignment="End"
                     MaximumWidthRequest="144"
-                    Text="{local:Translate CubeBackFace_Text}">
+                    Text="{Translate CubeBackFace_Text}">
                 </Label>
 
                 <AbsoluteLayout
@@ -1063,7 +1062,7 @@
                     VerticalTextAlignment="Start"
                     HorizontalTextAlignment="Center"
                     MaximumWidthRequest="280"
-                    Text="{local:Translate CubeDownFace_Text}">
+                    Text="{Translate CubeDownFace_Text}">
                 </Label>
             </Grid>
         </ScrollView>
@@ -1074,9 +1073,9 @@
             BorderColor="{AppThemeBinding Light={StaticResource DarkGray}, Dark={StaticResource LightGray}}"
             Grid.Row="3"
             Grid.Column="0"
-            Text="{local:Translate ButtonSolve_Text}"
-            SemanticProperties.Description="local:Translate ToolTipSolveCube_Text}"
-            ToolTipProperties.Text="{local:Translate ToolTipSolveCube_Text}"
+            Text="{Translate ButtonSolve_Text}"
+            SemanticProperties.Description="Translate ToolTipSolveCube_Text}"
+            ToolTipProperties.Text="{Translate ToolTipSolveCube_Text}"
             Clicked="OnBtnSolveCubeClicked">
         </Button>
 
@@ -1091,8 +1090,8 @@
                 x:Name="imgbtnSetColorsCube"
                 Style="{StaticResource imageButtonMenu}"
                 Source="cubesolver_mixedcolors_48p.png"
-                SemanticProperties.Description="local:Translate ToolTipSetColorsCube_Text}"
-                ToolTipProperties.Text="{local:Translate ToolTipSetColorsCube_Text}"
+                SemanticProperties.Description="Translate ToolTipSetColorsCube_Text}"
+                ToolTipProperties.Text="{Translate ToolTipSetColorsCube_Text}"
                 Clicked="OnButtonSetColorsCubeClicked">
             </ImageButton>
 
@@ -1100,8 +1099,8 @@
                 x:Name="imgbtnOpenCube"
                 Style="{StaticResource imageButtonMenu}"
                 Source="ic_action_arrow_top.png"
-                SemanticProperties.Description="local:Translate ToolTipOpenCube_Text}"
-                ToolTipProperties.Text="{local:Translate ToolTipOpenCube_Text}"
+                SemanticProperties.Description="Translate ToolTipOpenCube_Text}"
+                ToolTipProperties.Text="{Translate ToolTipOpenCube_Text}"
                 Clicked="OnButtonOpenCubeClicked">
             </ImageButton>
 
@@ -1109,8 +1108,8 @@
                 x:Name="imgbtnSaveCube"
                 Style="{StaticResource imageButtonMenu}"
                 Source="ic_action_arrow_bottom.png"
-                SemanticProperties.Description="local:Translate ToolTipSaveCube_Text}"
-                ToolTipProperties.Text="{local:Translate ToolTipSaveCube_Text}"
+                SemanticProperties.Description="Translate ToolTipSaveCube_Text}"
+                ToolTipProperties.Text="{Translate ToolTipSaveCube_Text}"
                 Clicked="OnButtonSaveCubeClicked">
             </ImageButton>
 
@@ -1118,8 +1117,8 @@
                 x:Name="imgbtnScrambleCube"
                 Style="{StaticResource imageButtonMenu}"
                 Source="ic_action_playback_schuffle.png"
-                SemanticProperties.Description="local:Translate ToolTipScrambleCube_Text}"
-                ToolTipProperties.Text="{local:Translate ToolTipScrambleCube_Text}"
+                SemanticProperties.Description="Translate ToolTipScrambleCube_Text}"
+                ToolTipProperties.Text="{Translate ToolTipScrambleCube_Text}"
                 Clicked="OnButtonScrambleCubeClicked">
             </ImageButton>
 
@@ -1127,8 +1126,8 @@
                 x:Name="imgbtnResetCube"
                 Style="{StaticResource imageButtonMenu}"
                 Source="ic_action_reload.png"
-                SemanticProperties.Description="local:Translate ToolTipResetCube_Text}"
-                ToolTipProperties.Text="{local:Translate ToolTipResetCube_Text}"
+                SemanticProperties.Description="Translate ToolTipResetCube_Text}"
+                ToolTipProperties.Text="{Translate ToolTipResetCube_Text}"
                 Clicked="OnButtonResetClicked">
             </ImageButton>
         </HorizontalStackLayout>
