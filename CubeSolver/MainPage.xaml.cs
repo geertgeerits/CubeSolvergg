@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.42
- * Date ........: 2025-10-25 (YYYY-MM-DD)
+ * Date ........: 2025-10-26 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -1916,12 +1916,9 @@ namespace CubeSolver
         /// <param name="e"></param>
         private async void OnButtonScrambleCubeClicked(object sender, EventArgs e)
         {
-            // Instantiate random number generator using system-supplied value as seed
-            Random randNumber = new();
-
             // Generate a random integer from 20 to 40 turns
-            int nNumberOfTurns = randNumber.Next(20, 41);
-            Debug.WriteLine($"nNumberOfTurns: {nNumberOfTurns}");
+            int nNumberOfTurns = Random.Shared.Next(20, 41);
+            Debug.WriteLine($"Random nNumberOfTurns: {nNumberOfTurns}");
 
             // Test variable to disable the 'steps one at a time' to solve te cube in the task MakeExplainTurnAsync()
             bTestSolveCube = true;
@@ -1932,7 +1929,8 @@ namespace CubeSolver
             for (int ctr = 0; ctr <= nNumberOfTurns - 1; ctr++)
             {
                 // Generate random indexes for cube turns
-                int nIndex = randNumber.Next(ScrambledCubeTurns.Length);
+                int nIndex = Random.Shared.Next(ScrambledCubeTurns.Length);
+                Debug.WriteLine($"Random nIndex: {nIndex}");
 
                 // Make the cube turn
                 await MakeExplainTurnAsync(ScrambledCubeTurns[nIndex]);
