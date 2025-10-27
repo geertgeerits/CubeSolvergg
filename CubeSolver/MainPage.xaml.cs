@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.42
- * Date ........: 2025-10-26 (YYYY-MM-DD)
+ * Date ........: 2025-10-27 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -28,7 +28,7 @@ namespace CubeSolver
         private bool bSolvingCube;
         private bool bSolvingCubeStop;
         private bool bSolved;
-        private bool bTestSolveCube;
+        private bool bShowStepByStep;
         private bool bTurnIsBackwards;
         private bool bTurnContinuously;
         private bool bKociembaTablesExist;
@@ -425,7 +425,7 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 338-339 and 402-426 (and change the line 450 to bTestSolveCube = true)
+                // For testing comment out the lines 338-339 and 402-426 (and change the line 450 to bShowStepByStep = false)
                 // and uncomment one of the lines 433-435 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
@@ -445,9 +445,9 @@ namespace CubeSolver
             TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
             string elapsedMilliseconds = delta.TotalMilliseconds.ToString("F0");
 
-            // Test variable to disable the 'steps one at a time' to solve te cube in the task MakeExplainTurnAsync()
-            // If not testing the solution to solve the cube then set bTestSolveCube = false
-            bTestSolveCube = false;
+            // Variable to disable the 'steps one at a time' to solve te cube in the task MakeExplainTurnAsync()
+            // If not testing the solution to solve the cube then set bShowStepByStep = true
+            bShowStepByStep = true;
 
             if (bSolved)
             {
@@ -639,8 +639,8 @@ namespace CubeSolver
         /// <returns></returns>
         private async Task MakeExplainTurnAsync(string cTurn)
         {
-            // If bTestSolveCube = true then do not use the 'steps one at a time' to solve te cube
-            if (bTestSolveCube)
+            // If bShowStepByStep = false then do not use the 'steps one at a time' to solve te cube
+            if (!bShowStepByStep)
             {
                 // Turn the faces of the cube
                 await ClassCubeTurns.TurnCubeLayersAsync(cTurn);
@@ -1916,12 +1916,18 @@ namespace CubeSolver
         /// <param name="e"></param>
         private async void OnButtonScrambleCubeClicked(object sender, EventArgs e)
         {
+            // Button settings
+            btnSolveCube.IsEnabled = false;
+            imgbtnSetColorsCube.IsEnabled = false;
+            imgbtnOpenCube.IsEnabled = false;
+            imgbtnSaveCube.IsEnabled = false;
+            imgbtnScrambleCube.IsEnabled = false;
+            imgbtnResetCube.IsEnabled = false;
+            IsEnabledArrows(false);
+
             // Generate a random integer from 20 to 40 turns
             int nNumberOfTurns = Random.Shared.Next(20, 41);
             Debug.WriteLine($"Random nNumberOfTurns: {nNumberOfTurns}");
-
-            // Test variable to disable the 'steps one at a time' to solve te cube in the task MakeExplainTurnAsync()
-            bTestSolveCube = true;
 
             string cTurns = string.Empty;
 
@@ -1932,8 +1938,10 @@ namespace CubeSolver
                 int nIndex = Random.Shared.Next(ScrambledCubeTurns.Length);
                 Debug.WriteLine($"Random nIndex: {nIndex}");
 
-                // Make the cube turn
-                await MakeExplainTurnAsync(ScrambledCubeTurns[nIndex]);
+                // Make the cube turn showing each turn with a delay of 50 milliseconds between each turn
+                await ClassCubeTurns.TurnCubeLayersAsync(ScrambledCubeTurns[nIndex]);
+                GetCubeColorsFromArrays();
+                await Task.Delay(50);
 
                 cTurns = $"{cTurns}{ScrambledCubeTurns[nIndex]} ";
             }
@@ -1941,8 +1949,13 @@ namespace CubeSolver
             // Display the cube turns in the output window for testing purposes
             Debug.WriteLine($"ScrambledCubeTurns: {cTurns}");
 
-            // Reset the test variable
-            bTestSolveCube = false;
+            // Button settings
+            btnSolveCube.IsEnabled = true;
+            imgbtnSetColorsCube.IsEnabled = true;
+            imgbtnOpenCube.IsEnabled = true;
+            imgbtnSaveCube.IsEnabled = true;
+            imgbtnScrambleCube.IsEnabled = true;
+            imgbtnResetCube.IsEnabled = true;
         }
 
         /// <summary>
