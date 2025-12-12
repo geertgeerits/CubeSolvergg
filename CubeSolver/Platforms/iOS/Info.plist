@@ -82,7 +82,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 
-	<key>UIDesignRequiresCompatibility</key>
-	<true/>
+	<!--<key>UIDesignRequiresCompatibility</key>
+	<true/>-->
 </dict>
 </plist>
