@@ -414,16 +414,6 @@
                     ValueChanged="OnSliderColorValueChanged">
                 </Slider>
 
-                <Entry
-                    x:Name="entDummy"
-                    Grid.Row="14"
-                    HeightRequest="2"
-                    WidthRequest="5"
-                    BackgroundColor="Transparent"
-                    TextColor="Transparent"
-                    Focused="EntDummyFocused">
-                </Entry>
-
             </Grid>
         </ScrollView>
 

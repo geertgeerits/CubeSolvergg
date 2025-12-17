@@ -21,10 +21,6 @@
             //// Set the margins for the controls in the title bar for Windows
             lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
 #endif
-#if ANDROID
-            // !!!BUG!!! in Android - Return typ 'Done' is not working on Android
-            entHexColor.ReturnType = ReturnType.Next;
-#endif
 #if IOS
             // Workaround for !!!BUG!!! in iOS with the Slider right margin
             Slider slider = new()
@@ -416,19 +412,6 @@
             sldColorRed.Value = nRed;
             sldColorGreen.Value = nGreen;
             sldColorBlue.Value = nBlue;
-
-            entDummy.IsEnabled = true;
-            _ = entDummy.Focus();
-        }
-
-        /// <summary>
-        /// Hide the keyboard when the dummy entry is focused
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void EntDummyFocused(object sender, FocusEventArgs e)
-        {
-            entDummy.IsEnabled = false;
         }
 
         /// <summary>
