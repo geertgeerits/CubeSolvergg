@@ -340,6 +340,12 @@
                     Grid.Row="3"
                     Grid.Column="1">
 
+                    <!--<Polygon
+                        AbsoluteLayout.LayoutBounds="-2,-2"
+                        Points="0,63 128,-3 292,30 292,192 161,259 -1,228 0,63"
+                        Fill="Cyan">
+                    </Polygon>-->
+
                     <Polygon
                         x:Name="plgPiece36"
                         Style="{StaticResource polygonStyleCubeUp}"
@@ -761,6 +767,12 @@
                 <AbsoluteLayout
                     Grid.Row="8"
                     Grid.Column="1">
+
+                    <!--<Polygon
+                        AbsoluteLayout.LayoutBounds="-2,-2"
+                        Points="0,63 128,-3 292,30 292,192 161,259 -1,228 0,63"
+                        Fill="Cyan">
+                    </Polygon>-->
 
                     <Polygon
                         x:Name="plgPiece27"
