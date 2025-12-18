@@ -410,42 +410,42 @@
 
     <Style x:Key="polygonStyleCubeUp" TargetType="Polygon">
         <Setter Property="Stroke" Value="Black" />
-        <Setter Property="StrokeThickness" Value="4" />
+        <Setter Property="StrokeThickness" Value="2" />
         <Setter Property="Fill" Value="Red" />
         <Setter Property="Points" Value="40,0 0,20 50,30 90,10" />
     </Style>
 
     <Style x:Key="polygonStyleCubeFront" TargetType="Polygon">
         <Setter Property="Stroke" Value="Black" />
-        <Setter Property="StrokeThickness" Value="4" />
+        <Setter Property="StrokeThickness" Value="2" />
         <Setter Property="Fill" Value="Yellow" />
         <Setter Property="Points" Value="0,0 0,50 50,60 50,10" />
     </Style>
 
     <Style x:Key="polygonStyleCubeRight" TargetType="Polygon">
         <Setter Property="Stroke" Value="Black" />
-        <Setter Property="StrokeThickness" Value="4" />
+        <Setter Property="StrokeThickness" Value="2" />
         <Setter Property="Fill" Value="Blue" />
         <Setter Property="Points" Value="0,30 0,80 40,60 40,10" />
     </Style>
 
     <Style x:Key="polygonStyleCubeLeft" TargetType="Polygon">
         <Setter Property="Stroke" Value="Gray" />
-        <Setter Property="StrokeThickness" Value="4" />
+        <Setter Property="StrokeThickness" Value="2" />
         <Setter Property="Fill" Value="Green" />
         <Setter Property="Points" Value="40,0 40,50 0,70 0,20" />
     </Style>
 
     <Style x:Key="polygonStyleCubeBack" TargetType="Polygon">
         <Setter Property="Stroke" Value="Gray" />
-        <Setter Property="StrokeThickness" Value="4" />
+        <Setter Property="StrokeThickness" Value="2" />
         <Setter Property="Fill" Value="White" />
         <Setter Property="Points" Value="0,0 0,50 50,60 50,10" />
     </Style>
 
     <Style x:Key="polygonStyleCubeDown" TargetType="Polygon">
         <Setter Property="Stroke" Value="Gray" />
-        <Setter Property="StrokeThickness" Value="4" />
+        <Setter Property="StrokeThickness" Value="2" />
         <Setter Property="Fill" Value="Orange" />
         <Setter Property="Points" Value="40,0 0,20 50,30 90,10" />
     </Style>

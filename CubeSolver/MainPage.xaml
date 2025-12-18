@@ -71,6 +71,7 @@
         Margin="2"
         FlowDirection="LeftToRight">
 
+        <!--Colors to select-->
         <Grid
             x:Name="grdCubeColorSelect"
             RowDefinitions="Auto"
@@ -173,6 +174,7 @@
                 ColumnSpacing="4"
                 HorizontalOptions="Center">
 
+                <!--Labels-->
                 <Border
                     Style="{StaticResource borderStyleExplainTurnCube}"
                     Grid.Row="0"
@@ -224,6 +226,7 @@
                     Text="{Translate CubeUpFace_Text}">
                 </Label>
 
+                <!--Arrows-->
                 <AbsoluteLayout
                     Grid.Row="2"
                     Grid.Column="0"
@@ -277,7 +280,8 @@
                         Clicked="OnTurnRightFaceToLeftClicked">
                     </ImageButton>
                 </AbsoluteLayout>
-
+                
+                <!--Arrows-->
                 <AbsoluteLayout
                     Grid.Row="3"
                     Grid.Column="0">
@@ -306,7 +310,8 @@
                         Clicked="OnTurnDownFaceToRightClicked">
                     </ImageButton>
                 </AbsoluteLayout>
-
+                
+                <!--Arrows-->
                 <AbsoluteLayout
                     Grid.Row="3"
                     Grid.Column="2">
@@ -339,13 +344,15 @@
                 <AbsoluteLayout
                     Grid.Row="3"
                     Grid.Column="1">
+                    
+                    <!--Background outside view-->
+                    <Polygon
+                        AbsoluteLayout.LayoutBounds="-2,-1"
+                        Points="0,66 128,-2 295,31 295,193 161,260 -1,228 -1,64"
+                        Fill="Black">
+                    </Polygon>
 
-                    <!--<Polygon
-                        AbsoluteLayout.LayoutBounds="-2,-2"
-                        Points="0,63 128,-3 292,30 292,192 161,259 -1,228 0,63"
-                        Fill="Cyan">
-                    </Polygon>-->
-
+                    <!--Pieces outside view-->
                     <Polygon
                         x:Name="plgPiece36"
                         Style="{StaticResource polygonStyleCubeUp}"
@@ -590,6 +597,7 @@
                     </Polygon>
                 </AbsoluteLayout>
 
+                <!--Arrows-->
                 <AbsoluteLayout
                     Grid.Row="4"
                     Grid.Column="0"
@@ -644,6 +652,7 @@
                     </ImageButton>
                 </AbsoluteLayout>
 
+                <!--Labels-->
                 <Label
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="5"
@@ -697,6 +706,7 @@
                     IsRunning="False">
                 </ActivityIndicator>
 
+                <!--Buttons-->
                 <Button
                     x:Name="btnGoOneTurnBackward"
                     Style="{StaticResource ButtonMakeTurns}"
@@ -743,6 +753,7 @@
                     Clicked="OnButtonTurnContinuouslyClicked">
                 </Button>
 
+                <!--Labels-->
                 <Label
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="7"
@@ -768,12 +779,14 @@
                     Grid.Row="8"
                     Grid.Column="1">
 
-                    <!--<Polygon
-                        AbsoluteLayout.LayoutBounds="-2,-2"
-                        Points="0,63 128,-3 292,30 292,192 161,259 -1,228 0,63"
-                        Fill="Cyan">
-                    </Polygon>-->
+                    <!--Background inside view-->
+                    <Polygon
+                        AbsoluteLayout.LayoutBounds="0,0"
+                        Points="0,66 129,0 294,30 294,195 160,259 0,228 0,64"
+                        Fill="Gray">
+                    </Polygon>
 
+                    <!--Pieces inside view-->
                     <Polygon
                         x:Name="plgPiece27"
                         Style="{StaticResource polygonStyleCubeLeft}"
@@ -1017,6 +1030,7 @@
                         </Polygon.GestureRecognizers>
                     </Polygon>
 
+                    <!--Lines inside view-->
                     <Line X1="130" Y1="0" X2="130" Y2="162"
                         Style="{StaticResource lineStyleCubeInsideViewDashLine}">
                     </Line>
@@ -1049,11 +1063,11 @@
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
-                    <Line X1="168" Y1="264" X2="293" Y2="195"
+                    <Line X1="165" Y1="264" X2="293" Y2="195"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
-                    <Line X1="167" Y1="98" X2="167" Y2="264"
+                    <Line X1="167" Y1="96" X2="167" Y2="261"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
@@ -1066,6 +1080,7 @@
                     </Line>
                 </AbsoluteLayout>
 
+                <!--Label-->
                 <Label
                     Style="{StaticResource labelStyleDefault}"
                     Grid.Row="9"
@@ -1079,6 +1094,7 @@
             </Grid>
         </ScrollView>
 
+        <!--Buttons-->
         <Button
             x:Name="btnSolveCube"
             Style="{StaticResource buttonStyleMenu}"
@@ -1091,6 +1107,7 @@
             Clicked="OnBtnSolveCubeClicked">
         </Button>
 
+        <!--Image buttons-->
         <HorizontalStackLayout
             Grid.Row="3"
             Grid.Column="1"
