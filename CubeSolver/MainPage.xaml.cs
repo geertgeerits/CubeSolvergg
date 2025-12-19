@@ -1925,6 +1925,9 @@ namespace CubeSolver
             imgbtnResetCube.IsEnabled = false;
             IsEnabledArrows(false);
 
+            // Reset the cube colors
+            Globals.lCubeTurns.Clear();
+
             // Generate a random integer from 20 to 40 turns
             int nNumberOfTurns = Random.Shared.Next(20, 41);
             Debug.WriteLine($"Random nNumberOfTurns: {nNumberOfTurns}");

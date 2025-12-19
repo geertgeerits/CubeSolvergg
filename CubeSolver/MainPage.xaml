@@ -32,6 +32,7 @@
                 Text="{Translate NameProgram_Text}">
             </Label>
 
+            <!--For testing new solutions only-->
             <!--<Button
                 x:Name="btnSolveNewSolutionsTest"
                 Grid.Column="1"
@@ -352,7 +353,7 @@
                         Fill="Black">
                     </Polygon>
 
-                    <!--Pieces outside view-->
+                    <!--Pieces outside view: upper face 36-44-->
                     <Polygon
                         x:Name="plgPiece36"
                         Style="{StaticResource polygonStyleCubeUp}"
@@ -434,6 +435,7 @@
                         </Polygon.GestureRecognizers>
                     </Polygon>
 
+                    <!--Pieces outside view: front face 0-8-->
                     <Polygon
                         x:Name="plgPiece0"
                         Style="{StaticResource polygonStyleCubeFront}"
@@ -515,6 +517,7 @@
                         </Polygon.GestureRecognizers>
                     </Polygon>
 
+                    <!--Pieces outside view: right face 9-17-->
                     <Polygon
                         x:Name="plgPiece9"
                         Style="{StaticResource polygonStyleCubeRight}"
@@ -693,6 +696,7 @@
                     Text="{Translate CubeInsideView_Text}">
                 </Label>
 
+                <!--Activity indicator-->
                 <ActivityIndicator
                     x:Name="activityIndicator"
                     Grid.Row="6"
@@ -786,7 +790,7 @@
                         Fill="Gray">
                     </Polygon>
 
-                    <!--Pieces inside view-->
+                    <!--Pieces inside view: left face 27-35-->
                     <Polygon
                         x:Name="plgPiece27"
                         Style="{StaticResource polygonStyleCubeLeft}"
@@ -868,6 +872,7 @@
                         </Polygon.GestureRecognizers>
                     </Polygon>
 
+                    <!--Pieces inside view: back face 18-26-->
                     <Polygon
                         x:Name="plgPiece18"
                         Style="{StaticResource polygonStyleCubeBack}"
@@ -949,6 +954,7 @@
                         </Polygon.GestureRecognizers>
                     </Polygon>
 
+                    <!--Pieces inside view: down face 45-53-->
                     <Polygon
                         x:Name="plgPiece45"
                         Style="{StaticResource polygonStyleCubeDown}"
