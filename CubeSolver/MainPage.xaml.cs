@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.42
- * Date ........: 2025-12-18 (YYYY-MM-DD)
+ * Date ........: 2025-12-19 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -1950,7 +1950,11 @@ namespace CubeSolver
             Debug.WriteLine($"ScrambledCubeTurns: {cTurns}");
 
             // Button settings
-            btnSolveCube.IsEnabled = true;
+            if (!plgCubeColorSelect.IsVisible)
+            {
+                btnSolveCube.IsEnabled = true;
+            }
+
             imgbtnSetColorsCube.IsEnabled = true;
             imgbtnOpenCube.IsEnabled = true;
             imgbtnSaveCube.IsEnabled = true;

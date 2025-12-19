@@ -782,7 +782,7 @@
                     <!--Background inside view-->
                     <Polygon
                         AbsoluteLayout.LayoutBounds="0,0"
-                        Points="0,66 129,0 294,30 294,195 160,259 0,228 0,64"
+                        Points="0,66 129,0 292,30 292,195 160,262 0,228 0,64"
                         Fill="Gray">
                     </Polygon>
 
@@ -1043,38 +1043,47 @@
                         Style="{StaticResource lineStyleCubeInsideViewDashLine}">
                     </Line>
 
+                    <!--Line vertical left/front face-->
                     <Line X1="0" Y1="61" X2="0" Y2="227"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
-                    <Line X1="0" Y1="62" X2="130" Y2="0"
+                    <!--Line diagonally left/up face-->
+                    <Line X1="0" Y1="62" X2="128" Y2="0"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
-                    <Line X1="130" Y1="0" X2="292" Y2="30"
+                    <!--Line diagonally back/up face-->
+                    <Line X1="128" Y1="0" X2="292" Y2="30"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
+                    <!--Line vertical back/right face-->
                     <Line X1="292" Y1="30" X2="292" Y2="194"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
-                    <Line X1="0" Y1="228" X2="166" Y2="262"
+                    <!--Line diagonally front/down face-->
+                    <Line X1="0" Y1="227" X2="166" Y2="262"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
+                    <!--Line diagonally right/down face-->
                     <Line X1="165" Y1="264" X2="293" Y2="195"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
+                    <!--Line vertical front/right face-->
                     <Line X1="167" Y1="96" X2="167" Y2="261"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
+                    <!--Line diagonally front/up face-->
                     <Line X1="0" Y1="62" X2="165" Y2="94"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
+                    <!--Line diagonally right/up face-->
                     <Line X1="165" Y1="98" X2="293" Y2="31"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
