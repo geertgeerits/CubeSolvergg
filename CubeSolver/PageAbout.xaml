@@ -77,7 +77,7 @@
                     </ImageButton>
                 </HorizontalStackLayout>
 
-                <HorizontalStackLayout>
+                <!--<HorizontalStackLayout>-->
                     <!--!!!BUG!!! Does not work when FlowDirection="RightToLeft" in Android (and iOS)-->
                     <!--<Label
                         x:Name="lblWebsite"
@@ -94,7 +94,7 @@
                         </Label.FormattedText>
                     </Label>-->
 
-                    <Label
+                    <!--<Label
                         Style="{StaticResource labelStyleInfo}"
                         VerticalOptions="Center"
                         Text="{Translate Website_Text}">
@@ -106,8 +106,8 @@
                         <ImageButton.Source>
                             <x:AppThemeBinding Light="ic_action_link_black_32p.png" Dark="ic_action_link_white_32p.png" />
                         </ImageButton.Source>
-                    </ImageButton>
-                </HorizontalStackLayout>
+                    </ImageButton>-->
+                <!--</HorizontalStackLayout>-->
                         
                 <Label
                     x:Name="lblPrivacyPolicy"

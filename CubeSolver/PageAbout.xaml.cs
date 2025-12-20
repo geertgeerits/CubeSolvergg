@@ -85,39 +85,39 @@ namespace CubeSolver
             }
         }
 
-        /// <summary>
-        /// Open the website link in the default browser
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private async void OnButtonWebsiteClicked(object sender, EventArgs e)
-        {
-            // Check the internet connection
-            NetworkAccess accessType = Connectivity.Current.NetworkAccess;
+        ///// <summary>
+        ///// Open the website link in the default browser
+        ///// </summary>
+        ///// <param name="sender"></param>
+        ///// <param name="e"></param>
+        //private async void OnButtonWebsiteClicked(object sender, EventArgs e)
+        //{
+        //    // Check the internet connection
+        //    NetworkAccess accessType = Connectivity.Current.NetworkAccess;
 
-            if (accessType != NetworkAccess.Internet)
-            {
-                await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.InternetConnectionNo_Text, CubeLang.ButtonClose_Text);
-                return;
-            }
+        //    if (accessType != NetworkAccess.Internet)
+        //    {
+        //        await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, CubeLang.InternetConnectionNo_Text, CubeLang.ButtonClose_Text);
+        //        return;
+        //    }
 
-            // Open the website link in the default browser
-            try
-            {
-                Uri uri = new("https://geertgeerits.wixsite.com/geertgeerits/cube-solver");
-                BrowserLaunchOptions options = new()
-                {
-                    LaunchMode = BrowserLaunchMode.SystemPreferred,
-                    TitleMode = BrowserTitleMode.Show
-                };
+        //    // Open the website link in the default browser
+        //    try
+        //    {
+        //        Uri uri = new("https://geertgeerits.wixsite.com/geertgeerits/cube-solver");
+        //        BrowserLaunchOptions options = new()
+        //        {
+        //            LaunchMode = BrowserLaunchMode.SystemPreferred,
+        //            TitleMode = BrowserTitleMode.Show
+        //        };
 
-                await Browser.Default.OpenAsync(uri, options);
-            }
-            catch (Exception ex)
-            {
-                await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
-            }
-        }
+        //        await Browser.Default.OpenAsync(uri, options);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
+        //    }
+        //}
     }
     
     ///// <summary>
