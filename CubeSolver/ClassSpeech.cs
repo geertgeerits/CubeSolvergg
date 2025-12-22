@@ -1,6 +1,4 @@
-﻿using CubeSolver.Resources.Languages;
-
-namespace CubeSolver
+﻿namespace CubeSolver
 {
     internal sealed class ClassSpeech
     {
