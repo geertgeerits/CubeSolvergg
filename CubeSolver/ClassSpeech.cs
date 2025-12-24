@@ -35,7 +35,7 @@
                 {
                     cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name} - {l.Id[(l.Id.LastIndexOf('\\') + 1)..]}";
                     nItem++;
-                    Debug.WriteLine($"locales: {l.Language}-{l.Country} {l.Name} - {l.Id[(l.Id.LastIndexOf('\\') + 1)..]}");
+                    //Debug.WriteLine($"locales: {l.Language}-{l.Country} {l.Name} - {l.Id[(l.Id.LastIndexOf('\\') + 1)..]}");
                 }
 #else
                 foreach (var l in locales)
