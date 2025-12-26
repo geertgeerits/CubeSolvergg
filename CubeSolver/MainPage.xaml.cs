@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.42
- * Date ........: 2025-12-24 (YYYY-MM-DD)
+ * Date ........: 2025-12-26 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -173,13 +173,6 @@ namespace CubeSolver
             }
             finally
             {
-#if IOS
-                // Use one of the normal voices for en-US (Reed, Samantha and Shelley) instead of the ridiculous voices in iOS
-                if (Globals.cLanguageSpeech == "en-US")
-                {
-                    Globals.cLanguageSpeech = "en-US- Samantha";
-                }
-#endif
                 Globals.bTextToSpeechAvailable = await ClassSpeech.InitializeTextToSpeechAsync();
                 ClassSpeech.SearchArrayWithSpeechLanguages(Globals.cLanguageSpeech);
                 Preferences.Default.Set("SettingLanguageSpeech", Globals.cLanguageSpeech);
