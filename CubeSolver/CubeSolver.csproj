@@ -21,9 +21,9 @@
 		<ApplicationIdGuid>be8353b4-1c5d-4ba1-b563-077ed70cd644</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<PackageVersion>2.0.42</PackageVersion>
-		<ApplicationDisplayVersion>2.0.42</ApplicationDisplayVersion>
-		<ApplicationVersion>42</ApplicationVersion>
+		<PackageVersion>2.0.43</PackageVersion>
+		<ApplicationDisplayVersion>2.0.43</ApplicationDisplayVersion>
+		<ApplicationVersion>43</ApplicationVersion>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
 		<!--<WindowsPackageType>None</WindowsPackageType>-->
@@ -157,8 +157,8 @@
 		<AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
 		<AndroidSigningKeyPass></AndroidSigningKeyPass>
 		<AndroidSigningStorePass></AndroidSigningStorePass>
-		<ApplicationDisplayVersion>2.0.42</ApplicationDisplayVersion>
-		<ApplicationVersion>42</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.43</ApplicationDisplayVersion>
+		<ApplicationVersion>43</ApplicationVersion>
 		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
 	</PropertyGroup>
 
@@ -177,8 +177,8 @@
 		<ArchiveOnBuild>true</ArchiveOnBuild>
 		<TcpPort>58181</TcpPort>
 
-		<ApplicationDisplayVersion>2.0.42</ApplicationDisplayVersion>
-		<ApplicationVersion>42</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.43</ApplicationDisplayVersion>
+		<ApplicationVersion>43</ApplicationVersion>
 		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
 	</PropertyGroup>
 	

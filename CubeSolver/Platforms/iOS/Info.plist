@@ -37,9 +37,9 @@
 	<key>CFBundleDisplayName</key>
 	<string>Cube Solver gg</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.42</string>
+	<string>2.0.43</string>
 	<key>CFBundleVersion</key>
-	<string>42</string>
+	<string>43</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
