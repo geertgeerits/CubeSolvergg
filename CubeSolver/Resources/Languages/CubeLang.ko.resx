@@ -453,7 +453,7 @@
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>해결 방법:
 - 자동: 화면 하단의 큐브 버튼을 사용하여 실제 큐브의 색상을 입력합니다. 완료되면 버튼을 다시 누른 다음 '해결'을 탭합니다. 큐브는 'Kociemba' 알고리즘을 사용하여 해결됩니다. 제안된 이동을 실제 큐브로 전송합니다.
-설정에서 'Kociemba' 알고리즘을 비활성화하면 앱은 'Friedrich'(CFOP) 방법을 사용합니다.
+설정에서 'Kociemba' 알고리즘을 비활성화하면 앱은 'Fridrich'(CFOP) 방법을 사용합니다.
 - 역순: 화살표 키를 사용하여 큐브를 섞은 다음 '해결'을 누릅니다. 큐브는 역순으로 해결됩니다.
 - 수동: 홈 화면에서 화살표 키를 사용하여 큐브를 스크램블하고 맞춥니다. 또는 큐브 버튼을 두 번 누른 후 풀기 버튼을 누르면 '코시엠바(Kociemba)' 또는 'CFOP' 방식으로 큐브가 맞춰집니다.
 
@@ -663,7 +663,7 @@
     <value>인터넷에 연결할 수 없습니다.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>'Kociemba' 방법을 사용하여 큐브를 풀기 위한 평균 턴 수는 {0}이고, 'Friedrich'(CFOP) 방법을 사용하면 평균 턴 수는 {1}입니다.</value>
+    <value>'Kociemba' 방법을 사용하여 큐브를 푸는 데 걸리는 평균 턴 수는 {0}이고, 'Fridrich'(CFOP) 방법을 사용하면 평균 턴 수는 {1}입니다.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>글꼴 크기:</value>

@@ -453,7 +453,7 @@ Mulig årsak er feil overføring av farger til denne kuben.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Løsningsmetoder:
 - Automatisk: bruk kubeknappen nederst på skjermen for å legge inn fargene på den virkelige kuben. Når du er ferdig, trykker du på knappen igjen og trykker på "Løs". Kuben vil bli løst ved hjelp av 'Kociemba'-algoritmen. Overfør de foreslåtte trekkene til din virkelige kube.
-Hvis du deaktiverer 'Kociemba'-algoritmen i innstillingene, vil appen bruke 'Friedrich' (CFOP)-metoden.
+Hvis du deaktiverer 'Kociemba'-algoritmen i innstillingene, vil appen bruke 'Fridrich' (CFOP)-metoden.
 - Omvendt: bruk piltastene til å forvrenge kuben, og trykk deretter "Løs". Terningen vil bli løst i omvendt rekkefølge.
 - Manuelt: Bruk piltastene på startskjermen til å bla gjennom og løse kuben. Alternativt kan du trykke to ganger på kuben-knappen og deretter trykke på løsningsknappen. Kuben løses da enten ved hjelp av «Kociemba»- eller «CFOP»-metoden.
 
@@ -663,7 +663,7 @@ Dette alternativet varierer fra enhet til enhet og de installerte språkene. Det
     <value>Tilkobling til internett er ikke tilgjengelig.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Gjennomsnittlig antall runder for å løse kuben ved bruk av «Kociemba»-metoden er {0}, ved bruk av «Friedrich»-metoden (CFOP) er det {1}.</value>
+    <value>Gjennomsnittlig antall runder for å løse kuben ved bruk av «Kociemba»-metoden er {0}, ved bruk av «Fridrich»-metoden (CFOP) er det {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Skriftstørrelse:</value>

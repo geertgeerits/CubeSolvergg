@@ -453,7 +453,7 @@ Mögliche Ursache ist eine fehlerhafte Farbübertragung auf diesen Würfel.</val
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Lösungsmethoden:
 - Automatisch: Verwenden Sie die Würfelschaltfläche unten auf dem Bildschirm, um die Farben Ihres echten Würfels einzugeben. Wenn Sie fertig sind, drücken Sie die Schaltfläche erneut und tippen Sie dann auf „Lösen“. Der Würfel wird mithilfe des „Kociemba“-Algorithmus gelöst. Übertragen Sie die vorgeschlagenen Züge auf Ihren echten Würfel.
-Wenn Sie den „Kociemba“-Algorithmus in den Einstellungen deaktivieren, verwendet die App die „Friedrich“-Methode (CFOP).
+Wenn Sie den „Kociemba“-Algorithmus in den Einstellungen deaktivieren, verwendet die App die „Fridrich“-Methode (CFOP).
 - Umgekehrt: Verwenden Sie die Pfeiltasten, um den Würfel zu verwirren, und drücken Sie dann auf „Lösen“. Der Würfel wird in umgekehrter Reihenfolge gelöst.
 Manuell: Verwende auf dem Startbildschirm die Pfeiltasten, um den Würfel zu lösen. Alternativ kannst du auch zweimal die Würfeltaste und dann die Lösungstaste drücken. Der Würfel wird dann entweder mit der „Kociemba“- oder der „CFOP“-Methode gelöst.
 
@@ -663,7 +663,7 @@ Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich
     <value>Es ist keine Verbindung zum Internet verfügbar.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Die durchschnittliche Anzahl der Runden zum Lösen des Würfels beträgt mit der „Kociemba“-Methode {0}, mit der „Friedrich“-Methode (CFOP) beträgt sie {1}.</value>
+    <value>Die durchschnittliche Anzahl der Runden zum Lösen des Würfels beträgt mit der „Kociemba“-Methode {0}, mit der „Fridrich“-Methode (CFOP) beträgt sie {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Schriftgröße:</value>

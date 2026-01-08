@@ -453,7 +453,7 @@
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>解決方法:
 - 自動: 画面下部のキューブ ボタンを使用して、実際のキューブの色を入力します。完了したら、ボタンをもう一度押して、[解決] をタップします。キューブは、[Kociemba] アルゴリズムを使用して解決されます。提案された動きを実際のキューブに転送します。
-設定で [Kociemba] アルゴリズムを無効にすると、アプリは [Friedrich] (CFOP) 方式を使用します。
+設定で [Kociemba] アルゴリズムを無効にすると、アプリは [Fridrich] (CFOP) 方式を使用します。
 - 逆: 矢印キーを使用してキューブをスクランブルしてから、[解決] を押します。キューブは逆の順序で解決されます。
 - 手動：ホーム画面で矢印キーを使ってキューブをスクランブルし、解きます。または、キューブボタンを2回押してから解くボタンを押すと、「Kociemba」法または「CFOP」法でキューブが解けます。
 
@@ -663,7 +663,7 @@
     <value>インターネットに接続できません。</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>'Kociemba' 法を使用してキューブを解くのに必要な平均ターン数は {0} で、'Friedrich' (CFOP) 法を使用した場合は {1} です。</value>
+    <value>'Kociemba' 法を使用してキューブを解くのに必要な平均ターン数は {0} で、'Fridrich' (CFOP) 法を使用した場合は {1} です。</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>フォントサイズ:</value>

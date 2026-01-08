@@ -453,7 +453,7 @@ Olası neden, bu kübe renklerin yanlış aktarılmasıdır.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Çözüm yöntemleri:
 - Otomatik: Gerçek küpünüzün renklerini girmek için ekranın alt kısmındaki küp düğmesini kullanın. İşiniz bittiğinde, düğmeye tekrar basın ve ardından 'Çöz'e dokunun. Küp, 'Kociemba' algoritması kullanılarak çözülecektir. Önerilen hareketleri gerçek küpünüze aktarın.
-Ayarlarda 'Kociemba' algoritmasını devre dışı bırakırsanız, uygulama 'Friedrich' (CFOP) yöntemini kullanacaktır.
+Ayarlarda 'Kociemba' algoritmasını devre dışı bırakırsanız, uygulama 'Fridrich' (CFOP) yöntemini kullanacaktır.
 - Ters: Küpü karıştırmak için ok tuşlarını kullanın, ardından 'Çöz'e basın. Küp ters sırayla çözülecektir.
 - Manuel: Ana ekranda, küpü karıştırmak ve çözmek için ok tuşlarını kullanın. Alternatif olarak, küp düğmesine iki kez basın, ardından çöz düğmesine basın ve küp 'Kociemba' veya 'CFOP' yöntemi kullanılarak çözülecektir.
 
@@ -663,7 +663,7 @@ Bu seçenek cihazdan cihaza ve yüklü dillere göre değişir. Bazı diller iç
     <value>İnternet bağlantısı mevcut değil.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>'Kociemba' yöntemi kullanılarak küpü çözmek için gereken ortalama tur sayısı {0}, 'Friedrich' (CFOP) yöntemi kullanılarak çözülen ortalama tur sayısı ise {1}'dir.</value>
+    <value>'Kociemba' yöntemi kullanılarak küpü çözmek için gereken ortalama tur sayısı {0}, 'Fridrich' (CFOP) yöntemi kullanılarak çözülen ortalama tur sayısı ise {1}'dir.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Yazı tipi boyutu:</value>

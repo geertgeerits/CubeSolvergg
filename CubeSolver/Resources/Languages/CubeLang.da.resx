@@ -453,7 +453,7 @@ Mulig årsag er forkert overførsel af farver til denne terning.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Løsningsmetoder:
 - Automatisk: Brug terningknappen nederst på skærmen til at indtaste farverne på din rigtige terning. Når du er færdig, skal du trykke på knappen igen og derefter trykke på 'Løs'. Terningen vil blive løst ved hjælp af 'Kociemba'-algoritmen. Overfør de foreslåede træk til din rigtige terning.
-Hvis du deaktiverer 'Kociemba'-algoritmen i indstillingerne, vil appen bruge 'Friedrich' (CFOP)-metoden.
+Hvis du deaktiverer 'Kociemba'-algoritmen i indstillingerne, vil appen bruge 'Fridrich' (CFOP)-metoden.
 - Omvendt: Brug piletasterne til at kryptere terningen, og tryk derefter på 'Løs'. Terningen vil blive løst i omvendt rækkefølge.
 - Manuelt: Brug piletasterne på startskærmen til at kæmpe og løse terningen. Alternativt kan du trykke to gange på terningknappen og derefter trykke på løs-knappen, hvorefter terningen løses ved hjælp af enten 'Kociemba'- eller 'CFOP'-metoden.
 
@@ -663,7 +663,7 @@ Denne mulighed varierer fra enhed til enhed og de installerede sprog. Det er mul
     <value>Der er ingen internetforbindelse.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Det gennemsnitlige antal ture til at løse terningen ved hjælp af 'Kociemba'-metoden er {0}, og ved brug af 'Friedrich' (CFOP)-metoden er det {1}.</value>
+    <value>Det gennemsnitlige antal ture til at løse terningen ved hjælp af 'Kociemba'-metoden er {0}, og ved brug af 'Fridrich' (CFOP)-metoden er det {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Skriftstørrelse:</value>

@@ -453,7 +453,7 @@ Ennek lehetséges oka a színek helytelen átvitele erre a kockára.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Megoldási módszerek:
 - Automatikus: használja a képernyő alján található kocka gombot a valódi kocka színeinek beviteléhez. Ha elkészült, nyomja meg újra a gombot, majd érintse meg a „Megoldás” gombot. A kockát a 'Kociemba' algoritmus segítségével oldjuk meg. Helyezze át a javasolt mozdulatokat a valódi kockájába.
-Ha letiltja a „Kociemba” algoritmust a beállításokban, az alkalmazás a „Friedrich” (CFOP) módszert fogja használni.
+Ha letiltja a „Kociemba” algoritmust a beállításokban, az alkalmazás a „Fridrich” (CFOP) módszert fogja használni.
 - Fordítva: a nyílbillentyűkkel keverje össze a kockát, majd nyomja meg a "Megoldás" gombot. A kocka megoldása fordított sorrendben történik.
 - Manuálisan: A kezdőképernyőn a nyílbillentyűk segítségével rakd össze és rakd ki a kockát. Alternatív megoldásként nyomd meg kétszer a kocka gombot, majd nyomd meg a megoldás gombot, és a kocka a 'Kociemba' vagy a 'CFOP' módszerrel lesz megoldva.
 
@@ -664,7 +664,7 @@ Ez az opció készülékenként és a telepített nyelvektől függően változi
     <value>Nincs internetkapcsolat.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>A kocka kirakásához szükséges átlagos fordulók száma a 'Kociemba' módszerrel {0}, a 'Friedrich' (CFOP) módszerrel pedig {1}.</value>
+    <value>A kocka kirakásához szükséges átlagos fordulók száma a 'Kociemba' módszerrel {0}, a 'Fridrich' (CFOP) módszerrel pedig {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Betűméret:</value>

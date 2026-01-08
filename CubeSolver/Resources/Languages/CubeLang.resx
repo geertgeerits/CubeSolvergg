@@ -453,7 +453,7 @@ Possible cause is incorrect transfer of colors to this cube.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Solution methods:
 - Automatic: Use the cube button at the bottom of the screen to input the colors of your real cube. Once done, press the button again, then tap 'Solve'. The cube will be solved using the 'Kociemba' algorithm. Transfer the proposed moves to your real cube.
-If you disable the 'Kociemba' algorithm in the settings, the app will use the 'Friedrich' (CFOP) method.
+If you disable the 'Kociemba' algorithm in the settings, the app will use the 'Fridrich' (CFOP) method.
 - Reverse: Use the arrow keys to scramble the cube, then press 'Solve.' The cube will be solved in reverse order.
 - Manually: On the home screen, use the arrow keys to scramble and solve the cube. Alternatively, press the cube button twice, then press the solve button, and the cube will be solved using either the 'Kociemba' or 'CFOP' method.
 
@@ -663,7 +663,7 @@ This option varies from device to device and the installed languages. It is poss
     <value>Connection to the internet is not available.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Average number of turns to solve the cube using the 'Kociemba' method is {0}, using the 'Friedrich' (CFOP) method is {1}.</value>
+    <value>Average number of turns to solve the cube using the 'Kociemba' method is {0}, using the 'Fridrich' (CFOP) method is {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Font size:</value>

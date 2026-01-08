@@ -453,7 +453,7 @@ Cauza posibilă este transferul incorect de culori în acest cub.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Metode de rezolvare:
 - Automat: utilizați butonul cub din partea de jos a ecranului pentru a introduce culorile cubului real. După ce ați terminat, apăsați din nou butonul, apoi atingeți „Rezolvare”. Cubul va fi rezolvat folosind algoritmul „Kociemba”. Transferați mișcările propuse în cubul real.
-Dacă dezactivați algoritmul „Kociemba” în setări, aplicația va folosi metoda „Friedrich” (CFOP).
+Dacă dezactivați algoritmul „Kociemba” în setări, aplicația va folosi metoda „Fridrich” (CFOP).
 - Reverse: utilizați tastele săgeți pentru a amesteca cubul, apoi apăsați „Rezolvare”. Cubul va fi rezolvat în ordine inversă.
 - Manual: Pe ecranul principal, folosește tastele săgeată pentru a dezbate și a rezolva cubul. Alternativ, apasă butonul cub de două ori, apoi apasă butonul de rezolvare, iar cubul va fi rezolvat folosind fie metoda „Kociemba”, fie metoda „CFOP”.
 
@@ -664,7 +664,7 @@ Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É 
     <value>Conexiunea la internet nu este disponibilă.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Numărul mediu de ture pentru a rezolva cubul folosind metoda „Kociemba” este {0}, iar folosind metoda „Friedrich” (CFOP) este {1}.</value>
+    <value>Numărul mediu de ture pentru a rezolva cubul folosind metoda „Kociemba” este {0}, iar folosind metoda „Fridrich” (CFOP) este {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Dimensiunea fontului:</value>

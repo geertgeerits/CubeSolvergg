@@ -453,7 +453,7 @@ Möjlig orsak är felaktig överföring av färger till denna kub.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Lösningsmetoder:
 - Automatisk: använd kubknappen längst ner på skärmen för att mata in färgerna på din riktiga kub. När du är klar trycker du på knappen igen och trycker sedan på "Lös". Kuben kommer att lösas med hjälp av 'Kociemba'-algoritmen. Överför de föreslagna dragen till din riktiga kub.
-Om du inaktiverar 'Kociemba'-algoritmen i inställningarna kommer appen att använda 'Friedrich' (CFOP)-metoden.
+Om du inaktiverar 'Kociemba'-algoritmen i inställningarna kommer appen att använda 'Fridrich' (CFOP)-metoden.
 - Omvänd: använd piltangenterna för att förvränga kuben och tryck sedan på "Lös". Kuben kommer att lösas i omvänd ordning.
 - Manuellt: Använd piltangenterna på startskärmen för att klättra och lösa kuben. Alternativt kan du trycka två gånger på kubknappen och sedan trycka på lös-knappen, så löses kuben med antingen 'Kociemba'- eller 'CFOP'-metoden.
 
@@ -663,7 +663,7 @@ Det här alternativet varierar från enhet till enhet och de installerade språk
     <value>Internetanslutning är inte tillgänglig.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Genomsnittligt antal varv för att lösa kuben med 'Kociemba'-metoden är {0}, med 'Friedrich'-metoden (CFOP) är det {1}.</value>
+    <value>Genomsnittligt antal varv för att lösa kuben med 'Kociemba'-metoden är {0}, med 'Fridrich'-metoden (CFOP) är det {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Fontstorlek:</value>

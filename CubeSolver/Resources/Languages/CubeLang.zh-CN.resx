@@ -453,7 +453,7 @@
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>解决方法：
 - 自动：使用屏幕底部的魔方按钮输入真实魔方的颜色。完成后，再次按下按钮，然后点击“解决”。魔方将使用“Kociemba”算法解决。将建议的移动转移到您的真实魔方。
-如果您在设置中禁用“Kociemba”算法，应用程序将使用“Friedrich”（CFOP）方法。
+如果您在设置中禁用“Kociemba”算法，应用程序将使用“Fridrich”（CFOP）方法。
 - 反向：使用箭头键打乱魔方，然后按“解决”。魔方将以相反的顺序解决。
 - 手动：在主屏幕上，使用箭头键打乱并还原魔方。或者，按两次魔方按钮，然后按还原按钮，系统将使用“Kociemba”或“CFOP”方法还原魔方。
 
@@ -663,7 +663,7 @@
     <value>无法连接互联网。</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>使用 'Kociemba' 方法解决魔方的平均转数为 {0}，使用 'Friedrich' (CFOP) 方法解决魔方的平均转数为 {1}。</value>
+    <value>使用 'Kociemba' 方法解决魔方的平均转数为 {0}，使用 'Fridrich' (CFOP) 方法解决魔方的平均转数为 {1}。</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>字体大小：</value>

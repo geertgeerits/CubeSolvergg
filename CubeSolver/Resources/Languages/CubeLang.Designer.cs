@@ -88,7 +88,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Average number of turns to solve the cube using the &apos;Kociemba&apos; method is {0}, using the &apos;Friedrich&apos; (CFOP) method is {1}..
+        ///   Looks up a localized string similar to Average number of turns to solve the cube using the &apos;Kociemba&apos; method is {0}, using the &apos;Fridrich&apos; (CFOP) method is {1}..
         /// </summary>
         internal static string AverageTurns_Text {
             get {
@@ -362,9 +362,9 @@ namespace CubeSolver.Resources.Languages {
         /// <summary>
         ///   Looks up a localized string similar to Solution methods:
         ///- Automatic: Use the cube button at the bottom of the screen to input the colors of your real cube. Once done, press the button again, then tap &apos;Solve&apos;. The cube will be solved using the &apos;Kociemba&apos; algorithm. Transfer the proposed moves to your real cube.
-        ///If you disable the &apos;Kociemba&apos; algorithm in the settings, the app will use the &apos;Friedrich&apos; (CFOP) method.
+        ///If you disable the &apos;Kociemba&apos; algorithm in the settings, the app will use the &apos;Fridrich&apos; (CFOP) method.
         ///- Reverse: Use the arrow keys to scramble the cube, then press &apos;Solve.&apos; The cube will be solved in reverse order.
-        ///- Manually: On  [rest of string was truncated]&quot;;.
+        ///- Manually: On t [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string HelpOptionsSolveCube_Text {
             get {

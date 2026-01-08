@@ -453,7 +453,7 @@ Nguyên nhân có thể là do chuyển màu không đúng sang khối lập ph�
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Phương pháp giải:
 - Tự động: Sử dụng nút khối lập phương ở cuối màn hình để nhập màu khối lập phương thực của bạn. Khi hoàn tất, hãy nhấn lại nút, sau đó chạm vào 'Giải'. Khối lập phương sẽ được giải bằng thuật toán 'Kociemba'. Chuyển các bước di chuyển được đề xuất sang khối lập phương thực của bạn.
-Nếu bạn tắt thuật toán 'Kociemba' trong phần cài đặt, ứng dụng sẽ sử dụng phương pháp 'Friedrich' (CFOP).
+Nếu bạn tắt thuật toán 'Kociemba' trong phần cài đặt, ứng dụng sẽ sử dụng phương pháp 'Fridrich' (CFOP).
 - Đảo ngược: Sử dụng các phím mũi tên để xáo trộn khối lập phương, sau đó nhấn 'Giải'. Khối lập phương sẽ được giải theo thứ tự ngược lại.
 - Thủ công: Trên màn hình chính, sử dụng các phím mũi tên để xáo trộn và giải khối lập phương. Ngoài ra, hãy nhấn nút khối lập phương hai lần, sau đó nhấn nút giải và khối lập phương sẽ được giải bằng phương pháp 'Kociemba' hoặc 'CFOP'.
 
@@ -663,7 +663,7 @@ Tùy chọn này thay đổi tùy theo thiết bị và ngôn ngữ được cà
     <value>Không có kết nối Internet.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Số vòng xoay trung bình để giải khối lập phương bằng phương pháp 'Kociemba' là {0}, bằng phương pháp 'Friedrich' (CFOP) là {1}.</value>
+    <value>Số vòng xoay trung bình để giải khối lập phương bằng phương pháp 'Kociemba' là {0}, bằng phương pháp 'Fridrich' (CFOP) là {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Kích thước phông chữ:</value>

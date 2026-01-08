@@ -453,7 +453,7 @@ La cause possible est un transfert incorrect des couleurs vers ce cube.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Méthodes de résolution :
 - Automatique : utilisez le bouton du cube en bas de l'écran pour saisir les couleurs de votre vrai cube. Une fois terminé, appuyez à nouveau sur le bouton, puis appuyez sur « Résoudre ». Le cube sera résolu à l'aide de l'algorithme « Kociemba ». Transférez les mouvements proposés sur votre vrai cube.
-Si vous désactivez l'algorithme « Kociemba » dans les paramètres, l'application utilisera la méthode « Friedrich » (CFOP).
+Si vous désactivez l'algorithme « Kociemba » dans les paramètres, l'application utilisera la méthode « Fridrich » (CFOP).
 - Inverser : utilisez les touches fléchées pour brouiller le cube, puis appuyez sur « Résoudre ». Le cube sera résolu dans l'ordre inverse.
 - Manuellement : Sur l'écran d'accueil, utilisez les touches fléchées pour mélanger et résoudre le cube. Vous pouvez également appuyer deux fois sur le bouton du cube, puis sur le bouton de résolution. Le cube sera alors résolu selon la méthode « Kociemba » ou « CFOP ».
 
@@ -663,7 +663,7 @@ Cette option varie selon l’appareil et les langues installées. Il est possibl
     <value>La connexion à Internet n'est pas disponible.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Le nombre moyen de tours pour résoudre le cube en utilisant la méthode « Kociemba » est de {0}, celui en utilisant la méthode « Friedrich » (CFOP) est de {1}.</value>
+    <value>Le nombre moyen de tours pour résoudre le cube en utilisant la méthode « Kociemba » est de {0}, celui en utilisant la méthode « Fridrich » (CFOP) est de {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Taille de la police:</value>

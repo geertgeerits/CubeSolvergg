@@ -453,7 +453,7 @@ La possibile causa è un trasferimento errato dei colori su questo cubo.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Metodi di soluzione:
 - Automatico: usa il pulsante del cubo in fondo allo schermo per inserire i colori del tuo cubo reale. Una volta fatto, premi di nuovo il pulsante, quindi tocca "Risolvi". Il cubo verrà risolto usando l'algoritmo "Kociemba". Trasferisci le mosse proposte al tuo cubo reale.
-Se disabiliti l'algoritmo "Kociemba" nelle impostazioni, l'app userà il metodo "Friedrich" (CFOP).
+Se disabiliti l'algoritmo "Kociemba" nelle impostazioni, l'app userà il metodo "Fridrich" (CFOP).
 - Inverso: usa i tasti freccia per mescolare il cubo, quindi premi "Risolvi". Il cubo verrà risolto in ordine inverso.
 - Manualmente: nella schermata iniziale, usa i tasti freccia per mescolare e risolvere il cubo. In alternativa, premi due volte il pulsante del cubo, quindi premi il pulsante di risoluzione e il cubo verrà risolto utilizzando il metodo "Kociemba" o "CFOP".
 
@@ -663,7 +663,7 @@ Questa opzione varia da dispositivo a dispositivo e dalle lingue installate. È 
     <value>La connessione a Internet non è disponibile.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Il numero medio di giri per risolvere il cubo usando il metodo 'Kociemba' è {0}, usando il metodo 'Friedrich' (CFOP) è {1}.</value>
+    <value>Il numero medio di giri per risolvere il cubo usando il metodo 'Kociemba' è {0}, usando il metodo 'Fridrich' (CFOP) è {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Dimensione del carattere:</value>

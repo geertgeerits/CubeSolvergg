@@ -453,7 +453,7 @@ Možnou příčinou je nesprávný přenos barev na tuto kostku.</value>
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Metody řešení:
 - Automaticky: pomocí tlačítka kostky ve spodní části obrazovky zadejte barvy skutečné kostky. Po dokončení znovu stiskněte tlačítko a klepněte na „Vyřešit“. Kostka bude řešena pomocí algoritmu 'Kociemba'. Přeneste navrhované tahy do své skutečné krychle.
-Pokud v nastavení zakážete algoritmus 'Kociemba', aplikace použije metodu 'Friedrich' (CFOP).
+Pokud v nastavení zakážete algoritmus 'Kociemba', aplikace použije metodu 'Fridrich' (CFOP).
 - Obrátit: pomocí kláves se šipkami rozšiřte kostku a poté stiskněte 'Solve'. Kostka bude řešena v opačném pořadí.
 - Ručně: Na domovské obrazovce použijte šipky k procházení a skládání krychle. Případně stiskněte dvakrát tlačítko krychle a poté tlačítko pro složení. Krychle bude složena metodou „Kociemba“ nebo „CFOP“.
 
@@ -663,7 +663,7 @@ Tato možnost se liší zařízení od zařízení a nainstalované jazyky. Je m
     <value>Připojení k internetu není k dispozici.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Průměrný počet tahů potřebných k vyřešení krychle metodou „Kociemba“ je {0}, metodou „Friedrich“ (CFOP) je {1}.</value>
+    <value>Průměrný počet tahů potřebných k vyřešení krychle metodou „Kociemba“ je {0}, metodou „Fridrich“ (CFOP) je {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Velikost písma:</value>

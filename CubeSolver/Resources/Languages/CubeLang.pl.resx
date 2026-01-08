@@ -453,7 +453,7 @@ Możliwą przyczyną jest nieprawidłowe przeniesienie kolorów do tej kostki.</
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Metody rozwiązania:
 - Automatyczne: użyj przycisku kostki na dole ekranu, aby wprowadzić kolory swojej prawdziwej kostki. Po wykonaniu tej czynności naciśnij przycisk ponownie, a następnie dotknij „Rozwiąż”. Kostka zostanie rozwiązana za pomocą algorytmu „Kociemba”. Przenieś proponowane ruchy do swojej prawdziwej kostki.
-Jeśli wyłączysz algorytm „Kociemba” w ustawieniach, aplikacja użyje metody „Friedrich” (CFOP).
+Jeśli wyłączysz algorytm „Kociemba” w ustawieniach, aplikacja użyje metody „Fridrich” (CFOP).
 - Odwrotne: użyj klawiszy strzałek, aby pomieszać kostkę, a następnie naciśnij „Rozwiąż”. Kostka zostanie rozwiązana w odwrotnej kolejności.
 - Ręcznie: Na ekranie głównym użyj klawiszy strzałek, aby pomieszać i rozwiązać kostkę. Alternatywnie naciśnij przycisk kostki dwa razy, a następnie naciśnij przycisk rozwiązania, a kostka zostanie rozwiązana za pomocą metody „Kociemba” lub „CFOP”.
 
@@ -663,7 +663,7 @@ Ta opcja różni się w zależności od urządzenia i zainstalowanych języków.
     <value>Połączenie internetowe jest niedostępne.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Średnia liczba tur potrzebnych do ułożenia kostki metodą „Kociemba” wynosi {0}, a metodą „Friedrich” (CFOP) wynosi {1}.</value>
+    <value>Średnia liczba tur potrzebnych do ułożenia kostki metodą „Kociemba” wynosi {0}, a metodą „Fridrich” (CFOP) wynosi {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Rozmiar czcionki:</value>

@@ -453,7 +453,7 @@ Mogelijke oorzaak is een onjuiste overdracht van kleuren naar deze kubus.</value
   <data name="HelpOptionsSolveCube_Text" xml:space="preserve">
     <value>Oplossingsmethoden:
 - Automatisch: gebruik de kubusknop onderaan het scherm om de kleuren van uw echte kubus in te voeren. Druk nogmaals op de knop en tik vervolgens op 'Oplossen'. De kubus wordt opgelost met behulp van het 'Kociemba'-algoritme. Breng de voorgestelde zetten over naar uw echte kubus.
-Als u het 'Kociemba'-algoritme in de instellingen uitschakelt, gebruikt de app de 'Friedrich'-methode (CFOP).
+Als u het 'Kociemba'-algoritme in de instellingen uitschakelt, gebruikt de app de 'Fridrich'-methode (CFOP).
 - Omgekeerd: gebruik de pijltjestoetsen om de kubus te husselen en druk vervolgens op 'Oplossen'. De kubus wordt in omgekeerde volgorde opgelost.
 - Handmatig: Gebruik op het startscherm de pijltjestoetsen om de kubus te husselen en op te lossen. Je kunt ook twee keer op de kubusknop drukken en vervolgens op de oplosknop. De kubus wordt dan opgelost met de 'Kociemba'- of 'CFOP'-methode.
 
@@ -663,7 +663,7 @@ Deze optie verschilt per apparaat en de geïnstalleerde talen. Het is mogelijk d
     <value>Er is geen internetverbinding beschikbaar.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Het gemiddelde aantal beurten om de kubus op te lossen met de 'Kociemba'-methode is {0}, met de 'Friedrich' (CFOP)-methode is dat {1}.</value>
+    <value>Het gemiddelde aantal beurten om de kubus op te lossen met de 'Kociemba'-methode is {0}, met de 'Fridrich' (CFOP)-methode is dat {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Lettergrootte:</value>
