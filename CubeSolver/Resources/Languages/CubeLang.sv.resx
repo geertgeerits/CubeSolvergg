@@ -663,7 +663,7 @@ Det här alternativet varierar från enhet till enhet och de installerade språk
     <value>Internetanslutning är inte tillgänglig.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Genomsnittligt antal varv för att lösa kuben med 'Kociemba'-metoden är {0}, med 'Fridrich'-metoden (CFOP) är det {1}.</value>
+    <value>Genomsnittligt antal varv för att lösa kuben med 'Kociemba'-metoden är {0}, med 'Friedrich'-metoden (CFOP) är det {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Fontstorlek:</value>

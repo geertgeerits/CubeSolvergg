@@ -664,7 +664,7 @@ Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É 
     <value>Conexiunea la internet nu este disponibilă.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Numărul mediu de ture pentru a rezolva cubul folosind metoda „Kociemba” este {0}, iar folosind metoda „Fridrich” (CFOP) este {1}.</value>
+    <value>Numărul mediu de ture pentru a rezolva cubul folosind metoda „Kociemba” este {0}, iar folosind metoda „Friedrich” (CFOP) este {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Dimensiunea fontului:</value>

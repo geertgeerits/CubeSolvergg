@@ -663,7 +663,7 @@
     <value>无法连接互联网。</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>使用 'Kociemba' 方法解决魔方的平均转数为 {0}，使用 'Fridrich' (CFOP) 方法解决魔方的平均转数为 {1}。</value>
+    <value>使用 'Kociemba' 方法解决魔方的平均转数为 {0}，使用 'Friedrich' (CFOP) 方法解决魔方的平均转数为 {1}。</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>字体大小：</value>

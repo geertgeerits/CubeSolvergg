@@ -663,7 +663,7 @@ Deze optie verschilt per apparaat en de geïnstalleerde talen. Het is mogelijk d
     <value>Er is geen internetverbinding beschikbaar.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Het gemiddelde aantal beurten om de kubus op te lossen met de 'Kociemba'-methode is {0}, met de 'Fridrich' (CFOP)-methode is dat {1}.</value>
+    <value>Het gemiddelde aantal beurten om de kubus op te lossen met de 'Kociemba'-methode is {0}, met de 'Friedrich' (CFOP)-methode is dat {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Lettergrootte:</value>

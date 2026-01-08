@@ -668,7 +668,7 @@
     <value>ইন্টারনেট সংযোগ উপলব্ধ নেই।</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>'কোসিম্বা' পদ্ধতি ব্যবহার করে ঘনকটি সমাধান করার গড় পালা সংখ্যা হল {0}, 'ফ্রিডরিচ' (CFOP) পদ্ধতি ব্যবহার করে {1}।</value>
+    <value>'কোসিম্বা' পদ্ধতি ব্যবহার করে ঘনকটি সমাধান করার গড় পালা সংখ্যা হল {0}, 'ফ্রেডরিখ' (CFOP) পদ্ধতি ব্যবহার করে {1}।</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>ফন্টের আকার:</value>

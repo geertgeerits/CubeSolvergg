@@ -663,7 +663,7 @@ Cette option varie selon l’appareil et les langues installées. Il est possibl
     <value>La connexion à Internet n'est pas disponible.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Le nombre moyen de tours pour résoudre le cube en utilisant la méthode « Kociemba » est de {0}, celui en utilisant la méthode « Fridrich » (CFOP) est de {1}.</value>
+    <value>Le nombre moyen de tours pour résoudre le cube en utilisant la méthode « Kociemba » est de {0}, celui en utilisant la méthode « Friedrich » (CFOP) est de {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Taille de la police:</value>

@@ -663,7 +663,7 @@ Bu seçenek cihazdan cihaza ve yüklü dillere göre değişir. Bazı diller iç
     <value>İnternet bağlantısı mevcut değil.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>'Kociemba' yöntemi kullanılarak küpü çözmek için gereken ortalama tur sayısı {0}, 'Fridrich' (CFOP) yöntemi kullanılarak çözülen ortalama tur sayısı ise {1}'dir.</value>
+    <value>'Kociemba' yöntemi kullanılarak küpü çözmek için gereken ortalama tur sayısı {0}, 'Friedrich' (CFOP) yöntemi kullanılarak çözülen ortalama tur sayısı ise {1}'dir.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Yazı tipi boyutu:</value>

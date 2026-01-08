@@ -19,7 +19,7 @@ namespace CubeSolver.Resources.Languages {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class CubeLang {
@@ -88,7 +88,7 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Average number of turns to solve the cube using the &apos;Kociemba&apos; method is {0}, using the &apos;Fridrich&apos; (CFOP) method is {1}..
+        ///   Looks up a localized string similar to Average number of turns to solve the cube using the &apos;Kociemba&apos; method is {0}, using the &apos;Friedrich&apos; (CFOP) method is {1}..
         /// </summary>
         internal static string AverageTurns_Text {
             get {

@@ -663,7 +663,7 @@ Tämä vaihtoehto vaihtelee laitteittain ja asennetuista kielistä riippuen. On 
     <value>Internet-yhteyttä ei ole saatavilla.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Kuution ratkaisemiseen tarvittavien kierrosten keskimääräinen määrä Kociemba-menetelmällä on {0} ja Fridrich-menetelmällä (CFOP) {1}.</value>
+    <value>Kuution ratkaisemiseen tarvittavien kierrosten keskimääräinen määrä Kociemba-menetelmällä on {0} ja Friedrich-menetelmällä (CFOP) {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Fonttikoko:</value>

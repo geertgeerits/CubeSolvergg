@@ -663,7 +663,7 @@ Diese Option variiert je nach Gerät und installierten Sprachen. Es ist möglich
     <value>Es ist keine Verbindung zum Internet verfügbar.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Die durchschnittliche Anzahl der Runden zum Lösen des Würfels beträgt mit der „Kociemba“-Methode {0}, mit der „Fridrich“-Methode (CFOP) beträgt sie {1}.</value>
+    <value>Die durchschnittliche Anzahl der Runden zum Lösen des Würfels beträgt mit der „Kociemba“-Methode {0}, mit der „Friedrich“-Methode (CFOP) beträgt sie {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Schriftgröße:</value>

@@ -663,7 +663,7 @@ Tùy chọn này thay đổi tùy theo thiết bị và ngôn ngữ được cà
     <value>Không có kết nối Internet.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Số vòng xoay trung bình để giải khối lập phương bằng phương pháp 'Kociemba' là {0}, bằng phương pháp 'Fridrich' (CFOP) là {1}.</value>
+    <value>Số vòng xoay trung bình để giải khối lập phương bằng phương pháp 'Kociemba' là {0}, bằng phương pháp 'Friedrich' (CFOP) là {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Kích thước phông chữ:</value>

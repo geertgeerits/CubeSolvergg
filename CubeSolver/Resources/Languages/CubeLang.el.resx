@@ -665,7 +665,7 @@
     <value>Η σύνδεση στο διαδίκτυο δεν είναι διαθέσιμη.</value>
   </data>
   <data name="AverageTurns_Text" xml:space="preserve">
-    <value>Ο μέσος αριθμός στροφών για την επίλυση του κύβου χρησιμοποιώντας τη μέθοδο 'Kociemba' είναι {0}, ενώ χρησιμοποιώντας τη μέθοδο 'Fridrich' (CFOP) είναι {1}.</value>
+    <value>Ο μέσος αριθμός στροφών για την επίλυση του κύβου χρησιμοποιώντας τη μέθοδο 'Kociemba' είναι {0}, ενώ χρησιμοποιώντας τη μέθοδο 'Friedrich' (CFOP) είναι {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
     <value>Μέγεθος γραμματοσειράς:</value>
