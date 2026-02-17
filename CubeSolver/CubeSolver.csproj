@@ -5,6 +5,7 @@
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net10.0-tizen</TargetFrameworks> -->
+		
 		<OutputType>Exe</OutputType>
 		<RootNamespace>CubeSolver</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -12,6 +13,12 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<NeutralLanguage>en-US</NeutralLanguage>
+
+		<!--XAML Source Generation - stored in Dependencies-net10.0xxx-Analyzers-Microsoft.Maui.Controls.SourceGen-->
+		<MauiXamlInflator>SourceGen</MauiXamlInflator>
+		<!--Optional (for Visual Studio Code)-->
+		<!--<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+		<CompilerGeneratedFilesOutputPath>C:\x</CompilerGeneratedFilesOutputPath>-->
 
 		<!-- Display name -->
 		<ApplicationTitle>Cube Solver gg</ApplicationTitle>
@@ -108,9 +115,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.1" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.20" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.3" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.40" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.3" />
 	</ItemGroup>
 
 	<ItemGroup>
