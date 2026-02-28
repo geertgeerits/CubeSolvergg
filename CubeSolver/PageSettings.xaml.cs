@@ -17,6 +17,11 @@
                 DisplayAlertAsync("InitializeComponent: PageSettings", ex.Message, "OK");
                 return;
             }
+#if ANDROID
+            // Android !!!BUG!!! SafeAreaEdges not behaving as expected #33922 - https://github.com/dotnet/maui/issues/33922
+            entHexColor.IsEnabled = false;
+#endif
+
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
             lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
