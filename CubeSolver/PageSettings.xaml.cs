@@ -17,11 +17,13 @@
                 DisplayAlertAsync("InitializeComponent: PageSettings", ex.Message, "OK");
                 return;
             }
-            //#if ANDROID
-            //            // Android !!!BUG!!! SafeAreaEdges not behaving as expected #33922 - https://github.com/dotnet/maui/issues/33922
-            //            // Happens only with the Microsoft SwiftKey keyboard, the Samsung and Google keyboards don't have this issue
-            //            entHexColor.IsEnabled = false;
-            //#endif
+#if ANDROID
+            // Android !!!BUG!!! SafeAreaEdges not behaving as expected #33922 - https://github.com/dotnet/maui/issues/33922
+            // Happens most with the Microsoft SwiftKey keyboard, the Samsung and Google keyboards have it less or not at all.
+            // The workaround is to disable the entry field for the hex color code in Android, because it is not really needed
+            // and the sliders can be used to change the cube colors.
+            entHexColor.IsEnabled = false;
+#endif
 
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
