@@ -237,6 +237,7 @@
                             TextTransform="Uppercase"
                             TextChanged="EntryHexColorTextChanged"
                             FlowDirection="LeftToRight"
+                            Completed="EntryHexColorUnfocused"
                             Unfocused="EntryHexColorUnfocused">
                         </Entry>
                     </Border>
