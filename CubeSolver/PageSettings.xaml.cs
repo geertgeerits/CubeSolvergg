@@ -17,11 +17,11 @@
                 DisplayAlertAsync("InitializeComponent: PageSettings", ex.Message, "OK");
                 return;
             }
-//#if ANDROID
-//            // Android !!!BUG!!! SafeAreaEdges not behaving as expected #33922 - https://github.com/dotnet/maui/issues/33922
-//            // Happens only with the Microsoft SwiftKey keyboard, the Samsung and Google keyboards don't have this issue
-//            entHexColor.IsEnabled = false;
-//#endif
+            //#if ANDROID
+            //            // Android !!!BUG!!! SafeAreaEdges not behaving as expected #33922 - https://github.com/dotnet/maui/issues/33922
+            //            // Happens only with the Microsoft SwiftKey keyboard, the Samsung and Google keyboards don't have this issue
+            //            entHexColor.IsEnabled = false;
+            //#endif
 
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
@@ -360,11 +360,29 @@
         }
 
         /// <summary>
+        /// Entry HexColor Completed event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void EntryHexColorCompleted(object sender, EventArgs e)
+        {
+            HandleHexColorCommit();
+        }
+
+        /// <summary>
         /// Entry HexColor Unfocused event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void EntryHexColorUnfocused(object sender, EventArgs e)
+        void EntryHexColorUnfocused(object sender, FocusEventArgs e)
+        {
+            HandleHexColorCommit();
+        }
+
+        /// <summary>
+        /// Entry HexColor Completed and Unfocused event
+        /// </summary>
+        private void HandleHexColorCommit()
         {
             // Length must be 6 characters
             if (entHexColor.Text.Length != 6)
