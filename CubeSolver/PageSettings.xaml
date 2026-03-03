@@ -16,7 +16,8 @@
     <Grid
         RowDefinitions="Auto, *, Auto"
         HorizontalOptions="Center"
-        Margin="5">
+        Margin="5"
+        SafeAreaEdges="Container,SoftInput">
 
         <ScrollView
             Grid.Row="1"
