@@ -17,13 +17,6 @@
                 DisplayAlertAsync("InitializeComponent: PageSettings", ex.Message, "OK");
                 return;
             }
-#if ANDROID
-            // Android !!!BUG!!! SafeAreaEdges not behaving as expected #33922 - https://github.com/dotnet/maui/issues/33922
-            // Happens most with the Microsoft SwiftKey keyboard, the Samsung and Google keyboards have it less or not at all.
-            // The workaround is to disable the entry field for the hex color code in Android, because it is not really needed
-            // and the sliders can be used to change the cube colors.
-            entHexColor.IsEnabled = false;
-#endif
 
 #if WINDOWS
             //// Set the margins for the controls in the title bar for Windows
@@ -368,23 +361,13 @@
         /// <param name="e"></param>
         private void EntryHexColorCompleted(object sender, EventArgs e)
         {
-            HandleHexColorCommit();
+            entHexColor.Unfocus();
         }
 
         /// <summary>
         /// Entry HexColor Unfocused event
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        void EntryHexColorUnfocused(object sender, FocusEventArgs e)
-        {
-            HandleHexColorCommit();
-        }
-
-        /// <summary>
-        /// Entry HexColor Completed and Unfocused event
-        /// </summary>
-        private void HandleHexColorCommit()
+        private void EntryHexColorUnfocused(object sender, FocusEventArgs e)
         {
             // Length must be 6 characters
             if (entHexColor.Text.Length != 6)
@@ -516,9 +499,9 @@
                 cHexColor = cHexColor[1..];
             }
 
-            nRed = int.Parse(cHexColor[..2], NumberStyles.AllowHexSpecifier);
-            nGreen = int.Parse(cHexColor.Substring(2, 2), NumberStyles.AllowHexSpecifier);
-            nBlue = int.Parse(cHexColor.Substring(4, 2), NumberStyles.AllowHexSpecifier);
+            nRed = int.Parse(cHexColor.AsSpan(0, 2), NumberStyles.AllowHexSpecifier, CultureInfo.InvariantCulture);
+            nGreen = int.Parse(cHexColor.AsSpan(2, 2), NumberStyles.AllowHexSpecifier, CultureInfo.InvariantCulture);
+            nBlue = int.Parse(cHexColor.AsSpan(4, 2), NumberStyles.AllowHexSpecifier, CultureInfo.InvariantCulture);
         }
 
         /// <summary>
