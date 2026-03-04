@@ -18,8 +18,13 @@
                 return;
             }
 
+#if ANDROID
+            // Workaround for !!!BUG!!! in Android with the SafeAreaEdges
+            entHexColor.IsEnabled = false;
+#endif
+
 #if WINDOWS
-            //// Set the margins for the controls in the title bar for Windows
+            // Set the margins for the controls in the title bar for Windows
             lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
 #endif
 #if IOS
