@@ -20,7 +20,10 @@
 
 #if ANDROID
             // Workaround for !!!BUG!!! in Android with the SafeAreaEdges
-            entHexColor.IsEnabled = false;
+            // Happens when the 'Entry ReturnType' is set to 'Done' and the soft keyboard is hiding after pressing 'Done'.
+            // Workaround: use always 'Next' and handle the focus in the EntryHexColorCompleted method to go to the next field or unfocus the last field.
+            //entHexColor.IsEnabled = false;
+            entHexColor.ReturnType = ReturnType.Next;
 #endif
 
 #if WINDOWS
