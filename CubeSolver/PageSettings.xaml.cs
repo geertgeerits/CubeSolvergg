@@ -377,6 +377,15 @@
         /// </summary>
         private void EntryHexColorUnfocused(object sender, FocusEventArgs e)
         {
+#if IOS
+            // https://github.com/dotnet/maui/issues/33316 and https://github.com/dotnet/maui/issues/32016
+            // Workaround for iOS !!!BUG!!! The MaxLength property of an Entry control is not respected on iOS,
+            // so we have to set the text again to get the correct length of the text (Microsoft.Maui.Controls Version 10.0.41)
+            // Re-assign text to enforce MaxLength on iOS
+            string cTemp = entHexColor.Text;
+            entHexColor.Text = "";
+            entHexColor.Text = cTemp;
+#endif
             // Length must be 6 characters
             if (entHexColor.Text.Length != 6)
             {
