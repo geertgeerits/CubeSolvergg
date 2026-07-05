@@ -2,7 +2,7 @@
 {
     public sealed partial class PageSettings : ContentPage
     {
-        //// Local variables
+        // Local variables
         private const string cHexCharacters = "0123456789ABCDEFabcdef";
         private readonly Stopwatch stopWatch = new();
 
@@ -17,14 +17,6 @@
                 DisplayAlertAsync("InitializeComponent: PageSettings", ex.Message, "OK");
                 return;
             }
-
-#if ANDROID
-            // Workaround for !!!BUG!!! in Android with the SafeAreaEdges
-            // Happens when the 'Entry ReturnType' is set to 'Done' and the soft keyboard is hiding after pressing 'Done'.
-            // Workaround: use always 'Next' and handle the focus in the EntryHexColorCompleted method to go to the next field or unfocus the last field.
-            //entHexColor.IsEnabled = false;
-            entHexColor.ReturnType = ReturnType.Next;
-#endif
 
 #if WINDOWS
             // Set the margins for the controls in the title bar for Windows
@@ -42,10 +34,10 @@
             sldColorGreen.Margin = slider.Margin;
             sldColorBlue.Margin = slider.Margin;
 #endif
-            //// Put text in the chosen language in the controls and variables
+            // Put text in the chosen language in the controls and variables
             SetLanguage();
 
-            //// Select the current language in the picker
+            // Select the current language in the picker
             pckLanguage.SelectedIndex = Globals.cLanguage switch
             {
                 "ar" => 0,      // العربية (al'Arabiyyeẗ) - Arabic
@@ -79,16 +71,16 @@
                 _ => 7,         // English
             };
 
-            //// Fill the picker with the speech languages and select the saved language in the picker
+            // Fill the picker with the speech languages and select the saved language in the picker
             ClassSpeech.FillPickerWithSpeechLanguages(pckLanguageSpeech);
 
-            //// Set the switches to false or true
+            // Set the switches to false or true
             swtUseKociembaSolution.IsToggled = Globals.bKociembaSolution;
             swtExplainText.IsToggled = Globals.bExplainText;
             swtExplainSpeech.IsToggled = Globals.bExplainSpeech;
             swtExplainSpeech.IsEnabled = Globals.bTextToSpeechAvailable;
 
-            //// Initialize the cube colors
+            // Initialize the cube colors
             plgCubeColor1.Fill = Color.FromArgb(Globals.aFaceColors[1]);
             plgCubeColor2.Fill = Color.FromArgb(Globals.aFaceColors[2]);
             plgCubeColor3.Fill = Color.FromArgb(Globals.aFaceColors[3]);
@@ -377,15 +369,6 @@
         /// </summary>
         private void EntryHexColorUnfocused(object sender, FocusEventArgs e)
         {
-#if IOS
-            // https://github.com/dotnet/maui/issues/33316 and https://github.com/dotnet/maui/issues/32016
-            // Workaround for iOS !!!BUG!!! The MaxLength property of an Entry control is not respected on iOS,
-            // so we have to set the text again to get the correct length of the text (Microsoft.Maui.Controls Version 10.0.41)
-            // Re-assign text to enforce MaxLength on iOS
-            string cTemp = entHexColor.Text;
-            entHexColor.Text = "";
-            entHexColor.Text = cTemp;
-#endif
             // Length must be 6 characters
             if (entHexColor.Text.Length != 6)
             {

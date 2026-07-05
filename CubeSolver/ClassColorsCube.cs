@@ -22,7 +22,7 @@ namespace CubeSolver
 
             int nItem;
 
-            //// Check the number of colors of the cube
+            // Check the number of colors of the cube
             // Front face
             for (nItem = 0; nItem < 9; nItem++)
             {
@@ -323,7 +323,7 @@ namespace CubeSolver
                 return false;
             }
 
-            //// Check the number of colors of the central square of the cube
+            // Check the number of colors of the central square of the cube
             bool bColorCenterCube = true;
 
             if (aPieces[40] == aPieces[4] || aPieces[40] == aPieces[13] || aPieces[40] == aPieces[31] || aPieces[40] == aPieces[22] || aPieces[40] == aPieces[49])
@@ -362,7 +362,7 @@ namespace CubeSolver
                 return false;
             }
 
-            //// Check the number of colors of the corner cubes of the cube if there are no corner cubes with the same color
+            // Check the number of colors of the corner cubes of the cube if there are no corner cubes with the same color
             bool bColorCornerCube = true;
 
             if (aPieces[42] == aPieces[29] || aPieces[42] == aPieces[0] || aPieces[0] == aPieces[29])
@@ -411,7 +411,7 @@ namespace CubeSolver
                 return false;
             }
 
-            //// Check the number of colors of the corner cubes if there are no more than 4 of the same colors on an corner
+            // Check the number of colors of the corner cubes if there are no more than 4 of the same colors on an corner
             int[] aNumberOfColors = [0, 0, 0, 0, 0, 0, 0];
 
             CheckNumberColorsCornerCube(aNumberOfColors, 1);
@@ -427,7 +427,7 @@ namespace CubeSolver
                 return false;
             }
 
-            //// Check the number of colors of the edge cubes if there are no edge cubes with the same color
+            // Check the number of colors of the edge cubes if there are no edge cubes with the same color
             bColorCornerCube = true;
 
             if (aPieces[37] == aPieces[19] || aPieces[39] == aPieces[28] || aPieces[41] == aPieces[10] || aPieces[43] == aPieces[1])
@@ -446,7 +446,7 @@ namespace CubeSolver
                 return false;
             }
 
-            //// Check the number of colors of the edge cubes if there are no more than 4 of the same colors on an edge
+            // Check the number of colors of the edge cubes if there are no more than 4 of the same colors on an edge
             aNumberOfColors = [0, 0, 0, 0, 0, 0, 0];
 
             CheckNumberColorsEdgeCube(aNumberOfColors, 1);
@@ -462,7 +462,7 @@ namespace CubeSolver
                 return false;
             }
 
-            //// Check the opposite center pieces of the cube
+            // Check the opposite center pieces of the cube
             // Colors: 1= red, 2= blue, 3= orange, 4= green, 5= white, 6= yellow
             // Center pieces: 4= front/red, 13= right/blue, 22= back/orange, 31= left/green, 40= up/white, 49= down/yellow
             // Opposite colors: red-orange 1-3, blue-green 2-4, white-yellow 5-6

@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.44
- * Date ........: 2026-04-21 (YYYY-MM-DD)
+ * Date ........: 2026-07-05 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -23,7 +23,7 @@ namespace CubeSolver
 {
     public sealed partial class MainPage : ContentPage
     {
-        //// Local variables
+        // Local variables
         private bool bColorDrop;
         private bool bSolvingCube;
         private bool bSolvingCubeStop;
@@ -35,7 +35,7 @@ namespace CubeSolver
         private int nDurationFirstKociembaSolve = 60;
         private string cCurrentTurn = string.Empty;
 
-        //// Array with cube turns for the cube scramble generator
+        // Array with cube turns for the cube scramble generator
         private readonly string[] ScrambledCubeTurns = [
             Globals.turnFrontCW, Globals.turnFrontCCW, Globals.turnFront2,
             Globals.turnRightCW, Globals.turnRightCCW, Globals.turnRight2,
@@ -44,12 +44,26 @@ namespace CubeSolver
             Globals.turnUpCW, Globals.turnUpCCW, Globals.turnUp2,
             Globals.turnDownCW, Globals.turnDownCCW, Globals.turnDown2 ];
 
-        //// Initialize the _buttonPressed field with a new instance of TaskCompletionSource<bool>,
+        // Initialize the _buttonPressed field with a new instance of TaskCompletionSource<bool>,
         //   which can be used to create and control the lifecycle of a task that will eventually complete with a boolean result
         private TaskCompletionSource<bool> _buttonPressed = new();
 
         public MainPage()
         {
+#if ANDROID
+            // !!!BUG!!! On some Android versions the software keyboard covers the UI when it is opened and the editor is focused
+            // Workaround: set WindowSoftInputModeAdjust.Resize in MainActivity and here in the constructor of the MainPage
+            // Setting WindowSoftInputModeAdjust.Resize on app start (without it - soft keyboard covers UI)
+            // https://github.com/dotnet/maui/issues/33922#issuecomment-4338782788
+            Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.Application.SetWindowSoftInputModeAdjust(
+                App.Current,
+                Microsoft.Maui.Controls.PlatformConfiguration.AndroidSpecific.WindowSoftInputModeAdjust.Resize
+            );
+
+            // MainActivity set ConfigChanges.Density, without it on some android versions still software keyboard covers UI
+            //Android.Views.SoftInput WindowSoftInputMode = Android.Views.SoftInput.AdjustNothing;
+            // On ContentPage "SafeAreaEdges" = "All"
+#endif
             try
             {
                 InitializeComponent();
@@ -60,21 +74,21 @@ namespace CubeSolver
                 return;
             }
 #if WINDOWS
-            //// Set the margins for the controls in the title bar for Windows if using the Shell
+            // Set the margins for the controls in the title bar for Windows if using the Shell
             imgbtnAbout.Margin = new Thickness(20, 0, 0, 0);
             lblTitlePage.Margin = new Thickness(16, 10, 0, 0);
 #endif
 #if IOS
-            //// !!!BUG!!!? in iOS - Set the margin for the label 'lblExplainTurnCube' because Padding does not work in iOS
+            // !!!BUG!!!? in iOS - Set the margin for the label 'lblExplainTurnCube' because Padding does not work in iOS
             lblExplainTurnCube.Margin = new Thickness(5, 0, 5, 0);
 
-            //// Set the scale of the activity indicator for iOS - If the scale is set in the xaml page then the app runs slower on Android and Windows while the activity indicator is running
+            // Set the scale of the activity indicator for iOS - If the scale is set in the xaml page then the app runs slower on Android and Windows while the activity indicator is running
             // Copilot Chat: Yes, it is possible that setting the scale of an activity indicator in the XAML page can cause performance issues on different platforms like Android and Windows
             // This can happen due to the way the UI elements are rendered and handled by the platform-specific implementations
             // To avoid this issue, you can set the scale of the activity indicator programmatically in the code-behind file
             activityIndicator.Scale = 2;
 #endif
-            //// Get the saved settings
+            // Get the saved settings
             Globals.cTheme = Preferences.Default.Get("SettingTheme", "System");
             Globals.nFontSize = Preferences.Default.Get("SettingFontSize", 18d);
             Globals.cLanguage = Preferences.Default.Get("SettingLanguage", "");
@@ -90,10 +104,10 @@ namespace CubeSolver
             Globals.bKociembaSolution = Preferences.Default.Get("SettingKociembaSolution", true);
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
 
-            //// Set the theme
+            // Set the theme
             Globals.SetTheme();
 
-            //// Get and set the user interface language after a first start or reset of the application
+            // Get and set the user interface language after a first start or reset of the application
             // For testing the languages
             //Globals.cLanguage = "id";
             //Globals.cLanguageSpeech = "id-ID";
@@ -126,18 +140,18 @@ namespace CubeSolver
             // Set the text language
             _ = SetTextLanguageAsync();
 
-            //// Initialize text to speech
+            // Initialize text to speech
             _ = InitializeTextToSpeechAsync();
 
-            //// Reset the colors of the cube
+            // Reset the colors of the cube
             ClassColorsCube.ResetCube();
             GetCubeColorsFromArrays();
 #if DEBUG
-            //// Set the button to true and 'bSolveNewSolutionsTest' to false in debug mode for testing purposes
+            // Set the button to true and 'bSolveNewSolutionsTest' to false in debug mode for testing purposes
             //btnSolveNewSolutionsTest.IsVisible = false;
             //Globals.bSolveNewSolutionsTest = false;
 
-            //// For testing the logging of the executed line in the class 'ClassProgramLogging.cs'
+            // For testing the logging of the executed line in the class 'ClassProgramLogging.cs'
             //ClassProgramLogging.LogExecutedLineTest();
 #endif
             // Herbert Kociemba solution (for testing)
@@ -147,7 +161,7 @@ namespace CubeSolver
             //string info = "";
             //string solution = "";
             //solution = SearchRunTime.solution(searchString, out info, buildTables: true);
-            ////string solution = Search.solution(searchString, out info);
+            //string solution = Search.solution(searchString, out info);
             //Debug.WriteLine("Search.solution: " + solution);
         }
 
@@ -188,7 +202,7 @@ namespace CubeSolver
             Debug.WriteLine("MainPage - Globals.cLanguageSpeech: " + Globals.cLanguageSpeech);
         }
 
-        //// TitleView buttons clicked events
+        // TitleView buttons clicked events
         /// <summary>
         /// Go to the About page
         /// </summary>

@@ -1,9 +1,9 @@
 ﻿namespace CubeSolver
 {
-    //// Global variables and methods
+    // Global variables and methods
     internal static class Globals
     {
-        //// Languages where the flow direction is right-to-left:
+        // Languages where the flow direction is right-to-left:
         /* ISO 639-1: ar:Arabic, dv:Divehi/Maldivian, fa:Dari/Persian (Farsi), ff:Fula, he:Hebrew, iw:Hebrew, kd:Kurdish (Sorani), pk:Panjabi-Shahmuki,
                       ps:Pushto/Pashto, ug:Uighur/Uyghur, ur:Urdu, yi:Yiddish
            ISO 639-2: arc:Aramaic, nqo:N'ko, rhg:Rohingya, syr:Syriac
@@ -13,7 +13,7 @@
         //    "ar", "dv", "fa", "ff", "he", "iw", "kd", "pk", "ps", "ug", "ur", "yi"
         //];
 
-        //// Global variables
+        // Global variables
         public static string cTheme = string.Empty;
         public static double nFontSize;
         public static string cLanguage = string.Empty;
@@ -107,7 +107,7 @@
         public const string turnCubeUpToLeft = "z'";
         public const string turnCubeUpToRight2 = "z2";
 
-        //// Global methods
+        // Global methods
 
         /// <summary>
         /// Set the current UI culture of the selected language
@@ -128,7 +128,7 @@
             }
         }
 
-        //// Set the flow direction of the text elements
+        // Set the flow direction of the text elements
         public static void SetFlowDirection(VisualElement element)
         {
             // Get the flow direction of the current UI culture

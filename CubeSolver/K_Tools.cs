@@ -72,8 +72,8 @@ namespace CubeSolver
             return fc.To_fc_String();
         }
 
-        //// Error when serialize tables !!!
-        //// NotSupportedException: Serialization and deserialization of 'System.Int16[,]' instances is not supported
+        // Error when serialize tables !!!
+        // NotSupportedException: Serialization and deserialization of 'System.Int16[,]' instances is not supported
         //public static void SerializeTable(string filename, short[,] array)
         //{
         //    EnsureFolder(Globals.cPathTables);
@@ -117,9 +117,9 @@ namespace CubeSolver
             return jaggedArray;
         }
 
-        //// Error when deserialize tables !!!
-        //// System.TypeInitializationException: 'The type initializer for 'CubeSolver.CoordCube' threw an exception.'
-        //// TypeInitializationException: The type initializer for 'CubeSolver.CoordCubeTables' threw an exception.
+        // Error when deserialize tables !!!
+        // System.TypeInitializationException: 'The type initializer for 'CubeSolver.CoordCube' threw an exception.'
+        // TypeInitializationException: The type initializer for 'CubeSolver.CoordCubeTables' threw an exception.
         //public static short[,] DeserializeTable(string filename)
         //{
         //    EnsureFolder(Globals.cPathTables);

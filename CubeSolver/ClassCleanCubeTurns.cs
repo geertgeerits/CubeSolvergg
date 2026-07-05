@@ -10,34 +10,34 @@
         /// <param name="bCubeTurnsSave"></param>
         public static void CleanListCubeTurns(List<string> lCubeTurnsToClean, bool bCubeTurnsSave)
         {
-            //// Start the stopwatch
+            // Start the stopwatch
             //long startTime = Stopwatch.GetTimestamp();
 
-            //// Declare the variables
+            // Declare the variables
             const string cNone = "None";
             const char cApos = '\'';
             const char c2 = '2';
 
-            //// Copy the list with the cube turns to a new list to return in case of an error (IndexOutOfRangeException RRRR RRR R L R')
+            // Copy the list with the cube turns to a new list to return in case of an error (IndexOutOfRangeException RRRR RRR R L R')
             List<string> lCubeTurnsToCleanOriginal = [.. lCubeTurnsToClean];
 #if DEBUG
-            //// Save the list with the cube turns before the cleaning to a file, for testing purposes
+            // Save the list with the cube turns before the cleaning to a file, for testing purposes
             if (bCubeTurnsSave)
             {
                 _ = ClassFileOperations.CubeTurnsSave("CubeTurnsBeforeFirstClean.txt");
             }
 #endif
-            //// Do the cleaning between 2 and 10 times
+            // Do the cleaning between 2 and 10 times
             try
             {
                 for (int nNumberCleanings = 1; nNumberCleanings < 11; nNumberCleanings++)
                 {
                     for (int i = 0; i < lCubeTurnsToClean.Count - 1; i++)
                     {
-                        //// Prevent the IndexOutOfRangeException
+                        // Prevent the IndexOutOfRangeException
                         if (i + 1 < lCubeTurnsToClean.Count)
                         {
-                            //// Replace two same turns with one turn or no turn
+                            // Replace two same turns with one turn or no turn
                             if (lCubeTurnsToClean[i] == lCubeTurnsToClean[i + 1])
                             {
                                 // U U -> U2
@@ -62,7 +62,7 @@
                                 }
                             }
 
-                            //// Replace two same first letters of a turn with another turn or no turn
+                            // Replace two same first letters of a turn with another turn or no turn
                             else if (lCubeTurnsToClean[i][0] == lCubeTurnsToClean[i + 1][0])
                             {
                                 // U U' -> None
@@ -108,7 +108,7 @@
                                 }
                             }
 
-                            //// Slice turns
+                            // Slice turns
                             // M - Middle layer turn - in the same direction as an L turn between L and R
                             else if (lCubeTurnsToClean[i].Contains('M') || lCubeTurnsToClean[i + 1].Contains('M'))
                             {
@@ -290,10 +290,10 @@
                             }
                         }
 
-                        //// Prevent the IndexOutOfRangeException
+                        // Prevent the IndexOutOfRangeException
                         if (i + 2 < lCubeTurnsToClean.Count)
                         {
-                            //// Whole cube turns (x, y, z) starting with "y"
+                            // Whole cube turns (x, y, z) starting with "y"
                             if (lCubeTurnsToClean[i] == "y")
                             {
                                 // Replace y x y -> y2 z
@@ -320,7 +320,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y face y)
+                                // Whole cube turns (y face y)
                                 // Replace y U y -> y2 U
                                 // Replace y U' y -> y2 U'
                                 // Replace y U2 y -> y2 U2
@@ -435,7 +435,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y face y')
+                                // Whole cube turns (y face y')
                                 // Replace y U y' -> U
                                 // Replace y U' y' -> U'
                                 // Replace y U2 y' -> U2
@@ -550,7 +550,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y face y2)
+                                // Whole cube turns (y face y2)
                                 // Replace y U y2 -> y' U
                                 // Replace y U' y2 -> y' U'
                                 // Replace y U2 y2 -> y' U2
@@ -666,7 +666,7 @@
                                 }
                             }
 
-                            //// Whole cube turns (x, y, z) starting with "y'"
+                            // Whole cube turns (x, y, z) starting with "y'"
                             else if (lCubeTurnsToClean[i] == "y'")
                             {
                                 // Replace y' x y' -> y2 z'
@@ -693,7 +693,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y' face y)
+                                // Whole cube turns (y' face y)
                                 // Replace y' U y -> U
                                 // Replace y' U' y -> U'
                                 // Replace y' U2 y -> U2
@@ -808,7 +808,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y' face y')
+                                // Whole cube turns (y' face y')
                                 // Replace y' U y' -> y2 U
                                 // Replace y' U' y' -> y2 U'
                                 // Replace y' U2 y' -> y2 U2
@@ -923,7 +923,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y' face y2)
+                                // Whole cube turns (y' face y2)
                                 // Replace y' U y2 -> y U
                                 // Replace y' U' y2 -> y U'
                                 // Replace y' U2 y2 -> y U2
@@ -1039,7 +1039,7 @@
                                 }
                             }
 
-                            //// Whole cube turns (x, y, z) starting with "y2"
+                            // Whole cube turns (x, y, z) starting with "y2"
                             else if (lCubeTurnsToClean[i] == "y2")
                             {
                                 // Replace y2 x y2 -> x'
@@ -1066,7 +1066,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y2 face y)
+                                // Whole cube turns (y2 face y)
                                 // Replace y2 U y -> y' U
                                 // Replace y2 U' y -> y' U'
                                 // Replace y2 U2 y -> y' U2
@@ -1181,7 +1181,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y2 face y')
+                                // Whole cube turns (y2 face y')
                                 // Replace y2 U y' -> y U
                                 // Replace y2 U' y' -> y U'
                                 // Replace y2 U2 y' -> y U2
@@ -1296,7 +1296,7 @@
                                     lCubeTurnsToClean[i + 2] = cNone;
                                 }
 
-                                //// Whole cube turns (y2 face y2)
+                                // Whole cube turns (y2 face y2)
                                 // Replace y2 U y2 -> U
                                 // Replace y2 U' y2 -> U'
                                 // Replace y2 U2 y2 -> U2
@@ -1412,7 +1412,7 @@
                                 }
                             }
 
-                            //// Delete the first and the third 1/2 turn who are the same and leave the second turn that is on the opposite face
+                            // Delete the first and the third 1/2 turn who are the same and leave the second turn that is on the opposite face
                             // Replace U2 D U2 -> D
                             else if (lCubeTurnsToClean[i] == "U2" && lCubeTurnsToClean[i + 1].StartsWith('D') && lCubeTurnsToClean[i + 2] == "U2")
                             {
@@ -1455,7 +1455,7 @@
                                 lCubeTurnsToClean[i + 2] = cNone;
                             }
 
-                            //// Delete the first and the third 1/4 turn who are reversed and leave the second turn that is on the opposite face
+                            // Delete the first and the third 1/4 turn who are reversed and leave the second turn that is on the opposite face
                             // Replace U D U' -> D
                             else if (lCubeTurnsToClean[i] == "U" && lCubeTurnsToClean[i + 1].StartsWith('D') && lCubeTurnsToClean[i + 2] == "U'")
                             {
@@ -1542,7 +1542,7 @@
                         }
                     }
 
-                    //// Remove the last turn if it is turning the whole cube (starts with x, y or z)
+                    // Remove the last turn if it is turning the whole cube (starts with x, y or z)
                     if (lCubeTurnsToClean[^1].StartsWith('x') || lCubeTurnsToClean[^1].StartsWith('y') || lCubeTurnsToClean[^1].StartsWith('z'))
                     {
                         lCubeTurnsToClean[^1] = cNone;
@@ -1575,11 +1575,11 @@
                 return;
             }
 
-            //// Stop the stopwatch
+            // Stop the stopwatch
             //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
             //_ = Application.Current!.Windows[0].Page!.DisplayAlertAsync("Time", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
 #if DEBUG
-            //// Save the list with the cube turns after the cleaning to a file, for testing purposes
+            // Save the list with the cube turns after the cleaning to a file, for testing purposes
             if (bCubeTurnsSave)
             {
                 _ = ClassFileOperations.CubeTurnsSave("CubeTurnsAfterLastClean.txt");

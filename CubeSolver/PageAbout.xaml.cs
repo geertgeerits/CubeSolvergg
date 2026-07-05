@@ -16,10 +16,10 @@ namespace CubeSolver
             }
 
             // !!!BUG!!! Do not use this when FlowDirection = "RightToLeft" in Android(and iOS)
-            //// Set the flow direction of the text elements
+            // Set the flow direction of the text elements
             Globals.SetFlowDirection(this);
 
-            //// Set the font size property of a label with a hyperlink
+            // Set the font size property of a label with a hyperlink
             // lblCubeSolver.FontSize = Globals.nFontSize;
 
             //if (lblEmail.FormattedText is FormattedString formattedEmail)
@@ -33,13 +33,13 @@ namespace CubeSolver
             //}
 
 #if WINDOWS
-                //// Set the margins for the controls in the title bar for Windows
+                // Set the margins for the controls in the title bar for Windows
                 lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
 #endif
-            //// Set the label IsVisible property for the program name
+            // Set the label IsVisible property for the program name
             lblNameProgram.IsVisible = Globals.cLanguage != "en";
 
-            //// Put text in the chosen language in the controls and variables
+            // Put text in the chosen language in the controls and variables
             lblVersion.Text = $"{CubeLang.Version_Text} 2.0.44";
             lblCopyright.Text = $"{CubeLang.Copyright_Text} © 1981-2026 Geert Geerits";
             lblPrivacyPolicy.Text = $"\n{CubeLang.PrivacyPolicyTitle_Text} {CubeLang.PrivacyPolicy_Text}";
@@ -66,7 +66,7 @@ namespace CubeSolver
                 string body = "";
                 string[] recipients = ["geertgeerits@gmail.com"];
 
-                var message = new EmailMessage
+                EmailMessage message = new()
                 {
                     Subject = subject,
                     Body = body,

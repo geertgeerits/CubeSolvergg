@@ -7,7 +7,7 @@ namespace CubeSolver
     {
         public static MauiApp CreateMauiApp()
         {
-            var builder = MauiApp.CreateBuilder();
+            MauiAppBuilder builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
@@ -22,14 +22,10 @@ namespace CubeSolver
 #if ANDROID
                     events.AddAndroid(android => android
                         .OnPause((activity) => ProcessEvent(nameof(AndroidLifecycle.OnPause))));
-#endif
-
-#if IOS
+#elif IOS
                     events.AddiOS(ios => ios
                         .OnResignActivation((app) => ProcessEvent(nameof(iOSLifecycle.OnResignActivation))));
-#endif
-
-#if WINDOWS
+#elif WINDOWS
                     events.AddWindows(windows => windows
                         .OnVisibilityChanged((window, args) => ProcessEvent(nameof(WindowsLifecycle.OnVisibilityChanged))));
 #endif

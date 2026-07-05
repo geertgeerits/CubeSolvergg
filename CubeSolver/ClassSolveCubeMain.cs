@@ -7,7 +7,7 @@ namespace CubeSolver
 {
     internal sealed class ClassSolveCubeMain
     {
-        //// Declare the variables
+        // Declare the variables
         private const string cNone = "None";
         private static readonly List<string> lCubeTurnsTemp = [];
         private static readonly List<string> lCubePositions = [];

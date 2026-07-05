@@ -179,14 +179,14 @@
             {
                 // Get directories
                 string[] directories = Directory.GetDirectories(folderPath);
-                foreach (var dir in directories)
+                foreach (string dir in directories)
                 {
                     folderContents.Add($"[DIR] {Path.GetFileName(dir)}");
                 }
 
                 // Get files
                 string[] files = Directory.GetFiles(folderPath);
-                foreach (var file in files)
+                foreach (string file in files)
                 {
                     folderContents.Add(Path.GetFileName(file));
                     Debug.WriteLine($"File: {file}");

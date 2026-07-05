@@ -4,7 +4,7 @@ namespace CubeSolver
 {
     internal sealed class ClassSolveCubeCFOP
     {
-        //// Declare variables
+        // Declare variables
         private const int nLoopTimesMax = 200;
 
         /// <summary>
