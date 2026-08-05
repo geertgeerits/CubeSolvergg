@@ -1,6 +1,4 @@
-﻿//using System.Text;
-
-namespace BarcodeGenerator
+﻿namespace CubeSolver
 {
     internal sealed class ClassSpeech
     {
@@ -16,9 +14,6 @@ namespace BarcodeGenerator
         /// </summary>
         public static async Task<bool> InitializeTextToSpeechAsync()
         {
-            // Dump the available locales to a text file for debugging purposes
-            //await DumpLocalesToFileAsync();
-
             try
             {
                 // Initialize text to speech
@@ -36,48 +31,26 @@ namespace BarcodeGenerator
                 cLanguageLocales = new string[nTotalItems];
                 int nItem = 0;
 
-#if ANDROID
-                /*
-                Populate the locales with the Id for Android because the Id is needed to select the correct voice for text-to-speech
-                starting with Samsung S25 ???
-                Possible causes
-                - The S25 likely ships with a different TTS engine / voice set than the S21 (Samsung vs Google/other).
-                  If a language voice is not installed by that engine, those languages will fail.
-                - Newer Android / OEM changes can use different locale IDs or voice names; exact string matching in your app can fail
-                  (so locale exists but your match logic misses it).
-                - Some voices are optional downloads or “neural” voices that must be installed or enabled in Settings → General
-                  management → Text-to-speech → Install voice data.
-                - Manufacturer/OS bugs or changed permissions on newer builds (rare) — check adb logcat for TTS errors.                 
-                */
-                foreach (Locale l in locales)
-                {
-                    cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name} : {l.Id}";
-                    nItem++;
-                }
-
-#elif IOS
-                // Exclude the voices that contain 'synthesis.voice' in the Id because they are not real voices and stupid
-                foreach (Locale l in locales)
-                {
-                    if (!l.Id.Contains("synthesis.voice"))
-                    {
-                        cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name}";
-                        nItem++;
-                    }
-                }
-
-#else           // Windows and other platforms
                 foreach (Locale l in locales)
                 {
                     cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name}";
                     nItem++;
                 }
-#endif
-                // Shrink the array to the number of items actually written (handles iOS branch skipping entries)
-                if (nItem < cLanguageLocales.Length)
+
+                // Remove the items in the array where the 5 first characters are duplicates of the first occurring 5 characters
+                List<string> uniqueLocales = [];
+                HashSet<string> seenPrefixes = [];
+
+                foreach (string item in cLanguageLocales)
                 {
-                    Array.Resize(ref cLanguageLocales, nItem);
+                    string prefix = item[..5];
+                    if (seenPrefixes.Add(prefix))
+                    {
+                        uniqueLocales.Add(item);
+                    }
                 }
+
+                cLanguageLocales = [.. uniqueLocales];
 
                 // Sort the locales
                 Array.Sort(cLanguageLocales);
@@ -91,10 +64,9 @@ namespace BarcodeGenerator
             }
             catch (Exception ex)
             {
-                SentrySdk.CaptureException(ex);
 #if DEBUG
                 Debug.WriteLine($"Error in InitializeTextToSpeechAsync: {ex.Message}");
-                await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CodeLang.ErrorTitle_Text, $"{ex.Message}\n\n{CodeLang.TextToSpeechError_Text}", CodeLang.ButtonClose_Text);
+                await Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, $"{ex.Message}\n\n{CubeLang.TextToSpeechError_Text}", CubeLang.ButtonClose_Text);
 #endif
                 return false;
             }
@@ -218,9 +190,8 @@ namespace BarcodeGenerator
             }
             catch (Exception ex)
             {
-                SentrySdk.CaptureException(ex);
 #if DEBUG
-                Application.Current!.Windows[0].Page!.DisplayAlertAsync(CodeLang.ErrorTitle_Text, ex.Message, CodeLang.ButtonClose_Text);
+                Application.Current!.Windows[0].Page!.DisplayAlertAsync(CubeLang.ErrorTitle_Text, ex.Message, CubeLang.ButtonClose_Text);
 #endif
             }
 
@@ -250,7 +221,7 @@ namespace BarcodeGenerator
         /// </summary>
         /// <param name="cText"></param>
         /// <returns></returns>
-        public static async Task ConvertTextToSpeechAsync(object sender, string cText)
+        public static async Task ConvertTextToSpeechAsync(string cText)
         {
             /* If there is too rapid switching between starting and stopping speech,
                an error message will sometimes appear: 'The operation was canceled'.
@@ -260,20 +231,13 @@ namespace BarcodeGenerator
             // Cancel the text to speech
             if (Globals.bTextToSpeechIsBusy)
             {
-                if (cts != null && !cts.IsCancellationRequested)
+                if (cts?.IsCancellationRequested ?? true)
                 {
-                    // Cancel outstanding speech and give it a short moment to settle
-                    cts.Cancel();
-                    await Task.Delay(100);
+                    return;
                 }
-                else
-                {
-                    // No cancellable token present — clear busy flag so we can proceed
-                    Globals.bTextToSpeechIsBusy = false;
-                }
-            }
 
-            ImageButton imageButton = (ImageButton)sender;
+                cts.Cancel();
+            }
 
             // Start with the text to speech
             Debug.WriteLine("ConvertTextToSpeechAsync + cText: " + cText);
@@ -282,7 +246,6 @@ namespace BarcodeGenerator
             if (!string.IsNullOrEmpty(cText))
             {
                 Globals.bTextToSpeechIsBusy = true;
-                imageButton.Source = Globals.cImageTextToSpeechCancel;
 
                 try
                 {
@@ -290,11 +253,7 @@ namespace BarcodeGenerator
 
                     SpeechOptions options = new()
                     {
-#if ANDROID
-                        Locale = locales?.FirstOrDefault(static l => $"{l.Language}-{l.Country} {l.Name} : {l.Id}" == Globals.cLanguageSpeech)
-#else
                         Locale = locales?.FirstOrDefault(static l => $"{l.Language}-{l.Country} {l.Name}" == Globals.cLanguageSpeech)
-#endif
                     };
 
                     await TextToSpeech.Default.SpeakAsync(cText, options, cancelToken: cts.Token);
@@ -302,147 +261,29 @@ namespace BarcodeGenerator
                 }
                 catch (Exception ex)
                 {
-                    SentrySdk.CaptureException(ex);
 #if DEBUG
-                    await Application.Current!.Windows[0].Page!.DisplayAlertAsync("ConvertTextToSpeechAsync", $"{ex.Message}\n{ex.StackTrace}", CodeLang.ButtonClose_Text);
+                    await Application.Current!.Windows[0].Page!.DisplayAlertAsync("ConvertTextToSpeechAsync", $"{ex.Message}\n{ex.StackTrace}", CubeLang.ButtonClose_Text);
                     Debug.WriteLine($"Method ConvertTextToSpeechAsync:\n{ex.Message}\n{ex.StackTrace}");
 #endif
                 }
-
-                imageButton.Source = Globals.cImageTextToSpeech;
             }
         }
 
         /// <summary>
         /// Cancel speech if a cancellation token exists and hasn't been already requested
         /// </summary>
-        public static string CancelTextToSpeech()
+        public static void CancelTextToSpeech()
         {
             if (Globals.bTextToSpeechIsBusy)
             {
-                if (cts != null && !cts.IsCancellationRequested)
+                if (cts?.IsCancellationRequested ?? true)
                 {
-                    cts.Cancel();
+                    return;
                 }
 
+                cts.Cancel();
                 Globals.bTextToSpeechIsBusy = false;
             }
-
-            return Globals.cImageTextToSpeech;
         }
-
-        ///// <summary>
-        ///// Dump the available locales to a text file for debugging purposes
-        ///// </summary>
-        ///// <param name="filename"></param>
-        ///// <returns></returns>
-        //public static async Task<string> DumpLocalesToFileAsync(string? filename = null)
-        //{
-        //    try
-        //    {
-        //        IEnumerable<Locale>? localesList = locales ?? await TextToSpeech.Default.GetLocalesAsync();
-
-        //        string appDir = Microsoft.Maui.Storage.FileSystem.AppDataDirectory;
-        //        filename ??= Path.Combine(appDir, $"tts_locales_{Microsoft.Maui.Devices.DeviceInfo.Model}_{DateTime.UtcNow:yyyyMMdd_HHmmss}.txt");
-
-        //        StringBuilder sb = new();
-        //        sb.AppendLine($"DeviceManufacturer: {Microsoft.Maui.Devices.DeviceInfo.Manufacturer}");
-        //        sb.AppendLine($"DeviceModel: {Microsoft.Maui.Devices.DeviceInfo.Model}");
-        //        sb.AppendLine($"Platform: {Microsoft.Maui.Devices.DeviceInfo.Platform}");
-        //        sb.AppendLine($"OSVersion: {Microsoft.Maui.Devices.DeviceInfo.VersionString}");
-        //        sb.AppendLine($"TimestampUtc: {DateTime.UtcNow:o}");
-        //        sb.AppendLine($"LocalesCount: {localesList?.Count() ?? 0}");
-        //        sb.AppendLine(new string('-', 60));
-
-        //        foreach (Locale l in localesList)
-        //        {
-        //            // include both the raw properties and the display string used by the app
-        //            sb.AppendLine($"Id: {l.Id}");
-        //            sb.AppendLine($"Language: {l.Language}");
-        //            sb.AppendLine($"Country: {l.Country}");
-        //            sb.AppendLine($"Name: {l.Name}");
-        //            sb.AppendLine($"Display: {l.Language}-{l.Country} {l.Name} : {l.Id}");
-        //            sb.AppendLine(new string('-', 20));
-        //        }
-
-        //        // Write the locales to a text file
-        //        await File.WriteAllTextAsync(filename, sb.ToString(), Encoding.UTF8);
-
-        //        // Open the share interface to allow the user to share or save the file
-        //        await ClassFileUtilities.OpenShareInterfaceAsync(filename);
-
-        //        return filename;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        SentrySdk.CaptureException(ex);
-        //        Debug.WriteLine($"DumpLocalesToFileAsync error: {ex.Message}");
-        //        throw;
-        //    }
-        //}
-
-        ///// <summary>
-        ///// Compare two locale dump files and output the differences to a new file
-        ///// </summary>
-        ///// <param name="fileA"></param>
-        ///// <param name="fileB"></param>
-        ///// <param name="outFilename"></param>
-        ///// <returns></returns>
-        //public static async Task<string> CompareLocaleDumpFilesAsync(string fileA, string fileB, string? outFilename = null)
-        //{
-        //    try
-        //    {
-        //        string[] linesA = await File.ReadAllLinesAsync(fileA);
-        //        string[] linesB = await File.ReadAllLinesAsync(fileB);
-
-        //        // Extract Id lines (fall back to Display lines if Id not present)
-        //        static IEnumerable<string> ExtractKeys(string[] lines)
-        //        {
-        //            foreach (string line in lines)
-        //            {
-        //                if (line.StartsWith("Id: "))
-        //                    yield return line.Substring(4).Trim();
-        //            }
-        //            // if no Id lines found, try Display
-        //            if (!lines.Any(l => l.StartsWith("Id: ")))
-        //            {
-        //                foreach (string line in lines)
-        //                {
-        //                    if (line.StartsWith("Display: "))
-        //                        yield return line.Substring(9).Trim();
-        //                }
-        //            }
-        //        }
-
-        //        HashSet<string> setA = new(ExtractKeys(linesA));
-        //        HashSet<string> setB = new(ExtractKeys(linesB));
-
-        //        List<string> onlyInA = setA.Except(setB).OrderBy(x => x).ToList();
-        //        List<string> onlyInB = setB.Except(setA).OrderBy(x => x).ToList();
-        //        List<string> inBoth = setA.Intersect(setB).OrderBy(x => x).ToList();
-
-        //        string appDir = Microsoft.Maui.Storage.FileSystem.AppDataDirectory;
-        //        outFilename ??= Path.Combine(appDir, $"tts_locales_diff_{DateTime.UtcNow:yyyyMMdd_HHmmss}.txt");
-
-        //        StringBuilder sb = new();
-        //        sb.AppendLine($"Compare: {Path.GetFileName(fileA)}  vs  {Path.GetFileName(fileB)}");
-        //        sb.AppendLine($"TimestampUtc: {DateTime.UtcNow:o}");
-        //        sb.AppendLine($"Count A: {setA.Count}, Count B: {setB.Count}");
-        //        sb.AppendLine($"In both: {inBoth.Count}");
-        //        sb.AppendLine($"Only in A: {onlyInA.Count}");
-        //        foreach (string k in onlyInA) sb.AppendLine($"  - {k}");
-        //        sb.AppendLine($"Only in B: {onlyInB.Count}");
-        //        foreach (string k in onlyInB) sb.AppendLine($"  - {k}");
-
-        //        await File.WriteAllTextAsync(outFilename, sb.ToString(), Encoding.UTF8);
-        //        return outFilename;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        SentrySdk.CaptureException(ex);
-        //        Debug.WriteLine($"CompareLocaleDumpFilesAsync error: {ex.Message}");
-        //        throw;
-        //    }
-        //}
     }
 }
