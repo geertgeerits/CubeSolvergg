@@ -5,7 +5,7 @@
         private static string[]? cLanguageLocales;
         private static IEnumerable<Locale>? locales;
         private static CancellationTokenSource? cts;
-
+        // None
         /// <summary>
         /// Initialize text to speech and fill the the array with the speech languages ( : is separator before the Id)
         /// Android: .Language = ko- .Country = KR  .Name = Korean (South Korea) : .Id = ko-kr-x-ism-local
