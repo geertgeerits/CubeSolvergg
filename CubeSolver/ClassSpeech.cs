@@ -31,26 +31,80 @@
                 cLanguageLocales = new string[nTotalItems];
                 int nItem = 0;
 
+                // Define a set of allowed languages to filter the locales
+                HashSet<string> allowedLanguages =
+                [
+                    with(StringComparer.OrdinalIgnoreCase), "ar","bn","cs","da","de","el","en","es","fi","fr","hi","hu","id","it","ja","ko","nb","nl","pl","pt","ro","ru","sv","tr","uk","ur","vi","zh"
+                ];
+
+#if ANDROID
+                // Populate the locales with the Id for Android because the Id is needed to select the correct voice for text-to-speech
+                // starting with Samsung S25 ???
+                /*
+                Id: en-us-x-tpf-local
+                Language: en
+                Country: US
+                Name: English (United States)
+                Display: en-US English (United States)
+                */
                 foreach (Locale l in locales)
                 {
-                    cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name}";
-                    nItem++;
-                }
-
-                // Remove the items in the array where the 5 first characters are duplicates of the first occurring 5 characters
-                List<string> uniqueLocales = [];
-                HashSet<string> seenPrefixes = [];
-
-                foreach (string item in cLanguageLocales)
-                {
-                    string prefix = item[..5];
-                    if (seenPrefixes.Add(prefix))
+                    if (allowedLanguages.Contains(l.Language))
                     {
-                        uniqueLocales.Add(item);
+                        cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name} : {l.Id}";
+                        nItem++;
                     }
                 }
 
-                cLanguageLocales = [.. uniqueLocales];
+#elif IOS
+                // l.Language can be "en" or "en-US" (or "en_US") so we use the l.Country anyway if in the future the l.Country is needed for the voice selection
+                // Exclude the voices that contain 'synthesis.voice' in the Id because they are not real voices and stupid
+                /*
+                Id: com.apple.eloquence.en-US.Eddy
+                Language: en-US
+                Country: 
+                Name: Eddy
+                Display: en-US- Eddy : com.apple.eloquence.en-US.Eddy
+                */
+                foreach (Locale l in locales)
+                {
+                    string lang = l.Language ?? string.Empty;
+                    string primary = lang.Split(['-', '_'], StringSplitOptions.RemoveEmptyEntries)[0];
+
+                    if ((allowedLanguages.Contains(lang) || allowedLanguages.Contains(primary)) && !l.Id.Contains("synthesis.voice"))
+                    {
+                        cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name}";
+                        nItem++;
+                    }
+                }
+
+#else           // Windows and other platforms
+                // l.Language can be "en" or "en-US" (or "en_US") so we use the l.Country anyway if in the future the l.Country is needed for the voice selection
+                /*
+                Id: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Voices\Tokens\MSTTS_V110_enUS_DavidM
+                Language: en-US
+                Country: 
+                Name: Microsoft David
+                Display: en-US- Microsoft David : HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech_OneCore\Voices\Tokens\MSTTS_V110_enUS_DavidM
+                */
+                foreach (Locale l in locales)
+                {
+                    // l.Language can be "en" or "en-US" (or "en_US")
+                    string lang = l.Language ?? string.Empty;
+                    string primary = lang.Split(['-', '_'], StringSplitOptions.RemoveEmptyEntries)[0];
+
+                    if (allowedLanguages.Contains(lang) || allowedLanguages.Contains(primary))
+                    {
+                        cLanguageLocales[nItem] = $"{l.Language}-{l.Country} {l.Name}";
+                        nItem++;
+                    }
+                }
+#endif
+                // Shrink the array to the number of items actually written (handles iOS branch skipping entries)
+                if (nItem < cLanguageLocales.Length)
+                {
+                    Array.Resize(ref cLanguageLocales, nItem);
+                }
 
                 // Sort the locales
                 Array.Sort(cLanguageLocales);
@@ -231,13 +285,20 @@
             // Cancel the text to speech
             if (Globals.bTextToSpeechIsBusy)
             {
-                if (cts?.IsCancellationRequested ?? true)
+                if (cts != null && !cts.IsCancellationRequested)
                 {
-                    return;
+                    // Cancel outstanding speech and give it a short moment to settle
+                    cts.Cancel();
+                    await Task.Delay(100);
                 }
-
-                cts.Cancel();
+                else
+                {
+                    // No cancellable token present — clear busy flag so we can proceed
+                    Globals.bTextToSpeechIsBusy = false;
+                }
             }
+
+            //ImageButton imageButton = (ImageButton)sender;
 
             // Start with the text to speech
             Debug.WriteLine("ConvertTextToSpeechAsync + cText: " + cText);
@@ -246,6 +307,7 @@
             if (!string.IsNullOrEmpty(cText))
             {
                 Globals.bTextToSpeechIsBusy = true;
+                //imageButton.Source = Globals.cImageTextToSpeechCancel;
 
                 try
                 {
@@ -253,7 +315,11 @@
 
                     SpeechOptions options = new()
                     {
+#if ANDROID
+                        Locale = locales?.FirstOrDefault(static l => $"{l.Language}-{l.Country} {l.Name} : {l.Id}" == Globals.cLanguageSpeech)
+#else
                         Locale = locales?.FirstOrDefault(static l => $"{l.Language}-{l.Country} {l.Name}" == Globals.cLanguageSpeech)
+#endif
                     };
 
                     await TextToSpeech.Default.SpeakAsync(cText, options, cancelToken: cts.Token);
@@ -266,6 +332,8 @@
                     Debug.WriteLine($"Method ConvertTextToSpeechAsync:\n{ex.Message}\n{ex.StackTrace}");
 #endif
                 }
+
+                //imageButton.Source = Globals.cImageTextToSpeech;
             }
         }
 
@@ -276,14 +344,15 @@
         {
             if (Globals.bTextToSpeechIsBusy)
             {
-                if (cts?.IsCancellationRequested ?? true)
+                if (cts != null && !cts.IsCancellationRequested)
                 {
-                    return;
+                    cts.Cancel();
                 }
 
-                cts.Cancel();
                 Globals.bTextToSpeechIsBusy = false;
             }
+
+            //return Globals.cImageTextToSpeech;
         }
     }
 }
