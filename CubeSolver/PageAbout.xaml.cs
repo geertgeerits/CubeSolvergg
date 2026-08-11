@@ -63,7 +63,7 @@ namespace CubeSolver
             if (Email.Default.IsComposeSupported)
             {
                 string subject = "Cube Solver gg";
-                string body = "";
+                string body = string.Empty;
                 string[] recipients = ["geertgeerits@gmail.com"];
 
                 EmailMessage message = new()
