@@ -28,15 +28,15 @@
 		<ApplicationIdGuid>be8353b4-1c5d-4ba1-b563-077ed70cd644</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<PackageVersion>2.0.44</PackageVersion>
-		<ApplicationDisplayVersion>2.0.44</ApplicationDisplayVersion>
-		<ApplicationVersion>44</ApplicationVersion>
+		<PackageVersion>2.0.45</PackageVersion>
+		<ApplicationDisplayVersion>2.0.45</ApplicationDisplayVersion>
+		<ApplicationVersion>45</ApplicationVersion>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
 		<!--<WindowsPackageType>None</WindowsPackageType>-->
 
 		<!--!!!BUG!!!? in iOS.  Below version 16.0 the app crashes when you try to open the settings page, this at least since 2025-02-04-->
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">12.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
@@ -164,8 +164,8 @@
 		<AndroidSigningKeyAlias>key</AndroidSigningKeyAlias>
 		<AndroidSigningKeyPass></AndroidSigningKeyPass>
 		<AndroidSigningStorePass></AndroidSigningStorePass>
-		<ApplicationDisplayVersion>2.0.44</ApplicationDisplayVersion>
-		<ApplicationVersion>44</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.45</ApplicationDisplayVersion>
+		<ApplicationVersion>45</ApplicationVersion>
 		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
 	</PropertyGroup>
 
@@ -184,8 +184,8 @@
 		<ArchiveOnBuild>true</ArchiveOnBuild>
 		<TcpPort>58181</TcpPort>
 
-		<ApplicationDisplayVersion>2.0.44</ApplicationDisplayVersion>
-		<ApplicationVersion>44</ApplicationVersion>
+		<ApplicationDisplayVersion>2.0.45</ApplicationDisplayVersion>
+		<ApplicationVersion>45</ApplicationVersion>
 		<ApplicationId>com.geertgeerits.rubikscube</ApplicationId>
 	</PropertyGroup>
 	
