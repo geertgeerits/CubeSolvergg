@@ -35,7 +35,6 @@
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
 		<!--<WindowsPackageType>None</WindowsPackageType>-->
 
-		<!--!!!BUG!!!? in iOS.  Below version 16.0 the app crashes when you try to open the settings page, this at least since 2025-02-04-->
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
@@ -167,7 +166,6 @@
 		<ProvisioningType>automatic</ProvisioningType>
 		<CodesignKey>Apple Development: Created via API (KL96X68Q72)</CodesignKey>
 		<CodesignProvision>VS: com.geertgeerits.cubesolvergg Development</CodesignProvision>
-		<!--<CodesignProvision>VS: com.geertgeerits.cubesolvergg Development</CodesignProvision>-->
 	</PropertyGroup>
 
 	<PropertyGroup Condition="$(TargetFramework.Contains('-ios')) and '$(Configuration)' == 'Release'">
@@ -190,10 +188,4 @@
 		<EnablePreviewFeatures>true</EnablePreviewFeatures>
 	</PropertyGroup>
 
-	<!--From .NET 9 on the following is needed due an error in the build process:
-	Samsung Galaxy A3 (2017) SM-A320FL Android 8.0.0 -> Error ADB0020: Mono.AndroidTools.IncompatibleCpuAbiException:
-	The package does not support the CPU architecture of this device.-->
-	<!--<PropertyGroup>
-		<RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
-	</PropertyGroup>-->
 </Project>
