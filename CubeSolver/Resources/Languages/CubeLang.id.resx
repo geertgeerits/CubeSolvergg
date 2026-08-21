@@ -669,8 +669,10 @@ Opsi ini bervariasi dari perangkat ke perangkat dan bahasa yang diinstal. Ada ke
     <value>Ukuran huruf:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Az Apple, az App Store és az App Store logó az Apple Inc. bejegyzett védjegyei az Egyesült Államokban és más országokban és régiókban.
-A Google, a Google Play, a Google Play logó és az Android a Google LLC védjegyei.
-A Microsoft, a Microsoft Store, a Microsoft Store logó és a Windows a Microsoft Corporation védjegyei.</value>
+    <value>Merek Dagang:
+Apple, App Store, dan logo App Store adalah merek dagang Apple Inc., terdaftar di AS dan negara serta wilayah lain.
+Google, Google Play, logo Google Play, dan Android adalah merek dagang Google LLC.
+Microsoft, Microsoft Store, logo Microsoft Store, dan Windows adalah merek dagang Microsoft Corporation.
+Rubik's atau Rubik's Cube adalah merek dagang terdaftar dari Spin Master Toys UK Limited. Cube Solver gg adalah aplikasi yang dikembangkan secara independen dan tidak berafiliasi dengan, disponsori oleh, diotorisasi oleh, atau didukung oleh Spin Master Toys UK Limited.</value>
   </data>
 </root>

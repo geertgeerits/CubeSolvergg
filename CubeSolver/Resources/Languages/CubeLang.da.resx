@@ -669,8 +669,10 @@ Denne mulighed varierer fra enhed til enhed og de installerede sprog. Det er mul
     <value>Skriftstørrelse:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Apple, App Store og App Store-logoet er varemærker tilhørende Apple Inc., registreret i USA og andre lande og regioner.
+    <value>Varemærker:
+Apple, App Store og App Store-logoet er varemærker tilhørende Apple Inc., registreret i USA og andre lande og regioner.
 Google, Google Play, Google Play-logoet og Android er varemærker tilhørende Google LLC.
-Microsoft, Microsoft Store, Microsoft Store-logoet og Windows er varemærker tilhørende Microsoft Corporation.</value>
+Microsoft, Microsoft Store, Microsoft Store-logoet og Windows er varemærker tilhørende Microsoft Corporation.
+Rubiks eller Rubiks Cube er registrerede varemærker tilhørende Spin Master Toys UK Limited. Cube Solver gg er en uafhængigt udviklet applikation og er ikke tilknyttet, sponsoreret af, autoriseret af eller godkendt af Spin Master Toys UK Limited.</value>
   </data>
 </root>

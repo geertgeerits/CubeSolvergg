@@ -1159,9 +1159,11 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Apple, App Store and the App Store logo are trademarks of Apple Inc., registered in the U.S. and other countries and regions.
+        ///   Looks up a localized string similar to Trademarks:
+        ///Apple, App Store and the App Store logo are trademarks of Apple Inc., registered in the U.S. and other countries and regions.
         ///Google, Google Play, the Google Play logo and Android are trademarks of Google LLC.
-        ///Microsoft, Microsoft Store, the Microsoft Store logo and Windows are trademarks of Microsoft Corporation..
+        ///Microsoft, Microsoft Store, the Microsoft Store logo and Windows are trademarks of Microsoft Corporation.
+        ///Rubik&apos;s or Rubik&apos;s Cube are registered trademarks of Spin Master Toys UK Limited. Cube Solver gg is an independently developed application and is not affiliated with, sponsored by, [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Trademarks_Text {
             get {

@@ -669,8 +669,10 @@
     <value>字體大小：</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Apple、App Store 和 App Store 標誌是 Apple Inc. 在美國及其他國家和地區註冊的商標。
+    <value>商標：
+Apple、App Store 和 App Store 標誌是 Apple Inc. 在美國和其他國家註冊的商標。
 Google、Google Play、Google Play 標誌和 Android 是 Google LLC 的商標。
-Microsoft、Microsoft Store、Microsoft Store 標誌和 Windows 是 Microsoft Corporation 的商標。</value>
+Microsoft、Microsoft Store、Microsoft Store 標誌和 Windows 是 Microsoft Corporation 的商標。
+Rubik's 或 Rubik's Cube 是 Spin Master Toys UK Limited 的註冊商標。 Cube Solver gg 是獨立開發的應用程序，與 Spin Master Toys UK Limited 沒有任何關聯，尚未獲得其贊助、授權或認可。</value>
   </data>
 </root>

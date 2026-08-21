@@ -669,8 +669,10 @@
     <value>Розмір шрифту:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Apple, App Store та логотип App Store є торговими марками Apple Inc., зареєстрованими в США та інших країнах і регіонах.
+    <value>Торгові марки:
+Apple, App Store та логотип App Store є торговими марками Apple Inc., зареєстрованими в США та інших країнах і регіонах.
 Google, Google Play, логотип Google Play та Android є торговими марками Google LLC.
-Microsoft, Microsoft Store, логотип Microsoft Store та Windows є торговими марками Microsoft Corporation.</value>
+Microsoft, Microsoft Store, логотип Microsoft Store та Windows є торговими марками Microsoft Corporation.
+Rubik's або Rubik's Cube є зареєстрованими торговими марками Spin Master Toys UK Limited. Cube Solver gg – це незалежно розроблена програма, яка не пов'язана, не спонсорується, не авторизована та не схвалена Spin Master Toys UK Limited.</value>
   </data>
 </root>

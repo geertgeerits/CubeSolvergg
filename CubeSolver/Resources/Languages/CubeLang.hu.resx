@@ -670,8 +670,10 @@ Ez az opció készülékenként és a telepített nyelvektől függően változi
     <value>Betűméret:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Az Apple, az App Store és az App Store logó az Apple Inc. bejegyzett védjegyei az Egyesült Államokban és más országokban és régiókban.
+    <value>Védjegyek:
+Az Apple, az App Store és az App Store logó az Apple Inc. bejegyzett védjegyei az Egyesült Államokban és más országokban és régiókban.
 A Google, a Google Play, a Google Play logó és az Android a Google LLC védjegyei.
-A Microsoft, a Microsoft Store, a Microsoft Store logó és a Windows a Microsoft Corporation védjegyei.</value>
+A Microsoft, a Microsoft Store, a Microsoft Store logó és a Windows a Microsoft Corporation védjegyei.
+A Rubik-kocka vagy a Rubik-kocka a Spin Master Toys UK Limited bejegyzett védjegyei. A Cube Solver gg egy függetlenül fejlesztett alkalmazás, és nem áll kapcsolatban a Spin Master Toys UK Limited vállalattal, nem szponzorálja, nem engedélyezi és nem támogatja.</value>
   </data>
 </root>

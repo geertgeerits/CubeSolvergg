@@ -669,8 +669,10 @@ Cette option varie selon l’appareil et les langues installées. Il est possibl
     <value>Taille de la police:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Apple, App Store et le logo App Store sont des marques commerciales d'Apple Inc., déposées aux États-Unis et dans d'autres pays et régions.
-Google, Google Play, le logo Google Play et Android sont des marques commerciales de Google LLC.
-Microsoft, Microsoft Store, le logo Microsoft Store et Windows sont des marques commerciales de Microsoft Corporation.</value>
+    <value>Marques déposées :
+Apple, App Store et le logo App Store sont des marques déposées d’Apple Inc. aux États-Unis et dans d’autres pays et régions.
+Google, Google Play, le logo Google Play et Android sont des marques déposées de Google LLC.
+Microsoft, Microsoft Store, le logo Microsoft Store et Windows sont des marques déposées de Microsoft Corporation.
+Rubik’s ou Rubik’s Cube sont des marques déposées de Spin Master Toys UK Limited. Cube Solver gg est une application développée indépendamment et n’est ni affiliée à, ni sponsorisée par, ni autorisée par, ni approuvée par Spin Master Toys UK Limited.</value>
   </data>
 </root>

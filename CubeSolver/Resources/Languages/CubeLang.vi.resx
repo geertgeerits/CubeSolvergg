@@ -669,8 +669,10 @@ Tùy chọn này thay đổi tùy theo thiết bị và ngôn ngữ được cà
     <value>Kích thước phông chữ:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Apple, App Store và logo App Store là các thương hiệu của Apple Inc., đã được đăng ký tại Hoa Kỳ và các quốc gia và khu vực khác.
-Google, Google Play, logo Google Play và Android là các thương hiệu của Google LLC.
-Microsoft, Microsoft Store, logo Microsoft Store và Windows là các thương hiệu của Microsoft Corporation.</value>
+    <value>Nhãn hiệu:
+Apple, App Store và logo App Store là các nhãn hiệu của Apple Inc., đã được đăng ký tại Hoa Kỳ và các quốc gia và khu vực khác.
+Google, Google Play, logo Google Play và Android là các nhãn hiệu của Google LLC.
+Microsoft, Microsoft Store, logo Microsoft Store và Windows là các nhãn hiệu của Microsoft Corporation.
+Rubik's hoặc Rubik's Cube là các nhãn hiệu đã được đăng ký của Spin Master Toys UK Limited. Cube Solver gg là một ứng dụng được phát triển độc lập và không liên kết, tài trợ, ủy quyền hoặc chứng thực bởi Spin Master Toys UK Limited.</value>
   </data>
 </root>

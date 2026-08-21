@@ -671,8 +671,10 @@
     <value>حجم الخط:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Apple وApp Store وشعار App Store علامات تجارية لشركة Apple Inc.، مسجلة في الولايات المتحدة ودول ومناطق أخرى.
-Google وGoogle Play وشعار Google Play وAndroid علامات تجارية لشركة Google LLC.
-Microsoft وMicrosoft Store وشعار Microsoft Store وWindows علامات تجارية لشركة Microsoft Corporation.</value>
+    <value>العلامات التجارية:
+Apple وApp Store وشعار App Store هي علامات تجارية مسجلة لشركة Apple Inc. في الولايات المتحدة الأمريكية ودول ومناطق أخرى.
+Google وGoogle Play وشعار Google Play وAndroid هي علامات تجارية لشركة Google LLC.
+Microsoft وMicrosoft Store وشعار Microsoft Store وWindows هي علامات تجارية لشركة Microsoft Corporation.
+Rubik's أو مكعب روبيك هما علامتان تجاريتان مسجلتان لشركة Spin Master Toys UK Limited. تطبيق Cube Solver gg هو تطبيق مطوّر بشكل مستقل، ولا يتبع لشركة Spin Master Toys UK Limited، ولا ترعاه، ولا تُصرّح به، ولا تُصادق عليه.</value>
   </data>
 </root>

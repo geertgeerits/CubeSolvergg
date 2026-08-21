@@ -669,8 +669,10 @@ Deze optie verschilt per apparaat en de geïnstalleerde talen. Het is mogelijk d
     <value>Lettergrootte:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Apple, App Store en het App Store-logo zijn handelsmerken van Apple Inc., geregistreerd in de VS en andere landen en regio's.
+    <value>Handelsmerken:
+Apple, App Store en het App Store-logo zijn handelsmerken van Apple Inc., geregistreerd in de VS en andere landen en regio's.
 Google, Google Play, het Google Play-logo en Android zijn handelsmerken van Google LLC.
-Microsoft, Microsoft Store, het Microsoft Store-logo en Windows zijn handelsmerken van Microsoft Corporation.</value>
+Microsoft, Microsoft Store, het Microsoft Store-logo en Windows zijn handelsmerken van Microsoft Corporation.
+Rubik's of Rubik's Cube zijn geregistreerde handelsmerken van Spin Master Toys UK Limited. Cube Solver gg is een onafhankelijk ontwikkelde applicatie en is niet gelieerd aan, gesponsord door, geautoriseerd door of onderschreven door Spin Master Toys UK Limited.</value>
   </data>
 </root>

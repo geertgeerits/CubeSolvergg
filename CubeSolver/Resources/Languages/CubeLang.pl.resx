@@ -669,8 +669,10 @@ Ta opcja różni się w zależności od urządzenia i zainstalowanych języków.
     <value>Rozmiar czcionki:</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
-    <value>Apple, App Store i logo App Store są znakami towarowymi firmy Apple Inc., zarejestrowanymi w Stanach Zjednoczonych oraz innych krajach i regionach.
+    <value>Znaki towarowe:
+Apple, App Store i logo App Store są znakami towarowymi firmy Apple Inc., zarejestrowanymi w Stanach Zjednoczonych oraz innych krajach i regionach.
 Google, Google Play, logo Google Play i Android są znakami towarowymi firmy Google LLC.
-Microsoft, Microsoft Store, logo Microsoft Store i Windows są znakami towarowymi firmy Microsoft Corporation.</value>
+Microsoft, Microsoft Store, logo Microsoft Store i Windows są znakami towarowymi firmy Microsoft Corporation.
+Rubik's lub Kostka Rubika są zastrzeżonymi znakami towarowymi firmy Spin Master Toys UK Limited. Cube Solver gg to niezależnie opracowana aplikacja, która nie jest powiązana, sponsorowana, autoryzowana ani wspierana przez firmę Spin Master Toys UK Limited.</value>
   </data>
 </root>
