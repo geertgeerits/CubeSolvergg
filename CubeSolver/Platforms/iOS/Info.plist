@@ -45,7 +45,7 @@
 		<string>fetch</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.geertgeerits.rubikscube</string>
+	<string>com.geertgeerits.cubesolvergg</string>
 
 	<key>CFBundleLocalizations</key>
 	<array>

@@ -349,7 +349,7 @@
                     
                     <!--Background outside view-->
                     <Polygon
-                        AbsoluteLayout.LayoutBounds="-2,-1"
+                        AbsoluteLayout.LayoutBounds="-2,-3"
                         Points="0,66 128,-2 295,31 295,193 161,260 -1,228 -1,64"
                         Fill="Black">
                     </Polygon>
@@ -735,7 +735,7 @@
                     WidthRequest="200"
                     Margin="0,5,0,5"
                     Padding="0"
-                    FontFamily="PublicSansBold"
+                    FontFamily="OpenSansSemibold"
                     FontSize="22"
                     CharacterSpacing="2"
                     SemanticProperties.Description="{Translate ToolTipGoOneTurnForward_Text}"
@@ -1056,7 +1056,7 @@
                     </Line>
 
                     <!--Line diagonally left/up face-->
-                    <Line X1="0" Y1="62" X2="128" Y2="0"
+                    <Line X1="0" Y1="60" X2="128" Y2="0"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
@@ -1076,7 +1076,7 @@
                     </Line>
 
                     <!--Line diagonally right/down face-->
-                    <Line X1="165" Y1="264" X2="293" Y2="195"
+                    <Line X1="165" Y1="262" X2="293" Y2="195"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 
@@ -1091,7 +1091,7 @@
                     </Line>
 
                     <!--Line diagonally right/up face-->
-                    <Line X1="165" Y1="98" X2="293" Y2="31"
+                    <Line X1="165" Y1="96" X2="293" Y2="31"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
                 </AbsoluteLayout>
