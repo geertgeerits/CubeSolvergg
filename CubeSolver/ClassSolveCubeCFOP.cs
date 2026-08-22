@@ -47,7 +47,7 @@ namespace CubeSolver
             }
 
             // Check if the cube is solved
-            if (ClassColorsCube.CheckIfSolved())
+            if (ClassValidationCube.CheckIfSolved())
             {
                 // Stop the stopwatch and get the elapsed time
                 //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);

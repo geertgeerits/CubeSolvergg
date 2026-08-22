@@ -327,6 +327,7 @@
                         Style="{StaticResource polygonStyleColor}"
                         Grid.Row="0"
                         Grid.Column="7"
+                        Points="0,0 20,0 20,30 0,30"
                         Margin="0,3,0,0"
                         Fill="Black">
                     </Polygon>

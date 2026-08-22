@@ -349,8 +349,9 @@
                     
                     <!--Background outside view-->
                     <Polygon
+                        x:Name="plgBackgroundOutside"
                         AbsoluteLayout.LayoutBounds="-2,-3"
-                        Points="0,66 128,-2 295,31 295,193 161,260 -1,228 -1,64"
+                        Points="0,66 128,-2 293,31 293,192 161,258 -1,228 -1,64"
                         Fill="Black">
                     </Polygon>
 
@@ -786,6 +787,7 @@
 
                     <!--Background inside view-->
                     <Polygon
+                        x:Name="plgBackgroundInside"
                         AbsoluteLayout.LayoutBounds="0,0"
                         Points="0,66 129,0 292,30 292,195 160,262 0,228 0,64"
                         Fill="Gray">

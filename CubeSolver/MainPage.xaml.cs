@@ -105,11 +105,21 @@ namespace CubeSolver
             Globals.bKociembaSolution = Preferences.Default.Get("SettingKociembaSolution", true);
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
 
-            // Set the inside border color to a lighter shade of the outside border color (-30%)
-            string cBorderInsideColor = ClassColorsCube.LightenHex(Globals.cBorderOutsideColor, 0.3);
+            // Set the inside border color to a lighter shade of the outside border color (-50%)
+            string cBorderInsideColor = ClassColorsCube.LightenHex(Globals.cBorderOutsideColor, 0.5);
 
             // Set the theme
             Globals.SetTheme();
+
+            // Reset the colors of the cube
+            ClassColorsCube.ResetCube();
+            GetCubeColorsFromArrays();
+
+            // Set the border and background colors of the cube to the outside and inside border colors
+            Application.Current!.Resources["StrokeBrushOutside"] = new SolidColorBrush(Color.FromArgb(Globals.cBorderOutsideColor));
+            Application.Current.Resources["StrokeBrushInside"] = new SolidColorBrush(Color.FromArgb(cBorderInsideColor));
+            plgBackgroundOutside.Fill = new SolidColorBrush(Color.FromArgb(Globals.cBorderOutsideColor));
+            plgBackgroundInside.Fill = new SolidColorBrush(Color.FromArgb(cBorderInsideColor));
 
             // Get and set the user interface language after a first start or reset of the application
             // For testing the languages
@@ -146,14 +156,6 @@ namespace CubeSolver
 
             // Initialize text to speech
             _ = InitializeTextToSpeechAsync();
-
-            // Reset the colors of the cube
-            ClassColorsCube.ResetCube();
-            GetCubeColorsFromArrays();
-
-            // Set the colors of the borders of the polygons in the cube to the outside and inside border colors
-            Application.Current.Resources["StrokeBrushOutside"] = new SolidColorBrush(Color.FromArgb(Globals.cBorderOutsideColor));
-            Application.Current.Resources["StrokeBrushInside"] = new SolidColorBrush(Color.FromArgb(cBorderInsideColor));
 
 #if DEBUG
             // Set the button to true and 'bSolveNewSolutionsTest' to false in debug mode for testing purposes
@@ -356,7 +358,7 @@ namespace CubeSolver
             }
 
             // Check if the cube is already solved
-            if (ClassColorsCube.CheckIfSolved())
+            if (ClassValidationCube.CheckIfSolved())
             {
                 Globals.lCubeTurns.Clear();
                 return;
@@ -601,7 +603,7 @@ namespace CubeSolver
                     await Task.Delay(500);
 
                     // Check if the cube is solved and display a message
-                    if (ClassColorsCube.CheckIfSolved())
+                    if (ClassValidationCube.CheckIfSolved())
                     {
                         if (Globals.bExplainSpeech)
                         {
@@ -869,7 +871,7 @@ namespace CubeSolver
         private bool CheckNumberColorsCube()
         {
             SetCubeColorsInArrays();
-            return ClassColorsCube.CheckNumberColors();
+            return ClassValidationCube.CheckNumberColors();
         }
 
         /// <summary>
