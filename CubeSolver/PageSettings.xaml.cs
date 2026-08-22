@@ -87,6 +87,7 @@
             plgCubeColor4.Fill = Color.FromArgb(Globals.aFaceColors[4]);
             plgCubeColor5.Fill = Color.FromArgb(Globals.aFaceColors[5]);
             plgCubeColor6.Fill = Color.FromArgb(Globals.aFaceColors[6]);
+            plgCubeColor7.Fill = Color.FromArgb(Globals.cBorderOutsideColor);
 
             // Set the first hex colorcode in the entry field and set the slider positions
             SetCubeHexColor();
@@ -341,6 +342,11 @@
                 entHexColor.Text = Globals.aFaceColors[6][1..];
                 HexToRgbColor(Globals.aFaceColors[6], ref nRed, ref nGreen, ref nBlue);
             }
+            else if (rbnCubeColor7.IsChecked)
+            {
+                entHexColor.Text = Globals.cBorderOutsideColor[1..];
+                HexToRgbColor(Globals.cBorderOutsideColor, ref nRed, ref nGreen, ref nBlue);
+            }
 
             sldColorRed.Value = nRed;
             sldColorGreen.Value = nGreen;
@@ -414,6 +420,11 @@
                 Globals.aFaceColors[6] = $"#{entHexColor.Text}";
                 HexToRgbColor(Globals.aFaceColors[6], ref nRed, ref nGreen, ref nBlue);
             }
+            else if (rbnCubeColor7.IsChecked)
+            {
+                Globals.cBorderOutsideColor = $"#{entHexColor.Text}";
+                HexToRgbColor(Globals.cBorderOutsideColor, ref nRed, ref nGreen, ref nBlue);
+            }
 
             sldColorRed.Value = nRed;
             sldColorGreen.Value = nGreen;
@@ -485,6 +496,11 @@
                 plgCubeColor6.Fill = Color.FromArgb(cColorFgHex);
                 Globals.aFaceColors[6] = "#" + cColorFgHex;
             }
+            else if (rbnCubeColor7.IsChecked)
+            {
+                plgCubeColor7.Fill = Color.FromArgb(cColorFgHex);
+                Globals.cBorderOutsideColor = "#" + cColorFgHex;
+            }
         }
 
         /// <summary>
@@ -539,6 +555,7 @@
             Preferences.Default.Set("SettingCubeColor4", Globals.aFaceColors[4]);
             Preferences.Default.Set("SettingCubeColor5", Globals.aFaceColors[5]);
             Preferences.Default.Set("SettingCubeColor6", Globals.aFaceColors[6]);
+            Preferences.Default.Set("SettingBorderOutsideColor", Globals.cBorderOutsideColor);
             Preferences.Default.Set("SettingKociembaSolution", Globals.bKociembaSolution);
 
             // Wait 400 milliseconds otherwise the settings are not saved in Android
@@ -579,6 +596,7 @@
                 Preferences.Default.Remove("SettingCubeColor4");
                 Preferences.Default.Remove("SettingCubeColor5");
                 Preferences.Default.Remove("SettingCubeColor6");
+                Preferences.Default.Remove("SettingBorderOutsideColor");
                 Preferences.Default.Remove("SettingKociembaSolution");
             }
 

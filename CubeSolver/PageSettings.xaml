@@ -253,17 +253,18 @@
                 
                 <Grid
                     RowDefinitions="Auto, Auto"
-                    ColumnDefinitions="*, 50, 50, 50, 50, 50, 50, *"
+                    ColumnDefinitions="*, 50, 50, 50, 50, 50, 50, 50, *"
                     Grid.Row="10"
                     Grid.Column="0"
                     Grid.ColumnSpan="2">
-                   
+
+                    <!--Face colors-->
                     <Border
                         Style="{StaticResource borderStyleGroup}"
                         Grid.Row="0"
                         Grid.Column="0"
                         Grid.RowSpan="2"
-                        Grid.ColumnSpan="8">
+                        Grid.ColumnSpan="9">
                     </Border>
 
                     <Polygon
@@ -319,7 +320,18 @@
                         Margin="0,3,0,0"
                         Fill="Yellow">
                     </Polygon>
-                   
+                    
+                    <!--Border color-->
+                    <Polygon
+                        x:Name="plgCubeColor7"
+                        Style="{StaticResource polygonStyleColor}"
+                        Grid.Row="0"
+                        Grid.Column="7"
+                        Margin="0,3,0,0"
+                        Fill="Black">
+                    </Polygon>
+
+                    <!--Face colors-->
                     <RadioButton
                         x:Name="rbnCubeColor1"
                         Style="{StaticResource radiobuttonStyleColor}"
@@ -374,6 +386,17 @@
                         Value="rbnCubeColor6"
                         CheckedChanged="OnRbnCubeColorCheckedChanged">
                     </RadioButton>
+
+                    <!--Border color-->
+                    <RadioButton
+                        x:Name="rbnCubeColor7"
+                        Style="{StaticResource radiobuttonStyleColor}"
+                        Grid.Row="1"
+                        Grid.Column="7"
+                        Value="rbnCubeColor7"
+                        CheckedChanged="OnRbnCubeColorCheckedChanged">
+                    </RadioButton>
+
                 </Grid>
 
                 <Border

@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.46
- * Date ........: 2026-08-21 (YYYY-MM-DD)
+ * Date ........: 2026-08-22 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -94,15 +94,19 @@ namespace CubeSolver
             Globals.cLanguage = Preferences.Default.Get("SettingLanguage", "");
             Globals.cLanguageSpeech = Preferences.Default.Get("SettingLanguageSpeech", "");
             Globals.bExplainText = Preferences.Default.Get("SettingExplainText", false);
-            Globals.bExplainSpeech = Preferences.Default.Get("SettingExplainSpeech", false);    //                      Original    Alternative
-            Globals.aFaceColors[1] = Preferences.Default.Get("SettingCubeColor1", "#FF4F4F");   // Front face: Red      FF0000      FF4F4F
-            Globals.aFaceColors[2] = Preferences.Default.Get("SettingCubeColor2", "#00AAFF");   // Right face: Blue     0000FF      00AAFF
-            Globals.aFaceColors[3] = Preferences.Default.Get("SettingCubeColor3", "#FFB300");   // Back face: Orange    FF8000      FFB300
-            Globals.aFaceColors[4] = Preferences.Default.Get("SettingCubeColor4", "#00EA00");   // Left face: Green     008000      00EA00
-            Globals.aFaceColors[5] = Preferences.Default.Get("SettingCubeColor5", "#FAFAFA");   // Up face: White       FFFFFF      FAFAFA
-            Globals.aFaceColors[6] = Preferences.Default.Get("SettingCubeColor6", "#FFFF40");   // Down face: Yellow    FFFF00      FFFF40
+            Globals.bExplainSpeech = Preferences.Default.Get("SettingExplainSpeech", false);                //                      Original    Alternative
+            Globals.aFaceColors[1] = Preferences.Default.Get("SettingCubeColor1", "#FF4F4F");               // Front face: Red      FF0000      FF4F4F
+            Globals.aFaceColors[2] = Preferences.Default.Get("SettingCubeColor2", "#00AAFF");               // Right face: Blue     0000FF      00AAFF
+            Globals.aFaceColors[3] = Preferences.Default.Get("SettingCubeColor3", "#FFB300");               // Back face: Orange    FF8000      FFB300
+            Globals.aFaceColors[4] = Preferences.Default.Get("SettingCubeColor4", "#00EA00");               // Left face: Green     008000      00EA00
+            Globals.aFaceColors[5] = Preferences.Default.Get("SettingCubeColor5", "#FAFAFA");               // Up face: White       FFFFFF      FAFAFA
+            Globals.aFaceColors[6] = Preferences.Default.Get("SettingCubeColor6", "#FFFF40");               // Down face: Yellow    FFFF00      FFFF40
+            Globals.cBorderOutsideColor = Preferences.Default.Get("SettingBorderOutsideColor", "#000000");  // Border color: Black  000000      000000
             Globals.bKociembaSolution = Preferences.Default.Get("SettingKociembaSolution", true);
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
+
+            // Set the inside border color to a lighter shade of the outside border color (-30%)
+            string cBorderInsideColor = ClassColorsCube.LightenHex(Globals.cBorderOutsideColor, 0.3);
 
             // Set the theme
             Globals.SetTheme();
@@ -146,6 +150,11 @@ namespace CubeSolver
             // Reset the colors of the cube
             ClassColorsCube.ResetCube();
             GetCubeColorsFromArrays();
+
+            // Set the colors of the borders of the polygons in the cube to the outside and inside border colors
+            Application.Current.Resources["StrokeBrushOutside"] = new SolidColorBrush(Color.FromArgb(Globals.cBorderOutsideColor));
+            Application.Current.Resources["StrokeBrushInside"] = new SolidColorBrush(Color.FromArgb(cBorderInsideColor));
+
 #if DEBUG
             // Set the button to true and 'bSolveNewSolutionsTest' to false in debug mode for testing purposes
             //btnSolveNewSolutionsTest.IsVisible = false;
@@ -216,26 +225,26 @@ namespace CubeSolver
             await Navigation.PushAsync(new PageAbout());
         }
 
-//        /// <summary>
-//        /// Use the toggle button 'btnSolveNewSolutionsTest' to solve the cube with or without new test turns in debug mode
-//        /// </summary>
-//        /// <param name="sender"></param>
-//        /// <param name="e"></param>
-//        private void OnBtnSolveNewSolutionsTestClicked(object sender, EventArgs e)
-//        {
-//#if DEBUG
-//            Globals.bSolveNewSolutionsTest = !Globals.bSolveNewSolutionsTest;
+        //        /// <summary>
+        //        /// Use the toggle button 'btnSolveNewSolutionsTest' to solve the cube with or without new test turns in debug mode
+        //        /// </summary>
+        //        /// <param name="sender"></param>
+        //        /// <param name="e"></param>
+        //        private void OnBtnSolveNewSolutionsTestClicked(object sender, EventArgs e)
+        //        {
+        //#if DEBUG
+        //            Globals.bSolveNewSolutionsTest = !Globals.bSolveNewSolutionsTest;
 
-//            if (Globals.bSolveNewSolutionsTest)
-//            {
-//                btnSolveNewSolutionsTest.Text = "+";
-//            }
-//            else
-//            {
-//                btnSolveNewSolutionsTest.Text = "-";
-//            }
-//#endif
-//        }
+        //            if (Globals.bSolveNewSolutionsTest)
+        //            {
+        //                btnSolveNewSolutionsTest.Text = "+";
+        //            }
+        //            else
+        //            {
+        //                btnSolveNewSolutionsTest.Text = "-";
+        //            }
+        //#endif
+        //        }
 
         /// <summary>
         /// Go to the Settings page
@@ -2022,13 +2031,13 @@ namespace CubeSolver
             for (int i = 1; i < 7; i++)
             {
                 Polygon polygon = this.FindByName<Polygon>($"plgCubeColor{i}");
-                aFaceColorsSpan[i] = GetHexColorPolygon(polygon);
+                aFaceColorsSpan[i] = ClassColorsCube.GetHexColorPolygon(polygon);
             }
 
             for (int i = 0; i < 54; i++)
             {
                 Polygon polygon = this.FindByName<Polygon>($"plgPiece{i}");
-                aPiecesSpan[i] = GetHexColorPolygon(polygon);
+                aPiecesSpan[i] = ClassColorsCube.GetHexColorPolygon(polygon);
             }
 
             // Stop the stopwatch and get the elapsed time
@@ -2051,47 +2060,21 @@ namespace CubeSolver
             for (int i = 1; i < 7; i++)
             {
                 Polygon polygon = this.FindByName<Polygon>($"plgCubeColor{i}");
-                polygon.Fill = Color.FromArgb(aFaceColorsSpan[i]);
+                //polygon.Fill = Color.FromArgb(aFaceColorsSpan[i]);
+                polygon.Fill = new SolidColorBrush(Color.FromArgb(aFaceColorsSpan[i]));
             }
 
             for (int i = 0; i < 54; i++)
             {
                 Polygon polygon = this.FindByName<Polygon>($"plgPiece{i}");
-                polygon.Fill = Color.FromArgb(aPiecesSpan[i]);
+                //polygon.Fill = Color.FromArgb(aPiecesSpan[i]);
+                polygon.Fill = new SolidColorBrush(Color.FromArgb(aPiecesSpan[i]));
             }
 
             // Stop the stopwatch and get the elapsed time
             //TimeSpan delta = Stopwatch.GetElapsedTime(startTime);
             //_ = DisplayAlertAsync("GetCubeColorsFromArrays", $"Time elapsed (hh:mm:ss.xxxxxxx): {delta}", "OK");
         }
-
-        /// <summary>
-        /// Get the hexadecimal color code from the polygon fill property
-        /// </summary>
-        /// <param name="polygon"></param>
-        /// <returns></returns>
-        private static string GetHexColorPolygon(Polygon polygon)
-        {
-            SolidColorBrush brush = (SolidColorBrush)polygon.Fill;
-            Color color = brush.Color;
-
-            color = Color.FromRgb(color.Red, color.Green, color.Blue);
-            return color.ToHex();
-        }
-
-        ///// <summary>
-        ///// Get the decimal color code from the polygon fill property
-        ///// </summary>
-        ///// <param name="polygon"></param>
-        ///// <returns></returns>
-        //private static int GetDecColorPolygon(Polygon polygon)
-        //{
-        //    SolidColorBrush brush = (SolidColorBrush)polygon.Fill;
-        //    Color color = brush.Color;
-
-        //    color = Color.FromRgb(color.Red, color.Green, color.Blue);
-        //    return int.Parse(color.ToHex().Replace("#", ""), NumberStyles.HexNumber);
-        //}
 
         /// <summary>
         /// Set the cube colors for drag and drop to visible or invisible
@@ -2274,6 +2257,7 @@ namespace CubeSolver
         }
     }
 }
+
 /*
 Numbering of cube surfaces for solutions: CFOP, Basic, Daisy, Cross
 -------------------------------------------------------------------
