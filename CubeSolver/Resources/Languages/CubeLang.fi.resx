@@ -675,4 +675,7 @@ Google, Google Play, Google Play -logo ja Android ovat Google LLC:n tavaramerkke
 Microsoft, Microsoft Store, Microsoft Store -logo ja Windows ovat Microsoft Corporationin tavaramerkkejä.
 Rubik’s on Spin Master Toys UK Limitedin rekisteröity tavaramerkki. Tämä sovellus ei ole sidoksissa Spin Masteriin, eikä Spin Master ole sitä tukenut, sponsoroinut tai hyväksynyt.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Kuution reunat</value>
+  </data>
 </root>

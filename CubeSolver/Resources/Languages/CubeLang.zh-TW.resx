@@ -675,4 +675,7 @@ Google、Google Play、Google Play 標誌和 Android 是 Google LLC 的商標。
 Microsoft、Microsoft Store、Microsoft Store 標誌和 Windows 是 Microsoft Corporation 的商標。
 Rubik’s 是 Spin Master Toys UK Limited 的註冊商標。本應用程式與 Spin Master 無任何關聯，亦未獲得其認可、贊助或批准。</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>立方體的邊</value>
+  </data>
 </root>

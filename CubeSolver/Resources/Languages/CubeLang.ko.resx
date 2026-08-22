@@ -675,4 +675,7 @@ Google, Google Play, Google Play 로고 및 Android는 Google LLC의 상표입�
 Microsoft, Microsoft Store, Microsoft Store 로고 및 Windows는 Microsoft Corporation의 상표입니다.
 Rubik’s는 Spin Master Toys UK Limited의 등록 상표입니다. 이 앱은 Spin Master와 제휴, 보증, 후원 또는 승인 관계가 없습니다.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>큐브 모서리</value>
+  </data>
 </root>

@@ -675,4 +675,7 @@ Google, Google Play, логотип Google Play и Android являются то
 Microsoft, Microsoft Store, логотип Microsoft Store и Windows являются товарными знаками Microsoft Corporation.
 Rubik’s является зарегистрированным товарным знаком Spin Master Toys UK Limited. Данное приложение не связано с компанией Spin Master, не одобрено ею, не спонсируется и не утверждено ею.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Ребра куба</value>
+  </data>
 </root>

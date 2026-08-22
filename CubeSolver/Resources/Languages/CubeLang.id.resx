@@ -675,4 +675,7 @@ Google, Google Play, logo Google Play, dan Android adalah merek dagang Google LL
 Microsoft, Microsoft Store, logo Microsoft Store, dan Windows adalah merek dagang Microsoft Corporation.
 Rubik’s adalah merek dagang terdaftar dari Spin Master Toys UK Limited. Aplikasi ini tidak berafiliasi dengan, didukung, disponsori, atau disetujui oleh Spin Master.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Tepi kubus</value>
+  </data>
 </root>

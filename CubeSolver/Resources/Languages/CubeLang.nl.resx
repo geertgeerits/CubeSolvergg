@@ -675,4 +675,7 @@ Google, Google Play, het Google Play-logo en Android zijn handelsmerken van Goog
 Microsoft, Microsoft Store, het Microsoft Store-logo en Windows zijn handelsmerken van Microsoft Corporation.
 Rubik's is een geregistreerd handelsmerk van Spin Master Toys UK Limited. Deze app is niet gelieerd aan, onderschreven door, gesponsord door of goedgekeurd door Spin Master.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Kubusranden</value>
+  </data>
 </root>

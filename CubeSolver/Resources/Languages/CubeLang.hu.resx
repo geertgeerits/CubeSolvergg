@@ -676,4 +676,7 @@ A Google, a Google Play, a Google Play logó és az Android a Google LLC védjeg
 A Microsoft, a Microsoft Store, a Microsoft Store logó és a Windows a Microsoft Corporation védjegyei.
 A Rubik’s a Spin Master Toys UK Limited bejegyzett védjegye. Ez az alkalmazás nem áll kapcsolatban a Spin Masterrel, nem támogatja, nem szponzorálja és nem hagyja jóvá a Spin Master.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Kocka élek</value>
+  </data>
 </root>

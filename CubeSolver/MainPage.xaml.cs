@@ -94,14 +94,14 @@ namespace CubeSolver
             Globals.cLanguage = Preferences.Default.Get("SettingLanguage", "");
             Globals.cLanguageSpeech = Preferences.Default.Get("SettingLanguageSpeech", "");
             Globals.bExplainText = Preferences.Default.Get("SettingExplainText", false);
-            Globals.bExplainSpeech = Preferences.Default.Get("SettingExplainSpeech", false);                //                      Original    Alternative
-            Globals.aFaceColors[1] = Preferences.Default.Get("SettingCubeColor1", "#FF4F4F");               // Front face: Red      FF0000      FF4F4F
-            Globals.aFaceColors[2] = Preferences.Default.Get("SettingCubeColor2", "#00AAFF");               // Right face: Blue     0000FF      00AAFF
-            Globals.aFaceColors[3] = Preferences.Default.Get("SettingCubeColor3", "#FFB300");               // Back face: Orange    FF8000      FFB300
-            Globals.aFaceColors[4] = Preferences.Default.Get("SettingCubeColor4", "#00EA00");               // Left face: Green     008000      00EA00
-            Globals.aFaceColors[5] = Preferences.Default.Get("SettingCubeColor5", "#FAFAFA");               // Up face: White       FFFFFF      FAFAFA
-            Globals.aFaceColors[6] = Preferences.Default.Get("SettingCubeColor6", "#FFFF40");               // Down face: Yellow    FFFF00      FFFF40
-            Globals.cBorderOutsideColor = Preferences.Default.Get("SettingBorderOutsideColor", "#000000");  // Border color: Black  000000      000000
+            Globals.bExplainSpeech = Preferences.Default.Get("SettingExplainSpeech", false);                //                          Original    Alternative
+            Globals.aFaceColors[1] = Preferences.Default.Get("SettingCubeColor1", "#FF4F4F");               // Front face: Red          FF0000      FF4F4F
+            Globals.aFaceColors[2] = Preferences.Default.Get("SettingCubeColor2", "#00AAFF");               // Right face: Blue         0000FF      00AAFF
+            Globals.aFaceColors[3] = Preferences.Default.Get("SettingCubeColor3", "#FFB300");               // Back face: Orange        FF8000      FFB300
+            Globals.aFaceColors[4] = Preferences.Default.Get("SettingCubeColor4", "#00EA00");               // Left face: Green         008000      00EA00
+            Globals.aFaceColors[5] = Preferences.Default.Get("SettingCubeColor5", "#FAFAFA");               // Up face: White           FFFFFF      FAFAFA
+            Globals.aFaceColors[6] = Preferences.Default.Get("SettingCubeColor6", "#FFFF40");               // Down face: Yellow        FFFF00      FFFF40
+            Globals.cBorderOutsideColor = Preferences.Default.Get("SettingBorderOutsideColor", "#303030");  // Border color: Dark grey  303030      202020
             Globals.bKociembaSolution = Preferences.Default.Get("SettingKociembaSolution", true);
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
 

@@ -675,4 +675,7 @@ Google, Google Play, logo Google Play và Android là các nhãn hiệu của Go
 Microsoft, Microsoft Store, logo Microsoft Store và Windows là các nhãn hiệu của Microsoft Corporation.
 Rubik’s là nhãn hiệu đã được đăng ký của Spin Master Toys UK Limited. Ứng dụng này không liên kết, không được Spin Master chứng thực, tài trợ hoặc phê duyệt.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Các cạnh của khối lập phương</value>
+  </data>
 </root>

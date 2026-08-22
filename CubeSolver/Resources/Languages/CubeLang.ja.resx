@@ -675,4 +675,7 @@ Google、Google Play、Google Playロゴ、およびAndroidは、Google LLCの�
 Microsoft、Microsoft Store、Microsoft Storeロゴ、およびWindowsは、Microsoft Corporationの商標です。
 Rubik’sは、Spin Master Toys UK Limitedの登録商標です。本アプリは、Spin Masterとは一切関係がなく、Spin Masterによる承認、後援、または認可を受けていません。</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>立方体の辺</value>
+  </data>
 </root>

@@ -146,54 +146,9 @@
                 </Border>
 
                 <Label
-                    Style="{StaticResource labelStyleDefault}"
-                    Grid.Row="4"
-                    Grid.Column="0"
-                    Text="{Translate UseKociembaSolution_Text}">
-                </Label>
-
-                <Switch
-                    x:Name="swtUseKociembaSolution"
-                    Grid.Row="4"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    Toggled="OnSwtUseKociembaSolution">
-                </Switch>
-
-                <Label
-                    Style="{StaticResource labelStyleDefault}"
-                    Grid.Row="5"
-                    Grid.Column="0"
-                    Text="{Translate ExplainedByText_Text}">
-                </Label>
-
-                <Switch
-                    x:Name="swtExplainText"
-                    Grid.Row="5"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    Toggled="OnSwtExplainTextToggled">
-                </Switch>
-
-                <Label
-                    Style="{StaticResource labelStyleDefault}"
-                    Grid.Row="6"
-                    Grid.Column="0"
-                    Text="{Translate ExplainedBySpeech_Text}">
-                </Label>
-
-                <Switch
-                    x:Name="swtExplainSpeech"
-                    Grid.Row="6"
-                    Grid.Column="1"
-                    Grid.ColumnSpan="2"
-                    Toggled="OnSwtExplainSpeechToggled">
-                </Switch>
-
-                <Label
                     x:Name="lblFontSize"
                     Style="{StaticResource labelStyleDefault}"
-                    Grid.Row="7"
+                    Grid.Row="4"
                     Grid.Column="0"
                     Text="">
                 </Label>
@@ -201,7 +156,7 @@
                 <Slider
                     x:Name="sldFontSize"
                     Style="{StaticResource sliderStyleColor}"
-                    Grid.Row="7"
+                    Grid.Row="4"
                     Grid.Column="1"
                     ThumbColor="Magenta"
                     MinimumTrackColor="Magenta"
@@ -209,6 +164,51 @@
                     Maximum="30"
                     ValueChanged="OnSliderFontSizeChanged">
                 </Slider>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Text="{Translate UseKociembaSolution_Text}">
+                </Label>
+
+                <Switch
+                    x:Name="swtUseKociembaSolution"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Toggled="OnSwtUseKociembaSolution">
+                </Switch>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Text="{Translate ExplainedByText_Text}">
+                </Label>
+
+                <Switch
+                    x:Name="swtExplainText"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Toggled="OnSwtExplainTextToggled">
+                </Switch>
+
+                <Label
+                    Style="{StaticResource labelStyleDefault}"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Text="{Translate ExplainedBySpeech_Text}">
+                </Label>
+
+                <Switch
+                    x:Name="swtExplainSpeech"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    Toggled="OnSwtExplainSpeechToggled">
+                </Switch>
 
                 <Label
                     Style="{StaticResource labelStyleDefault}"
@@ -273,7 +273,8 @@
                         Grid.Row="0"
                         Grid.Column="1"
                         Margin="0,3,0,0"
-                        Fill="Red">
+                        Fill="Red"
+                        ToolTipProperties.Text="{Translate CubeFrontFace_Text}">
                     </Polygon>
 
                     <Polygon
@@ -282,7 +283,8 @@
                         Grid.Row="0"
                         Grid.Column="2"
                         Margin="0,3,0,0"
-                        Fill="Blue">
+                        Fill="Blue"
+                        ToolTipProperties.Text="{Translate CubeRightFace_Text}">
                     </Polygon>
 
                     <Polygon
@@ -291,7 +293,8 @@
                         Grid.Row="0"
                         Grid.Column="3"
                         Margin="0,3,0,0"
-                        Fill="Orange">
+                        Fill="Orange"
+                        ToolTipProperties.Text="{Translate CubeBackFace_Text}">
                     </Polygon>
 
                     <Polygon
@@ -300,7 +303,8 @@
                         Grid.Row="0"
                         Grid.Column="4"
                         Margin="0,3,0,0"
-                        Fill="Green">
+                        Fill="Green"
+                        ToolTipProperties.Text="{Translate CubeLeftFace_Text}">
                     </Polygon>
 
                     <Polygon
@@ -309,7 +313,8 @@
                         Grid.Row="0"
                         Grid.Column="5"
                         Margin="0,3,0,0"
-                        Fill="White">
+                        Fill="White"
+                        ToolTipProperties.Text="{Translate CubeUpFace_Text}">
                     </Polygon>
 
                     <Polygon
@@ -318,10 +323,11 @@
                         Grid.Row="0"
                         Grid.Column="6"
                         Margin="0,3,0,0"
-                        Fill="Yellow">
+                        Fill="Yellow"
+                        ToolTipProperties.Text="{Translate CubeDownFace_Text}">
                     </Polygon>
                     
-                    <!--Border color-->
+                    <!--Edge color-->
                     <Polygon
                         x:Name="plgCubeColor7"
                         Style="{StaticResource polygonStyleColor}"
@@ -329,7 +335,8 @@
                         Grid.Column="7"
                         Points="0,0 20,0 20,30 0,30"
                         Margin="0,3,0,0"
-                        Fill="Black">
+                        Fill="Black"
+                        ToolTipProperties.Text="{Translate CubeEdges_Text}">
                     </Polygon>
 
                     <!--Face colors-->
@@ -340,6 +347,7 @@
                         Grid.Column="1"
                         Value="rbnCubeColor1"
                         IsChecked="True"
+                        ToolTipProperties.Text="{Translate CubeFrontFace_Text}"
                         CheckedChanged="OnRbnCubeColorCheckedChanged">
                     </RadioButton>
 
@@ -349,6 +357,7 @@
                         Grid.Row="1"
                         Grid.Column="2"
                         Value="rbnCubeColor2"
+                        ToolTipProperties.Text="{Translate CubeRightFace_Text}"
                         CheckedChanged="OnRbnCubeColorCheckedChanged">
                     </RadioButton>
 
@@ -358,6 +367,7 @@
                         Grid.Row="1"
                         Grid.Column="3"
                         Value="rbnCubeColor3"
+                        ToolTipProperties.Text="{Translate CubeBackFace_Text}"
                         CheckedChanged="OnRbnCubeColorCheckedChanged">
                     </RadioButton>
 
@@ -367,6 +377,7 @@
                         Grid.Row="1"
                         Grid.Column="4"
                         Value="rbnCubeColor4"
+                        ToolTipProperties.Text="{Translate CubeLeftFace_Text}"
                         CheckedChanged="OnRbnCubeColorCheckedChanged">
                     </RadioButton>
 
@@ -376,6 +387,7 @@
                         Grid.Row="1"
                         Grid.Column="5"
                         Value="rbnCubeColor5"
+                        ToolTipProperties.Text="{Translate CubeUpFace_Text}"
                         CheckedChanged="OnRbnCubeColorCheckedChanged">
                     </RadioButton>
 
@@ -385,16 +397,18 @@
                         Grid.Row="1"
                         Grid.Column="6"
                         Value="rbnCubeColor6"
+                        ToolTipProperties.Text="{Translate CubeDownFace_Text}"
                         CheckedChanged="OnRbnCubeColorCheckedChanged">
                     </RadioButton>
 
-                    <!--Border color-->
+                    <!--Edge color-->
                     <RadioButton
                         x:Name="rbnCubeColor7"
                         Style="{StaticResource radiobuttonStyleColor}"
                         Grid.Row="1"
                         Grid.Column="7"
                         Value="rbnCubeColor7"
+                        ToolTipProperties.Text="{Translate CubeEdges_Text}"
                         CheckedChanged="OnRbnCubeColorCheckedChanged">
                     </RadioButton>
 

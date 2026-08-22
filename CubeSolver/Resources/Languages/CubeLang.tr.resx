@@ -675,4 +675,7 @@ Google, Google Play, Google Play logosu ve Android, Google LLC'nin ticari markal
 Microsoft, Microsoft Store, Microsoft Store logosu ve Windows, Microsoft Corporation'ın ticari markalarıdır.
 Rubik's, Spin Master Toys UK Limited'in tescilli ticari markasıdır. Bu uygulama Spin Master ile bağlantılı değildir, Spin Master tarafından onaylanmamıştır, sponsorluğunu üstlenmemiştir veya desteklenmemiştir.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Küp kenarları</value>
+  </data>
 </root>

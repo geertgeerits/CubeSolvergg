@@ -675,4 +675,7 @@ Google, Google Play, das Google-Play-Logo und Android sind Marken der Google LLC
 Microsoft, Microsoft Store, das Microsoft-Store-Logo und Windows sind Marken der Microsoft Corporation.
 Rubik’s ist eine eingetragene Marke der Spin Master Toys UK Limited. Diese App steht in keiner Verbindung zu Spin Master und wird weder von Spin Master unterstützt, gesponsert noch genehmigt.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Würfelkanten</value>
+  </data>
 </root>

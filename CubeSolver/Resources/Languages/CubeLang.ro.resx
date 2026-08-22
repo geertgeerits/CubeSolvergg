@@ -676,4 +676,7 @@ Google, Google Play, sigla Google Play și Android sunt mărci comerciale ale Go
 Microsoft, Microsoft Store, sigla Microsoft Store și Windows sunt mărci comerciale ale Microsoft Corporation.
 Rubik’s este o marcă comercială înregistrată a Spin Master Toys UK Limited. Această aplicație nu este afiliată cu, aprobată, sponsorizată sau aprobată de Spin Master.</value>
   </data>
+  <data name="CubeEdges_Text" xml:space="preserve">
+    <value>Marginile cubului</value>
+  </data>
 </root>

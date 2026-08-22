@@ -187,6 +187,15 @@ namespace CubeSolver.Resources.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cube edges.
+        /// </summary>
+        internal static string CubeEdges_Text {
+            get {
+                return ResourceManager.GetString("CubeEdges_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Front face.
         /// </summary>
         internal static string CubeFrontFace_Text {
