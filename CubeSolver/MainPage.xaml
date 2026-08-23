@@ -789,7 +789,7 @@
                     <Polygon
                         x:Name="plgBackgroundInside"
                         AbsoluteLayout.LayoutBounds="0,0"
-                        Points="0,66 129,0 292,30 292,195 160,262 0,228 0,64"
+                        Points="0,66 130,0 292,30 292,195 160,262 0,228 0,64"
                         Fill="Gray">
                     </Polygon>
 
@@ -1040,7 +1040,7 @@
                     </Polygon>
 
                     <!--Lines inside view-->
-                    <Line X1="130" Y1="0" X2="130" Y2="162"
+                    <Line X1="131" Y1="0" X2="131" Y2="162"
                         Style="{StaticResource lineStyleCubeInsideViewDashLine}">
                     </Line>
 
@@ -1063,7 +1063,7 @@
                     </Line>
 
                     <!--Line diagonally back/up face-->
-                    <Line X1="128" Y1="0" X2="292" Y2="30"
+                    <Line X1="130" Y1="0" X2="294" Y2="30"
                         Style="{StaticResource lineStyleCubeInsideViewSolidLine}">
                     </Line>
 

@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.46
- * Date ........: 2026-08-22 (YYYY-MM-DD)
+ * Date ........: 2026-08-23 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -101,7 +101,7 @@ namespace CubeSolver
             Globals.aFaceColors[4] = Preferences.Default.Get("SettingCubeColor4", "#00EA00");               // Left face: Green         008000      00EA00
             Globals.aFaceColors[5] = Preferences.Default.Get("SettingCubeColor5", "#FAFAFA");               // Up face: White           FFFFFF      FAFAFA
             Globals.aFaceColors[6] = Preferences.Default.Get("SettingCubeColor6", "#FFFF40");               // Down face: Yellow        FFFF00      FFFF40
-            Globals.cBorderOutsideColor = Preferences.Default.Get("SettingBorderOutsideColor", "#303030");  // Border color: Dark grey  303030      202020
+            Globals.cBorderOutsideColor = Preferences.Default.Get("SettingBorderOutsideColor", "#606060");  // Border color: Dark grey  303030      000000
             Globals.bKociembaSolution = Preferences.Default.Get("SettingKociembaSolution", true);
             Globals.bLicense = Preferences.Default.Get("SettingLicense", false);
 
