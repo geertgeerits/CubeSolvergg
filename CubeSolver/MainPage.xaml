@@ -228,7 +228,7 @@
                     Text="{Translate CubeUpFace_Text}">
                 </Label>
 
-                <!--Arrows-->
+                <!--Arrows top-->
                 <AbsoluteLayout
                     Grid.Row="2"
                     Grid.Column="0"
@@ -283,7 +283,7 @@
                     </ImageButton>
                 </AbsoluteLayout>
                 
-                <!--Arrows-->
+                <!--Arrows left-->
                 <AbsoluteLayout
                     Grid.Row="3"
                     Grid.Column="0">
@@ -313,7 +313,7 @@
                     </ImageButton>
                 </AbsoluteLayout>
                 
-                <!--Arrows-->
+                <!--Arrows right-->
                 <AbsoluteLayout
                     Grid.Row="3"
                     Grid.Column="2">
@@ -602,7 +602,7 @@
                     </Polygon>
                 </AbsoluteLayout>
 
-                <!--Arrows-->
+                <!--Arrows bottom-->
                 <AbsoluteLayout
                     Grid.Row="4"
                     Grid.Column="0"
