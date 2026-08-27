@@ -6,10 +6,10 @@ Solve your Cube.
 
 Supporting languages: Arabic, Bengali, Chinese simplified, Chinese traditional, Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Spanish, Swedish, Turkish, Ukrainian, Urdu and Vietnamese.
 
-The program was tested on a Samsung Galaxy A3, S21 and S25 phone, iPhone 7 and 16, iPad 8th generation.
+The program was tested on a Samsung Galaxy S21 and S25 phone, iPhone 7 and 16, iPad 8th generation.
 
 Link to the Google Play Store:
-https://play.google.com/store/apps/details?id=com.geertgeerits.rubikscube
+https://play.google.com/store/apps/details?id=com.geertgeerits.cubesolvergg
 
 Link to the Apple App Store:
 https://apps.apple.com/us/app/cube-solver-gg/id6479165194
@@ -25,4 +25,3 @@ Megalomatt's contributions have enhanced open-source cube solvers.
 Their work is greatly appreciated!
 
 Due to trademark issues, the app is currently unavailable in the Apple App Store in all countries.
-Likewise, the Android version is not available in the Google Play Store in the USA, Europe, and certain other regions.
