@@ -79,6 +79,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Classes\ClassProgramLogging.cs" />
+	  <Compile Remove="Classes\ClassTestCubeTurns.cs" />
 	  <Compile Remove="ClassProgramLogging.cs" />
 	  <Compile Remove="ClassSolveCubeBasic.cs" />
 	  <Compile Remove="ClassSolveCubeCFOPSpan.cs" />
