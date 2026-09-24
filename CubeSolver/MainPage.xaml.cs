@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.47
- * Date ........: 2026-09-23 (YYYY-MM-DD)
+ * Date ........: 2026-09-24 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -90,7 +90,7 @@ namespace CubeSolver
 #endif
             // Get the saved settings
             Globals.cTheme = Preferences.Default.Get("SettingTheme", "System");
-            Globals.nFontSize = Preferences.Default.Get("SettingFontSize", 18d);
+            Globals.nFontSize = Preferences.Default.Get("SettingFontSize", 17d);
             Globals.cLanguage = Preferences.Default.Get("SettingLanguage", "");
             Globals.cLanguageSpeech = Preferences.Default.Get("SettingLanguageSpeech", "");
             Globals.bExplainText = Preferences.Default.Get("SettingExplainText", false);

@@ -18,6 +18,13 @@
                 return;
             }
 
+            // Respond to the theme change 
+            Application.Current?.RequestedThemeChanged += (s, a) =>
+            {
+                // Format the text with the current values and colors based on the theme and language
+                FormatText();
+            };
+
 #if WINDOWS
             // Set the margins for the controls in the title bar for Windows
             lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
@@ -196,6 +203,9 @@
                 "Dark" => 2,        // Dark
                 _ => 0,             // System
             };
+
+            // Format the text with the current values and colors based on the theme and language
+            FormatText();
         }
 
         /// <summary>
@@ -533,7 +543,72 @@
             Globals.nFontSize = e.NewValue;
             Globals.SetGlobalFontSize();
             
-            lblFontSize.Text = $"{CubeLang.FontSize_Text} {Globals.nFontSize:F0}";
+            lblFontSize.FormattedText = FormatWithColoredNumber(CubeLang.FontSize_Text, Globals.nFontSize);
+        }
+
+        /// <summary>
+        /// Format the text with the current values and colors based on the theme and language
+        /// </summary>
+        private void FormatText()
+        {
+            // Clear the existing formatted text to avoid duplication
+            lblFontSize.FormattedText = null;
+
+            // Format the text with the current values and colors based on the theme and language
+            lblFontSize.FormattedText = FormatWithColoredNumber(CubeLang.FontSize_Text, Globals.nFontSize, "F0");
+        }
+
+
+        /// <summary>
+        /// Sets the text to a formatted string that includes a value in a specified color
+        /// </summary>
+        /// <param name="cText"></param>
+        /// <param name="nValue"></param>
+        /// <param name="cFormat"></param>
+        /// <returns></returns>
+        private static FormattedString FormatWithColoredNumber(string cText, double nValue, string cFormat = "F0")
+        {
+            try
+            {
+                // Split the template into parts based on the placeholder {0}
+                string[] parts = cText.Split("{0}");
+
+                FormattedString formatted = new();
+
+                // First part of the template before the placeholder {0}
+                formatted.Spans.Add(new Span { Text = parts[0] });
+
+                // Second part of the template is the placeholder {0} if any
+                AppTheme currentTheme = Application.Current!.RequestedTheme;
+
+                // AppTheme = Dark
+                if (currentTheme == AppTheme.Dark)
+                {
+                    formatted.Spans.Add(new Span { Text = nValue.ToString(format: cFormat), TextColor = Colors.DeepSkyBlue });
+                }
+
+                // AppTheme = Light
+                else
+                {
+                    formatted.Spans.Add(new Span { Text = nValue.ToString(format: cFormat), TextColor = Colors.Blue });
+                }
+
+                // Third part of the template after the placeholder {0} if any
+                if (!string.IsNullOrEmpty(parts[1]))
+                {
+                    formatted.Spans.Add(new Span { Text = parts[1] });
+                }
+
+                return formatted;
+            }
+
+            catch (Exception ex)
+            {
+#if DEBUG            
+                Application.Current!.Windows[0].Page!.DisplayAlertAsync("PageSettings.FormatWithColoredNumber", ex.Message, "OK");
+#endif
+                return string.Empty;
+            }
         }
 
         /// <summary>

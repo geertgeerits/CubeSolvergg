@@ -666,7 +666,7 @@
     <value>'Kociemba' 방법을 사용하여 큐브를 푸는 데 걸리는 평균 턴 수는 {0}이고, 'Fridrich'(CFOP) 방법을 사용하면 평균 턴 수는 {1}입니다.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>글꼴 크기:</value>
+    <value>글꼴 크기: {0}</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
     <value>상표:

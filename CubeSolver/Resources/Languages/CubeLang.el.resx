@@ -667,7 +667,7 @@
     <value>Ο μέσος αριθμός στροφών για την επίλυση του κύβου χρησιμοποιώντας τη μέθοδο 'Kociemba' είναι {0}, ενώ χρησιμοποιώντας τη μέθοδο 'Fridrich' (CFOP) είναι {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Μέγεθος γραμματοσειράς:</value>
+    <value>Μέγεθος γραμματοσειράς: {0}</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
     <value>Εμπορικά σήματα:

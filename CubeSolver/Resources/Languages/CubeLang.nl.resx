@@ -666,7 +666,7 @@ Deze optie verschilt per apparaat en de geïnstalleerde talen. Het is mogelijk d
     <value>Het gemiddelde aantal beurten om de kubus op te lossen met de 'Kociemba'-methode is {0}, met de 'Fridrich' (CFOP)-methode is dat {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Lettergrootte:</value>
+    <value>Lettergrootte: {0}</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
     <value>Handelsmerken:

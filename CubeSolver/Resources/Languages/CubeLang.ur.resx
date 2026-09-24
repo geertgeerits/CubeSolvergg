@@ -666,7 +666,7 @@
     <value>'Kociemba' طریقہ استعمال کرتے ہوئے کیوب کو حل کرنے کے لیے موڑ کی اوسط تعداد {0} ہے، 'Fridrich' (CFOP) طریقہ استعمال کرتے ہوئے {1} ہے۔</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>فونٹ سائز:</value>
+    <value>فونٹ کا سائز: {0}</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
     <value>ٹریڈ مارکس:

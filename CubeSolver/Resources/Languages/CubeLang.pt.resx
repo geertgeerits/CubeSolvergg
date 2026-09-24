@@ -666,7 +666,7 @@ Esta opção varia de dispositivo para dispositivo e dos idiomas instalados. É 
     <value>O número médio de voltas para resolver o cubo usando o método 'Kociemba' é {0}, usando o método 'Fridrich' (CFOP) é ​​{1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Tamanho da fonte:</value>
+    <value>Tamanho da fonte: {0}</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
     <value>Marcas registradas:

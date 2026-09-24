@@ -666,7 +666,7 @@
     <value>Среднее количество ходов для сборки кубика методом «Коциемба» — {0}, методом «Фридриха» (CFOP) — {1}.</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>Размер шрифта:</value>
+    <value>Размер шрифта: {0}</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
     <value>Торговые марки:

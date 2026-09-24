@@ -668,7 +668,7 @@
     <value>'কোসিম্বা' পদ্ধতি ব্যবহার করে ঘনকটি সমাধান করার গড় পালা সংখ্যা হল {0}, 'ফ্রিডরিচ' (CFOP) পদ্ধতি ব্যবহার করে {1}।</value>
   </data>
   <data name="FontSize_Text" xml:space="preserve">
-    <value>ফন্টের আকার:</value>
+    <value>ফন্টের আকার: {0}</value>
   </data>
   <data name="Trademarks_Text" xml:space="preserve">
     <value>ট্রেডমার্ক:
