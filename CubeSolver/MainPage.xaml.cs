@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.47
- * Date ........: 2026-10-09 (YYYY-MM-DD)
+ * Date ........: 2026-10-10 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -15,9 +15,9 @@
 using Microsoft.Maui.Controls.Shapes;
 
 // Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the Button is not updaded
-#if IOS
-using Microsoft.Maui.Platform;
-#endif
+//#if IOS
+//using Microsoft.Maui.Platform;
+//#endif
 
 namespace CubeSolver
 {
@@ -555,17 +555,17 @@ namespace CubeSolver
 
                     // Set the turn of the cube
                     btnGoOneTurnForward.Text = cTurn;
-#if IOS
-                    // Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the button is not updaded
-                    if (btnGoOneTurnForward.Handler?.PlatformView is UIKit.UIButton platformButton)
-                    {
-                        var titleLabel = platformButton.TitleLabel;
-                        titleLabel.Text = btnGoOneTurnForward.Text;
+//#if IOS
+//                    // Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the button is not updaded
+//                    if (btnGoOneTurnForward.Handler?.PlatformView is UIKit.UIButton platformButton)
+//                    {
+//                        var titleLabel = platformButton.TitleLabel;
+//                        titleLabel.Text = btnGoOneTurnForward.Text;
 
-                        var attributedText = titleLabel.AttributedText?.WithCharacterSpacing(btnGoOneTurnForward.CharacterSpacing);
-                        platformButton.SetAttributedTitle(attributedText, UIKit.UIControlState.Normal);
-                    }
-#endif
+//                        var attributedText = titleLabel.AttributedText?.WithCharacterSpacing(btnGoOneTurnForward.CharacterSpacing);
+//                        platformButton.SetAttributedTitle(attributedText, UIKit.UIControlState.Normal);
+//                    }
+//#endif
                     // Make and explain the turn of the cube
                     await MakeExplainTurnAsync(cTurn);
 
