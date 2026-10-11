@@ -25,22 +25,6 @@
                 FormatText();
             };
 
-#if WINDOWS
-            // Set the margins for the controls in the title bar for Windows
-            lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
-#endif
-#if IOS
-            // Workaround for !!!BUG!!! in iOS with the Slider right margin
-            Slider slider = new()
-            {
-                Margin = new Thickness(0, 0, 25, 0)
-            };
-
-            sldFontSize.Margin = slider.Margin;
-            sldColorRed.Margin = slider.Margin;
-            sldColorGreen.Margin = slider.Margin;
-            sldColorBlue.Margin = slider.Margin;
-#endif
             // Put text in the chosen language in the controls and variables
             SetLanguage();
 

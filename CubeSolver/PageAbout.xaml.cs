@@ -32,10 +32,6 @@ namespace CubeSolver
             //    formattedWebsite.Spans[0].FontSize = Globals.nFontSize;
             //}
 
-#if WINDOWS
-                // Set the margins for the controls in the title bar for Windows
-                lblTitlePage.Margin = new Thickness(80, 15, 0, 0);
-#endif
             // Set the label IsVisible property for the program name
             lblNameProgram.IsVisible = Globals.cLanguage != "en";
 

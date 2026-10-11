@@ -21,6 +21,7 @@
                 VerticalOptions="Center"
                 HeightRequest="32"
                 WidthRequest="32"
+                Margin="{OnPlatform Default='0,0,0,0', WinUI='20,0,0,0'}"
                 SemanticProperties.Description="Translate Info_Text}"
                 ToolTipProperties.Text="{Translate Info_Text}"
                 Clicked="OnPageAboutClicked">
@@ -30,6 +31,7 @@
                 x:Name="lblTitlePage"
                 Style="{StaticResource labelStyleTitleView}"
                 Grid.Column="1"
+                Margin="{OnPlatform Default='0,0,0,0', WinUI='16,10,0,0'}"
                 Text="{Translate NameProgram_Text}">
             </Label>
 

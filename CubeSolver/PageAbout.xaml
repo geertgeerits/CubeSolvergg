@@ -8,6 +8,7 @@
         <Label
             x:Name="lblTitlePage"
             Style="{StaticResource labelStyleTitleView}"
+            Margin="{OnPlatform Default='0,0,0,0', WinUI='80,15,0,0'}"
             Text="{Translate Info_Text}"
             FlowDirection="LeftToRight">
         </Label>

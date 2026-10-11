@@ -3,7 +3,7 @@
  * Author ......: Geert Geerits - E-mail: geertgeerits@gmail.com
  * Copyright ...: (C) 1981-2026
  * Version .....: 2.0.47
- * Date ........: 2026-10-10 (YYYY-MM-DD)
+ * Date ........: 2026-10-11 (YYYY-MM-DD)
  * Language ....: Microsoft Visual Studio 2026: .NET MAUI 10 - C# 14.0
  * Description .: Solving the Cube
  * Note ........: This program is based on the program 'SolCube' I wrote in 1981 in MS Basic-80 for the Commodore PET 2001
@@ -13,11 +13,6 @@
  *                Matt Colbourne - https://github.com/Megalomatt/Kociemba */
 
 using Microsoft.Maui.Controls.Shapes;
-
-// Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the Button is not updaded
-//#if IOS
-//using Microsoft.Maui.Platform;
-//#endif
 
 namespace CubeSolver
 {
@@ -73,15 +68,7 @@ namespace CubeSolver
                 DisplayAlertAsync("InitializeComponent: MainPage", ex.Message, "OK");
                 return;
             }
-#if WINDOWS
-            // Set the margins for the controls in the title bar for Windows if using the Shell
-            imgbtnAbout.Margin = new Thickness(20, 0, 0, 0);
-            lblTitlePage.Margin = new Thickness(16, 10, 0, 0);
-#endif
 #if IOS
-            // !!!BUG!!!? in iOS - Set the margin for the label 'lblExplainTurnCube' because Padding does not work in iOS
-            lblExplainTurnCube.Margin = new Thickness(5, 0, 5, 0);
-
             // Set the scale of the activity indicator for iOS - If the scale is set in the xaml page then the app runs slower on Android and Windows while the activity indicator is running
             // Copilot Chat: Yes, it is possible that setting the scale of an activity indicator in the XAML page can cause performance issues on different platforms like Android and Windows
             // This can happen due to the way the UI elements are rendered and handled by the platform-specific implementations
@@ -450,8 +437,8 @@ namespace CubeSolver
                     bSolved = await ClassSolveCubeMain.SolveCubeFromMultiplePositionsAsync("CFOP");
                 }
 
-                // For testing comment out the lines 338-339 and 402-426 (and change the line 450 to bShowStepByStep = false)
-                // and uncomment one of the lines 433-435 to test one of the solutions to solve the cube.
+                // For testing comment out the lines 342-345 and 414-438 (and change the line 462 to bShowStepByStep = false)
+                // and uncomment one of the lines 445-447 to test one of the solutions to solve the cube.
                 // If using the method 'TestCubeTurnsAsync()' then include the file 'ClassTestCubeTurns.cs' in the project,
                 // otherwise exclude the file 'ClassTestCubeTurns.cs' from the project.
 
@@ -555,17 +542,7 @@ namespace CubeSolver
 
                     // Set the turn of the cube
                     btnGoOneTurnForward.Text = cTurn;
-//#if IOS
-//                    // Workaround for !!!BUG!!! in iOS.NET9.0: if CharacterSpacing is set, the text of the button is not updaded
-//                    if (btnGoOneTurnForward.Handler?.PlatformView is UIKit.UIButton platformButton)
-//                    {
-//                        var titleLabel = platformButton.TitleLabel;
-//                        titleLabel.Text = btnGoOneTurnForward.Text;
 
-//                        var attributedText = titleLabel.AttributedText?.WithCharacterSpacing(btnGoOneTurnForward.CharacterSpacing);
-//                        platformButton.SetAttributedTitle(attributedText, UIKit.UIControlState.Normal);
-//                    }
-//#endif
                     // Make and explain the turn of the cube
                     await MakeExplainTurnAsync(cTurn);
 
